@@ -1,0 +1,13 @@
+{
+  "name": "ip-radar-kanban-a2a",
+  "version": "1.0.0",
+  "description": "IP雷达看板部署 A2A服务 - 接收数据推送到GitHub Pages",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {}
+}
