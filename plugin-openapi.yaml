@@ -1,0 +1,180 @@
+openapi: 3.0.0
+info:
+  title: GitHub Pages Deploy Plugin
+  description: 鐢ㄤ簬灏咺P闆疯揪鏁版嵁鎺ㄩ€佸埌GitHub Pages鐪嬫澘鐨勮嚜瀹氫箟鎻掍欢
+  version: 1.0.0
+
+servers:
+  - url: https://api.github.com
+    description: GitHub API
+
+security:
+  - BearerAuth: []
+
+paths:
+  /repos/{owner}/{repo}/contents/{path}:
+    get:
+      operationId: github-get-file
+      summary: 鑾峰彇鏂囦欢淇℃伅鍜孲HA
+      description: 鑾峰彇浠撳簱涓枃浠剁殑鍏冩暟鎹紙鍖呮嫭SHA锛夛紝鐢ㄤ簬鍚庣画鏇存柊鎿嶄綔
+      parameters:
+        - name: owner
+          in: path
+          required: true
+          schema:
+            type: string
+            default: "2662178981-cloud"
+          description: 浠撳簱鎵€鏈夎€?
+        - name: repo
+          in: path
+          required: true
+          schema:
+            type: string
+            default: "ip-radar-kanban"
+          description: 浠撳簱鍚嶇О
+        - name: path
+          in: path
+          required: true
+          schema:
+            type: string
+          description: 鏂囦欢璺緞锛堝 data.json锛?
+        - name: ref
+          in: query
+          required: false
+          schema:
+            type: string
+            default: "main"
+          description: 鍒嗘敮鍚?
+      responses:
+        "200":
+          description: 鏂囦欢淇℃伅
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  sha:
+                    type: string
+                    description: 鏂囦欢SHA锛堟洿鏂版椂闇€瑕侊級
+                  content:
+                    type: string
+                    description: 鏂囦欢鍐呭锛圔ase64缂栫爜锛?
+                  size:
+                    type: integer
+                    description: 鏂囦欢澶у皬
+
+    put:
+      operationId: github-upload-file
+      summary: 涓婁紶鎴栨洿鏂版枃浠?
+      description: 灏嗘枃浠跺唴瀹癸紙Base64缂栫爜锛変笂浼犲埌GitHub浠撳簱锛屽鏂囦欢宸插瓨鍦ㄩ渶鎻愪緵SHA
+      parameters:
+        - name: owner
+          in: path
+          required: true
+          schema:
+            type: string
+            default: "2662178981-cloud"
+          description: 浠撳簱鎵€鏈夎€?
+        - name: repo
+          in: path
+          required: true
+          schema:
+            type: string
+            default: "ip-radar-kanban"
+          description: 浠撳簱鍚嶇О
+        - name: path
+          in: path
+          required: true
+          schema:
+            type: string
+          description: 鏂囦欢璺緞锛堝 data.json, calendar_index.json, hints.json锛?
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - message
+                - content
+                - branch
+              properties:
+                message:
+                  type: string
+                  description: 鎻愪氦淇℃伅
+                  example: "update data.json - 2026-08-30"
+                content:
+                  type: string
+                  description: 鏂囦欢鍐呭锛圔ase64缂栫爜锛?
+                branch:
+                  type: string
+                  default: "main"
+                  description: 鐩爣鍒嗘敮
+                sha:
+                  type: string
+                  description: 宸叉湁鏂囦欢鐨凷HA锛堟洿鏂版椂蹇呭～锛?
+      responses:
+        "200":
+          description: 鏂囦欢鏇存柊鎴愬姛
+        "201":
+          description: 鏂囦欢鍒涘缓鎴愬姛
+
+  /repos/{owner}/{repo}/pages/builds:
+    post:
+      operationId: github-trigger-build
+      summary: 瑙﹀彂GitHub Pages閲嶆柊鏋勫缓
+      description: 鎵嬪姩瑙﹀彂GitHub Pages绔欑偣閲嶆柊鏋勫缓锛屼娇鏂颁笂浼犵殑鏂囦欢鐢熸晥
+      parameters:
+        - name: owner
+          in: path
+          required: true
+          schema:
+            type: string
+            default: "2662178981-cloud"
+        - name: repo
+          in: path
+          required: true
+          schema:
+            type: string
+            default: "ip-radar-kanban"
+      responses:
+        "201":
+          description: 鏋勫缓宸茶Е鍙?
+
+  /repos/{owner}/{repo}/pages/builds/latest:
+    get:
+      operationId: github-check-build
+      summary: 妫€鏌ages鏋勫缓鐘舵€?
+      description: 鑾峰彇鏈€杩戜竴娆ages鏋勫缓鐨勭姸鎬?
+      parameters:
+        - name: owner
+          in: path
+          required: true
+          schema:
+            type: string
+            default: "2662178981-cloud"
+        - name: repo
+          in: path
+          required: true
+          schema:
+            type: string
+            default: "ip-radar-kanban"
+      responses:
+        "200":
+          description: 鏋勫缓鐘舵€?
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    enum: [built, building, errored]
+                    description: 鏋勫缓鐘舵€?
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      description: GitHub Personal Access Token (闇€瑕乺epo鏉冮檺)
