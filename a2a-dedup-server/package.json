@@ -1,0 +1,12 @@
+{
+  "name": "ip-radar-dedup-a2a",
+  "version": "1.0.0",
+  "description": "IP雷达去重切词 A2A服务 - 接收热搜items执行词库去重分类",
+  "main": "server.py",
+  "scripts": {
+    "start": "python3 server.py"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
