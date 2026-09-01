@@ -1,63 +1,439 @@
 {
-  "version": "4.0",
-  "generatedAt": "2026-09-01T12:00:00",
   "summary": {
-    "total": 1,
-    "ipCount": 1,
-    "newValues": 0,
-    "oldValues": 1,
-    "reviewNeeded": 0,
-    "boards": [],
-    "generatedAt": "2026-09-01T12:00:00"
-  },
-  "ipBoard": {
-    "title": "IP 榜单",
-    "subtitle": "测试",
-    "total": 1,
-    "items": [
+    "total": 4,
+    "generatedAt": "now",
+    "ipCount": 4,
+    "boards": [
       {
-        "keyword": "测试词",
-        "matched_value": "测试IP",
-        "display_keyword": "测试IP",
-        "ip_status": "匹配成功",
-        "ipCategory": "明星艺人",
-        "score": 80,
-        "norm_score": 80,
-        "platforms": [
-          "weibo"
-        ],
-        "hints": [],
-        "match_type": ""
+        "code": "unknown",
+        "count": 4,
+        "title": "unknown"
       }
-    ]
+    ],
+    "reviewNeeded": 0,
+    "newValues": 3,
+    "oldValues": 1
   },
+  "total": 4,
   "platformBoards": {
+    "unknown": {
+      "code": "unknown",
+      "count": 4,
+      "title": "unknown",
+      "items": [
+        {
+          "display_keyword": "早春晴朗栾念吃醋好上头",
+          "score": 0,
+          "hints": [],
+          "ip_status": "新value",
+          "norm_score": 1,
+          "match_type": "none",
+          "display_original": "早春晴朗栾念吃醋好上头",
+          "keyword": "早春晴朗栾念吃醋好上头",
+          "ips": [
+            "早春晴朗"
+          ],
+          "platform": "unknown",
+          "board": "unknown",
+          "platforms": [
+            "unknown"
+          ]
+        },
+        {
+          "display_keyword": "说唱巅峰对决踢馆阵容官宣",
+          "hints": [
+            "说唱巅峰对决踢馆阵容官宣 同款",
+            "说唱巅峰对决踢馆阵容官宣 周边"
+          ],
+          "norm_score": 1,
+          "ipCategory": "明星艺人",
+          "ips": [
+            "说唱巅峰对决"
+          ],
+          "platform": "unknown",
+          "platforms": [
+            "unknown"
+          ],
+          "score": 0,
+          "ip_status": "新value",
+          "match_type": "none",
+          "display_original": "说唱巅峰对决踢馆阵容官宣",
+          "keyword": "说唱巅峰对决踢馆阵容官宣",
+          "board": "unknown"
+        },
+        {
+          "display_keyword": "登陆少年好想好想",
+          "score": 0,
+          "hints": [],
+          "ip_status": "新value",
+          "norm_score": 1,
+          "match_type": "none",
+          "display_original": "登陆少年好想好想",
+          "keyword": "登陆少年好想好想",
+          "ips": [
+            "登陆少年"
+          ],
+          "platform": "unknown",
+          "board": "unknown",
+          "platforms": [
+            "unknown"
+          ]
+        },
+        {
+          "display_keyword": "杨紫",
+          "hints": [
+            "杨紫 同款",
+            "杨紫 周边"
+          ],
+          "ipCategory": "明星艺人",
+          "norm_score": 1,
+          "matched_value": "杨紫",
+          "ips": [
+            "杨紫",
+            "金鹰奖"
+          ],
+          "platform": "unknown",
+          "platforms": [
+            "unknown"
+          ],
+          "score": 0,
+          "ip_status": "匹配成功",
+          "match_type": "ips_exact",
+          "display_original": "杨紫提名金鹰奖最佳女主角",
+          "keyword": "杨紫提名金鹰奖最佳女主角",
+          "board": "unknown"
+        }
+      ]
+    },
     "weibo": {
-      "title": "微博",
+      "title": "",
       "items": []
     },
     "douyin": {
-      "title": "抖音",
+      "title": "",
       "items": []
     },
     "xiaohongshu": {
-      "title": "小红书",
+      "title": "",
       "items": []
     }
   },
-  "hotCalendar": {
-    "title": "热点日历",
-    "date": "2026-09-01",
-    "count": 0,
-    "items": []
-  },
   "allItems": {
-    "total": 1,
+    "total": 4,
     "items": [
       {
-        "keyword": "测试词"
+        "display_keyword": "早春晴朗栾念吃醋好上头",
+        "score": 0,
+        "hints": [],
+        "ip_status": "新value",
+        "norm_score": 1,
+        "match_type": "none",
+        "display_original": "早春晴朗栾念吃醋好上头",
+        "keyword": "早春晴朗栾念吃醋好上头",
+        "ips": [
+          "早春晴朗"
+        ],
+        "platform": "unknown",
+        "board": "unknown",
+        "platforms": [
+          "unknown"
+        ]
+      },
+      {
+        "display_keyword": "说唱巅峰对决踢馆阵容官宣",
+        "hints": [
+          "说唱巅峰对决踢馆阵容官宣 同款",
+          "说唱巅峰对决踢馆阵容官宣 周边"
+        ],
+        "norm_score": 1,
+        "ipCategory": "明星艺人",
+        "ips": [
+          "说唱巅峰对决"
+        ],
+        "platform": "unknown",
+        "platforms": [
+          "unknown"
+        ],
+        "score": 0,
+        "ip_status": "新value",
+        "match_type": "none",
+        "display_original": "说唱巅峰对决踢馆阵容官宣",
+        "keyword": "说唱巅峰对决踢馆阵容官宣",
+        "board": "unknown"
+      },
+      {
+        "display_keyword": "登陆少年好想好想",
+        "score": 0,
+        "hints": [],
+        "ip_status": "新value",
+        "norm_score": 1,
+        "match_type": "none",
+        "display_original": "登陆少年好想好想",
+        "keyword": "登陆少年好想好想",
+        "ips": [
+          "登陆少年"
+        ],
+        "platform": "unknown",
+        "board": "unknown",
+        "platforms": [
+          "unknown"
+        ]
+      },
+      {
+        "display_keyword": "杨紫",
+        "hints": [
+          "杨紫 同款",
+          "杨紫 周边"
+        ],
+        "ipCategory": "明星艺人",
+        "norm_score": 1,
+        "matched_value": "杨紫",
+        "ips": [
+          "杨紫",
+          "金鹰奖"
+        ],
+        "platform": "unknown",
+        "platforms": [
+          "unknown"
+        ],
+        "score": 0,
+        "ip_status": "匹配成功",
+        "match_type": "ips_exact",
+        "display_original": "杨紫提名金鹰奖最佳女主角",
+        "keyword": "杨紫提名金鹰奖最佳女主角",
+        "board": "unknown"
       }
     ]
   },
+  "hotCalendar": {
+    "date": "",
+    "count": 0,
+    "title": "IP 热点日历",
+    "items": []
+  },
+  "generatedAt": "now",
+  "_debug": {
+    "items_count": 4,
+    "received_type": "dict",
+    "items_found": true,
+    "received_top_keys": [
+      "input"
+    ]
+  },
+  "ipBoard": {
+    "total": 4,
+    "subtitle": "仅展示与 IP 相关的热度词",
+    "title": "IP 榜单",
+    "items": [
+      {
+        "display_keyword": "早春晴朗栾念吃醋好上头",
+        "hints": [],
+        "norm_score": 1,
+        "ips": [
+          "早春晴朗"
+        ],
+        "platform": "unknown",
+        "platforms": [
+          "unknown"
+        ],
+        "score": 0,
+        "ip_status": "新value",
+        "matched_values": [],
+        "match_type": "none",
+        "ip_rank": 1,
+        "cross_platform_count": 1,
+        "display_original": "",
+        "keyword": "早春晴朗栾念吃醋好上头",
+        "multi_platform": [],
+        "board": "unknown",
+        "matched_value": null,
+        "ipCategory": "文娱其他"
+      },
+      {
+        "display_keyword": "说唱巅峰对决踢馆阵容官宣",
+        "hints": [
+          "说唱巅峰对决踢馆阵容官宣 同款",
+          "说唱巅峰对决踢馆阵容官宣 周边"
+        ],
+        "norm_score": 1,
+        "ipCategory": "明星艺人",
+        "ips": [
+          "说唱巅峰对决"
+        ],
+        "platform": "unknown",
+        "platforms": [
+          "unknown"
+        ],
+        "score": 0,
+        "ip_status": "新value",
+        "matched_values": [],
+        "match_type": "none",
+        "ip_rank": 2,
+        "cross_platform_count": 1,
+        "display_original": "",
+        "keyword": "说唱巅峰对决踢馆阵容官宣",
+        "multi_platform": [],
+        "board": "unknown",
+        "matched_value": null
+      },
+      {
+        "display_keyword": "登陆少年好想好想",
+        "hints": [],
+        "norm_score": 1,
+        "ips": [
+          "登陆少年"
+        ],
+        "platform": "unknown",
+        "platforms": [
+          "unknown"
+        ],
+        "score": 0,
+        "ip_status": "新value",
+        "matched_values": [],
+        "match_type": "none",
+        "ip_rank": 3,
+        "cross_platform_count": 1,
+        "display_original": "",
+        "keyword": "登陆少年好想好想",
+        "multi_platform": [],
+        "board": "unknown",
+        "matched_value": null,
+        "ipCategory": "文娱其他"
+      },
+      {
+        "display_keyword": "杨紫",
+        "hints": [
+          "杨紫 同款",
+          "杨紫 周边"
+        ],
+        "ipCategory": "明星艺人",
+        "norm_score": 1,
+        "matched_value": "杨紫",
+        "ips": [
+          "杨紫",
+          "金鹰奖"
+        ],
+        "platform": "unknown",
+        "platforms": [
+          "unknown"
+        ],
+        "score": 0,
+        "ip_status": "匹配成功",
+        "matched_values": [
+          "杨紫"
+        ],
+        "match_type": "ips_exact",
+        "ip_rank": 4,
+        "cross_platform_count": 1,
+        "display_original": "杨紫提名金鹰奖最佳女主角",
+        "keyword": "杨紫提名金鹰奖最佳女主角",
+        "multi_platform": [],
+        "board": "unknown"
+      }
+    ]
+  },
+  "version": "4.0",
+  "items": [
+    {
+      "display_keyword": "早春晴朗栾念吃醋好上头",
+      "hints": [],
+      "norm_score": 1,
+      "ips": [
+        "早春晴朗"
+      ],
+      "platform": "unknown",
+      "platforms": [
+        "unknown"
+      ],
+      "score": 0,
+      "ip_status": "新value",
+      "matched_values": [],
+      "match_type": "none",
+      "ip_rank": 1,
+      "cross_platform_count": 1,
+      "display_original": "",
+      "keyword": "早春晴朗栾念吃醋好上头",
+      "multi_platform": [],
+      "board": "unknown"
+    },
+    {
+      "display_keyword": "说唱巅峰对决踢馆阵容官宣",
+      "hints": [
+        "说唱巅峰对决踢馆阵容官宣 同款",
+        "说唱巅峰对决踢馆阵容官宣 周边"
+      ],
+      "norm_score": 1,
+      "ipCategory": "明星艺人",
+      "ips": [
+        "说唱巅峰对决"
+      ],
+      "platform": "unknown",
+      "platforms": [
+        "unknown"
+      ],
+      "score": 0,
+      "ip_status": "新value",
+      "matched_values": [],
+      "match_type": "none",
+      "ip_rank": 2,
+      "cross_platform_count": 1,
+      "display_original": "",
+      "keyword": "说唱巅峰对决踢馆阵容官宣",
+      "multi_platform": [],
+      "board": "unknown"
+    },
+    {
+      "display_keyword": "登陆少年好想好想",
+      "hints": [],
+      "norm_score": 1,
+      "ips": [
+        "登陆少年"
+      ],
+      "platform": "unknown",
+      "platforms": [
+        "unknown"
+      ],
+      "score": 0,
+      "ip_status": "新value",
+      "matched_values": [],
+      "match_type": "none",
+      "ip_rank": 3,
+      "cross_platform_count": 1,
+      "display_original": "",
+      "keyword": "登陆少年好想好想",
+      "multi_platform": [],
+      "board": "unknown"
+    },
+    {
+      "display_keyword": "杨紫",
+      "hints": [
+        "杨紫 同款",
+        "杨紫 周边"
+      ],
+      "ipCategory": "明星艺人",
+      "norm_score": 1,
+      "matched_value": "杨紫",
+      "ips": [
+        "杨紫",
+        "金鹰奖"
+      ],
+      "platform": "unknown",
+      "platforms": [
+        "unknown"
+      ],
+      "score": 0,
+      "ip_status": "匹配成功",
+      "matched_values": [
+        "杨紫"
+      ],
+      "match_type": "ips_exact",
+      "ip_rank": 4,
+      "cross_platform_count": 1,
+      "display_original": "杨紫提名金鹰奖最佳女主角",
+      "keyword": "杨紫提名金鹰奖最佳女主角",
+      "multi_platform": [],
+      "board": "unknown"
+    }
+  ],
   "sources": []
 }
