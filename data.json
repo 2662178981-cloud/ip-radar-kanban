@@ -1,8 +1,8 @@
 {
   "summary": {
-    "total": 31,
+    "total": 36,
     "generatedAt": "now",
-    "ipCount": 31,
+    "ipCount": 36,
     "boards": [
       {
         "code": "douyin",
@@ -16,15 +16,15 @@
       },
       {
         "code": "xiaohongshu",
-        "count": 6,
+        "count": 11,
         "title": "小红书"
       }
     ],
     "reviewNeeded": 0,
     "newValues": 0,
-    "oldValues": 31
+    "oldValues": 36
   },
-  "total": 31,
+  "total": 36,
   "platformBoards": {
     "douyin": {
       "code": "douyin",
@@ -415,32 +415,6 @@
           "board": "微博"
         },
         {
-          "display_keyword": "杨洋",
-          "source_count": 2,
-          "hints": [
-            "杨洋同款穿搭",
-            "杨洋代言品牌",
-            "杨洋私服同款"
-          ],
-          "ipCategory": "明星艺人",
-          "norm_score": 0.4,
-          "matched_value": "杨洋",
-          "ips": [
-            "杨洋"
-          ],
-          "platform": "weibo",
-          "platforms": [
-            "weibo",
-            "xiaohongshu"
-          ],
-          "score": 250508,
-          "ip_status": "匹配成功",
-          "match_type": "substring_full",
-          "display_original": "宁静回应杨洋走丢",
-          "keyword": "杨洋",
-          "board": "微博"
-        },
-        {
           "display_keyword": "马斯克",
           "source_count": 1,
           "hints": [
@@ -463,6 +437,31 @@
           "match_type": "substring_full",
           "display_original": "马斯克称明年底AI通吃数字领域...",
           "keyword": "马斯克",
+          "board": "微博"
+        },
+        {
+          "display_keyword": "杨洋",
+          "source_count": 1,
+          "hints": [
+            "杨洋同款穿搭",
+            "杨洋代言品牌",
+            "杨洋私服同款"
+          ],
+          "ipCategory": "明星艺人",
+          "norm_score": 0.4,
+          "matched_value": "杨洋",
+          "ips": [
+            "杨洋"
+          ],
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ],
+          "score": 250000,
+          "ip_status": "匹配成功",
+          "match_type": "substring_full",
+          "display_original": "宁静回应杨洋走丢",
+          "keyword": "杨洋",
           "board": "微博"
         },
         {
@@ -669,164 +668,289 @@
     },
     "xiaohongshu": {
       "code": "xiaohongshu",
-      "count": 6,
+      "count": 11,
       "title": "小红书",
       "items": [
         {
-          "display_keyword": "王一博",
-          "source_count": 2,
+          "display_keyword": "小红书",
+          "source_count": 1,
           "hints": [
-            "王一博同款穿搭",
-            "王一博代言品牌",
-            "王一博私服同款"
+            "小红书新品首发",
+            "小红书联名限定",
+            "小红书爆款推荐"
           ],
-          "ipCategory": "明星艺人",
+          "ipCategory": "品牌",
           "norm_score": 100,
-          "matched_value": "王一博",
+          "matched_value": "小红书",
           "ips": [
-            "王一博"
+            "小红书"
           ],
           "platform": "xiaohongshu",
           "platforms": [
             "xiaohongshu"
           ],
-          "score": 1074,
+          "score": 91,
           "ip_status": "匹配成功",
           "match_type": "substring_full",
-          "display_original": "[王一博",
-          "keyword": "王一博",
+          "display_original": "小红书成长笔记",
+          "keyword": "小红书",
           "board": "小红书"
         },
         {
-          "display_keyword": "塞尔达",
-          "source_count": 2,
-          "hints": [
-            "塞尔达联名周边",
-            "塞尔达手办模型",
-            "塞尔达限定皮肤"
-          ],
-          "ipCategory": "游戏电竞",
-          "norm_score": 95.2,
-          "matched_value": "塞尔达",
-          "ips": [
-            "塞尔达"
-          ],
-          "platform": "xiaohongshu",
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "score": 1032,
-          "ip_status": "匹配成功",
-          "match_type": "substring_full",
-          "display_original": "塞尔达传说]",
-          "keyword": "塞尔达",
-          "board": "小红书"
-        },
-        {
-          "display_keyword": "逆水寒",
+          "display_keyword": "张晚意",
           "source_count": 1,
           "hints": [
-            "逆水寒联名周边",
-            "逆水寒手办模型",
-            "逆水寒限定皮肤"
-          ],
-          "ipCategory": "游戏电竞",
-          "norm_score": 60.6,
-          "matched_value": "逆水寒",
-          "ips": [
-            "逆水寒"
-          ],
-          "platform": "xiaohongshu",
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "score": 727,
-          "ip_status": "匹配成功",
-          "match_type": "substring_full",
-          "display_original": "[逆水寒ol",
-          "keyword": "逆水寒",
-          "board": "小红书"
-        },
-        {
-          "display_keyword": "宁艺卓",
-          "source_count": 1,
-          "hints": [
-            "宁艺卓同款穿搭",
-            "宁艺卓代言品牌",
-            "宁艺卓私服同款"
+            "张晚意同款穿搭",
+            "张晚意代言品牌",
+            "张晚意私服同款"
           ],
           "ipCategory": "明星艺人",
-          "norm_score": 41.4,
-          "matched_value": "宁艺卓",
+          "norm_score": 23.2,
+          "matched_value": "张晚意",
           "ips": [
-            "宁艺卓"
+            "张晚意"
           ],
           "platform": "xiaohongshu",
           "platforms": [
             "xiaohongshu"
           ],
-          "score": 558,
+          "score": 38,
           "ip_status": "匹配成功",
           "match_type": "substring_full",
-          "display_original": "宁艺卓]",
-          "keyword": "宁艺卓",
+          "display_original": "张晚意",
+          "keyword": "张晚意",
           "board": "小红书"
         },
         {
-          "display_keyword": "鞠婧祎",
+          "display_keyword": "孙颖莎",
           "source_count": 1,
           "hints": [
-            "鞠婧祎同款穿搭",
-            "鞠婧祎代言品牌",
-            "鞠婧祎私服同款"
+            "孙颖莎同款穿搭",
+            "孙颖莎代言品牌",
+            "孙颖莎私服同款"
           ],
           "ipCategory": "明星艺人",
-          "norm_score": 1.7,
-          "matched_value": "鞠婧祎",
+          "norm_score": 21.7,
+          "matched_value": "孙颖莎",
           "ips": [
-            "鞠婧祎"
+            "孙颖莎"
           ],
           "platform": "xiaohongshu",
           "platforms": [
             "xiaohongshu"
           ],
-          "score": 209,
+          "score": 37,
           "ip_status": "匹配成功",
           "match_type": "substring_full",
-          "display_original": "[鞠婧祎]",
-          "keyword": "鞠婧祎",
+          "display_original": "孙颖莎",
+          "keyword": "孙颖莎",
           "board": "小红书"
         },
         {
-          "display_keyword": "莎头",
+          "display_keyword": "华晨宇",
           "source_count": 1,
           "hints": [
-            "莎头同款穿搭",
-            "莎头代言品牌",
-            "莎头私服同款"
+            "华晨宇同款穿搭",
+            "华晨宇代言品牌",
+            "华晨宇私服同款"
+          ],
+          "ipCategory": "明星艺人",
+          "norm_score": 20.3,
+          "matched_value": "华晨宇",
+          "ips": [
+            "华晨宇"
+          ],
+          "platform": "xiaohongshu",
+          "platforms": [
+            "xiaohongshu"
+          ],
+          "score": 36,
+          "ip_status": "匹配成功",
+          "match_type": "substring_full",
+          "display_original": "华晨宇",
+          "keyword": "华晨宇",
+          "board": "小红书"
+        },
+        {
+          "display_keyword": "蛋仔派对",
+          "source_count": 1,
+          "hints": [
+            "蛋仔派对联名周边",
+            "蛋仔派对手办模型",
+            "蛋仔派对限定皮肤"
+          ],
+          "ipCategory": "游戏电竞",
+          "norm_score": 18.8,
+          "matched_value": "蛋仔派对",
+          "ips": [
+            "蛋仔派对"
+          ],
+          "platform": "xiaohongshu",
+          "platforms": [
+            "xiaohongshu"
+          ],
+          "score": 35,
+          "ip_status": "匹配成功",
+          "match_type": "substring_full",
+          "display_original": "蛋仔派对",
+          "keyword": "蛋仔派对",
+          "board": "小红书"
+        },
+        {
+          "display_keyword": "恋与深空",
+          "source_count": 1,
+          "hints": [
+            "恋与深空联名周边",
+            "恋与深空手办模型",
+            "恋与深空限定皮肤"
+          ],
+          "ipCategory": "游戏电竞",
+          "norm_score": 15.9,
+          "matched_value": "恋与深空",
+          "ips": [
+            "恋与深空"
+          ],
+          "platform": "xiaohongshu",
+          "platforms": [
+            "xiaohongshu"
+          ],
+          "score": 33,
+          "ip_status": "匹配成功",
+          "match_type": "substring_full",
+          "display_original": "恋与深空",
+          "keyword": "恋与深空",
+          "board": "小红书"
+        },
+        {
+          "display_keyword": "明日方舟",
+          "source_count": 1,
+          "hints": [
+            "明日方舟联名周边",
+            "明日方舟手办模型",
+            "明日方舟限定皮肤"
+          ],
+          "ipCategory": "游戏电竞",
+          "norm_score": 8.7,
+          "matched_value": "明日方舟",
+          "ips": [
+            "明日方舟"
+          ],
+          "platform": "xiaohongshu",
+          "platforms": [
+            "xiaohongshu"
+          ],
+          "score": 28,
+          "ip_status": "匹配成功",
+          "match_type": "substring_full",
+          "display_original": "明日方舟明日方舟潮玩星球联动",
+          "keyword": "明日方舟",
+          "board": "小红书"
+        },
+        {
+          "display_keyword": "小乔",
+          "source_count": 1,
+          "hints": [
+            "小乔联名周边",
+            "小乔手办模型",
+            "小乔限定皮肤"
+          ],
+          "ipCategory": "游戏电竞",
+          "norm_score": 1.4,
+          "matched_value": "小乔",
+          "ips": [
+            "小乔"
+          ],
+          "platform": "xiaohongshu",
+          "platforms": [
+            "xiaohongshu"
+          ],
+          "score": 23,
+          "ip_status": "匹配成功",
+          "match_type": "substring_full",
+          "display_original": "王者荣耀搞笑视频接头霸王老六行...",
+          "keyword": "小乔",
+          "board": "小红书"
+        },
+        {
+          "display_keyword": "王者荣耀",
+          "source_count": 1,
+          "hints": [
+            "王者荣耀联名周边",
+            "王者荣耀手办模型",
+            "王者荣耀限定皮肤"
+          ],
+          "ipCategory": "游戏电竞",
+          "norm_score": 1.4,
+          "matched_value": "王者荣耀",
+          "ips": [
+            "王者荣耀"
+          ],
+          "platform": "xiaohongshu",
+          "platforms": [
+            "xiaohongshu"
+          ],
+          "score": 23,
+          "ip_status": "匹配成功",
+          "match_type": "substring_full",
+          "display_original": "王者荣耀搞笑视频接头霸王老六行...",
+          "keyword": "王者荣耀",
+          "board": "小红书"
+        },
+        {
+          "display_keyword": "兰陵王",
+          "source_count": 1,
+          "hints": [
+            "兰陵王联名周边",
+            "兰陵王手办模型",
+            "兰陵王限定皮肤"
+          ],
+          "ipCategory": "游戏电竞",
+          "norm_score": 1.4,
+          "matched_value": "兰陵王",
+          "ips": [
+            "兰陵王"
+          ],
+          "platform": "xiaohongshu",
+          "platforms": [
+            "xiaohongshu"
+          ],
+          "score": 23,
+          "ip_status": "匹配成功",
+          "match_type": "substring_full",
+          "display_original": "王者荣耀搞笑视频接头霸王老六行...",
+          "keyword": "兰陵王",
+          "board": "小红书"
+        },
+        {
+          "display_keyword": "成毅",
+          "source_count": 1,
+          "hints": [
+            "成毅同款穿搭",
+            "成毅代言品牌",
+            "成毅私服同款"
           ],
           "ipCategory": "明星艺人",
           "norm_score": 0,
-          "matched_value": "莎头",
+          "matched_value": "成毅",
           "ips": [
-            "莎头"
+            "成毅"
           ],
           "platform": "xiaohongshu",
           "platforms": [
             "xiaohongshu"
           ],
-          "score": 194,
+          "score": 22,
           "ip_status": "匹配成功",
           "match_type": "substring_full",
-          "display_original": "莎头混双]",
-          "keyword": "莎头",
+          "display_original": "成毅",
+          "keyword": "成毅",
           "board": "小红书"
         }
       ]
     }
   },
   "allItems": {
-    "total": 31,
+    "total": 36,
     "items": [
       {
         "display_keyword": "亚运会",
@@ -1205,32 +1329,6 @@
         "board": "微博"
       },
       {
-        "display_keyword": "杨洋",
-        "source_count": 2,
-        "hints": [
-          "杨洋同款穿搭",
-          "杨洋代言品牌",
-          "杨洋私服同款"
-        ],
-        "ipCategory": "明星艺人",
-        "norm_score": 0.4,
-        "matched_value": "杨洋",
-        "ips": [
-          "杨洋"
-        ],
-        "platform": "weibo",
-        "platforms": [
-          "weibo",
-          "xiaohongshu"
-        ],
-        "score": 250508,
-        "ip_status": "匹配成功",
-        "match_type": "substring_full",
-        "display_original": "宁静回应杨洋走丢",
-        "keyword": "杨洋",
-        "board": "微博"
-      },
-      {
         "display_keyword": "马斯克",
         "source_count": 1,
         "hints": [
@@ -1253,6 +1351,31 @@
         "match_type": "substring_full",
         "display_original": "马斯克称明年底AI通吃数字领域...",
         "keyword": "马斯克",
+        "board": "微博"
+      },
+      {
+        "display_keyword": "杨洋",
+        "source_count": 1,
+        "hints": [
+          "杨洋同款穿搭",
+          "杨洋代言品牌",
+          "杨洋私服同款"
+        ],
+        "ipCategory": "明星艺人",
+        "norm_score": 0.4,
+        "matched_value": "杨洋",
+        "ips": [
+          "杨洋"
+        ],
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "score": 250000,
+        "ip_status": "匹配成功",
+        "match_type": "substring_full",
+        "display_original": "宁静回应杨洋走丢",
+        "keyword": "杨洋",
         "board": "微博"
       },
       {
@@ -1456,153 +1579,278 @@
         "board": "微博"
       },
       {
-        "display_keyword": "王一博",
-        "source_count": 2,
+        "display_keyword": "小红书",
+        "source_count": 1,
         "hints": [
-          "王一博同款穿搭",
-          "王一博代言品牌",
-          "王一博私服同款"
+          "小红书新品首发",
+          "小红书联名限定",
+          "小红书爆款推荐"
         ],
-        "ipCategory": "明星艺人",
+        "ipCategory": "品牌",
         "norm_score": 100,
-        "matched_value": "王一博",
+        "matched_value": "小红书",
         "ips": [
-          "王一博"
+          "小红书"
         ],
         "platform": "xiaohongshu",
         "platforms": [
           "xiaohongshu"
         ],
-        "score": 1074,
+        "score": 91,
         "ip_status": "匹配成功",
         "match_type": "substring_full",
-        "display_original": "[王一博",
-        "keyword": "王一博",
+        "display_original": "小红书成长笔记",
+        "keyword": "小红书",
         "board": "小红书"
       },
       {
-        "display_keyword": "塞尔达",
-        "source_count": 2,
-        "hints": [
-          "塞尔达联名周边",
-          "塞尔达手办模型",
-          "塞尔达限定皮肤"
-        ],
-        "ipCategory": "游戏电竞",
-        "norm_score": 95.2,
-        "matched_value": "塞尔达",
-        "ips": [
-          "塞尔达"
-        ],
-        "platform": "xiaohongshu",
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "score": 1032,
-        "ip_status": "匹配成功",
-        "match_type": "substring_full",
-        "display_original": "塞尔达传说]",
-        "keyword": "塞尔达",
-        "board": "小红书"
-      },
-      {
-        "display_keyword": "逆水寒",
+        "display_keyword": "张晚意",
         "source_count": 1,
         "hints": [
-          "逆水寒联名周边",
-          "逆水寒手办模型",
-          "逆水寒限定皮肤"
-        ],
-        "ipCategory": "游戏电竞",
-        "norm_score": 60.6,
-        "matched_value": "逆水寒",
-        "ips": [
-          "逆水寒"
-        ],
-        "platform": "xiaohongshu",
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "score": 727,
-        "ip_status": "匹配成功",
-        "match_type": "substring_full",
-        "display_original": "[逆水寒ol",
-        "keyword": "逆水寒",
-        "board": "小红书"
-      },
-      {
-        "display_keyword": "宁艺卓",
-        "source_count": 1,
-        "hints": [
-          "宁艺卓同款穿搭",
-          "宁艺卓代言品牌",
-          "宁艺卓私服同款"
+          "张晚意同款穿搭",
+          "张晚意代言品牌",
+          "张晚意私服同款"
         ],
         "ipCategory": "明星艺人",
-        "norm_score": 41.4,
-        "matched_value": "宁艺卓",
+        "norm_score": 23.2,
+        "matched_value": "张晚意",
         "ips": [
-          "宁艺卓"
+          "张晚意"
         ],
         "platform": "xiaohongshu",
         "platforms": [
           "xiaohongshu"
         ],
-        "score": 558,
+        "score": 38,
         "ip_status": "匹配成功",
         "match_type": "substring_full",
-        "display_original": "宁艺卓]",
-        "keyword": "宁艺卓",
+        "display_original": "张晚意",
+        "keyword": "张晚意",
         "board": "小红书"
       },
       {
-        "display_keyword": "鞠婧祎",
+        "display_keyword": "孙颖莎",
         "source_count": 1,
         "hints": [
-          "鞠婧祎同款穿搭",
-          "鞠婧祎代言品牌",
-          "鞠婧祎私服同款"
+          "孙颖莎同款穿搭",
+          "孙颖莎代言品牌",
+          "孙颖莎私服同款"
         ],
         "ipCategory": "明星艺人",
-        "norm_score": 1.7,
-        "matched_value": "鞠婧祎",
+        "norm_score": 21.7,
+        "matched_value": "孙颖莎",
         "ips": [
-          "鞠婧祎"
+          "孙颖莎"
         ],
         "platform": "xiaohongshu",
         "platforms": [
           "xiaohongshu"
         ],
-        "score": 209,
+        "score": 37,
         "ip_status": "匹配成功",
         "match_type": "substring_full",
-        "display_original": "[鞠婧祎]",
-        "keyword": "鞠婧祎",
+        "display_original": "孙颖莎",
+        "keyword": "孙颖莎",
         "board": "小红书"
       },
       {
-        "display_keyword": "莎头",
+        "display_keyword": "华晨宇",
         "source_count": 1,
         "hints": [
-          "莎头同款穿搭",
-          "莎头代言品牌",
-          "莎头私服同款"
+          "华晨宇同款穿搭",
+          "华晨宇代言品牌",
+          "华晨宇私服同款"
+        ],
+        "ipCategory": "明星艺人",
+        "norm_score": 20.3,
+        "matched_value": "华晨宇",
+        "ips": [
+          "华晨宇"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 36,
+        "ip_status": "匹配成功",
+        "match_type": "substring_full",
+        "display_original": "华晨宇",
+        "keyword": "华晨宇",
+        "board": "小红书"
+      },
+      {
+        "display_keyword": "蛋仔派对",
+        "source_count": 1,
+        "hints": [
+          "蛋仔派对联名周边",
+          "蛋仔派对手办模型",
+          "蛋仔派对限定皮肤"
+        ],
+        "ipCategory": "游戏电竞",
+        "norm_score": 18.8,
+        "matched_value": "蛋仔派对",
+        "ips": [
+          "蛋仔派对"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 35,
+        "ip_status": "匹配成功",
+        "match_type": "substring_full",
+        "display_original": "蛋仔派对",
+        "keyword": "蛋仔派对",
+        "board": "小红书"
+      },
+      {
+        "display_keyword": "恋与深空",
+        "source_count": 1,
+        "hints": [
+          "恋与深空联名周边",
+          "恋与深空手办模型",
+          "恋与深空限定皮肤"
+        ],
+        "ipCategory": "游戏电竞",
+        "norm_score": 15.9,
+        "matched_value": "恋与深空",
+        "ips": [
+          "恋与深空"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 33,
+        "ip_status": "匹配成功",
+        "match_type": "substring_full",
+        "display_original": "恋与深空",
+        "keyword": "恋与深空",
+        "board": "小红书"
+      },
+      {
+        "display_keyword": "明日方舟",
+        "source_count": 1,
+        "hints": [
+          "明日方舟联名周边",
+          "明日方舟手办模型",
+          "明日方舟限定皮肤"
+        ],
+        "ipCategory": "游戏电竞",
+        "norm_score": 8.7,
+        "matched_value": "明日方舟",
+        "ips": [
+          "明日方舟"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 28,
+        "ip_status": "匹配成功",
+        "match_type": "substring_full",
+        "display_original": "明日方舟明日方舟潮玩星球联动",
+        "keyword": "明日方舟",
+        "board": "小红书"
+      },
+      {
+        "display_keyword": "小乔",
+        "source_count": 1,
+        "hints": [
+          "小乔联名周边",
+          "小乔手办模型",
+          "小乔限定皮肤"
+        ],
+        "ipCategory": "游戏电竞",
+        "norm_score": 1.4,
+        "matched_value": "小乔",
+        "ips": [
+          "小乔"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 23,
+        "ip_status": "匹配成功",
+        "match_type": "substring_full",
+        "display_original": "王者荣耀搞笑视频接头霸王老六行...",
+        "keyword": "小乔",
+        "board": "小红书"
+      },
+      {
+        "display_keyword": "王者荣耀",
+        "source_count": 1,
+        "hints": [
+          "王者荣耀联名周边",
+          "王者荣耀手办模型",
+          "王者荣耀限定皮肤"
+        ],
+        "ipCategory": "游戏电竞",
+        "norm_score": 1.4,
+        "matched_value": "王者荣耀",
+        "ips": [
+          "王者荣耀"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 23,
+        "ip_status": "匹配成功",
+        "match_type": "substring_full",
+        "display_original": "王者荣耀搞笑视频接头霸王老六行...",
+        "keyword": "王者荣耀",
+        "board": "小红书"
+      },
+      {
+        "display_keyword": "兰陵王",
+        "source_count": 1,
+        "hints": [
+          "兰陵王联名周边",
+          "兰陵王手办模型",
+          "兰陵王限定皮肤"
+        ],
+        "ipCategory": "游戏电竞",
+        "norm_score": 1.4,
+        "matched_value": "兰陵王",
+        "ips": [
+          "兰陵王"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 23,
+        "ip_status": "匹配成功",
+        "match_type": "substring_full",
+        "display_original": "王者荣耀搞笑视频接头霸王老六行...",
+        "keyword": "兰陵王",
+        "board": "小红书"
+      },
+      {
+        "display_keyword": "成毅",
+        "source_count": 1,
+        "hints": [
+          "成毅同款穿搭",
+          "成毅代言品牌",
+          "成毅私服同款"
         ],
         "ipCategory": "明星艺人",
         "norm_score": 0,
-        "matched_value": "莎头",
+        "matched_value": "成毅",
         "ips": [
-          "莎头"
+          "成毅"
         ],
         "platform": "xiaohongshu",
         "platforms": [
           "xiaohongshu"
         ],
-        "score": 194,
+        "score": 22,
         "ip_status": "匹配成功",
         "match_type": "substring_full",
-        "display_original": "莎头混双]",
-        "keyword": "莎头",
+        "display_original": "成毅",
+        "keyword": "成毅",
         "board": "小红书"
       }
     ]
@@ -1615,7 +1863,7 @@
   },
   "generatedAt": "now",
   "_debug": {
-    "items_count": 31,
+    "items_count": 36,
     "received_type": "dict",
     "items_found": true,
     "received_top_keys": [
@@ -1623,7 +1871,7 @@
     ]
   },
   "ipBoard": {
-    "total": 31,
+    "total": 36,
     "subtitle": "仅展示与 IP 相关的热度词",
     "title": "IP 榜单",
     "items": [
@@ -1690,126 +1938,188 @@
         "board": "微博"
       },
       {
-        "display_keyword": "王一博",
-        "source_count": 2,
+        "display_keyword": "小红书",
+        "source_count": 1,
         "hints": [
-          "王一博同款穿搭",
-          "王一博代言品牌",
-          "王一博私服同款"
+          "小红书新品首发",
+          "小红书联名限定",
+          "小红书爆款推荐"
         ],
-        "ipCategory": "明星艺人",
+        "ipCategory": "品牌",
         "norm_score": 100,
-        "matched_value": "王一博",
+        "matched_value": "小红书",
         "ips": [
-          "王一博"
+          "小红书"
         ],
         "platform": "xiaohongshu",
         "platforms": [
           "xiaohongshu"
         ],
-        "score": 1074,
+        "score": 91,
         "ip_status": "匹配成功",
         "matched_values": [
-          "王一博"
+          "小红书"
         ],
         "match_type": "substring_full",
         "ip_rank": 3,
         "cross_platform_count": 1,
-        "display_original": "王一博",
-        "keyword": "王一博",
+        "display_original": "小红书",
+        "keyword": "小红书",
         "multi_platform": [],
         "board": "小红书"
       },
       {
-        "display_keyword": "塞尔达",
-        "source_count": 2,
+        "display_keyword": "张晚意",
+        "source_count": 1,
         "hints": [
-          "塞尔达联名周边",
-          "塞尔达手办模型",
-          "塞尔达限定皮肤"
+          "张晚意同款穿搭",
+          "张晚意代言品牌",
+          "张晚意私服同款"
         ],
-        "ipCategory": "游戏电竞",
-        "norm_score": 95.2,
-        "matched_value": "塞尔达",
+        "ipCategory": "明星艺人",
+        "norm_score": 23.2,
+        "matched_value": "张晚意",
         "ips": [
-          "塞尔达"
+          "张晚意"
         ],
         "platform": "xiaohongshu",
         "platforms": [
           "xiaohongshu"
         ],
-        "score": 1032,
+        "score": 38,
         "ip_status": "匹配成功",
         "matched_values": [
-          "塞尔达"
+          "张晚意"
         ],
         "match_type": "substring_full",
         "ip_rank": 4,
         "cross_platform_count": 1,
-        "display_original": "塞尔达",
-        "keyword": "塞尔达",
+        "display_original": "张晚意",
+        "keyword": "张晚意",
         "multi_platform": [],
         "board": "小红书"
       },
       {
-        "display_keyword": "逆水寒",
+        "display_keyword": "孙颖莎",
         "source_count": 1,
         "hints": [
-          "逆水寒联名周边",
-          "逆水寒手办模型",
-          "逆水寒限定皮肤"
+          "孙颖莎同款穿搭",
+          "孙颖莎代言品牌",
+          "孙颖莎私服同款"
         ],
-        "ipCategory": "游戏电竞",
-        "norm_score": 60.6,
-        "matched_value": "逆水寒",
+        "ipCategory": "明星艺人",
+        "norm_score": 21.7,
+        "matched_value": "孙颖莎",
         "ips": [
-          "逆水寒"
+          "孙颖莎"
         ],
         "platform": "xiaohongshu",
         "platforms": [
           "xiaohongshu"
         ],
-        "score": 727,
+        "score": 37,
         "ip_status": "匹配成功",
         "matched_values": [
-          "逆水寒"
+          "孙颖莎"
         ],
         "match_type": "substring_full",
         "ip_rank": 5,
         "cross_platform_count": 1,
-        "display_original": "逆水寒",
-        "keyword": "逆水寒",
+        "display_original": "孙颖莎",
+        "keyword": "孙颖莎",
         "multi_platform": [],
         "board": "小红书"
       },
       {
-        "display_keyword": "宁艺卓",
+        "display_keyword": "华晨宇",
         "source_count": 1,
         "hints": [
-          "宁艺卓同款穿搭",
-          "宁艺卓代言品牌",
-          "宁艺卓私服同款"
+          "华晨宇同款穿搭",
+          "华晨宇代言品牌",
+          "华晨宇私服同款"
         ],
         "ipCategory": "明星艺人",
-        "norm_score": 41.4,
-        "matched_value": "宁艺卓",
+        "norm_score": 20.3,
+        "matched_value": "华晨宇",
         "ips": [
-          "宁艺卓"
+          "华晨宇"
         ],
         "platform": "xiaohongshu",
         "platforms": [
           "xiaohongshu"
         ],
-        "score": 558,
+        "score": 36,
         "ip_status": "匹配成功",
         "matched_values": [
-          "宁艺卓"
+          "华晨宇"
         ],
         "match_type": "substring_full",
         "ip_rank": 6,
         "cross_platform_count": 1,
-        "display_original": "宁艺卓",
-        "keyword": "宁艺卓",
+        "display_original": "华晨宇",
+        "keyword": "华晨宇",
+        "multi_platform": [],
+        "board": "小红书"
+      },
+      {
+        "display_keyword": "蛋仔派对",
+        "source_count": 1,
+        "hints": [
+          "蛋仔派对联名周边",
+          "蛋仔派对手办模型",
+          "蛋仔派对限定皮肤"
+        ],
+        "ipCategory": "游戏电竞",
+        "norm_score": 18.8,
+        "matched_value": "蛋仔派对",
+        "ips": [
+          "蛋仔派对"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 35,
+        "ip_status": "匹配成功",
+        "matched_values": [
+          "蛋仔派对"
+        ],
+        "match_type": "substring_full",
+        "ip_rank": 7,
+        "cross_platform_count": 1,
+        "display_original": "蛋仔派对",
+        "keyword": "蛋仔派对",
+        "multi_platform": [],
+        "board": "小红书"
+      },
+      {
+        "display_keyword": "恋与深空",
+        "source_count": 1,
+        "hints": [
+          "恋与深空联名周边",
+          "恋与深空手办模型",
+          "恋与深空限定皮肤"
+        ],
+        "ipCategory": "游戏电竞",
+        "norm_score": 15.9,
+        "matched_value": "恋与深空",
+        "ips": [
+          "恋与深空"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 33,
+        "ip_status": "匹配成功",
+        "matched_values": [
+          "恋与深空"
+        ],
+        "match_type": "substring_full",
+        "ip_rank": 8,
+        "cross_platform_count": 1,
+        "display_original": "恋与深空",
+        "keyword": "恋与深空",
         "multi_platform": [],
         "board": "小红书"
       },
@@ -1837,12 +2147,43 @@
           "陈泽"
         ],
         "match_type": "substring_full",
-        "ip_rank": 7,
+        "ip_rank": 9,
         "cross_platform_count": 1,
         "display_original": "陈泽",
         "keyword": "陈泽",
         "multi_platform": [],
         "board": "抖音"
+      },
+      {
+        "display_keyword": "明日方舟",
+        "source_count": 1,
+        "hints": [
+          "明日方舟联名周边",
+          "明日方舟手办模型",
+          "明日方舟限定皮肤"
+        ],
+        "ipCategory": "游戏电竞",
+        "norm_score": 8.7,
+        "matched_value": "明日方舟",
+        "ips": [
+          "明日方舟"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 28,
+        "ip_status": "匹配成功",
+        "matched_values": [
+          "明日方舟"
+        ],
+        "match_type": "substring_full",
+        "ip_rank": 10,
+        "cross_platform_count": 1,
+        "display_original": "明日方舟",
+        "keyword": "明日方舟",
+        "multi_platform": [],
+        "board": "小红书"
       },
       {
         "display_keyword": "曼城",
@@ -1868,7 +2209,7 @@
           "曼城"
         ],
         "match_type": "substring_full",
-        "ip_rank": 8,
+        "ip_rank": 11,
         "cross_platform_count": 1,
         "display_original": "曼城",
         "keyword": "曼城",
@@ -1899,7 +2240,7 @@
           "许晴"
         ],
         "match_type": "substring_full",
-        "ip_rank": 9,
+        "ip_rank": 12,
         "cross_platform_count": 1,
         "display_original": "许晴",
         "keyword": "许晴",
@@ -1930,7 +2271,7 @@
           "和平精英"
         ],
         "match_type": "substring_full",
-        "ip_rank": 10,
+        "ip_rank": 13,
         "cross_platform_count": 1,
         "display_original": "和平精英",
         "keyword": "和平精英",
@@ -1961,7 +2302,7 @@
           "井柏然"
         ],
         "match_type": "substring_full",
-        "ip_rank": 11,
+        "ip_rank": 14,
         "cross_platform_count": 1,
         "display_original": "井柏然",
         "keyword": "井柏然",
@@ -1992,7 +2333,7 @@
           "金铭"
         ],
         "match_type": "substring_full",
-        "ip_rank": 12,
+        "ip_rank": 15,
         "cross_platform_count": 1,
         "display_original": "金铭",
         "keyword": "金铭",
@@ -2023,43 +2364,12 @@
           "王迅"
         ],
         "match_type": "substring_full",
-        "ip_rank": 13,
+        "ip_rank": 16,
         "cross_platform_count": 1,
         "display_original": "王迅",
         "keyword": "王迅",
         "multi_platform": [],
         "board": "抖音"
-      },
-      {
-        "display_keyword": "鞠婧祎",
-        "source_count": 1,
-        "hints": [
-          "鞠婧祎同款穿搭",
-          "鞠婧祎代言品牌",
-          "鞠婧祎私服同款"
-        ],
-        "ipCategory": "明星艺人",
-        "norm_score": 1.7,
-        "matched_value": "鞠婧祎",
-        "ips": [
-          "鞠婧祎"
-        ],
-        "platform": "xiaohongshu",
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "score": 209,
-        "ip_status": "匹配成功",
-        "matched_values": [
-          "鞠婧祎"
-        ],
-        "match_type": "substring_full",
-        "ip_rank": 14,
-        "cross_platform_count": 1,
-        "display_original": "鞠婧祎",
-        "keyword": "鞠婧祎",
-        "multi_platform": [],
-        "board": "小红书"
       },
       {
         "display_keyword": "吴克群",
@@ -2085,7 +2395,7 @@
           "吴克群"
         ],
         "match_type": "substring_full",
-        "ip_rank": 15,
+        "ip_rank": 17,
         "cross_platform_count": 1,
         "display_original": "吴克群",
         "keyword": "吴克群",
@@ -2116,12 +2426,105 @@
           "宋雨琦"
         ],
         "match_type": "substring_full",
-        "ip_rank": 16,
+        "ip_rank": 18,
         "cross_platform_count": 1,
         "display_original": "宋雨琦",
         "keyword": "宋雨琦",
         "multi_platform": [],
         "board": "抖音"
+      },
+      {
+        "display_keyword": "小乔",
+        "source_count": 1,
+        "hints": [
+          "小乔联名周边",
+          "小乔手办模型",
+          "小乔限定皮肤"
+        ],
+        "ipCategory": "游戏电竞",
+        "norm_score": 1.4,
+        "matched_value": "小乔",
+        "ips": [
+          "小乔"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 23,
+        "ip_status": "匹配成功",
+        "matched_values": [
+          "小乔"
+        ],
+        "match_type": "substring_full",
+        "ip_rank": 19,
+        "cross_platform_count": 1,
+        "display_original": "小乔",
+        "keyword": "小乔",
+        "multi_platform": [],
+        "board": "小红书"
+      },
+      {
+        "display_keyword": "王者荣耀",
+        "source_count": 1,
+        "hints": [
+          "王者荣耀联名周边",
+          "王者荣耀手办模型",
+          "王者荣耀限定皮肤"
+        ],
+        "ipCategory": "游戏电竞",
+        "norm_score": 1.4,
+        "matched_value": "王者荣耀",
+        "ips": [
+          "王者荣耀"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 23,
+        "ip_status": "匹配成功",
+        "matched_values": [
+          "王者荣耀"
+        ],
+        "match_type": "substring_full",
+        "ip_rank": 20,
+        "cross_platform_count": 1,
+        "display_original": "王者荣耀",
+        "keyword": "王者荣耀",
+        "multi_platform": [],
+        "board": "小红书"
+      },
+      {
+        "display_keyword": "兰陵王",
+        "source_count": 1,
+        "hints": [
+          "兰陵王联名周边",
+          "兰陵王手办模型",
+          "兰陵王限定皮肤"
+        ],
+        "ipCategory": "游戏电竞",
+        "norm_score": 1.4,
+        "matched_value": "兰陵王",
+        "ips": [
+          "兰陵王"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "score": 23,
+        "ip_status": "匹配成功",
+        "matched_values": [
+          "兰陵王"
+        ],
+        "match_type": "substring_full",
+        "ip_rank": 21,
+        "cross_platform_count": 1,
+        "display_original": "兰陵王",
+        "keyword": "兰陵王",
+        "multi_platform": [],
+        "board": "小红书"
       },
       {
         "display_keyword": "唐嫣",
@@ -2147,7 +2550,7 @@
           "唐嫣"
         ],
         "match_type": "substring_full",
-        "ip_rank": 17,
+        "ip_rank": 22,
         "cross_platform_count": 1,
         "display_original": "唐嫣",
         "keyword": "唐嫣",
@@ -2178,7 +2581,7 @@
           "阿基米德"
         ],
         "match_type": "substring_full",
-        "ip_rank": 18,
+        "ip_rank": 23,
         "cross_platform_count": 1,
         "display_original": "阿基米德",
         "keyword": "阿基米德",
@@ -2209,41 +2612,10 @@
           "LPL"
         ],
         "match_type": "substring_full",
-        "ip_rank": 19,
+        "ip_rank": 24,
         "cross_platform_count": 1,
         "display_original": "LPL",
         "keyword": "LPL",
-        "multi_platform": [],
-        "board": "微博"
-      },
-      {
-        "display_keyword": "杨洋",
-        "source_count": 2,
-        "hints": [
-          "杨洋同款穿搭",
-          "杨洋代言品牌",
-          "杨洋私服同款"
-        ],
-        "ipCategory": "明星艺人",
-        "norm_score": 0.4,
-        "matched_value": "杨洋",
-        "ips": [
-          "杨洋"
-        ],
-        "platform": "weibo",
-        "platforms": [
-          "weibo"
-        ],
-        "score": 250508,
-        "ip_status": "匹配成功",
-        "matched_values": [
-          "杨洋"
-        ],
-        "match_type": "substring_full",
-        "ip_rank": 20,
-        "cross_platform_count": 1,
-        "display_original": "杨洋",
-        "keyword": "杨洋",
         "multi_platform": [],
         "board": "微博"
       },
@@ -2271,10 +2643,41 @@
           "马斯克"
         ],
         "match_type": "substring_full",
-        "ip_rank": 21,
+        "ip_rank": 25,
         "cross_platform_count": 1,
         "display_original": "马斯克",
         "keyword": "马斯克",
+        "multi_platform": [],
+        "board": "微博"
+      },
+      {
+        "display_keyword": "杨洋",
+        "source_count": 1,
+        "hints": [
+          "杨洋同款穿搭",
+          "杨洋代言品牌",
+          "杨洋私服同款"
+        ],
+        "ipCategory": "明星艺人",
+        "norm_score": 0.4,
+        "matched_value": "杨洋",
+        "ips": [
+          "杨洋"
+        ],
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "score": 250000,
+        "ip_status": "匹配成功",
+        "matched_values": [
+          "杨洋"
+        ],
+        "match_type": "substring_full",
+        "ip_rank": 26,
+        "cross_platform_count": 1,
+        "display_original": "杨洋",
+        "keyword": "杨洋",
         "multi_platform": [],
         "board": "微博"
       },
@@ -2302,7 +2705,7 @@
           "倪妮"
         ],
         "match_type": "substring_full",
-        "ip_rank": 22,
+        "ip_rank": 27,
         "cross_platform_count": 1,
         "display_original": "倪妮",
         "keyword": "倪妮",
@@ -2333,7 +2736,7 @@
           "徐熙娣"
         ],
         "match_type": "substring_full",
-        "ip_rank": 23,
+        "ip_rank": 28,
         "cross_platform_count": 1,
         "display_original": "徐熙娣",
         "keyword": "徐熙娣",
@@ -2364,7 +2767,7 @@
           "古力娜扎"
         ],
         "match_type": "substring_full",
-        "ip_rank": 24,
+        "ip_rank": 29,
         "cross_platform_count": 1,
         "display_original": "古力娜扎",
         "keyword": "古力娜扎",
@@ -2395,7 +2798,7 @@
           "微微一笑很倾城"
         ],
         "match_type": "substring_full",
-        "ip_rank": 25,
+        "ip_rank": 30,
         "cross_platform_count": 1,
         "display_original": "微微一笑很倾城",
         "keyword": "微微一笑很倾城",
@@ -2426,7 +2829,7 @@
           "肖战"
         ],
         "match_type": "substring_full",
-        "ip_rank": 26,
+        "ip_rank": 31,
         "cross_platform_count": 1,
         "display_original": "肖战",
         "keyword": "肖战",
@@ -2457,7 +2860,7 @@
           "中国国际航空"
         ],
         "match_type": "substring_full",
-        "ip_rank": 27,
+        "ip_rank": 32,
         "cross_platform_count": 1,
         "display_original": "中国国际航空",
         "keyword": "中国国际航空",
@@ -2488,7 +2891,7 @@
           "火影忍者"
         ],
         "match_type": "substring_full",
-        "ip_rank": 28,
+        "ip_rank": 33,
         "cross_platform_count": 1,
         "display_original": "火影忍者",
         "keyword": "火影忍者",
@@ -2519,7 +2922,7 @@
           "白鹿"
         ],
         "match_type": "substring_full",
-        "ip_rank": 29,
+        "ip_rank": 34,
         "cross_platform_count": 1,
         "display_original": "白鹿",
         "keyword": "白鹿",
@@ -2550,7 +2953,7 @@
           "九月"
         ],
         "match_type": "substring_full",
-        "ip_rank": 30,
+        "ip_rank": 35,
         "cross_platform_count": 1,
         "display_original": "九月",
         "keyword": "九月",
@@ -2558,33 +2961,33 @@
         "board": "微博"
       },
       {
-        "display_keyword": "莎头",
+        "display_keyword": "成毅",
         "source_count": 1,
         "hints": [
-          "莎头同款穿搭",
-          "莎头代言品牌",
-          "莎头私服同款"
+          "成毅同款穿搭",
+          "成毅代言品牌",
+          "成毅私服同款"
         ],
         "ipCategory": "明星艺人",
         "norm_score": 0,
-        "matched_value": "莎头",
+        "matched_value": "成毅",
         "ips": [
-          "莎头"
+          "成毅"
         ],
         "platform": "xiaohongshu",
         "platforms": [
           "xiaohongshu"
         ],
-        "score": 194,
+        "score": 22,
         "ip_status": "匹配成功",
         "matched_values": [
-          "莎头"
+          "成毅"
         ],
         "match_type": "substring_full",
-        "ip_rank": 31,
+        "ip_rank": 36,
         "cross_platform_count": 1,
-        "display_original": "莎头",
-        "keyword": "莎头",
+        "display_original": "成毅",
+        "keyword": "成毅",
         "multi_platform": [],
         "board": "小红书"
       }
@@ -2655,126 +3058,188 @@
       "board": "微博"
     },
     {
-      "display_keyword": "王一博",
-      "source_count": 2,
+      "display_keyword": "小红书",
+      "source_count": 1,
       "hints": [
-        "王一博同款穿搭",
-        "王一博代言品牌",
-        "王一博私服同款"
+        "小红书新品首发",
+        "小红书联名限定",
+        "小红书爆款推荐"
       ],
-      "ipCategory": "明星艺人",
+      "ipCategory": "品牌",
       "norm_score": 100,
-      "matched_value": "王一博",
+      "matched_value": "小红书",
       "ips": [
-        "王一博"
+        "小红书"
       ],
       "platform": "xiaohongshu",
       "platforms": [
         "xiaohongshu"
       ],
-      "score": 1074,
+      "score": 91,
       "ip_status": "匹配成功",
       "matched_values": [
-        "王一博"
+        "小红书"
       ],
       "match_type": "substring_full",
       "ip_rank": 3,
       "cross_platform_count": 1,
-      "display_original": "王一博",
-      "keyword": "王一博",
+      "display_original": "小红书",
+      "keyword": "小红书",
       "multi_platform": [],
       "board": "小红书"
     },
     {
-      "display_keyword": "塞尔达",
-      "source_count": 2,
+      "display_keyword": "张晚意",
+      "source_count": 1,
       "hints": [
-        "塞尔达联名周边",
-        "塞尔达手办模型",
-        "塞尔达限定皮肤"
+        "张晚意同款穿搭",
+        "张晚意代言品牌",
+        "张晚意私服同款"
       ],
-      "ipCategory": "游戏电竞",
-      "norm_score": 95.2,
-      "matched_value": "塞尔达",
+      "ipCategory": "明星艺人",
+      "norm_score": 23.2,
+      "matched_value": "张晚意",
       "ips": [
-        "塞尔达"
+        "张晚意"
       ],
       "platform": "xiaohongshu",
       "platforms": [
         "xiaohongshu"
       ],
-      "score": 1032,
+      "score": 38,
       "ip_status": "匹配成功",
       "matched_values": [
-        "塞尔达"
+        "张晚意"
       ],
       "match_type": "substring_full",
       "ip_rank": 4,
       "cross_platform_count": 1,
-      "display_original": "塞尔达",
-      "keyword": "塞尔达",
+      "display_original": "张晚意",
+      "keyword": "张晚意",
       "multi_platform": [],
       "board": "小红书"
     },
     {
-      "display_keyword": "逆水寒",
+      "display_keyword": "孙颖莎",
       "source_count": 1,
       "hints": [
-        "逆水寒联名周边",
-        "逆水寒手办模型",
-        "逆水寒限定皮肤"
+        "孙颖莎同款穿搭",
+        "孙颖莎代言品牌",
+        "孙颖莎私服同款"
       ],
-      "ipCategory": "游戏电竞",
-      "norm_score": 60.6,
-      "matched_value": "逆水寒",
+      "ipCategory": "明星艺人",
+      "norm_score": 21.7,
+      "matched_value": "孙颖莎",
       "ips": [
-        "逆水寒"
+        "孙颖莎"
       ],
       "platform": "xiaohongshu",
       "platforms": [
         "xiaohongshu"
       ],
-      "score": 727,
+      "score": 37,
       "ip_status": "匹配成功",
       "matched_values": [
-        "逆水寒"
+        "孙颖莎"
       ],
       "match_type": "substring_full",
       "ip_rank": 5,
       "cross_platform_count": 1,
-      "display_original": "逆水寒",
-      "keyword": "逆水寒",
+      "display_original": "孙颖莎",
+      "keyword": "孙颖莎",
       "multi_platform": [],
       "board": "小红书"
     },
     {
-      "display_keyword": "宁艺卓",
+      "display_keyword": "华晨宇",
       "source_count": 1,
       "hints": [
-        "宁艺卓同款穿搭",
-        "宁艺卓代言品牌",
-        "宁艺卓私服同款"
+        "华晨宇同款穿搭",
+        "华晨宇代言品牌",
+        "华晨宇私服同款"
       ],
       "ipCategory": "明星艺人",
-      "norm_score": 41.4,
-      "matched_value": "宁艺卓",
+      "norm_score": 20.3,
+      "matched_value": "华晨宇",
       "ips": [
-        "宁艺卓"
+        "华晨宇"
       ],
       "platform": "xiaohongshu",
       "platforms": [
         "xiaohongshu"
       ],
-      "score": 558,
+      "score": 36,
       "ip_status": "匹配成功",
       "matched_values": [
-        "宁艺卓"
+        "华晨宇"
       ],
       "match_type": "substring_full",
       "ip_rank": 6,
       "cross_platform_count": 1,
-      "display_original": "宁艺卓",
-      "keyword": "宁艺卓",
+      "display_original": "华晨宇",
+      "keyword": "华晨宇",
+      "multi_platform": [],
+      "board": "小红书"
+    },
+    {
+      "display_keyword": "蛋仔派对",
+      "source_count": 1,
+      "hints": [
+        "蛋仔派对联名周边",
+        "蛋仔派对手办模型",
+        "蛋仔派对限定皮肤"
+      ],
+      "ipCategory": "游戏电竞",
+      "norm_score": 18.8,
+      "matched_value": "蛋仔派对",
+      "ips": [
+        "蛋仔派对"
+      ],
+      "platform": "xiaohongshu",
+      "platforms": [
+        "xiaohongshu"
+      ],
+      "score": 35,
+      "ip_status": "匹配成功",
+      "matched_values": [
+        "蛋仔派对"
+      ],
+      "match_type": "substring_full",
+      "ip_rank": 7,
+      "cross_platform_count": 1,
+      "display_original": "蛋仔派对",
+      "keyword": "蛋仔派对",
+      "multi_platform": [],
+      "board": "小红书"
+    },
+    {
+      "display_keyword": "恋与深空",
+      "source_count": 1,
+      "hints": [
+        "恋与深空联名周边",
+        "恋与深空手办模型",
+        "恋与深空限定皮肤"
+      ],
+      "ipCategory": "游戏电竞",
+      "norm_score": 15.9,
+      "matched_value": "恋与深空",
+      "ips": [
+        "恋与深空"
+      ],
+      "platform": "xiaohongshu",
+      "platforms": [
+        "xiaohongshu"
+      ],
+      "score": 33,
+      "ip_status": "匹配成功",
+      "matched_values": [
+        "恋与深空"
+      ],
+      "match_type": "substring_full",
+      "ip_rank": 8,
+      "cross_platform_count": 1,
+      "display_original": "恋与深空",
+      "keyword": "恋与深空",
       "multi_platform": [],
       "board": "小红书"
     },
@@ -2802,12 +3267,43 @@
         "陈泽"
       ],
       "match_type": "substring_full",
-      "ip_rank": 7,
+      "ip_rank": 9,
       "cross_platform_count": 1,
       "display_original": "陈泽",
       "keyword": "陈泽",
       "multi_platform": [],
       "board": "抖音"
+    },
+    {
+      "display_keyword": "明日方舟",
+      "source_count": 1,
+      "hints": [
+        "明日方舟联名周边",
+        "明日方舟手办模型",
+        "明日方舟限定皮肤"
+      ],
+      "ipCategory": "游戏电竞",
+      "norm_score": 8.7,
+      "matched_value": "明日方舟",
+      "ips": [
+        "明日方舟"
+      ],
+      "platform": "xiaohongshu",
+      "platforms": [
+        "xiaohongshu"
+      ],
+      "score": 28,
+      "ip_status": "匹配成功",
+      "matched_values": [
+        "明日方舟"
+      ],
+      "match_type": "substring_full",
+      "ip_rank": 10,
+      "cross_platform_count": 1,
+      "display_original": "明日方舟",
+      "keyword": "明日方舟",
+      "multi_platform": [],
+      "board": "小红书"
     },
     {
       "display_keyword": "曼城",
@@ -2833,7 +3329,7 @@
         "曼城"
       ],
       "match_type": "substring_full",
-      "ip_rank": 8,
+      "ip_rank": 11,
       "cross_platform_count": 1,
       "display_original": "曼城",
       "keyword": "曼城",
@@ -2864,7 +3360,7 @@
         "许晴"
       ],
       "match_type": "substring_full",
-      "ip_rank": 9,
+      "ip_rank": 12,
       "cross_platform_count": 1,
       "display_original": "许晴",
       "keyword": "许晴",
@@ -2895,7 +3391,7 @@
         "和平精英"
       ],
       "match_type": "substring_full",
-      "ip_rank": 10,
+      "ip_rank": 13,
       "cross_platform_count": 1,
       "display_original": "和平精英",
       "keyword": "和平精英",
@@ -2926,7 +3422,7 @@
         "井柏然"
       ],
       "match_type": "substring_full",
-      "ip_rank": 11,
+      "ip_rank": 14,
       "cross_platform_count": 1,
       "display_original": "井柏然",
       "keyword": "井柏然",
@@ -2957,7 +3453,7 @@
         "金铭"
       ],
       "match_type": "substring_full",
-      "ip_rank": 12,
+      "ip_rank": 15,
       "cross_platform_count": 1,
       "display_original": "金铭",
       "keyword": "金铭",
@@ -2988,43 +3484,12 @@
         "王迅"
       ],
       "match_type": "substring_full",
-      "ip_rank": 13,
+      "ip_rank": 16,
       "cross_platform_count": 1,
       "display_original": "王迅",
       "keyword": "王迅",
       "multi_platform": [],
       "board": "抖音"
-    },
-    {
-      "display_keyword": "鞠婧祎",
-      "source_count": 1,
-      "hints": [
-        "鞠婧祎同款穿搭",
-        "鞠婧祎代言品牌",
-        "鞠婧祎私服同款"
-      ],
-      "ipCategory": "明星艺人",
-      "norm_score": 1.7,
-      "matched_value": "鞠婧祎",
-      "ips": [
-        "鞠婧祎"
-      ],
-      "platform": "xiaohongshu",
-      "platforms": [
-        "xiaohongshu"
-      ],
-      "score": 209,
-      "ip_status": "匹配成功",
-      "matched_values": [
-        "鞠婧祎"
-      ],
-      "match_type": "substring_full",
-      "ip_rank": 14,
-      "cross_platform_count": 1,
-      "display_original": "鞠婧祎",
-      "keyword": "鞠婧祎",
-      "multi_platform": [],
-      "board": "小红书"
     },
     {
       "display_keyword": "吴克群",
@@ -3050,7 +3515,7 @@
         "吴克群"
       ],
       "match_type": "substring_full",
-      "ip_rank": 15,
+      "ip_rank": 17,
       "cross_platform_count": 1,
       "display_original": "吴克群",
       "keyword": "吴克群",
@@ -3081,12 +3546,105 @@
         "宋雨琦"
       ],
       "match_type": "substring_full",
-      "ip_rank": 16,
+      "ip_rank": 18,
       "cross_platform_count": 1,
       "display_original": "宋雨琦",
       "keyword": "宋雨琦",
       "multi_platform": [],
       "board": "抖音"
+    },
+    {
+      "display_keyword": "小乔",
+      "source_count": 1,
+      "hints": [
+        "小乔联名周边",
+        "小乔手办模型",
+        "小乔限定皮肤"
+      ],
+      "ipCategory": "游戏电竞",
+      "norm_score": 1.4,
+      "matched_value": "小乔",
+      "ips": [
+        "小乔"
+      ],
+      "platform": "xiaohongshu",
+      "platforms": [
+        "xiaohongshu"
+      ],
+      "score": 23,
+      "ip_status": "匹配成功",
+      "matched_values": [
+        "小乔"
+      ],
+      "match_type": "substring_full",
+      "ip_rank": 19,
+      "cross_platform_count": 1,
+      "display_original": "小乔",
+      "keyword": "小乔",
+      "multi_platform": [],
+      "board": "小红书"
+    },
+    {
+      "display_keyword": "王者荣耀",
+      "source_count": 1,
+      "hints": [
+        "王者荣耀联名周边",
+        "王者荣耀手办模型",
+        "王者荣耀限定皮肤"
+      ],
+      "ipCategory": "游戏电竞",
+      "norm_score": 1.4,
+      "matched_value": "王者荣耀",
+      "ips": [
+        "王者荣耀"
+      ],
+      "platform": "xiaohongshu",
+      "platforms": [
+        "xiaohongshu"
+      ],
+      "score": 23,
+      "ip_status": "匹配成功",
+      "matched_values": [
+        "王者荣耀"
+      ],
+      "match_type": "substring_full",
+      "ip_rank": 20,
+      "cross_platform_count": 1,
+      "display_original": "王者荣耀",
+      "keyword": "王者荣耀",
+      "multi_platform": [],
+      "board": "小红书"
+    },
+    {
+      "display_keyword": "兰陵王",
+      "source_count": 1,
+      "hints": [
+        "兰陵王联名周边",
+        "兰陵王手办模型",
+        "兰陵王限定皮肤"
+      ],
+      "ipCategory": "游戏电竞",
+      "norm_score": 1.4,
+      "matched_value": "兰陵王",
+      "ips": [
+        "兰陵王"
+      ],
+      "platform": "xiaohongshu",
+      "platforms": [
+        "xiaohongshu"
+      ],
+      "score": 23,
+      "ip_status": "匹配成功",
+      "matched_values": [
+        "兰陵王"
+      ],
+      "match_type": "substring_full",
+      "ip_rank": 21,
+      "cross_platform_count": 1,
+      "display_original": "兰陵王",
+      "keyword": "兰陵王",
+      "multi_platform": [],
+      "board": "小红书"
     },
     {
       "display_keyword": "唐嫣",
@@ -3112,7 +3670,7 @@
         "唐嫣"
       ],
       "match_type": "substring_full",
-      "ip_rank": 17,
+      "ip_rank": 22,
       "cross_platform_count": 1,
       "display_original": "唐嫣",
       "keyword": "唐嫣",
@@ -3143,7 +3701,7 @@
         "阿基米德"
       ],
       "match_type": "substring_full",
-      "ip_rank": 18,
+      "ip_rank": 23,
       "cross_platform_count": 1,
       "display_original": "阿基米德",
       "keyword": "阿基米德",
@@ -3174,41 +3732,10 @@
         "LPL"
       ],
       "match_type": "substring_full",
-      "ip_rank": 19,
+      "ip_rank": 24,
       "cross_platform_count": 1,
       "display_original": "LPL",
       "keyword": "LPL",
-      "multi_platform": [],
-      "board": "微博"
-    },
-    {
-      "display_keyword": "杨洋",
-      "source_count": 2,
-      "hints": [
-        "杨洋同款穿搭",
-        "杨洋代言品牌",
-        "杨洋私服同款"
-      ],
-      "ipCategory": "明星艺人",
-      "norm_score": 0.4,
-      "matched_value": "杨洋",
-      "ips": [
-        "杨洋"
-      ],
-      "platform": "weibo",
-      "platforms": [
-        "weibo"
-      ],
-      "score": 250508,
-      "ip_status": "匹配成功",
-      "matched_values": [
-        "杨洋"
-      ],
-      "match_type": "substring_full",
-      "ip_rank": 20,
-      "cross_platform_count": 1,
-      "display_original": "杨洋",
-      "keyword": "杨洋",
       "multi_platform": [],
       "board": "微博"
     },
@@ -3236,10 +3763,41 @@
         "马斯克"
       ],
       "match_type": "substring_full",
-      "ip_rank": 21,
+      "ip_rank": 25,
       "cross_platform_count": 1,
       "display_original": "马斯克",
       "keyword": "马斯克",
+      "multi_platform": [],
+      "board": "微博"
+    },
+    {
+      "display_keyword": "杨洋",
+      "source_count": 1,
+      "hints": [
+        "杨洋同款穿搭",
+        "杨洋代言品牌",
+        "杨洋私服同款"
+      ],
+      "ipCategory": "明星艺人",
+      "norm_score": 0.4,
+      "matched_value": "杨洋",
+      "ips": [
+        "杨洋"
+      ],
+      "platform": "weibo",
+      "platforms": [
+        "weibo"
+      ],
+      "score": 250000,
+      "ip_status": "匹配成功",
+      "matched_values": [
+        "杨洋"
+      ],
+      "match_type": "substring_full",
+      "ip_rank": 26,
+      "cross_platform_count": 1,
+      "display_original": "杨洋",
+      "keyword": "杨洋",
       "multi_platform": [],
       "board": "微博"
     },
@@ -3267,7 +3825,7 @@
         "倪妮"
       ],
       "match_type": "substring_full",
-      "ip_rank": 22,
+      "ip_rank": 27,
       "cross_platform_count": 1,
       "display_original": "倪妮",
       "keyword": "倪妮",
@@ -3298,7 +3856,7 @@
         "徐熙娣"
       ],
       "match_type": "substring_full",
-      "ip_rank": 23,
+      "ip_rank": 28,
       "cross_platform_count": 1,
       "display_original": "徐熙娣",
       "keyword": "徐熙娣",
@@ -3329,7 +3887,7 @@
         "古力娜扎"
       ],
       "match_type": "substring_full",
-      "ip_rank": 24,
+      "ip_rank": 29,
       "cross_platform_count": 1,
       "display_original": "古力娜扎",
       "keyword": "古力娜扎",
@@ -3360,7 +3918,7 @@
         "微微一笑很倾城"
       ],
       "match_type": "substring_full",
-      "ip_rank": 25,
+      "ip_rank": 30,
       "cross_platform_count": 1,
       "display_original": "微微一笑很倾城",
       "keyword": "微微一笑很倾城",
@@ -3391,7 +3949,7 @@
         "肖战"
       ],
       "match_type": "substring_full",
-      "ip_rank": 26,
+      "ip_rank": 31,
       "cross_platform_count": 1,
       "display_original": "肖战",
       "keyword": "肖战",
@@ -3422,7 +3980,7 @@
         "中国国际航空"
       ],
       "match_type": "substring_full",
-      "ip_rank": 27,
+      "ip_rank": 32,
       "cross_platform_count": 1,
       "display_original": "中国国际航空",
       "keyword": "中国国际航空",
@@ -3453,7 +4011,7 @@
         "火影忍者"
       ],
       "match_type": "substring_full",
-      "ip_rank": 28,
+      "ip_rank": 33,
       "cross_platform_count": 1,
       "display_original": "火影忍者",
       "keyword": "火影忍者",
@@ -3484,7 +4042,7 @@
         "白鹿"
       ],
       "match_type": "substring_full",
-      "ip_rank": 29,
+      "ip_rank": 34,
       "cross_platform_count": 1,
       "display_original": "白鹿",
       "keyword": "白鹿",
@@ -3515,7 +4073,7 @@
         "九月"
       ],
       "match_type": "substring_full",
-      "ip_rank": 30,
+      "ip_rank": 35,
       "cross_platform_count": 1,
       "display_original": "九月",
       "keyword": "九月",
@@ -3523,33 +4081,33 @@
       "board": "微博"
     },
     {
-      "display_keyword": "莎头",
+      "display_keyword": "成毅",
       "source_count": 1,
       "hints": [
-        "莎头同款穿搭",
-        "莎头代言品牌",
-        "莎头私服同款"
+        "成毅同款穿搭",
+        "成毅代言品牌",
+        "成毅私服同款"
       ],
       "ipCategory": "明星艺人",
       "norm_score": 0,
-      "matched_value": "莎头",
+      "matched_value": "成毅",
       "ips": [
-        "莎头"
+        "成毅"
       ],
       "platform": "xiaohongshu",
       "platforms": [
         "xiaohongshu"
       ],
-      "score": 194,
+      "score": 22,
       "ip_status": "匹配成功",
       "matched_values": [
-        "莎头"
+        "成毅"
       ],
       "match_type": "substring_full",
-      "ip_rank": 31,
+      "ip_rank": 36,
       "cross_platform_count": 1,
-      "display_original": "莎头",
-      "keyword": "莎头",
+      "display_original": "成毅",
+      "keyword": "成毅",
       "multi_platform": [],
       "board": "小红书"
     }
