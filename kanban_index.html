@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IP趋势雷达 · 看板</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #eaf3ff 0%, #ecfbf1 100%);
+    min-height: 100vh; color: #1f2937; padding: 24px 16px; line-height: 1.5;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  .header {
+    background: linear-gradient(135deg, rgba(147,197,253,0.82) 0%, rgba(134,239,172,0.82) 100%);
+    border-radius: 16px; padding: 22px 28px; color: #1f2937; margin-bottom: 20px;
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.14);
+    border: 1px solid rgba(255,255,255,0.7);
+  }
+  .title-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .title { font-size: 30px; font-weight: 700; letter-spacing: 0.5px; color: #0f172a; }
+  .hot-badge {
+    background: #dc2626; color: #ffffff;
+    padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 700;
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.28);
+  }
+  .stats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .chip { background: rgba(255,255,255,0.82); padding: 6px 12px; border-radius: 999px; font-size: 13px; color: #4b5563; display: inline-flex; align-items: center; gap: 6px; }
+  .chip b { font-weight: 700; }
+  .chip.blue { background: #eef4fe; color: #2563eb; }
+  .chip.amber { background: #fef7e6; color: #b45309; }
+  .chip.gray { background: #f5f6f8; color: #4b5563; }
+  .chip.green { background: #ecfdf5; color: #059669; }
+  .chip.purple { background: #f5f3ff; color: #7c3aed; }
+
+  .tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+  .tab { padding: 9px 18px; border-radius: 999px; cursor: pointer; background: #fff; color: #4b5563; font-size: 14px; font-weight: 600; border: 1px solid #e5e7eb; transition: all 0.2s; }
+  .tab:hover { transform: translateY(-1px); }
+  .tab.active.purple { background: #8b5cf6; color: #fff; border-color: #8b5cf6; }
+  .tab.active.blue { background: #3b82f6; color: #fff; border-color: #3b82f6; }
+  .tab.active.green { background: #10b981; color: #fff; border-color: #10b981; }
+  .tab.active.amber { background: #f59e0b; color: #fff; border-color: #f59e0b; }
+
+  .panel { background: #fbfdff; border-radius: 16px; padding: 20px 22px; box-shadow: 0 4px 16px rgba(0,0,0,0.05); animation: fadeIn 0.35s ease-out; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .panel.hidden { display: none; }
+  .panel-title { font-size: 17px; font-weight: 700; margin-bottom: 6px; color: #111827; }
+  .panel-sub { font-size: 12px; color: #6b7280; margin-bottom: 14px; }
+
+  .filters { display: flex; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+  .filter-select {
+    padding: 6px 28px 6px 12px; border-radius: 8px; border: 1px solid #e5e7eb;
+    background: #fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><path d='M2 4l3 3 3-3' stroke='%23666' fill='none' stroke-width='1.4'/></svg>") no-repeat right 10px center;
+    appearance: none; font-size: 13px; color: #374151; cursor: pointer;
+  }
+
+  /* ===== 色块明暗交错 ===== */
+  .lb-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .lb-table th { text-align: left; padding: 10px 8px; color: #6b7280; font-weight: 600; border-bottom: 1px solid #f0f2f5; font-size: 12px; }
+  .lb-table td { padding: 12px 8px; border-bottom: 1px solid #f3f4f6; vertical-align: middle; }
+  .lb-table tr:nth-child(odd) td { background: #ffffff; }
+  .lb-table tr:nth-child(even) td { background: #f8faff; }
+  .lb-table tr:hover td { background: #eef2ff !important; }
+
+  .rank-badge { width: 28px; height: 28px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 13px; }
+  .rank-1 { background: #ef4444; } .rank-2 { background: #8b5cf6; } .rank-3 { background: #3b82f6; }
+  .rank-4 { background: #10b981; } .rank-5 { background: #f59e0b; } .rank-6 { background: #06b6d4; }
+  .rank-7 { background: #ec4899; } .rank-8 { background: #f97316; } .rank-9 { background: #d946ef; }
+  .rank-10 { background: #84cc16; } .rank-else { background: #9ca3af; }
+
+  .kw-main { font-weight: 700; color: #111827; font-size: 14px; }
+  .kw-sub { color: #9ca3af; font-size: 12px; margin-top: 2px; }
+  .kw-hit { color: #6b7280; font-size: 11px; margin-top: 2px; }
+
+  .status-pill { padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 600; display: inline-block; }
+  .status-matched { background: #d1fae5; color: #065f46; }
+  .status-review { background: #fef3c7; color: #92400e; }
+  .status-new { background: #dbeafe; color: #1e40af; }
+
+  .cat-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 5px; vertical-align: middle; }
+  .cat-明星 { background: #ec4899; }
+  .cat-潮玩手办, .cat-潮玩 { background: #8b5cf6; }
+  .cat-影视综 { background: #f59e0b; }
+  .cat-游戏电竞, .cat-游戏 { background: #10b981; }
+  .cat-品牌 { background: #06b6d4; }
+  .cat-体育 { background: #f97316; }
+  .cat-动漫二次元 { background: #d946ef; }
+  .cat-文娱其他 { background: #6b7280; }
+
+  .hints { max-height: 56px; overflow: hidden; position: relative; }
+  .hints.scroll .hint-list { animation: marquee 14s linear infinite; }
+  .hint-list { display: flex; flex-direction: column; gap: 3px; }
+  .hints:hover .hint-list { animation-play-state: paused; }
+  .hint-pill { padding: 1px 7px; border-radius: 6px; font-size: 11px; display: inline-block; }
+  .hint-blue { background: #dbeafe; color: #1e40af; }
+  .hint-orange { background: #ffedd5; color: #9a3412; }
+  .hint-green { background: #d1fae5; color: #065f46; }
+  .hint-purple { background: #ede9fe; color: #5b21b6; }
+  .hints::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 14px; background: linear-gradient(transparent, #fbfdff); }
+  @keyframes marquee { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+
+  .subtabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+  .subtab { background: #1f2937; color: #fff; padding: 5px 12px; border-radius: 999px; font-size: 12px; cursor: pointer; }
+  .subtab .count { opacity: 0.7; margin-left: 4px; }
+  .subtab:hover { background: #374151; }
+  .subtab.active { background: #3b82f6; }
+
+  .cal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+  .cal-card { background: linear-gradient(135deg, #ecfbf1 0%, #f0fdf4 100%); border-left: 3px solid #10b981; border-radius: 10px; padding: 12px 14px; }
+  .cal-date-badge { display: inline-block; background: #10b981; color: #fff; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; margin-bottom: 8px; }
+  .cal-events { font-size: 13px; color: #374151; }
+  .cal-event { margin: 4px 0; }
+
+  .item-count { font-size: 12px; color: #6b7280; margin-bottom: 12px; }
+
+  .loading-mask { position: fixed; inset: 0; background: rgba(255,255,255,0.85); display: flex; align-items: center; justify-content: center; z-index: 999; }
+  .loading-mask.hidden { display: none; }
+  .spinner { width: 36px; height: 36px; border: 3px solid #e5e7eb; border-top-color: #3b82f6; border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .error-banner { position: fixed; top: 16px; right: 16px; background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; padding: 14px 18px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); z-index: 1000; max-width: 400px; display: none; }
+  .error-banner.show { display: block; }
+  .error-banner .close-btn { position: absolute; top: 8px; right: 10px; cursor: pointer; color: #9ca3af; font-size: 16px; }
+  .error-banner .close-btn:hover { color: #374151; }
+
+  @media (max-width: 640px) {
+    body { padding: 12px 8px; }
+    .header { padding: 18px 18px; }
+    .title { font-size: 24px; }
+    .panel { padding: 14px 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="title-row">
+      <span class="title">IP热点榜单</span>
+      <span class="hot-badge">🔥 HOT</span>
+    </div>
+    <div class="stats">
+      <span class="chip blue">新词 <b id="stat-new">—</b></span>
+      <span class="chip amber">需审核 <b id="stat-review">—</b></span>
+      <span class="chip green">IP相关 <b id="stat-ip">—</b></span>
+      <span class="chip purple">总采集 <b id="stat-total">—</b></span>
+      <span class="chip gray">🕐 更新于 <b id="stat-time">—</b></span>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab purple active" data-tab="leaderboard">🏆 IP榜单</div>
+    <div class="tab blue" data-tab="platform">📊 平台明细</div>
+    <div class="tab green" data-tab="calendar">📅 热点日历</div>
+    <div class="tab amber" data-tab="hints">💡 联想词条</div>
+  </div>
+
+  <div class="panel" id="panel-leaderboard">
+    <div class="panel-sub">仅展示与 IP 相关的热度词 · Top 50</div>
+    <div class="filters">
+      <select class="filter-select" id="filter-status">
+        <option value="">全部状态</option>
+        <option value="匹配成功">匹配成功</option>
+        <option value="需审核">需审核</option>
+        <option value="新value">新词</option>
+      </select>
+      <select class="filter-select" id="filter-cat"></select>
+    </div>
+    <table class="lb-table" id="lb-table">
+      <thead>
+        <tr>
+          <th style="width:44px">排名</th><th>关键词 / 原热搜词</th><th>分类</th><th>联想词条</th>
+        </tr>
+      </thead>
+      <tbody id="lb-body"></tbody>
+    </table>
+  </div>
+
+  <div class="panel hidden" id="panel-platform">
+    <div class="panel-sub">各平台热词榜（含非 IP 条目）· Top 60</div>
+    <div class="subtabs" id="subtabs"></div>
+    <table class="lb-table">
+      <thead><tr><th style="width:44px">排名</th><th>关键词</th><th>状态</th><th>联想词条</th></tr></thead>
+      <tbody id="platform-body"></tbody>
+    </table>
+  </div>
+
+  <div class="panel hidden" id="panel-calendar">
+    <div class="panel-sub">近期热点日历 · 节日/节气/颁奖预告</div>
+    <div class="item-count" id="cal-count"></div>
+    <div class="cal-grid" id="cal-grid"></div>
+  </div>
+
+  <div class="panel hidden" id="panel-hints">
+    <div class="panel-sub">联想词条（上一层购买需求品类）按类目落地汇总</div>
+    <div id="hints-content"></div>
+  </div>
+</div>
+
+<div class="loading-mask" id="loading-mask">
+  <div style="text-align:center"><div class="spinner" style="margin:0 auto 12px"></div><div style="color:#6b7280;font-size:14px">加载看板数据...</div></div>
+</div>
+
+<div class="error-banner" id="error-banner">
+  <span class="close-btn" onclick="document.getElementById('error-banner').classList.remove('show')">&times;</span>
+  <div style="font-weight:600;margin-bottom:4px">数据加载失败</div>
+  <div id="error-msg" style="font-size:13px"></div>
+  <button onclick="window._retryDashboard()" style="margin-top:8px;padding:4px 14px;border-radius:8px;border:1px solid #fecaca;background:#fff;color:#991b1b;font-size:12px;cursor:pointer">重试</button>
+</div>
+
+<script>
+/* ===== 常量 ===== */
+const PLATFORM_LABELS = {
+  weibo: "微博", douyin: "抖音", history: "历史上的今天", official: "官网合集",
+  kuaishou: "快手", xiaohongshu: "小红书", weixin: "微信", baidu: "百度",
+  tophub: "TopHub", wikipedia: "Wiki", other: "其他/未标注"
+};
+const STATUS = {
+  "匹配成功": { cls: "status-matched", label: "匹配成功" },
+  "需审核": { cls: "status-review", label: "需审核" },
+  "新value": { cls: "status-new", label: "新词" },
+  "review": { cls: "status-review", label: "需审核" },
+  "new": { cls: "status-new", label: "新词" }
+};
+const CAT_ORDER = ["明星","明星艺人","潮玩手办","影视综","游戏电竞","游戏","品牌","体育","动漫二次元","文娱其他"];
+const HINT_COLORS = ["hint-blue", "hint-orange", "hint-green", "hint-purple"];
+
+function rankClass(r) { return r <= 10 ? "rank-" + r : "rank-else"; }
+function heatScore(it) { return Number(it.norm_score || it.score || 0); }
+function escHtml(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+/* ===== 数据加载 ===== */
+const BASE_URL = (typeof window !== 'undefined' && window.IP_RADAR_DATA_BASE_URL) || '';
+function dataUrl(name) { return BASE_URL ? (BASE_URL.replace(/\/+$/, '') + '/' + name) : ('./' + name); }
+
+async function fetchJSON(name, retries) {
+  retries = retries || 3;
+  const url = dataUrl(name);
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const resp = await fetch(url, { cache: 'no-cache' });
+      if (!resp.ok) throw new Error(name + ': HTTP ' + resp.status);
+      return await resp.json();
+    } catch (err) {
+      if (attempt < retries) {
+        await new Promise(r => setTimeout(r, attempt * 1500));
+      } else {
+        throw new Error(name + ' 加载失败(' + retries + '次重试): ' + err.message);
+      }
+    }
+  }
+}
+
+let PAYLOAD = null;
+let CAL_INDEX = null;
+let HINTS_DATA = null;
+
+async function loadAll() {
+  const [data, cal, hints] = await Promise.all([
+    fetchJSON('data.json'),
+    fetchJSON('calendar_index.json').catch(() => null),
+    fetchJSON('hints.json').catch(() => null)
+  ]);
+  PAYLOAD = data;
+  CAL_INDEX = cal;
+  HINTS_DATA = hints;
+}
+
+/* ===== 渲染 ===== */
+function renderHintsPills(hints) {
+  if (!hints || !hints.length) return '<span class="kw-sub">—</span>';
+  const pills = hints.map((h, i) => '<span class="hint-pill ' + HINT_COLORS[i % HINT_COLORS.length] + '">' + escHtml(h) + '</span>').join("");
+  const needScroll = hints.length >= 3;
+  return '<div class="hints ' + (needScroll ? 'scroll' : '') + '"><div class="hint-list">' + pills + (needScroll ? pills : '') + '</div></div>';
+}
+
+function renderHeader() {
+  const s = PAYLOAD.summary || {};
+  document.getElementById('stat-new').textContent = s.newValues || 0;
+  document.getElementById('stat-review').textContent = s.reviewNeeded || 0;
+  document.getElementById('stat-ip').textContent = s.ipCount || 0;
+  document.getElementById('stat-total').textContent = s.total || 0;
+  document.getElementById('stat-time').textContent = PAYLOAD.generatedAt || s.generatedAt || "—";
+}
+
+function buildCatFilter(items) {
+  const cats = new Set();
+  items.forEach(it => { if (it.ipCategory) cats.add(it.ipCategory); });
+  const sel = document.getElementById('filter-cat');
+  const cur = sel.value;
+  sel.innerHTML = '<option value="">全部分类</option>' +
+    CAT_ORDER.filter(c => cats.has(c)).concat([...cats].filter(c => !CAT_ORDER.includes(c)))
+      .map(c => '<option value="' + c + '">' + c + '</option>').join('');
+  if (cur) sel.value = cur;
+}
+
+function renderLeaderboard() {
+  const items = (PAYLOAD.ipBoard && PAYLOAD.ipBoard.items) || [];
+  buildCatFilter(items);
+  const statusF = document.getElementById('filter-status').value;
+  const catF = document.getElementById('filter-cat').value;
+  const rows = items.filter(it =>
+    (!statusF || it.ip_status === statusF) && (!catF || it.ipCategory === catF)
+  );
+  const body = document.getElementById('lb-body');
+  if (!rows.length) { body.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#9ca3af;padding:30px">无匹配数据</td></tr>'; return; }
+  body.innerHTML = rows.map((d, i) => {
+    const rank = d.ip_rank || d.rank || (i + 1);
+    return '<tr>' +
+      '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
+      '<td>' +
+        '<div class="kw-main">' + escHtml(d.display_keyword || d.keyword) + '</div>' +
+        '<div class="kw-sub">' + escHtml(d.display_original || d.keyword) + '</div>' +
+      '</td>' +
+      '<td><span class="cat-dot cat-' + (d.ipCategory || '文娱其他') + '"></span>' + (d.ipCategory || '—') + '</td>' +
+      '<td>' + renderHintsPills(d.hints) + '</td>' +
+    '</tr>';
+  }).join("");
+}
+
+function renderSubtabs() {
+  const boards = PAYLOAD.platformBoards || {};
+  const subtabs = document.getElementById('subtabs');
+  const entries = Object.entries(boards).sort((a, b) => b[1].count - a[1].count);
+  subtabs.innerHTML = entries.map(([p, b]) =>
+    '<div class="subtab" data-platform="' + p + '">' + (b.title || PLATFORM_LABELS[p] || p) + '<span class="count">' + b.count + '</span></div>'
+  ).join('');
+  const tabs = subtabs.querySelectorAll('.subtab');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    renderPlatform(t.dataset.platform);
+  }));
+  if (tabs[0]) { tabs[0].classList.add('active'); renderPlatform(tabs[0].dataset.platform); }
+}
+
+function renderPlatform(platform) {
+  const board = (PAYLOAD.platformBoards || {})[platform];
+  const body = document.getElementById('platform-body');
+  if (!board || !board.items || !board.items.length) { body.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#9ca3af;padding:30px">无数据</td></tr>'; return; }
+  const items = board.items;
+  body.innerHTML = items.map((d, i) => {
+    const st = STATUS[d.ip_status] || { cls: "status-review", label: d.ip_status || "—" };
+    return '<tr>' +
+      '<td><span class="rank-badge rank-else">' + (i+1) + '</span></td>' +
+      '<td><div class="kw-main">' + escHtml(d.display_keyword || d.keyword) + '</div><div class="kw-sub">' + escHtml(d.display_original || d.keyword) + '</div></td>' +
+      '<td><span class="status-pill ' + st.cls + '">' + st.label + '</span></td>' +
+      '<td>' + renderHintsPills(d.hints) + '</td>' +
+    '</tr>';
+  }).join('');
+}
+
+function renderCalendar() {
+  let items = [];
+  if (CAL_INDEX) {
+    const entries = Object.entries(CAL_INDEX);
+    entries.forEach(([date, evts]) => {
+      (evts || []).forEach(e => items.push(e));
+    });
+  } else if (PAYLOAD.hotCalendar && PAYLOAD.hotCalendar.items) {
+    items = PAYLOAD.hotCalendar.items;
+  }
+  document.getElementById('cal-count').textContent = '共 ' + items.length + ' 条日历预告';
+  const grid = document.getElementById('cal-grid');
+  if (!items.length) { grid.innerHTML = '<div style="color:#9ca3af;padding:20px;text-align:center">暂无日历数据</div>'; return; }
+  grid.innerHTML = items.map(c => {
+    const catCls = c.category === '节气' ? 'background:#06b6d4' : c.category === '农历节日' ? 'background:#ec4899' : c.category === '颁奖典礼' ? 'background:#8b5cf6' : 'background:#10b981';
+    return '<div class="cal-card">' +
+      '<div class="cal-date-badge" style="' + catCls + '">' + (c.month && c.day ? c.month + '月' + c.day + '日' : (c.year || '预告')) + '</div>' +
+      '<div class="cal-events"><div class="cal-event">• ' + escHtml(c.text || '') + '</div></div>' +
+    '</div>';
+  }).join('');
+}
+
+function renderHintsPanel() {
+  const container = document.getElementById('hints-content');
+  if (!HINTS_DATA || !HINTS_DATA.byCategory) {
+    container.innerHTML = '<div style="color:#9ca3af;padding:20px;text-align:center">暂无联想词条数据</div>';
+    return;
+  }
+  const byCat = HINTS_DATA.byCategory;
+  const catColors = { '明星艺人': '#ec4899', '潮玩手办': '#8b5cf6', '影视综': '#f59e0b', '游戏电竞': '#10b981', '动漫二次元': '#d946ef', '品牌': '#06b6d4', '文娱其他': '#6b7280' };
+  let html = '';
+  for (const [cat, items] of Object.entries(byCat)) {
+    const color = catColors[cat] || '#6b7280';
+    const withHints = items.filter(it => it.hints && it.hints.length > 0);
+    const withoutHints = items.filter(it => !it.hints || !it.hints.length);
+    html += '<div style="margin-bottom:20px">';
+    html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">';
+    html += '<span style="width:10px;height:10px;border-radius:50%;background:' + color + ';display:inline-block"></span>';
+    html += '<span style="font-weight:700;font-size:15px;color:#1f2937">' + escHtml(cat) + '</span>';
+    html += '<span style="font-size:12px;color:#9ca3af">' + items.length + '条' + (withHints.length > 0 ? ' · ' + withHints.length + '条有联想' : '') + '</span>';
+    html += '</div>';
+    if (withHints.length > 0) {
+      html += '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-bottom:8px">';
+      withHints.forEach(it => {
+        html += '<div style="background:#f9fafb;border-radius:10px;padding:10px 12px;border:1px solid #f3f4f6">';
+        html += '<div style="font-weight:600;font-size:13px;color:#1f2937;margin-bottom:4px">' + escHtml(it.matched_value || it.keyword) + '</div>';
+        html += '<div style="display:flex;flex-wrap:wrap;gap:4px">';
+        it.hints.forEach((h, i) => {
+          html += '<span class="hint-pill ' + HINT_COLORS[i % HINT_COLORS.length] + '">' + escHtml(h) + '</span>';
+        });
+        html += '</div></div>';
+      });
+      html += '</div>';
+    }
+    if (withoutHints.length > 0) {
+      html += '<div style="font-size:12px;color:#9ca3af;margin-top:4px">无联想: ' + withoutHints.map(it => escHtml(it.matched_value || it.keyword)).join('、') + '</div>';
+    }
+    html += '</div>';
+  }
+  container.innerHTML = html;
+}
+
+/* ===== Tab 切换 ===== */
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const t = tab.dataset.tab;
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    tab.classList.add('active');
+    document.querySelectorAll('.panel').forEach(p => p.classList.add('hidden'));
+    document.getElementById('panel-' + t).classList.remove('hidden');
+  });
+});
+
+document.getElementById('filter-status').addEventListener('change', renderLeaderboard);
+document.getElementById('filter-cat').addEventListener('change', renderLeaderboard);
+
+/* ===== 启动 ===== */
+async function init() {
+  try {
+    await loadAll();
+    document.getElementById('loading-mask').classList.add('hidden');
+    renderHeader();
+    renderLeaderboard();
+    renderSubtabs();
+    renderCalendar();
+    renderHintsPanel();
+  } catch (err) {
+    document.getElementById('loading-mask').classList.add('hidden');
+    document.getElementById('error-msg').textContent = err.message;
+    document.getElementById('error-banner').classList.add('show');
+    console.error('Dashboard load failed:', err);
+  }
+  window._retryDashboard = function() {
+    document.getElementById('error-banner').classList.remove('show');
+    document.getElementById('loading-mask').classList.remove('hidden');
+    init();
+  };
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
