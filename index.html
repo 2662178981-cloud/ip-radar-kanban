@@ -155,7 +155,7 @@
 <div class="container">
   <div class="header">
     <div class="title-row">
-      <span class="title">IP热点榜单</span>
+      <span class="title">热点榜单</span>
       <span class="hot-badge">🔥 HOT</span>
     </div>
     <div class="stats">
@@ -166,14 +166,18 @@
   </div>
 
   <div class="tabs">
-    <div class="tab purple active" data-tab="leaderboard">🏆 IP榜单</div>
+    <div class="tab purple active" data-tab="leaderboard">🏆 泛IP</div>
     <div class="tab blue" data-tab="platform">📊 平台明细</div>
     <div class="tab green" data-tab="calendar">📅 热点日历</div>
     <div class="tab red" data-tab="snapshot">📸 趋势快照</div>
   </div>
 
   <div class="panel" id="panel-leaderboard">
-    <div class="panel-sub">仅展示与 IP 相关的热度词</div>
+    <div class="panel-sub">被识别为 IP 的热度词（含新词/需审核）</div>
+    <div class="subtabs" id="lb-subtabs">
+      <div class="subtab active" data-lb="ip">泛IP</div>
+      <div class="subtab" data-lb="trend">流行趋势</div>
+    </div>
     <div class="filters">
       <select class="filter-select" id="filter-status">
         <option value="">全部状态</option>
@@ -275,6 +279,7 @@ async function fetchJSON(name, retries) {
 
 let PAYLOAD = null;
 let CAL_INDEX = null;
+let LB_MODE = 'ip';  // 泛IP / 流行趋势 子tab当前模式
 let HINTS_DATA = null;
 let SNAPSHOTS = null;
 
@@ -318,6 +323,8 @@ function buildCatFilter(items) {
 }
 
 function renderLeaderboard() {
+  // 泛IP子tab：ipBoard；流行趋势子tab：trendBoard
+  if (LB_MODE === 'trend') { renderTrend(); return; }
   const items = (PAYLOAD.ipBoard && PAYLOAD.ipBoard.items) || [];
   buildCatFilter(items);
   const statusF = document.getElementById('filter-status').value;
@@ -339,6 +346,29 @@ function renderLeaderboard() {
       '<td>' + renderHintsPills(d.hints, d.display_original || d.keyword) + '</td>' +
     '</tr>';
   }).join("");
+}
+
+
+function renderTrend() {
+  const body = document.getElementById('lb-body');
+  const items = (PAYLOAD.trendBoard && PAYLOAD.trendBoard.items) || [];
+  if (!items.length) {
+    body.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#9ca3af;padding:30px">暂无流行趋势数据（服饰穿搭/美妆护肤/流行元素）</td></tr>';
+    return;
+  }
+  body.innerHTML = items.map((d, i) => {
+    const rank = d.trend_rank || d.rank || (i + 1);
+    const cat = d.trendCategory || d.ipCategory || '流行元素';
+    return '<tr>' +
+      '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
+      '<td>' +
+        '<div class="kw-main">' + escHtml(d.display_original || d.keyword) + '</div>' +
+        '<div class="kw-sub">' + escHtml(d.display_keyword || d.trend_word || d.keyword) + '</div>' +
+      '</td>' +
+      '<td><span class="cat-dot cat-' + escHtml(cat) + '"></span>' + escHtml(cat) + '</td>' +
+      '<td>' + renderHintsPills(d.hints, d.display_original || d.keyword) + '</td>' +
+    '</tr>';
+  }).join('');
 }
 
 function renderSubtabs() {
@@ -449,6 +479,20 @@ function renderSnapshot() {
   container.innerHTML = '<div class="snapshot-empty">暂无快照数据</div>';
 }
 
+
+/* ===== 泛IP/流行趋势 子tab切换 ===== */
+function bindLbSubtabs() {
+  const st = document.getElementById('lb-subtabs');
+  if (!st) return;
+  const tabs = st.querySelectorAll('.subtab');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    LB_MODE = t.dataset.lb || 'ip';
+    renderLeaderboard();
+  }));
+}
+
 /* ===== Tab 切换 ===== */
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
@@ -477,6 +521,7 @@ async function init() {
     document.getElementById('loading-mask').classList.add('hidden');
     renderHeader();
     renderLeaderboard();
+    bindLbSubtabs();
     renderSubtabs();
     renderCalendar();
     renderSnapshot();
