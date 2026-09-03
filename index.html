@@ -161,8 +161,6 @@
     <div class="stats">
       <span class="chip blue">新词 <b id="stat-new">—</b></span>
       <span class="chip amber">需审核 <b id="stat-review">—</b></span>
-      <span class="chip green">IP相关 <b id="stat-ip">—</b></span>
-      <span class="chip purple">总采集 <b id="stat-total">—</b></span>
       <span class="chip gray">🕐 更新于 <b id="stat-time">—</b></span>
     </div>
   </div>
@@ -175,7 +173,7 @@
   </div>
 
   <div class="panel" id="panel-leaderboard">
-    <div class="panel-sub">仅展示与 IP 相关的热度词 · Top 50</div>
+    <div class="panel-sub">仅展示与 IP 相关的热度词</div>
     <div class="filters">
       <select class="filter-select" id="filter-status">
         <option value="">全部状态</option>
@@ -196,7 +194,7 @@
   </div>
 
   <div class="panel hidden" id="panel-platform">
-    <div class="panel-sub">各平台热词榜（含非 IP 条目）· Top 60</div>
+    <div class="panel-sub">各平台热词榜（含非 IP 条目）</div>
     <div class="subtabs" id="subtabs"></div>
     <table class="lb-table">
       <thead><tr><th style="width:40px">排名</th><th>原热搜词 / IP名</th><th>状态</th><th>联想词条</th></tr></thead>
@@ -212,6 +210,11 @@
 
   <div class="panel hidden" id="panel-snapshot">
     <div class="panel-sub">历史每日IP热点快照 · 保留过去7天数据</div>
+    <div class="filters" style="margin-bottom:10px">
+      <input type="date" id="snapshot-date" class="filter-select" style="padding:5px 8px" placeholder="按日期筛选">
+      <input type="text" id="snapshot-kw" class="filter-select" style="padding:5px 8px;width:180px" placeholder="按关键词搜索">
+      <button id="snapshot-clear" class="filter-select" style="padding:5px 12px;cursor:pointer;background:#fff;border:1px solid #e5e7eb;border-radius:8px;font-size:12px">清除</button>
+    </div>
     <div id="snapshot-content"></div>
   </div>
 </div>
@@ -300,8 +303,6 @@ function renderHeader() {
   const s = PAYLOAD.summary || {};
   document.getElementById('stat-new').textContent = s.newValues || 0;
   document.getElementById('stat-review').textContent = s.reviewNeeded || 0;
-  document.getElementById('stat-ip').textContent = s.ipCount || 0;
-  document.getElementById('stat-total').textContent = s.total || 0;
   document.getElementById('stat-time').textContent = PAYLOAD.generatedAt || s.generatedAt || "—";
 }
 
@@ -335,7 +336,7 @@ function renderLeaderboard() {
         '<div class="kw-sub">' + escHtml(d.display_keyword || d.ip_name || d.keyword) + '</div>' +
       '</td>' +
       '<td><span class="cat-dot cat-' + (d.ipCategory || '文娱其他') + '"></span>' + (d.ipCategory || '—') + '</td>' +
-      '<td>' + renderHintsPills(d.hints) + '</td>' +
+      '<td>' + renderHintsPills(d.hints, d.display_original || d.keyword) + '</td>' +
     '</tr>';
   }).join("");
 }
@@ -367,7 +368,7 @@ function renderPlatform(platform) {
       '<td><span class="rank-badge rank-else">' + (i+1) + '</span></td>' +
       '<td><div class="kw-main">' + escHtml(d.display_original || d.keyword) + '</div><div class="kw-sub">' + escHtml(d.display_keyword || d.ip_name || d.keyword) + '</div></td>' +
       '<td><span class="status-pill ' + st.cls + '">' + st.label + '</span></td>' +
-      '<td>' + renderHintsPills(d.hints) + '</td>' +
+      '<td>' + renderHintsPills(d.hints, d.display_original || d.keyword) + '</td>' +
     '</tr>';
   }).join('');
 }
@@ -461,6 +462,13 @@ document.querySelectorAll('.tab').forEach(tab => {
 
 document.getElementById('filter-status').addEventListener('change', renderLeaderboard);
 document.getElementById('filter-cat').addEventListener('change', renderLeaderboard);
+document.getElementById('snapshot-date').addEventListener('change', renderSnapshot);
+document.getElementById('snapshot-kw').addEventListener('input', renderSnapshot);
+document.getElementById('snapshot-clear').addEventListener('click', function() {
+  document.getElementById('snapshot-date').value = '';
+  document.getElementById('snapshot-kw').value = '';
+  renderSnapshot();
+});
 
 /* ===== 启动 ===== */
 async function init() {
