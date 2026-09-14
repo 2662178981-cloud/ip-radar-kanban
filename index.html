@@ -73,6 +73,7 @@
   .kw-main { font-weight: 700; color: #111827; font-size: 13px; }
   .kw-sub { color: #9ca3af; font-size: 11px; margin-top: 1px; }
   .kw-hit { color: #6b7280; font-size: 11px; margin-top: 2px; }
+  .src-pill { display: inline-block; padding: 1px 6px; border-radius: 5px; font-size: 10px; background: #f3f4f6; color: #4b5563; margin-right: 3px; }
 
   .status-pill { padding: 2px 8px; border-radius: 999px; font-size: 10px; font-weight: 600; display: inline-block; }
   .status-matched { background: #d1fae5; color: #065f46; }
@@ -190,7 +191,7 @@
     <table class="lb-table" id="lb-table">
       <thead>
         <tr>
-          <th style="width:40px">排名</th><th>原热搜词 / IP名</th><th>分类</th><th>联想词条</th>
+          <th style="width:40px">排名</th><th>原热搜词 / IP名</th><th>分类</th><th>来源</th><th>联想词条</th>
         </tr>
       </thead>
       <tbody id="lb-body"></tbody>
@@ -201,7 +202,7 @@
     <div class="panel-sub">各平台热词榜（含非 IP 条目）</div>
     <div class="subtabs" id="subtabs"></div>
     <table class="lb-table">
-      <thead><tr><th style="width:40px">排名</th><th>原热搜词 / IP名</th><th>状态</th><th>联想词条</th></tr></thead>
+      <thead><tr><th style="width:40px">排名</th><th>原热搜词 / IP名</th><th>状态</th><th>来源</th><th>联想词条</th></tr></thead>
       <tbody id="platform-body"></tbody>
     </table>
   </div>
@@ -297,6 +298,13 @@ async function loadAll() {
 }
 
 /* ===== 渲染 ===== */
+function platformLabel(p) { return PLATFORM_LABELS[p] || p || ''; }
+function platformTags(it) {
+  const ps = it.platforms || (it.platform ? [it.platform] : []);
+  if (!ps.length) return '<span class="kw-sub">—</span>';
+  return ps.map(p => '<span class="src-pill">' + escHtml(platformLabel(p)) + '</span>').join('');
+}
+
 function renderHintsPills(hints) {
   if (!hints || !hints.length) return '<span class="kw-sub">—</span>';
   const pills = hints.map((h, i) => '<span class="hint-pill ' + HINT_COLORS[i % HINT_COLORS.length] + '">' + escHtml(h) + '</span>').join("");
@@ -333,16 +341,17 @@ function renderLeaderboard() {
     (!statusF || it.ip_status === statusF) && (!catF || it.ipCategory === catF)
   );
   const body = document.getElementById('lb-body');
-  if (!rows.length) { body.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#9ca3af;padding:30px">无匹配数据</td></tr>'; return; }
+  if (!rows.length) { body.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#9ca3af;padding:30px">无匹配数据</td></tr>'; return; }
   body.innerHTML = rows.map((d, i) => {
     const rank = d.ip_rank || d.rank || (i + 1);
     return '<tr>' +
       '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
       '<td>' +
-        '<div class="kw-main">' + escHtml(d.display_original || d.keyword) + '</div>' +
-        '<div class="kw-sub">' + escHtml(d.display_keyword || d.ip_name || d.keyword) + '</div>' +
+        '<div class="kw-main">' + escHtml(d.display_keyword || d.ip_name || d.keyword) + '</div>' +
+        '<div class="kw-sub">' + escHtml(d.display_original || d.keyword) + '</div>' +
       '</td>' +
       '<td><span class="cat-dot cat-' + (d.ipCategory || '文娱其他') + '"></span>' + (d.ipCategory || '—') + '</td>' +
+      '<td>' + platformTags(d) + '</td>' +
       '<td>' + renderHintsPills(d.hints, d.display_original || d.keyword) + '</td>' +
     '</tr>';
   }).join("");
@@ -353,7 +362,7 @@ function renderTrend() {
   const body = document.getElementById('lb-body');
   const items = (PAYLOAD.trendBoard && PAYLOAD.trendBoard.items) || [];
   if (!items.length) {
-    body.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#9ca3af;padding:30px">暂无流行趋势数据（服饰穿搭/美妆护肤/流行元素）</td></tr>';
+    body.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#9ca3af;padding:30px">暂无流行趋势数据（服饰穿搭/美妆护肤/流行元素）</td></tr>';
     return;
   }
   body.innerHTML = items.map((d, i) => {
@@ -362,10 +371,11 @@ function renderTrend() {
     return '<tr>' +
       '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
       '<td>' +
-        '<div class="kw-main">' + escHtml(d.display_original || d.keyword) + '</div>' +
-        '<div class="kw-sub">' + escHtml(d.display_keyword || d.trend_word || d.keyword) + '</div>' +
+        '<div class="kw-main">' + escHtml(d.display_keyword || d.trend_word || d.keyword) + '</div>' +
+        '<div class="kw-sub">' + escHtml(d.display_original || d.keyword) + '</div>' +
       '</td>' +
       '<td><span class="cat-dot cat-' + escHtml(cat) + '"></span>' + escHtml(cat) + '</td>' +
+      '<td>' + platformTags(d) + '</td>' +
       '<td>' + renderHintsPills(d.hints, d.display_original || d.keyword) + '</td>' +
     '</tr>';
   }).join('');
@@ -390,14 +400,15 @@ function renderSubtabs() {
 function renderPlatform(platform) {
   const board = (PAYLOAD.platformBoards || {})[platform];
   const body = document.getElementById('platform-body');
-  if (!board || !board.items || !board.items.length) { body.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#9ca3af;padding:30px">无数据</td></tr>'; return; }
+  if (!board || !board.items || !board.items.length) { body.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#9ca3af;padding:30px">无数据</td></tr>'; return; }
   const items = board.items;
   body.innerHTML = items.map((d, i) => {
     const st = STATUS[d.ip_status] || { cls: "status-review", label: d.ip_status || "—" };
     return '<tr>' +
       '<td><span class="rank-badge rank-else">' + (i+1) + '</span></td>' +
-      '<td><div class="kw-main">' + escHtml(d.display_original || d.keyword) + '</div><div class="kw-sub">' + escHtml(d.display_keyword || d.ip_name || d.keyword) + '</div></td>' +
+      '<td><div class="kw-main">' + escHtml(d.display_keyword || d.ip_name || d.keyword) + '</div><div class="kw-sub">' + escHtml(d.display_original || d.keyword) + '</div></td>' +
       '<td><span class="status-pill ' + st.cls + '">' + st.label + '</span></td>' +
+      '<td>' + platformTags(d) + '</td>' +
       '<td>' + renderHintsPills(d.hints, d.display_original || d.keyword) + '</td>' +
     '</tr>';
   }).join('');
@@ -422,6 +433,7 @@ function renderCalendar() {
     let badgeStyle = 'background:#10b981';
     if (c.category === '节气') { badgeStyle = 'background:#06b6d4'; }
     else if (c.category === '农历节日') { badgeStyle = 'background:#ec4899'; }
+    else if (c.category === '公历节日') { badgeStyle = 'background:#ef4444'; }
     else if (c.category === '颁奖典礼') { badgeStyle = 'background:#8b5cf6'; }
     else if (c.category === '泡泡玛特' || c.category === 'popmart' || c.category === '新品') { cardCls = 'cal-card popmart'; badgeStyle = 'background:#f59e0b'; }
     else if (c.category === '电影' || c.category === 'movie' || c.category === '上映') { cardCls = 'cal-card movie'; badgeStyle = 'background:#8b5cf6'; }
