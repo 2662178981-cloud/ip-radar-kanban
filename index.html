@@ -122,6 +122,19 @@
   /* 电影上映日历 */
   .cal-card.movie { background: linear-gradient(135deg, #ede9fe 0%, #f5f3ff 100%); border-left-color: #8b5cf6; }
   .cal-card.movie .cal-date-badge { background: #8b5cf6; }
+  /* 系列款名：可点开的卡片 */
+  .cal-card.clickable { cursor: pointer; }
+  .cal-card.clickable:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.09); }
+  .cal-more { font-size: 10px; color: #6b7280; margin-top: 5px; }
+  .cal-more .arrow { display: inline-block; transition: transform .18s; }
+  .cal-card.open .cal-more .arrow { transform: rotate(90deg); }
+  .cal-variants { display: none; margin-top: 8px; padding-top: 8px; border-top: 1px dashed rgba(0,0,0,0.14); }
+  .cal-card.open .cal-variants { display: block; }
+  .cal-var { font-size: 11px; color: #374151; line-height: 1.75; word-break: break-word; }
+  .cal-var.secret { color: #b45309; font-weight: 600; }
+  .cal-copy { margin-top: 7px; padding: 3px 10px; border-radius: 6px; border: 1px solid rgba(0,0,0,0.14);
+    background: rgba(255,255,255,0.85); font-size: 10px; cursor: pointer; font-family: inherit; color: #374151; }
+  .cal-copy:hover { background: #fff; }
 
   .item-count { font-size: 11px; color: #6b7280; margin-bottom: 10px; }
 
@@ -213,12 +226,6 @@
   <div class="panel hidden" id="panel-calendar">
     <div class="panel-sub">近期热点日历 · 节日/节气/颁奖/新品/上映</div>
     <div class="filters" style="margin-bottom:10px">
-      <select class="filter-select" id="filter-cal-group">
-        <option value="">全部大类</option>
-        <option value="节日">节日</option>
-        <option value="影视">影视</option>
-        <option value="潮玩">潮玩</option>
-      </select>
       <select class="filter-select" id="filter-cal-type"></select>
     </div>
     <div class="item-count" id="cal-count"></div>
@@ -584,14 +591,6 @@ function calTypeOf(c) {
   if (t === 'movie' || t === '上映') return '电影';
   return t;
 }
-/* 日历大类：把具体类型归到「节日 / 影视 / 潮玩」三个维度 */
-function calGroupOf(c) {
-  const t = calTypeOf(c);
-  if (t === '公历节日' || t === '农历节日' || t === '节气') return '节日';
-  if (t === '电影') return '影视';
-  if (t === '泡泡玛特') return '潮玩';
-  return '其他';
-}
 /* 类型下拉：从实际数据里提取，带条数，按预设顺序排 */
 function buildCalTypeFilter(items) {
   const sel = document.getElementById('filter-cal-type');
@@ -626,20 +625,15 @@ function renderCalendar() {
   // 日历按 MM-DD 升序展示（数据侧已排序，这里再兜一次，避免上游顺序变动）
   items.sort((a, b) => ((a.month || 0) * 100 + (a.day || 0)) - ((b.month || 0) * 100 + (b.day || 0)));
   buildCalTypeFilter(items);
-  const groupF = document.getElementById('filter-cal-group').value;
   const typeF = document.getElementById('filter-cal-type').value;
-  // 大类筛选优先：先按大类过滤，再按具体类型过滤
-  let shown = items;
-  if (groupF) shown = shown.filter(c => calGroupOf(c) === groupF);
-  if (typeF) shown = shown.filter(c => calTypeOf(c) === typeF);
-  const label = typeF || groupF || '';
-  document.getElementById('cal-count').textContent = label
-    ? ('筛选：' + label + ' · 共 ' + shown.length + ' 条（全部 ' + items.length + ' 条）')
+  const shown = typeF ? items.filter(c => calTypeOf(c) === typeF) : items;
+  document.getElementById('cal-count').textContent = typeF
+    ? ('筛选：' + typeF + ' · 共 ' + shown.length + ' 条（全部 ' + items.length + ' 条）')
     : ('共 ' + items.length + ' 条日历预告');
   const grid = document.getElementById('cal-grid');
   if (!shown.length) {
     grid.innerHTML = '<div style="color:#9ca3af;padding:20px;text-align:center">'
-      + (label ? '当前筛选下暂无日历数据' : '暂无日历数据') + '</div>';
+      + (typeF ? '该类型下暂无日历数据' : '暂无日历数据') + '</div>';
     return;
   }
   grid.innerHTML = shown.map(c => {
@@ -653,11 +647,69 @@ function renderCalendar() {
     else if (c.category === '泡泡玛特' || c.category === 'popmart' || c.category === '新品') { cardCls = 'cal-card popmart'; badgeStyle = 'background:#f59e0b'; }
     else if (c.category === '电影' || c.category === 'movie' || c.category === '上映') { cardCls = 'cal-card movie'; badgeStyle = 'background:#8b5cf6'; }
     const dateStr = c.month && c.day ? c.month + '月' + c.day + '日' : (c._date || c.year || '预告');
-    return '<div class="' + cardCls + '">' +
+    // 系列款名：有 variants 的卡片可点开，逐款列出（中文（英文）/ 中文（隐藏款））
+    const vars = c.variants || [];
+    let cls = cardCls;
+    let extra = '';
+    if (vars.length) {
+      cls += ' clickable';
+      const list = vars.map(v => '<div class="cal-var' + (v.secret ? ' secret' : '') + '">' + escHtml(v.name) + '</div>').join('');
+      extra = '<div class="cal-more">' + vars.length + ' 款 · 点开看款名 <span class="arrow">▸</span></div>' +
+        '<div class="cal-variants">' + list +
+        '<button type="button" class="cal-copy">复制全部款名</button></div>';
+    }
+    return '<div class="' + cls + '">' +
       '<div class="cal-date-badge" style="' + badgeStyle + '">' + escHtml(dateStr) + '</div>' +
       '<div class="cal-events"><div class="cal-event">• ' + escHtml(c.text || c.title || '') + '</div></div>' +
+      extra +
     '</div>';
   }).join('');
+  bindCalCards();
+}
+
+/* 卡片展开 / 收起 + 一键复制款名 */
+function bindCalCards() {
+  const grid = document.getElementById('cal-grid');
+  if (!grid) return;
+  grid.querySelectorAll('.cal-card.clickable').forEach(card => {
+    card.addEventListener('click', () => card.classList.toggle('open'));
+  });
+  grid.querySelectorAll('.cal-copy').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();   // 别把卡片一起收起来
+      const card = btn.closest('.cal-card');
+      const txt = card
+        ? Array.prototype.map.call(card.querySelectorAll('.cal-var'), x => x.textContent.trim()).join('\n')
+        : '';
+      copyToClipboard(txt).then(ok => {
+        btn.textContent = ok ? '已复制 ✓' : '复制失败，请手动选中';
+        setTimeout(() => { btn.textContent = '复制全部款名'; }, 1600);
+      });
+    });
+  });
+}
+
+/* 复制：优先用剪贴板 API，失败（非 HTTPS 等）退回 execCommand */
+function copyToClipboard(text) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    return navigator.clipboard.writeText(text).then(() => true).catch(() => fallbackCopy(text));
+  }
+  return Promise.resolve(fallbackCopy(text));
+}
+function fallbackCopy(text) {
+  try {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    const ok = document.execCommand('copy');
+    document.body.removeChild(ta);
+    return ok;
+  } catch (e) {
+    return false;
+  }
 }
 
 function renderSnapshot() {
@@ -750,7 +802,6 @@ document.querySelectorAll('.tab').forEach(tab => {
 
 document.getElementById('filter-status').addEventListener('change', renderLeaderboard);
 document.getElementById('filter-cat').addEventListener('change', renderLeaderboard);
-document.getElementById('filter-cal-group').addEventListener('change', renderCalendar);
 document.getElementById('filter-cal-type').addEventListener('change', renderCalendar);
 document.getElementById('snapshot-date').addEventListener('change', renderSnapshot);
 document.getElementById('snapshot-kw').addEventListener('input', renderSnapshot);
