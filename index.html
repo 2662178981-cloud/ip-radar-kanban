@@ -212,6 +212,15 @@
 
   <div class="panel hidden" id="panel-calendar">
     <div class="panel-sub">近期热点日历 · 节日/节气/颁奖/新品/上映</div>
+    <div class="filters" style="margin-bottom:10px">
+      <select class="filter-select" id="filter-cal-group">
+        <option value="">全部大类</option>
+        <option value="节日">节日</option>
+        <option value="影视">影视</option>
+        <option value="潮玩">潮玩</option>
+      </select>
+      <select class="filter-select" id="filter-cal-type"></select>
+    </div>
     <div class="item-count" id="cal-count"></div>
     <div class="cal-grid" id="cal-grid"></div>
   </div>
@@ -566,6 +575,44 @@ function renderPlatform(platform) {
   }).join('');
 }
 
+/* 日历类型：把上游各种写法归一到看板既有的 6 个类型 */
+const CAL_TYPE_ORDER = ['泡泡玛特', '电影', '公历节日', '农历节日', '节气', '颁奖典礼'];
+function calTypeOf(c) {
+  const t = String((c && c.category) || '').trim();
+  if (!t) return '其他';
+  if (t === 'popmart' || t === '新品') return '泡泡玛特';
+  if (t === 'movie' || t === '上映') return '电影';
+  return t;
+}
+/* 日历大类：把具体类型归到「节日 / 影视 / 潮玩」三个维度 */
+function calGroupOf(c) {
+  const t = calTypeOf(c);
+  if (t === '公历节日' || t === '农历节日' || t === '节气') return '节日';
+  if (t === '电影') return '影视';
+  if (t === '泡泡玛特') return '潮玩';
+  return '其他';
+}
+/* 类型下拉：从实际数据里提取，带条数，按预设顺序排 */
+function buildCalTypeFilter(items) {
+  const sel = document.getElementById('filter-cal-type');
+  if (!sel) return;
+  const counts = {};
+  const types = [];
+  items.forEach(c => {
+    const t = calTypeOf(c);
+    if (types.indexOf(t) === -1) types.push(t);
+    counts[t] = (counts[t] || 0) + 1;
+  });
+  types.sort((a, b) => {
+    const ia = CAL_TYPE_ORDER.indexOf(a), ib = CAL_TYPE_ORDER.indexOf(b);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+  });
+  const cur = sel.value;
+  sel.innerHTML = '<option value="">全部类型（' + items.length + '）</option>' +
+    types.map(t => '<option value="' + escHtml(t) + '">' + escHtml(t) + '（' + counts[t] + '）</option>').join('');
+  if (cur) sel.value = cur;
+}
+
 function renderCalendar() {
   let items = [];
   if (CAL_INDEX) {
@@ -576,10 +623,26 @@ function renderCalendar() {
   } else if (PAYLOAD.hotCalendar && PAYLOAD.hotCalendar.items) {
     items = PAYLOAD.hotCalendar.items;
   }
-  document.getElementById('cal-count').textContent = '共 ' + items.length + ' 条日历预告';
+  // 日历按 MM-DD 升序展示（数据侧已排序，这里再兜一次，避免上游顺序变动）
+  items.sort((a, b) => ((a.month || 0) * 100 + (a.day || 0)) - ((b.month || 0) * 100 + (b.day || 0)));
+  buildCalTypeFilter(items);
+  const groupF = document.getElementById('filter-cal-group').value;
+  const typeF = document.getElementById('filter-cal-type').value;
+  // 大类筛选优先：先按大类过滤，再按具体类型过滤
+  let shown = items;
+  if (groupF) shown = shown.filter(c => calGroupOf(c) === groupF);
+  if (typeF) shown = shown.filter(c => calTypeOf(c) === typeF);
+  const label = typeF || groupF || '';
+  document.getElementById('cal-count').textContent = label
+    ? ('筛选：' + label + ' · 共 ' + shown.length + ' 条（全部 ' + items.length + ' 条）')
+    : ('共 ' + items.length + ' 条日历预告');
   const grid = document.getElementById('cal-grid');
-  if (!items.length) { grid.innerHTML = '<div style="color:#9ca3af;padding:20px;text-align:center">暂无日历数据</div>'; return; }
-  grid.innerHTML = items.map(c => {
+  if (!shown.length) {
+    grid.innerHTML = '<div style="color:#9ca3af;padding:20px;text-align:center">'
+      + (label ? '当前筛选下暂无日历数据' : '暂无日历数据') + '</div>';
+    return;
+  }
+  grid.innerHTML = shown.map(c => {
     // 根据category选择卡片样式
     let cardCls = 'cal-card';
     let badgeStyle = 'background:#10b981';
@@ -687,6 +750,8 @@ document.querySelectorAll('.tab').forEach(tab => {
 
 document.getElementById('filter-status').addEventListener('change', renderLeaderboard);
 document.getElementById('filter-cat').addEventListener('change', renderLeaderboard);
+document.getElementById('filter-cal-group').addEventListener('change', renderCalendar);
+document.getElementById('filter-cal-type').addEventListener('change', renderCalendar);
 document.getElementById('snapshot-date').addEventListener('change', renderSnapshot);
 document.getElementById('snapshot-kw').addEventListener('input', renderSnapshot);
 document.getElementById('snapshot-clear').addEventListener('click', function() {
