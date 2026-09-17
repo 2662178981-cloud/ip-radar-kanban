@@ -73,7 +73,9 @@
   .kw-main { font-weight: 700; color: #111827; font-size: 13px; }
   .kw-sub { color: #9ca3af; font-size: 11px; margin-top: 1px; }
   .kw-hit { color: #6b7280; font-size: 11px; margin-top: 2px; }
+  .kw-unmatched { color: #9ca3af; font-size: 11px; margin-top: 2px; font-style: normal; }
   .src-pill { display: inline-block; padding: 1px 6px; border-radius: 5px; font-size: 10px; background: #f3f4f6; color: #4b5563; margin-right: 3px; }
+  .dup-pill { display: inline-block; padding: 1px 6px; border-radius: 5px; font-size: 10px; background: #ede9fe; color: #5b21b6; margin-left: 4px; }
 
   .status-pill { padding: 2px 8px; border-radius: 999px; font-size: 10px; font-weight: 600; display: inline-block; }
   .status-matched { background: #d1fae5; color: #065f46; }
@@ -174,24 +176,25 @@
   </div>
 
   <div class="panel" id="panel-leaderboard">
-    <div class="panel-sub">被识别为 IP 的热度词（含新词/需审核）</div>
+    <div class="panel-sub" id="lb-sub">被识别为 IP 的热度词（含新词/需审核）</div>
     <div class="subtabs" id="lb-subtabs" role="tablist" aria-label="榜单子标签页">
       <button type="button" class="subtab active" data-lb="ip" role="tab" aria-selected="true">泛IP</button>
       <button type="button" class="subtab" data-lb="trend" role="tab" aria-selected="false">流行趋势</button>
     </div>
     <div class="filters">
       <select class="filter-select" id="filter-status">
-        <option value="">全部状态</option>
+        <option value="__ip__" selected>仅已识别（词库命中）</option>
         <option value="匹配成功">匹配成功</option>
         <option value="需审核">需审核</option>
         <option value="新value">新词</option>
+        <option value="">全部状态</option>
       </select>
       <select class="filter-select" id="filter-cat"></select>
     </div>
     <table class="lb-table" id="lb-table">
       <thead>
         <tr>
-          <th style="width:40px">排名</th><th>原热搜词 / IP名</th><th>分类</th><th>来源</th><th>联想词条</th>
+          <th style="width:40px">排名</th><th>IP名 / 原热搜词</th><th>状态</th><th>分类</th><th>来源</th><th>联想词条</th>
         </tr>
       </thead>
       <tbody id="lb-body"></tbody>
@@ -202,7 +205,7 @@
     <div class="panel-sub">各平台热词榜（含非 IP 条目）</div>
     <div class="subtabs" id="subtabs"></div>
     <table class="lb-table">
-      <thead><tr><th style="width:40px">排名</th><th>原热搜词 / IP名</th><th>状态</th><th>来源</th><th>联想词条</th></tr></thead>
+      <thead><tr><th style="width:40px">排名</th><th>IP名 / 原热搜词</th><th>状态</th><th>来源</th><th>联想词条</th></tr></thead>
       <tbody id="platform-body"></tbody>
     </table>
   </div>
@@ -250,11 +253,28 @@ const STATUS = {
   "new": { cls: "status-new", label: "新词" }
 };
 const CAT_ORDER = ["明星","明星艺人","潮玩手办","影视综","游戏电竞","游戏","品牌","体育","动漫二次元","文娱其他"];
+const CAT_COLORS = {
+  "明星艺人": "#ec4899", "明星": "#ec4899",
+  "潮玩手办": "#8b5cf6", "潮玩": "#8b5cf6",
+  "影视综": "#f59e0b",
+  "游戏电竞": "#10b981", "游戏": "#10b981",
+  "品牌": "#06b6d4",
+  "体育": "#f97316",
+  "动漫二次元": "#d946ef",
+  "文娱其他": "#6b7280"
+};
 const HINT_COLORS = ["hint-blue", "hint-orange", "hint-green", "hint-purple"];
 
 function rankClass(r) { return r <= 10 ? "rank-" + r : "rank-else"; }
 function heatScore(it) { return Number(it.norm_score || it.score || 0); }
 function escHtml(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+function catDotHtml(cat) {
+  const c = CAT_COLORS[String(cat || '')] || '#9ca3af';
+  return '<span class="cat-dot" style="background:' + c + '"></span>';
+}
+/* 状态可信度排序：同一条热搜裂成多行时，取最可信的那条作为代表状态 */
+function statusRank(s) { return s === '匹配成功' ? 3 : (s === '需审核' ? 2 : 1); }
+function ipNameOf(it) { return it.display_keyword || it.ip_name || it.matched_value || it.keyword || ''; }
 
 /* ===== 数据加载 ===== */
 const BASE_URL = (typeof window !== 'undefined' && window.IP_RADAR_DATA_BASE_URL) || '';
@@ -291,7 +311,6 @@ let SNAPSHOTS = null;
 
 async function loadAll() {
   // 可选文件（calendar_index/hints）不存在时不白等：retries=1，失败即 null
-  // snapshots.json 后端契约不产出，直接置 null，由 renderSnapshot 的 fallback 接管
   const [data, cal, hints] = await Promise.all([
     fetchJSON('data.json'),
     fetchJSON('calendar_index.json', 1).catch(() => null),
@@ -345,33 +364,134 @@ function buildCatFilter(items) {
   if (cur) sel.value = cur;
 }
 
+/* ===== 泛IP 榜聚合 =====
+   解决三类重复：
+   ① 同一条热搜被拆成多行（如「樊振东马伊琍史诗级会面」裂成 樊振东 / 马伊琍 两行）
+      → 按 display_original 合并成一行，IP 名并列显示
+   ② 同一 IP 主体出现在多条热搜（跨热搜去重）
+      → 按 IP 名合并，仅对「已识别且单 IP 名」的行生效
+      （未识别行的 IP 名就是热搜原句，各不相同，强行按名合并会误判）
+   ③ 未识别条目（词库没命中、切词结果 = 热搜原句）标记出来，不再伪装成 IP 名
+*/
+function aggregateBoard(items) {
+  const map = new Map();
+  items.forEach(it => {
+    const orig = it.display_original || it.keyword || '';
+    let r = map.get(orig);
+    if (!r) {
+      r = { _names: [], _mvs: [], _pfs: [], _score: 0, hints: [], _orig: orig, base: null, _items: [] };
+      map.set(orig, r);
+    }
+    const n = ipNameOf(it);
+    if (n && r._names.indexOf(n) === -1) r._names.push(n);
+    if (it.matched_value && r._mvs.indexOf(it.matched_value) === -1) r._mvs.push(it.matched_value);
+    (it.platforms || (it.platform ? [it.platform] : [])).forEach(p => {
+      if (p && r._pfs.indexOf(p) === -1) r._pfs.push(p);
+    });
+    if ((it.hints || []).length > r.hints.length) r.hints = it.hints || [];
+    r._score += Number(it.norm_score || it.score || 0);
+    r._items.push(it);
+    if (!r.base || statusRank(it.ip_status) > statusRank(r.base.ip_status)) r.base = it;
+  });
+
+  let rows = Array.from(map.values());
+  rows.forEach(r => {
+    const b = r.base || {};
+    r.ip_status = b.ip_status || '新value';
+    r.ipCategory = b.ipCategory || null;
+    r.matched_value = r._mvs[0] || null;
+    r.platforms = r._pfs;
+    r.ip_rank = b.ip_rank || 0;
+    // 未识别 = 没命中词库，且切词结果退化成热搜原句（这就是"新闻类"混入的来源）
+    r._unmatched = !r._mvs.length && r._names.length <= 1 && r._names[0] === r._orig;
+    r._dup = 1;
+  });
+
+  // ② 同一 IP 主体跨热搜合并（只处理"单 IP 名且已识别"的行）
+  const byName = new Map();
+  rows.forEach(r => {
+    if (r._unmatched || r._names.length !== 1) return;
+    const n = r._names[0];
+    if (!byName.has(n)) byName.set(n, []);
+    byName.get(n).push(r);
+  });
+  const out = [];
+  const done = new Set();
+  rows.forEach(r => {
+    if (r._unmatched || r._names.length !== 1) { out.push(r); return; }
+    const n = r._names[0];
+    if (done.has(n)) return;
+    done.add(n);
+    const g = byName.get(n) || [r];
+    if (g.length === 1) { out.push(r); return; }
+    const sorted = g.slice().sort((a, b) => b._score - a._score);
+    const head = sorted[0];
+    const pfs = [];
+    let sc = 0;
+    sorted.forEach(x => {
+      x._pfs.forEach(p => { if (p && pfs.indexOf(p) === -1) pfs.push(p); });
+      sc += x._score;
+    });
+    head._pfs = pfs;
+    head.platforms = pfs;
+    head._score = sc;
+    head._dup = sorted.length;
+    head._others = sorted.slice(1).map(x => x._orig);
+    out.push(head);
+  });
+
+  out.sort((a, b) => (b._score || 0) - (a._score || 0));
+  return out;
+}
+
 function renderLeaderboard() {
   // 泛IP子tab：ipBoard；流行趋势子tab：trendBoard
   if (LB_MODE === 'trend') { renderTrend(); return; }
-  const items = (PAYLOAD.ipBoard && PAYLOAD.ipBoard.items) || [];
-  buildCatFilter(items);
+  const raw = (PAYLOAD.ipBoard && PAYLOAD.ipBoard.items) || [];
+  const all = aggregateBoard(raw);
+  buildCatFilter(all);
   const statusF = document.getElementById('filter-status').value;
   const catF = document.getElementById('filter-cat').value;
-  const rows = items.filter(it =>
-    (!statusF || it.ip_status === statusF) && (!catF || it.ipCategory === catF)
-  );
+  const rows = all.filter(r => {
+    if (statusF === '__ip__') return r.ip_status === '匹配成功' || r.ip_status === '需审核';
+    if (!statusF) return true;
+    return r.ip_status === statusF;
+  }).filter(r => (!catF || r.ipCategory === catF));
+
+  const hidden = all.length - rows.length;
+  document.getElementById('lb-sub').textContent = statusF === '__ip__'
+    ? ('仅展示词库命中的 IP（匹配成功/需审核），已折叠 ' + hidden + ' 条未识别热搜')
+    : ('被识别为 IP 的热度词 · 共 ' + rows.length + ' 条');
+
   const body = document.getElementById('lb-body');
-  if (!rows.length) { body.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#9ca3af;padding:30px">无匹配数据</td></tr>'; return; }
+  if (!rows.length) { body.innerHTML = '<tr><td colspan="6" style="text-align:center;color:#9ca3af;padding:30px">无匹配数据</td></tr>'; return; }
   body.innerHTML = rows.map((d, i) => {
-    const rank = d.ip_rank || d.rank || (i + 1);
-    const main = d.display_original || d.keyword || '';
-    const sub = d.display_keyword || d.ip_name || d.keyword || '';
-    // 上下两行重复时（display_keyword == display_original），只保留一行，避免同一个词写两遍
-    const subHtml = (sub && sub !== main) ? '<div class="kw-sub">' + escHtml(sub) + '</div>' : '';
+    const rank = i + 1;
+    const st = STATUS[d.ip_status] || { cls: "status-review", label: d.ip_status || "—" };
+    // 主行 = 关键词/IP名（一条热搜命中多个 IP 时并列显示：陈靖可 · 陈都灵）
+    // 副行 = 热搜原词（灰色小字）
+    const ipNames = (d._names || []).filter(n => n && n !== d._orig);
+    const main = ipNames.length ? ipNames.join(' · ') : (d._orig || '');
+    let subHtml = '';
+    if (d._unmatched) {
+      subHtml = '<div class="kw-unmatched">未识别 · 切词未命中词库</div>';
+    } else if (d._orig && d._orig !== main) {
+      // 关键词 == 热搜原词时（如热搜本身就是「第五人格」），不重复渲染副行
+      subHtml = '<div class="kw-sub">' + escHtml(d._orig) + '</div>';
+    }
+    const dupPill = d._dup > 1
+      ? '<span class="dup-pill" title="' + escHtml((d._others || []).join('；')) + '">共' + d._dup + '条热搜</span>'
+      : '';
     return '<tr>' +
       '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
       '<td>' +
-        '<div class="kw-main">' + escHtml(main) + '</div>' +
+        '<div class="kw-main">' + escHtml(main) + dupPill + '</div>' +
         subHtml +
       '</td>' +
-      '<td><span class="cat-dot cat-' + (d.ipCategory || '文娱其他') + '"></span>' + (d.ipCategory || '—') + '</td>' +
+      '<td><span class="status-pill ' + st.cls + '">' + st.label + '</span></td>' +
+      '<td>' + catDotHtml(d.ipCategory) + escHtml(d.ipCategory || '—') + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
-      '<td>' + renderHintsPills(d.hints, main) + '</td>' +
+      '<td>' + renderHintsPills(d.hints) + '</td>' +
     '</tr>';
   }).join("");
 }
@@ -381,7 +501,7 @@ function renderTrend() {
   const body = document.getElementById('lb-body');
   const items = (PAYLOAD.trendBoard && PAYLOAD.trendBoard.items) || [];
   if (!items.length) {
-    body.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#9ca3af;padding:30px">暂无流行趋势数据（服饰穿搭/美妆护肤/流行元素）</td></tr>';
+    body.innerHTML = '<tr><td colspan="6" style="text-align:center;color:#9ca3af;padding:30px">暂无流行趋势数据（服饰穿搭/美妆护肤/流行元素）</td></tr>';
     return;
   }
   body.innerHTML = items.map((d, i) => {
@@ -396,9 +516,10 @@ function renderTrend() {
         '<div class="kw-main">' + escHtml(main) + '</div>' +
         subHtml +
       '</td>' +
-      '<td><span class="cat-dot cat-' + escHtml(cat) + '"></span>' + escHtml(cat) + '</td>' +
+      '<td><span class="status-pill status-review">' + escHtml(d.ip_status || '—') + '</span></td>' +
+      '<td>' + catDotHtml(cat) + escHtml(cat) + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
-      '<td>' + renderHintsPills(d.hints, main) + '</td>' +
+      '<td>' + renderHintsPills(d.hints) + '</td>' +
     '</tr>';
   }).join('');
 }
@@ -406,9 +527,12 @@ function renderTrend() {
 function renderSubtabs() {
   const boards = PAYLOAD.platformBoards || {};
   const subtabs = document.getElementById('subtabs');
-  const entries = Object.entries(boards).sort((a, b) => b[1].count - a[1].count);
-  subtabs.innerHTML = entries.map(([p, b]) =>
-    '<button type="button" class="subtab" data-platform="' + p + '" role="tab" aria-selected="false">' + (b.title || PLATFORM_LABELS[p] || p) + '<span class="count">' + b.count + '</span></button>'
+  const entries = Object.entries(boards).map(([p, b]) => {
+    const n = (b && b.count != null) ? Number(b.count) : ((b && Array.isArray(b.items)) ? b.items.length : 0);
+    return [p, b, isNaN(n) ? 0 : n];
+  }).sort((a, b) => b[2] - a[2]);
+  subtabs.innerHTML = entries.map(([p, b, n]) =>
+    '<button type="button" class="subtab" data-platform="' + p + '" role="tab" aria-selected="false">' + ((b && b.title) || PLATFORM_LABELS[p] || p) + '<span class="count">' + n + '</span></button>'
   ).join('');
   const tabs = subtabs.querySelectorAll('.subtab');
   tabs.forEach(t => t.addEventListener('click', () => {
@@ -427,15 +551,17 @@ function renderPlatform(platform) {
   const items = board.items;
   body.innerHTML = items.map((d, i) => {
     const st = STATUS[d.ip_status] || { cls: "status-review", label: d.ip_status || "—" };
-    const main = d.display_keyword || d.ip_name || d.keyword || '';
-    const sub = d.display_original || d.keyword || '';
-    const subHtml = (sub && sub !== main) ? '<div class="kw-sub">' + escHtml(sub) + '</div>' : '';
+    // 与泛IP榜口径统一：主行 = IP名/关键词，副行 = 热搜原词（灰色）
+    const orig = d.display_original || d.keyword || '';
+    const kw = d.display_keyword || d.ip_name || d.keyword || '';
+    const main = kw || orig;
+    const subHtml = (orig && orig !== main) ? '<div class="kw-sub">' + escHtml(orig) + '</div>' : '';
     return '<tr>' +
       '<td><span class="rank-badge rank-else">' + (i+1) + '</span></td>' +
       '<td><div class="kw-main">' + escHtml(main) + '</div>' + subHtml + '</td>' +
       '<td><span class="status-pill ' + st.cls + '">' + st.label + '</span></td>' +
       '<td>' + platformTags(d) + '</td>' +
-      '<td>' + renderHintsPills(d.hints, main) + '</td>' +
+      '<td>' + renderHintsPills(d.hints) + '</td>' +
     '</tr>';
   }).join('');
 }
@@ -505,16 +631,24 @@ function renderSnapshot() {
   }
   // Fallback: 从 data.json 的 ipBoard.items 构造今日快照（data.json 一定有，结构稳定）
   const ipItems = (PAYLOAD.ipBoard && PAYLOAD.ipBoard.items) || [];
-  const today = PAYLOAD.generatedAt ? String(PAYLOAD.generatedAt).replace(/T.*$/, '') : new Date().toISOString().split('T')[0];
+  // generatedAt 可能是 ISO（2026-09-17T09:33:38）或空格分隔（2026-09-17 09:33:38）或脏值 "now"，
+  // 这里统一只取 YYYY-MM-DD 前缀，取不到才回落当天。
+  let today = '';
+  const _g = String(PAYLOAD.generatedAt || '').trim();
+  const _m = _g.match(/^(\d{4}-\d{2}-\d{2})/);
+  if (_m) { today = _m[1]; }
+  if (!today) { today = new Date().toISOString().split('T')[0]; }
   if (dateFilter && dateFilter !== today) {
     container.innerHTML = '<div class="snapshot-empty">当日无数据</div>';
     return;
   }
   let html = '<div class="snapshot-date-header"><span class="snapshot-date-badge">' + escHtml(today) + '</span> 当前</div>';
   let idx = 0;
-  ipItems.filter(matchKw).forEach(it => {
-    const ip = escHtml(it.display_keyword || it.ip_name || it.matched_value || it.keyword || '');
+  aggregateBoard(ipItems).forEach(it => {
+    if (it._unmatched) return;
+    const ip = escHtml((it._names && it._names.length ? it._names.join(' · ') : it._orig) || '');
     const hints = (it.hints || []).slice(0, 3).map(h => escHtml(h)).join('、');
+    if (kwFilter && (ip + ' ' + it._orig).toLowerCase().indexOf(kwFilter) === -1) return;
     html += '<div class="snapshot-item">' +
       '<span class="snapshot-rank">' + (++idx) + '</span>' +
       '<span class="snapshot-ip">' + ip + '</span>' +
