@@ -156,6 +156,15 @@
   .diesun-card.open .diesun-pic { display: block; }
   .diesun-pic img { width: 100%; max-height: 320px; object-fit: cover; border-radius: 6px; display: block; cursor: zoom-in; }
   .diesun-pic-empty { font-size: 11px; color: #9ca3af; }
+
+  /* 热搜风格词 */
+  .style-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+  .style-card { background: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 100%); border: 1px solid #e0e7ff; border-radius: 10px; padding: 10px 12px; position: relative; }
+  .style-rank { position: absolute; top: 8px; right: 10px; background: #7c3aed; color: #fff; width: 20px; height: 20px; border-radius: 50%; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .style-word { font-size: 15px; font-weight: 700; color: #111827; margin-bottom: 4px; }
+  .style-cat { font-size: 11px; color: #6d28d9; margin-bottom: 4px; }
+  .style-score { font-size: 11px; color: #6b7280; }
+  .style-platforms { font-size: 10px; color: #9ca3af; margin-top: 4px; }
   /* 图片放大 lightbox */
   .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.85); display: none; align-items: center; justify-content: center; z-index: 9999; cursor: zoom-out; }
   .lightbox.show { display: flex; }
@@ -268,9 +277,10 @@
   </div>
 
   <div class="panel hidden" id="panel-diesun">
-    <div class="panel-sub">风格趋势 · 蝶讯电商本月热卖风格 · 点击卡片展开看对应风格照片</div>
+    <div class="panel-sub">风格趋势 · 从热搜中抽取的风格词</div>
     <div class="subtabs" id="diesun-subtabs" role="tablist" aria-label="风格趋势子标签页">
-      <button type="button" class="subtab active" data-ds="hot" role="tab" aria-selected="true">热卖风格</button>
+      <button type="button" class="subtab active" data-ds="style" role="tab" aria-selected="true">热搜风格</button>
+      <button type="button" class="subtab" data-ds="hot" role="tab" aria-selected="false">热卖风格</button>
     </div>
     <div class="item-count" id="diesun-count"></div>
     <div class="diesun-grid" id="diesun-grid"></div>
@@ -704,6 +714,39 @@ function renderCalendar() {
   bindCalCards();
 }
 
+/* ===== 热搜风格词 ===== */
+function renderStyleHot() {
+  const grid = document.getElementById('diesun-grid');
+  const countEl = document.getElementById('diesun-count');
+  let items = [];
+  if (PAYLOAD.styleHotBoard && Array.isArray(PAYLOAD.styleHotBoard.items)) {
+    items = PAYLOAD.styleHotBoard.items;
+  }
+  grid.className = 'style-grid';
+  countEl.textContent = items.length ? ('共 ' + items.length + ' 个热搜风格词') : '';
+  if (!items.length) {
+    grid.innerHTML = '<div style="color:#9ca3af;padding:20px;text-align:center">暂无热搜风格词数据</div>';
+    return;
+  }
+  grid.innerHTML = items.map((s, i) => {
+    const rank = s.style_rank || (i + 1);
+    const word = s.style_word || s.display_keyword || '';
+    const cat = s.styleCategory || '';
+    const score = s.score || 0;
+    const platforms = s.platforms || [];
+    const platHtml = platforms.length
+      ? '<div class="style-platforms">' + platforms.map(p => escHtml(platformLabel(p))).join(' · ') + '</div>'
+      : '';
+    return '<div class="style-card">' +
+      '<div class="style-rank">' + rank + '</div>' +
+      '<div class="style-word">' + escHtml(word) + '</div>' +
+      (cat ? '<div class="style-cat">' + escHtml(cat) + '</div>' : '') +
+      '<div class="style-score">热度 ' + score + '</div>' +
+      platHtml +
+    '</div>';
+  }).join('');
+}
+
 /* ===== 蝶讯热卖风格 ===== */
 function renderDiesun() {
   const grid = document.getElementById('diesun-grid');
@@ -714,6 +757,7 @@ function renderDiesun() {
   } else if (PAYLOAD.diesunBoard && Array.isArray(PAYLOAD.diesunBoard.items)) {
     items = PAYLOAD.diesunBoard.items;
   }
+  grid.className = 'diesun-grid';
   countEl.textContent = items.length ? ('共 ' + items.length + ' 条热卖风格') : '';
   if (!items.length) {
     grid.innerHTML = '<div style="color:#9ca3af;padding:20px;text-align:center">暂无蝶讯热卖风格数据</div>';
@@ -899,6 +943,12 @@ function bindDiesunSubtabs() {
     tabs.forEach(x => { x.classList.remove('active'); x.setAttribute('aria-selected', 'false'); });
     t.classList.add('active');
     t.setAttribute('aria-selected', 'true');
+    const mode = t.dataset.ds || 'style';
+    if (mode === 'hot') {
+      renderDiesun();
+    } else {
+      renderStyleHot();
+    }
   }));
 }
 
@@ -951,7 +1001,7 @@ async function init() {
     renderSubtabs();
     renderCalendar();
     renderSnapshot();
-    renderDiesun();
+    renderStyleHot();
   } catch (err) {
     document.getElementById('loading-mask').classList.add('hidden');
     document.getElementById('error-msg').textContent = err.message;
