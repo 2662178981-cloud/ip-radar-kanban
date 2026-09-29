@@ -230,11 +230,11 @@
     </div>
     <div class="filters">
       <select class="filter-select" id="filter-status">
-        <option value="__ip__" selected>仅已识别（词库命中）</option>
+        <option value="" selected>全部状态</option>
+        <option value="__ip__">仅已识别（词库命中）</option>
         <option value="匹配成功">匹配成功</option>
         <option value="需审核">需审核</option>
         <option value="新value">新词</option>
-        <option value="">全部状态</option>
       </select>
       <select class="filter-select" id="filter-cat"></select>
     </div>
@@ -524,7 +524,7 @@ function renderLeaderboard() {
   const hidden = all.length - rows.length;
   document.getElementById('lb-sub').textContent = statusF === '__ip__'
     ? ('仅展示词库命中的 IP（匹配成功/需审核），已折叠 ' + hidden + ' 条未识别热搜')
-    : ('被识别为 IP 的热度词 · 共 ' + rows.length + ' 条');
+    : ('被识别为 IP 的热度词（含新词/需审核） · 共 ' + rows.length + ' 条');
 
   const body = document.getElementById('lb-body');
   if (!rows.length) { body.innerHTML = '<tr><td colspan="6" style="text-align:center;color:#9ca3af;padding:30px">无匹配数据</td></tr>'; return; }
