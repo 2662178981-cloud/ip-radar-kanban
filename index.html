@@ -138,6 +138,26 @@
 
   .item-count { font-size: 11px; color: #6b7280; margin-bottom: 10px; }
 
+  /* 蝶讯热卖风格 */
+  .diesun-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+  .diesun-card { background: linear-gradient(135deg, #fdf2f8 0%, #fef7fb 100%); border-left: 3px solid #ec4899; border-radius: 8px; padding: 10px 12px; position: relative; }
+  .diesun-card.clickable { cursor: pointer; }
+  .diesun-card.clickable:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.09); }
+  .diesun-rank { position: absolute; top: 8px; right: 10px; background: #ec4899; color: #fff; width: 20px; height: 20px; border-radius: 50%; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .diesun-body { padding-right: 22px; }
+  .diesun-title { font-size: 14px; font-weight: 700; color: #111827; margin-bottom: 6px; }
+  .diesun-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 5px; }
+  .diesun-tag { background: rgba(236,72,153,0.12); color: #be185d; padding: 1px 7px; border-radius: 999px; font-size: 10px; }
+  .diesun-kws { display: flex; flex-wrap: wrap; gap: 4px; }
+  .diesun-kw { background: #f3f4f6; color: #4b5563; padding: 1px 7px; border-radius: 999px; font-size: 10px; }
+  .diesun-more { font-size: 10px; color: #6b7280; margin-top: 6px; }
+  .diesun-more .arrow { display: inline-block; transition: transform .18s; }
+  .diesun-card.open .diesun-more .arrow { transform: rotate(90deg); }
+  .diesun-pic { display: none; margin-top: 8px; padding-top: 8px; border-top: 1px dashed rgba(0,0,0,0.14); }
+  .diesun-card.open .diesun-pic { display: block; }
+  .diesun-pic img { width: 100%; max-height: 320px; object-fit: cover; border-radius: 6px; display: block; }
+  .diesun-pic-empty { font-size: 11px; color: #9ca3af; }
+
   /* 趋势快照 */
   .snapshot-date-header { font-size: 14px; font-weight: 700; color: #1f2937; margin: 16px 0 8px 0; padding-bottom: 4px; border-bottom: 2px solid #e5e7eb; display: flex; align-items: center; gap: 8px; }
   .snapshot-date-header:first-child { margin-top: 0; }
@@ -186,6 +206,7 @@
     <button type="button" class="tab blue" data-tab="platform" role="tab" aria-selected="false" aria-controls="panel-platform">📊 平台明细</button>
     <button type="button" class="tab green" data-tab="calendar" role="tab" aria-selected="false" aria-controls="panel-calendar">📅 热点日历</button>
     <button type="button" class="tab red" data-tab="snapshot" role="tab" aria-selected="false" aria-controls="panel-snapshot">📸 趋势快照</button>
+    <button type="button" class="tab amber" data-tab="diesun" role="tab" aria-selected="false" aria-controls="panel-diesun">👗 蝶讯热卖</button>
   </div>
 
   <div class="panel" id="panel-leaderboard">
@@ -240,6 +261,12 @@
       <button id="snapshot-clear" class="filter-select" style="padding:5px 12px;cursor:pointer;background:#fff;border:1px solid #e5e7eb;border-radius:8px;font-size:12px">清除</button>
     </div>
     <div id="snapshot-content"></div>
+  </div>
+
+  <div class="panel hidden" id="panel-diesun">
+    <div class="panel-sub">蝶讯电商本月热卖风格 · 点击卡片展开看对应风格照片</div>
+    <div class="item-count" id="diesun-count"></div>
+    <div class="diesun-grid" id="diesun-grid"></div>
   </div>
 </div>
 
@@ -324,17 +351,20 @@ let CAL_INDEX = null;
 let LB_MODE = 'ip';  // 泛IP / 流行趋势 子tab当前模式
 let HINTS_DATA = null;
 let SNAPSHOTS = null;
+let DIESUN_INDEX = null;
 
 async function loadAll() {
-  // 可选文件（calendar_index/hints）不存在时不白等：retries=1，失败即 null
-  const [data, cal, hints] = await Promise.all([
+  // 可选文件（calendar_index/hints/diesun_index）不存在时不白等：retries=1，失败即 null
+  const [data, cal, hints, diesun] = await Promise.all([
     fetchJSON('data.json'),
     fetchJSON('calendar_index.json', 1).catch(() => null),
-    fetchJSON('hints.json', 1).catch(() => null)
+    fetchJSON('hints.json', 1).catch(() => null),
+    fetchJSON('diesun_index.json', 1).catch(() => null)
   ]);
   PAYLOAD = data;
   CAL_INDEX = cal;
   HINTS_DATA = hints;
+  DIESUN_INDEX = diesun;
   SNAPSHOTS = null;
 }
 
@@ -667,6 +697,62 @@ function renderCalendar() {
   bindCalCards();
 }
 
+/* ===== 蝶讯热卖风格 ===== */
+function renderDiesun() {
+  const grid = document.getElementById('diesun-grid');
+  const countEl = document.getElementById('diesun-count');
+  let items = [];
+  if (DIESUN_INDEX && Array.isArray(DIESUN_INDEX.items)) {
+    items = DIESUN_INDEX.items;
+  } else if (PAYLOAD.diesunBoard && Array.isArray(PAYLOAD.diesunBoard.items)) {
+    items = PAYLOAD.diesunBoard.items;
+  }
+  countEl.textContent = items.length ? ('共 ' + items.length + ' 条热卖风格') : '';
+  if (!items.length) {
+    grid.innerHTML = '<div style="color:#9ca3af;padding:20px;text-align:center">暂无蝶讯热卖风格数据</div>';
+    return;
+  }
+  grid.innerHTML = items.map((d, i) => {
+    const rank = d.rank || (i + 1);
+    const title = d.title || '';
+    const tags = d.tags || [];
+    const kws = d.keywords || [];
+    const pic = d.picture || '';
+    const picCount = d.picture_count || 0;
+    const tagHtml = tags.length
+      ? '<div class="diesun-tags">' + tags.slice(0, 6).map(t => '<span class="diesun-tag">' + escHtml(t) + '</span>').join('') + '</div>'
+      : '';
+    const kwHtml = kws.length
+      ? '<div class="diesun-kws">' + kws.slice(0, 4).map(k => '<span class="diesun-kw">' + escHtml(k) + '</span>').join('') + '</div>'
+      : '';
+    const picHtml = pic
+      ? '<div class="diesun-pic"><img src="' + escHtml(pic) + '" alt="' + escHtml(title) + '" loading="lazy" referrerpolicy="no-referrer"></div>'
+      : '<div class="diesun-pic diesun-pic-empty">暂无封面图</div>';
+    const more = (pic || picCount)
+      ? '<div class="diesun-more">' + (pic ? '点开看风格照片' : (picCount + ' 张图')) + ' <span class="arrow">▸</span></div>'
+      : '';
+    return '<div class="diesun-card' + (pic ? ' clickable' : '') + '">' +
+      '<div class="diesun-rank">' + rank + '</div>' +
+      '<div class="diesun-body">' +
+        '<div class="diesun-title">' + escHtml(title) + '</div>' +
+        tagHtml +
+        kwHtml +
+        more +
+        picHtml +
+      '</div>' +
+    '</div>';
+  }).join('');
+  bindDiesunCards();
+}
+
+function bindDiesunCards() {
+  const grid = document.getElementById('diesun-grid');
+  if (!grid) return;
+  grid.querySelectorAll('.diesun-card.clickable').forEach(card => {
+    card.addEventListener('click', () => card.classList.toggle('open'));
+  });
+}
+
 /* 卡片展开 / 收起 + 一键复制款名 */
 function bindCalCards() {
   const grid = document.getElementById('cal-grid');
@@ -822,6 +908,7 @@ async function init() {
     renderSubtabs();
     renderCalendar();
     renderSnapshot();
+    renderDiesun();
   } catch (err) {
     document.getElementById('loading-mask').classList.add('hidden');
     document.getElementById('error-msg').textContent = err.message;
