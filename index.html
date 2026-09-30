@@ -773,7 +773,16 @@ function renderDiesun() {
     const tags = d.tags || [];
     const brands = d.brands || [];
     const items = d.items || [];
-    const desc = d.desc || '';
+    let desc = d.desc || '';
+    if (desc) {
+      const m = desc.match(/[。！？!?；;]/);
+      if (m) desc = desc.slice(0, m.index + 1);
+      else {
+        const m2 = desc.match(/[，,]/);
+        if (m2) desc = desc.slice(0, m2.index);
+      }
+      if (desc.length > 40) desc = desc.slice(0, 40);
+    }
     const pic = d.picture || '';
     const picCount = d.picture_count || 0;
     const tagHtml = tags.length
