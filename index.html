@@ -149,6 +149,10 @@
   .diesun-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 5px; }
   .diesun-tag { background: rgba(236,72,153,0.12); color: #be185d; padding: 1px 7px; border-radius: 999px; font-size: 10px; }
   .diesun-desc { font-size: 11px; color: #6b7280; line-height: 1.5; margin-top: 5px; }
+  .diesun-brands { font-size: 10px; color: #7c3aed; margin-top: 6px; }
+  .diesun-brands b { color: #6d28d9; font-weight: 600; }
+  .diesun-items { font-size: 10px; color: #0f766e; margin-top: 3px; }
+  .diesun-items b { color: #115e59; font-weight: 600; }
   .diesun-more { font-size: 10px; color: #6b7280; margin-top: 6px; }
   .diesun-more .arrow { display: inline-block; transition: transform .18s; }
   .diesun-card.open .diesun-more .arrow { transform: rotate(90deg); }
@@ -280,7 +284,7 @@
     <div class="panel-sub">风格趋势 · 从热搜中抽取的风格词</div>
     <div class="subtabs" id="diesun-subtabs" role="tablist" aria-label="风格趋势子标签页">
       <button type="button" class="subtab active" data-ds="style" role="tab" aria-selected="true">热搜风格</button>
-      <button type="button" class="subtab" data-ds="hot" role="tab" aria-selected="false">热卖风格</button>
+      <button type="button" class="subtab" data-ds="hot" role="tab" aria-selected="false">风格分析</button>
     </div>
     <div class="item-count" id="diesun-count"></div>
     <div class="diesun-grid" id="diesun-grid"></div>
@@ -758,20 +762,28 @@ function renderDiesun() {
     items = PAYLOAD.diesunBoard.items;
   }
   grid.className = 'diesun-grid';
-  countEl.textContent = items.length ? ('共 ' + items.length + ' 条热卖风格') : '';
+  countEl.textContent = items.length ? ('共 ' + items.length + ' 条风格分析') : '';
   if (!items.length) {
-    grid.innerHTML = '<div style="color:#9ca3af;padding:20px;text-align:center">暂无蝶讯热卖风格数据</div>';
+    grid.innerHTML = '<div style="color:#9ca3af;padding:20px;text-align:center">暂无蝶讯风格分析数据</div>';
     return;
   }
   grid.innerHTML = items.map((d, i) => {
     const rank = d.rank || (i + 1);
     const title = d.title || '';
     const tags = d.tags || [];
+    const brands = d.brands || [];
+    const items = d.items || [];
     const desc = d.desc || '';
     const pic = d.picture || '';
     const picCount = d.picture_count || 0;
     const tagHtml = tags.length
       ? '<div class="diesun-tags">' + tags.slice(0, 6).map(t => '<span class="diesun-tag">' + escHtml(t) + '</span>').join('') + '</div>'
+      : '';
+    const brandsHtml = brands.length
+      ? '<div class="diesun-brands"><b>关键品牌</b> ' + brands.slice(0, 6).map(b => escHtml(b)).join(' · ') + '</div>'
+      : '';
+    const itemsHtml = items.length
+      ? '<div class="diesun-items"><b>关键单品</b> ' + items.slice(0, 6).map(k => escHtml(k)).join(' · ') + '</div>'
       : '';
     const descHtml = desc
       ? '<div class="diesun-desc">' + escHtml(desc) + '</div>'
@@ -787,6 +799,8 @@ function renderDiesun() {
       '<div class="diesun-body">' +
         '<div class="diesun-title">' + escHtml(title) + '</div>' +
         tagHtml +
+        brandsHtml +
+        itemsHtml +
         descHtml +
         more +
         picHtml +
