@@ -789,10 +789,10 @@ function renderDiesun() {
       ? '<div class="diesun-tags">' + tags.slice(0, 6).map(t => '<span class="diesun-tag">' + escHtml(t) + '</span>').join('') + '</div>'
       : '';
     const brandsHtml = brands.length
-      ? '<div class="diesun-brands"><b>关键品牌</b> ' + brands.slice(0, 6).map(b => escHtml(b)).join(' · ') + '</div>'
+      ? '<div class="diesun-brands"><b>关键品牌</b> ' + brands.slice(0, 6).map(b => escHtml(b)).join('、') + '</div>'
       : '';
     const itemsHtml = items.length
-      ? '<div class="diesun-items"><b>关键单品</b> ' + items.slice(0, 6).map(k => escHtml(k)).join(' · ') + '</div>'
+      ? '<div class="diesun-items"><b>关键单品</b> ' + items.slice(0, 6).map(k => escHtml(k)).join('、') + '</div>'
       : '';
     const descHtml = desc
       ? '<div class="diesun-desc">' + escHtml(desc) + '</div>'
