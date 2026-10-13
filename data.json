@@ -2,26 +2,26 @@
   "version": "4.0",
   "generatedAt": "2026-10-13 15:50",
   "summary": {
-    "total": 82,
-    "ipCount": 82,
-    "newValues": 29,
+    "total": 58,
+    "ipCount": 58,
+    "newValues": 8,
     "oldValues": 39,
-    "reviewNeeded": 14,
+    "reviewNeeded": 11,
     "boards": [
       {
         "code": "weibo",
         "title": "微博热搜",
-        "count": 72
+        "count": 68
       },
       {
         "code": "douyin",
         "title": "抖音热点",
-        "count": 70
+        "count": 69
       },
       {
         "code": "xiaohongshu",
         "title": "小红书",
-        "count": 346
+        "count": 329
       }
     ],
     "generatedAt": "2026-10-13 15:50"
@@ -29,7 +29,7 @@
   "ipBoard": {
     "title": "IP 榜单",
     "subtitle": "仅展示与 IP 相关的热度词",
-    "total": 82,
+    "total": 58,
     "items": [
       {
         "keyword": "郑钦文",
@@ -83,29 +83,6 @@
           "霸王茶姬联名限定",
           "霸王茶姬爆款推荐"
         ],
-        "source_count": 3
-      },
-      {
-        "keyword": "中国",
-        "ip_name": "中国",
-        "display_keyword": "中国",
-        "display_original": "德比斯分享首次中国行记录（3条...",
-        "ip_status": "需审核",
-        "ipCategory": null,
-        "matched_value": "中国",
-        "match_type": "substring_full",
-        "hit_rate": 2,
-        "ips": [
-          "中国"
-        ],
-        "platforms": [
-          "douyin",
-          "weibo"
-        ],
-        "platform": "douyin",
-        "score": 8014000,
-        "norm_score": 17.2218,
-        "hints": [],
         "source_count": 3
       },
       {
@@ -371,28 +348,6 @@
         "source_count": 1
       },
       {
-        "keyword": "定档101",
-        "ip_name": "定档101",
-        "display_keyword": "定档101",
-        "display_original": "嫁金钗定档1016",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "定档101"
-        ],
-        "platforms": [
-          "douyin"
-        ],
-        "platform": "douyin",
-        "score": 8242000,
-        "norm_score": 6.916,
-        "hints": [],
-        "source_count": 1
-      },
-      {
         "keyword": "徐若晗",
         "ip_name": "徐若晗",
         "display_keyword": "徐若晗",
@@ -520,28 +475,6 @@
           "王嘉尔同款好物",
           "王嘉尔代言品牌"
         ],
-        "source_count": 1
-      },
-      {
-        "keyword": "动了00",
-        "ip_name": "动了00",
-        "display_keyword": "动了00",
-        "display_original": "当记忆的风吹动了00年代",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "动了00"
-        ],
-        "platforms": [
-          "douyin"
-        ],
-        "platform": "douyin",
-        "score": 7738000,
-        "norm_score": 6.8886,
-        "hints": [],
         "source_count": 1
       },
       {
@@ -753,50 +686,6 @@
         "source_count": 2
       },
       {
-        "keyword": "mx",
-        "ip_name": "mx",
-        "display_keyword": "mx",
-        "display_original": "[马自达mx5（2条热搜）",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "mx"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 332,
-        "norm_score": 6.6682,
-        "hints": [],
-        "source_count": 2
-      },
-      {
-        "keyword": "mini",
-        "ip_name": "mini",
-        "display_keyword": "mini",
-        "display_original": "我的mini（2条热搜）",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "mini"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 279,
-        "norm_score": 6.214,
-        "hints": [],
-        "source_count": 2
-      },
-      {
         "keyword": "波西",
         "ip_name": "波西",
         "display_keyword": "波西",
@@ -875,28 +764,6 @@
         "source_count": 1
       },
       {
-        "keyword": "er",
-        "ip_name": "er",
-        "display_keyword": "er",
-        "display_original": "手帐er的日常（2条热搜）",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "er"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 137,
-        "norm_score": 5.3416999999999994,
-        "hints": [],
-        "source_count": 2
-      },
-      {
         "keyword": "张继科 乒乓",
         "ip_name": "张继科 乒乓",
         "display_keyword": "张继科 乒乓",
@@ -950,72 +817,6 @@
         "source_count": 1
       },
       {
-        "keyword": "OK",
-        "ip_name": "OK",
-        "display_keyword": "OK",
-        "display_original": "两个OK两个OH写出囍字",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "OK"
-        ],
-        "platforms": [
-          "weibo"
-        ],
-        "platform": "weibo",
-        "score": 180000,
-        "norm_score": 5.2553,
-        "hints": [],
-        "source_count": 1
-      },
-      {
-        "keyword": "OH",
-        "ip_name": "OH",
-        "display_keyword": "OH",
-        "display_original": "两个OK两个OH写出囍字",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "OH"
-        ],
-        "platforms": [
-          "weibo"
-        ],
-        "platform": "weibo",
-        "score": 180000,
-        "norm_score": 5.2553,
-        "hints": [],
-        "source_count": 1
-      },
-      {
-        "keyword": "AI",
-        "ip_name": "AI",
-        "display_keyword": "AI",
-        "display_original": "内娱来了五位AI艺人",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "AI"
-        ],
-        "platforms": [
-          "weibo"
-        ],
-        "platform": "weibo",
-        "score": 170000,
-        "norm_score": 5.2305,
-        "hints": [],
-        "source_count": 1
-      },
-      {
         "keyword": "csgo",
         "ip_name": "csgo",
         "display_keyword": "csgo",
@@ -1036,28 +837,6 @@
         "norm_score": 5.1728,
         "hints": [],
         "source_count": 2
-      },
-      {
-        "keyword": "臀疼1",
-        "ip_name": "臀疼1",
-        "display_keyword": "臀疼1",
-        "display_original": "女子左臀疼1个月挤出发黑注射针...",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "臀疼1"
-        ],
-        "platforms": [
-          "weibo"
-        ],
-        "platform": "weibo",
-        "score": 140000,
-        "norm_score": 5.1461,
-        "hints": [],
-        "source_count": 1
       },
       {
         "keyword": "克里斯蒂亚诺罗纳尔多",
@@ -1104,28 +883,6 @@
         "platform": "xiaohongshu",
         "score": 2204,
         "norm_score": 5.0151,
-        "hints": [],
-        "source_count": 1
-      },
-      {
-        "keyword": "班牙20",
-        "ip_name": "班牙20",
-        "display_keyword": "班牙20",
-        "display_original": "西班牙20岁长公主军装出席国庆...",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "班牙20"
-        ],
-        "platforms": [
-          "weibo"
-        ],
-        "platform": "weibo",
-        "score": 90000,
-        "norm_score": 4.9542,
         "hints": [],
         "source_count": 1
       },
@@ -1209,28 +966,6 @@
         "source_count": 1
       },
       {
-        "keyword": "招聘6",
-        "ip_name": "招聘6",
-        "display_keyword": "招聘6",
-        "display_original": "小黄豆公司招聘6万人投简历",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "招聘6"
-        ],
-        "platforms": [
-          "weibo"
-        ],
-        "platform": "weibo",
-        "score": 80000,
-        "norm_score": 4.9031,
-        "hints": [],
-        "source_count": 1
-      },
-      {
         "keyword": "林高远",
         "ip_name": "林高远",
         "display_keyword": "林高远",
@@ -1279,28 +1014,6 @@
         "source_count": 1
       },
       {
-        "keyword": "国际18",
-        "ip_name": "国际18",
-        "display_keyword": "国际18",
-        "display_original": "长江国际18楼]",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "国际18"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 687,
-        "norm_score": 4.2564,
-        "hints": [],
-        "source_count": 1
-      },
-      {
         "keyword": "钢铁侠",
         "ip_name": "钢铁侠",
         "display_keyword": "钢铁侠",
@@ -1323,76 +1036,6 @@
           "钢铁侠同款穿搭",
           "钢铁侠周边好物",
           "钢铁侠联名款"
-        ],
-        "source_count": 1
-      },
-      {
-        "keyword": "nft",
-        "ip_name": "nft",
-        "display_keyword": "nft",
-        "display_original": "[nft",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "nft"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 306,
-        "norm_score": 3.7307,
-        "hints": [],
-        "source_count": 1
-      },
-      {
-        "keyword": "iphone",
-        "ip_name": "iphone",
-        "display_keyword": "iphone",
-        "display_original": "[iphone13",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "iphone"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 302,
-        "norm_score": 3.7222,
-        "hints": [],
-        "source_count": 1
-      },
-      {
-        "keyword": "大大",
-        "ip_name": "大大",
-        "display_keyword": "大大",
-        "display_original": "我爱官方大大求流量",
-        "ip_status": "需审核",
-        "ipCategory": "动漫二次元",
-        "matched_value": "大大",
-        "match_type": "substring_full",
-        "hit_rate": 2,
-        "ips": [
-          "大大"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 248,
-        "norm_score": 3.5943,
-        "hints": [
-          "大大手办模型",
-          "大大联名周边",
-          "大大限定礼盒"
         ],
         "source_count": 1
       },
@@ -1423,50 +1066,6 @@
         "source_count": 1
       },
       {
-        "keyword": "sai",
-        "ip_name": "sai",
-        "display_keyword": "sai",
-        "display_original": "sai]",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "sai"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 166,
-        "norm_score": 3.3341,
-        "hints": [],
-        "source_count": 1
-      },
-      {
-        "keyword": "diy",
-        "ip_name": "diy",
-        "display_keyword": "diy",
-        "display_original": "[diy",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "diy"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 153,
-        "norm_score": 3.2813,
-        "hints": [],
-        "source_count": 1
-      },
-      {
         "keyword": "孙颖莎",
         "ip_name": "孙颖莎",
         "display_keyword": "孙颖莎",
@@ -1490,28 +1089,6 @@
           "孙颖莎同款好物",
           "孙颖莎代言品牌"
         ],
-        "source_count": 1
-      },
-      {
-        "keyword": "cafebreak",
-        "ip_name": "cafebreak",
-        "display_keyword": "cafebreak",
-        "display_original": "cafebreak",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "cafebreak"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 133,
-        "norm_score": 3.1907,
-        "hints": [],
         "source_count": 1
       },
       {
@@ -1611,50 +1188,6 @@
         "source_count": 1
       },
       {
-        "keyword": "VS",
-        "ip_name": "VS",
-        "display_keyword": "VS",
-        "display_original": "[小时候VS长大后",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "VS"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 67,
-        "norm_score": 2.7488,
-        "hints": [],
-        "source_count": 1
-      },
-      {
-        "keyword": "pdd",
-        "ip_name": "pdd",
-        "display_keyword": "pdd",
-        "display_original": "人鱼线的pdd]",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "pdd"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 61,
-        "norm_score": 2.6886,
-        "hints": [],
-        "source_count": 1
-      },
-      {
         "keyword": "蛋仔派对",
         "ip_name": "蛋仔派对",
         "display_keyword": "蛋仔派对",
@@ -1677,32 +1210,6 @@
           "蛋仔派对联名周边",
           "蛋仔派对手办模型",
           "蛋仔派对限定皮肤"
-        ],
-        "source_count": 1
-      },
-      {
-        "keyword": "零二",
-        "ip_name": "零二",
-        "display_keyword": "零二",
-        "display_original": "2022年新农人计划]",
-        "ip_status": "需审核",
-        "ipCategory": "动漫二次元",
-        "matched_value": "零二",
-        "match_type": "substring_full",
-        "hit_rate": 2,
-        "ips": [
-          "零二"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 58,
-        "norm_score": 2.6563,
-        "hints": [
-          "零二手办模型",
-          "零二联名周边",
-          "零二限定礼盒"
         ],
         "source_count": 1
       },
@@ -1960,28 +1467,6 @@
         "source_count": 1
       },
       {
-        "keyword": "fyppp",
-        "ip_name": "fyppp",
-        "display_keyword": "fyppp",
-        "display_original": "fyppp",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "fyppp"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 34,
-        "norm_score": 2.3161,
-        "hints": [],
-        "source_count": 1
-      },
-      {
         "keyword": "isseymiyake",
         "ip_name": "isseymiyake",
         "display_keyword": "isseymiyake",
@@ -2028,28 +1513,6 @@
           "光遇限定皮肤"
         ],
         "source_count": 1
-      },
-      {
-        "keyword": "猿猴125",
-        "ip_name": "猿猴125",
-        "display_keyword": "猿猴125",
-        "display_original": "斯托纳猿猴125]",
-        "ip_status": "新value",
-        "ipCategory": "",
-        "matched_value": null,
-        "match_type": "no_match",
-        "hit_rate": 0,
-        "ips": [
-          "猿猴125"
-        ],
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "score": 32,
-        "norm_score": 2.2778,
-        "hints": [],
-        "source_count": 1
       }
     ]
   },
@@ -2059,7 +1522,7 @@
       "title": "微博",
       "subtitle": "实时热搜榜",
       "total": 72,
-      "count": 72,
+      "count": 68,
       "items": [
         {
           "keyword": "郑钦文",
@@ -2140,29 +1603,6 @@
             "霸王茶姬联名限定",
             "霸王茶姬爆款推荐"
           ],
-          "source_count": 3
-        },
-        {
-          "keyword": "中国",
-          "ip_name": "中国",
-          "display_keyword": "中国",
-          "display_original": "德比斯分享首次中国行记录（3条...",
-          "ip_status": "需审核",
-          "ipCategory": null,
-          "matched_value": "中国",
-          "match_type": "substring_full",
-          "hit_rate": 2,
-          "ips": [
-            "中国"
-          ],
-          "platforms": [
-            "douyin",
-            "weibo"
-          ],
-          "platform": "douyin",
-          "score": 8014000,
-          "norm_score": 17.2218,
-          "hints": [],
           "source_count": 3
         },
         {
@@ -2570,50 +2010,6 @@
           "blocked": true
         },
         {
-          "keyword": "OK",
-          "ip_name": "OK",
-          "display_keyword": "OK",
-          "display_original": "两个OK两个OH写出囍字",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "OK"
-          ],
-          "platforms": [
-            "weibo"
-          ],
-          "platform": "weibo",
-          "score": 180000,
-          "norm_score": 5.2553,
-          "hints": [],
-          "source_count": 1
-        },
-        {
-          "keyword": "OH",
-          "ip_name": "OH",
-          "display_keyword": "OH",
-          "display_original": "两个OK两个OH写出囍字",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "OH"
-          ],
-          "platforms": [
-            "weibo"
-          ],
-          "platform": "weibo",
-          "score": 180000,
-          "norm_score": 5.2553,
-          "hints": [],
-          "source_count": 1
-        },
-        {
           "keyword": "李秀满新女团三位中国成员",
           "display_keyword": "李秀满新女团三位中国成员",
           "display_original": "李秀满新女团三位中国成员",
@@ -2690,28 +2086,6 @@
           "ip_status": "non_ip",
           "category": "切词无实体",
           "blocked": true
-        },
-        {
-          "keyword": "AI",
-          "ip_name": "AI",
-          "display_keyword": "AI",
-          "display_original": "内娱来了五位AI艺人",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "AI"
-          ],
-          "platforms": [
-            "weibo"
-          ],
-          "platform": "weibo",
-          "score": 170000,
-          "norm_score": 5.2305,
-          "hints": [],
-          "source_count": 1
         },
         {
           "keyword": "内娱来了五位AI艺人",
@@ -3256,7 +2630,7 @@
       "title": "抖音",
       "subtitle": "实时热搜榜",
       "total": 70,
-      "count": 70,
+      "count": 69,
       "items": [
         {
           "keyword": "郑钦文",
@@ -3659,29 +3033,6 @@
           "ip_status": "trend",
           "category": "流行元素",
           "blocked": false
-        },
-        {
-          "keyword": "中国",
-          "ip_name": "中国",
-          "display_keyword": "中国",
-          "display_original": "德比斯分享首次中国行记录（3条...",
-          "ip_status": "需审核",
-          "ipCategory": null,
-          "matched_value": "中国",
-          "match_type": "substring_full",
-          "hit_rate": 2,
-          "ips": [
-            "中国"
-          ],
-          "platforms": [
-            "douyin",
-            "weibo"
-          ],
-          "platform": "douyin",
-          "score": 8014000,
-          "norm_score": 17.2218,
-          "hints": [],
-          "source_count": 3
         },
         {
           "keyword": "虞昶轩叶平君到底谁拿捏谁",
@@ -4427,7 +3778,7 @@
       "title": "小红书",
       "subtitle": "实时热搜榜",
       "total": 346,
-      "count": 346,
+      "count": 329,
       "items": [
         {
           "keyword": "时代少年团",
@@ -4520,19 +3871,6 @@
           "ip_status": "ip",
           "category": "游戏电竞",
           "blocked": false
-        },
-        {
-          "keyword": "fyp",
-          "display_keyword": "fyp",
-          "display_original": "fyp",
-          "score": 2273,
-          "platform": "xiaohongshu",
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "ip_status": "non_ip",
-          "category": "规则黑名单",
-          "blocked": true
         },
         {
           "keyword": "shoujo",
@@ -5186,19 +4524,6 @@
           "source_count": 2
         },
         {
-          "keyword": "vlog",
-          "display_keyword": "vlog",
-          "display_original": "vlog",
-          "score": 446,
-          "platform": "xiaohongshu",
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "ip_status": "non_ip",
-          "category": "规则黑名单",
-          "blocked": true
-        },
-        {
           "keyword": "羽毛球教学﻿",
           "display_keyword": "羽毛球教学﻿",
           "display_original": "羽毛球教学﻿",
@@ -5287,28 +4612,6 @@
             "明日方舟手办模型",
             "明日方舟限定皮肤"
           ],
-          "source_count": 2
-        },
-        {
-          "keyword": "mx",
-          "ip_name": "mx",
-          "display_keyword": "mx",
-          "display_original": "[马自达mx5（2条热搜）",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "mx"
-          ],
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "platform": "xiaohongshu",
-          "score": 332,
-          "norm_score": 6.6682,
-          "hints": [],
           "source_count": 2
         },
         {
@@ -5429,28 +4732,6 @@
           "blocked": true
         },
         {
-          "keyword": "nft",
-          "ip_name": "nft",
-          "display_keyword": "nft",
-          "display_original": "[nft",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "nft"
-          ],
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "platform": "xiaohongshu",
-          "score": 306,
-          "norm_score": 3.7307,
-          "hints": [],
-          "source_count": 1
-        },
-        {
           "keyword": "[nft",
           "display_keyword": "[nft",
           "display_original": "[nft",
@@ -5475,28 +4756,6 @@
           "ip_status": "non_ip",
           "category": "切词无实体",
           "blocked": true
-        },
-        {
-          "keyword": "iphone",
-          "ip_name": "iphone",
-          "display_keyword": "iphone",
-          "display_original": "[iphone13",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "iphone"
-          ],
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "platform": "xiaohongshu",
-          "score": 302,
-          "norm_score": 3.7222,
-          "hints": [],
-          "source_count": 1
         },
         {
           "keyword": "[iphone13",
@@ -5525,28 +4784,6 @@
           "blocked": true
         },
         {
-          "keyword": "mini",
-          "ip_name": "mini",
-          "display_keyword": "mini",
-          "display_original": "我的mini（2条热搜）",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "mini"
-          ],
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "platform": "xiaohongshu",
-          "score": 279,
-          "norm_score": 6.214,
-          "hints": [],
-          "source_count": 2
-        },
-        {
           "keyword": "原神",
           "display_keyword": "原神",
           "display_original": "原神",
@@ -5558,32 +4795,6 @@
           "ip_status": "ip",
           "category": "游戏电竞",
           "blocked": false
-        },
-        {
-          "keyword": "大大",
-          "ip_name": "大大",
-          "display_keyword": "大大",
-          "display_original": "我爱官方大大求流量",
-          "ip_status": "需审核",
-          "ipCategory": "动漫二次元",
-          "matched_value": "大大",
-          "match_type": "substring_full",
-          "hit_rate": 2,
-          "ips": [
-            "大大"
-          ],
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "platform": "xiaohongshu",
-          "score": 248,
-          "norm_score": 3.5943,
-          "hints": [
-            "大大手办模型",
-            "大大联名周边",
-            "大大限定礼盒"
-          ],
-          "source_count": 1
         },
         {
           "keyword": "我爱官方大大求流量",
@@ -5911,28 +5122,6 @@
           "blocked": true
         },
         {
-          "keyword": "sai",
-          "ip_name": "sai",
-          "display_keyword": "sai",
-          "display_original": "sai]",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "sai"
-          ],
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "platform": "xiaohongshu",
-          "score": 166,
-          "norm_score": 3.3341,
-          "hints": [],
-          "source_count": 1
-        },
-        {
           "keyword": "[寻找小红书绘画大神",
           "display_keyword": "[寻找小红书绘画大神",
           "display_original": "[寻找小红书绘画大神",
@@ -6035,28 +5224,6 @@
           "ip_status": "trend",
           "category": "服饰穿搭",
           "blocked": false
-        },
-        {
-          "keyword": "diy",
-          "ip_name": "diy",
-          "display_keyword": "diy",
-          "display_original": "[diy",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "diy"
-          ],
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "platform": "xiaohongshu",
-          "score": 153,
-          "norm_score": 3.2813,
-          "hints": [],
-          "source_count": 1
         },
         {
           "keyword": "[diy",
@@ -6213,28 +5380,6 @@
           "ip_status": "non_ip",
           "category": "切词无实体",
           "blocked": true
-        },
-        {
-          "keyword": "er",
-          "ip_name": "er",
-          "display_keyword": "er",
-          "display_original": "手帐er的日常（2条热搜）",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "er"
-          ],
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "platform": "xiaohongshu",
-          "score": 137,
-          "norm_score": 5.3416999999999994,
-          "hints": [],
-          "source_count": 2
         },
         {
           "keyword": "治愈系美食",
@@ -7521,41 +6666,6 @@
           "blocked": true
         },
         {
-          "keyword": "ootd",
-          "display_keyword": "ootd",
-          "display_original": "ootd",
-          "score": 76,
-          "platform": "xiaohongshu",
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "ip_status": "non_ip",
-          "category": "规则黑名单",
-          "blocked": true
-        },
-        {
-          "keyword": "VS",
-          "ip_name": "VS",
-          "display_keyword": "VS",
-          "display_original": "[小时候VS长大后",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "VS"
-          ],
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "platform": "xiaohongshu",
-          "score": 67,
-          "norm_score": 2.7488,
-          "hints": [],
-          "source_count": 1
-        },
-        {
           "keyword": "[小时候VS长大后",
           "display_keyword": "[小时候VS长大后",
           "display_original": "[小时候VS长大后",
@@ -7595,19 +6705,6 @@
           "blocked": true
         },
         {
-          "keyword": "mini",
-          "display_keyword": "mini",
-          "display_original": "mini",
-          "score": 63,
-          "platform": "xiaohongshu",
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "ip_status": "ip",
-          "category": "",
-          "blocked": false
-        },
-        {
           "keyword": "显瘦穿搭",
           "display_keyword": "显瘦穿搭",
           "display_original": "显瘦穿搭",
@@ -7619,28 +6716,6 @@
           "ip_status": "trend",
           "category": "服饰穿搭",
           "blocked": false
-        },
-        {
-          "keyword": "pdd",
-          "ip_name": "pdd",
-          "display_keyword": "pdd",
-          "display_original": "人鱼线的pdd]",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "pdd"
-          ],
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "platform": "xiaohongshu",
-          "score": 61,
-          "norm_score": 2.6886,
-          "hints": [],
-          "source_count": 1
         },
         {
           "keyword": "[余庆伟",
@@ -7797,32 +6872,6 @@
           "ip_status": "non_ip",
           "category": "切词无实体",
           "blocked": true
-        },
-        {
-          "keyword": "零二",
-          "ip_name": "零二",
-          "display_keyword": "零二",
-          "display_original": "2022年新农人计划]",
-          "ip_status": "需审核",
-          "ipCategory": "动漫二次元",
-          "matched_value": "零二",
-          "match_type": "substring_full",
-          "hit_rate": 2,
-          "ips": [
-            "零二"
-          ],
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "platform": "xiaohongshu",
-          "score": 58,
-          "norm_score": 2.6563,
-          "hints": [
-            "零二手办模型",
-            "零二联名周边",
-            "零二限定礼盒"
-          ],
-          "source_count": 1
         },
         {
           "keyword": "手写文案",
@@ -8845,28 +7894,6 @@
           "source_count": 1
         },
         {
-          "keyword": "fyppp",
-          "ip_name": "fyppp",
-          "display_keyword": "fyppp",
-          "display_original": "fyppp",
-          "ip_status": "新value",
-          "ipCategory": "",
-          "matched_value": null,
-          "match_type": "no_match",
-          "hit_rate": 0,
-          "ips": [
-            "fyppp"
-          ],
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "platform": "xiaohongshu",
-          "score": 34,
-          "norm_score": 2.3161,
-          "hints": [],
-          "source_count": 1
-        },
-        {
           "keyword": "isseymiyake",
           "ip_name": "isseymiyake",
           "display_keyword": "isseymiyake",
@@ -9022,19 +8049,6 @@
           "keyword": "tanjiro",
           "display_keyword": "tanjiro",
           "display_original": "tanjiro",
-          "score": 34,
-          "platform": "xiaohongshu",
-          "platforms": [
-            "xiaohongshu"
-          ],
-          "ip_status": "ip",
-          "category": "",
-          "blocked": false
-        },
-        {
-          "keyword": "fyppp",
-          "display_keyword": "fyppp",
-          "display_original": "fyppp",
           "score": 34,
           "platform": "xiaohongshu",
           "platforms": [
