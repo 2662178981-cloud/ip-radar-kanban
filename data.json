@@ -1,6 +1,6 @@
 {
   "version": "4.0",
-  "generatedAt": "2026-10-13 15:50",
+  "generatedAt": "2026-10-13T18:39:12+08:00",
   "summary": {
     "total": 58,
     "ipCount": 58,
@@ -8462,15 +8462,16 @@
   },
   "styleHotBoard": {
     "title": "风格热点",
-    "total": 4,
+    "subtitle": "小红书热搜风格词",
+    "total": 19,
     "items": [
       {
-        "keyword": "日系",
-        "style_word": "日系",
-        "display_keyword": "日系",
-        "display_original": "日系",
-        "styleCategory": "日韩系风",
-        "score": 2204,
+        "keyword": "氛围感",
+        "style_word": "氛围感",
+        "display_keyword": "氛围感",
+        "display_original": "氛围感",
+        "styleCategory": "氛围松弛风",
+        "score": 433,
         "platforms": [
           "xiaohongshu"
         ],
@@ -8479,12 +8480,12 @@
         "style_rank": 1
       },
       {
-        "keyword": "氛围感",
-        "style_word": "氛围感",
-        "display_keyword": "氛围感",
-        "display_original": "氛围感",
-        "styleCategory": "氛围松弛风",
-        "score": 1623,
+        "keyword": "高级感",
+        "style_word": "高级感",
+        "display_keyword": "高级感",
+        "display_original": "气质穿搭",
+        "styleCategory": "高级质感风",
+        "score": 206,
         "platforms": [
           "xiaohongshu"
         ],
@@ -8493,12 +8494,12 @@
         "style_rank": 2
       },
       {
-        "keyword": "辣妹风穿搭]",
-        "style_word": "辣妹风",
-        "display_keyword": "辣妹风",
-        "display_original": "辣妹风穿搭]",
-        "styleCategory": "甜酷少女风",
-        "score": 689,
+        "keyword": "治愈系",
+        "style_word": "治愈系",
+        "display_keyword": "治愈系",
+        "display_original": "生活美学",
+        "styleCategory": "治愈生活风",
+        "score": 202,
         "platforms": [
           "xiaohongshu"
         ],
@@ -8507,18 +8508,228 @@
         "style_rank": 3
       },
       {
-        "keyword": "韩系穿搭]",
-        "style_word": "韩系",
-        "display_keyword": "韩系",
-        "display_original": "韩系穿搭]",
-        "styleCategory": "日韩系风",
-        "score": 147,
+        "keyword": "职场",
+        "style_word": "职场",
+        "display_keyword": "职场",
+        "display_original": "通勤穿搭",
+        "styleCategory": "通勤职场风",
+        "score": 141,
         "platforms": [
           "xiaohongshu"
         ],
         "platform": "xiaohongshu",
         "hints": [],
         "style_rank": 4
+      },
+      {
+        "keyword": "韩系",
+        "style_word": "韩系",
+        "display_keyword": "韩系",
+        "display_original": "韩系穿搭",
+        "styleCategory": "日韩系风",
+        "score": 125,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 5
+      },
+      {
+        "keyword": "运动",
+        "style_word": "运动",
+        "display_keyword": "运动",
+        "display_original": "我的运动日常",
+        "styleCategory": "运动休闲风",
+        "score": 114,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 6
+      },
+      {
+        "keyword": "复古",
+        "style_word": "复古",
+        "display_keyword": "复古",
+        "display_original": "复古穿搭",
+        "styleCategory": "复古怀旧风",
+        "score": 74,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 7
+      },
+      {
+        "keyword": "少女",
+        "style_word": "少女",
+        "display_keyword": "少女",
+        "display_original": "少女睡衣",
+        "styleCategory": "甜酷少女风",
+        "score": 52,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 8
+      },
+      {
+        "keyword": "甜妹",
+        "style_word": "甜妹",
+        "display_keyword": "甜妹",
+        "display_original": "甜妹",
+        "styleCategory": "甜酷少女风",
+        "score": 42,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 9
+      },
+      {
+        "keyword": "日系",
+        "style_word": "日系",
+        "display_keyword": "日系",
+        "display_original": "日系",
+        "styleCategory": "日韩系风",
+        "score": 41,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 10
+      },
+      {
+        "keyword": "古风",
+        "style_word": "古风",
+        "display_keyword": "古风",
+        "display_original": "古风",
+        "styleCategory": "新中式国风",
+        "score": 34,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 11
+      },
+      {
+        "keyword": "国风",
+        "style_word": "国风",
+        "display_keyword": "国风",
+        "display_original": "国风",
+        "styleCategory": "新中式国风",
+        "score": 27,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 12
+      },
+      {
+        "keyword": "新中式",
+        "style_word": "新中式",
+        "display_keyword": "新中式",
+        "display_original": "新中式",
+        "styleCategory": "新中式国风",
+        "score": 26,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 13
+      },
+      {
+        "keyword": "辣妹风",
+        "style_word": "辣妹风",
+        "display_keyword": "辣妹风",
+        "display_original": "辣妹穿搭",
+        "styleCategory": "甜酷少女风",
+        "score": 25,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 14
+      },
+      {
+        "keyword": "粉色系",
+        "style_word": "粉色系",
+        "display_keyword": "粉色系",
+        "display_original": "粉色系",
+        "styleCategory": "甜酷少女风",
+        "score": 25,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 15
+      },
+      {
+        "keyword": "御姐",
+        "style_word": "御姐",
+        "display_keyword": "御姐",
+        "display_original": "御姐",
+        "styleCategory": "甜酷少女风",
+        "score": 15,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 16
+      },
+      {
+        "keyword": "老钱风",
+        "style_word": "老钱风",
+        "display_keyword": "老钱风",
+        "display_original": "老钱风",
+        "styleCategory": "复古怀旧风",
+        "score": 14,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 17
+      },
+      {
+        "keyword": "多巴胺",
+        "style_word": "多巴胺",
+        "display_keyword": "多巴胺",
+        "display_original": "晒出我的多巴胺小鸟",
+        "styleCategory": "甜酷少女风",
+        "score": 12,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 18
+      },
+      {
+        "keyword": "极简",
+        "style_word": "极简",
+        "display_keyword": "极简",
+        "display_original": "简约手机壳",
+        "styleCategory": "高级质感风",
+        "score": 12,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 19
       }
     ]
   },
