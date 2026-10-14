@@ -81,6 +81,13 @@
   .status-matched { background: #d1fae5; color: #065f46; }
   .status-review { background: #fef3c7; color: #92400e; }
   .status-new { background: #dbeafe; color: #1e40af; }
+  /* 热度状态徽标 */
+  .heat-pill { padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; display: inline-block; margin-left: 4px; }
+  .heat-hot { background: #fee2e2; color: #b91c1c; }
+  .heat-flat { background: #fef3c7; color: #92400e; }
+  .heat-down { background: #e5e7eb; color: #4b5563; }
+  .heat-off { background: #f3f4f6; color: #9ca3af; }
+  .heat-val { font-size: 11px; color: #6b7280; margin-left: 3px; }
 
   .cat-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; margin-right: 4px; vertical-align: middle; }
   .cat-明星, .cat-明星艺人 { background: #ec4899; }
@@ -241,11 +248,17 @@
         <option value="新value">新词</option>
       </select>
       <select class="filter-select" id="filter-cat"></select>
+      <select class="filter-select" id="filter-heat">
+        <option value="" selected>全部热度</option>
+        <option value="hot">爆（新上榜/上升）</option>
+        <option value="flat">平稳</option>
+        <option value="down">降（下降/掉榜）</option>
+      </select>
     </div>
     <table class="lb-table" id="lb-table">
       <thead>
         <tr>
-          <th style="width:40px">排名</th><th>IP名 / 原热搜词</th><th>状态</th><th>分类</th><th>来源</th><th>联想词条</th>
+          <th style="width:40px">排名</th><th>IP名 / 原热搜词</th><th>状态</th><th>分类</th><th>来源</th><th>联想词条</th><th>热度</th>
         </tr>
       </thead>
       <tbody id="lb-body"></tbody>
@@ -328,6 +341,13 @@ const CAT_COLORS = {
   "文娱其他": "#6b7280"
 };
 const HINT_COLORS = ["hint-blue", "hint-orange", "hint-green", "hint-purple"];
+/* 热度状态 -> 涨幅档位 */
+const HEAT_GROUP = {
+  "新上榜": "hot", "上升": "hot", "暴涨": "hot",
+  "平稳": "flat",
+  "下降": "down", "掉榜": "down"
+};
+const HEAT_LABEL = { hot: "爆", flat: "平稳", down: "降" };
 
 function rankClass(r) { return r <= 10 ? "rank-" + r : "rank-else"; }
 function heatScore(it) { return Number(it.norm_score || it.score || 0); }
@@ -339,6 +359,51 @@ function catDotHtml(cat) {
 /* 状态可信度排序：同一条热搜裂成多行时，取最可信的那条作为代表状态 */
 function statusRank(s) { return s === '匹配成功' ? 3 : (s === '需审核' ? 2 : 1); }
 function ipNameOf(it) { return it.display_keyword || it.ip_name || it.matched_value || it.keyword || ''; }
+
+/* ===== 热度匹配 ===== */
+function buildHeatMap(rows) {
+  const map = {};
+  (rows || []).forEach(r => {
+    const ips = String(r['命中IP'] || '').split(/[、,，]/).map(s => s.trim()).filter(Boolean);
+    ips.forEach(ip => {
+      if (!map[ip]) map[ip] = [];
+      map[ip].push(r);
+    });
+  });
+  return map;
+}
+/* 按 IP 名查找热度记录（取热度数值最高的一条） */
+function findHeat(names) {
+  if (!HEAT_MAP) return null;
+  const cands = [];
+  (names || []).forEach(n => {
+    if (!n) return;
+    if (HEAT_MAP[n]) cands.push.apply(cands, HEAT_MAP[n]);
+    // 模糊：命中IP 包含该名，或该名包含命中IP
+    Object.keys(HEAT_MAP).forEach(k => {
+      if (k === n) return;
+      if (k.indexOf(n) !== -1 || n.indexOf(k) !== -1) {
+        cands.push.apply(cands, HEAT_MAP[k]);
+      }
+    });
+  });
+  if (!cands.length) return null;
+  cands.sort((a, b) => (Number(b['热度数值']) || 0) - (Number(a['热度数值']) || 0));
+  return cands[0];
+}
+/* 热度徽标 HTML（含涨幅档位 + 热度值） */
+function heatBadgeHtml(h) {
+  if (!h) return '';
+  const st = h['状态'] || '';
+  const grp = HEAT_GROUP[st] || 'flat';
+  const val = h['热度值'] || '';
+  const chg = h['相对变化'];
+  const chgStr = (chg != null && chg !== '') ? (chg > 0 ? '▲' + chg : (chg < 0 ? '▼' + Math.abs(chg) : '—')) : '';
+  return '<span class="heat-pill heat-' + grp + '">' + escHtml(st) + '</span>' +
+    (val ? '<span class="heat-val">' + escHtml(val) + '</span>' : '') +
+    (chgStr ? '<span class="heat-val">' + chgStr + '</span>' : '');
+}
+
 
 /* ===== 数据加载 ===== */
 const BASE_URL = (typeof window !== 'undefined' && window.IP_RADAR_DATA_BASE_URL) || '';
@@ -373,6 +438,8 @@ let LB_MODE = 'ip';  // 泛IP / 流行趋势 子tab当前模式
 let HINTS_DATA = null;
 let SNAPSHOTS = null;
 let DIESUN_INDEX = null;
+let HEAT_MAP = null;  /* IP名 -> 热度记录 */
+let HEAT_ROWS = null;
 
 async function loadAll() {
   // 可选文件（calendar_index/hints/diesun_index）不存在时不白等：retries=1，失败即 null
@@ -387,6 +454,17 @@ async function loadAll() {
   HINTS_DATA = hints;
   DIESUN_INDEX = diesun;
   SNAPSHOTS = null;
+  // 热度数据：先加载索引，再加载最新 raw 文件（失败不影响主流程）
+  try {
+    const idx = await fetchJSON('heat_index.json', 1);
+    const latest = (idx && idx.latest) ? idx.latest : '热点监控_raw_20261014.json';
+    const raw = await fetchJSON(latest, 1);
+    HEAT_ROWS = (raw && Array.isArray(raw.rows)) ? raw.rows : [];
+    HEAT_MAP = buildHeatMap(HEAT_ROWS);
+  } catch (e) {
+    HEAT_ROWS = [];
+    HEAT_MAP = null;
+  }
 }
 
 /* ===== 渲染 ===== */
@@ -519,11 +597,17 @@ function renderLeaderboard() {
   buildCatFilter(all);
   const statusF = document.getElementById('filter-status').value;
   const catF = document.getElementById('filter-cat').value;
+  const heatF = document.getElementById('filter-heat').value;
   const rows = all.filter(r => {
     if (statusF === '__ip__') return r.ip_status === '匹配成功' || r.ip_status === '需审核';
     if (!statusF) return true;
     return r.ip_status === statusF;
-  }).filter(r => (!catF || r.ipCategory === catF));
+  }).filter(r => (!catF || r.ipCategory === catF)).filter(r => {
+    if (!heatF) return true;
+    const h = findHeat(r._names || []);
+    const grp = h ? (HEAT_GROUP[h['状态']] || 'flat') : 'off';
+    return grp === heatF;
+  });
 
   const hidden = all.length - rows.length;
   document.getElementById('lb-sub').textContent = statusF === '__ip__'
@@ -531,7 +615,7 @@ function renderLeaderboard() {
     : ('被识别为 IP 的热度词（含新词/需审核） · 共 ' + rows.length + ' 条');
 
   const body = document.getElementById('lb-body');
-  if (!rows.length) { body.innerHTML = '<tr><td colspan="6" style="text-align:center;color:#9ca3af;padding:30px">无匹配数据</td></tr>'; return; }
+  if (!rows.length) { body.innerHTML = '<tr><td colspan="7" style="text-align:center;color:#9ca3af;padding:30px">无匹配数据</td></tr>'; return; }
   body.innerHTML = rows.map((d, i) => {
     const rank = i + 1;
     const st = STATUS[d.ip_status] || { cls: "status-review", label: d.ip_status || "—" };
@@ -559,6 +643,7 @@ function renderLeaderboard() {
       '<td>' + catDotHtml(d.ipCategory) + escHtml(d.ipCategory || '—') + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
       '<td>' + renderHintsPills(d.hints) + '</td>' +
+      '<td>' + heatBadgeHtml(findHeat(d._names || [])) + '</td>' +
     '</tr>';
   }).join("");
 }
@@ -741,9 +826,11 @@ function renderStyleHot() {
     const platHtml = platforms.length
       ? '<div class="style-platforms">' + platforms.map(p => escHtml(platformLabel(p))).join(' · ') + '</div>'
       : '';
+    const hh = findHeat([word]);
     return '<div class="style-card">' +
       '<div class="style-rank">' + rank + '</div>' +
       '<div class="style-word">' + escHtml(word) + '</div>' +
+      (hh ? '<div style="margin-bottom:4px">' + heatBadgeHtml(hh) + '</div>' : '') +
       (cat ? '<div class="style-cat">' + escHtml(cat) + '</div>' : '') +
       '<div class="style-score">热度 ' + score + '</div>' +
       platHtml +
@@ -1003,6 +1090,7 @@ document.querySelectorAll('.tab').forEach(tab => {
 
 document.getElementById('filter-status').addEventListener('change', renderLeaderboard);
 document.getElementById('filter-cat').addEventListener('change', renderLeaderboard);
+document.getElementById('filter-heat').addEventListener('change', renderLeaderboard);
 document.getElementById('filter-cal-type').addEventListener('change', renderCalendar);
 document.getElementById('snapshot-date').addEventListener('change', renderSnapshot);
 document.getElementById('snapshot-kw').addEventListener('input', renderSnapshot);
