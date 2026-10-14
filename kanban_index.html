@@ -195,7 +195,6 @@
     <button type="button" class="tab blue" data-tab="platform" role="tab" aria-selected="false" aria-controls="panel-platform">📊 平台明细</button>
     <button type="button" class="tab green" data-tab="calendar" role="tab" aria-selected="false" aria-controls="panel-calendar">📅 热点日历</button>
     <button type="button" class="tab red" data-tab="snapshot" role="tab" aria-selected="false" aria-controls="panel-snapshot">📸 趋势快照</button>
-    <button type="button" class="tab amber" data-tab="heat" role="tab" aria-selected="false" aria-controls="panel-heat">🔥 热度监控</button>
   </div>
 
   <div class="panel" id="panel-leaderboard">
@@ -226,8 +225,16 @@
   <div class="panel hidden" id="panel-platform">
     <div class="panel-sub">各平台热词榜（含非 IP 条目）</div>
     <div class="subtabs" id="subtabs"></div>
+    <div class="filters" id="heat-filter-wrap" style="display:none;margin:10px 0">
+      <select class="filter-select" id="heat-filter">
+        <option value="">全部涨幅</option>
+        <option value="火爆">🔥 火爆</option>
+        <option value="平稳">➖ 平稳</option>
+        <option value="下降">📉 下降</option>
+      </select>
+    </div>
     <table class="lb-table">
-      <thead><tr><th style="width:40px">排名</th><th>原热搜词 / IP名</th><th>状态</th><th>来源</th><th>联想词条</th></tr></thead>
+      <thead><tr id="platform-thead"><th style="width:40px">排名</th><th>原热搜词 / IP名</th><th>状态</th><th>来源</th><th>联想词条</th></tr></thead>
       <tbody id="platform-body"></tbody>
     </table>
   </div>
@@ -248,27 +255,7 @@
     <div id="snapshot-content"></div>
   </div>
 
-  <div class="panel hidden" id="panel-heat">
-    <div class="panel-sub">热搜 IP 名次位移监测 · 涨/跌/新上榜/掉榜</div>
-    <div class="filters" style="margin-bottom:10px">
-      <select class="filter-select" id="heat-status">
-        <option value="">全部状态</option>
-        <option value="暴涨">暴涨</option>
-        <option value="新上榜">新上榜</option>
-        <option value="上升">上升</option>
-        <option value="平稳">平稳</option>
-        <option value="下降">下降</option>
-        <option value="掉榜">掉榜</option>
-      </select>
-      <input type="text" id="heat-kw" class="filter-select" style="padding:5px 8px;width:180px" placeholder="按关键词/IP搜索">
-      <button id="heat-clear" class="filter-select" style="padding:5px 12px;cursor:pointer;background:#fff;border:1px solid #e5e7eb;border-radius:8px;font-size:12px">清除</button>
-    </div>
-    <div class="item-count" id="heat-meta"></div>
-    <div id="heat-content"></div>
-
-    <div class="snapshot-date-header" style="margin-top:18px"><span class="snapshot-date-badge" style="background:#f59e0b">跨天趋势</span> 本地历史名次对比</div>
-    <div id="heat-trend-content"></div>
-  </div>
+  
 </div>
 
 <div class="loading-mask" id="loading-mask">
@@ -466,15 +453,23 @@ function renderSubtabs() {
   const boards = PAYLOAD.platformBoards || {};
   const subtabs = document.getElementById('subtabs');
   const entries = Object.entries(boards).sort((a, b) => b[1].count - a[1].count);
-  subtabs.innerHTML = entries.map(([p, b]) =>
+  let html = entries.map(([p, b]) =>
     '<button type="button" class="subtab" data-platform="' + p + '" role="tab" aria-selected="false">' + (b.title || PLATFORM_LABELS[p] || p) + '<span class="count">' + b.count + '</span></button>'
   ).join('');
+  // 热度子tab：融入平台明细，与平台分类同款直观展示
+  if (HEAT_DATA && HEAT_DATA.rows && HEAT_DATA.rows.length) {
+    html += '<button type="button" class="subtab" data-platform="heat" role="tab" aria-selected="false">🔥 热度<span class="count">' + HEAT_DATA.rows.length + '</span></button>';
+  }
+  subtabs.innerHTML = html;
   const tabs = subtabs.querySelectorAll('.subtab');
   tabs.forEach(t => t.addEventListener('click', () => {
     tabs.forEach(x => { x.classList.remove('active'); x.setAttribute('aria-selected', 'false'); });
     t.classList.add('active');
     t.setAttribute('aria-selected', 'true');
-    renderPlatform(t.dataset.platform);
+    const p = t.dataset.platform;
+    // 仅热度子tab显示涨幅筛选
+    document.getElementById('heat-filter-wrap').style.display = (p === 'heat') ? 'block' : 'none';
+    if (p === 'heat') { renderHeatPlatform(); } else { renderPlatform(p); }
   }));
   if (tabs[0]) { tabs[0].classList.add('active'); tabs[0].setAttribute('aria-selected', 'true'); renderPlatform(tabs[0].dataset.platform); }
 }
@@ -482,6 +477,9 @@ function renderSubtabs() {
 function renderPlatform(platform) {
   const board = (PAYLOAD.platformBoards || {})[platform];
   const body = document.getElementById('platform-body');
+  // 平台子tab：恢复平台明细表头
+  const thead = document.getElementById('platform-thead');
+  if (thead) thead.innerHTML = '<th style="width:40px">排名</th><th>原热搜词 / IP名</th><th>状态</th><th>来源</th><th>联想词条</th>';
   if (!board || !board.items || !board.items.length) { body.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#9ca3af;padding:30px">无数据</td></tr>'; return; }
   const items = board.items;
   body.innerHTML = items.map((d, i) => {
@@ -598,113 +596,52 @@ function heatDeltaText(v) {
 }
 function heatStatusClass(s) { return 'hs-' + (s || '平稳'); }
 
-function renderHeat() {
-  const container = document.getElementById('heat-content');
-  const metaEl = document.getElementById('heat-meta');
-  if (!HEAT_DATA || !HEAT_DATA.rows) {
-    metaEl.textContent = '';
-    container.innerHTML = '<div class="snapshot-empty">暂无热度监控数据（需先运行热点监控采集脚本并推送 heat_index.json / 最新 raw 数据）</div>';
+// 热度数据融入平台明细：同款表格样式 + 涨幅筛选（火爆/平稳/下降）
+function renderHeatPlatform() {
+  const body = document.getElementById('platform-body');
+  const filterWrap = document.getElementById('heat-filter-wrap');
+  // 热度子tab：切换表头为热度专属列
+  const thead = document.getElementById('platform-thead');
+  if (thead) thead.innerHTML = '<th style="width:40px">名次</th><th>热搜标题 / 命中IP</th><th>状态</th><th>涨幅</th><th>热度值</th>';
+  if (!HEAT_DATA || !HEAT_DATA.rows || !HEAT_DATA.rows.length) {
+    if (filterWrap) filterWrap.style.display = 'none';
+    body.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#9ca3af;padding:30px">暂无热度监控数据</td></tr>';
     return;
   }
-  const meta = HEAT_DATA.meta || {};
   const rows = HEAT_DATA.rows || [];
-  const statusF = (document.getElementById('heat-status').value || '').trim();
-  const kwF = (document.getElementById('heat-kw').value || '').trim().toLowerCase();
-
-  // 元信息
-  const dist = meta['状态分布'] || {};
-  const distStr = Object.keys(dist).map(k => k + ' ' + dist[k]).join(' · ');
-  metaEl.textContent = (meta['榜单'] || '') + ' · ' + (meta['采集时间'] || '') +
-    ' · 对比区间 ' + (meta['对比区间'] || '') + ' · 共 ' + rows.length + ' 条' +
-    (distStr ? ' · ' + distStr : '');
-
+  const f = (document.getElementById('heat-filter').value || '').trim();
+  // 涨幅档位映射：火爆=新上榜+上升，平稳=平稳，下降=下降+掉榜
+  const grp = {
+    '火爆': ['新上榜', '上升', '暴涨'],
+    '平稳': ['平稳'],
+    '下降': ['下降', '掉榜']
+  };
   const filtered = rows.filter(r => {
-    if (statusF && r['状态'] !== statusF) return false;
-    if (kwF) {
-      const hay = ((r['标题'] || '') + ' ' + (r['命中IP'] || '')).toLowerCase();
-      if (hay.indexOf(kwF) === -1) return false;
-    }
-    return true;
+    if (!f) return true;
+    return (grp[f] || []).indexOf(r['状态']) !== -1;
   });
-
   if (!filtered.length) {
-    container.innerHTML = '<div class="snapshot-empty">无匹配数据</div>';
+    body.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#9ca3af;padding:30px">无匹配数据</td></tr>';
     return;
   }
-
-  container.innerHTML = '<table class="heat-table"><thead><tr>' +
-    '<th style="width:36px">名次</th>' +
-    '<th>热搜标题 / 命中IP</th>' +
-    '<th>状态</th>' +
-    '<th>此前名次</th>' +
-    '<th>名次变化</th>' +
-    '<th>相对变化</th>' +
-    '<th>热度值</th>' +
-    '<th>链接</th>' +
-    '</tr></thead><tbody>' +
-    filtered.map(r => {
-      const cur = r['当前名次'];
-      const prev = r['此前名次'];
-      const delta = r['名次变化'];
-      const rel = r['相对变化'];
-      const curHtml = (cur === null || cur === undefined) ? '<span class="heat-flat">—</span>' : '<span class="rank-badge ' + rankClass(cur) + '">' + cur + '</span>';
-      const prevHtml = (prev === null || prev === undefined) ? '—' : prev;
-      const deltaHtml = '<span class="heat-delta ' + heatDeltaClass(delta) + '">' + heatDeltaText(delta) + '</span>';
-      const relHtml = (rel === null || rel === undefined) ? '—' : '<span class="heat-delta ' + heatDeltaClass(rel) + '">' + heatDeltaText(rel) + '</span>';
-      const link = r['链接'] ? '<a class="heat-link" href="' + r['链接'] + '" target="_blank" rel="noopener">查看</a>' : '—';
-      return '<tr>' +
-        '<td>' + curHtml + '</td>' +
-        '<td><div class="heat-title">' + escHtml(r['标题'] || '') + '</div>' +
-          (r['命中IP'] ? '<div class="heat-ip">' + escHtml(r['命中IP']) + '</div>' : '') + '</td>' +
-        '<td><span class="heat-status ' + heatStatusClass(r['状态']) + '">' + (r['状态'] || '—') + '</span></td>' +
-        '<td>' + prevHtml + '</td>' +
-        '<td>' + deltaHtml + '</td>' +
-        '<td>' + relHtml + '</td>' +
-        '<td>' + escHtml(r['热度值'] || '—') + '</td>' +
-        '<td>' + link + '</td>' +
-        '</tr>';
-    }).join('') + '</tbody></table>';
+  body.innerHTML = filtered.map(r => {
+    const cur = r['当前名次'];
+    const delta = r['名次变化'];
+    const rel = r['相对变化'];
+    const curHtml = (cur === null || cur === undefined) ? '<span class="heat-flat">—</span>' : '<span class="rank-badge ' + rankClass(cur) + '">' + cur + '</span>';
+    const deltaHtml = '<span class="heat-delta ' + heatDeltaClass(delta) + '">' + heatDeltaText(delta) + '</span>';
+    const relHtml = (rel === null || rel === undefined) ? '—' : '<span class="heat-delta ' + heatDeltaClass(rel) + '">' + heatDeltaText(rel) + '</span>';
+    const link = r['链接'] ? '<a class="heat-link" href="' + r['链接'] + '" target="_blank" rel="noopener">查看</a>' : '—';
+    return '<tr>' +
+      '<td>' + curHtml + '</td>' +
+      '<td><div class="kw-main">' + escHtml(r['标题'] || '') + '</div>' +
+        (r['命中IP'] ? '<div class="kw-sub">' + escHtml(r['命中IP']) + '</div>' : '') + '</td>' +
+      '<td><span class="heat-status ' + heatStatusClass(r['状态']) + '">' + (r['状态'] || '—') + '</span></td>' +
+      '<td>' + deltaHtml + ' ' + relHtml + '</td>' +
+      '<td>' + escHtml(r['热度值'] || '—') + ' ' + link + '</td>' +
+      '</tr>';
+  }).join('');
 }
-
-/* ===== 热度跨天趋势 ===== */
-function renderHeatTrend() {
-  // 基于 heat_history.json 展示跨天名次趋势（本地攒的历史，规避 tophub 付费快照）
-  const container = document.getElementById('heat-trend-content');
-  if (!container) return;
-  if (!HEAT_HISTORY || !HEAT_HISTORY.days || !HEAT_HISTORY.days.length) {
-    container.innerHTML = '<div class="snapshot-empty">暂无跨天趋势历史（需本地持续攒 history）</div>';
-    return;
-  }
-  const days = HEAT_HISTORY.days; // [{date, items:[{k,r,s}]}]
-  // 取最近 N 天都出现的 IP 关键词做趋势
-  const present = {};
-  days.forEach(d => (d.items || []).forEach(it => {
-    const k = it.k || it.keyword || '';
-    if (!k) return;
-    present[k] = (present[k] || 0) + 1;
-  }));
-  const hot = Object.keys(present).filter(k => present[k] >= 2).slice(0, 20);
-  if (!hot.length) {
-    container.innerHTML = '<div class="snapshot-empty">暂无可展示的跨天趋势（需至少两天重复出现的 IP）</div>';
-    return;
-  }
-  let html = '<table class="heat-table"><thead><tr><th>IP关键词</th>' +
-    days.map(d => '<th>' + escHtml(d.date || '') + '</th>').join('') +
-    '</tr></thead><tbody>';
-  hot.forEach(k => {
-    html += '<tr><td class="heat-title">' + escHtml(k) + '</td>';
-    days.forEach(d => {
-      const it = (d.items || []).find(x => (x.k || x.keyword || '') === k);
-      if (!it) { html += '<td><span class="heat-flat">—</span></td>'; return; }
-      const r = it.r || it.rank;
-      html += '<td>' + (r ? ('#' + r) : '—') + '</td>';
-    });
-    html += '</tr>';
-  });
-  html += '</tbody></table>';
-  container.innerHTML = html;
-}
-
 
 /* ===== 泛IP/流行趋势 子tab切换 ===== */
 function bindLbSubtabs() {
@@ -742,13 +679,7 @@ document.getElementById('snapshot-clear').addEventListener('click', function() {
   renderSnapshot();
 });
 
-document.getElementById('heat-status').addEventListener('change', renderHeat);
-document.getElementById('heat-kw').addEventListener('input', renderHeat);
-document.getElementById('heat-clear').addEventListener('click', function() {
-  document.getElementById('heat-status').value = '';
-  document.getElementById('heat-kw').value = '';
-  renderHeat();
-});
+document.getElementById('heat-filter').addEventListener('change', renderHeatPlatform);
 
 /* ===== 启动 ===== */
 async function init() {
@@ -761,8 +692,6 @@ async function init() {
     renderSubtabs();
     renderCalendar();
     renderSnapshot();
-    renderHeat();
-    renderHeatTrend();
   } catch (err) {
     document.getElementById('loading-mask').classList.add('hidden');
     document.getElementById('error-msg').textContent = err.message;
