@@ -88,6 +88,7 @@
   .heat-down { background: #e5e7eb; color: #4b5563; }
   .heat-off { background: #f3f4f6; color: #9ca3af; }
   .heat-val { font-size: 11px; color: #6b7280; margin-left: 3px; }
+  .heat-num { font-size: 12px; font-weight: 700; color: #f59e0b; }
 
   .cat-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; margin-right: 4px; vertical-align: middle; }
   .cat-明星, .cat-明星艺人 { background: #ec4899; }
@@ -391,17 +392,30 @@ function findHeat(names) {
   cands.sort((a, b) => (Number(b['热度数值']) || 0) - (Number(a['热度数值']) || 0));
   return cands[0];
 }
-/* 热度徽标 HTML（含涨幅档位 + 热度值） */
+/* 热度数值格式化：1010000 -> 101万 */
+function fmtHeatVal(n) {
+  n = Number(n) || 0;
+  if (n <= 0) return '';
+  if (n >= 100000000) return (n / 100000000).toFixed(1).replace(/\.0$/, '') + '亿';
+  if (n >= 10000) return (n / 10000).toFixed(1).replace(/\.0$/, '') + '万';
+  return String(n);
+}
+/* 热度徽标 HTML（涨跌状态，来自热度监控 raw） */
 function heatBadgeHtml(h) {
   if (!h) return '';
   const st = h['状态'] || '';
   const grp = HEAT_GROUP[st] || 'flat';
-  const val = h['热度值'] || '';
   const chg = h['相对变化'];
   const chgStr = (chg != null && chg !== '') ? (chg > 0 ? '▲' + chg : (chg < 0 ? '▼' + Math.abs(chg) : '—')) : '';
   return '<span class="heat-pill heat-' + grp + '">' + escHtml(st) + '</span>' +
-    (val ? '<span class="heat-val">' + escHtml(val) + '</span>' : '') +
     (chgStr ? '<span class="heat-val">' + chgStr + '</span>' : '');
+}
+/* 热度单元格：每条上榜条目都显示自身热度值（hot_value），有涨跌状态的额外显示状态徽标 */
+function heatCellHtml(d) {
+  const val = fmtHeatVal(d._hot);
+  const badge = heatBadgeHtml(findHeat(d._names || []));
+  if (!val && !badge) return '<span class="heat-val" style="color:#cbd5e1">—</span>';
+  return (val ? '<span class="heat-num">' + val + '</span>' : '') + badge;
 }
 
 
@@ -524,7 +538,7 @@ function aggregateBoard(items) {
     const orig = it.display_original || it.keyword || '';
     let r = map.get(orig);
     if (!r) {
-      r = { _names: [], _mvs: [], _pfs: [], _score: 0, hints: [], _orig: orig, base: null, _items: [] };
+      r = { _names: [], _mvs: [], _pfs: [], _score: 0, _hot: 0, hints: [], _orig: orig, base: null, _items: [] };
       map.set(orig, r);
     }
     const n = ipNameOf(it);
@@ -535,6 +549,7 @@ function aggregateBoard(items) {
     });
     if ((it.hints || []).length > r.hints.length) r.hints = it.hints || [];
     r._score += Number(it.norm_score || it.score || 0);
+    r._hot += Number(it.hot_value || it.hot_score || 0);
     r._items.push(it);
     if (!r.base || statusRank(it.ip_status) > statusRank(r.base.ip_status)) r.base = it;
   });
@@ -643,7 +658,7 @@ function renderLeaderboard() {
       '<td>' + catDotHtml(d.ipCategory) + escHtml(d.ipCategory || '—') + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
       '<td>' + renderHintsPills(d.hints) + '</td>' +
-      '<td>' + heatBadgeHtml(findHeat(d._names || [])) + '</td>' +
+      '<td>' + heatCellHtml(d) + '</td>' +
     '</tr>';
   }).join("");
 }
