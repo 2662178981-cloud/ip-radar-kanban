@@ -177,6 +177,11 @@
   .style-cat { font-size: 12px; color: #6d28d9; margin-bottom: 4px; }
   .style-score { font-size: 12px; color: #6b7280; }
   .style-platforms { font-size: 11px; color: #9ca3af; margin-top: 4px; }
+  .style-orig { color: #7c3aed; font-size: 12px; margin-top: 2px; }
+  .style-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+  .style-card.clickable { cursor: pointer; }
+  .style-card.clickable:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.09); }
+  .diesun-card.highlight { outline: 3px solid #7c3aed; outline-offset: 2px; background: #f5f3ff; }
   /* 图片放大 lightbox */
   .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.85); display: none; align-items: center; justify-content: center; z-index: 9999; cursor: zoom-out; }
   .lightbox.show { display: flex; }
@@ -843,33 +848,80 @@ function renderStyleHot() {
     items = PAYLOAD.styleHotBoard.items;
   }
   grid.className = 'style-grid';
-  countEl.textContent = items.length ? ('共 ' + items.length + ' 个热搜风格词') : '';
+  countEl.textContent = items.length ? ('共' + items.length + ' 个热搜风格词') : '';
   if (!items.length) {
     grid.innerHTML = '<div style="color:#9ca3af;padding:20px;text-align:center">暂无热搜风格词数据</div>';
     return;
   }
   grid.innerHTML = items.map((s, i) => {
     const rank = s.style_rank || (i + 1);
-    const word = s.style_word || s.display_keyword || '';
-    const cat = s.styleCategory || '';
-    const score = s.score || 0;
-    const platforms = s.platforms || [];
-    const platHtml = platforms.length
-      ? '<div class="style-platforms">' + platforms.map(p => escHtml(platformLabel(p))).join(' · ') + '</div>'
+    const word = s.display_keyword || s.style_word || s.keyword || '';
+    const orig = s.display_original || '';
+    s._hot = s.score || 0;
+    s._names = [word];
+    const subHtml = (orig && orig !== word)
+      ? '<div class="style-orig">' + escHtml(orig) + '</div>'
       : '';
-    const hh = findHeat([word]);
-    return '<div class="style-card">' +
+    return '<div class="style-card clickable" data-style-word="' + escHtml(word) + '" data-style-orig="' + escHtml(orig) + '">' +
       '<div class="style-rank">' + rank + '</div>' +
       '<div class="style-word">' + escHtml(word) + '</div>' +
-      (hh ? '<div style="margin-bottom:4px">' + heatBadgeHtml(hh) + '</div>' : '') +
-      (cat ? '<div class="style-cat">' + escHtml(cat) + '</div>' : '') +
-      '<div class="style-score">热度 ' + score + '</div>' +
-      platHtml +
+      subHtml +
+      '<div class="style-meta">' + platformTags(s) + heatCellHtml(s) + '</div>' +
     '</div>';
   }).join('');
+  bindStyleHotCards();
 }
 
-/* ===== 蝶讯热卖风格 ===== */
+function matchDiesunStyles(word, orig) {
+  if (!DIESUN_INDEX || !Array.isArray(DIESUN_INDEX.items)) return [];
+  const probes = [word, orig].filter(Boolean).map(x => String(x).trim().toLowerCase());
+  if (!probes.length) return [];
+  const out = [];
+  const fields = ['title', 'tags', 'keywords', 'desc', 'brands', 'items'];
+  DIESUN_INDEX.items.forEach((d, i) => {
+    const rank = d.rank || (i + 1);
+    const parts = [];
+    fields.forEach(f => {
+      const v = d[f];
+      if (Array.isArray(v)) parts.push.apply(parts, v);
+      else if (v) parts.push(String(v));
+    });
+    const blob = parts.join(' ').toLowerCase();
+    if (probes.some(x => blob.indexOf(x) !== -1)) {
+      out.push({ rank: rank, title: d.title || '' });
+    }
+  });
+  return out;
+}
+
+function bindStyleHotCards() {
+  const grid = document.getElementById('diesun-grid');
+  if (!grid) return;
+  grid.querySelectorAll('.style-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const word = card.getAttribute('data-style-word') || '';
+      const orig = card.getAttribute('data-style-orig') || '';
+      const matches = matchDiesunStyles(word, orig);
+      if (!matches.length) return;
+      const st = document.getElementById('diesun-subtabs');
+      const tabs = st ? st.querySelectorAll('.subtab') : [];
+      tabs.forEach(x => { x.classList.remove('active'); x.setAttribute('aria-selected', 'false'); });
+      const hotTab = st ? st.querySelector('.subtab[data-ds="hot"]') : null;
+      if (hotTab) { hotTab.classList.add('active'); hotTab.setAttribute('aria-selected', 'true'); }
+      renderDiesun();
+      const g = document.getElementById('diesun-grid');
+      if (!g) return;
+      g.querySelectorAll('.diesun-card').forEach(c => c.classList.remove('highlight'));
+      matches.forEach(m => {
+        const el = g.querySelector('.diesun-card[data-diesun-rank="' + m.rank + '"]');
+        if (el) el.classList.add('highlight');
+      });
+      const first = g.querySelector('.diesun-card.highlight');
+      if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
+}
+
 function renderDiesun() {
   const grid = document.getElementById('diesun-grid');
   const countEl = document.getElementById('diesun-count');
@@ -921,7 +973,7 @@ function renderDiesun() {
     const more = (pic || picCount)
       ? '<div class="diesun-more">' + (pic ? '点开看风格照片' : (picCount + ' 张图')) + ' <span class="arrow">▸</span></div>'
       : '';
-    return '<div class="diesun-card' + (pic ? ' clickable' : '') + '">' +
+    return '<div class="diesun-card' + (pic ? ' clickable' : '') + '" data-diesun-rank="' + rank + '">' +
       '<div class="diesun-rank">' + rank + '</div>' +
       '<div class="diesun-body">' +
         '<div class="diesun-title">' + escHtml(title) + '</div>' +
