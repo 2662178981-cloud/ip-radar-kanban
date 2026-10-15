@@ -1,35 +1,35 @@
 {
  "version": "4.0",
- "generatedAt": "2026-10-15T19:02:38+08:00",
+ "generatedAt": "2026-10-15T19:44:23+08:00",
  "summary": {
-  "total": 63,
-  "ipCount": 63,
-  "newValues": 5,
-  "oldValues": 58,
+  "total": 51,
+  "ipCount": 51,
+  "newValues": 4,
+  "oldValues": 47,
   "reviewNeeded": 0,
   "boards": [
    {
     "code": "douyin",
     "title": "douyin",
-    "count": 17
+    "count": 14
    },
    {
     "code": "weibo",
     "title": "weibo",
-    "count": 14
+    "count": 13
    },
    {
     "code": "xiaohongshu",
     "title": "xiaohongshu",
-    "count": 36
+    "count": 28
    }
   ],
-  "generatedAt": "2026-10-15T19:02:38+08:00"
+  "generatedAt": "2026-10-15T19:44:23+08:00"
  },
  "ipBoard": {
   "title": "IP 榜单",
   "subtitle": "跨平台热度排行",
-  "total": 63,
+  "total": 51,
   "items": [
    {
     "keyword": "李嘉诚",
@@ -328,28 +328,6 @@
     "rank": 14
    },
    {
-    "keyword": "求婚",
-    "display_keyword": "求婚",
-    "display_original": "刀小刀反向求婚孟令辉",
-    "matched_value": "求婚",
-    "ip_status": "匹配成功",
-    "ipCategory": "影视综艺",
-    "hot_value": 7668000,
-    "hot_score": 7668000,
-    "norm_score": 6.8847,
-    "hints": [
-     "求婚同款穿搭",
-     "求婚周边好物",
-     "求婚联名款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 15,
-    "rank": 15
-   },
-   {
     "keyword": "金晨",
     "display_keyword": "金晨",
     "display_original": "金晨自曝美国游学遇学校倒闭",
@@ -368,8 +346,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 16,
-    "rank": 16
+    "ip_rank": 15,
+    "rank": 15
    },
    {
     "keyword": "火影忍者",
@@ -390,8 +368,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 17,
-    "rank": 17
+    "ip_rank": 16,
+    "rank": 16
    },
    {
     "keyword": "杨超越",
@@ -412,30 +390,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 18,
-    "rank": 18
-   },
-   {
-    "keyword": "家常菜",
-    "display_keyword": "家常菜",
-    "display_original": "普洱家常菜嘎嘎下饭",
-    "matched_value": "家常菜",
-    "ip_status": "匹配成功",
-    "ipCategory": "影视综艺",
-    "hot_value": 7647000,
-    "hot_score": 7647000,
-    "norm_score": 6.8835,
-    "hints": [
-     "家常菜同款穿搭",
-     "家常菜周边好物",
-     "家常菜联名款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 19,
-    "rank": 19
+    "ip_rank": 17,
+    "rank": 17
    },
    {
     "keyword": "黑猫警长 喵喵",
@@ -456,30 +412,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 20,
-    "rank": 20
-   },
-   {
-    "keyword": "薰衣草",
-    "display_keyword": "薰衣草",
-    "display_original": "薰衣草的花语是等你爱我",
-    "matched_value": "薰衣草",
-    "ip_status": "匹配成功",
-    "ipCategory": "影视综艺",
-    "hot_value": 7634000,
-    "hot_score": 7634000,
-    "norm_score": 6.8828,
-    "hints": [
-     "薰衣草同款穿搭",
-     "薰衣草周边好物",
-     "薰衣草联名款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 21,
-    "rank": 21
+    "ip_rank": 18,
+    "rank": 18
    },
    {
     "keyword": "龚俊",
@@ -500,8 +434,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 22,
-    "rank": 22
+    "ip_rank": 19,
+    "rank": 19
    },
    {
     "keyword": "影视飓风",
@@ -522,48 +456,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 23,
-    "rank": 23
-   },
-   {
-    "keyword": "零二",
-    "display_keyword": "零二",
-    "display_original": "2025新年第一餐（2条热搜）",
-    "matched_value": "零二",
-    "ip_status": "匹配成功",
-    "ipCategory": "卡通动漫",
-    "hot_value": 134,
-    "hot_score": 134,
-    "norm_score": 5.7842,
-    "hints": [
-     "零二手办模型",
-     "零二联名周边",
-     "零二限定礼盒"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 24,
-    "rank": 24
-   },
-   {
-    "keyword": "appstore",
-    "display_keyword": "appstore",
-    "display_original": "appstore正式进入字节时...",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "品牌联名",
-    "hot_value": 550000,
-    "hot_score": 550000,
-    "norm_score": 5.7404,
-    "hints": [],
-    "platform": "weibo",
-    "platforms": [
-     "weibo"
-    ],
-    "ip_rank": 25,
-    "rank": 25
+    "ip_rank": 20,
+    "rank": 20
    },
    {
     "keyword": "陈奕迅",
@@ -584,8 +478,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 26,
-    "rank": 26
+    "ip_rank": 21,
+    "rank": 21
    },
    {
     "keyword": "李一桐 大冰",
@@ -606,8 +500,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 27,
-    "rank": 27
+    "ip_rank": 22,
+    "rank": 22
    },
    {
     "keyword": "保时捷",
@@ -628,8 +522,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 28,
-    "rank": 28
+    "ip_rank": 23,
+    "rank": 23
    },
    {
     "keyword": "井柏然 孙千",
@@ -650,8 +544,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 29,
-    "rank": 29
+    "ip_rank": 24,
+    "rank": 24
    },
    {
     "keyword": "徐梦洁",
@@ -672,8 +566,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 30,
-    "rank": 30
+    "ip_rank": 25,
+    "rank": 25
    },
    {
     "keyword": "原神",
@@ -694,8 +588,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 31,
-    "rank": 31
+    "ip_rank": 26,
+    "rank": 26
    },
    {
     "keyword": "李现",
@@ -716,8 +610,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 32,
-    "rank": 32
+    "ip_rank": 27,
+    "rank": 27
    },
    {
     "keyword": "光遇",
@@ -738,8 +632,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 33,
-    "rank": 33
+    "ip_rank": 28,
+    "rank": 28
    },
    {
     "keyword": "逆水寒",
@@ -760,30 +654,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 34,
-    "rank": 34
-   },
-   {
-    "keyword": "多多",
-    "display_keyword": "多多",
-    "display_original": "拼多多（2条热搜）",
-    "matched_value": "多多",
-    "ip_status": "匹配成功",
-    "ipCategory": "卡通动漫",
-    "hot_value": 10,
-    "hot_score": 10,
-    "norm_score": 3.0881,
-    "hints": [
-     "多多手办模型",
-     "多多联名周边",
-     "多多限定礼盒"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 35,
-    "rank": 35
+    "ip_rank": 29,
+    "rank": 29
    },
    {
     "keyword": "李克勤",
@@ -804,8 +676,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 36,
-    "rank": 36
+    "ip_rank": 30,
+    "rank": 30
    },
    {
     "keyword": "steam",
@@ -822,52 +694,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 37,
-    "rank": 37
-   },
-   {
-    "keyword": "英雄",
-    "display_keyword": "英雄",
-    "display_original": "英雄﻿",
-    "matched_value": "英雄",
-    "ip_status": "匹配成功",
-    "ipCategory": "影视综艺",
-    "hot_value": 10,
-    "hot_score": 10,
-    "norm_score": 2.0828,
-    "hints": [
-     "英雄同款穿搭",
-     "英雄周边好物",
-     "英雄联名款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 38,
-    "rank": 38
-   },
-   {
-    "keyword": "小金",
-    "display_keyword": "小金",
-    "display_original": "葡记小金盒",
-    "matched_value": "小金",
-    "ip_status": "匹配成功",
-    "ipCategory": "卡通动漫",
-    "hot_value": 8,
-    "hot_score": 8,
-    "norm_score": 1.9085,
-    "hints": [
-     "小金手办模型",
-     "小金联名周边",
-     "小金限定礼盒"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 39,
-    "rank": 39
+    "ip_rank": 31,
+    "rank": 31
    },
    {
     "keyword": "恋与深空",
@@ -888,30 +716,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 40,
-    "rank": 40
-   },
-   {
-    "keyword": "大大",
-    "display_keyword": "大大",
-    "display_original": "大大方方做自己",
-    "matched_value": "大大",
-    "ip_status": "匹配成功",
-    "ipCategory": "卡通动漫",
-    "hot_value": 7,
-    "hot_score": 7,
-    "norm_score": 1.8062,
-    "hints": [
-     "大大手办模型",
-     "大大联名周边",
-     "大大限定礼盒"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 41,
-    "rank": 41
+    "ip_rank": 32,
+    "rank": 32
    },
    {
     "keyword": "布鲁可 奥特曼",
@@ -932,8 +738,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 42,
-    "rank": 42
+    "ip_rank": 33,
+    "rank": 33
    },
    {
     "keyword": "卡皮巴拉",
@@ -954,8 +760,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 43,
-    "rank": 43
+    "ip_rank": 34,
+    "rank": 34
    },
    {
     "keyword": "魔法少女小圆",
@@ -976,8 +782,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 44,
-    "rank": 44
+    "ip_rank": 35,
+    "rank": 35
    },
    {
     "keyword": "王楚钦",
@@ -998,8 +804,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 45,
-    "rank": 45
+    "ip_rank": 36,
+    "rank": 36
    },
    {
     "keyword": "王鹤棣",
@@ -1020,30 +826,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 46,
-    "rank": 46
-   },
-   {
-    "keyword": "POLAR",
-    "display_keyword": "POLAR",
-    "display_original": "polaroid",
-    "matched_value": "POLAR",
-    "ip_status": "匹配成功",
-    "ipCategory": "卡通动漫",
-    "hot_value": 5,
-    "hot_score": 5,
-    "norm_score": 1.5563,
-    "hints": [
-     "POLAR手办模型",
-     "POLAR联名周边",
-     "POLAR限定礼盒"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 47,
-    "rank": 47
+    "ip_rank": 37,
+    "rank": 37
    },
    {
     "keyword": "哈利波特",
@@ -1064,30 +848,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 48,
-    "rank": 48
-   },
-   {
-    "keyword": "乒乓",
-    "display_keyword": "乒乓",
-    "display_original": "肯德基乒乒乓乓大金桶",
-    "matched_value": "乒乓",
-    "ip_status": "匹配成功",
-    "ipCategory": "卡通动漫",
-    "hot_value": 5,
-    "hot_score": 5,
-    "norm_score": 1.5563,
-    "hints": [
-     "乒乓手办模型",
-     "乒乓联名周边",
-     "乒乓限定礼盒"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 49,
-    "rank": 49
+    "ip_rank": 38,
+    "rank": 38
    },
    {
     "keyword": "孙颖莎",
@@ -1108,8 +870,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 50,
-    "rank": 50
+    "ip_rank": 39,
+    "rank": 39
    },
    {
     "keyword": "大奉打更人",
@@ -1130,8 +892,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 51,
-    "rank": 51
+    "ip_rank": 40,
+    "rank": 40
    },
    {
     "keyword": "赫敏",
@@ -1152,8 +914,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 52,
-    "rank": 52
+    "ip_rank": 41,
+    "rank": 41
    },
    {
     "keyword": "罗恩",
@@ -1174,8 +936,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 53,
-    "rank": 53
+    "ip_rank": 42,
+    "rank": 42
    },
    {
     "keyword": "叶罗丽",
@@ -1196,8 +958,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 54,
-    "rank": 54
+    "ip_rank": 43,
+    "rank": 43
    },
    {
     "keyword": "白月梵星",
@@ -1218,8 +980,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 55,
-    "rank": 55
+    "ip_rank": 44,
+    "rank": 44
    },
    {
     "keyword": "盗墓笔记",
@@ -1240,8 +1002,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 56,
-    "rank": 56
+    "ip_rank": 45,
+    "rank": 45
    },
    {
     "keyword": "破产姐妹",
@@ -1262,8 +1024,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 57,
-    "rank": 57
+    "ip_rank": 46,
+    "rank": 46
    },
    {
     "keyword": "温流",
@@ -1284,8 +1046,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 58,
-    "rank": 58
+    "ip_rank": 47,
+    "rank": 47
    },
    {
     "keyword": "SHINee",
@@ -1306,8 +1068,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 59,
-    "rank": 59
+    "ip_rank": 48,
+    "rank": 48
    },
    {
     "keyword": "奇奇蒂蒂",
@@ -1328,30 +1090,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 60,
-    "rank": 60
-   },
-   {
-    "keyword": "小红书",
-    "display_keyword": "小红书",
-    "display_original": "万能的小红书",
-    "matched_value": "小红书",
-    "ip_status": "匹配成功",
-    "ipCategory": "品牌联名",
-    "hot_value": 3,
-    "hot_score": 3,
-    "norm_score": 1.2041,
-    "hints": [
-     "小红书新品首发",
-     "小红书联名限定",
-     "小红书爆款推荐"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 61,
-    "rank": 61
+    "ip_rank": 49,
+    "rank": 49
    },
    {
     "keyword": "排球少年",
@@ -1372,8 +1112,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 62,
-    "rank": 62
+    "ip_rank": 50,
+    "rank": 50
    },
    {
     "keyword": "QQ",
@@ -1394,8 +1134,8 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 63,
-    "rank": 63
+    "ip_rank": 51,
+    "rank": 51
    }
   ]
  },
@@ -1403,7 +1143,7 @@
   "weibo": {
    "code": "weibo",
    "title": "weibo",
-   "count": 14,
+   "count": 13,
    "items": [
     {
      "keyword": "李嘉诚",
@@ -1510,16 +1250,6 @@
      ]
     },
     {
-     "keyword": "appstore",
-     "display_keyword": "appstore",
-     "display_original": "appstore正式进入字节时...",
-     "ip_status": "新value",
-     "platforms": [
-      "weibo"
-     ],
-     "hints": []
-    },
-    {
      "keyword": "陈奕迅",
      "display_keyword": "陈奕迅",
      "display_original": "黄泽林承认与陈奕迅女儿分手",
@@ -1594,7 +1324,7 @@
   "douyin": {
    "code": "douyin",
    "title": "douyin",
-   "count": 17,
+   "count": 14,
    "items": [
     {
      "keyword": "李嘉诚",
@@ -1728,20 +1458,6 @@
      ]
     },
     {
-     "keyword": "求婚",
-     "display_keyword": "求婚",
-     "display_original": "刀小刀反向求婚孟令辉",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "douyin"
-     ],
-     "hints": [
-      "求婚同款穿搭",
-      "求婚周边好物",
-      "求婚联名款"
-     ]
-    },
-    {
      "keyword": "金晨",
      "display_keyword": "金晨",
      "display_original": "金晨自曝美国游学遇学校倒闭",
@@ -1784,20 +1500,6 @@
      ]
     },
     {
-     "keyword": "家常菜",
-     "display_keyword": "家常菜",
-     "display_original": "普洱家常菜嘎嘎下饭",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "douyin"
-     ],
-     "hints": [
-      "家常菜同款穿搭",
-      "家常菜周边好物",
-      "家常菜联名款"
-     ]
-    },
-    {
      "keyword": "黑猫警长 喵喵",
      "display_keyword": "黑猫警长 喵喵",
      "display_original": "黑猫警长喵喵喵",
@@ -1810,27 +1512,13 @@
       "黑猫警长 喵喵联名周边",
       "黑猫警长 喵喵限定礼盒"
      ]
-    },
-    {
-     "keyword": "薰衣草",
-     "display_keyword": "薰衣草",
-     "display_original": "薰衣草的花语是等你爱我",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "douyin"
-     ],
-     "hints": [
-      "薰衣草同款穿搭",
-      "薰衣草周边好物",
-      "薰衣草联名款"
-     ]
     }
    ]
   },
   "xiaohongshu": {
    "code": "xiaohongshu",
    "title": "xiaohongshu",
-   "count": 36,
+   "count": 28,
    "items": [
     {
      "keyword": "肖战",
@@ -1859,20 +1547,6 @@
       "杨紫同款穿搭",
       "杨紫同款单品",
       "杨紫代言品牌"
-     ]
-    },
-    {
-     "keyword": "零二",
-     "display_keyword": "零二",
-     "display_original": "2025新年第一餐（2条热搜）",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "零二手办模型",
-      "零二联名周边",
-      "零二限定礼盒"
      ]
     },
     {
@@ -1932,20 +1606,6 @@
      ]
     },
     {
-     "keyword": "多多",
-     "display_keyword": "多多",
-     "display_original": "拼多多（2条热搜）",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "多多手办模型",
-      "多多联名周边",
-      "多多限定礼盒"
-     ]
-    },
-    {
      "keyword": "李克勤",
      "display_keyword": "李克勤",
      "display_original": "李克勤",
@@ -1970,34 +1630,6 @@
      "hints": []
     },
     {
-     "keyword": "英雄",
-     "display_keyword": "英雄",
-     "display_original": "英雄﻿",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "英雄同款穿搭",
-      "英雄周边好物",
-      "英雄联名款"
-     ]
-    },
-    {
-     "keyword": "小金",
-     "display_keyword": "小金",
-     "display_original": "葡记小金盒",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "小金手办模型",
-      "小金联名周边",
-      "小金限定礼盒"
-     ]
-    },
-    {
      "keyword": "恋与深空",
      "display_keyword": "恋与深空",
      "display_original": "恋与深空",
@@ -2009,20 +1641,6 @@
       "恋与深空联名周边",
       "恋与深空手办模型",
       "恋与深空限定皮肤"
-     ]
-    },
-    {
-     "keyword": "大大",
-     "display_keyword": "大大",
-     "display_original": "大大方方做自己",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "大大手办模型",
-      "大大联名周边",
-      "大大限定礼盒"
      ]
     },
     {
@@ -2096,20 +1714,6 @@
      ]
     },
     {
-     "keyword": "POLAR",
-     "display_keyword": "POLAR",
-     "display_original": "polaroid",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "POLAR手办模型",
-      "POLAR联名周边",
-      "POLAR限定礼盒"
-     ]
-    },
-    {
      "keyword": "哈利波特",
      "display_keyword": "哈利波特",
      "display_original": "哈利波特",
@@ -2121,20 +1725,6 @@
       "哈利波特同款穿搭",
       "哈利波特周边好物",
       "哈利波特联名款"
-     ]
-    },
-    {
-     "keyword": "乒乓",
-     "display_keyword": "乒乓",
-     "display_original": "肯德基乒乒乓乓大金桶",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "乒乓手办模型",
-      "乒乓联名周边",
-      "乒乓限定礼盒"
      ]
     },
     {
@@ -2292,20 +1882,6 @@
      ]
     },
     {
-     "keyword": "小红书",
-     "display_keyword": "小红书",
-     "display_original": "万能的小红书",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "小红书新品首发",
-      "小红书联名限定",
-      "小红书爆款推荐"
-     ]
-    },
-    {
      "keyword": "排球少年",
      "display_keyword": "排球少年",
      "display_original": "排球少年",
@@ -2345,7 +1921,328 @@
  "styleHotBoard": {
   "title": "风格热点",
   "subtitle": "抖音 · 小红书 服饰穿搭 · 流行元素",
-  "total": 0,
-  "items": []
+  "total": 20,
+  "items": [
+   {
+    "keyword": "古早风",
+    "style_word": "古早风",
+    "display_keyword": "古早风",
+    "display_original": "我的古早味秋冬穿搭",
+    "score": 9620000,
+    "platforms": [
+     "douyin"
+    ],
+    "platform": "douyin",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 1,
+    "heat": 9620000
+   },
+   {
+    "keyword": "繁荣主义风",
+    "style_word": "繁荣主义风",
+    "display_keyword": "繁荣主义风",
+    "display_original": "繁荣主义穿搭",
+    "score": 9473000,
+    "platforms": [
+     "douyin"
+    ],
+    "platform": "douyin",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 2,
+    "heat": 9473000
+   },
+   {
+    "keyword": "慵懒风",
+    "style_word": "慵懒风",
+    "display_keyword": "慵懒风",
+    "display_original": "慵懒感穿搭",
+    "score": 377,
+    "heat": 377,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 3
+   },
+   {
+    "keyword": "韩系",
+    "style_word": "韩系",
+    "display_keyword": "韩系",
+    "display_original": "韩系穿搭",
+    "score": 369,
+    "heat": 369,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 4
+   },
+   {
+    "keyword": "松弛感",
+    "style_word": "松弛感",
+    "display_keyword": "松弛感",
+    "display_original": "松弛感穿搭",
+    "score": 235,
+    "heat": 235,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "流行元素",
+    "ip_status": "匹配成功",
+    "style_rank": 5
+   },
+   {
+    "keyword": "Clean Fit",
+    "style_word": "Clean Fit",
+    "display_keyword": "Clean Fit",
+    "display_original": "cleanfit简单出门",
+    "score": 217,
+    "heat": 217,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 6
+   },
+   {
+    "keyword": "美拉德",
+    "style_word": "美拉德",
+    "display_keyword": "美拉德",
+    "display_original": "美拉德",
+    "score": 163,
+    "heat": 163,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "流行元素",
+    "ip_status": "匹配成功",
+    "style_rank": 7
+   },
+   {
+    "keyword": "法式风",
+    "style_word": "法式风",
+    "display_keyword": "法式风",
+    "display_original": "法式穿搭",
+    "score": 101,
+    "heat": 101,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 8
+   },
+   {
+    "keyword": "老钱风",
+    "style_word": "老钱风",
+    "display_keyword": "老钱风",
+    "display_original": "老钱风",
+    "score": 100,
+    "heat": 100,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 9
+   },
+   {
+    "keyword": "学院风",
+    "style_word": "学院风",
+    "display_keyword": "学院风",
+    "display_original": "学院风穿搭",
+    "score": 75,
+    "heat": 75,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 10
+   },
+   {
+    "keyword": "粉色系",
+    "style_word": "粉色系",
+    "display_keyword": "粉色系",
+    "display_original": "粉色少女心",
+    "score": 61,
+    "heat": 61,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 11
+   },
+   {
+    "keyword": "JK制服",
+    "style_word": "JK制服",
+    "display_keyword": "JK制服",
+    "display_original": "jk制服",
+    "score": 49,
+    "heat": 49,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 12
+   },
+   {
+    "keyword": "极简风",
+    "style_word": "极简风",
+    "display_keyword": "极简风",
+    "display_original": "极简穿搭",
+    "score": 46,
+    "heat": 46,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 13
+   },
+   {
+    "keyword": "多巴胺",
+    "style_word": "多巴胺",
+    "display_keyword": "多巴胺",
+    "display_original": "多巴胺穿搭",
+    "score": 20,
+    "heat": 20,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "流行元素",
+    "ip_status": "匹配成功",
+    "style_rank": 14
+   },
+   {
+    "keyword": "国风",
+    "style_word": "国风",
+    "display_keyword": "国风",
+    "display_original": "国风",
+    "score": 17,
+    "heat": 17,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 15
+   },
+   {
+    "keyword": "日系",
+    "style_word": "日系",
+    "display_keyword": "日系",
+    "display_original": "日系穿搭",
+    "score": 15,
+    "heat": 15,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 16
+   },
+   {
+    "keyword": "千金风",
+    "style_word": "千金风",
+    "display_keyword": "千金风",
+    "display_original": "千金风",
+    "score": 14,
+    "heat": 14,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 17
+   },
+   {
+    "keyword": "洛丽塔",
+    "style_word": "洛丽塔",
+    "display_keyword": "洛丽塔",
+    "display_original": "Lolita",
+    "score": 8,
+    "heat": 8,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 18
+   },
+   {
+    "keyword": "Vintage",
+    "style_word": "Vintage",
+    "display_keyword": "Vintage",
+    "display_original": "vintage",
+    "score": 3,
+    "heat": 3,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 19
+   },
+   {
+    "keyword": "辣妹风",
+    "style_word": "辣妹风",
+    "display_keyword": "辣妹风",
+    "display_original": "y2k辣妹帽子",
+    "score": 1,
+    "heat": 1,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 20
+   }
+  ]
  }
 }
