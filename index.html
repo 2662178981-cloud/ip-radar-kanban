@@ -181,6 +181,7 @@
   .style-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
   .style-card.clickable { cursor: pointer; }
   .style-card.clickable:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.09); }
+  .style-card.mapped { border-color: #7c3aed; box-shadow: 0 0 0 2px rgba(124,58,237,0.18); }
   .diesun-card.highlight { outline: 3px solid #7c3aed; outline-offset: 2px; background: #f5f3ff; }
   /* 图片放大 lightbox */
   .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.85); display: none; align-items: center; justify-content: center; z-index: 9999; cursor: zoom-out; }
@@ -857,12 +858,13 @@ function renderStyleHot() {
     const rank = s.style_rank || (i + 1);
     const word = s.display_keyword || s.style_word || s.keyword || '';
     const orig = s.display_original || '';
-    s._hot = s.score || 0;
+    s._hot = (s.heat != null ? s.heat : s.score) || 0;
     s._names = [word];
+    const hasMap = matchDiesunStyles(word, orig).length > 0;
     const subHtml = (orig && orig !== word)
       ? '<div class="style-orig">' + escHtml(orig) + '</div>'
       : '';
-    return '<div class="style-card clickable" data-style-word="' + escHtml(word) + '" data-style-orig="' + escHtml(orig) + '">' +
+    return '<div class="style-card clickable' + (hasMap ? ' mapped' : '') + '" data-style-word="' + escHtml(word) + '" data-style-orig="' + escHtml(orig) + '">' +
       '<div class="style-rank">' + rank + '</div>' +
       '<div class="style-word">' + escHtml(word) + '</div>' +
       subHtml +
@@ -872,14 +874,41 @@ function renderStyleHot() {
   bindStyleHotCards();
 }
 
+const STYLE_DIESUN_MAP = {
+  'JK制服': [2, 54],
+  '新中式': [3, 37, 39, 58],
+  '多巴胺': [14, 15, 20],
+  'City Walk': [12, 29, 36],
+  '粉色系': [14, 20],
+  '日系': [33],
+  '美拉德': [26, 38],
+  '韩系': [44, 52],
+  '法式风': [10],
+  '英伦风': [2, 54],
+  '极简风': [27, 45, 51],
+  'Vintage': [2, 3, 4, 10, 23],
+  '国风': [24, 37, 58],
+  '朋克风': [49],
+  '辣妹风': [3, 5, 13, 42, 47, 49],
+  '洛丽塔': [46, 47]
+};
+
 function matchDiesunStyles(word, orig) {
   if (!DIESUN_INDEX || !Array.isArray(DIESUN_INDEX.items)) return [];
-  const probes = [word, orig].filter(Boolean).map(x => String(x).trim().toLowerCase());
-  if (!probes.length) return [];
+  const byRank = {};
+  DIESUN_INDEX.items.forEach((d, i) => { byRank[d.rank || (i + 1)] = d; });
   const out = [];
+  // 1) 语义映射：理解关键词，映射到蝶讯对应风格（非硬子串匹配）
+  (STYLE_DIESUN_MAP[word] || []).forEach(r => {
+    const d = byRank[r];
+    if (d && !out.some(o => o.rank === r)) out.push({ rank: r, title: d.title || '' });
+  });
+  // 2) 兜底：关键词/原词出现在 title/tags/keywords/desc 中时也视为相似
+  const probes = [word, orig].filter(Boolean).map(x => String(x).trim().toLowerCase());
   const fields = ['title', 'tags', 'keywords', 'desc', 'brands', 'items'];
   DIESUN_INDEX.items.forEach((d, i) => {
     const rank = d.rank || (i + 1);
+    if (out.some(o => o.rank === rank)) return;
     const parts = [];
     fields.forEach(f => {
       const v = d[f];
