@@ -63,9 +63,8 @@
   .lb-table tr:nth-child(odd) td { background: #ffffff; }
   .lb-table tr:nth-child(even) td { background: #f8faff; }
   .lb-table tr:hover td { background: #eef2ff !important; }
-  .lb-table tr.style-mapped td { background: #f5f3ff !important; }
-  .lb-table tr.style-mapped:hover td { background: #ede9fe !important; }
-  .lb-table tr.style-mapped td:first-child { box-shadow: inset 3px 0 0 #7c3aed; }
+  .lb-table tr.style-mapped td { box-shadow: inset 0 0 0 1px #7c3aed; }
+  .lb-table tr.style-mapped td:first-child { box-shadow: inset 3px 0 0 #7c3aed, inset 0 0 0 1px #7c3aed; }
 
   .rank-badge { width: 26px; height: 26px; border-radius: 7px; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 13px; }
   .rank-1 { background: #ef4444; } .rank-2 { background: #8b5cf6; } .rank-3 { background: #3b82f6; }
@@ -84,6 +83,17 @@
   .status-matched { background: #d1fae5; color: #065f46; }
   .status-review { background: #fef3c7; color: #92400e; }
   .status-new { background: #dbeafe; color: #1e40af; }
+  /* 新词勾选提交 */
+  .submit-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; padding: 8px 10px; background: #eef6ff; border: 1px solid #bae6fd; border-radius: 8px; }
+  .submit-count { font-size: 12px; color: #0369a1; font-weight: 600; }
+  .submit-btn { padding: 5px 14px; border-radius: 8px; border: none; background: #0ea5e9; color: #fff; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+  .submit-btn:hover:not(:disabled) { background: #0284c7; }
+  .submit-btn:disabled { background: #cbd5e1; color: #64748b; cursor: not-allowed; }
+  .submit-status { font-size: 12px; color: #475569; }
+  .new-check-wrap { display: inline-flex; align-items: center; margin-right: 6px; vertical-align: middle; cursor: pointer; }
+  .new-check { width: 15px; height: 15px; margin: 0; cursor: pointer; accent-color: #0ea5e9; }
+  .kw-cell { display: flex; align-items: flex-start; gap: 2px; }
+  .kw-text { flex: 1; min-width: 0; }
   /* 热度状态徽标 */
   .heat-pill { padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; display: inline-block; margin-left: 4px; }
   .heat-hot { background: #fee2e2; color: #b91c1c; }
@@ -264,6 +274,11 @@
         <option value="flat">平稳</option>
         <option value="down">降（下降/掉榜）</option>
       </select>
+    </div>
+    <div class="submit-bar" id="submit-bar">
+      <span class="submit-count" id="submit-count">已选 0 个新词</span>
+      <button type="button" class="submit-btn" id="submit-btn" disabled>一键提交新词到词库</button>
+      <span class="submit-status" id="submit-status"></span>
     </div>
     <table class="lb-table" id="lb-table">
       <thead>
@@ -472,6 +487,7 @@ let SNAPSHOTS = null;
 let DIESUN_INDEX = null;
 let HEAT_MAP = null;  /* IP名 -> 热度记录 */
 let HEAT_ROWS = null;
+const SELECTED_NEW = new Set();  /* 已勾选待写入词库的新词 */
 
 async function loadAll() {
   // 可选文件（calendar_index/hints/diesun_index）不存在时不白等：retries=1，失败即 null
@@ -657,10 +673,16 @@ function renderLeaderboard() {
   body.innerHTML = rows.map((d, i) => {
     const rank = i + 1;
     const st = STATUS[d.ip_status] || { cls: "status-review", label: d.ip_status || "—" };
-    // 主行 = 关键词/IP名（一条热搜命中多个 IP 时并列显示：陈靖可 · 陈都灵）
+    // 主行 = 关键词/IP名（一条热搜命中多个 IP 时并列显示，用空格隔开）
     // 副行 = 热搜原词（灰色小字）
     const ipNames = (d._names || []).filter(n => n && n !== d._orig);
-    const main = ipNames.length ? ipNames.join(' · ') : (d._orig || '');
+    const main = ipNames.length ? ipNames.join(' ') : (d._orig || '');
+    const isNew = d.ip_status === '新value' || d.ip_status === 'new';
+    const newWords = ipNames.length ? ipNames : (d._orig ? [d._orig] : []);
+    const checked = newWords.some(w => SELECTED_NEW.has(w));
+    const checkHtml = isNew
+      ? '<label class="new-check-wrap" title="勾选后提交到词库"><input type="checkbox" class="new-check" data-words="' + escHtml(JSON.stringify(newWords)) + '"' + (checked ? ' checked' : '') + '></label>'
+      : '';
     let subHtml = '';
     if (d._unmatched) {
       subHtml = '<div class="kw-unmatched">未识别 · 切词未命中词库</div>';
@@ -674,8 +696,12 @@ function renderLeaderboard() {
     return '<tr>' +
       '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
       '<td>' +
-        '<div class="kw-main">' + escHtml(main) + dupPill + '</div>' +
-        subHtml +
+        '<div class="kw-cell">' + checkHtml +
+          '<div class="kw-text">' +
+            '<div class="kw-main">' + escHtml(main) + dupPill + '</div>' +
+            subHtml +
+          '</div>' +
+        '</div>' +
       '</td>' +
       '<td><span class="status-pill ' + st.cls + '">' + st.label + '</span></td>' +
       '<td>' + catDotHtml(d.ipCategory) + escHtml(d.ipCategory || '—') + '</td>' +
@@ -684,6 +710,7 @@ function renderLeaderboard() {
       '<td>' + renderHintsPills(d.hints) + '</td>' +
     '</tr>';
   }).join("");
+  updateSubmitBar();
 }
 
 
@@ -715,6 +742,48 @@ function renderTrend() {
       '<td>' + renderHintsPills(d.hints) + '</td>' +
     '</tr>';
   }).join('');
+}
+
+function updateSubmitBar() {
+  const cnt = document.getElementById('submit-count');
+  const btn = document.getElementById('submit-btn');
+  if (cnt) cnt.textContent = '已选 ' + SELECTED_NEW.size + ' 个新词';
+  if (btn) btn.disabled = SELECTED_NEW.size === 0;
+}
+
+async function submitNewWords() {
+  const words = Array.from(SELECTED_NEW);
+  if (!words.length) return;
+  const statusEl = document.getElementById('submit-status');
+  if (statusEl) statusEl.textContent = '提交中…';
+  const url = (typeof window !== 'undefined' && window.IP_RADAR_SUBMIT_URL) || '';
+  if (!url) {
+    const text = words.join('\n');
+    let copied = false;
+    try { await navigator.clipboard.writeText(text); copied = true; } catch (e) {}
+    if (statusEl) statusEl.textContent = copied
+      ? ('未配置提交接口，已复制 ' + words.length + ' 个新词到剪贴板')
+      : ('未配置提交接口，请手动复制：' + text);
+    return;
+  }
+  try {
+    const resp = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ words: words })
+    });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data = await resp.json();
+    if (data && data.ok) {
+      if (statusEl) statusEl.textContent = '已写入 ' + (data.count || words.length) + ' 个新词到词库';
+      SELECTED_NEW.clear();
+      renderLeaderboard();
+    } else {
+      if (statusEl) statusEl.textContent = '提交失败：' + ((data && data.error) || '未知错误');
+    }
+  } catch (e) {
+    if (statusEl) statusEl.textContent = '提交失败：' + e.message;
+  }
 }
 
 function renderSubtabs() {
@@ -885,6 +954,8 @@ function renderStyleHot() {
 }
 
 const STYLE_DIESUN_MAP = {
+  '古早风': [2, 23, 26],
+  '繁荣主义风': [26, 27, 31],
   'JK制服': [2, 54],
   '新中式': [3, 37, 39, 58],
   '多巴胺': [14, 15, 20],
@@ -1152,7 +1223,7 @@ function renderSnapshot() {
   let idx = 0;
   aggregateBoard(ipItems).forEach(it => {
     if (it._unmatched) return;
-    const ip = escHtml((it._names && it._names.length ? it._names.join(' · ') : it._orig) || '');
+    const ip = escHtml((it._names && it._names.length ? it._names.join(' ') : it._orig) || '');
     const hints = (it.hints || []).slice(0, 3).map(h => escHtml(h)).join('、');
     if (kwFilter && (ip + ' ' + it._orig).toLowerCase().indexOf(kwFilter) === -1) return;
     html += '<div class="snapshot-item">' +
@@ -1212,6 +1283,16 @@ document.querySelectorAll('.tab').forEach(tab => {
 document.getElementById('filter-status').addEventListener('change', renderLeaderboard);
 document.getElementById('filter-cat').addEventListener('change', renderLeaderboard);
 document.getElementById('filter-heat').addEventListener('change', renderLeaderboard);
+// 新词勾选：事件委托（lb-body 的 innerHTML 每次渲染都会重建）
+document.getElementById('lb-body').addEventListener('change', function(e) {
+  const t = e.target;
+  if (!t || !t.classList || !t.classList.contains('new-check')) return;
+  let words = [];
+  try { words = JSON.parse(t.dataset.words || '[]'); } catch (err) { words = []; }
+  words.forEach(w => { if (t.checked) SELECTED_NEW.add(w); else SELECTED_NEW.delete(w); });
+  updateSubmitBar();
+});
+document.getElementById('submit-btn').addEventListener('click', submitNewWords);
 document.getElementById('filter-cal-type').addEventListener('change', renderCalendar);
 document.getElementById('snapshot-date').addEventListener('change', renderSnapshot);
 document.getElementById('snapshot-kw').addEventListener('input', renderSnapshot);
