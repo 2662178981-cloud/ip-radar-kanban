@@ -1,6 +1,6 @@
 {
   "version": "4.0",
-  "generatedAt": "2026-10-15T13:31:07+08:00",
+  "generatedAt": "2026-10-15T13:38:41+08:00",
   "summary": {
     "total": 111,
     "ipCount": 111,
@@ -3549,7 +3549,7 @@
   "styleHotBoard": {
     "title": "风格热点",
     "subtitle": "小红书 服饰穿搭 · 流行元素",
-    "total": 18,
+    "total": 16,
     "items": [
       {
         "keyword": "JK制服",
@@ -3557,6 +3557,7 @@
         "display_keyword": "JK制服",
         "display_original": "jk",
         "score": 100,
+        "heat": 15,
         "platforms": [
           "xiaohongshu"
         ],
@@ -3567,11 +3568,12 @@
         "style_rank": 1
       },
       {
-        "keyword": "新中式国风",
-        "style_word": "新中式国风",
-        "display_keyword": "新中式国风",
-        "display_original": "新中式国风",
+        "keyword": "新中式",
+        "style_word": "新中式",
+        "display_keyword": "新中式",
+        "display_original": "新中式穿搭",
         "score": 87,
+        "heat": 13,
         "platforms": [
           "xiaohongshu"
         ],
@@ -3582,26 +3584,28 @@
         "style_rank": 2
       },
       {
-        "keyword": "汉服",
-        "style_word": "汉服",
-        "display_keyword": "汉服",
-        "display_original": "汉服穿搭",
-        "score": 67,
+        "keyword": "多巴胺",
+        "style_word": "多巴胺",
+        "display_keyword": "多巴胺",
+        "display_original": "多巴胺穿搭",
+        "score": 40,
+        "heat": 6,
         "platforms": [
           "xiaohongshu"
         ],
         "platform": "xiaohongshu",
         "hints": [],
-        "trendCategory": "服饰穿搭",
+        "trendCategory": "流行元素",
         "ip_status": "匹配成功",
         "style_rank": 3
       },
       {
-        "keyword": "新中式",
-        "style_word": "新中式",
-        "display_keyword": "新中式",
-        "display_original": "新中式穿搭",
-        "score": 67,
+        "keyword": "City Walk",
+        "style_word": "City Walk",
+        "display_keyword": "City Walk",
+        "display_original": "citywalk",
+        "score": 33,
+        "heat": 5,
         "platforms": [
           "xiaohongshu"
         ],
@@ -3612,26 +3616,28 @@
         "style_rank": 4
       },
       {
-        "keyword": "多巴胺",
-        "style_word": "多巴胺",
-        "display_keyword": "多巴胺",
-        "display_original": "多巴胺穿搭",
-        "score": 40,
+        "keyword": "粉色系",
+        "style_word": "粉色系",
+        "display_keyword": "粉色系",
+        "display_original": "粉色系",
+        "score": 27,
+        "heat": 4,
         "platforms": [
           "xiaohongshu"
         ],
         "platform": "xiaohongshu",
         "hints": [],
-        "trendCategory": "流行元素",
-        "ip_status": "匹配成功",
+        "trendCategory": "服饰穿搭",
+        "ip_status": "需审核",
         "style_rank": 5
       },
       {
-        "keyword": "City Walk",
-        "style_word": "City Walk",
-        "display_keyword": "City Walk",
-        "display_original": "citywalk",
-        "score": 33,
+        "keyword": "日系",
+        "style_word": "日系",
+        "display_keyword": "日系",
+        "display_original": "日系",
+        "score": 20,
+        "heat": 3,
         "platforms": [
           "xiaohongshu"
         ],
@@ -3642,26 +3648,28 @@
         "style_rank": 6
       },
       {
-        "keyword": "粉色系",
-        "style_word": "粉色系",
-        "display_keyword": "粉色系",
-        "display_original": "粉色系",
-        "score": 27,
+        "keyword": "美拉德",
+        "style_word": "美拉德",
+        "display_keyword": "美拉德",
+        "display_original": "美拉德风",
+        "score": 13,
+        "heat": 2,
         "platforms": [
           "xiaohongshu"
         ],
         "platform": "xiaohongshu",
         "hints": [],
-        "trendCategory": "服饰穿搭",
-        "ip_status": "需审核",
+        "trendCategory": "流行元素",
+        "ip_status": "匹配成功",
         "style_rank": 7
       },
       {
-        "keyword": "日系",
-        "style_word": "日系",
-        "display_keyword": "日系",
-        "display_original": "日系",
-        "score": 20,
+        "keyword": "韩系",
+        "style_word": "韩系",
+        "display_keyword": "韩系",
+        "display_original": "韩系穿搭",
+        "score": 7,
+        "heat": 1,
         "platforms": [
           "xiaohongshu"
         ],
@@ -3672,26 +3680,12 @@
         "style_rank": 8
       },
       {
-        "keyword": "美拉德",
-        "style_word": "美拉德",
-        "display_keyword": "美拉德",
-        "display_original": "美拉德风",
-        "score": 13,
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "hints": [],
-        "trendCategory": "流行元素",
-        "ip_status": "匹配成功",
-        "style_rank": 9
-      },
-      {
-        "keyword": "韩系",
-        "style_word": "韩系",
-        "display_keyword": "韩系",
-        "display_original": "韩系穿搭",
+        "keyword": "法式风",
+        "style_word": "法式风",
+        "display_keyword": "法式风",
+        "display_original": "法式穿搭",
         "score": 7,
+        "heat": 1,
         "platforms": [
           "xiaohongshu"
         ],
@@ -3699,14 +3693,31 @@
         "hints": [],
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
+        "style_rank": 9
+      },
+      {
+        "keyword": "英伦风",
+        "style_word": "英伦风",
+        "display_keyword": "英伦风",
+        "display_original": "英伦风",
+        "score": 7,
+        "heat": 1,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "需审核",
         "style_rank": 10
       },
       {
-        "keyword": "法式风",
-        "style_word": "法式风",
-        "display_keyword": "法式风",
-        "display_original": "法式穿搭",
-        "score": 7,
+        "keyword": "极简风",
+        "style_word": "极简风",
+        "display_keyword": "极简风",
+        "display_original": "极简穿搭",
+        "score": 0,
+        "heat": 0,
         "platforms": [
           "xiaohongshu"
         ],
@@ -3717,26 +3728,28 @@
         "style_rank": 11
       },
       {
-        "keyword": "英伦风",
-        "style_word": "英伦风",
-        "display_keyword": "英伦风",
-        "display_original": "英伦风",
-        "score": 7,
+        "keyword": "Vintage",
+        "style_word": "Vintage",
+        "display_keyword": "Vintage",
+        "display_original": "vintage",
+        "score": 0,
+        "heat": 0,
         "platforms": [
           "xiaohongshu"
         ],
         "platform": "xiaohongshu",
         "hints": [],
         "trendCategory": "服饰穿搭",
-        "ip_status": "需审核",
+        "ip_status": "匹配成功",
         "style_rank": 12
       },
       {
-        "keyword": "极简风",
-        "style_word": "极简风",
-        "display_keyword": "极简风",
-        "display_original": "极简穿搭",
+        "keyword": "国风",
+        "style_word": "国风",
+        "display_keyword": "国风",
+        "display_original": "国风",
         "score": 0,
+        "heat": 0,
         "platforms": [
           "xiaohongshu"
         ],
@@ -3747,26 +3760,28 @@
         "style_rank": 13
       },
       {
-        "keyword": "Vintage",
-        "style_word": "Vintage",
-        "display_keyword": "Vintage",
-        "display_original": "vintage",
+        "keyword": "朋克风",
+        "style_word": "朋克风",
+        "display_keyword": "朋克风",
+        "display_original": "朋克风",
         "score": 0,
+        "heat": 0,
         "platforms": [
           "xiaohongshu"
         ],
         "platform": "xiaohongshu",
         "hints": [],
         "trendCategory": "服饰穿搭",
-        "ip_status": "匹配成功",
+        "ip_status": "需审核",
         "style_rank": 14
       },
       {
-        "keyword": "国风",
-        "style_word": "国风",
-        "display_keyword": "国风",
-        "display_original": "国风",
+        "keyword": "辣妹风",
+        "style_word": "辣妹风",
+        "display_keyword": "辣妹风",
+        "display_original": "辣妹",
         "score": 0,
+        "heat": 0,
         "platforms": [
           "xiaohongshu"
         ],
@@ -3777,41 +3792,12 @@
         "style_rank": 15
       },
       {
-        "keyword": "朋克风",
-        "style_word": "朋克风",
-        "display_keyword": "朋克风",
-        "display_original": "朋克风",
-        "score": 0,
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "hints": [],
-        "trendCategory": "服饰穿搭",
-        "ip_status": "需审核",
-        "style_rank": 16
-      },
-      {
-        "keyword": "辣妹风",
-        "style_word": "辣妹风",
-        "display_keyword": "辣妹风",
-        "display_original": "辣妹",
-        "score": 0,
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "hints": [],
-        "trendCategory": "服饰穿搭",
-        "ip_status": "匹配成功",
-        "style_rank": 17
-      },
-      {
         "keyword": "洛丽塔",
         "style_word": "洛丽塔",
         "display_keyword": "洛丽塔",
         "display_original": "lolita",
         "score": 0,
+        "heat": 0,
         "platforms": [
           "xiaohongshu"
         ],
@@ -3819,7 +3805,7 @@
         "hints": [],
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
-        "style_rank": 18
+        "style_rank": 16
       }
     ]
   }
