@@ -5589,21 +5589,17 @@
    ]
   },
   "2026-10-15": {
-   "count": 62,
+   "count": 63,
    "items": [
     {
      "keyword": "李嘉诚去世为假消息（3条热搜）",
      "ip_name": "李嘉诚",
      "display_keyword": "李嘉诚",
      "display_original": "李嘉诚去世为假消息（3条热搜）",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 26.402543999999992,
-     "hints": [
-      "李嘉诚同款穿搭",
-      "李嘉诚同款好物",
-      "李嘉诚代言品牌"
-     ],
+     "hints": [],
      "platforms": [
       "weibo",
       "douyin"
@@ -5614,12 +5610,12 @@
      "ip_name": "陈小春",
      "display_keyword": "陈小春",
      "display_original": "工厂工人回应撞脸陈小春走红（3...",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 25.474607999999996,
      "hints": [
       "陈小春同款穿搭",
-      "陈小春同款好物",
+      "陈小春同款单品",
       "陈小春代言品牌"
      ],
      "platforms": [
@@ -5632,12 +5628,12 @@
      "ip_name": "肖战",
      "display_keyword": "肖战",
      "display_original": "肖战大麦演唱会想看人数历史总榜...",
-     "ipCategory": "明星艺人",
-     "ip_status": "需审核",
+     "ipCategory": "明星/人物",
+     "ip_status": "匹配成功",
      "score": 20.323583999999997,
      "hints": [
       "肖战同款穿搭",
-      "肖战同款好物",
+      "肖战同款单品",
       "肖战代言品牌"
      ],
      "platforms": [
@@ -5650,7 +5646,7 @@
      "ip_name": "iPhone",
      "display_keyword": "iPhone",
      "display_original": "iPhone Duo已完成大模...",
-     "ipCategory": "品牌",
+     "ipCategory": "品牌联名",
      "ip_status": "新value",
      "score": 17.551008,
      "hints": [],
@@ -5664,12 +5660,12 @@
      "ip_name": "杨紫",
      "display_keyword": "杨紫",
      "display_original": "杨紫（3条热搜）",
-     "ipCategory": "明星艺人",
-     "ip_status": "需审核",
+     "ipCategory": "明星/人物",
+     "ip_status": "匹配成功",
      "score": 14.113199999999999,
      "hints": [
       "杨紫同款穿搭",
-      "杨紫同款好物",
+      "杨紫同款单品",
       "杨紫代言品牌"
      ],
      "platforms": [
@@ -5677,29 +5673,11 @@
      ]
     },
     {
-     "keyword": "英雄联盟S16 LPL出征片（...",
-     "ip_name": "英雄",
-     "display_keyword": "英雄",
-     "display_original": "英雄联盟S16 LPL出征片（...",
-     "ipCategory": "影视综",
-     "ip_status": "需审核",
-     "score": 12.926304,
-     "hints": [
-      "英雄同款穿搭",
-      "英雄周边好物",
-      "英雄联名款"
-     ],
-     "platforms": [
-      "xiaohongshu",
-      "douyin"
-     ]
-    },
-    {
      "keyword": "ZUIAN第三次面签没过（2条...",
      "ip_name": "ZUIAN",
      "display_keyword": "ZUIAN",
      "display_original": "ZUIAN第三次面签没过（2条...",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "新value",
      "score": 11.2976,
      "hints": [],
@@ -5712,13 +5690,13 @@
      "ip_name": "TES",
      "display_keyword": "TES",
      "display_original": "TES帮助ZUIAN申请P签（...",
-     "ipCategory": "文娱其他",
+     "ipCategory": "体育",
      "ip_status": "匹配成功",
      "score": 10.4829,
      "hints": [
-      "TES同款推荐",
-      "TES周边好物",
-      "TES联名限定"
+      "TES球衣周边",
+      "TES运动装备",
+      "TES联名款"
      ],
      "platforms": [
       "weibo"
@@ -5729,13 +5707,30 @@
      "ip_name": "皇马",
      "display_keyword": "皇马",
      "display_original": "皇马4:3逆转罗马",
-     "ipCategory": "文娱其他",
-     "ip_status": "需审核",
+     "ipCategory": "体育",
+     "ip_status": "匹配成功",
      "score": 6.945,
      "hints": [
-      "皇马同款推荐",
-      "皇马周边好物",
-      "皇马联名限定"
+      "皇马球衣周边",
+      "皇马运动装备",
+      "皇马联名款"
+     ],
+     "platforms": [
+      "douyin"
+     ]
+    },
+    {
+     "keyword": "英雄联盟S16 LPL出征片",
+     "ip_name": "英雄联盟 LPL",
+     "display_keyword": "英雄联盟 LPL",
+     "display_original": "英雄联盟S16 LPL出征片",
+     "ipCategory": "游戏电竞",
+     "ip_status": "匹配成功",
+     "score": 6.8938,
+     "hints": [
+      "英雄联盟 LPL联名周边",
+      "英雄联盟 LPL手办模型",
+      "英雄联盟 LPL限定皮肤"
      ],
      "platforms": [
       "douyin"
@@ -5746,7 +5741,7 @@
      "ip_name": "DeepSeek",
      "display_keyword": "DeepSeek",
      "display_original": "DeepSeek崩了",
-     "ipCategory": "品牌",
+     "ipCategory": "品牌联名",
      "ip_status": "新value",
      "score": 6.889,
      "hints": [],
@@ -5759,12 +5754,12 @@
      "ip_name": "檀健次",
      "display_keyword": "檀健次",
      "display_original": "檀健次Drop狼爪舞挑战",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 6.8875,
      "hints": [
       "檀健次同款穿搭",
-      "檀健次同款好物",
+      "檀健次同款单品",
       "檀健次代言品牌"
      ],
      "platforms": [
@@ -5793,12 +5788,12 @@
      "ip_name": "花小龙",
      "display_keyword": "花小龙",
      "display_original": "花小龙带宋亚东自律的一天",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 6.8856,
      "hints": [
       "花小龙同款穿搭",
-      "花小龙同款好物",
+      "花小龙同款单品",
       "花小龙代言品牌"
      ],
      "platforms": [
@@ -5810,12 +5805,12 @@
      "ip_name": "贺峻霖",
      "display_keyword": "贺峻霖",
      "display_original": "假如用AI生成贺峻霖",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 6.8853,
      "hints": [
       "贺峻霖同款穿搭",
-      "贺峻霖同款好物",
+      "贺峻霖同款单品",
       "贺峻霖代言品牌"
      ],
      "platforms": [
@@ -5827,8 +5822,8 @@
      "ip_name": "求婚",
      "display_keyword": "求婚",
      "display_original": "刀小刀反向求婚孟令辉",
-     "ipCategory": "影视综",
-     "ip_status": "需审核",
+     "ipCategory": "影视综艺",
+     "ip_status": "匹配成功",
      "score": 6.8847,
      "hints": [
       "求婚同款穿搭",
@@ -5844,12 +5839,12 @@
      "ip_name": "金晨",
      "display_keyword": "金晨",
      "display_original": "金晨自曝美国游学遇学校倒闭",
-     "ipCategory": "明星艺人",
-     "ip_status": "需审核",
+     "ipCategory": "明星/人物",
+     "ip_status": "匹配成功",
      "score": 6.8844,
      "hints": [
       "金晨同款穿搭",
-      "金晨同款好物",
+      "金晨同款单品",
       "金晨代言品牌"
      ],
      "platforms": [
@@ -5861,8 +5856,8 @@
      "ip_name": "火影忍者",
      "display_keyword": "火影忍者",
      "display_original": "火影手游迪鲁达全技能爆料",
-     "ipCategory": "动漫二次元",
-     "ip_status": "需审核",
+     "ipCategory": "卡通动漫",
+     "ip_status": "匹配成功",
      "score": 6.8836,
      "hints": [
       "火影忍者手办模型",
@@ -5878,12 +5873,12 @@
      "ip_name": "杨超越",
      "display_keyword": "杨超越",
      "display_original": "杨超越扑面而来的故事感",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 6.8835,
      "hints": [
       "杨超越同款穿搭",
-      "杨超越同款好物",
+      "杨超越同款单品",
       "杨超越代言品牌"
      ],
      "platforms": [
@@ -5895,7 +5890,7 @@
      "ip_name": "家常菜",
      "display_keyword": "家常菜",
      "display_original": "普洱家常菜嘎嘎下饭",
-     "ipCategory": "影视综",
+     "ipCategory": "影视综艺",
      "ip_status": "匹配成功",
      "score": 6.8835,
      "hints": [
@@ -5912,7 +5907,7 @@
      "ip_name": "黑猫警长 喵喵",
      "display_keyword": "黑猫警长 喵喵",
      "display_original": "黑猫警长喵喵喵",
-     "ipCategory": "动漫二次元",
+     "ipCategory": "卡通动漫",
      "ip_status": "匹配成功",
      "score": 6.8832,
      "hints": [
@@ -5929,7 +5924,7 @@
      "ip_name": "薰衣草",
      "display_keyword": "薰衣草",
      "display_original": "薰衣草的花语是等你爱我",
-     "ipCategory": "影视综",
+     "ipCategory": "影视综艺",
      "ip_status": "匹配成功",
      "score": 6.8828,
      "hints": [
@@ -5946,12 +5941,12 @@
      "ip_name": "龚俊",
      "display_keyword": "龚俊",
      "display_original": "龚俊麒麟冰结品牌代言人",
-     "ipCategory": "明星艺人",
-     "ip_status": "需审核",
+     "ipCategory": "明星/人物",
+     "ip_status": "匹配成功",
      "score": 5.9138,
      "hints": [
       "龚俊同款穿搭",
-      "龚俊同款好物",
+      "龚俊同款单品",
       "龚俊代言品牌"
      ],
      "platforms": [
@@ -5963,7 +5958,7 @@
      "ip_name": "影视飓风",
      "display_keyword": "影视飓风",
      "display_original": "Tim父亲出任影视飓风董事长",
-     "ipCategory": "品牌",
+     "ipCategory": "品牌联名",
      "ip_status": "匹配成功",
      "score": 5.7853,
      "hints": [
@@ -5980,8 +5975,8 @@
      "ip_name": "零二",
      "display_keyword": "零二",
      "display_original": "2025新年第一餐（2条热搜）",
-     "ipCategory": "动漫二次元",
-     "ip_status": "需审核",
+     "ipCategory": "卡通动漫",
+     "ip_status": "匹配成功",
      "score": 5.7842,
      "hints": [
       "零二手办模型",
@@ -5997,7 +5992,7 @@
      "ip_name": "appstore",
      "display_keyword": "appstore",
      "display_original": "appstore正式进入字节时...",
-     "ipCategory": "品牌",
+     "ipCategory": "品牌联名",
      "ip_status": "新value",
      "score": 5.7404,
      "hints": [],
@@ -6010,12 +6005,12 @@
      "ip_name": "陈奕迅",
      "display_keyword": "陈奕迅",
      "display_original": "黄泽林承认与陈奕迅女儿分手",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 5.6128,
      "hints": [
       "陈奕迅同款穿搭",
-      "陈奕迅同款好物",
+      "陈奕迅同款单品",
       "陈奕迅代言品牌"
      ],
      "platforms": [
@@ -6027,12 +6022,12 @@
      "ip_name": "李一桐 大冰",
      "display_keyword": "李一桐 大冰",
      "display_original": "大冰说李一桐内心特别强大",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 5.415,
      "hints": [
       "李一桐 大冰同款穿搭",
-      "李一桐 大冰同款好物",
+      "李一桐 大冰同款单品",
       "李一桐 大冰代言品牌"
      ],
      "platforms": [
@@ -6044,7 +6039,7 @@
      "ip_name": "保时捷",
      "display_keyword": "保时捷",
      "display_original": "保时捷MissionS曝光",
-     "ipCategory": "品牌",
+     "ipCategory": "品牌联名",
      "ip_status": "匹配成功",
      "score": 5.3424,
      "hints": [
@@ -6061,12 +6056,12 @@
      "ip_name": "井柏然 孙千",
      "display_keyword": "井柏然 孙千",
      "display_original": "井柏然孙千现身早春晴朗研讨会",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 5.301,
      "hints": [
       "井柏然 孙千同款穿搭",
-      "井柏然 孙千同款好物",
+      "井柏然 孙千同款单品",
       "井柏然 孙千代言品牌"
      ],
      "platforms": [
@@ -6078,12 +6073,12 @@
      "ip_name": "徐梦洁",
      "display_keyword": "徐梦洁",
      "display_original": "徐梦洁余茵乖乖女完全两个感觉",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 5.2553,
      "hints": [
       "徐梦洁同款穿搭",
-      "徐梦洁同款好物",
+      "徐梦洁同款单品",
       "徐梦洁代言品牌"
      ],
      "platforms": [
@@ -6096,7 +6091,7 @@
      "display_keyword": "原神",
      "display_original": "原神（2条热搜）",
      "ipCategory": "游戏电竞",
-     "ip_status": "需审核",
+     "ip_status": "匹配成功",
      "score": 4.9218,
      "hints": [
       "原神联名周边",
@@ -6112,12 +6107,12 @@
      "ip_name": "李现",
      "display_keyword": "李现",
      "display_original": "李现",
-     "ipCategory": "明星艺人",
-     "ip_status": "需审核",
+     "ipCategory": "明星/人物",
+     "ip_status": "匹配成功",
      "score": 4.7044,
      "hints": [
       "李现同款穿搭",
-      "李现同款好物",
+      "李现同款单品",
       "李现代言品牌"
      ],
      "platforms": [
@@ -6130,7 +6125,7 @@
      "display_keyword": "光遇",
      "display_original": "光遇蹲人（3条热搜）",
      "ipCategory": "游戏电竞",
-     "ip_status": "需审核",
+     "ip_status": "匹配成功",
      "score": 4.1937,
      "hints": [
       "光遇联名周边",
@@ -6163,8 +6158,8 @@
      "ip_name": "多多",
      "display_keyword": "多多",
      "display_original": "拼多多（2条热搜）",
-     "ipCategory": "动漫二次元",
-     "ip_status": "需审核",
+     "ipCategory": "卡通动漫",
+     "ip_status": "匹配成功",
      "score": 3.0881,
      "hints": [
       "多多手办模型",
@@ -6180,12 +6175,12 @@
      "ip_name": "李克勤",
      "display_keyword": "李克勤",
      "display_original": "李克勤",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 2.8299,
      "hints": [
       "李克勤同款穿搭",
-      "李克勤同款好物",
+      "李克勤同款单品",
       "李克勤代言品牌"
      ],
      "platforms": [
@@ -6206,12 +6201,29 @@
      ]
     },
     {
+     "keyword": "英雄﻿",
+     "ip_name": "英雄",
+     "display_keyword": "英雄",
+     "display_original": "英雄﻿",
+     "ipCategory": "影视综艺",
+     "ip_status": "匹配成功",
+     "score": 2.0828,
+     "hints": [
+      "英雄同款穿搭",
+      "英雄周边好物",
+      "英雄联名款"
+     ],
+     "platforms": [
+      "xiaohongshu"
+     ]
+    },
+    {
      "keyword": "葡记小金盒",
      "ip_name": "小金",
      "display_keyword": "小金",
      "display_original": "葡记小金盒",
-     "ipCategory": "动漫二次元",
-     "ip_status": "需审核",
+     "ipCategory": "卡通动漫",
+     "ip_status": "匹配成功",
      "score": 1.9085,
      "hints": [
       "小金手办模型",
@@ -6244,8 +6256,8 @@
      "ip_name": "大大",
      "display_keyword": "大大",
      "display_original": "大大方方做自己",
-     "ipCategory": "动漫二次元",
-     "ip_status": "需审核",
+     "ipCategory": "卡通动漫",
+     "ip_status": "匹配成功",
      "score": 1.8062,
      "hints": [
       "大大手办模型",
@@ -6261,7 +6273,7 @@
      "ip_name": "布鲁可 奥特曼",
      "display_keyword": "布鲁可 奥特曼",
      "display_original": "布鲁可奥特曼",
-     "ipCategory": "品牌",
+     "ipCategory": "品牌联名",
      "ip_status": "匹配成功",
      "score": 1.6902,
      "hints": [
@@ -6278,7 +6290,7 @@
      "ip_name": "卡皮巴拉",
      "display_keyword": "卡皮巴拉",
      "display_original": "卡皮巴拉",
-     "ipCategory": "动漫二次元",
+     "ipCategory": "卡通动漫",
      "ip_status": "匹配成功",
      "score": 1.6902,
      "hints": [
@@ -6295,7 +6307,7 @@
      "ip_name": "魔法少女小圆",
      "display_keyword": "魔法少女小圆",
      "display_original": "魔法少女小圆",
-     "ipCategory": "动漫二次元",
+     "ipCategory": "卡通动漫",
      "ip_status": "匹配成功",
      "score": 1.6902,
      "hints": [
@@ -6312,12 +6324,12 @@
      "ip_name": "王楚钦",
      "display_keyword": "王楚钦",
      "display_original": "优时颜品牌代言人王楚钦",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 1.6902,
      "hints": [
       "王楚钦同款穿搭",
-      "王楚钦同款好物",
+      "王楚钦同款单品",
       "王楚钦代言品牌"
      ],
      "platforms": [
@@ -6329,12 +6341,12 @@
      "ip_name": "王鹤棣",
      "display_keyword": "王鹤棣",
      "display_original": "王鹤棣",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 1.5563,
      "hints": [
       "王鹤棣同款穿搭",
-      "王鹤棣同款好物",
+      "王鹤棣同款单品",
       "王鹤棣代言品牌"
      ],
      "platforms": [
@@ -6346,7 +6358,7 @@
      "ip_name": "POLAR",
      "display_keyword": "POLAR",
      "display_original": "polaroid",
-     "ipCategory": "动漫二次元",
+     "ipCategory": "卡通动漫",
      "ip_status": "匹配成功",
      "score": 1.5563,
      "hints": [
@@ -6363,7 +6375,7 @@
      "ip_name": "哈利波特",
      "display_keyword": "哈利波特",
      "display_original": "哈利波特",
-     "ipCategory": "影视综",
+     "ipCategory": "影视综艺",
      "ip_status": "匹配成功",
      "score": 1.5563,
      "hints": [
@@ -6380,8 +6392,8 @@
      "ip_name": "乒乓",
      "display_keyword": "乒乓",
      "display_original": "肯德基乒乒乓乓大金桶",
-     "ipCategory": "动漫二次元",
-     "ip_status": "需审核",
+     "ipCategory": "卡通动漫",
+     "ip_status": "匹配成功",
      "score": 1.5563,
      "hints": [
       "乒乓手办模型",
@@ -6397,12 +6409,12 @@
      "ip_name": "孙颖莎",
      "display_keyword": "孙颖莎",
      "display_original": "孙颖莎",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 1.5563,
      "hints": [
       "孙颖莎同款穿搭",
-      "孙颖莎同款好物",
+      "孙颖莎同款单品",
       "孙颖莎代言品牌"
      ],
      "platforms": [
@@ -6414,7 +6426,7 @@
      "ip_name": "大奉打更人",
      "display_keyword": "大奉打更人",
      "display_original": "大奉打更人",
-     "ipCategory": "影视综",
+     "ipCategory": "影视综艺",
      "ip_status": "匹配成功",
      "score": 1.5563,
      "hints": [
@@ -6431,7 +6443,7 @@
      "ip_name": "赫敏",
      "display_keyword": "赫敏",
      "display_original": "赫敏格兰杰",
-     "ipCategory": "影视综",
+     "ipCategory": "影视综艺",
      "ip_status": "匹配成功",
      "score": 1.5563,
      "hints": [
@@ -6448,8 +6460,8 @@
      "ip_name": "罗恩",
      "display_keyword": "罗恩",
      "display_original": "罗恩韦斯莱",
-     "ipCategory": "影视综",
-     "ip_status": "需审核",
+     "ipCategory": "影视综艺",
+     "ip_status": "匹配成功",
      "score": 1.5563,
      "hints": [
       "罗恩同款穿搭",
@@ -6465,7 +6477,7 @@
      "ip_name": "叶罗丽",
      "display_keyword": "叶罗丽",
      "display_original": "叶罗丽月灵石",
-     "ipCategory": "动漫二次元",
+     "ipCategory": "卡通动漫",
      "ip_status": "匹配成功",
      "score": 1.3979,
      "hints": [
@@ -6482,7 +6494,7 @@
      "ip_name": "白月梵星",
      "display_keyword": "白月梵星",
      "display_original": "白月梵星",
-     "ipCategory": "影视综",
+     "ipCategory": "影视综艺",
      "ip_status": "匹配成功",
      "score": 1.3979,
      "hints": [
@@ -6499,7 +6511,7 @@
      "ip_name": "盗墓笔记",
      "display_keyword": "盗墓笔记",
      "display_original": "盗墓笔记",
-     "ipCategory": "影视综",
+     "ipCategory": "影视综艺",
      "ip_status": "匹配成功",
      "score": 1.3979,
      "hints": [
@@ -6516,7 +6528,7 @@
      "ip_name": "破产姐妹",
      "display_keyword": "破产姐妹",
      "display_original": "破产姐妹第一季",
-     "ipCategory": "影视综",
+     "ipCategory": "影视综艺",
      "ip_status": "匹配成功",
      "score": 1.3979,
      "hints": [
@@ -6533,12 +6545,12 @@
      "ip_name": "温流",
      "display_keyword": "温流",
      "display_original": "温流",
-     "ipCategory": "明星艺人",
-     "ip_status": "需审核",
+     "ipCategory": "明星/人物",
+     "ip_status": "匹配成功",
      "score": 1.3979,
      "hints": [
       "温流同款穿搭",
-      "温流同款好物",
+      "温流同款单品",
       "温流代言品牌"
      ],
      "platforms": [
@@ -6550,12 +6562,12 @@
      "ip_name": "SHINee",
      "display_keyword": "SHINee",
      "display_original": "shinee",
-     "ipCategory": "明星艺人",
+     "ipCategory": "明星/人物",
      "ip_status": "匹配成功",
      "score": 1.3979,
      "hints": [
       "SHINee同款穿搭",
-      "SHINee同款好物",
+      "SHINee同款单品",
       "SHINee代言品牌"
      ],
      "platforms": [
@@ -6567,7 +6579,7 @@
      "ip_name": "奇奇蒂蒂",
      "display_keyword": "奇奇蒂蒂",
      "display_original": "奇奇蒂蒂",
-     "ipCategory": "动漫二次元",
+     "ipCategory": "卡通动漫",
      "ip_status": "匹配成功",
      "score": 1.3979,
      "hints": [
@@ -6584,7 +6596,7 @@
      "ip_name": "小红书",
      "display_keyword": "小红书",
      "display_original": "万能的小红书",
-     "ipCategory": "品牌",
+     "ipCategory": "品牌联名",
      "ip_status": "匹配成功",
      "score": 1.2041,
      "hints": [
@@ -6601,7 +6613,7 @@
      "ip_name": "排球少年",
      "display_keyword": "排球少年",
      "display_original": "排球少年",
-     "ipCategory": "动漫二次元",
+     "ipCategory": "卡通动漫",
      "ip_status": "匹配成功",
      "score": 1.2041,
      "hints": [
@@ -6618,8 +6630,8 @@
      "ip_name": "QQ",
      "display_keyword": "QQ",
      "display_original": "QQ音乐",
-     "ipCategory": "品牌",
-     "ip_status": "需审核",
+     "ipCategory": "品牌联名",
+     "ip_status": "匹配成功",
      "score": 1.2041,
      "hints": [
       "QQ新品首发",
