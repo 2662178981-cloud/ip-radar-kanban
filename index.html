@@ -259,7 +259,7 @@
     <table class="lb-table" id="lb-table">
       <thead>
         <tr>
-          <th style="width:40px">排名</th><th>IP名 / 原热搜词</th><th>状态</th><th>分类</th><th>来源</th><th>联想词条</th><th>热度</th>
+          <th style="width:40px">排名</th><th>IP名 / 原热搜词</th><th>状态</th><th>分类</th><th>来源</th><th>热度</th><th>联想词条</th>
         </tr>
       </thead>
       <tbody id="lb-body"></tbody>
@@ -352,6 +352,14 @@ const HEAT_LABEL = { hot: "爆", flat: "平稳", down: "降" };
 
 function rankClass(r) { return r <= 10 ? "rank-" + r : "rank-else"; }
 function heatScore(it) { return Number(it.norm_score || it.score || 0); }
+/* 多平台加权系数：与后端 multi_platform_factor 保持一致 */
+function multiPlatformFactor(n) {
+  n = Number(n) || 0;
+  if (n <= 1) return 1.0;
+  if (n === 2) return 1.2;
+  if (n === 3) return 1.4;
+  return 1.6;
+}
 function escHtml(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 function catDotHtml(cat) {
   const c = CAT_COLORS[String(cat || '')] || '#9ca3af';
@@ -600,6 +608,11 @@ function aggregateBoard(items) {
     out.push(head);
   });
 
+  // 多平台加权：同一 IP/热词在多个平台出现是更强信号，额外放大（与后端一致）
+  out.forEach(r => {
+    r._score *= multiPlatformFactor((r.platforms || r._pfs || []).length);
+  });
+
   out.sort((a, b) => (b._score || 0) - (a._score || 0));
   return out;
 }
@@ -657,8 +670,8 @@ function renderLeaderboard() {
       '<td><span class="status-pill ' + st.cls + '">' + st.label + '</span></td>' +
       '<td>' + catDotHtml(d.ipCategory) + escHtml(d.ipCategory || '—') + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
-      '<td>' + renderHintsPills(d.hints) + '</td>' +
       '<td>' + heatCellHtml(d) + '</td>' +
+      '<td>' + renderHintsPills(d.hints) + '</td>' +
     '</tr>';
   }).join("");
 }
@@ -668,7 +681,7 @@ function renderTrend() {
   const body = document.getElementById('lb-body');
   const items = (PAYLOAD.trendBoard && PAYLOAD.trendBoard.items) || [];
   if (!items.length) {
-    body.innerHTML = '<tr><td colspan="6" style="text-align:center;color:#9ca3af;padding:30px">暂无流行趋势数据（服饰穿搭/美妆护肤/流行元素）</td></tr>';
+    body.innerHTML = '<tr><td colspan="7" style="text-align:center;color:#9ca3af;padding:30px">暂无流行趋势数据（服饰穿搭/美妆护肤/流行元素）</td></tr>';
     return;
   }
   body.innerHTML = items.map((d, i) => {
@@ -677,6 +690,8 @@ function renderTrend() {
     const main = d.display_keyword || d.trend_word || d.keyword || '';
     const sub = d.display_original || d.keyword || '';
     const subHtml = (sub && sub !== main) ? '<div class="kw-sub">' + escHtml(sub) + '</div>' : '';
+    d._hot = d.hot_value || d.hot_score || d.score || 0;
+    d._names = [main];
     return '<tr>' +
       '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
       '<td>' +
@@ -686,6 +701,7 @@ function renderTrend() {
       '<td><span class="status-pill status-review">' + escHtml(d.ip_status || '—') + '</span></td>' +
       '<td>' + catDotHtml(cat) + escHtml(cat) + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
+      '<td>' + heatCellHtml(d) + '</td>' +
       '<td>' + renderHintsPills(d.hints) + '</td>' +
     '</tr>';
   }).join('');
