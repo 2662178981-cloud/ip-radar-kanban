@@ -756,16 +756,8 @@ async function submitNewWords() {
   if (!words.length) return;
   const statusEl = document.getElementById('submit-status');
   if (statusEl) statusEl.textContent = '提交中…';
-  const url = (typeof window !== 'undefined' && window.IP_RADAR_SUBMIT_URL) || '';
-  if (!url) {
-    const text = words.join('\n');
-    let copied = false;
-    try { await navigator.clipboard.writeText(text); copied = true; } catch (e) {}
-    if (statusEl) statusEl.textContent = copied
-      ? ('未配置提交接口，已复制 ' + words.length + ' 个新词到剪贴板')
-      : ('未配置提交接口，请手动复制：' + text);
-    return;
-  }
+  const url = (typeof window !== 'undefined' && window.IP_RADAR_SUBMIT_URL)
+    || 'https://7xxeoodtnsp9.joyapp.jd.com/submit-new-words';
   try {
     const resp = await fetch(url, {
       method: 'POST',
@@ -779,11 +771,22 @@ async function submitNewWords() {
       SELECTED_NEW.clear();
       renderLeaderboard();
     } else {
-      if (statusEl) statusEl.textContent = '提交失败：' + ((data && data.error) || '未知错误');
+      const err = (data && data.error) || '未知错误';
+      if (statusEl) statusEl.textContent = '提交失败：' + err;
+      copySelectedToClipboard(words, statusEl);
     }
   } catch (e) {
     if (statusEl) statusEl.textContent = '提交失败：' + e.message;
+    copySelectedToClipboard(words, statusEl);
   }
+}
+
+async function copySelectedToClipboard(words, statusEl) {
+  const text = words.join('\n');
+  try {
+    await navigator.clipboard.writeText(text);
+    if (statusEl) statusEl.textContent += '（已复制到剪贴板）';
+  } catch (e) {}
 }
 
 function renderSubtabs() {
