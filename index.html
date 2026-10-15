@@ -63,8 +63,7 @@
   .lb-table tr:nth-child(odd) td { background: #ffffff; }
   .lb-table tr:nth-child(even) td { background: #f8faff; }
   .lb-table tr:hover td { background: #eef2ff !important; }
-  .lb-table tr.style-mapped td { box-shadow: inset 0 0 0 1px #7c3aed; }
-  .lb-table tr.style-mapped td:first-child { box-shadow: inset 3px 0 0 #7c3aed, inset 0 0 0 1px #7c3aed; }
+  .lb-table tr.style-mapped td:nth-child(2) { box-shadow: inset 0 0 0 1px #7c3aed; }
 
   .rank-badge { width: 26px; height: 26px; border-radius: 7px; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 13px; }
   .rank-1 { background: #ef4444; } .rank-2 { background: #8b5cf6; } .rank-3 { background: #3b82f6; }
@@ -959,21 +958,24 @@ function renderStyleHot() {
 const STYLE_DIESUN_MAP = {
   '古早风': [2, 23, 26],
   '繁荣主义风': [26, 27, 31],
-  'JK制服': [2, 54],
-  '新中式': [3, 37, 39, 58],
-  '多巴胺': [14, 15, 20],
-  '粉色系': [14, 20],
-  '日系': [33],
-  '美拉德': [26, 38],
+  '慵懒风': [8, 11, 34],
   '韩系': [44, 52],
+  '松弛感': [8, 11, 34],
+  'Clean Fit': [7],
+  '美拉德': [26, 38],
   '法式风': [10],
-  '英伦风': [2, 54],
+  '老钱风': [26, 12, 52],
+  '学院风': [2, 54],
+  '粉色系': [14, 20],
+  'JK制服': [2, 54],
   '极简风': [27, 45, 51],
-  'Vintage': [2, 3, 4, 10, 23],
+  '多巴胺': [14, 15, 20],
   '国风': [24, 37, 58],
-  '朋克风': [49],
-  '辣妹风': [3, 5, 13, 42, 47, 49],
-  '洛丽塔': [46, 47]
+  '日系': [33],
+  '千金风': [31],
+  '洛丽塔': [46, 47],
+  'Vintage': [2, 3, 4, 10, 23],
+  '辣妹风': [3, 5, 13, 42, 47, 49]
 };
 
 function matchDiesunStyles(word, orig) {
