@@ -240,7 +240,6 @@
     </div>
     <div class="stats">
       <span class="chip blue">新词 <b id="stat-new">—</b></span>
-      <span class="chip amber">需审核 <b id="stat-review">—</b></span>
       <span class="chip gray">🕐 更新于 <b id="stat-time">—</b></span>
     </div>
   </div>
@@ -254,7 +253,7 @@
   </div>
 
   <div class="panel" id="panel-leaderboard">
-    <div class="panel-sub" id="lb-sub">被识别为 IP 的热度词（含新词/需审核）</div>
+    <div class="panel-sub" id="lb-sub">被识别为 IP 的热度词（含新词）</div>
     <div class="subtabs" id="lb-subtabs" role="tablist" aria-label="榜单子标签页">
       <button type="button" class="subtab active" data-lb="ip" role="tab" aria-selected="true">泛IP</button>
     </div>
@@ -263,7 +262,6 @@
         <option value="" selected>全部状态</option>
         <option value="__ip__">仅已识别（词库命中）</option>
         <option value="匹配成功">匹配成功</option>
-        <option value="需审核">需审核</option>
         <option value="新value">新词</option>
       </select>
       <select class="filter-select" id="filter-cat"></select>
@@ -308,7 +306,7 @@
   </div>
 
   <div class="panel hidden" id="panel-snapshot">
-    <div class="panel-sub">历史每日IP热点快照 · 保留过去7天数据</div>
+    <div class="panel-sub">历史每日IP热点快照 · 可回溯每日最终版</div>
     <div class="filters" style="margin-bottom:10px">
       <input type="date" id="snapshot-date" class="filter-select" style="padding:5px 8px" placeholder="按日期筛选">
       <input type="text" id="snapshot-kw" class="filter-select" style="padding:5px 8px;width:180px" placeholder="按关键词搜索">
@@ -491,17 +489,18 @@ const SELECTED_NEW = new Set();  /* 已勾选待写入词库的新词 */
 
 async function loadAll() {
   // 可选文件（calendar_index/hints/diesun_index）不存在时不白等：retries=1，失败即 null
-  const [data, cal, hints, diesun] = await Promise.all([
+  const [data, cal, hints, diesun, snaps] = await Promise.all([
     fetchJSON('data.json'),
     fetchJSON('calendar_index.json', 1).catch(() => null),
     fetchJSON('hints.json', 1).catch(() => null),
-    fetchJSON('diesun_index.json', 1).catch(() => null)
+    fetchJSON('diesun_index.json', 1).catch(() => null),
+    fetchJSON('snapshots.json', 1).catch(() => null)
   ]);
   PAYLOAD = data;
   CAL_INDEX = cal;
   HINTS_DATA = hints;
   DIESUN_INDEX = diesun;
-  SNAPSHOTS = null;
+  SNAPSHOTS = snaps;
   // 热度数据：先加载索引，再加载最新 raw 文件（失败不影响主流程）
   try {
     const idx = await fetchJSON('heat_index.json', 1);
@@ -533,7 +532,6 @@ function renderHintsPills(hints) {
 function renderHeader() {
   const s = PAYLOAD.summary || {};
   document.getElementById('stat-new').textContent = s.newValues || 0;
-  document.getElementById('stat-review').textContent = s.reviewNeeded || 0;
   // 生成时间：只展示合法时间戳，过滤脏值（如 "now"/空串）
   let t = PAYLOAD.generatedAt || s.generatedAt || '';
   t = String(t).trim();
@@ -653,7 +651,7 @@ function renderLeaderboard() {
   const catF = document.getElementById('filter-cat').value;
   const heatF = document.getElementById('filter-heat').value;
   const rows = all.filter(r => {
-    if (statusF === '__ip__') return r.ip_status === '匹配成功' || r.ip_status === '需审核';
+    if (statusF === '__ip__') return r.ip_status === '匹配成功';
     if (!statusF) return true;
     return r.ip_status === statusF;
   }).filter(r => (!catF || r.ipCategory === catF)).filter(r => {
@@ -665,8 +663,8 @@ function renderLeaderboard() {
 
   const hidden = all.length - rows.length;
   document.getElementById('lb-sub').textContent = statusF === '__ip__'
-    ? ('仅展示词库命中的 IP（匹配成功/需审核），已折叠 ' + hidden + ' 条未识别热搜')
-    : ('被识别为 IP 的热度词（含新词/需审核） · 共 ' + rows.length + ' 条');
+    ? ('仅展示词库命中的 IP（匹配成功），已折叠 ' + hidden + ' 条未识别热搜')
+    : ('被识别为 IP 的热度词（含新词） · 共 ' + rows.length + ' 条');
 
   const body = document.getElementById('lb-body');
   if (!rows.length) { body.innerHTML = '<tr><td colspan="7" style="text-align:center;color:#9ca3af;padding:30px">无匹配数据</td></tr>'; return; }
