@@ -63,6 +63,9 @@
   .lb-table tr:nth-child(odd) td { background: #ffffff; }
   .lb-table tr:nth-child(even) td { background: #f8faff; }
   .lb-table tr:hover td { background: #eef2ff !important; }
+  .lb-table tr.style-mapped td { background: #f5f3ff !important; }
+  .lb-table tr.style-mapped:hover td { background: #ede9fe !important; }
+  .lb-table tr.style-mapped td:first-child { box-shadow: inset 3px 0 0 #7c3aed; }
 
   .rank-badge { width: 26px; height: 26px; border-radius: 7px; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 13px; }
   .rank-1 { background: #ef4444; } .rank-2 { background: #8b5cf6; } .rank-3 { background: #3b82f6; }
@@ -338,6 +341,7 @@ const STATUS = {
 };
 const CAT_ORDER = ["明星","明星艺人","潮玩手办","影视综","游戏电竞","游戏","品牌","体育","动漫二次元","文娱其他"];
 const CAT_COLORS = {
+  "服饰穿搭": "#8b5cf6", "流行元素": "#ec4899",
   "明星艺人": "#ec4899", "明星": "#ec4899",
   "潮玩手办": "#8b5cf6", "潮玩": "#8b5cf6",
   "影视综": "#f59e0b",
@@ -848,29 +852,35 @@ function renderStyleHot() {
   if (PAYLOAD.styleHotBoard && Array.isArray(PAYLOAD.styleHotBoard.items)) {
     items = PAYLOAD.styleHotBoard.items;
   }
-  grid.className = 'style-grid';
+  grid.className = '';
   countEl.textContent = items.length ? ('共' + items.length + ' 个热搜风格词') : '';
   if (!items.length) {
     grid.innerHTML = '<div style="color:#9ca3af;padding:20px;text-align:center">暂无热搜风格词数据</div>';
     return;
   }
-  grid.innerHTML = items.map((s, i) => {
-    const rank = s.style_rank || (i + 1);
-    const word = s.display_keyword || s.style_word || s.keyword || '';
-    const orig = s.display_original || '';
-    s._hot = (s.heat != null ? s.heat : s.score) || 0;
-    s._names = [word];
-    const hasMap = matchDiesunStyles(word, orig).length > 0;
-    const subHtml = (orig && orig !== word)
-      ? '<div class="style-orig">' + escHtml(orig) + '</div>'
-      : '';
-    return '<div class="style-card clickable' + (hasMap ? ' mapped' : '') + '" data-style-word="' + escHtml(word) + '" data-style-orig="' + escHtml(orig) + '">' +
-      '<div class="style-rank">' + rank + '</div>' +
-      '<div class="style-word">' + escHtml(word) + '</div>' +
-      subHtml +
-      '<div class="style-meta">' + platformTags(s) + heatCellHtml(s) + '</div>' +
-    '</div>';
-  }).join('');
+  grid.innerHTML = '<table class="lb-table style-table"><thead><tr>' +
+    '<th style="width:40px">排名</th><th>风格词 / 热搜原词</th><th>分类</th><th>来源</th><th>热度</th>' +
+    '</tr></thead><tbody>' +
+    items.map((s, i) => {
+      const rank = s.style_rank || (i + 1);
+      const word = s.display_keyword || s.style_word || s.keyword || '';
+      const orig = s.display_original || '';
+      s._hot = (s.heat != null ? s.heat : s.score) || 0;
+      s._names = [word];
+      const hasMap = matchDiesunStyles(word, orig).length > 0;
+      const cat = s.trendCategory || '';
+      const subHtml = (orig && orig !== word)
+        ? '<div class="style-orig">' + escHtml(orig) + '</div>'
+        : '';
+      return '<tr class="style-row' + (hasMap ? ' style-mapped' : '') + '" data-style-word="' + escHtml(word) + '" data-style-orig="' + escHtml(orig) + '">' +
+        '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
+        '<td><div class="kw-main">' + escHtml(word) + '</div>' + subHtml + '</td>' +
+        '<td>' + catDotHtml(cat) + escHtml(cat || '—') + '</td>' +
+        '<td>' + platformTags(s) + '</td>' +
+        '<td>' + heatCellHtml(s) + '</td>' +
+      '</tr>';
+    }).join('') +
+    '</tbody></table>';
   bindStyleHotCards();
 }
 
@@ -878,7 +888,6 @@ const STYLE_DIESUN_MAP = {
   'JK制服': [2, 54],
   '新中式': [3, 37, 39, 58],
   '多巴胺': [14, 15, 20],
-  'City Walk': [12, 29, 36],
   '粉色系': [14, 20],
   '日系': [33],
   '美拉德': [26, 38],
@@ -926,7 +935,7 @@ function matchDiesunStyles(word, orig) {
 function bindStyleHotCards() {
   const grid = document.getElementById('diesun-grid');
   if (!grid) return;
-  grid.querySelectorAll('.style-card').forEach(card => {
+  grid.querySelectorAll('.style-row').forEach(card => {
     card.addEventListener('click', () => {
       const word = card.getAttribute('data-style-word') || '';
       const orig = card.getAttribute('data-style-orig') || '';
