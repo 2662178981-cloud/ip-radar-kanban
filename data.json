@@ -1,6 +1,6 @@
 {
   "version": "4.0",
-  "generatedAt": "2026-10-15T13:04:57+08:00",
+  "generatedAt": "2026-10-15T13:22:26+08:00",
   "summary": {
     "total": 111,
     "ipCount": 111,
@@ -3549,14 +3549,13 @@
   "styleHotBoard": {
     "title": "风格热点",
     "subtitle": "全平台热搜风格词",
-    "total": 8,
+    "total": 10,
     "items": [
       {
-        "keyword": "复古",
-        "style_word": "复古",
-        "display_keyword": "复古",
+        "keyword": "古早",
+        "style_word": "古早",
+        "display_keyword": "古早",
         "display_original": "我的古早味秋冬穿搭",
-        "styleCategory": "复古怀旧风",
         "score": 9620000,
         "platforms": [
           "douyin"
@@ -3570,7 +3569,6 @@
         "style_word": "繁荣主义",
         "display_keyword": "繁荣主义",
         "display_original": "繁荣主义穿搭",
-        "styleCategory": "复古怀旧风",
         "score": 9473000,
         "platforms": [
           "douyin"
@@ -3580,11 +3578,10 @@
         "style_rank": 2
       },
       {
-        "keyword": "日系",
-        "style_word": "日系",
-        "display_keyword": "日系",
+        "keyword": "日式",
+        "style_word": "日式",
+        "display_keyword": "日式",
         "display_original": "日式美甲",
-        "styleCategory": "日韩系风",
         "score": 894,
         "platforms": [
           "xiaohongshu"
@@ -3598,7 +3595,6 @@
         "style_word": "法式",
         "display_keyword": "法式",
         "display_original": "法式美甲",
-        "styleCategory": "高级质感风",
         "score": 894,
         "platforms": [
           "xiaohongshu"
@@ -3608,11 +3604,10 @@
         "style_rank": 4
       },
       {
-        "keyword": "职场",
-        "style_word": "职场",
-        "display_keyword": "职场",
+        "keyword": "通勤",
+        "style_word": "通勤",
+        "display_keyword": "通勤",
         "display_original": "通勤包",
-        "styleCategory": "通勤职场风",
         "score": 215,
         "platforms": [
           "xiaohongshu"
@@ -3622,12 +3617,11 @@
         "style_rank": 5
       },
       {
-        "keyword": "运动",
-        "style_word": "运动",
-        "display_keyword": "运动",
-        "display_original": "健身",
-        "styleCategory": "运动休闲风",
-        "score": 209,
+        "keyword": "治愈",
+        "style_word": "治愈",
+        "display_keyword": "治愈",
+        "display_original": "治愈",
+        "score": 86,
         "platforms": [
           "xiaohongshu"
         ],
@@ -3636,12 +3630,11 @@
         "style_rank": 6
       },
       {
-        "keyword": "治愈系",
-        "style_word": "治愈系",
-        "display_keyword": "治愈系",
-        "display_original": "治愈",
-        "styleCategory": "治愈生活风",
-        "score": 86,
+        "keyword": "健身",
+        "style_word": "健身",
+        "display_keyword": "健身",
+        "display_original": "健身",
+        "score": 67,
         "platforms": [
           "xiaohongshu"
         ],
@@ -3654,7 +3647,6 @@
         "style_word": "少女",
         "display_keyword": "少女",
         "display_original": "少女心卧室",
-        "styleCategory": "甜酷少女风",
         "score": 51,
         "platforms": [
           "xiaohongshu"
@@ -3662,6 +3654,32 @@
         "platform": "xiaohongshu",
         "hints": [],
         "style_rank": 8
+      },
+      {
+        "keyword": "户外",
+        "style_word": "户外",
+        "display_keyword": "户外",
+        "display_original": "济南户外",
+        "score": 43,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 9
+      },
+      {
+        "keyword": "运动",
+        "style_word": "运动",
+        "display_keyword": "运动",
+        "display_original": "运动",
+        "score": 31,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "style_rank": 10
       }
     ]
   }
