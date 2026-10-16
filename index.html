@@ -929,7 +929,7 @@ function renderStyleHot() {
     return;
   }
   grid.innerHTML = '<table class="lb-table style-table"><thead><tr>' +
-    '<th style="width:40px">排名</th><th>风格词 / 热搜原词</th><th>分类</th><th>来源</th><th>热度</th>' +
+    '<th style="width:40px">排名</th><th>风格词 / 热搜原词</th><th>分类</th><th>热度</th>' +
     '</tr></thead><tbody>' +
     items.map((s, i) => {
       const rank = s.style_rank || (i + 1);
@@ -946,7 +946,6 @@ function renderStyleHot() {
         '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
         '<td><div class="kw-main">' + escHtml(word) + '</div>' + subHtml + '</td>' +
         '<td>' + catDotHtml(cat) + escHtml(cat || '—') + '</td>' +
-        '<td>' + platformTags(s) + '</td>' +
         '<td>' + heatCellHtml(s) + '</td>' +
       '</tr>';
     }).join('') +
