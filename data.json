@@ -1,17 +1,17 @@
 {
  "version": "4.0",
- "generatedAt": "2026-10-17T17:37:20+08:00",
+ "generatedAt": "2026-10-17T19:45:55+08:00",
  "summary": {
   "total": 50,
   "ipCount": 50,
-  "newValues": 21,
-  "oldValues": 29,
+  "newValues": 17,
+  "oldValues": 33,
   "reviewNeeded": 0,
   "boards": [
    {
     "code": "douyin",
     "title": "douyin",
-    "count": 21
+    "count": 19
    },
    {
     "code": "weibo",
@@ -21,10 +21,10 @@
    {
     "code": "xiaohongshu",
     "title": "xiaohongshu",
-    "count": 2
+    "count": 6
    }
   ],
-  "generatedAt": "2026-10-17T17:37:20+08:00"
+  "generatedAt": "2026-10-17T19:45:55+08:00"
  },
  "ipBoard": {
   "title": "IP 榜单",
@@ -32,19 +32,19 @@
   "total": 50,
   "items": [
    {
-    "keyword": "iPhone",
-    "display_keyword": "iPhone",
-    "display_original": "谁抢到了iPhone Duo（...",
+    "keyword": "奔跑吧",
+    "display_keyword": "奔跑吧",
+    "display_original": "奔跑吧大湾区篇广州正式开录（2...",
     "matched_value": "",
     "ip_status": "新value",
-    "ipCategory": "品牌联名",
-    "hot_value": 9180000,
-    "hot_score": 9180000,
-    "norm_score": 8.35536,
+    "ipCategory": "影视综艺",
+    "hot_value": 8090000,
+    "hot_score": 8090000,
+    "norm_score": 8.28948,
     "hints": [
-     "iPhone新品首发",
-     "iPhone联名限定",
-     "iPhone爆款推荐"
+     "奔跑吧同款穿搭",
+     "奔跑吧周边好物",
+     "奔跑吧联名款"
     ],
     "platform": "weibo",
     "platforms": [
@@ -55,16 +55,20 @@
     "rank": 1
    },
    {
-    "keyword": "徐艺洋",
-    "display_keyword": "徐艺洋",
-    "display_original": "徐艺洋直播回应争议（2条热搜）",
-    "matched_value": "徐艺洋",
-    "ip_status": "匹配成功",
+    "keyword": "王祖蓝 奔跑吧",
+    "display_keyword": "王祖蓝 奔跑吧",
+    "display_original": "王祖蓝时隔8年回归奔跑吧（2条...",
+    "matched_value": "",
+    "ip_status": "新value",
     "ipCategory": "明星/人物",
-    "hot_value": 8054000,
-    "hot_score": 8054000,
-    "norm_score": 8.287199999999999,
-    "hints": [],
+    "hot_value": 7986000,
+    "hot_score": 7986000,
+    "norm_score": 8.28276,
+    "hints": [
+     "王祖蓝 奔跑吧同款穿搭",
+     "王祖蓝 奔跑吧同款单品",
+     "王祖蓝 奔跑吧代言品牌"
+    ],
     "platform": "weibo",
     "platforms": [
      "weibo",
@@ -74,15 +78,57 @@
     "rank": 2
    },
    {
+    "keyword": "徐艺洋",
+    "display_keyword": "徐艺洋",
+    "display_original": "徐艺洋直播回应争议（2条热搜）",
+    "matched_value": "徐艺洋",
+    "ip_status": "匹配成功",
+    "ipCategory": "明星/人物",
+    "hot_value": 7963000,
+    "hot_score": 7963000,
+    "norm_score": 8.28132,
+    "hints": [],
+    "platform": "weibo",
+    "platforms": [
+     "weibo",
+     "douyin"
+    ],
+    "ip_rank": 3,
+    "rank": 3
+   },
+   {
+    "keyword": "iPhone",
+    "display_keyword": "iPhone",
+    "display_original": "谁抢到了iPhone Duo（...",
+    "matched_value": "",
+    "ip_status": "新value",
+    "ipCategory": "品牌联名",
+    "hot_value": 7962000,
+    "hot_score": 7962000,
+    "norm_score": 8.2812,
+    "hints": [
+     "iPhone新品首发",
+     "iPhone联名限定",
+     "iPhone爆款推荐"
+    ],
+    "platform": "weibo",
+    "platforms": [
+     "weibo",
+     "douyin"
+    ],
+    "ip_rank": 4,
+    "rank": 4
+   },
+   {
     "keyword": "特斯拉",
     "display_keyword": "特斯拉",
     "display_original": "特斯拉发布第二代Roadste...",
     "matched_value": "",
     "ip_status": "新value",
     "ipCategory": "品牌联名",
-    "hot_value": 8050000,
-    "hot_score": 8050000,
-    "norm_score": 8.28696,
+    "hot_value": 7941000,
+    "hot_score": 7941000,
+    "norm_score": 8.279879999999999,
     "hints": [
      "特斯拉新品首发",
      "特斯拉联名限定",
@@ -93,19 +139,41 @@
      "weibo",
      "douyin"
     ],
-    "ip_rank": 3,
-    "rank": 3
+    "ip_rank": 5,
+    "rank": 5
+   },
+   {
+    "keyword": "苏超",
+    "display_keyword": "苏超",
+    "display_original": "苏超泰州队vs无锡队（2条热搜...",
+    "matched_value": "",
+    "ip_status": "新value",
+    "ipCategory": "体育",
+    "hot_value": 16488000,
+    "hot_score": 16488000,
+    "norm_score": 7.2172,
+    "hints": [
+     "苏超球衣周边",
+     "苏超运动装备",
+     "苏超联名款"
+    ],
+    "platform": "douyin",
+    "platforms": [
+     "douyin"
+    ],
+    "ip_rank": 6,
+    "rank": 6
    },
    {
     "keyword": "嫁金钗",
     "display_keyword": "嫁金钗",
-    "display_original": "嫁金钗开播（2条热搜）",
+    "display_original": "嫁金钗好看好爽好刺激（2条热搜...",
     "matched_value": "",
     "ip_status": "新value",
     "ipCategory": "影视综艺",
-    "hot_value": 16436000,
-    "hot_score": 16436000,
-    "norm_score": 7.2158,
+    "hot_value": 15397000,
+    "hot_score": 15397000,
+    "norm_score": 7.1874,
     "hints": [
      "嫁金钗同款穿搭",
      "嫁金钗周边好物",
@@ -115,257 +183,19 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 4,
-    "rank": 4
-   },
-   {
-    "keyword": "津门虎",
-    "display_keyword": "津门虎",
-    "display_original": "津门虎提前两轮保级成功",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "体育",
-    "hot_value": 10498000,
-    "hot_score": 10498000,
-    "norm_score": 7.0211,
-    "hints": [
-     "津门虎球衣周边",
-     "津门虎运动装备",
-     "津门虎联名款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 5,
-    "rank": 5
-   },
-   {
-    "keyword": "沃齐尼亚",
-    "display_keyword": "沃齐尼亚",
-    "display_original": "沃齐尼亚世界杯后状态暴跌",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "体育",
-    "hot_value": 9319000,
-    "hot_score": 9319000,
-    "norm_score": 6.9694,
-    "hints": [],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 6,
-    "rank": 6
-   },
-   {
-    "keyword": "苑丽颖",
-    "display_keyword": "苑丽颖",
-    "display_original": "苑丽颖场地自行车世锦赛夺金",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "体育",
-    "hot_value": 9171000,
-    "hot_score": 9171000,
-    "norm_score": 6.9624,
-    "hints": [
-     "苑丽颖球衣周边",
-     "苑丽颖运动装备",
-     "苑丽颖联名款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
     "ip_rank": 7,
     "rank": 7
    },
    {
-    "keyword": "田曦薇",
-    "display_keyword": "田曦薇",
-    "display_original": "田曦薇魏娆君黛并蒂双生花",
-    "matched_value": "田曦薇",
-    "ip_status": "匹配成功",
-    "ipCategory": "明星/人物",
-    "hot_value": 9060000,
-    "hot_score": 9060000,
-    "norm_score": 6.9571,
-    "hints": [
-     "田曦薇同款穿搭",
-     "田曦薇同款单品",
-     "田曦薇代言品牌"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 8,
-    "rank": 8
-   },
-   {
-    "keyword": "张雪",
-    "display_keyword": "张雪",
-    "display_original": "张雪机车收官冲冠之战",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "体育",
-    "hot_value": 8526000,
-    "hot_score": 8526000,
-    "norm_score": 6.9307,
-    "hints": [
-     "张雪球衣周边",
-     "张雪运动装备",
-     "张雪联名款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 9,
-    "rank": 9
-   },
-   {
-    "keyword": "披荆斩棘",
-    "display_keyword": "披荆斩棘",
-    "display_original": "披荆斩棘2026五公舞台",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "影视综艺",
-    "hot_value": 8025000,
-    "hot_score": 8025000,
-    "norm_score": 6.9044,
-    "hints": [
-     "披荆斩棘同款穿搭",
-     "披荆斩棘周边好物",
-     "披荆斩棘联名款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 10,
-    "rank": 10
-   },
-   {
-    "keyword": "蔚来 李斌",
-    "display_keyword": "蔚来 李斌",
-    "display_original": "蔚来李斌谈特斯拉“会飞”",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "品牌联名",
-    "hot_value": 7910000,
-    "hot_score": 7910000,
-    "norm_score": 6.8982,
-    "hints": [
-     "蔚来 李斌新品首发",
-     "蔚来 李斌联名限定",
-     "蔚来 李斌爆款推荐"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 11,
-    "rank": 11
-   },
-   {
-    "keyword": "玉簟秋 丞磊",
-    "display_keyword": "玉簟秋 丞磊",
-    "display_original": "玉簟秋丞磊邀请大家一起搓麻将",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "影视综艺",
-    "hot_value": 7848000,
-    "hot_score": 7848000,
-    "norm_score": 6.8948,
-    "hints": [
-     "玉簟秋 丞磊同款穿搭",
-     "玉簟秋 丞磊周边好物",
-     "玉簟秋 丞磊联名款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 12,
-    "rank": 12
-   },
-   {
-    "keyword": "蛋仔派对",
-    "display_keyword": "蛋仔派对",
-    "display_original": "蛋仔派对的视角也太萌了吧",
-    "matched_value": "蛋仔派对",
-    "ip_status": "匹配成功",
-    "ipCategory": "游戏电竞",
-    "hot_value": 7775000,
-    "hot_score": 7775000,
-    "norm_score": 6.8907,
-    "hints": [
-     "蛋仔派对联名周边",
-     "蛋仔派对手办模型",
-     "蛋仔派对限定皮肤"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 13,
-    "rank": 13
-   },
-   {
-    "keyword": "三角洲",
-    "display_keyword": "三角洲",
-    "display_original": "全三角洲都在老太巡猎",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "游戏电竞",
-    "hot_value": 7773000,
-    "hot_score": 7773000,
-    "norm_score": 6.8906,
-    "hints": [
-     "三角洲联名周边",
-     "三角洲手办模型",
-     "三角洲限定皮肤"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 14,
-    "rank": 14
-   },
-   {
-    "keyword": "李荣浩",
-    "display_keyword": "李荣浩",
-    "display_original": "李荣浩天津演唱会",
-    "matched_value": "李荣浩",
-    "ip_status": "匹配成功",
-    "ipCategory": "明星/人物",
-    "hot_value": 7749000,
-    "hot_score": 7749000,
-    "norm_score": 6.8892,
-    "hints": [
-     "李荣浩同款穿搭",
-     "李荣浩同款单品",
-     "李荣浩代言品牌"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 15,
-    "rank": 15
-   },
-   {
     "keyword": "玉簟秋",
     "display_keyword": "玉簟秋",
-    "display_original": "疯看爽看玉簟秋",
+    "display_original": "玉簟秋全剧找不出一对正常CP（...",
     "matched_value": "",
     "ip_status": "新value",
     "ipCategory": "影视综艺",
-    "hot_value": 7743000,
-    "hot_score": 7743000,
-    "norm_score": 6.8889,
+    "hot_value": 15299000,
+    "hot_score": 15299000,
+    "norm_score": 7.1847,
     "hints": [
      "玉簟秋同款穿搭",
      "玉簟秋周边好物",
@@ -375,23 +205,199 @@
     "platforms": [
      "douyin"
     ],
+    "ip_rank": 8,
+    "rank": 8
+   },
+   {
+    "keyword": "苑丽颖",
+    "display_keyword": "苑丽颖",
+    "display_original": "苑丽颖场地自行车世锦赛夺金",
+    "matched_value": "",
+    "ip_status": "新value",
+    "ipCategory": "体育",
+    "hot_value": 8961000,
+    "hot_score": 8961000,
+    "norm_score": 6.9524,
+    "hints": [
+     "苑丽颖球衣周边",
+     "苑丽颖运动装备",
+     "苑丽颖联名款"
+    ],
+    "platform": "douyin",
+    "platforms": [
+     "douyin"
+    ],
+    "ip_rank": 9,
+    "rank": 9
+   },
+   {
+    "keyword": "谢霆锋",
+    "display_keyword": "谢霆锋",
+    "display_original": "谢霆锋南昌演唱会",
+    "matched_value": "谢霆锋",
+    "ip_status": "匹配成功",
+    "ipCategory": "明星/人物",
+    "hot_value": 8531000,
+    "hot_score": 8531000,
+    "norm_score": 6.931,
+    "hints": [
+     "谢霆锋同款穿搭",
+     "谢霆锋同款单品",
+     "谢霆锋代言品牌"
+    ],
+    "platform": "douyin",
+    "platforms": [
+     "douyin"
+    ],
+    "ip_rank": 10,
+    "rank": 10
+   },
+   {
+    "keyword": "张雪",
+    "display_keyword": "张雪",
+    "display_original": "张雪机车冲刺西班牙站冠军",
+    "matched_value": "",
+    "ip_status": "新value",
+    "ipCategory": "体育",
+    "hot_value": 7847000,
+    "hot_score": 7847000,
+    "norm_score": 6.8947,
+    "hints": [
+     "张雪球衣周边",
+     "张雪运动装备",
+     "张雪联名款"
+    ],
+    "platform": "douyin",
+    "platforms": [
+     "douyin"
+    ],
+    "ip_rank": 11,
+    "rank": 11
+   },
+   {
+    "keyword": "孟屯",
+    "display_keyword": "孟屯",
+    "display_original": "孟屯综艺超市挑战全是心眼子",
+    "matched_value": "",
+    "ip_status": "新value",
+    "ipCategory": "影视综艺",
+    "hot_value": 7807000,
+    "hot_score": 7807000,
+    "norm_score": 6.8925,
+    "hints": [
+     "孟屯同款穿搭",
+     "孟屯周边好物",
+     "孟屯联名款"
+    ],
+    "platform": "douyin",
+    "platforms": [
+     "douyin"
+    ],
+    "ip_rank": 12,
+    "rank": 12
+   },
+   {
+    "keyword": "田曦薇",
+    "display_keyword": "田曦薇",
+    "display_original": "田曦薇掌公主驾到通通闪开",
+    "matched_value": "田曦薇",
+    "ip_status": "匹配成功",
+    "ipCategory": "明星/人物",
+    "hot_value": 7735000,
+    "hot_score": 7735000,
+    "norm_score": 6.8885,
+    "hints": [
+     "田曦薇同款穿搭",
+     "田曦薇同款单品",
+     "田曦薇代言品牌"
+    ],
+    "platform": "douyin",
+    "platforms": [
+     "douyin"
+    ],
+    "ip_rank": 13,
+    "rank": 13
+   },
+   {
+    "keyword": "李荣浩",
+    "display_keyword": "李荣浩",
+    "display_original": "李荣浩天津演唱会",
+    "matched_value": "李荣浩",
+    "ip_status": "匹配成功",
+    "ipCategory": "明星/人物",
+    "hot_value": 7728000,
+    "hot_score": 7728000,
+    "norm_score": 6.8881,
+    "hints": [
+     "李荣浩同款穿搭",
+     "李荣浩同款单品",
+     "李荣浩代言品牌"
+    ],
+    "platform": "douyin",
+    "platforms": [
+     "douyin"
+    ],
+    "ip_rank": 14,
+    "rank": 14
+   },
+   {
+    "keyword": "小城良方",
+    "display_keyword": "小城良方",
+    "display_original": "小城良方笑料还在不断加码",
+    "matched_value": "",
+    "ip_status": "新value",
+    "ipCategory": "影视综艺",
+    "hot_value": 7721000,
+    "hot_score": 7721000,
+    "norm_score": 6.8877,
+    "hints": [
+     "小城良方同款穿搭",
+     "小城良方周边好物",
+     "小城良方联名款"
+    ],
+    "platform": "douyin",
+    "platforms": [
+     "douyin"
+    ],
+    "ip_rank": 15,
+    "rank": 15
+   },
+   {
+    "keyword": "檀健次",
+    "display_keyword": "檀健次",
+    "display_original": "檀健次奇妙夜Drop下腰挑战",
+    "matched_value": "檀健次",
+    "ip_status": "匹配成功",
+    "ipCategory": "明星/人物",
+    "hot_value": 7697000,
+    "hot_score": 7697000,
+    "norm_score": 6.8863,
+    "hints": [
+     "檀健次同款穿搭",
+     "檀健次同款单品",
+     "檀健次代言品牌"
+    ],
+    "platform": "douyin",
+    "platforms": [
+     "douyin"
+    ],
     "ip_rank": 16,
     "rank": 16
    },
    {
-    "keyword": "英雄联盟",
-    "display_keyword": "英雄联盟",
-    "display_original": "英雄联盟S16世界赛开赛",
-    "matched_value": "英雄联盟",
-    "ip_status": "匹配成功",
-    "ipCategory": "游戏电竞",
-    "hot_value": 7741000,
-    "hot_score": 7741000,
-    "norm_score": 6.8888,
+    "keyword": "郑州马拉松",
+    "display_keyword": "郑州马拉松",
+    "display_original": "1018郑州马拉松见",
+    "matched_value": "",
+    "ip_status": "新value",
+    "ipCategory": "体育",
+    "hot_value": 7688000,
+    "hot_score": 7688000,
+    "norm_score": 6.8858,
     "hints": [
-     "英雄联盟联名周边",
-     "英雄联盟手办模型",
-     "英雄联盟限定皮肤"
+     "郑州马拉松球衣周边",
+     "郑州马拉松运动装备",
+     "郑州马拉松联名款"
     ],
     "platform": "douyin",
     "platforms": [
@@ -401,37 +407,15 @@
     "rank": 17
    },
    {
-    "keyword": "邓紫棋",
-    "display_keyword": "邓紫棋",
-    "display_original": "邓紫棋自由的你钢琴版来了",
-    "matched_value": "邓紫棋",
-    "ip_status": "匹配成功",
-    "ipCategory": "明星/人物",
-    "hot_value": 7740000,
-    "hot_score": 7740000,
-    "norm_score": 6.8887,
-    "hints": [
-     "邓紫棋同款穿搭",
-     "邓紫棋同款单品",
-     "邓紫棋代言品牌"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 18,
-    "rank": 18
-   },
-   {
     "keyword": "君黛",
     "display_keyword": "君黛",
     "display_original": "君黛多好的一个坏孩子",
     "matched_value": "",
     "ip_status": "新value",
     "ipCategory": "影视综艺",
-    "hot_value": 7723000,
-    "hot_score": 7723000,
-    "norm_score": 6.8878,
+    "hot_value": 7680000,
+    "hot_score": 7680000,
+    "norm_score": 6.8854,
     "hints": [
      "君黛同款穿搭",
      "君黛周边好物",
@@ -441,75 +425,53 @@
     "platforms": [
      "douyin"
     ],
+    "ip_rank": 18,
+    "rank": 18
+   },
+   {
+    "keyword": "李一桐",
+    "display_keyword": "李一桐",
+    "display_original": "李一桐余梦开枪舞飒我一大跳",
+    "matched_value": "李一桐",
+    "ip_status": "匹配成功",
+    "ipCategory": "明星/人物",
+    "hot_value": 7651000,
+    "hot_score": 7651000,
+    "norm_score": 6.8837,
+    "hints": [
+     "李一桐同款穿搭",
+     "李一桐同款单品",
+     "李一桐代言品牌"
+    ],
+    "platform": "douyin",
+    "platforms": [
+     "douyin"
+    ],
     "ip_rank": 19,
     "rank": 19
    },
    {
-    "keyword": "百乔孟屯",
-    "display_keyword": "百乔孟屯",
-    "display_original": "百乔孟屯兄弟综艺好好好定档",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "影视综艺",
-    "hot_value": 7696000,
-    "hot_score": 7696000,
-    "norm_score": 6.8863,
-    "hints": [
-     "百乔孟屯同款穿搭",
-     "百乔孟屯周边好物",
-     "百乔孟屯联名款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 20,
-    "rank": 20
-   },
-   {
-    "keyword": "肖战 刘铮亮",
-    "display_keyword": "肖战 刘铮亮",
-    "display_original": "肖战刘铮亮搁家跟前儿上班",
-    "matched_value": "肖战 刘铮亮",
+    "keyword": "樊振东",
+    "display_keyword": "樊振东",
+    "display_original": "刘丁硕称输樊振东是人生最高光时...",
+    "matched_value": "樊振东",
     "ip_status": "匹配成功",
     "ipCategory": "明星/人物",
-    "hot_value": 7695000,
-    "hot_score": 7695000,
-    "norm_score": 6.8862,
+    "hot_value": 280029,
+    "hot_score": 280029,
+    "norm_score": 6.536639999999999,
     "hints": [
-     "肖战 刘铮亮同款穿搭",
-     "肖战 刘铮亮同款单品",
-     "肖战 刘铮亮代言品牌"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "ip_rank": 21,
-    "rank": 21
-   },
-   {
-    "keyword": "白鹿",
-    "display_keyword": "白鹿",
-    "display_original": "白鹿奔跑吧薄荷绿短裙（2条热搜...",
-    "matched_value": "白鹿",
-    "ip_status": "匹配成功",
-    "ipCategory": "明星/人物",
-    "hot_value": 210011,
-    "hot_score": 210011,
-    "norm_score": 6.386639999999999,
-    "hints": [
-     "白鹿同款穿搭",
-     "白鹿同款单品",
-     "白鹿代言品牌"
+     "樊振东同款穿搭",
+     "樊振东同款单品",
+     "樊振东代言品牌"
     ],
     "platform": "weibo",
     "platforms": [
      "weibo",
      "xiaohongshu"
     ],
-    "ip_rank": 22,
-    "rank": 22
+    "ip_rank": 20,
+    "rank": 20
    },
    {
     "keyword": "张继科",
@@ -530,8 +492,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 23,
-    "rank": 23
+    "ip_rank": 21,
+    "rank": 21
    },
    {
     "keyword": "零跑",
@@ -552,8 +514,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 24,
-    "rank": 24
+    "ip_rank": 22,
+    "rank": 22
    },
    {
     "keyword": "劳力士",
@@ -574,8 +536,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 25,
-    "rank": 25
+    "ip_rank": 23,
+    "rank": 23
    },
    {
     "keyword": "沈月",
@@ -592,8 +554,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 26,
-    "rank": 26
+    "ip_rank": 24,
+    "rank": 24
    },
    {
     "keyword": "邓亚萍",
@@ -614,8 +576,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 27,
-    "rank": 27
+    "ip_rank": 25,
+    "rank": 25
    },
    {
     "keyword": "白敬亭 范丞丞 胡先煦",
@@ -636,30 +598,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 28,
-    "rank": 28
-   },
-   {
-    "keyword": "奔跑吧",
-    "display_keyword": "奔跑吧",
-    "display_original": "奔跑吧路透",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "影视综艺",
-    "hot_value": 370000,
-    "hot_score": 370000,
-    "norm_score": 5.5682,
-    "hints": [
-     "奔跑吧同款穿搭",
-     "奔跑吧周边好物",
-     "奔跑吧联名款"
-    ],
-    "platform": "weibo",
-    "platforms": [
-     "weibo"
-    ],
-    "ip_rank": 29,
-    "rank": 29
+    "ip_rank": 26,
+    "rank": 26
    },
    {
     "keyword": "徐艺洋 那英",
@@ -680,8 +620,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 30,
-    "rank": 30
+    "ip_rank": 27,
+    "rank": 27
    },
    {
     "keyword": "黄子韬 徐艺洋",
@@ -702,30 +642,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 31,
-    "rank": 31
-   },
-   {
-    "keyword": "樊振东",
-    "display_keyword": "樊振东",
-    "display_original": "刘丁硕称输樊振东是人生最高光时...",
-    "matched_value": "樊振东",
-    "ip_status": "匹配成功",
-    "ipCategory": "明星/人物",
-    "hot_value": 280000,
-    "hot_score": 280000,
-    "norm_score": 5.4472,
-    "hints": [
-     "樊振东同款穿搭",
-     "樊振东同款单品",
-     "樊振东代言品牌"
-    ],
-    "platform": "weibo",
-    "platforms": [
-     "weibo"
-    ],
-    "ip_rank": 32,
-    "rank": 32
+    "ip_rank": 28,
+    "rank": 28
    },
    {
     "keyword": "孙颖莎",
@@ -746,30 +664,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 33,
-    "rank": 33
-   },
-   {
-    "keyword": "王祖蓝 奔跑吧",
-    "display_keyword": "王祖蓝 奔跑吧",
-    "display_original": "王祖蓝时隔8年回归奔跑吧",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "明星/人物",
-    "hot_value": 260000,
-    "hot_score": 260000,
-    "norm_score": 5.415,
-    "hints": [
-     "王祖蓝 奔跑吧同款穿搭",
-     "王祖蓝 奔跑吧同款单品",
-     "王祖蓝 奔跑吧代言品牌"
-    ],
-    "platform": "weibo",
-    "platforms": [
-     "weibo"
-    ],
-    "ip_rank": 34,
-    "rank": 34
+    "ip_rank": 29,
+    "rank": 29
    },
    {
     "keyword": "黄子韬",
@@ -790,8 +686,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 35,
-    "rank": 35
+    "ip_rank": 30,
+    "rank": 30
    },
    {
     "keyword": "徐志胜",
@@ -812,8 +708,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 36,
-    "rank": 36
+    "ip_rank": 31,
+    "rank": 31
    },
    {
     "keyword": "杨幂",
@@ -834,8 +730,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 37,
-    "rank": 37
+    "ip_rank": 32,
+    "rank": 32
    },
    {
     "keyword": "尚公主",
@@ -856,8 +752,30 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 38,
-    "rank": 38
+    "ip_rank": 33,
+    "rank": 33
+   },
+   {
+    "keyword": "白鹿",
+    "display_keyword": "白鹿",
+    "display_original": "白鹿奔跑吧薄荷绿短裙",
+    "matched_value": "白鹿",
+    "ip_status": "匹配成功",
+    "ipCategory": "明星/人物",
+    "hot_value": 210000,
+    "hot_score": 210000,
+    "norm_score": 5.3222,
+    "hints": [
+     "白鹿同款穿搭",
+     "白鹿同款单品",
+     "白鹿代言品牌"
+    ],
+    "platform": "weibo",
+    "platforms": [
+     "weibo"
+    ],
+    "ip_rank": 34,
+    "rank": 34
    },
    {
     "keyword": "恋与深空",
@@ -878,8 +796,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 39,
-    "rank": 39
+    "ip_rank": 35,
+    "rank": 35
    },
    {
     "keyword": "杨瀚森",
@@ -900,8 +818,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 40,
-    "rank": 40
+    "ip_rank": 36,
+    "rank": 36
    },
    {
     "keyword": "张杰",
@@ -922,8 +840,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 41,
-    "rank": 41
+    "ip_rank": 37,
+    "rank": 37
    },
    {
     "keyword": "倪大红 肖战",
@@ -944,8 +862,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 42,
-    "rank": 42
+    "ip_rank": 38,
+    "rank": 38
    },
    {
     "keyword": "伊藤美诚",
@@ -966,8 +884,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 43,
-    "rank": 43
+    "ip_rank": 39,
+    "rank": 39
    },
    {
     "keyword": "林诗栋",
@@ -988,8 +906,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 44,
-    "rank": 44
+    "ip_rank": 40,
+    "rank": 40
    },
    {
     "keyword": "李昀锐 孟子义",
@@ -1010,8 +928,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 45,
-    "rank": 45
+    "ip_rank": 41,
+    "rank": 41
    },
    {
     "keyword": "李蠕蠕",
@@ -1032,8 +950,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 46,
-    "rank": 46
+    "ip_rank": 42,
+    "rank": 42
    },
    {
     "keyword": "胡先煦",
@@ -1054,8 +972,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 47,
-    "rank": 47
+    "ip_rank": 43,
+    "rank": 43
    },
    {
     "keyword": "京城大师赛",
@@ -1076,8 +994,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 48,
-    "rank": 48
+    "ip_rank": 44,
+    "rank": 44
    },
    {
     "keyword": "王一博",
@@ -1098,23 +1016,111 @@
     "platforms": [
      "weibo"
     ],
+    "ip_rank": 45,
+    "rank": 45
+   },
+   {
+    "keyword": "新世纪福音战士",
+    "display_keyword": "新世纪福音战士",
+    "display_original": "新世纪福音战士",
+    "matched_value": "新世纪福音战士",
+    "ip_status": "匹配成功",
+    "ipCategory": "卡通动漫",
+    "hot_value": 16,
+    "hot_score": 16,
+    "norm_score": 1.2304,
+    "hints": [
+     "新世纪福音战士手办模型",
+     "新世纪福音战士联名周边",
+     "新世纪福音战士限定礼盒"
+    ],
+    "platform": "xiaohongshu",
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "ip_rank": 46,
+    "rank": 46
+   },
+   {
+    "keyword": "盗墓笔记",
+    "display_keyword": "盗墓笔记",
+    "display_original": "盗墓笔记",
+    "matched_value": "盗墓笔记",
+    "ip_status": "匹配成功",
+    "ipCategory": "影视综艺",
+    "hot_value": 13,
+    "hot_score": 13,
+    "norm_score": 1.1461,
+    "hints": [
+     "盗墓笔记同款穿搭",
+     "盗墓笔记周边好物",
+     "盗墓笔记联名款"
+    ],
+    "platform": "xiaohongshu",
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "ip_rank": 47,
+    "rank": 47
+   },
+   {
+    "keyword": "雄狮少年",
+    "display_keyword": "雄狮少年",
+    "display_original": "雄狮少年（2条热搜）",
+    "matched_value": "雄狮少年",
+    "ip_status": "匹配成功",
+    "ipCategory": "卡通动漫",
+    "hot_value": 12,
+    "hot_score": 12,
+    "norm_score": 1.1139,
+    "hints": [
+     "雄狮少年手办模型",
+     "雄狮少年联名周边",
+     "雄狮少年限定礼盒"
+    ],
+    "platform": "xiaohongshu",
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "ip_rank": 48,
+    "rank": 48
+   },
+   {
+    "keyword": "郑业成",
+    "display_keyword": "郑业成",
+    "display_original": "郑业成（3条热搜）",
+    "matched_value": "郑业成",
+    "ip_status": "匹配成功",
+    "ipCategory": "明星/人物",
+    "hot_value": 12,
+    "hot_score": 12,
+    "norm_score": 1.1139,
+    "hints": [
+     "郑业成同款穿搭",
+     "郑业成同款单品",
+     "郑业成代言品牌"
+    ],
+    "platform": "xiaohongshu",
+    "platforms": [
+     "xiaohongshu"
+    ],
     "ip_rank": 49,
     "rank": 49
    },
    {
-    "keyword": "国民死刑投票",
-    "display_keyword": "国民死刑投票",
-    "display_original": "国民死刑投票",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ipCategory": "影视综艺",
-    "hot_value": 21010,
-    "hot_score": 21010,
-    "norm_score": 4.3224,
+    "keyword": "丁禹兮",
+    "display_keyword": "丁禹兮",
+    "display_original": "丁禹兮（3条热搜）",
+    "matched_value": "丁禹兮",
+    "ip_status": "匹配成功",
+    "ipCategory": "明星/人物",
+    "hot_value": 12,
+    "hot_score": 12,
+    "norm_score": 1.1139,
     "hints": [
-     "国民死刑投票同款穿搭",
-     "国民死刑投票周边好物",
-     "国民死刑投票联名款"
+     "丁禹兮同款穿搭",
+     "丁禹兮同款单品",
+     "丁禹兮代言品牌"
     ],
     "platform": "xiaohongshu",
     "platforms": [
@@ -1132,6 +1138,47 @@
    "count": 31,
    "items": [
     {
+     "keyword": "奔跑吧",
+     "display_keyword": "奔跑吧",
+     "display_original": "奔跑吧大湾区篇广州正式开录（2...",
+     "ip_status": "新value",
+     "platforms": [
+      "weibo",
+      "douyin"
+     ],
+     "hints": [
+      "奔跑吧同款穿搭",
+      "奔跑吧周边好物",
+      "奔跑吧联名款"
+     ]
+    },
+    {
+     "keyword": "王祖蓝 奔跑吧",
+     "display_keyword": "王祖蓝 奔跑吧",
+     "display_original": "王祖蓝时隔8年回归奔跑吧（2条...",
+     "ip_status": "新value",
+     "platforms": [
+      "weibo",
+      "douyin"
+     ],
+     "hints": [
+      "王祖蓝 奔跑吧同款穿搭",
+      "王祖蓝 奔跑吧同款单品",
+      "王祖蓝 奔跑吧代言品牌"
+     ]
+    },
+    {
+     "keyword": "徐艺洋",
+     "display_keyword": "徐艺洋",
+     "display_original": "徐艺洋直播回应争议（2条热搜）",
+     "ip_status": "匹配成功",
+     "platforms": [
+      "weibo",
+      "douyin"
+     ],
+     "hints": []
+    },
+    {
      "keyword": "iPhone",
      "display_keyword": "iPhone",
      "display_original": "谁抢到了iPhone Duo（...",
@@ -1145,17 +1192,6 @@
       "iPhone联名限定",
       "iPhone爆款推荐"
      ]
-    },
-    {
-     "keyword": "徐艺洋",
-     "display_keyword": "徐艺洋",
-     "display_original": "徐艺洋直播回应争议（2条热搜）",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "weibo",
-      "douyin"
-     ],
-     "hints": []
     },
     {
      "keyword": "特斯拉",
@@ -1173,18 +1209,18 @@
      ]
     },
     {
-     "keyword": "白鹿",
-     "display_keyword": "白鹿",
-     "display_original": "白鹿奔跑吧薄荷绿短裙（2条热搜...",
+     "keyword": "樊振东",
+     "display_keyword": "樊振东",
+     "display_original": "刘丁硕称输樊振东是人生最高光时...",
      "ip_status": "匹配成功",
      "platforms": [
       "weibo",
       "xiaohongshu"
      ],
      "hints": [
-      "白鹿同款穿搭",
-      "白鹿同款单品",
-      "白鹿代言品牌"
+      "樊振东同款穿搭",
+      "樊振东同款单品",
+      "樊振东代言品牌"
      ]
     },
     {
@@ -1268,20 +1304,6 @@
      ]
     },
     {
-     "keyword": "奔跑吧",
-     "display_keyword": "奔跑吧",
-     "display_original": "奔跑吧路透",
-     "ip_status": "新value",
-     "platforms": [
-      "weibo"
-     ],
-     "hints": [
-      "奔跑吧同款穿搭",
-      "奔跑吧周边好物",
-      "奔跑吧联名款"
-     ]
-    },
-    {
      "keyword": "徐艺洋 那英",
      "display_keyword": "徐艺洋 那英",
      "display_original": "徐艺洋怀孕下楼梯那英扶了她一把",
@@ -1310,20 +1332,6 @@
      ]
     },
     {
-     "keyword": "樊振东",
-     "display_keyword": "樊振东",
-     "display_original": "刘丁硕称输樊振东是人生最高光时...",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "weibo"
-     ],
-     "hints": [
-      "樊振东同款穿搭",
-      "樊振东同款单品",
-      "樊振东代言品牌"
-     ]
-    },
-    {
      "keyword": "孙颖莎",
      "display_keyword": "孙颖莎",
      "display_original": "河北卫视回应孙颖莎站错位",
@@ -1335,20 +1343,6 @@
       "孙颖莎同款穿搭",
       "孙颖莎同款单品",
       "孙颖莎代言品牌"
-     ]
-    },
-    {
-     "keyword": "王祖蓝 奔跑吧",
-     "display_keyword": "王祖蓝 奔跑吧",
-     "display_original": "王祖蓝时隔8年回归奔跑吧",
-     "ip_status": "新value",
-     "platforms": [
-      "weibo"
-     ],
-     "hints": [
-      "王祖蓝 奔跑吧同款穿搭",
-      "王祖蓝 奔跑吧同款单品",
-      "王祖蓝 奔跑吧代言品牌"
      ]
     },
     {
@@ -1405,6 +1399,20 @@
       "尚公主同款穿搭",
       "尚公主周边好物",
       "尚公主联名款"
+     ]
+    },
+    {
+     "keyword": "白鹿",
+     "display_keyword": "白鹿",
+     "display_original": "白鹿奔跑吧薄荷绿短裙",
+     "ip_status": "匹配成功",
+     "platforms": [
+      "weibo"
+     ],
+     "hints": [
+      "白鹿同款穿搭",
+      "白鹿同款单品",
+      "白鹿代言品牌"
      ]
     },
     {
@@ -1566,8 +1574,49 @@
   "douyin": {
    "code": "douyin",
    "title": "douyin",
-   "count": 21,
+   "count": 19,
    "items": [
+    {
+     "keyword": "奔跑吧",
+     "display_keyword": "奔跑吧",
+     "display_original": "奔跑吧大湾区篇广州正式开录（2...",
+     "ip_status": "新value",
+     "platforms": [
+      "weibo",
+      "douyin"
+     ],
+     "hints": [
+      "奔跑吧同款穿搭",
+      "奔跑吧周边好物",
+      "奔跑吧联名款"
+     ]
+    },
+    {
+     "keyword": "王祖蓝 奔跑吧",
+     "display_keyword": "王祖蓝 奔跑吧",
+     "display_original": "王祖蓝时隔8年回归奔跑吧（2条...",
+     "ip_status": "新value",
+     "platforms": [
+      "weibo",
+      "douyin"
+     ],
+     "hints": [
+      "王祖蓝 奔跑吧同款穿搭",
+      "王祖蓝 奔跑吧同款单品",
+      "王祖蓝 奔跑吧代言品牌"
+     ]
+    },
+    {
+     "keyword": "徐艺洋",
+     "display_keyword": "徐艺洋",
+     "display_original": "徐艺洋直播回应争议（2条热搜）",
+     "ip_status": "匹配成功",
+     "platforms": [
+      "weibo",
+      "douyin"
+     ],
+     "hints": []
+    },
     {
      "keyword": "iPhone",
      "display_keyword": "iPhone",
@@ -1582,17 +1631,6 @@
       "iPhone联名限定",
       "iPhone爆款推荐"
      ]
-    },
-    {
-     "keyword": "徐艺洋",
-     "display_keyword": "徐艺洋",
-     "display_original": "徐艺洋直播回应争议（2条热搜）",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "weibo",
-      "douyin"
-     ],
-     "hints": []
     },
     {
      "keyword": "特斯拉",
@@ -1610,9 +1648,23 @@
      ]
     },
     {
+     "keyword": "苏超",
+     "display_keyword": "苏超",
+     "display_original": "苏超泰州队vs无锡队（2条热搜...",
+     "ip_status": "新value",
+     "platforms": [
+      "douyin"
+     ],
+     "hints": [
+      "苏超球衣周边",
+      "苏超运动装备",
+      "苏超联名款"
+     ]
+    },
+    {
      "keyword": "嫁金钗",
      "display_keyword": "嫁金钗",
-     "display_original": "嫁金钗开播（2条热搜）",
+     "display_original": "嫁金钗好看好爽好刺激（2条热搜...",
      "ip_status": "新value",
      "platforms": [
       "douyin"
@@ -1624,28 +1676,18 @@
      ]
     },
     {
-     "keyword": "津门虎",
-     "display_keyword": "津门虎",
-     "display_original": "津门虎提前两轮保级成功",
+     "keyword": "玉簟秋",
+     "display_keyword": "玉簟秋",
+     "display_original": "玉簟秋全剧找不出一对正常CP（...",
      "ip_status": "新value",
      "platforms": [
       "douyin"
      ],
      "hints": [
-      "津门虎球衣周边",
-      "津门虎运动装备",
-      "津门虎联名款"
+      "玉簟秋同款穿搭",
+      "玉簟秋周边好物",
+      "玉簟秋联名款"
      ]
-    },
-    {
-     "keyword": "沃齐尼亚",
-     "display_keyword": "沃齐尼亚",
-     "display_original": "沃齐尼亚世界杯后状态暴跌",
-     "ip_status": "新value",
-     "platforms": [
-      "douyin"
-     ],
-     "hints": []
     },
     {
      "keyword": "苑丽颖",
@@ -1662,23 +1704,23 @@
      ]
     },
     {
-     "keyword": "田曦薇",
-     "display_keyword": "田曦薇",
-     "display_original": "田曦薇魏娆君黛并蒂双生花",
+     "keyword": "谢霆锋",
+     "display_keyword": "谢霆锋",
+     "display_original": "谢霆锋南昌演唱会",
      "ip_status": "匹配成功",
      "platforms": [
       "douyin"
      ],
      "hints": [
-      "田曦薇同款穿搭",
-      "田曦薇同款单品",
-      "田曦薇代言品牌"
+      "谢霆锋同款穿搭",
+      "谢霆锋同款单品",
+      "谢霆锋代言品牌"
      ]
     },
     {
      "keyword": "张雪",
      "display_keyword": "张雪",
-     "display_original": "张雪机车收官冲冠之战",
+     "display_original": "张雪机车冲刺西班牙站冠军",
      "ip_status": "新value",
      "platforms": [
       "douyin"
@@ -1690,73 +1732,31 @@
      ]
     },
     {
-     "keyword": "披荆斩棘",
-     "display_keyword": "披荆斩棘",
-     "display_original": "披荆斩棘2026五公舞台",
+     "keyword": "孟屯",
+     "display_keyword": "孟屯",
+     "display_original": "孟屯综艺超市挑战全是心眼子",
      "ip_status": "新value",
      "platforms": [
       "douyin"
      ],
      "hints": [
-      "披荆斩棘同款穿搭",
-      "披荆斩棘周边好物",
-      "披荆斩棘联名款"
+      "孟屯同款穿搭",
+      "孟屯周边好物",
+      "孟屯联名款"
      ]
     },
     {
-     "keyword": "蔚来 李斌",
-     "display_keyword": "蔚来 李斌",
-     "display_original": "蔚来李斌谈特斯拉“会飞”",
-     "ip_status": "新value",
-     "platforms": [
-      "douyin"
-     ],
-     "hints": [
-      "蔚来 李斌新品首发",
-      "蔚来 李斌联名限定",
-      "蔚来 李斌爆款推荐"
-     ]
-    },
-    {
-     "keyword": "玉簟秋 丞磊",
-     "display_keyword": "玉簟秋 丞磊",
-     "display_original": "玉簟秋丞磊邀请大家一起搓麻将",
-     "ip_status": "新value",
-     "platforms": [
-      "douyin"
-     ],
-     "hints": [
-      "玉簟秋 丞磊同款穿搭",
-      "玉簟秋 丞磊周边好物",
-      "玉簟秋 丞磊联名款"
-     ]
-    },
-    {
-     "keyword": "蛋仔派对",
-     "display_keyword": "蛋仔派对",
-     "display_original": "蛋仔派对的视角也太萌了吧",
+     "keyword": "田曦薇",
+     "display_keyword": "田曦薇",
+     "display_original": "田曦薇掌公主驾到通通闪开",
      "ip_status": "匹配成功",
      "platforms": [
       "douyin"
      ],
      "hints": [
-      "蛋仔派对联名周边",
-      "蛋仔派对手办模型",
-      "蛋仔派对限定皮肤"
-     ]
-    },
-    {
-     "keyword": "三角洲",
-     "display_keyword": "三角洲",
-     "display_original": "全三角洲都在老太巡猎",
-     "ip_status": "新value",
-     "platforms": [
-      "douyin"
-     ],
-     "hints": [
-      "三角洲联名周边",
-      "三角洲手办模型",
-      "三角洲限定皮肤"
+      "田曦薇同款穿搭",
+      "田曦薇同款单品",
+      "田曦薇代言品牌"
      ]
     },
     {
@@ -1774,45 +1774,45 @@
      ]
     },
     {
-     "keyword": "玉簟秋",
-     "display_keyword": "玉簟秋",
-     "display_original": "疯看爽看玉簟秋",
+     "keyword": "小城良方",
+     "display_keyword": "小城良方",
+     "display_original": "小城良方笑料还在不断加码",
      "ip_status": "新value",
      "platforms": [
       "douyin"
      ],
      "hints": [
-      "玉簟秋同款穿搭",
-      "玉簟秋周边好物",
-      "玉簟秋联名款"
+      "小城良方同款穿搭",
+      "小城良方周边好物",
+      "小城良方联名款"
      ]
     },
     {
-     "keyword": "英雄联盟",
-     "display_keyword": "英雄联盟",
-     "display_original": "英雄联盟S16世界赛开赛",
+     "keyword": "檀健次",
+     "display_keyword": "檀健次",
+     "display_original": "檀健次奇妙夜Drop下腰挑战",
      "ip_status": "匹配成功",
      "platforms": [
       "douyin"
      ],
      "hints": [
-      "英雄联盟联名周边",
-      "英雄联盟手办模型",
-      "英雄联盟限定皮肤"
+      "檀健次同款穿搭",
+      "檀健次同款单品",
+      "檀健次代言品牌"
      ]
     },
     {
-     "keyword": "邓紫棋",
-     "display_keyword": "邓紫棋",
-     "display_original": "邓紫棋自由的你钢琴版来了",
-     "ip_status": "匹配成功",
+     "keyword": "郑州马拉松",
+     "display_keyword": "郑州马拉松",
+     "display_original": "1018郑州马拉松见",
+     "ip_status": "新value",
      "platforms": [
       "douyin"
      ],
      "hints": [
-      "邓紫棋同款穿搭",
-      "邓紫棋同款单品",
-      "邓紫棋代言品牌"
+      "郑州马拉松球衣周边",
+      "郑州马拉松运动装备",
+      "郑州马拉松联名款"
      ]
     },
     {
@@ -1830,31 +1830,17 @@
      ]
     },
     {
-     "keyword": "百乔孟屯",
-     "display_keyword": "百乔孟屯",
-     "display_original": "百乔孟屯兄弟综艺好好好定档",
-     "ip_status": "新value",
-     "platforms": [
-      "douyin"
-     ],
-     "hints": [
-      "百乔孟屯同款穿搭",
-      "百乔孟屯周边好物",
-      "百乔孟屯联名款"
-     ]
-    },
-    {
-     "keyword": "肖战 刘铮亮",
-     "display_keyword": "肖战 刘铮亮",
-     "display_original": "肖战刘铮亮搁家跟前儿上班",
+     "keyword": "李一桐",
+     "display_keyword": "李一桐",
+     "display_original": "李一桐余梦开枪舞飒我一大跳",
      "ip_status": "匹配成功",
      "platforms": [
       "douyin"
      ],
      "hints": [
-      "肖战 刘铮亮同款穿搭",
-      "肖战 刘铮亮同款单品",
-      "肖战 刘铮亮代言品牌"
+      "李一桐同款穿搭",
+      "李一桐同款单品",
+      "李一桐代言品牌"
      ]
     }
    ]
@@ -1862,35 +1848,91 @@
   "xiaohongshu": {
    "code": "xiaohongshu",
    "title": "xiaohongshu",
-   "count": 2,
+   "count": 6,
    "items": [
     {
-     "keyword": "白鹿",
-     "display_keyword": "白鹿",
-     "display_original": "白鹿奔跑吧薄荷绿短裙（2条热搜...",
+     "keyword": "樊振东",
+     "display_keyword": "樊振东",
+     "display_original": "刘丁硕称输樊振东是人生最高光时...",
      "ip_status": "匹配成功",
      "platforms": [
       "weibo",
       "xiaohongshu"
      ],
      "hints": [
-      "白鹿同款穿搭",
-      "白鹿同款单品",
-      "白鹿代言品牌"
+      "樊振东同款穿搭",
+      "樊振东同款单品",
+      "樊振东代言品牌"
      ]
     },
     {
-     "keyword": "国民死刑投票",
-     "display_keyword": "国民死刑投票",
-     "display_original": "国民死刑投票",
-     "ip_status": "新value",
+     "keyword": "新世纪福音战士",
+     "display_keyword": "新世纪福音战士",
+     "display_original": "新世纪福音战士",
+     "ip_status": "匹配成功",
      "platforms": [
       "xiaohongshu"
      ],
      "hints": [
-      "国民死刑投票同款穿搭",
-      "国民死刑投票周边好物",
-      "国民死刑投票联名款"
+      "新世纪福音战士手办模型",
+      "新世纪福音战士联名周边",
+      "新世纪福音战士限定礼盒"
+     ]
+    },
+    {
+     "keyword": "盗墓笔记",
+     "display_keyword": "盗墓笔记",
+     "display_original": "盗墓笔记",
+     "ip_status": "匹配成功",
+     "platforms": [
+      "xiaohongshu"
+     ],
+     "hints": [
+      "盗墓笔记同款穿搭",
+      "盗墓笔记周边好物",
+      "盗墓笔记联名款"
+     ]
+    },
+    {
+     "keyword": "雄狮少年",
+     "display_keyword": "雄狮少年",
+     "display_original": "雄狮少年（2条热搜）",
+     "ip_status": "匹配成功",
+     "platforms": [
+      "xiaohongshu"
+     ],
+     "hints": [
+      "雄狮少年手办模型",
+      "雄狮少年联名周边",
+      "雄狮少年限定礼盒"
+     ]
+    },
+    {
+     "keyword": "郑业成",
+     "display_keyword": "郑业成",
+     "display_original": "郑业成（3条热搜）",
+     "ip_status": "匹配成功",
+     "platforms": [
+      "xiaohongshu"
+     ],
+     "hints": [
+      "郑业成同款穿搭",
+      "郑业成同款单品",
+      "郑业成代言品牌"
+     ]
+    },
+    {
+     "keyword": "丁禹兮",
+     "display_keyword": "丁禹兮",
+     "display_original": "丁禹兮（3条热搜）",
+     "ip_status": "匹配成功",
+     "platforms": [
+      "xiaohongshu"
+     ],
+     "hints": [
+      "丁禹兮同款穿搭",
+      "丁禹兮同款单品",
+      "丁禹兮代言品牌"
      ]
     }
    ]
@@ -1905,109 +1947,41 @@
  "styleHotBoard": {
   "title": "风格热点",
   "subtitle": "抖音 · 小红书 服饰穿搭 · 流行元素",
-  "total": 6,
+  "total": 2,
   "items": [
    {
-    "keyword": "古早风",
-    "style_word": "古早风",
-    "display_keyword": "古早风",
-    "display_original": "古早感美式复古秋冬穿搭",
-    "score": 10554000,
-    "heat": 10554000,
-    "norm_score": 7.0234,
+    "keyword": "山系",
+    "style_word": "山系",
+    "display_keyword": "山系",
+    "display_original": "山系穿搭﻿",
+    "score": 6,
+    "heat": 6,
+    "norm_score": 0.8451,
     "platforms": [
-     "douyin"
+     "xiaohongshu"
     ],
-    "platform": "douyin",
+    "platform": "xiaohongshu",
     "hints": [],
     "trendCategory": "服饰穿搭",
     "ip_status": "匹配成功",
     "style_rank": 1
    },
    {
-    "keyword": "美式复古",
-    "style_word": "美式复古",
-    "display_keyword": "美式复古",
-    "display_original": "古早感美式复古秋冬穿搭",
-    "score": 10554000,
-    "heat": 10554000,
-    "norm_score": 7.0234,
+    "keyword": "时髦小姨风",
+    "style_word": "时髦小姨风",
+    "display_keyword": "时髦小姨风",
+    "display_original": "时髦小姨风",
+    "score": 6,
+    "heat": 6,
+    "norm_score": 0.8451,
     "platforms": [
-     "douyin"
+     "xiaohongshu"
     ],
-    "platform": "douyin",
+    "platform": "xiaohongshu",
     "hints": [],
     "trendCategory": "服饰穿搭",
     "ip_status": "匹配成功",
     "style_rank": 2
-   },
-   {
-    "keyword": "淡人",
-    "style_word": "淡人",
-    "display_keyword": "淡人",
-    "display_original": "淡人早秋穿搭",
-    "score": 7704000,
-    "heat": 7704000,
-    "norm_score": 6.8867,
-    "platforms": [
-     "douyin"
-    ],
-    "platform": "douyin",
-    "hints": [],
-    "trendCategory": "流行元素",
-    "ip_status": "匹配成功",
-    "style_rank": 3
-   },
-   {
-    "keyword": "松弛感",
-    "style_word": "松弛感",
-    "display_keyword": "松弛感",
-    "display_original": "松弛随意感穿搭",
-    "score": 13,
-    "heat": 13,
-    "norm_score": 1.1461,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "流行元素",
-    "ip_status": "匹配成功",
-    "style_rank": 4
-   },
-   {
-    "keyword": "韩系",
-    "style_word": "韩系",
-    "display_keyword": "韩系",
-    "display_original": "韩系穿搭",
-    "score": 10,
-    "heat": 10,
-    "norm_score": 1.0414,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 5
-   },
-   {
-    "keyword": "新中式",
-    "style_word": "新中式",
-    "display_keyword": "新中式",
-    "display_original": "新中式",
-    "score": 8,
-    "heat": 8,
-    "norm_score": 0.9542,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 6
    }
   ]
  }
