@@ -929,7 +929,7 @@ function renderStyleHot() {
     return;
   }
   grid.innerHTML = '<table class="lb-table style-table"><thead><tr>' +
-    '<th style="width:40px">排名</th><th>风格词 / 热搜原词</th><th>分类</th><th>热度</th>' +
+    '<th style="width:40px">排名</th><th>风格词</th><th>分类</th><th>热度</th>' +
     '</tr></thead><tbody>' +
     items.map((s, i) => {
       const rank = s.style_rank || (i + 1);
@@ -939,12 +939,9 @@ function renderStyleHot() {
       s._names = [word];
       const hasMap = matchDiesunStyles(word, orig).length > 0;
       const cat = s.trendCategory || '';
-      const subHtml = (orig && orig !== word)
-        ? '<div class="style-orig">' + escHtml(orig) + '</div>'
-        : '';
       return '<tr class="style-row' + (hasMap ? ' style-mapped' : '') + '" data-style-word="' + escHtml(word) + '" data-style-orig="' + escHtml(orig) + '">' +
         '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
-        '<td><div class="kw-main">' + escHtml(word) + '</div>' + subHtml + '</td>' +
+        '<td><div class="kw-main">' + escHtml(word) + '</div></td>' +
         '<td>' + catDotHtml(cat) + escHtml(cat || '—') + '</td>' +
         '<td>' + heatCellHtml(s) + '</td>' +
       '</tr>';
