@@ -1080,9 +1080,6 @@ function renderDiesun() {
     const picHtml = pic
       ? '<div class="diesun-pic"><img src="' + escHtml(pic) + '" alt="' + escHtml(title) + '" loading="lazy" referrerpolicy="no-referrer"></div>'
       : '<div class="diesun-pic diesun-pic-empty">暂无封面图</div>';
-    const more = (pic || picCount)
-      ? '<div class="diesun-more">' + (pic ? '点开看风格照片' : (picCount + ' 张图')) + ' <span class="arrow">▸</span></div>'
-      : '';
     return '<div class="diesun-card' + (pic ? ' clickable' : '') + '" data-diesun-rank="' + rank + '">' +
       '<div class="diesun-rank">' + rank + '</div>' +
       '<div class="diesun-body">' +
@@ -1090,7 +1087,6 @@ function renderDiesun() {
         tagHtml +
         brandsHtml +
         itemsHtml +
-        more +
         picHtml +
       '</div>' +
     '</div>';
