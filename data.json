@@ -1,6 +1,6 @@
 {
  "version": "4.0",
- "generatedAt": "2026-10-19T15:49:22+08:00",
+ "generatedAt": "2026-10-19T17:59:45+08:00",
  "summary": {
   "total": 50,
   "ipCount": 50,
@@ -17,15 +17,44 @@
     "code": "weibo",
     "title": "weibo",
     "count": 27
+   },
+   {
+    "code": "xiaohongshu",
+    "title": "xiaohongshu",
+    "count": 2
    }
   ],
-  "generatedAt": "2026-10-19T15:49:22+08:00"
+  "generatedAt": "2026-10-19T17:59:45+08:00"
  },
  "ipBoard": {
   "title": "IP 榜单",
   "subtitle": "跨平台热度排行",
   "total": 50,
   "items": [
+   {
+    "keyword": "恋与深空",
+    "display_keyword": "恋与深空",
+    "display_original": "恋与深空银翼杀手联动（4条热搜...",
+    "matched_value": "恋与深空",
+    "ip_status": "匹配成功",
+    "ipCategory": "游戏电竞",
+    "hot_value": 7904011,
+    "hot_score": 7904011,
+    "norm_score": 9.65692,
+    "hints": [
+     "恋与深空联名周边",
+     "恋与深空手办模型",
+     "恋与深空限定皮肤"
+    ],
+    "platform": "weibo",
+    "platforms": [
+     "weibo",
+     "douyin",
+     "xiaohongshu"
+    ],
+    "ip_rank": 1,
+    "rank": 1
+   },
    {
     "keyword": "维密",
     "display_keyword": "维密",
@@ -46,8 +75,8 @@
      "weibo",
      "douyin"
     ],
-    "ip_rank": 1,
-    "rank": 1
+    "ip_rank": 2,
+    "rank": 2
    },
    {
     "keyword": "刘雯",
@@ -69,8 +98,8 @@
      "weibo",
      "douyin"
     ],
-    "ip_rank": 2,
-    "rank": 2
+    "ip_rank": 3,
+    "rank": 3
    },
    {
     "keyword": "田曦薇",
@@ -86,29 +115,6 @@
      "田曦薇同款穿搭",
      "田曦薇同款单品",
      "田曦薇代言品牌"
-    ],
-    "platform": "weibo",
-    "platforms": [
-     "weibo",
-     "douyin"
-    ],
-    "ip_rank": 3,
-    "rank": 3
-   },
-   {
-    "keyword": "恋与深空",
-    "display_keyword": "恋与深空",
-    "display_original": "恋与深空银翼杀手联动（2条热搜...",
-    "matched_value": "恋与深空",
-    "ip_status": "匹配成功",
-    "ipCategory": "游戏电竞",
-    "hot_value": 7904000,
-    "hot_score": 7904000,
-    "norm_score": 8.27736,
-    "hints": [
-     "恋与深空联名周边",
-     "恋与深空手办模型",
-     "恋与深空限定皮肤"
     ],
     "platform": "weibo",
     "platforms": [
@@ -141,6 +147,29 @@
     "rank": 5
    },
    {
+    "keyword": "孙颖莎",
+    "display_keyword": "孙颖莎",
+    "display_original": "孙颖莎已获20个世界冠军（4条...",
+    "matched_value": "孙颖莎",
+    "ip_status": "匹配成功",
+    "ipCategory": "体育",
+    "hot_value": 900010,
+    "hot_score": 900010,
+    "norm_score": 7.14504,
+    "hints": [
+     "孙颖莎同款穿搭",
+     "孙颖莎同款单品",
+     "孙颖莎代言品牌"
+    ],
+    "platform": "weibo",
+    "platforms": [
+     "weibo",
+     "xiaohongshu"
+    ],
+    "ip_rank": 6,
+    "rank": 6
+   },
+   {
     "keyword": "S16",
     "display_keyword": "S16",
     "display_original": "S16瑞士轮首轮抽签结果",
@@ -159,8 +188,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 6,
-    "rank": 6
+    "ip_rank": 7,
+    "rank": 7
    },
    {
     "keyword": "陆光祖",
@@ -181,8 +210,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 7,
-    "rank": 7
+    "ip_rank": 8,
+    "rank": 8
    },
    {
     "keyword": "LOUD VIT",
@@ -203,8 +232,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 8,
-    "rank": 8
+    "ip_rank": 9,
+    "rank": 9
    },
    {
     "keyword": "辽宁男篮",
@@ -225,8 +254,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 9,
-    "rank": 9
+    "ip_rank": 10,
+    "rank": 10
    },
    {
     "keyword": "武明瑶",
@@ -247,8 +276,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 10,
-    "rank": 10
+    "ip_rank": 11,
+    "rank": 11
    },
    {
     "keyword": "成都蓉城 武磊",
@@ -269,8 +298,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 11,
-    "rank": 11
+    "ip_rank": 12,
+    "rank": 12
    },
    {
     "keyword": "IG",
@@ -291,8 +320,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 12,
-    "rank": 12
+    "ip_rank": 13,
+    "rank": 13
    },
    {
     "keyword": "皇马",
@@ -313,8 +342,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 13,
-    "rank": 13
+    "ip_rank": 14,
+    "rank": 14
    },
    {
     "keyword": "玉簟秋",
@@ -335,8 +364,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 14,
-    "rank": 14
+    "ip_rank": 15,
+    "rank": 15
    },
    {
     "keyword": "王嘉尔",
@@ -357,8 +386,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 15,
-    "rank": 15
+    "ip_rank": 16,
+    "rank": 16
    },
    {
     "keyword": "何润东",
@@ -379,8 +408,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 16,
-    "rank": 16
+    "ip_rank": 17,
+    "rank": 17
    },
    {
     "keyword": "嫁金钗 君黛",
@@ -401,8 +430,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 17,
-    "rank": 17
+    "ip_rank": 18,
+    "rank": 18
    },
    {
     "keyword": "尚公主 孟子义 李昀锐",
@@ -423,8 +452,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 18,
-    "rank": 18
+    "ip_rank": 19,
+    "rank": 19
    },
    {
     "keyword": "跑男",
@@ -445,8 +474,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 19,
-    "rank": 19
+    "ip_rank": 20,
+    "rank": 20
    },
    {
     "keyword": "燕云",
@@ -467,8 +496,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 20,
-    "rank": 20
+    "ip_rank": 21,
+    "rank": 21
    },
    {
     "keyword": "在梅边",
@@ -489,8 +518,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 21,
-    "rank": 21
+    "ip_rank": 22,
+    "rank": 22
    },
    {
     "keyword": "无畏契约",
@@ -511,8 +540,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 22,
-    "rank": 22
+    "ip_rank": 23,
+    "rank": 23
    },
    {
     "keyword": "王力宏",
@@ -533,8 +562,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 23,
-    "rank": 23
+    "ip_rank": 24,
+    "rank": 24
    },
    {
     "keyword": "和平精英",
@@ -555,8 +584,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 24,
-    "rank": 24
+    "ip_rank": 25,
+    "rank": 25
    },
    {
     "keyword": "薛之谦",
@@ -577,8 +606,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 25,
-    "rank": 25
+    "ip_rank": 26,
+    "rank": 26
    },
    {
     "keyword": "邓紫棋 李荣浩",
@@ -599,8 +628,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 26,
-    "rank": 26
+    "ip_rank": 27,
+    "rank": 27
    },
    {
     "keyword": "沧元图",
@@ -621,8 +650,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 27,
-    "rank": 27
+    "ip_rank": 28,
+    "rank": 28
    },
    {
     "keyword": "金鸡奖",
@@ -638,28 +667,6 @@
      "金鸡奖同款穿搭",
      "金鸡奖周边好物",
      "金鸡奖联名款"
-    ],
-    "platform": "weibo",
-    "platforms": [
-     "weibo"
-    ],
-    "ip_rank": 28,
-    "rank": 28
-   },
-   {
-    "keyword": "孙颖莎",
-    "display_keyword": "孙颖莎",
-    "display_original": "孙颖莎已获20个世界冠军（3条...",
-    "matched_value": "孙颖莎",
-    "ip_status": "匹配成功",
-    "ipCategory": "体育",
-    "hot_value": 900000,
-    "hot_score": 900000,
-    "norm_score": 5.9542,
-    "hints": [
-     "孙颖莎同款穿搭",
-     "孙颖莎同款单品",
-     "孙颖莎代言品牌"
     ],
     "platform": "weibo",
     "platforms": [
@@ -1139,6 +1146,22 @@
    "count": 27,
    "items": [
     {
+     "keyword": "恋与深空",
+     "display_keyword": "恋与深空",
+     "display_original": "恋与深空银翼杀手联动（4条热搜...",
+     "ip_status": "匹配成功",
+     "platforms": [
+      "weibo",
+      "douyin",
+      "xiaohongshu"
+     ],
+     "hints": [
+      "恋与深空联名周边",
+      "恋与深空手办模型",
+      "恋与深空限定皮肤"
+     ]
+    },
+    {
      "keyword": "维密",
      "display_keyword": "维密",
      "display_original": "2026维密大秀（2条热搜）",
@@ -1184,18 +1207,18 @@
      ]
     },
     {
-     "keyword": "恋与深空",
-     "display_keyword": "恋与深空",
-     "display_original": "恋与深空银翼杀手联动（2条热搜...",
+     "keyword": "孙颖莎",
+     "display_keyword": "孙颖莎",
+     "display_original": "孙颖莎已获20个世界冠军（4条...",
      "ip_status": "匹配成功",
      "platforms": [
       "weibo",
-      "douyin"
+      "xiaohongshu"
      ],
      "hints": [
-      "恋与深空联名周边",
-      "恋与深空手办模型",
-      "恋与深空限定皮肤"
+      "孙颖莎同款穿搭",
+      "孙颖莎同款单品",
+      "孙颖莎代言品牌"
      ]
     },
     {
@@ -1210,20 +1233,6 @@
       "金鸡奖同款穿搭",
       "金鸡奖周边好物",
       "金鸡奖联名款"
-     ]
-    },
-    {
-     "keyword": "孙颖莎",
-     "display_keyword": "孙颖莎",
-     "display_original": "孙颖莎已获20个世界冠军（3条...",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "weibo"
-     ],
-     "hints": [
-      "孙颖莎同款穿搭",
-      "孙颖莎同款单品",
-      "孙颖莎代言品牌"
      ]
     },
     {
@@ -1528,6 +1537,22 @@
    "count": 27,
    "items": [
     {
+     "keyword": "恋与深空",
+     "display_keyword": "恋与深空",
+     "display_original": "恋与深空银翼杀手联动（4条热搜...",
+     "ip_status": "匹配成功",
+     "platforms": [
+      "weibo",
+      "douyin",
+      "xiaohongshu"
+     ],
+     "hints": [
+      "恋与深空联名周边",
+      "恋与深空手办模型",
+      "恋与深空限定皮肤"
+     ]
+    },
+    {
      "keyword": "维密",
      "display_keyword": "维密",
      "display_original": "2026维密大秀（2条热搜）",
@@ -1570,21 +1595,6 @@
       "田曦薇同款穿搭",
       "田曦薇同款单品",
       "田曦薇代言品牌"
-     ]
-    },
-    {
-     "keyword": "恋与深空",
-     "display_keyword": "恋与深空",
-     "display_original": "恋与深空银翼杀手联动（2条热搜...",
-     "ip_status": "匹配成功",
-     "platforms": [
-      "weibo",
-      "douyin"
-     ],
-     "hints": [
-      "恋与深空联名周边",
-      "恋与深空手办模型",
-      "恋与深空限定皮肤"
      ]
     },
     {
@@ -1910,6 +1920,44 @@
      ]
     }
    ]
+  },
+  "xiaohongshu": {
+   "code": "xiaohongshu",
+   "title": "xiaohongshu",
+   "count": 2,
+   "items": [
+    {
+     "keyword": "恋与深空",
+     "display_keyword": "恋与深空",
+     "display_original": "恋与深空银翼杀手联动（4条热搜...",
+     "ip_status": "匹配成功",
+     "platforms": [
+      "weibo",
+      "douyin",
+      "xiaohongshu"
+     ],
+     "hints": [
+      "恋与深空联名周边",
+      "恋与深空手办模型",
+      "恋与深空限定皮肤"
+     ]
+    },
+    {
+     "keyword": "孙颖莎",
+     "display_keyword": "孙颖莎",
+     "display_original": "孙颖莎已获20个世界冠军（4条...",
+     "ip_status": "匹配成功",
+     "platforms": [
+      "weibo",
+      "xiaohongshu"
+     ],
+     "hints": [
+      "孙颖莎同款穿搭",
+      "孙颖莎同款单品",
+      "孙颖莎代言品牌"
+     ]
+    }
+   ]
   }
  },
  "hotCalendar": {
@@ -1924,17 +1972,17 @@
   "total": 2,
   "items": [
    {
-    "keyword": "古风",
-    "style_word": "古风",
-    "display_keyword": "古风",
-    "display_original": "古风",
-    "score": 161,
-    "heat": 161,
-    "norm_score": 2.2095,
+    "keyword": "JK制服",
+    "style_word": "JK制服",
+    "display_keyword": "JK制服",
+    "display_original": "JK秋冬叠穿实用穿搭教程",
+    "score": 7670000,
+    "heat": 7670000,
+    "norm_score": 6.8848,
     "platforms": [
-     "xiaohongshu"
+     "douyin"
     ],
-    "platform": "xiaohongshu",
+    "platform": "douyin",
     "hints": [],
     "trendCategory": "服饰穿搭",
     "ip_status": "匹配成功",
@@ -1944,10 +1992,10 @@
     "keyword": "复古风",
     "style_word": "复古风",
     "display_keyword": "复古风",
-    "display_original": "意式复古风﻿",
-    "score": 8,
-    "heat": 8,
-    "norm_score": 0.9542,
+    "display_original": "复古",
+    "score": 4,
+    "heat": 4,
+    "norm_score": 0.699,
     "platforms": [
      "xiaohongshu"
     ],
