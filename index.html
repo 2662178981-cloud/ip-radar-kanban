@@ -156,6 +156,31 @@
     background: rgba(255,255,255,0.85); font-size: 11px; cursor: pointer; font-family: inherit; color: #374151; }
   .cal-copy:hover { background: #fff; }
 
+  /* 泡泡玛特潮玩IP三元组 */
+  .popmart-triples { margin-top: 18px; border: 1px solid #fde68a; border-radius: 10px; background: #fffbeb; padding: 12px 14px; }
+  .popmart-triples-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+  .popmart-title { font-size: 15px; font-weight: 700; color: #92400e; }
+  .popmart-pass { font-size: 12px; font-weight: 700; color: #047857; background: #d1fae5; padding: 2px 8px; border-radius: 999px; }
+  .popmart-meta { font-size: 12px; color: #6b7280; }
+  .popmart-meta b { color: #b45309; }
+  .popmart-submit-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 12px; padding: 8px 10px; background: #fef3c7; border: 1px solid #fcd34d; border-radius: 8px; }
+  .popmart-submit-btn { padding: 5px 14px; border-radius: 8px; border: none; background: #f59e0b; color: #fff; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+  .popmart-submit-btn:hover:not(:disabled) { background: #d97706; }
+  .popmart-submit-btn:disabled { background: #e5e7eb; color: #9ca3af; cursor: not-allowed; }
+  .popmart-submit-status { font-size: 12px; color: #475569; }
+  .popmart-groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+  .popmart-group { background: #fff; border: 1px solid #fde68a; border-radius: 8px; padding: 8px 10px; }
+  .popmart-group-head { font-size: 13px; font-weight: 700; color: #92400e; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center; }
+  .popmart-group-head .cnt { color: #9ca3af; font-weight: 600; font-size: 11px; }
+  .popmart-item { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; border-bottom: 1px dashed #f3f4f6; font-size: 12px; color: #374151; cursor: pointer; }
+  .popmart-item:last-child { border-bottom: none; }
+  .popmart-item input[type=checkbox] { margin-top: 2px; flex: 0 0 auto; }
+  .popmart-item .triple { flex: 1 1 auto; word-break: break-word; line-height: 1.6; }
+  .popmart-item .rel { display: inline-block; margin: 0 4px; padding: 0 6px; border-radius: 5px; font-size: 11px; font-weight: 700; color: #fff; background: #f59e0b; }
+  .popmart-item .acc { flex: 0 0 auto; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 999px; white-space: nowrap; }
+  .popmart-item .acc.ok { color: #047857; background: #d1fae5; }
+  .popmart-item .acc.warn { color: #b45309; background: #fef3c7; cursor: help; }
+
   .item-count { font-size: 12px; color: #6b7280; margin-bottom: 10px; }
 
   /* 蝶讯热卖风格 */
@@ -303,6 +328,18 @@
     </div>
     <div class="item-count" id="cal-count"></div>
     <div class="cal-grid" id="cal-grid"></div>
+    <div class="popmart-triples" id="popmart-triples">
+      <div class="popmart-triples-head">
+        <span class="popmart-title">🧸 泡泡玛特潮玩IP三元组</span>
+        <span class="popmart-pass" id="popmart-pass"></span>
+        <span class="popmart-meta">共 <b id="popmart-total-count">0</b> 条 · 已选 <b id="popmart-sel-count">0</b> 条</span>
+      </div>
+      <div class="popmart-submit-bar">
+        <span class="popmart-submit-status" id="popmart-submit-status"></span>
+        <button type="button" class="popmart-submit-btn" id="popmart-submit-btn" disabled>写入 Joyspace（暂未开通）</button>
+      </div>
+      <div class="popmart-groups" id="popmart-groups"></div>
+    </div>
   </div>
 
   <div class="panel hidden" id="panel-snapshot">
@@ -486,21 +523,25 @@ let DIESUN_INDEX = null;
 let HEAT_MAP = null;  /* IP名 -> 热度记录 */
 let HEAT_ROWS = null;
 const SELECTED_NEW = new Set();  /* 已勾选待写入词库的新词 */
+let POPMART_TRIPLES = null;  /* 泡泡玛特潮玩IP三元组数据 */
+const SELECTED_TRIPLES = new Set();  /* 已勾选待写入 Joyspace 的三元组下标 */
 
 async function loadAll() {
   // 可选文件（calendar_index/hints/diesun_index）不存在时不白等：retries=1，失败即 null
-  const [data, cal, hints, diesun, snaps] = await Promise.all([
+  const [data, cal, hints, diesun, snaps, triples] = await Promise.all([
     fetchJSON('data.json'),
     fetchJSON('calendar_index.json', 1).catch(() => null),
     fetchJSON('hints.json', 1).catch(() => null),
     fetchJSON('diesun_index.json', 1).catch(() => null),
-    fetchJSON('snapshots.json', 1).catch(() => null)
+    fetchJSON('snapshots.json', 1).catch(() => null),
+    fetchJSON('popmart_triples.json', 1).catch(() => null)
   ]);
   PAYLOAD = data;
   CAL_INDEX = cal;
   HINTS_DATA = hints;
   DIESUN_INDEX = diesun;
   SNAPSHOTS = snaps;
+  POPMART_TRIPLES = triples;
   // 热度数据：先加载索引，再加载最新 raw 文件（失败不影响主流程）
   try {
     const idx = await fetchJSON('heat_index.json', 1);
@@ -1147,6 +1188,77 @@ function bindCalCards() {
   });
 }
 
+/* ===== 泡泡玛特潮玩IP三元组 ===== */
+function escAttr(s) { return escHtml(s).replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
+
+function renderPopmartTriples() {
+  const root = document.getElementById('popmart-triples');
+  if (!root) return;
+  const items = (POPMART_TRIPLES && Array.isArray(POPMART_TRIPLES.items)) ? POPMART_TRIPLES.items : [];
+  if (!items.length) {
+    root.style.display = 'none';
+    return;
+  }
+  root.style.display = '';
+  const passEl = document.getElementById('popmart-pass');
+  const totalEl = document.getElementById('popmart-total-count');
+  const groupsEl = document.getElementById('popmart-groups');
+  const passRate = (typeof POPMART_TRIPLES.passRate === 'number') ? POPMART_TRIPLES.passRate : null;
+  if (passEl) passEl.textContent = passRate != null ? ('校验通过率 ' + passRate + '%') : '';
+  if (totalEl) totalEl.textContent = items.length;
+  // 按关系分组（固定顺序：IP系列 / 联名 / 同义 / 系列款名）
+  const ORDER = ['IP系列', '联名', '同义', '系列款名'];
+  const groups = {};
+  items.forEach((it, i) => {
+    const rel = it.relation || '其他';
+    (groups[rel] = groups[rel] || []).push({ it: it, i: i });
+  });
+  const rels = Object.keys(groups).sort((a, b) => {
+    const ia = ORDER.indexOf(a), ib = ORDER.indexOf(b);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+  });
+  groupsEl.innerHTML = rels.map(rel => {
+    const rows = groups[rel];
+    const list = rows.map(({ it, i }) => {
+      const warn = it.status === '⚠️';
+      const acc = it.accuracy;
+      const accText = (acc == null) ? '待校验' : (acc + '%');
+      const accCls = warn ? 'warn' : 'ok';
+      const tip = warn ? (' title="' + escAttr((it.rule || '') + ' ' + (it.note || '')) + '"') : '';
+      return '<label class="popmart-item">' +
+        '<input type="checkbox" data-triple-idx="' + i + '"' + (SELECTED_TRIPLES.has(i) ? ' checked' : '') + '>' +
+        '<span class="triple">' + escHtml(it.subject) + '<span class="rel">' + escHtml(rel) + '</span>' + escHtml(it.object) + '</span>' +
+        '<span class="acc ' + accCls + '"' + tip + '>' + (warn ? '⚠️ ' : '✅ ') + accText + '</span>' +
+        '</label>';
+    }).join('');
+    return '<div class="popmart-group"><div class="popmart-group-head"><span>' + escHtml(rel) + '</span><span class="cnt">' + rows.length + ' 条</span></div>' + list + '</div>';
+  }).join('');
+  updatePopmartSubmitBar();
+}
+
+function updatePopmartSubmitBar() {
+  const btn = document.getElementById('popmart-submit-btn');
+  const status = document.getElementById('popmart-submit-status');
+  const cnt = document.getElementById('popmart-sel-count');
+  if (cnt) cnt.textContent = SELECTED_TRIPLES.size;
+  if (btn) btn.disabled = SELECTED_TRIPLES.size === 0;
+  if (status && !status.textContent) {
+    status.textContent = '勾选后可将三元组写入 Joyspace（当前仅构建，未接通）';
+  }
+}
+
+function submitPopmartTriples() {
+  const items = (POPMART_TRIPLES && Array.isArray(POPMART_TRIPLES.items)) ? POPMART_TRIPLES.items : [];
+  const selected = Array.from(SELECTED_TRIPLES).sort((a, b) => a - b).map(i => items[i]).filter(Boolean);
+  const status = document.getElementById('popmart-submit-status');
+  const lines = selected.map(it => it.subject + ' ' + it.relation + ' ' + it.object);
+  const preview = lines.slice(0, 5).join('；') + (lines.length > 5 ? ' 等' : '');
+  if (status) {
+    status.textContent = '已收集 ' + selected.length + ' 条三元组（写入 Joyspace 暂未开通）：' + preview;
+  }
+  console.log('[popmart-triples] selected', selected);
+}
+
 /* 复制：优先用剪贴板 API，失败（非 HTTPS 等）退回 execCommand */
 function copyToClipboard(text) {
   if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -1290,6 +1402,15 @@ document.getElementById('lb-body').addEventListener('change', function(e) {
 });
 document.getElementById('submit-btn').addEventListener('click', submitNewWords);
 document.getElementById('filter-cal-type').addEventListener('change', renderCalendar);
+// 泡泡玛特三元组：勾选 + 写入（暂未开通）
+document.getElementById('popmart-groups').addEventListener('change', function(e) {
+  const t = e.target;
+  if (!t || t.type !== 'checkbox' || t.dataset.tripleIdx === undefined) return;
+  const idx = parseInt(t.dataset.tripleIdx, 10);
+  if (t.checked) SELECTED_TRIPLES.add(idx); else SELECTED_TRIPLES.delete(idx);
+  updatePopmartSubmitBar();
+});
+document.getElementById('popmart-submit-btn').addEventListener('click', submitPopmartTriples);
 document.getElementById('snapshot-date').addEventListener('change', renderSnapshot);
 document.getElementById('snapshot-kw').addEventListener('input', renderSnapshot);
 document.getElementById('snapshot-clear').addEventListener('click', function() {
@@ -1309,6 +1430,7 @@ async function init() {
     bindDiesunSubtabs();
     renderSubtabs();
     renderCalendar();
+    renderPopmartTriples();
     renderSnapshot();
     renderStyleHot();
   } catch (err) {
