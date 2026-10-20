@@ -1,64 +1,101 @@
 {
  "source": "泡泡玛特新品日历",
  "generatedAt": "2026-10-20",
- "count": 70,
+ "count": 55,
  "items": [
   {
-   "subject": "兹加",
+   "subject": "Zsiga",
    "relation": "IP系列",
-   "object": "人生秀场",
-   "accuracy": 85,
-   "status": "⚠️",
-   "rule": "SER-02",
-   "note": "系列名 '人生秀场' 不以 '兹加' 开头"
-  },
-  {
-   "subject": "Twinkle Twinkle",
-   "relation": "IP系列",
-   "object": "平凡生活（Live the Ordinary）",
-   "accuracy": 85,
-   "status": "⚠️",
-   "rule": "SER-02",
-   "note": "系列名 '平凡生活（Live the Ordinary）' 不以 'Twinkle Twinkle' 开头"
-  },
-  {
-   "subject": "小野",
-   "relation": "IP系列",
-   "object": "× 哈利·波特（× Harry Potter）",
-   "accuracy": 85,
-   "status": "⚠️",
-   "rule": "SER-02",
-   "note": "系列名 '× 哈利·波特（× Harry Potter）' 不以 '小野' 开头"
-  },
-  {
-   "subject": "Merodi",
-   "relation": "IP系列",
-   "object": "零食时间（Snack Time）",
-   "accuracy": 85,
-   "status": "⚠️",
-   "rule": "SER-02",
-   "note": "系列名 '零食时间（Snack Time）' 不以 'Merodi' 开头"
-  },
-  {
-   "subject": "VALORANT",
-   "relation": "IP系列",
-   "object": "VALORANT 经典特工（VALORANT Classic Agents）",
+   "object": "Zsiga 人生秀场系列",
+   "series": "Zsiga 人生秀场系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "咒术回战",
-   "relation": "IP系列",
-   "object": "死灭回游",
-   "accuracy": 85,
-   "status": "⚠️",
-   "rule": "SER-02",
-   "note": "系列名 '死灭回游' 不以 '咒术回战' 开头"
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "同义",
+   "object": "Zsiga Life is a Show Series",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "保留的期待（Something to Hope For）",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "很困的枕头（Sleepy Pillow）",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "忙碌的脑袋（A Busy Mind）",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "雨后的天空（After the Rain）",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "放大的可爱（Cuteness Overload）",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "无声的独白（The Unspoken）",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "存档的记忆（Sealed Happiness）",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "积极的小狗（It's Okay）",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "自由的木偶（隐藏款）",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
   },
   {
    "subject": "泡泡玛特",
-   "relation": "联名",
-   "object": "无畏契约（VALORANT）",
+   "relation": "IP系列",
+   "object": "泡泡玛特 × 咒术回战 死灭回游系列",
+   "series": "泡泡玛特 × 咒术回战 死灭回游系列",
    "accuracy": 100,
    "status": "✅"
   },
@@ -66,451 +103,386 @@
    "subject": "泡泡玛特",
    "relation": "联名",
    "object": "咒术回战",
+   "series": "泡泡玛特 × 咒术回战 死灭回游系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "小野",
-   "relation": "联名",
-   "object": "哈利·波特（Harry Potter）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "兹加",
+   "subject": "泡泡玛特 × 咒术回战 死灭回游系列",
    "relation": "同义",
-   "object": "Zsiga",
+   "object": "POP MART × Jujutsu Kaisen The Culling Game Series",
+   "series": "泡泡玛特 × 咒术回战 死灭回游系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "小野",
-   "relation": "同义",
-   "object": "HIRONO",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT",
-   "relation": "同义",
-   "object": "无畏契约",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "咒术回战",
-   "relation": "同义",
-   "object": "Jujutsu Kaisen",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "Harry Potter",
-   "relation": "同义",
-   "object": "哈利·波特",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "人生秀场",
-   "relation": "系列款名",
-   "object": "未说出口（The Unspoken）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "人生秀场",
-   "relation": "系列款名",
-   "object": "没关系（It's Okay）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "人生秀场",
-   "relation": "系列款名",
-   "object": "封存的幸福（Sealed Happiness）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "人生秀场",
-   "relation": "系列款名",
-   "object": "忙碌的心（A Busy Mind）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "人生秀场",
-   "relation": "系列款名",
-   "object": "值得期待（Something to Hope For）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "人生秀场",
-   "relation": "系列款名",
-   "object": "困倦的枕头（Sleepy Pillow）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "人生秀场",
-   "relation": "系列款名",
-   "object": "雨后（After the Rain）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "人生秀场",
-   "relation": "系列款名",
-   "object": "可爱爆表（Cuteness Overload）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "人生秀场",
-   "relation": "系列款名",
-   "object": "找到我的路（Finding My Way）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "盖克（Gekko）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "菲德（Fade）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "捷风（Jett）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "蝰蛇（Viper）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "索瓦（Sova）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "赛弗（Cypher）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "克洛芙（Clove）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "霓虹（Neon）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "奇乐（Killjoy）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "贤者（Sage）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "伊索（Iso）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "幽影（Omen）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "VALORANT 经典特工（VALORANT Classic Agents）",
-   "relation": "系列款名",
-   "object": "幽影-休憩（Omen-Downtime）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "死灭回游",
+   "subject": "泡泡玛特 × 咒术回战 死灭回游系列",
    "relation": "系列款名",
    "object": "禅院直哉（Naoya Zen'in）",
+   "series": "泡泡玛特 × 咒术回战 死灭回游系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "死灭回游",
+   "subject": "泡泡玛特 × 咒术回战 死灭回游系列",
    "relation": "系列款名",
    "object": "禅院真希（Maki Zen'in）",
+   "series": "泡泡玛特 × 咒术回战 死灭回游系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "死灭回游",
+   "subject": "泡泡玛特 × 咒术回战 死灭回游系列",
    "relation": "系列款名",
    "object": "胀相（Choso）",
+   "series": "泡泡玛特 × 咒术回战 死灭回游系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "死灭回游",
+   "subject": "泡泡玛特 × 咒术回战 死灭回游系列",
    "relation": "系列款名",
    "object": "乙骨忧太（Yuta Okkotsu）",
+   "series": "泡泡玛特 × 咒术回战 死灭回游系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "死灭回游",
+   "subject": "泡泡玛特 × 咒术回战 死灭回游系列",
    "relation": "系列款名",
    "object": "虎杖悠仁（Yuji Itadori）",
+   "series": "泡泡玛特 × 咒术回战 死灭回游系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "死灭回游",
+   "subject": "泡泡玛特 × 咒术回战 死灭回游系列",
    "relation": "系列款名",
    "object": "伏黑惠（Megumi Fushiguro）",
+   "series": "泡泡玛特 × 咒术回战 死灭回游系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "死灭回游",
+   "subject": "泡泡玛特 × 咒术回战 死灭回游系列",
    "relation": "系列款名",
-   "object": "虎杖悠仁与熊猫（Yuji Itadori with Panda）",
+   "object": "虎杖悠仁与熊猫（Yuji Itadori with Panda）（隐藏款）",
+   "series": "泡泡玛特 × 咒术回战 死灭回游系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "平凡生活（Live the Ordinary）",
+   "subject": "Twinkle Twinkle",
+   "relation": "IP系列",
+   "object": "星星人 好好生活系列",
+   "series": "星星人 好好生活系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "星星人 好好生活系列",
+   "relation": "同义",
+   "object": "Twinkle Twinkle Live the Ordinary Series",
+   "series": "星星人 好好生活系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "星星人 好好生活系列",
    "relation": "系列款名",
    "object": "保持好奇（Stay Curious）",
+   "series": "星星人 好好生活系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "平凡生活（Live the Ordinary）",
+   "subject": "星星人 好好生活系列",
    "relation": "系列款名",
-   "object": "思考者（The Thinker）",
+   "object": "慢一点（A Blah Day）",
+   "series": "星星人 好好生活系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "平凡生活（Live the Ordinary）",
+   "subject": "星星人 好好生活系列",
    "relation": "系列款名",
-   "object": "思绪飘散（Mind Drift）",
+   "object": "好好吃饭（Eat Well Sleep Well）",
+   "series": "星星人 好好生活系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "平凡生活（Live the Ordinary）",
-   "relation": "系列款名",
-   "object": "欢迎回家（Welcome Home）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "平凡生活（Live the Ordinary）",
-   "relation": "系列款名",
-   "object": "为我们干杯（Cheers to Us）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "平凡生活（Live the Ordinary）",
-   "relation": "系列款名",
-   "object": "平淡的一天（A Blah Day）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "平凡生活（Live the Ordinary）",
-   "relation": "系列款名",
-   "object": "自在生长（Grow at Ease）",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "平凡生活（Live the Ordinary）",
+   "subject": "星星人 好好生活系列",
    "relation": "系列款名",
    "object": "向日葵（Sunflower）",
+   "series": "星星人 好好生活系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "平凡生活（Live the Ordinary）",
+   "subject": "星星人 好好生活系列",
    "relation": "系列款名",
-   "object": "笑一个！（Say Cheese!）",
+   "object": "欢迎回家（Welcome Home）",
+   "series": "星星人 好好生活系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "平凡生活（Live the Ordinary）",
+   "subject": "星星人 好好生活系列",
    "relation": "系列款名",
-   "object": "奔向春天（Run Into Spring）",
+   "object": "慢慢生长（Grow at Ease）",
+   "series": "星星人 好好生活系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "平凡生活（Live the Ordinary）",
+   "subject": "星星人 好好生活系列",
+   "relation": "系列款名",
+   "object": "发个呆（Mind Drift）",
+   "series": "星星人 好好生活系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "星星人 好好生活系列",
    "relation": "系列款名",
    "object": "浴室歌王（Bathroom Crooner）",
+   "series": "星星人 好好生活系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "平凡生活（Live the Ordinary）",
+   "subject": "星星人 好好生活系列",
    "relation": "系列款名",
-   "object": "吃好睡好（Eat Well Sleep Well）",
+   "object": "跑向春天（Run Into Spring）",
+   "series": "星星人 好好生活系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "平凡生活（Live the Ordinary）",
+   "subject": "星星人 好好生活系列",
    "relation": "系列款名",
-   "object": "兜风（Joyride）",
+   "object": "思想者（The Thinker）",
+   "series": "星星人 好好生活系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "星星人 好好生活系列",
+   "relation": "系列款名",
+   "object": "笑一个吧（Say Cheese!）",
+   "series": "星星人 好好生活系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "星星人 好好生活系列",
+   "relation": "系列款名",
+   "object": "干杯（Cheers to Us）",
+   "series": "星星人 好好生活系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "星星人 好好生活系列",
+   "relation": "系列款名",
+   "object": "去兜风（隐藏款）",
+   "series": "星星人 好好生活系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "HIRONO",
+   "relation": "IP系列",
+   "object": "HIRONO × 哈利·波特系列",
+   "series": "HIRONO × 哈利·波特系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "HIRONO",
+   "relation": "联名",
+   "object": "哈利波特",
+   "series": "HIRONO × 哈利·波特系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "HIRONO × 哈利·波特系列",
+   "relation": "同义",
+   "object": "HIRONO × Harry Potter Series",
+   "series": "HIRONO × 哈利·波特系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
    "object": "阿不思·邓布利多（Albus Dumbledore）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
    "object": "鲁伯·海格（Rubeus Hagrid）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
-   "object": "哈利·波特与分院帽（Harry Potter and The Sorting Hat）",
+   "object": "哈利·波特-分院帽（Harry Potter and The Sorting Hat）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
    "object": "德拉科·马尔福（Draco Malfoy）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
    "object": "西弗勒斯·斯内普（Severus Snape）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
    "object": "多比（Dobby）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
-   "object": "小天狼星·布莱克（Sirius Black）",
+   "object": "小天狼星布莱克（Sirius Black）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
-   "object": "哈利·波特与魁地奇（Harry Potter and Quidditch）",
+   "object": "哈利·波特-魁地奇（Harry Potter and Quidditch）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
    "object": "罗恩·韦斯莱（Ron Weasley）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
    "object": "卢娜·洛夫古德（Luna Lovegood）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
    "object": "哈利·波特与海德薇（Harry Potter and Hedwig）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
    "object": "伏地魔（Lord Voldemort）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
-   "object": "曼德拉草（Mandrake）",
+   "object": "曼德拉草（隐藏款）",
+   "series": "HIRONO × 哈利·波特系列",
    "accuracy": 100,
    "status": "✅"
   },
   {
-   "subject": "× 哈利·波特（× Harry Potter）",
+   "subject": "HIRONO × 哈利·波特系列",
    "relation": "系列款名",
-   "object": "哈利·波特-特别版（隐藏款）（Harry Potter-Special Edition）",
+   "object": "哈利·波特-特别款（隐藏款）",
+   "series": "HIRONO × 哈利·波特系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi",
+   "relation": "IP系列",
+   "object": "Merodi Snack Time系列",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "同义",
+   "object": "Merodi Snack Time Series",
+   "series": "Merodi Snack Time系列",
    "accuracy": 100,
    "status": "✅"
   }
  ],
+ "series": [
+  {
+   "name": "Zsiga 人生秀场系列",
+   "ip": "Zsiga",
+   "en": "Zsiga Life is a Show Series",
+   "collab": null
+  },
+  {
+   "name": "泡泡玛特 × 咒术回战 死灭回游系列",
+   "ip": "泡泡玛特",
+   "en": "POP MART × Jujutsu Kaisen The Culling Game Series",
+   "collab": "咒术回战"
+  },
+  {
+   "name": "星星人 好好生活系列",
+   "ip": "Twinkle Twinkle",
+   "en": "Twinkle Twinkle Live the Ordinary Series",
+   "collab": null
+  },
+  {
+   "name": "HIRONO × 哈利·波特系列",
+   "ip": "HIRONO",
+   "en": "HIRONO × Harry Potter Series",
+   "collab": "哈利波特"
+  },
+  {
+   "name": "Merodi Snack Time系列",
+   "ip": "Merodi",
+   "en": "Merodi Snack Time Series",
+   "collab": null
+  }
+ ],
  "summary": {
-  "total_rows": 70,
-  "passed": 65,
-  "pass_rate": 92.9,
+  "total_rows": 55,
+  "passed": 55,
+  "pass_rate": 100.0,
   "error_count": 0,
-  "warn_count": 5,
-  "affected_rows": 5
+  "warn_count": 0,
+  "affected_rows": 0
  },
- "passRate": 92.9
+ "passRate": 100.0
 }
