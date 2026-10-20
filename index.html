@@ -180,6 +180,12 @@
   .popmart-item .acc { flex: 0 0 auto; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 999px; white-space: nowrap; }
   .popmart-item .acc.ok { color: #047857; background: #d1fae5; }
   .popmart-item .acc.warn { color: #b45309; background: #fef3c7; cursor: help; }
+  .cal-triple { display: flex; align-items: flex-start; gap: 6px; cursor: pointer; }
+  .cal-triple input[type=checkbox] { margin-top: 3px; flex: 0 0 auto; }
+  .cal-triple > span { flex: 1 1 auto; }
+  .cal-triple .acc { flex: 0 0 auto; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 999px; white-space: nowrap; }
+  .cal-triple .acc.ok { color: #047857; background: #d1fae5; }
+  .cal-triple .acc.warn { color: #b45309; background: #fef3c7; cursor: help; }
 
   .item-count { font-size: 12px; color: #6b7280; margin-bottom: 10px; }
 
@@ -525,6 +531,7 @@ let HEAT_ROWS = null;
 const SELECTED_NEW = new Set();  /* 已勾选待写入词库的新词 */
 let POPMART_TRIPLES = null;  /* 泡泡玛特潮玩IP三元组数据 */
 const SELECTED_TRIPLES = new Set();  /* 已勾选待写入 Joyspace 的三元组下标 */
+let POPMART_EN_MAP = null;  /* 系列款名英文名(归一化) -> 三元组下标 */
 
 async function loadAll() {
   // 可选文件（calendar_index/hints/diesun_index）不存在时不白等：retries=1，失败即 null
@@ -941,10 +948,25 @@ function renderCalendar() {
     let extra = '';
     if (vars.length) {
       cls += ' clickable';
-      const list = vars.map(v => '<div class="cal-var' + (v.secret ? ' secret' : '') + '">' + escHtml(v.name) + '</div>').join('');
-      extra = '<div class="cal-more">' + vars.length + ' 款 · 点开看款名 <span class="arrow">▸</span></div>' +
+      const isPop = cardCls.indexOf('popmart') !== -1;
+      let list = '';
+      if (isPop && POPMART_TRIPLES) {
+        list = vars.map(v => {
+          const idx = popmartTripleIdxFor(v);
+          if (idx !== undefined && POPMART_TRIPLES.items[idx]) {
+            const it = POPMART_TRIPLES.items[idx];
+            return '<label class="cal-var cal-triple' + (v.secret ? ' secret' : '') + '" data-subject="' + escAttr(it.subject) + '" data-relation="' + escAttr(it.relation) + '" data-object="' + escAttr(it.object) + '">' +
+              '<input type="checkbox" data-triple-idx="' + idx + '"' + (SELECTED_TRIPLES.has(idx) ? ' checked' : '') + '>' +
+              '<span>' + escHtml(it.object) + '</span>' + popmartAccBadge(it) + '</label>';
+          }
+          return '<div class="cal-var' + (v.secret ? ' secret' : '') + '">' + escHtml(v.name) + '</div>';
+        }).join('');
+      } else {
+        list = vars.map(v => '<div class="cal-var' + (v.secret ? ' secret' : '') + '">' + escHtml(v.name) + '</div>').join('');
+      }
+      extra = '<div class="cal-more">' + vars.length + ' 款 · 点开看' + (isPop ? '三元组' : '款名') + ' <span class="arrow">▸</span></div>' +
         '<div class="cal-variants">' + list +
-        '<button type="button" class="cal-copy">复制全部款名</button></div>';
+        '<button type="button" class="cal-copy">复制全部' + (isPop ? '三元组' : '款名') + '</button></div>';
     }
     return '<div class="' + cls + '">' +
       '<div class="cal-date-badge" style="' + badgeStyle + '">' + escHtml(dateStr) + '</div>' +
@@ -1177,19 +1199,69 @@ function bindCalCards() {
     btn.addEventListener('click', e => {
       e.stopPropagation();   // 别把卡片一起收起来
       const card = btn.closest('.cal-card');
-      const txt = card
-        ? Array.prototype.map.call(card.querySelectorAll('.cal-var'), x => x.textContent.trim()).join('\n')
-        : '';
+      const triples = card ? card.querySelectorAll('.cal-triple') : [];
+      const txt = triples.length
+        ? Array.prototype.map.call(triples, x => x.dataset.subject + ' ' + x.dataset.relation + ' ' + x.dataset.object).join('\n')
+        : (card ? Array.prototype.map.call(card.querySelectorAll('.cal-var'), x => x.textContent.trim()).join('\n') : '');
+      const label = triples.length ? '复制全部三元组' : '复制全部款名';
       copyToClipboard(txt).then(ok => {
         btn.textContent = ok ? '已复制 ✓' : '复制失败，请手动选中';
-        setTimeout(() => { btn.textContent = '复制全部款名'; }, 1600);
+        setTimeout(() => { btn.textContent = label; }, 1600);
       });
     });
+  });
+  // 卡片内的三元组勾选框：点击不触发展开/收起
+  grid.querySelectorAll('.cal-triple').forEach(lbl => {
+    lbl.addEventListener('click', e => e.stopPropagation());
   });
 }
 
 /* ===== 泡泡玛特潮玩IP三元组 ===== */
 function escAttr(s) { return escHtml(s).replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
+
+/* 英文名归一化：忽略大小写与空格/撇号/连字符等，用于把日历款名匹配到三元组 */
+function normEn(s) { return String(s || '').toLowerCase().replace(/[^a-z0-9]/g, ''); }
+
+/* 系列款名三元组：英文名 -> 下标（惰性构建） */
+function popmartEnMap() {
+  if (POPMART_EN_MAP) return POPMART_EN_MAP;
+  POPMART_EN_MAP = {};
+  const items = (POPMART_TRIPLES && Array.isArray(POPMART_TRIPLES.items)) ? POPMART_TRIPLES.items : [];
+  items.forEach((it, i) => {
+    if (it.relation !== '系列款名') return;
+    const m = String(it.object || '').match(/（([^（）]+)）$/);
+    if (m) POPMART_EN_MAP[normEn(m[1])] = i;
+  });
+  return POPMART_EN_MAP;
+}
+
+/* 日历款名 -> 系列款名三元组下标；隐藏款英文名带 "(SUPER SECRET)" 等后缀时做包含匹配兜底 */
+function popmartTripleIdxFor(v) {
+  if (!POPMART_TRIPLES || !Array.isArray(POPMART_TRIPLES.items)) return undefined;
+  const items = POPMART_TRIPLES.items;
+  const enMap = popmartEnMap();
+  const idx = enMap[normEn(v.name || v.en || '')];
+  if (idx !== undefined) return idx;
+  const key = normEn(v.en || v.name || '');
+  for (let i = 0; i < items.length; i++) {
+    const it = items[i];
+    if (it.relation !== '系列款名') continue;
+    const m = String(it.object || '').match(/（([^（）]+)）$/);
+    if (!m) continue;
+    const en = normEn(m[1]);
+    if (en && (key.indexOf(en) !== -1 || en.indexOf(key) !== -1)) return i;
+  }
+  return undefined;
+}
+
+/* 单条三元组的徽章（✅/⚠️ + 准确率） */
+function popmartAccBadge(it) {
+  const warn = it.status === '⚠️';
+  const acc = it.accuracy;
+  const accText = (acc == null) ? '待校验' : (acc + '%');
+  const tip = warn ? (' title="' + escAttr((it.rule || '') + ' ' + (it.note || '')) + '"') : '';
+  return '<span class="acc ' + (warn ? 'warn' : 'ok') + '"' + tip + '>' + (warn ? '⚠️ ' : '✅ ') + accText + '</span>';
+}
 
 function renderPopmartTriples() {
   const root = document.getElementById('popmart-triples');
@@ -1220,15 +1292,10 @@ function renderPopmartTriples() {
   groupsEl.innerHTML = rels.map(rel => {
     const rows = groups[rel];
     const list = rows.map(({ it, i }) => {
-      const warn = it.status === '⚠️';
-      const acc = it.accuracy;
-      const accText = (acc == null) ? '待校验' : (acc + '%');
-      const accCls = warn ? 'warn' : 'ok';
-      const tip = warn ? (' title="' + escAttr((it.rule || '') + ' ' + (it.note || '')) + '"') : '';
       return '<label class="popmart-item">' +
         '<input type="checkbox" data-triple-idx="' + i + '"' + (SELECTED_TRIPLES.has(i) ? ' checked' : '') + '>' +
         '<span class="triple">' + escHtml(it.subject) + '<span class="rel">' + escHtml(rel) + '</span>' + escHtml(it.object) + '</span>' +
-        '<span class="acc ' + accCls + '"' + tip + '>' + (warn ? '⚠️ ' : '✅ ') + accText + '</span>' +
+        popmartAccBadge(it) +
         '</label>';
     }).join('');
     return '<div class="popmart-group"><div class="popmart-group-head"><span>' + escHtml(rel) + '</span><span class="cnt">' + rows.length + ' 条</span></div>' + list + '</div>';
@@ -1402,14 +1469,15 @@ document.getElementById('lb-body').addEventListener('change', function(e) {
 });
 document.getElementById('submit-btn').addEventListener('click', submitNewWords);
 document.getElementById('filter-cal-type').addEventListener('change', renderCalendar);
-// 泡泡玛特三元组：勾选 + 写入（暂未开通）
-document.getElementById('popmart-groups').addEventListener('change', function(e) {
+// 泡泡玛特三元组：勾选（卡片与板块共用同一选区）
+document.addEventListener('change', function(e) {
   const t = e.target;
   if (!t || t.type !== 'checkbox' || t.dataset.tripleIdx === undefined) return;
   const idx = parseInt(t.dataset.tripleIdx, 10);
   if (t.checked) SELECTED_TRIPLES.add(idx); else SELECTED_TRIPLES.delete(idx);
   updatePopmartSubmitBar();
 });
+// 写入（暂未开通）
 document.getElementById('popmart-submit-btn').addEventListener('click', submitPopmartTriples);
 document.getElementById('snapshot-date').addEventListener('change', renderSnapshot);
 document.getElementById('snapshot-kw').addEventListener('input', renderSnapshot);
