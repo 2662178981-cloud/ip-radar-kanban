@@ -1274,9 +1274,13 @@ function popmartSeriesNameForText(text) {
   const list = (POPMART_TRIPLES && Array.isArray(POPMART_TRIPLES.series)) ? POPMART_TRIPLES.series : [];
   const t = String(text || '');
   for (const s of list) {
-    if (s.ip && t.indexOf(s.ip) !== -1) return s.name;
+    // 1) 联名方（更精确，优先于泛化品牌名）
+    if (s.collab && t.indexOf(s.collab) !== -1) return s.name;
+    // 2) 系列名去掉「系列」后缀
     const short = String(s.name || '').replace(/系列$/, '');
     if (short && t.indexOf(short) !== -1) return s.name;
+    // 3) IP 名（跳过泛化品牌「泡泡玛特」，避免把 VALORANT 等误匹配到联名系列）
+    if (s.ip && s.ip !== '泡泡玛特' && t.indexOf(s.ip) !== -1) return s.name;
   }
   return undefined;
 }
