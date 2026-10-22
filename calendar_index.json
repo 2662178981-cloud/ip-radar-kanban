@@ -1,4 +1,74 @@
 {
+  "01-01": [
+    {
+      "text": "元旦",
+      "year": 2027,
+      "month": 1,
+      "day": 1,
+      "category": "公历节日",
+      "isToday": false
+    }
+  ],
+  "02-05": [
+    {
+      "text": "除夕",
+      "year": 2027,
+      "month": 2,
+      "day": 5,
+      "category": "农历节日",
+      "isToday": false
+    }
+  ],
+  "02-06": [
+    {
+      "text": "春节",
+      "year": 2027,
+      "month": 2,
+      "day": 6,
+      "category": "农历节日",
+      "isToday": false
+    }
+  ],
+  "04-05": [
+    {
+      "text": "清明节",
+      "year": 2027,
+      "month": 4,
+      "day": 5,
+      "category": "公历节日",
+      "isToday": false
+    }
+  ],
+  "05-01": [
+    {
+      "text": "劳动节",
+      "year": 2027,
+      "month": 5,
+      "day": 1,
+      "category": "公历节日",
+      "isToday": false
+    }
+  ],
+  "06-09": [
+    {
+      "text": "端午节",
+      "year": 2027,
+      "month": 6,
+      "day": 9,
+      "category": "农历节日",
+      "isToday": false
+    }
+  ],
+  "09-15": [
+    {
+      "text": "中秋节",
+      "year": 2027,
+      "month": 9,
+      "day": 15,
+      "category": "农历节日",
+      "isToday": false
+    }
+  ],
   "09-25": [
     {
       "text": "兹加 Zsiga · 人生秀场 MINI Life is a Show MINI 可动人偶盲盒（官网 USD 21.99）",
@@ -203,6 +273,16 @@
           "secret": true
         }
       ]
+    }
+  ],
+  "10-01": [
+    {
+      "text": "国庆节",
+      "year": 2027,
+      "month": 10,
+      "day": 1,
+      "category": "公历节日",
+      "isToday": false
     }
   ],
   "10-02": [
@@ -414,7 +494,139 @@
       "month": 10,
       "day": 16,
       "category": "泡泡玛特",
-      "isToday": false
+      "isToday": false,
+      "variants": [
+        {
+          "name": "Takoyaki Barbell",
+          "en": "Takoyaki Barbell",
+          "cn": "",
+          "secret": false
+        },
+        {
+          "name": "Fries Are Coming",
+          "en": "Fries Are Coming",
+          "cn": "",
+          "secret": false
+        },
+        {
+          "name": "Cookie-Headphone DJ",
+          "en": "Cookie-Headphone DJ",
+          "cn": "",
+          "secret": false
+        },
+        {
+          "name": "Summer Flavor",
+          "en": "Summer Flavor",
+          "cn": "",
+          "secret": false
+        },
+        {
+          "name": "Share My Ice Pop",
+          "en": "Share My Ice Pop",
+          "cn": "",
+          "secret": false
+        },
+        {
+          "name": "Frosting Magician",
+          "en": "Frosting Magician",
+          "cn": "",
+          "secret": false
+        },
+        {
+          "name": "I'm Melting!",
+          "en": "I'm Melting!",
+          "cn": "",
+          "secret": false
+        },
+        {
+          "name": "Donut Float Trip",
+          "en": "Donut Float Trip",
+          "cn": "",
+          "secret": false
+        },
+        {
+          "name": "Caped Pretzel Girl",
+          "en": "Caped Pretzel Girl",
+          "cn": "",
+          "secret": false
+        },
+        {
+          "name": "Chip Duckling",
+          "en": "Chip Duckling",
+          "cn": "",
+          "secret": false
+        },
+        {
+          "name": "Burger Flag Bearer",
+          "en": "Burger Flag Bearer",
+          "cn": "",
+          "secret": false
+        },
+        {
+          "name": "Climbing Master",
+          "en": "Climbing Master",
+          "cn": "",
+          "secret": false
+        },
+        {
+          "name": "Cuteness Overload（隐藏款）",
+          "en": "Cuteness Overload",
+          "cn": "",
+          "secret": true
+        }
+      ]
+    },
+    {
+      "text": "精灵天团 THE MONSTERS · 一喵变猫 CAT MODE ON 盲盒（官网 USD 21.99）",
+      "year": 2026,
+      "month": 10,
+      "day": 16,
+      "category": "泡泡玛特",
+      "isToday": false,
+      "variants": [
+        {
+          "name": "三花喵（CALICO KITTY）",
+          "en": "CALICO KITTY",
+          "cn": "三花喵",
+          "secret": false
+        },
+        {
+          "name": "可可喵（COCOA KITTY）",
+          "en": "COCOA KITTY",
+          "cn": "可可喵",
+          "secret": false
+        },
+        {
+          "name": "暹罗喵（SIAMESE KITTY）",
+          "en": "SIAMESE KITTY",
+          "cn": "暹罗喵",
+          "secret": false
+        },
+        {
+          "name": "影子喵（MIDNIGHT KITTY）",
+          "en": "MIDNIGHT KITTY",
+          "cn": "影子喵",
+          "secret": false
+        },
+        {
+          "name": "波斯喵（PERSIAN KITTY）",
+          "en": "PERSIAN KITTY",
+          "cn": "波斯喵",
+          "secret": false
+        },
+        {
+          "name": "布偶喵（RAGDOLL KITTY）",
+          "en": "RAGDOLL KITTY",
+          "cn": "布偶喵",
+          "secret": false
+        },
+        {
+          "name": "缅因喵（隐藏款）",
+          "en": "MAINE COON KITTY",
+          "cn": "缅因喵",
+          "secret": true
+        }
+      ]
     }
   ],
   "10-17": [
@@ -435,6 +647,94 @@
       "day": 23,
       "category": "电影",
       "isToday": false
+    },
+    {
+      "text": "哭娃 CRYBABY · Crying Round n Round 手办盲盒（官网 USD 19.99）",
+      "year": 2026,
+      "month": 10,
+      "day": 23,
+      "category": "泡泡玛特",
+      "isToday": false,
+      "variants": [
+        {
+          "name": "马（THE HORSE）",
+          "en": "THE HORSE",
+          "cn": "马",
+          "secret": false
+        },
+        {
+          "name": "大象（THE ELEPHANT）",
+          "en": "THE ELEPHANT",
+          "cn": "大象",
+          "secret": false
+        },
+        {
+          "name": "长颈鹿（THE GIRAFFE）",
+          "en": "THE GIRAFFE",
+          "cn": "长颈鹿",
+          "secret": false
+        },
+        {
+          "name": "兔子（THE RABBIT）",
+          "en": "THE RABBIT",
+          "cn": "兔子",
+          "secret": false
+        },
+        {
+          "name": "小狗（THE DOG）",
+          "en": "THE DOG",
+          "cn": "小狗",
+          "secret": false
+        },
+        {
+          "name": "狮子（THE LION）",
+          "en": "THE LION",
+          "cn": "狮子",
+          "secret": false
+        },
+        {
+          "name": "小猪（THE PIG）",
+          "en": "THE PIG",
+          "cn": "小猪",
+          "secret": false
+        },
+        {
+          "name": "鹿（THE DEER）",
+          "en": "THE DEER",
+          "cn": "鹿",
+          "secret": false
+        },
+        {
+          "name": "豹（THE LEOPARD）",
+          "en": "THE LEOPARD",
+          "cn": "豹",
+          "secret": false
+        },
+        {
+          "name": "绵羊（THE SHEEP）",
+          "en": "THE SHEEP",
+          "cn": "绵羊",
+          "secret": false
+        },
+        {
+          "name": "熊猫（THE PANDA）",
+          "en": "THE PANDA",
+          "cn": "熊猫",
+          "secret": false
+        },
+        {
+          "name": "驴（THE DONKEY）",
+          "en": "THE DONKEY",
+          "cn": "驴",
+          "secret": false
+        },
+        {
+          "name": "独角兽（隐藏款）",
+          "en": "THE UNICORN",
+          "cn": "独角兽",
+          "secret": true
+        }
+      ]
     }
   ],
   "10-30": [
