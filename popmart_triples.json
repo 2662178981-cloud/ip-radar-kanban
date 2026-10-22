@@ -1,7 +1,7 @@
 {
  "source": "泡泡玛特新品日历",
- "generatedAt": "2026-10-20",
- "count": 55,
+ "generatedAt": "2026-10-22",
+ "count": 92,
  "items": [
   {
    "subject": "Zsiga",
@@ -15,6 +15,38 @@
    "subject": "Zsiga 人生秀场系列",
    "relation": "同义",
    "object": "Zsiga Life is a Show Series",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "无声的独白（The Unspoken）",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "积极的小狗（It's Okay）",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "存档的记忆（Sealed Happiness）",
+   "series": "Zsiga 人生秀场系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Zsiga 人生秀场系列",
+   "relation": "系列款名",
+   "object": "忙碌的脑袋（A Busy Mind）",
    "series": "Zsiga 人生秀场系列",
    "accuracy": 100,
    "status": "✅"
@@ -38,14 +70,6 @@
   {
    "subject": "Zsiga 人生秀场系列",
    "relation": "系列款名",
-   "object": "忙碌的脑袋（A Busy Mind）",
-   "series": "Zsiga 人生秀场系列",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "Zsiga 人生秀场系列",
-   "relation": "系列款名",
    "object": "雨后的天空（After the Rain）",
    "series": "Zsiga 人生秀场系列",
    "accuracy": 100,
@@ -62,31 +86,7 @@
   {
    "subject": "Zsiga 人生秀场系列",
    "relation": "系列款名",
-   "object": "无声的独白（The Unspoken）",
-   "series": "Zsiga 人生秀场系列",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "Zsiga 人生秀场系列",
-   "relation": "系列款名",
-   "object": "存档的记忆（Sealed Happiness）",
-   "series": "Zsiga 人生秀场系列",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "Zsiga 人生秀场系列",
-   "relation": "系列款名",
-   "object": "积极的小狗（It's Okay）",
-   "series": "Zsiga 人生秀场系列",
-   "accuracy": 100,
-   "status": "✅"
-  },
-  {
-   "subject": "Zsiga 人生秀场系列",
-   "relation": "系列款名",
-   "object": "自由的木偶（隐藏款）",
+   "object": "寻路（隐藏款）",
    "series": "Zsiga 人生秀场系列",
    "accuracy": 100,
    "status": "✅"
@@ -442,6 +442,302 @@
    "series": "Merodi Snack Time系列",
    "accuracy": 100,
    "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "章鱼烧杠铃（Takoyaki Barbell）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "薯条来袭（Fries Are Coming）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "饼干耳机DJ（Cookie-Headphone DJ）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "夏日风味（Summer Flavor）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "分享冰棒（Share My Ice Pop）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "糖霜魔术师（Frosting Magician）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "融化中（I'm Melting!）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "甜甜圈漂流（Donut Float Trip）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "披风脆饼女孩（Caped Pretzel Girl）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "薯片小鸭（Chip Duckling）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "汉堡旗手（Burger Flag Bearer）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "攀爬大师（Climbing Master）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "Merodi Snack Time系列",
+   "relation": "系列款名",
+   "object": "可爱超载（隐藏款）",
+   "series": "Merodi Snack Time系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "THE MONSTERS",
+   "relation": "IP系列",
+   "object": "THE MONSTERS 一喵变猫系列",
+   "series": "THE MONSTERS 一喵变猫系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "THE MONSTERS 一喵变猫系列",
+   "relation": "同义",
+   "object": "THE MONSTERS CAT MODE ON Series",
+   "series": "THE MONSTERS 一喵变猫系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "THE MONSTERS 一喵变猫系列",
+   "relation": "系列款名",
+   "object": "三花喵（CALICO KITTY）",
+   "series": "THE MONSTERS 一喵变猫系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "THE MONSTERS 一喵变猫系列",
+   "relation": "系列款名",
+   "object": "可可喵（COCOA KITTY）",
+   "series": "THE MONSTERS 一喵变猫系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "THE MONSTERS 一喵变猫系列",
+   "relation": "系列款名",
+   "object": "暹罗喵（SIAMESE KITTY）",
+   "series": "THE MONSTERS 一喵变猫系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "THE MONSTERS 一喵变猫系列",
+   "relation": "系列款名",
+   "object": "影子喵（MIDNIGHT KITTY）",
+   "series": "THE MONSTERS 一喵变猫系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "THE MONSTERS 一喵变猫系列",
+   "relation": "系列款名",
+   "object": "波斯喵（PERSIAN KITTY）",
+   "series": "THE MONSTERS 一喵变猫系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "THE MONSTERS 一喵变猫系列",
+   "relation": "系列款名",
+   "object": "布偶喵（RAGDOLL KITTY）",
+   "series": "THE MONSTERS 一喵变猫系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "THE MONSTERS 一喵变猫系列",
+   "relation": "系列款名",
+   "object": "缅因喵（隐藏款）",
+   "series": "THE MONSTERS 一喵变猫系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY",
+   "relation": "IP系列",
+   "object": "CRYBABY Crying Round n Round系列",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "同义",
+   "object": "CRYBABY Crying Round n Round Series",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "马（THE HORSE）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "大象（THE ELEPHANT）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "长颈鹿（THE GIRAFFE）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "兔子（THE RABBIT）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "小狗（THE DOG）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "狮子（THE LION）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "小猪（THE PIG）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "鹿（THE DEER）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "豹（THE LEOPARD）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "绵羊（THE SHEEP）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "熊猫（THE PANDA）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "驴（THE DONKEY）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
+  },
+  {
+   "subject": "CRYBABY Crying Round n Round系列",
+   "relation": "系列款名",
+   "object": "独角兽（隐藏款）",
+   "series": "CRYBABY Crying Round n Round系列",
+   "accuracy": 100,
+   "status": "✅"
   }
  ],
  "series": [
@@ -474,11 +770,23 @@
    "ip": "Merodi",
    "en": "Merodi Snack Time Series",
    "collab": null
+  },
+  {
+   "name": "THE MONSTERS 一喵变猫系列",
+   "ip": "THE MONSTERS",
+   "en": "THE MONSTERS CAT MODE ON Series",
+   "collab": null
+  },
+  {
+   "name": "CRYBABY Crying Round n Round系列",
+   "ip": "CRYBABY",
+   "en": "CRYBABY Crying Round n Round Series",
+   "collab": null
   }
  ],
  "summary": {
-  "total_rows": 55,
-  "passed": 55,
+  "total_rows": 92,
+  "passed": 92,
   "pass_rate": 100.0,
   "error_count": 0,
   "warn_count": 0,
