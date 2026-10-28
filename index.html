@@ -734,7 +734,7 @@ function renderLeaderboard() {
     const newWords = ipNames.length ? ipNames : (d._orig ? [d._orig] : []);
     const checked = newWords.some(w => SELECTED_NEW.has(w));
     const checkHtml = isNew
-      ? '<label class="new-check-wrap" title="勾选后提交到词库"><input type="checkbox" class="new-check" data-words="' + escHtml(JSON.stringify(newWords)) + '"' + (checked ? ' checked' : '') + '></label>'
+      ? '<label class="new-check-wrap" title="勾选后提交到词库"><input type="checkbox" class="new-check" data-words="' + encodeURIComponent(JSON.stringify(newWords)) + '"' + (checked ? ' checked' : '') + '></label>'
       : '';
     let subHtml = '';
     if (d._unmatched) {
@@ -1562,7 +1562,7 @@ document.getElementById('lb-body').addEventListener('change', function(e) {
   const t = e.target;
   if (!t || !t.classList || !t.classList.contains('new-check')) return;
   let words = [];
-  try { words = JSON.parse(t.dataset.words || '[]'); } catch (err) { words = []; }
+  try { words = JSON.parse(decodeURIComponent(t.dataset.words || '%5B%5D')); } catch (err) { words = []; }
   words.forEach(w => { if (t.checked) SELECTED_NEW.add(w); else SELECTED_NEW.delete(w); });
   updateSubmitBar();
 });
