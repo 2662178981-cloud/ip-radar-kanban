@@ -535,6 +535,7 @@ let DIESUN_INDEX = null;
 let HEAT_MAP = null;  /* IP名 -> 热度记录 */
 let HEAT_ROWS = null;
 const SELECTED_NEW = new Set();  /* 已勾选待写入词库的新词 */
+let SUBMIT_PENDING = false;
 let POPMART_TRIPLES = null;  /* 泡泡玛特潮玩IP三元组数据 */
 const SELECTED_TRIPLES = new Set();  /* 已勾选待写入 Joyspace 的三元组下标 */
 let POPMART_EN_MAP = null;  /* 系列款名英文名(归一化) -> 三元组下标 */
@@ -800,36 +801,67 @@ function updateSubmitBar() {
   const cnt = document.getElementById('submit-count');
   const btn = document.getElementById('submit-btn');
   if (cnt) cnt.textContent = '已选 ' + SELECTED_NEW.size + ' 个新词';
-  if (btn) btn.disabled = SELECTED_NEW.size === 0;
+  if (btn) btn.disabled = SELECTED_NEW.size === 0 || SUBMIT_PENDING;
 }
 
 async function submitNewWords() {
   const words = Array.from(SELECTED_NEW);
-  if (!words.length) return;
+  if (!words.length || SUBMIT_PENDING) return;
+  let queuedId = null;
   const statusEl = document.getElementById('submit-status');
   if (statusEl) statusEl.textContent = '提交中…';
   const url = (typeof window !== 'undefined' && window.IP_RADAR_SUBMIT_URL)
-    || 'https://7xxeoodtnsp9.joyapp.jd.com/submit-new-words';
+    || 'http://127.0.0.1:8765/submissions';
   try {
+    const candidates = new Map();
+    aggregateBoard((PAYLOAD.ipBoard && PAYLOAD.ipBoard.items) || []).forEach(d => {
+      if (d.ip_status !== '新value' && d.ip_status !== 'new') return;
+      const ipNames = (d._names || []).filter(n => n && n !== d._orig);
+      (ipNames.length ? ipNames : [d._orig]).forEach(w => {
+        if (w && d.ipCategory) candidates.set(w, d.ipCategory);
+      });
+    });
+    const entries = words.map(word => ({word, category: candidates.get(word)}));
+    if (entries.some(x => !x.category)) throw new Error('有词条缺少词库一级类目');
     const resp = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ words: words })
+      body: JSON.stringify({ generatedAt: PAYLOAD.generatedAt, entries })
     });
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
     const data = await resp.json();
-    if (data && data.ok) {
-      if (statusEl) statusEl.textContent = '已写入 ' + (data.count || words.length) + ' 个新词到词库';
-      SELECTED_NEW.clear();
+    if (!resp.ok || !data.id || !['pending','processing','done'].includes(data.status)) {
+      throw new Error(data.error || 'HTTP ' + resp.status);
+    }
+    queuedId = data.id;
+    SUBMIT_PENDING = true;
+    updateSubmitBar();
+    if (statusEl) statusEl.textContent = '已交给 JoyCode，等待词库写入与回读…';
+    let state = data.status === 'done' ? {status: 'done', result: '词库已写入并回读'} : null;
+    for (let i = 0; i < 90; i++) {
+      if (state) break;
+      await new Promise(resolve => setTimeout(resolve, 4000));
+      const check = await fetch(url + '/' + encodeURIComponent(data.id), {cache: 'no-store'});
+      if (!check.ok) throw new Error('无法查询 JoyCode 写入结果');
+      state = await check.json();
+      if (state.status === 'done' || state.status === 'error') break;
+    }
+    if (state && state.status === 'done') {
+      if (statusEl) statusEl.textContent = state.result || 'JoyCode 已写入并回读词库';
+      words.forEach(w => SELECTED_NEW.delete(w));
       renderLeaderboard();
-    } else {
-      const err = (data && data.error) || '未知错误';
-      if (statusEl) statusEl.textContent = '提交失败：' + err;
-      copySelectedToClipboard(words, statusEl);
+    } else if (state && state.status === 'error') {
+      if (statusEl) statusEl.textContent = '词库写入失败：' + (state.error || '未知错误');
+    } else if (statusEl) {
+      statusEl.textContent = 'JoyCode 仍在处理，提交编号：' + data.id;
     }
   } catch (e) {
-    if (statusEl) statusEl.textContent = '提交失败：' + e.message;
-    copySelectedToClipboard(words, statusEl);
+    if (statusEl) statusEl.textContent = queuedId
+      ? ('已交给 JoyCode，状态查询失败（编号 ' + queuedId + '）：' + e.message)
+      : ('提交未完成：' + e.message);
+    if (!queuedId) copySelectedToClipboard(words, statusEl);
+  } finally {
+    SUBMIT_PENDING = false;
+    updateSubmitBar();
   }
 }
 
