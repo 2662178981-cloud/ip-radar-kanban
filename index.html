@@ -170,21 +170,19 @@
   .popmart-triples { margin-top: 18px; border: 1px solid #fde68a; border-radius: 10px; background: #fffbeb; padding: 12px 14px; }
   .popmart-triples-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
   .popmart-title { font-size: 15px; font-weight: 700; color: #92400e; }
-  .popmart-pass { font-size: 12px; font-weight: 700; color: #047857; background: #d1fae5; padding: 2px 8px; border-radius: 999px; }
+  .popmart-quality { font-size: 12px; color: #92400e; }
+  .popmart-quality-details { margin: 4px 0 12px; font-size: 12px; color: #475569; line-height: 1.8; }
+  .popmart-quality-details summary { cursor: pointer; }
+  .popmart-quality-details ul { padding-left: 20px; max-height: 260px; overflow: auto; }
+  .first-release { display: inline-block; margin-left: 6px; border-radius: 4px; padding: 1px 6px; background: #dcfce7; color: #166534; font-size: 11px; font-weight: 700; white-space: nowrap; }
   .popmart-meta { font-size: 12px; color: #6b7280; }
   .popmart-meta b { color: #b45309; }
-  .popmart-submit-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 12px; padding: 8px 10px; background: #fef3c7; border: 1px solid #fcd34d; border-radius: 8px; }
-  .popmart-submit-btn { padding: 5px 14px; border-radius: 8px; border: none; background: #f59e0b; color: #fff; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
-  .popmart-submit-btn:hover:not(:disabled) { background: #d97706; }
-  .popmart-submit-btn:disabled { background: #e5e7eb; color: #9ca3af; cursor: not-allowed; }
-  .popmart-submit-status { font-size: 12px; color: #475569; }
   .popmart-groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
   .popmart-group { background: #fff; border: 1px solid #fde68a; border-radius: 8px; padding: 8px 10px; }
   .popmart-group-head { font-size: 13px; font-weight: 700; color: #92400e; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center; }
   .popmart-group-head .cnt { color: #9ca3af; font-weight: 600; font-size: 11px; }
-  .popmart-item { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; border-bottom: 1px dashed #f3f4f6; font-size: 12px; color: #374151; cursor: pointer; }
+  .popmart-item { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; border-bottom: 1px dashed #f3f4f6; font-size: 12px; color: #374151; }
   .popmart-item:last-child { border-bottom: none; }
-  .popmart-item input[type=checkbox] { margin-top: 2px; flex: 0 0 auto; }
   .popmart-item .triple { flex: 1 1 auto; word-break: break-word; line-height: 1.6; }
   .popmart-item .rel { display: inline-block; margin: 0 4px; padding: 0 6px; border-radius: 5px; font-size: 11px; font-weight: 700; color: #fff; background: #f59e0b; }
   .popmart-item .acc { flex: 0 0 auto; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 999px; white-space: nowrap; }
@@ -194,8 +192,6 @@
   .popmart-series-meta .m-ip { font-weight: 700; color: #92400e; }
   .popmart-series-meta .m-collab { color: #b45309; }
   .popmart-series-meta .m-en { color: #6b7280; font-style: italic; }
-  .popmart-copy { display: block; width: 100%; margin-top: 8px; padding: 6px 10px; border: 1px solid #fcd34d; border-radius: 8px; background: #fff; color: #b45309; font-size: 12px; font-weight: 600; cursor: pointer; font-family: inherit; }
-  .popmart-copy:hover { background: #fef3c7; }
   .cal-triple { display: flex; align-items: flex-start; gap: 6px; cursor: pointer; }
   .cal-triple input[type=checkbox] { margin-top: 3px; flex: 0 0 auto; }
   .cal-triple > span { flex: 1 1 auto; }
@@ -353,13 +349,10 @@
     <div class="popmart-triples" id="popmart-triples">
       <div class="popmart-triples-head">
         <span class="popmart-title">🧸 潮玩IP三元组关系</span>
-        <span class="popmart-pass" id="popmart-pass"></span>
         <span class="popmart-meta">新增<b id="popmart-round-added-count">—</b>条，当前关系库共<b id="popmart-library-count">—</b>条</span>
+        <span class="popmart-quality" id="popmart-quality-summary"></span>
       </div>
-      <div class="popmart-submit-bar">
-        <span class="popmart-submit-status" id="popmart-submit-status"></span>
-        <button type="button" class="popmart-submit-btn" id="popmart-submit-btn" disabled>复制所选三元组</button>
-      </div>
+      <div id="popmart-quality-details"></div>
       <div class="popmart-groups" id="popmart-groups"></div>
     </div>
   </div>
@@ -561,7 +554,6 @@ const SELECTED_NEW = new Set();  /* 已勾选待写入词库的新词 */
 const CONFIRMED_ADDED = new Map(); /* JoySpace 回读确认后新增的词 */
 let SUBMIT_PENDING = false;
 let POPMART_TRIPLES = null;  /* 泡泡玛特本周三元组快照 */
-const SELECTED_TRIPLES = new Set();  /* 已勾选、尚未收录的三元组下标 */
 let POPMART_EN_MAP = null;  /* 系列款名英文名(归一化) -> 三元组下标 */
 
 async function loadAll() {
@@ -593,7 +585,6 @@ async function loadAll() {
   const localDate = [new Date().getFullYear(), String(new Date().getMonth() + 1).padStart(2, '0'), String(new Date().getDate()).padStart(2, '0')].join('-');
   POPMART_TRIPLES = triples && triples.weekStart <= localDate && localDate <= triples.weekEnd
     ? triples : {...triples, items: [], series: [], pending: [], stale: true};
-  SELECTED_TRIPLES.clear();
   POPMART_EN_MAP = null;
   // 热度数据：先加载索引，再加载最新 raw 文件（失败不影响主流程）
   try {
@@ -1073,11 +1064,10 @@ function renderCalendar() {
     }
     return '<div class="' + cardCls + '">' +
       '<div class="cal-date-badge" style="' + badgeStyle + '">' + escHtml(dateStr) + '</div>' +
-      '<div class="cal-events"><div class="cal-event' + (seriesName ? ' cal-series-name' : '') + '">' + escHtml(title) + '</div></div>' +
+      '<div class="cal-events"><div class="cal-event' + (seriesName ? ' cal-series-name' : '') + '">' + escHtml(title) + (seriesName ? firstReleaseBadge(popmartSeriesMeta(seriesName)) : '') + '</div></div>' +
       extra +
     '</div>';
   }).join('');
-  bindCalCards();
 }
 
 /* ===== 热搜风格词 ===== */
@@ -1295,35 +1285,6 @@ function openLightbox(src, alt) {
 }
 
 /* 系列卡片展开 / 收起 + 复制未收录关系 */
-function bindCalCards() {
-  const grid = document.getElementById('cal-grid');
-  if (!grid) return;
-  grid.querySelectorAll('.cal-card.clickable').forEach(card => {
-    card.addEventListener('click', () => card.classList.toggle('open'));
-  });
-  grid.querySelectorAll('.cal-copy').forEach(btn => {
-    btn.addEventListener('click', e => {
-      e.stopPropagation();   // 别把卡片一起收起来
-      const card = btn.closest('.cal-card');
-      const triples = card ? card.querySelectorAll('[data-subject][data-relation][data-object]') : [];
-      const unrecorded = Array.prototype.filter.call(triples, x => !x.querySelector('input:disabled'));
-      const txt = unrecorded.length
-        ? unrecorded.map(x => x.dataset.subject + ' ' + x.dataset.relation + ' ' + x.dataset.object).join('\n')
-        : (card ? Array.prototype.map.call(card.querySelectorAll('.cal-var'), x => x.textContent.trim()).join('\n') : '');
-      if (!txt) return;
-      const label = btn.textContent;
-      copyToClipboard(txt).then(ok => {
-        btn.textContent = ok ? '已复制 ✓' : '复制失败，请手动选中';
-        setTimeout(() => { btn.textContent = label; }, 1600);
-      });
-    });
-  });
-  // 卡片内的三元组勾选框：点击不触发展开/收起
-  grid.querySelectorAll('.cal-triple, .popmart-item').forEach(lbl => {
-    lbl.addEventListener('click', e => e.stopPropagation());
-  });
-}
-
 function isPopmartEvent(c) {
   return ['泡泡玛特', 'popmart', '新品'].includes(c.category);
 }
@@ -1403,6 +1364,8 @@ function popmartSeriesNameForText(text) {
 
 /* 单条三元组的徽章（✅/⚠️ + 准确率） */
 function popmartAccBadge(it) {
+  if (it.validated === true) return '<span class="acc ok">' +
+    (it.recorded === true ? '已校验并收录' : '已校验，待收录') + '</span>';
   const warn = it.status !== '✅';
   const acc = it.accuracy;
   const accText = (acc == null) ? '待校验' : (acc + '%');
@@ -1415,6 +1378,37 @@ function popmartAccBadge(it) {
 function popmartSeriesMeta(name) {
   const list = (POPMART_TRIPLES && Array.isArray(POPMART_TRIPLES.series)) ? POPMART_TRIPLES.series : [];
   return list.find(s => s.name === name) || {};
+}
+
+function firstReleaseBadge(meta) {
+  return meta.firstReleaseVerified === true
+    ? '<span class="first-release" title="官方已确认新IP首发系列；仅从2026年10月29日本轮起标注，不回溯历史">首发</span>' : '';
+}
+
+function renderPopmartQuality() {
+  const summary = document.getElementById('popmart-quality-summary');
+  const details = document.getElementById('popmart-quality-details');
+  const q = POPMART_TRIPLES?.libraryQuality;
+  const numbers = q && [q.scannedRows, q.confirmedErrorRows, q.attentionRows, q.acceptedExceptionRows];
+  if (!q || q.verified !== true || q.scope !== 'all_library' ||
+      !numbers.every(n => Number.isInteger(n) && n >= 0) ||
+      q.scannedRows !== POPMART_TRIPLES.relationLibraryCount || !q.checkedAt || !q.inputFingerprint) {
+    summary.textContent = '全库校验结果待更新';
+    details.innerHTML = '';
+    return;
+  }
+  summary.textContent = '全库扫描' + q.scannedRows + '条：确定性问题' + q.confirmedErrorRows + '条 · 需关注' + q.attentionRows + '条';
+  const labels = {confirmed_error: '确定性问题', needs_attention: '需关注', accepted_exception: '口径例外'};
+  details.innerHTML = '<details class="popmart-quality-details"><summary>查看本轮IP校验详情（口径例外' + q.acceptedExceptionRows + '条）</summary>' +
+    '<div>IP校验SKILL：ip-graph-qa；全库机器扫描，语义复核范围：' + escHtml(q.semanticScope || '') + '</div>' +
+    '<div>校验时间：' + escHtml(q.checkedAt) +
+    '；机器命中错误' + escHtml(q.machineErrorCount) + '条、警告' + escHtml(q.machineWarningCount) +
+    '条；结构扫描通过率' + escHtml(q.machinePassRate) + '%（不是全库语义准确率）。历史遗留问题本轮未自动修改。</div>' +
+    '<ul>' + (q.findings || []).map(f => '<li>' + escHtml(labels[f.decision] || '需关注') +
+      ' · 关系表行' + escHtml(f.sheetRow) + ' · ' + escHtml(f.rule_id) + '：' +
+      escHtml(f.subject) + ' / ' + escHtml(f.relation) + ' / ' + escHtml(f.object) +
+      '；' + escHtml(f.reason) + '</li>').join('') + '</ul>' +
+    '<a href="popmart_library_validate_result.json" target="_blank" rel="noopener">完整校验报告</a></details>';
 }
 
 /* 某系列下的三元组行（含下标），按关系固定顺序排序 */
@@ -1430,15 +1424,14 @@ function popmartSeriesRows(name) {
   return rows;
 }
 
-/* 渲染某系列的三元组列表（勾选 + 校验徽章） */
+/* 本周有效关系明细，无二次勾选/复制入口。 */
 function popmartSeriesListHtml(name) {
   const rows = popmartSeriesRows(name);
-  return rows.map(({ it, i }) => {
-    return '<label class="popmart-item" data-subject="' + escAttr(it.subject) + '" data-relation="' + escAttr(it.relation) + '" data-object="' + escAttr(it.object) + '">' +
-      '<input type="checkbox" data-triple-idx="' + i + '"' + (it.recorded ? ' disabled' : (SELECTED_TRIPLES.has(i) ? ' checked' : '')) + '>' +
+  return rows.map(({ it }) => {
+    return '<div class="popmart-item" data-subject="' + escAttr(it.subject) + '" data-relation="' + escAttr(it.relation) + '" data-object="' + escAttr(it.object) + '">' +
       '<span class="triple">' + escHtml(it.subject) + '<span class="rel">' + escHtml(it.relation) + '</span>' + escHtml(it.object) + '</span>' +
-      (it.recorded ? '<span class="acc ok">已收录</span>' : popmartAccBadge(it)) +
-      '</label>';
+      popmartAccBadge(it) +
+      '</div>';
   }).join('');
 }
 
@@ -1452,21 +1445,17 @@ function renderPopmartTriples() {
     countsVerified && Number.isInteger(roundAdded) && roundAdded >= 0 ? roundAdded : '—';
   document.getElementById('popmart-library-count').textContent =
     countsVerified && Number.isInteger(libraryCount) && libraryCount >= 0 ? libraryCount : '—';
+  renderPopmartQuality();
   const items = (POPMART_TRIPLES && Array.isArray(POPMART_TRIPLES.items)) ? POPMART_TRIPLES.items : [];
   if (!items.length) {
     root.style.display = '';
-    document.getElementById('popmart-pass').textContent = POPMART_TRIPLES?.stale ? '本周数据待更新' : '待中文核查';
     document.getElementById('popmart-groups').innerHTML = '<div class="popmart-group">' +
       (POPMART_TRIPLES?.stale ? '本周快照尚未更新，旧周关系已隐藏。' :
         '本周 ' + (POPMART_TRIPLES?.pending || []).length + ' 个新品系列待核实官方中文系列名及款名；暂不发布未经核实的三元组。') + '</div>';
-    updatePopmartSubmitBar();
     return;
   }
   root.style.display = '';
-  const passEl = document.getElementById('popmart-pass');
   const groupsEl = document.getElementById('popmart-groups');
-  const passRate = (typeof POPMART_TRIPLES.passRate === 'number') ? POPMART_TRIPLES.passRate : null;
-  if (passEl) passEl.textContent = passRate != null ? ('校验通过率 ' + passRate + '%') : '';
   // 按系列展开（顺序取 series 元信息，缺失的系列兜底排后）
   const seriesOrder = (POPMART_TRIPLES && Array.isArray(POPMART_TRIPLES.series)) ? POPMART_TRIPLES.series.map(s => s.name) : [];
   const groups = {};
@@ -1487,34 +1476,13 @@ function renderPopmartTriples() {
         (meta.collab ? '<span class="m-collab">× ' + escHtml(meta.collab) + '</span>' : '') +
         (meta.en ? '<span class="m-en">' + escHtml(meta.en) + '</span>' : '') +
         '</div>' : '';
-    const newCount = rows.filter(r => !r.it.recorded).length;
+    const newCount = rows.length;
     return '<div class="popmart-group popmart-series">' +
-      '<div class="popmart-group-head"><span>' + escHtml(key) + '</span><span class="cnt">新增 ' + newCount + ' 条</span></div>' +
+      '<div class="popmart-group-head"><span>' + escHtml(key) + firstReleaseBadge(meta) + '</span><span class="cnt">新增 ' + newCount + ' 条</span></div>' +
       metaHtml +
       popmartSeriesListHtml(key) +
-      '<button type="button" class="popmart-copy" data-series="' + escAttr(key) + '"' + (!newCount ? ' disabled' : '') + '>复制本系列新增三元组</button>' +
       '</div>';
   }).join('');
-  updatePopmartSubmitBar();
-}
-
-function updatePopmartSubmitBar() {
-  const btn = document.getElementById('popmart-submit-btn');
-  const status = document.getElementById('popmart-submit-status');
-  const cnt = document.getElementById('popmart-sel-count');
-  if (cnt) cnt.textContent = SELECTED_TRIPLES.size;
-  if (btn) btn.disabled = SELECTED_TRIPLES.size === 0;
-  if (status && !status.textContent) status.textContent = '勾选卡片中的关系后可复制';
-}
-
-function submitPopmartTriples() {
-  const items = (POPMART_TRIPLES && Array.isArray(POPMART_TRIPLES.items)) ? POPMART_TRIPLES.items : [];
-  const selected = Array.from(SELECTED_TRIPLES).sort((a, b) => a - b).map(i => items[i]).filter(it => it && !it.recorded);
-  const status = document.getElementById('popmart-submit-status');
-  const lines = selected.map(it => it.subject + ' ' + it.relation + ' ' + it.object);
-  copyToClipboard(lines.join('\n')).then(ok => {
-    if (status) status.textContent = ok ? '已复制 ' + selected.length + ' 条三元组' : '复制失败，请使用系列卡片底部的复制按钮';
-  });
 }
 
 /* 复制：优先用剪贴板 API，失败（非 HTTPS 等）退回 execCommand */
@@ -1665,31 +1633,6 @@ document.getElementById('lb-body').addEventListener('change', onNewWordSelection
 document.getElementById('platform-body').addEventListener('change', onNewWordSelection);
 document.getElementById('submit-btn').addEventListener('click', submitNewWords);
 document.getElementById('filter-cal-type').addEventListener('change', renderCalendar);
-// 泡泡玛特三元组：勾选（卡片与板块共用同一选区）
-document.addEventListener('change', function(e) {
-  const t = e.target;
-  if (!t || t.type !== 'checkbox' || t.dataset.tripleIdx === undefined) return;
-  const idx = parseInt(t.dataset.tripleIdx, 10);
-  if (POPMART_TRIPLES?.items?.[idx]?.recorded) { t.checked = false; return; }
-  if (t.checked) SELECTED_TRIPLES.add(idx); else SELECTED_TRIPLES.delete(idx);
-  document.querySelectorAll('input[data-triple-idx="' + idx + '"]').forEach(box => { box.checked = t.checked; });
-  updatePopmartSubmitBar();
-});
-// 底部复制兜底
-document.getElementById('popmart-submit-btn').addEventListener('click', submitPopmartTriples);
-// 系列卡片复制兜底：只复制本系列尚未收录的三元组
-document.addEventListener('click', function(e) {
-  const btn = e.target.closest ? e.target.closest('.popmart-copy') : null;
-  if (!btn) return;
-  const name = btn.dataset.series;
-  const rows = popmartSeriesRows(name);
-  const txt = rows.filter(r => !r.it.recorded).map(r => r.it.subject + ' ' + r.it.relation + ' ' + r.it.object).join('\n');
-  if (!txt) return;
-  copyToClipboard(txt).then(ok => {
-    btn.textContent = ok ? '已复制 ✓' : '复制失败，请手动选中';
-    setTimeout(() => { btn.textContent = '复制本系列新增三元组'; }, 1600);
-  });
-});
 document.getElementById('snapshot-date').addEventListener('change', renderSnapshot);
 document.getElementById('snapshot-kw').addEventListener('input', renderSnapshot);
 document.getElementById('snapshot-clear').addEventListener('click', function() {
