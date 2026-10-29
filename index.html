@@ -349,7 +349,7 @@
     <div class="popmart-triples" id="popmart-triples">
       <div class="popmart-triples-head">
         <span class="popmart-title">🧸 潮玩IP三元组关系</span>
-        <span class="popmart-meta">新增<b id="popmart-round-added-count">—</b>条，当前关系库共<b id="popmart-library-count">—</b>条</span>
+        <span class="popmart-meta">新增<b id="popmart-round-added-count">—</b>条，当前关系库共<b id="popmart-library-count">—</b>条。</span>
         <span class="popmart-quality" id="popmart-quality-summary"></span>
       </div>
       <div id="popmart-quality-details"></div>
@@ -1389,25 +1389,35 @@ function renderPopmartQuality() {
   const summary = document.getElementById('popmart-quality-summary');
   const details = document.getElementById('popmart-quality-details');
   const q = POPMART_TRIPLES?.libraryQuality;
-  const numbers = q && [q.scannedRows, q.confirmedErrorRows, q.attentionRows, q.acceptedExceptionRows];
+  const numbers = q && [q.scannedRows, q.confirmedErrorRows, q.attentionRows];
   if (!q || q.verified !== true || q.scope !== 'all_library' ||
       !numbers.every(n => Number.isInteger(n) && n >= 0) ||
-      q.scannedRows !== POPMART_TRIPLES.relationLibraryCount || !q.checkedAt || !q.inputFingerprint) {
-    summary.textContent = '全库校验结果待更新';
+      q.scannedRows !== POPMART_TRIPLES.relationLibraryCount || !q.checkedAt || !q.inputFingerprint ||
+      q.machineResult?.completed !== true || q.semanticResult?.completed !== true ||
+      q.machineResult.scannedRows !== q.scannedRows ||
+      !Number.isInteger(q.machineResult.confirmedErrorRows) || q.machineResult.confirmedErrorRows < 0 ||
+      !Number.isInteger(q.semanticResult.reviewedRows) || q.semanticResult.reviewedRows < 0 ||
+      q.semanticResult.confirmedErrorRows !== q.confirmedErrorRows || q.semanticResult.attentionRows !== q.attentionRows ||
+      typeof q.errorRate !== 'number' || !Number.isFinite(q.errorRate) || q.errorRate < 0 || q.errorRate > 100 ||
+      q.errorRate !== Math.round(q.confirmedErrorRows / q.scannedRows * 10000) / 100) {
+    summary.textContent = '校验结果待更新';
     details.innerHTML = '';
     return;
   }
-  summary.textContent = '全库扫描' + q.scannedRows + '条：确定性问题' + q.confirmedErrorRows + '条 · 需关注' + q.attentionRows + '条';
-  const labels = {confirmed_error: '确定性问题', needs_attention: '需关注', accepted_exception: '口径例外'};
-  details.innerHTML = '<details class="popmart-quality-details"><summary>查看本轮IP校验详情（口径例外' + q.acceptedExceptionRows + '条）</summary>' +
-    '<div>IP校验SKILL：ip-graph-qa；全库机器扫描，语义复核范围：' + escHtml(q.semanticScope || '') + '</div>' +
-    '<div>校验时间：' + escHtml(q.checkedAt) +
-    '；机器命中错误' + escHtml(q.machineErrorCount) + '条、警告' + escHtml(q.machineWarningCount) +
-    '条；结构扫描通过率' + escHtml(q.machinePassRate) + '%（不是全库语义准确率）。历史遗留问题本轮未自动修改。</div>' +
-    '<ul>' + (q.findings || []).map(f => '<li>' + escHtml(labels[f.decision] || '需关注') +
+  summary.textContent = '校验结果：确定性问题' + q.confirmedErrorRows + '条，错误率' + q.errorRate + '%。';
+  const labels = {confirmed_error: '确定性问题', needs_attention: '需关注'};
+  const findings = (q.findings || []).filter(f => f.decision === 'confirmed_error' || f.decision === 'needs_attention');
+  details.innerHTML = '<details class="popmart-quality-details"><summary>查看本轮IP校验详情</summary>' +
+    '<div>IP校验SKILL：ip-graph-qa；校验时间：' + escHtml(q.checkedAt) + '</div>' +
+    '<div>机器校验：全库扫描' + q.scannedRows + '条，确定性错误' + escHtml(String(q.machineResult.confirmedErrorRows)) + '条。</div>' +
+    '<div>语义校验：复核' + escHtml(String(q.semanticResult.reviewedRows)) + '条，确认错误' +
+      escHtml(String(q.semanticResult.confirmedErrorRows)) + '条，需关注' + escHtml(String(q.semanticResult.attentionRows)) + '条。</div>' +
+    '<div>综合校验：确定性问题' + q.confirmedErrorRows + '条，错误率' + q.errorRate + '%。' +
+      '错误率按确认问题关系数除以全库有效关系数计算。</div>' +
+    (findings.length ? '<ul>' + findings.map(f => '<li>' + escHtml(labels[f.decision]) +
       ' · 关系表行' + escHtml(f.sheetRow) + ' · ' + escHtml(f.rule_id) + '：' +
       escHtml(f.subject) + ' / ' + escHtml(f.relation) + ' / ' + escHtml(f.object) +
-      '；' + escHtml(f.reason) + '</li>').join('') + '</ul>' +
+      '；' + escHtml(f.reason) + '</li>').join('') + '</ul>' : '<div>本轮双重校验未发现确定性问题或需关注项。</div>') +
     '<a href="popmart_library_validate_result.json" target="_blank" rel="noopener">完整校验报告</a></details>';
 }
 
