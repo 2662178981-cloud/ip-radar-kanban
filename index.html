@@ -352,9 +352,9 @@
     <div class="cal-grid" id="cal-grid"></div>
     <div class="popmart-triples" id="popmart-triples">
       <div class="popmart-triples-head">
-        <span class="popmart-title">🧸 泡泡玛特潮玩IP三元组</span>
+        <span class="popmart-title">🧸 潮玩IP三元组关系</span>
         <span class="popmart-pass" id="popmart-pass"></span>
-        <span class="popmart-meta">共 <b id="popmart-total-count">0</b> 条 · 已选 <b id="popmart-sel-count">0</b> 条</span>
+        <span class="popmart-meta">新增<b id="popmart-round-added-count">—</b>条，当前关系库共<b id="popmart-library-count">—</b>条</span>
       </div>
       <div class="popmart-submit-bar">
         <span class="popmart-submit-status" id="popmart-submit-status"></span>
@@ -592,7 +592,7 @@ async function loadAll() {
   // 即使部署定时更新暂时失败，跨周后也不能显示旧周关系或保留旧勾选。
   const localDate = [new Date().getFullYear(), String(new Date().getMonth() + 1).padStart(2, '0'), String(new Date().getDate()).padStart(2, '0')].join('-');
   POPMART_TRIPLES = triples && triples.weekStart <= localDate && localDate <= triples.weekEnd
-    ? triples : {items: [], series: [], pending: [], stale: true};
+    ? triples : {...triples, items: [], series: [], pending: [], stale: true};
   SELECTED_TRIPLES.clear();
   POPMART_EN_MAP = null;
   // 热度数据：先加载索引，再加载最新 raw 文件（失败不影响主流程）
@@ -1442,11 +1442,17 @@ function popmartSeriesListHtml(name) {
 function renderPopmartTriples() {
   const root = document.getElementById('popmart-triples');
   if (!root) return;
+  const countsVerified = POPMART_TRIPLES?.relationCountsVerified === true;
+  const roundAdded = POPMART_TRIPLES?.roundAddedCount;
+  const libraryCount = POPMART_TRIPLES?.relationLibraryCount;
+  document.getElementById('popmart-round-added-count').textContent =
+    countsVerified && Number.isInteger(roundAdded) && roundAdded >= 0 ? roundAdded : '—';
+  document.getElementById('popmart-library-count').textContent =
+    countsVerified && Number.isInteger(libraryCount) && libraryCount >= 0 ? libraryCount : '—';
   const items = (POPMART_TRIPLES && Array.isArray(POPMART_TRIPLES.items)) ? POPMART_TRIPLES.items : [];
   if (!items.length) {
     root.style.display = '';
     document.getElementById('popmart-pass').textContent = POPMART_TRIPLES?.stale ? '本周数据待更新' : '待中文核查';
-    document.getElementById('popmart-total-count').textContent = '0';
     document.getElementById('popmart-groups').innerHTML = '<div class="popmart-group">' +
       (POPMART_TRIPLES?.stale ? '本周快照尚未更新，旧周关系已隐藏。' :
         '本周 ' + (POPMART_TRIPLES?.pending || []).length + ' 个新品系列待核实官方中文系列名及款名；暂不发布未经核实的三元组。') + '</div>';
@@ -1455,11 +1461,9 @@ function renderPopmartTriples() {
   }
   root.style.display = '';
   const passEl = document.getElementById('popmart-pass');
-  const totalEl = document.getElementById('popmart-total-count');
   const groupsEl = document.getElementById('popmart-groups');
   const passRate = (typeof POPMART_TRIPLES.passRate === 'number') ? POPMART_TRIPLES.passRate : null;
   if (passEl) passEl.textContent = passRate != null ? ('校验通过率 ' + passRate + '%') : '';
-  if (totalEl) totalEl.textContent = items.filter(it => !it.recorded).length;
   // 按系列展开（顺序取 series 元信息，缺失的系列兜底排后）
   const seriesOrder = (POPMART_TRIPLES && Array.isArray(POPMART_TRIPLES.series)) ? POPMART_TRIPLES.series.map(s => s.name) : [];
   const groups = {};
