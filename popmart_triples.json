@@ -3,7 +3,7 @@
   "generatedAt": "2026-10-29",
   "weekStart": "2026-10-26",
   "weekEnd": "2026-11-01",
-  "count": 25,
+  "count": 27,
   "items": [
     {
       "subject": "泡泡玛特",
@@ -504,6 +504,66 @@
       "validated": true,
       "status": "✅",
       "accuracy": null
+    },
+    {
+      "subject": "RiboDiary",
+      "relation": "错字",
+      "object": "RiboDary",
+      "date": "2026-10-29",
+      "knowledgeType": "潮玩",
+      "series": "RiboDiary 森林欢聚日系列",
+      "evidence": [
+        "_jd_evidence/10235891977225_02.png",
+        "_jd_evidence/10235891977225_03.png",
+        "_jd_evidence/10235891977225_04.png"
+      ],
+      "url": "https://item.jd.com/10235891977225.html",
+      "typoType": "拼写漏字",
+      "typoConfidence": "高",
+      "semanticReview": {
+        "object": "RiboDary",
+        "type": "拼写漏字",
+        "confidence": "高",
+        "reviewed": true,
+        "reason": "复合英文名Diary部分漏掉i，仅一处漏拼；保留Ribo及其他字母，不扩散多步改写。",
+        "basis": "2026-10-29用户要求新IP建设少量高置信漏拼/错拼；京东官方商详图确认标准名RiboDiary；高置信指误写逻辑而非实际搜索频次。"
+      },
+      "historyRow": 3019,
+      "changeKind": "append",
+      "recorded": true,
+      "validated": true,
+      "status": "✅",
+      "accuracy": null
+    },
+    {
+      "subject": "RiboDiary",
+      "relation": "错字",
+      "object": "RiboDairy",
+      "date": "2026-10-29",
+      "knowledgeType": "潮玩",
+      "series": "RiboDiary 森林欢聚日系列",
+      "evidence": [
+        "_jd_evidence/10235891977225_02.png",
+        "_jd_evidence/10235891977225_03.png",
+        "_jd_evidence/10235891977225_04.png"
+      ],
+      "url": "https://item.jd.com/10235891977225.html",
+      "typoType": "错拼-相邻字母倒置",
+      "typoConfidence": "高",
+      "semanticReview": {
+        "object": "RiboDairy",
+        "type": "错拼-相邻字母倒置",
+        "confidence": "高",
+        "reviewed": true,
+        "reason": "Diary中的相邻ia倒置成ai，属于英文单词辨识及输入顺序错拼；其余字符不变。",
+        "basis": "2026-10-29用户要求新IP建设少量高置信漏拼/错拼；京东官方商详图确认标准名RiboDiary；高置信指误写逻辑而非实际搜索频次。"
+      },
+      "historyRow": 3020,
+      "changeKind": "append",
+      "recorded": true,
+      "validated": true,
+      "status": "✅",
+      "accuracy": null
     }
   ],
   "series": [
@@ -542,18 +602,18 @@
   "pending": [],
   "newCount": 0,
   "passRate": null,
-  "processedAddedCount": 1,
-  "processedCorrectionCount": 24,
+  "processedAddedCount": 2,
+  "processedCorrectionCount": 0,
   "processedPassRate": 100.0,
-  "historyRows": 3018,
-  "note": "本轮新增1条、原行修正24条均已写入；本周展示25条有效关系变更，已校验并收录；排除历史未变更关系",
-  "roundAddedCount": 25,
-  "appendedCount": 1,
+  "historyRows": 3020,
+  "note": "本轮补充新IP错字2条；本周27条有效关系已校验并收录",
+  "roundAddedCount": 27,
+  "appendedCount": 3,
   "correctedCount": 24,
-  "relationLibraryCount": 3018,
+  "relationLibraryCount": 3020,
   "relationCountsVerified": true,
-  "relationCountsVerifiedAt": "2026-10-29T06:44:32.253Z",
-  "weekEffectiveCount": 25,
+  "relationCountsVerifiedAt": "2026-10-29T07:33:28.929Z",
+  "weekEffectiveCount": 27,
   "firstReleasePolicy": {
     "startsAt": "2026-10-29",
     "backfillHistory": false,
@@ -562,21 +622,21 @@
   "libraryQuality": {
     "verified": true,
     "scope": "all_library",
-    "scannedRows": 3018,
+    "scannedRows": 3020,
     "confirmedErrorRows": 0,
     "attentionRows": 0,
     "errorRate": 0.0,
     "errorRateBasis": "机器和语义复核后确认的问题关系行数 / 全库有效关系行数 × 100%",
-    "checkedAt": "2026-10-29T06:46:44.904317+00:00",
-    "inputFingerprint": "c44d5cbcc5c2ce03d0a2fb80218946c03576ff20a5bd40dc4133b16a439ff37c",
+    "checkedAt": "2026-10-29T07:37:05.508053+00:00",
+    "inputFingerprint": "9dc9470813cc1e289e1ecc39d8ad2a9509f5d81d0466eaaa2613174c509b12aa",
     "machineResult": {
       "completed": true,
-      "scannedRows": 3018,
+      "scannedRows": 3020,
       "confirmedErrorRows": 0
     },
     "semanticResult": {
       "completed": true,
-      "reviewedRows": 19,
+      "reviewedRows": 21,
       "confirmedErrorRows": 0,
       "attentionRows": 0
     },
