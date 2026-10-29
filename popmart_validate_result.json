@@ -72,6 +72,39 @@
     "tests": {
       "command": "python -m unittest _test_ip_relation_increment _test_weekly_popmart -v",
       "passed": 17
+    },
+    "githubPages": {
+      "build": {
+        "status": "built",
+        "commit": "b96ede1e9c8be0500759b2a4f49981291542d93f"
+      },
+      "files": [
+        {
+          "file": "popmart_triples.json",
+          "http": 200,
+          "matchesLocalJson": true,
+          "matchesLocalTextAfterLineEndingNormalization": true,
+          "sha256LF": "c42658e276250610ede202a4e2e2dc19d8ef1a6f5f719303c4ed030b73fe8a9e"
+        },
+        {
+          "file": "popmart_validate_result.json",
+          "http": 200,
+          "matchesLocalJson": true,
+          "matchesLocalTextAfterLineEndingNormalization": true,
+          "sha256LF": "e770ffe7d6ccec45ae9c7024b7512cf38b332574c748d43747e0bb1fcb7950b7"
+        },
+        {
+          "file": "calendar_index.json",
+          "http": 200,
+          "matchesLocalJson": true,
+          "matchesLocalTextAfterLineEndingNormalization": true,
+          "sha256LF": "11723844ca5c01e1c2987aee14886fedc2bacc8b44533760460a07b2cf5394d0"
+        }
+      ]
     }
-  }
+  },
+  "roundAddedCount": 1,
+  "relationLibraryCount": 3017,
+  "relationCountsVerified": true,
+  "relationCountsVerifiedAt": "2026-10-29T04:50:41.512Z"
 }
