@@ -177,13 +177,13 @@
   .first-release { display: inline-block; margin-left: 6px; border-radius: 4px; padding: 1px 6px; background: #dcfce7; color: #166534; font-size: 11px; font-weight: 700; white-space: nowrap; }
   .popmart-meta { font-size: 12px; color: #6b7280; }
   .popmart-meta b { color: #b45309; }
-  .popmart-groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
-  .popmart-group { background: #fff; border: 1px solid #fde68a; border-radius: 8px; padding: 8px 10px; }
-  .popmart-group-head { font-size: 13px; font-weight: 700; color: #92400e; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center; }
-  .popmart-group-head .cnt { color: #9ca3af; font-weight: 600; font-size: 11px; }
-  .popmart-item { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; border-bottom: 1px dashed #f3f4f6; font-size: 12px; color: #374151; }
+  .popmart-groups { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .popmart-group { min-width: 0; background: #fff; border: 1px solid #fde68a; border-radius: 8px; padding: 10px 12px; }
+  .popmart-group-head { font-size: 13px; font-weight: 700; color: #92400e; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .popmart-group-head .cnt { flex: 0 0 auto; white-space: nowrap; color: #9ca3af; font-weight: 600; font-size: 11px; }
+  .popmart-item { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 1px dashed #f3f4f6; font-size: 12px; color: #374151; }
   .popmart-item:last-child { border-bottom: none; }
-  .popmart-item .triple { flex: 1 1 auto; word-break: break-word; line-height: 1.6; }
+  .popmart-item .triple { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; line-height: 1.6; }
   .popmart-item .rel { display: inline-block; margin: 0 4px; padding: 0 6px; border-radius: 5px; font-size: 11px; font-weight: 700; color: #fff; background: #f59e0b; }
   .popmart-item .acc { flex: 0 0 auto; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 999px; white-space: nowrap; }
   .popmart-item .acc.ok { color: #047857; background: #d1fae5; }
