@@ -1064,24 +1064,16 @@ function renderCalendar() {
     else if (c.category === '泡泡玛特' || c.category === 'popmart' || c.category === '新品') { cardCls = 'cal-card popmart'; badgeStyle = 'background:#f59e0b'; }
     else if (c.category === '电影' || c.category === 'movie' || c.category === '上映') { cardCls = 'cal-card movie'; badgeStyle = 'background:#8b5cf6'; }
     const dateStr = c.month && c.day ? c.month + '月' + c.day + '日' : (c._date || c.year || '预告');
-    let cls = cardCls;
     let extra = '';
     const isPop = cardCls.indexOf('popmart') !== -1;
     const seriesName = isPop ? c._verifiedSeries : null;
-    if (seriesName) {
-      cls += ' clickable';
-      const rows = popmartSeriesRows(seriesName);
-      const styles = rows.filter(r => r.it.relation === '系列款名');
-      extra = '<div class="cal-series-styles">' + styles.map(r => escHtml(r.it.object)).join('、') + '</div>' +
-        '<div class="cal-more">' + rows.length + ' 条关系 · 展开核对与勾选 <span class="arrow">▸</span></div>' +
-        '<div class="cal-variants">' + popmartSeriesListHtml(seriesName) +
-        '<button type="button" class="cal-copy" data-series="' + escAttr(seriesName) + '">复制本系列三元组</button></div>';
-    } else if (c._pendingCount) {
+    const title = seriesName ? '潮玩新品：' + seriesName : (c.text || c.title || '');
+    if (c._pendingCount) {
       extra = '<div class="cal-series-styles">待核实官方中文系列名与逐款名称，核实后再展示三元组。</div>';
     }
-    return '<div class="' + cls + '">' +
+    return '<div class="' + cardCls + '">' +
       '<div class="cal-date-badge" style="' + badgeStyle + '">' + escHtml(dateStr) + '</div>' +
-      '<div class="cal-events"><div class="cal-event' + (seriesName ? ' cal-series-name' : '') + '">' + escHtml(seriesName || c.text || c.title || '') + '</div></div>' +
+      '<div class="cal-events"><div class="cal-event' + (seriesName ? ' cal-series-name' : '') + '">' + escHtml(title) + '</div></div>' +
       extra +
     '</div>';
   }).join('');
