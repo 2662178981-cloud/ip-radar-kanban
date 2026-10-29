@@ -1412,8 +1412,6 @@ function renderPopmartQuality() {
     '<div>机器校验：全库扫描' + q.scannedRows + '条，确定性错误' + escHtml(String(q.machineResult.confirmedErrorRows)) + '条。</div>' +
     '<div>语义校验：复核' + escHtml(String(q.semanticResult.reviewedRows)) + '条，确认错误' +
       escHtml(String(q.semanticResult.confirmedErrorRows)) + '条，需关注' + escHtml(String(q.semanticResult.attentionRows)) + '条。</div>' +
-    '<div>综合校验：确定性问题' + q.confirmedErrorRows + '条，错误率' + q.errorRate + '%。' +
-      '错误率按确认问题关系数除以全库有效关系数计算。</div>' +
     (findings.length ? '<ul>' + findings.map(f => '<li>' + escHtml(labels[f.decision]) +
       ' · 关系表行' + escHtml(f.sheetRow) + ' · ' + escHtml(f.rule_id) + '：' +
       escHtml(f.subject) + ' / ' + escHtml(f.relation) + ' / ' + escHtml(f.object) +
