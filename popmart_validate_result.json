@@ -1,12 +1,12 @@
 {
   "summary": {
-    "total_rows": 25,
-    "passed": 25,
+    "total_rows": 27,
+    "passed": 27,
     "pass_rate": 100.0,
     "error_count": 0,
     "warn_count": 0
   },
-  "scope": "本轮1条新增+24条历史原行修正；不包含历史已有品牌/同义2条",
+  "scope": "本周3条有效追加+24条原行修正；本轮补充新IP错字2条",
   "history": {
     "pageId": "3ceIz3nICKyHjfwnfVRd",
     "worksheetId": "14",
@@ -14,7 +14,7 @@
     "lastRow": 3016
   },
   "historyRows": 3016,
-  "addedCount": 1,
+  "addedCount": 3,
   "correctionCount": 24,
   "skippedDuplicateCount": 2,
   "findings": [],
@@ -103,34 +103,98 @@
       ]
     }
   },
-  "roundAddedCount": 25,
-  "appendedCount": 1,
+  "roundAddedCount": 27,
+  "appendedCount": 3,
   "correctedCount": 24,
-  "relationLibraryCount": 3018,
+  "relationLibraryCount": 3020,
   "relationCountsVerified": true,
-  "relationCountsVerifiedAt": "2026-10-29T06:44:32.253Z",
-  "weekEffectiveCount": 25,
+  "relationCountsVerifiedAt": "2026-10-29T07:33:28.929Z",
+  "weekEffectiveCount": 27,
   "libraryQuality": {
     "verified": true,
     "scope": "all_library",
-    "scannedRows": 3018,
+    "scannedRows": 3020,
     "confirmedErrorRows": 0,
     "attentionRows": 0,
     "errorRate": 0.0,
     "errorRateBasis": "机器和语义复核后确认的问题关系行数 / 全库有效关系行数 × 100%",
-    "checkedAt": "2026-10-29T06:46:44.904317+00:00",
-    "inputFingerprint": "c44d5cbcc5c2ce03d0a2fb80218946c03576ff20a5bd40dc4133b16a439ff37c",
+    "checkedAt": "2026-10-29T07:37:05.508053+00:00",
+    "inputFingerprint": "9dc9470813cc1e289e1ecc39d8ad2a9509f5d81d0466eaaa2613174c509b12aa",
     "machineResult": {
       "completed": true,
-      "scannedRows": 3018,
+      "scannedRows": 3020,
       "confirmedErrorRows": 0
     },
     "semanticResult": {
       "completed": true,
-      "reviewedRows": 19,
+      "reviewedRows": 21,
       "confirmedErrorRows": 0,
       "attentionRows": 0
     },
     "findings": []
-  }
+  },
+  "processedAddedCount": 2,
+  "incrementAudit": "popmart_typo_increment_audit_20261029.json",
+  "validationBatches": [
+    {
+      "kind": "previous_weekly_validation",
+      "summary": {
+        "total_rows": 25,
+        "passed": 25,
+        "pass_rate": 100.0,
+        "error_count": 0,
+        "warn_count": 0
+      }
+    },
+    {
+      "kind": "new_ip_typos",
+      "keys": [
+        [
+          "RiboDiary",
+          "错字",
+          "RiboDary"
+        ],
+        [
+          "RiboDiary",
+          "错字",
+          "RiboDairy"
+        ]
+      ],
+      "summary": {
+        "total_rows": 2,
+        "passed": 2,
+        "pass_rate": 100.0,
+        "error_count": 0,
+        "warn_count": 0,
+        "affected_rows": 0
+      },
+      "publication": {
+        "joyspace": {
+          "relationGraph": {
+            "pageId": "3ceIz3nICKyHjfwnfVRd",
+            "worksheetId": "14",
+            "addedRows": [
+              3019,
+              3020
+            ],
+            "correctedRows": [],
+            "readbackRows": 2,
+            "readbackCells": 10,
+            "mismatches": 0
+          },
+          "validation": {
+            "worksheetId": "10",
+            "startRow": 1618,
+            "endRow": 1619,
+            "rows": 2,
+            "checkedCells": 16,
+            "mismatches": 0
+          }
+        },
+        "readbackReceipt": "popmart_typo_write_readback_20261029.json",
+        "checkedAt": "2026-10-29T07:33:04.365Z"
+      },
+      "semanticReviewed": 2
+    }
+  ]
 }
