@@ -91,6 +91,11 @@
   .submit-status { font-size: 12px; color: #475569; }
   .new-check-wrap { display: inline-flex; align-items: center; margin-right: 6px; vertical-align: middle; cursor: pointer; }
   .new-check { width: 15px; height: 15px; margin: 0; cursor: pointer; accent-color: #0ea5e9; }
+  .new-check:disabled { cursor: not-allowed; accent-color: #94a3b8; }
+  .ip-term-row { min-height: 26px; display: flex; align-items: center; gap: 4px; }
+  .ip-term-row + .ip-term-row { border-top: 1px solid #f1f5f9; }
+  .ip-term-row .new-check-wrap { min-width: 17px; margin-right: 0; }
+  .term-added { color: #64748b; font-size: 11px; }
   .kw-cell { display: flex; align-items: flex-start; gap: 2px; }
   .kw-text { flex: 1; min-width: 0; }
   /* 热度状态徽标 */
@@ -439,9 +444,22 @@ function catDotHtml(cat) {
   const c = CAT_COLORS[String(cat || '')] || '#9ca3af';
   return '<span class="cat-dot" style="background:' + c + '"></span>';
 }
-/* 状态可信度排序：同一条热搜裂成多行时，取最可信的那条作为代表状态 */
+/* 代表状态仅用于旧格式；词条状态始终逐词显示 */
 function statusRank(s) { return s === '匹配成功' ? 3 : (s === '需审核' ? 2 : 1); }
 function ipNameOf(it) { return it.display_keyword || it.ip_name || it.matched_value || it.keyword || ''; }
+function termsOf(it) {
+  if (Array.isArray(it.ip_terms) && it.ip_terms.length) return it.ip_terms;
+  // 兼容旧数据时宁可标成待审核，也不能把整句命中状态传播到每个词。
+  const name = ipNameOf(it).trim();
+  return (name.split(/[\s、，,;；]+/).filter(Boolean)).map(word => ({
+    word,
+    status: it.ip_status === '匹配成功' && it.matched_value === word ? '匹配成功' : '新value',
+    category: it.ipCategory || '', addedDate: ''
+  }));
+}
+function termStatus(term) {
+  return CONFIRMED_ADDED.has(term.word) ? '匹配成功' : term.status;
+}
 
 /* ===== 热度匹配 ===== */
 function buildHeatMap(rows) {
@@ -537,6 +555,7 @@ let DIESUN_INDEX = null;
 let HEAT_MAP = null;  /* IP名 -> 热度记录 */
 let HEAT_ROWS = null;
 const SELECTED_NEW = new Set();  /* 已勾选待写入词库的新词 */
+const CONFIRMED_ADDED = new Map(); /* JoySpace 回读确认后新增的词 */
 let SUBMIT_PENDING = false;
 let POPMART_TRIPLES = null;  /* 泡泡玛特本周三元组快照 */
 const SELECTED_TRIPLES = new Set();  /* 已勾选、尚未收录的三元组下标 */
@@ -553,6 +572,16 @@ async function loadAll() {
     fetchJSON('popmart_triples.json', 1).catch(() => null)
   ]);
   PAYLOAD = data;
+  CONFIRMED_ADDED.clear();
+  // 本机桥接记录有已回读的新增词；发布文件尚未刷新时也能阻止重复勾选。
+  try {
+    const url = (window.IP_RADAR_SUBMIT_URL || 'http://127.0.0.1:8765/submissions').replace(/\/submissions$/, '/vocabulary');
+    const response = await fetch(url, {cache: 'no-store', signal: AbortSignal.timeout(2500)});
+    if (response.ok) {
+      const verified = await response.json();
+      Object.entries(verified.words || {}).forEach(([word, date]) => CONFIRMED_ADDED.set(word, date));
+    }
+  } catch (e) { /* 看板仍能使用已发布的词库匹配结果 */ }
   CAL_INDEX = cal;
   HINTS_DATA = hints;
   DIESUN_INDEX = diesun;
@@ -608,7 +637,7 @@ function renderHeader() {
 
 function buildCatFilter(items) {
   const cats = new Set();
-  items.forEach(it => { if (it.ipCategory) cats.add(it.ipCategory); });
+  items.forEach(it => (it._terms || []).forEach(t => { if (t.category) cats.add(t.category); }));
   const sel = document.getElementById('filter-cat');
   const cur = sel.value;
   sel.innerHTML = '<option value="">全部分类</option>' +
@@ -632,12 +661,17 @@ function aggregateBoard(items) {
     const orig = it.display_original || it.keyword || '';
     let r = map.get(orig);
     if (!r) {
-      r = { _names: [], _mvs: [], _pfs: [], _score: 0, _hot: 0, hints: [], _orig: orig, base: null, _items: [] };
+      r = { _names: [], _terms: [], _mvs: [], _pfs: [], _score: 0, _hot: 0, hints: [], _orig: orig, base: null, _items: [] };
       map.set(orig, r);
     }
-    const n = ipNameOf(it);
-    if (n && r._names.indexOf(n) === -1) r._names.push(n);
-    if (it.matched_value && r._mvs.indexOf(it.matched_value) === -1) r._mvs.push(it.matched_value);
+    termsOf(it).forEach(term => {
+      const word = String(term.word || '').trim();
+      if (!word) return;
+      const existing = r._terms.find(x => x.word === word);
+      if (!existing) { r._terms.push({...term, word}); r._names.push(word); }
+      else if (term.status === '匹配成功' && existing.status !== '匹配成功') Object.assign(existing, term);
+      if (term.status === '匹配成功' && !r._mvs.includes(word)) r._mvs.push(word);
+    });
     (it.platforms || (it.platform ? [it.platform] : [])).forEach(p => {
       if (p && r._pfs.indexOf(p) === -1) r._pfs.push(p);
     });
@@ -651,7 +685,7 @@ function aggregateBoard(items) {
   let rows = Array.from(map.values());
   rows.forEach(r => {
     const b = r.base || {};
-    r.ip_status = b.ip_status || '新value';
+    r.ip_status = r._terms.every(t => termStatus(t) === '匹配成功') ? '匹配成功' : '新value';
     r.ipCategory = b.ipCategory || null;
     r.matched_value = r._mvs[0] || null;
     r.platforms = r._pfs;
@@ -713,10 +747,10 @@ function renderLeaderboard() {
   const catF = document.getElementById('filter-cat').value;
   const heatF = document.getElementById('filter-heat').value;
   const rows = all.filter(r => {
-    if (statusF === '__ip__') return r.ip_status === '匹配成功';
+    if (statusF === '__ip__') return r._terms.some(t => termStatus(t) === '匹配成功');
     if (!statusF) return true;
-    return r.ip_status === statusF;
-  }).filter(r => (!catF || r.ipCategory === catF)).filter(r => {
+    return r._terms.some(t => termStatus(t) === statusF);
+  }).filter(r => (!catF || r._terms.some(t => t.category === catF))).filter(r => {
     if (!heatF) return true;
     const h = findHeat(r._names || []);
     const grp = h ? (HEAT_GROUP[h['状态']] || 'flat') : 'off';
@@ -725,24 +759,29 @@ function renderLeaderboard() {
 
   const hidden = all.length - rows.length;
   document.getElementById('lb-sub').textContent = statusF === '__ip__'
-    ? ('仅展示词库命中的 IP（匹配成功），已折叠 ' + hidden + ' 条未识别热搜')
+    ? ('仅展示包含词库命中 IP 的热搜，已折叠 ' + hidden + ' 条未识别热搜')
     : ('被识别为 IP 的热度词（含新词） · 共 ' + rows.length + ' 条');
 
   const body = document.getElementById('lb-body');
   if (!rows.length) { body.innerHTML = '<tr><td colspan="7" style="text-align:center;color:#9ca3af;padding:30px">无匹配数据</td></tr>'; return; }
   body.innerHTML = rows.map((d, i) => {
     const rank = i + 1;
-    const st = STATUS[d.ip_status] || { cls: "status-review", label: d.ip_status || "—" };
-    // 主行 = 关键词/IP名（一条热搜命中多个 IP 时并列显示，用空格隔开）
-    // 副行 = 热搜原词（灰色小字）
-    const ipNames = (d._names || []).filter(n => n && n !== d._orig);
-    const main = ipNames.length ? ipNames.join(' ') : (d._orig || '');
-    const isNew = d.ip_status === '新value' || d.ip_status === 'new';
-    const newWords = ipNames.length ? ipNames : (d._orig ? [d._orig] : []);
-    const checked = newWords.some(w => SELECTED_NEW.has(w));
-    const checkHtml = isNew
-      ? '<label class="new-check-wrap" title="勾选后提交到词库"><input type="checkbox" class="new-check" data-words="' + encodeURIComponent(JSON.stringify(newWords)) + '"' + (checked ? ' checked' : '') + '></label>'
-      : '';
+    const terms = d._terms.length ? d._terms : [{word: d._orig || '', status: '新value', category: d.ipCategory}];
+    const main = terms.map(t => t.word).join(' ');
+    const termNames = terms.map(t => {
+      const added = CONFIRMED_ADDED.has(t.word) ? CONFIRMED_ADDED.get(t.word) : t.addedDate;
+      const isNew = termStatus(t) !== '匹配成功';
+      const checkHtml = isNew
+        ? '<label class="new-check-wrap" title="勾选后提交到词库"><input type="checkbox" class="new-check" data-word="' + encodeURIComponent(t.word) + '"' + (SELECTED_NEW.has(t.word) ? ' checked' : '') + '></label>'
+        : (added ? '<label class="new-check-wrap" title="已入库，不可重复提交"><input type="checkbox" class="new-check" checked disabled></label>' : '<span class="new-check-wrap"></span>');
+      return '<div class="ip-term-row">' + checkHtml + '<span class="kw-main">' + escHtml(t.word) + '</span>' + (added ? '<span class="term-added">已入库 ' + escHtml(added) + '</span>' : '') + '</div>';
+    }).join('');
+    const termStates = terms.map(t => {
+      const status = termStatus(t);
+      const st = STATUS[status] || {cls: 'status-review', label: status || '—'};
+      return '<div class="ip-term-row"><span class="status-pill ' + st.cls + '">' + st.label + '</span></div>';
+    }).join('');
+    const termCategories = terms.map(t => '<div class="ip-term-row">' + catDotHtml(t.category) + escHtml(t.category || '—') + '</div>').join('');
     let subHtml = '';
     if (d._unmatched) {
       subHtml = '<div class="kw-unmatched">未识别 · 切词未命中词库</div>';
@@ -756,15 +795,10 @@ function renderLeaderboard() {
     return '<tr>' +
       '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
       '<td>' +
-        '<div class="kw-cell">' + checkHtml +
-          '<div class="kw-text">' +
-            '<div class="kw-main">' + escHtml(main) + dupPill + '</div>' +
-            subHtml +
-          '</div>' +
-        '</div>' +
+        termNames + dupPill + subHtml +
       '</td>' +
-      '<td><span class="status-pill ' + st.cls + '">' + st.label + '</span></td>' +
-      '<td>' + catDotHtml(d.ipCategory) + escHtml(d.ipCategory || '—') + '</td>' +
+      '<td>' + termStates + '</td>' +
+      '<td>' + termCategories + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
       '<td>' + heatCellHtml(d) + '</td>' +
       '<td>' + renderHintsPills(d.hints) + '</td>' +
@@ -805,6 +839,7 @@ function renderTrend() {
 }
 
 function updateSubmitBar() {
+  CONFIRMED_ADDED.forEach((_, word) => SELECTED_NEW.delete(word));
   const cnt = document.getElementById('submit-count');
   const btn = document.getElementById('submit-btn');
   if (cnt) cnt.textContent = '已选 ' + SELECTED_NEW.size + ' 个新词';
@@ -822,10 +857,8 @@ async function submitNewWords() {
   try {
     const candidates = new Map();
     aggregateBoard((PAYLOAD.ipBoard && PAYLOAD.ipBoard.items) || []).forEach(d => {
-      if (d.ip_status !== '新value' && d.ip_status !== 'new') return;
-      const ipNames = (d._names || []).filter(n => n && n !== d._orig);
-      (ipNames.length ? ipNames : [d._orig]).forEach(w => {
-        if (w && d.ipCategory) candidates.set(w, d.ipCategory);
+      (d._terms || []).forEach(t => {
+        if (t.word && t.category && termStatus(t) !== '匹配成功') candidates.set(t.word, t.category);
       });
     });
     const entries = words.map(word => ({word, category: candidates.get(word)}));
@@ -854,7 +887,8 @@ async function submitNewWords() {
     }
     if (state && state.status === 'done') {
       if (statusEl) statusEl.textContent = state.result || 'JoyCode 已写入并回读词库';
-      words.forEach(w => SELECTED_NEW.delete(w));
+      const today = new Intl.DateTimeFormat('en-CA', {timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit'}).format(new Date()).replace(/-/g, '/');
+      words.forEach(w => { SELECTED_NEW.delete(w); CONFIRMED_ADDED.set(w, today); });
       renderLeaderboard();
     } else if (state && state.status === 'error') {
       if (statusEl) statusEl.textContent = '词库写入失败：' + (state.error || '未知错误');
@@ -906,16 +940,25 @@ function renderPlatform(platform) {
   if (!board || !board.items || !board.items.length) { body.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#9ca3af;padding:30px">无数据</td></tr>'; return; }
   const items = board.items;
   body.innerHTML = items.map((d, i) => {
-    const st = STATUS[d.ip_status] || { cls: "status-review", label: d.ip_status || "—" };
-    // 与泛IP榜口径统一：主行 = IP名/关键词，副行 = 热搜原词（灰色）
+    const terms = termsOf(d);
+    const names = terms.map(t => {
+      const added = CONFIRMED_ADDED.has(t.word) ? CONFIRMED_ADDED.get(t.word) : t.addedDate;
+      const check = termStatus(t) !== '匹配成功'
+        ? '<label class="new-check-wrap"><input type="checkbox" class="new-check" data-word="' + encodeURIComponent(t.word) + '"' + (SELECTED_NEW.has(t.word) ? ' checked' : '') + '></label>'
+        : (added ? '<label class="new-check-wrap" title="已入库"><input type="checkbox" class="new-check" checked disabled></label>' : '<span class="new-check-wrap"></span>');
+      return '<div class="ip-term-row">' + check + '<span class="kw-main">' + escHtml(t.word) + '</span>' + (added ? '<span class="term-added">已入库 ' + escHtml(added) + '</span>' : '') + '</div>';
+    }).join('');
+    const statuses = terms.map(t => {
+      const st = STATUS[termStatus(t)] || { cls: 'status-review', label: termStatus(t) || '—' };
+      return '<div class="ip-term-row"><span class="status-pill ' + st.cls + '">' + st.label + '</span></div>';
+    }).join('');
     const orig = d.display_original || d.keyword || '';
-    const kw = d.display_keyword || d.ip_name || d.keyword || '';
-    const main = kw || orig;
+    const main = terms.map(t => t.word).join(' ') || orig;
     const subHtml = (orig && orig !== main) ? '<div class="kw-sub">' + escHtml(orig) + '</div>' : '';
     return '<tr>' +
       '<td><span class="rank-badge rank-else">' + (i+1) + '</span></td>' +
-      '<td><div class="kw-main">' + escHtml(main) + '</div>' + subHtml + '</td>' +
-      '<td><span class="status-pill ' + st.cls + '">' + st.label + '</span></td>' +
+      '<td>' + names + subHtml + '</td>' +
+      '<td>' + statuses + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
       '<td>' + renderHintsPills(d.hints) + '</td>' +
     '</tr>';
@@ -1605,14 +1648,19 @@ document.getElementById('filter-status').addEventListener('change', renderLeader
 document.getElementById('filter-cat').addEventListener('change', renderLeaderboard);
 document.getElementById('filter-heat').addEventListener('change', renderLeaderboard);
 // 新词勾选：事件委托（lb-body 的 innerHTML 每次渲染都会重建）
-document.getElementById('lb-body').addEventListener('change', function(e) {
+function onNewWordSelection(e) {
   const t = e.target;
-  if (!t || !t.classList || !t.classList.contains('new-check')) return;
-  let words = [];
-  try { words = JSON.parse(decodeURIComponent(t.dataset.words || '%5B%5D')); } catch (err) { words = []; }
-  words.forEach(w => { if (t.checked) SELECTED_NEW.add(w); else SELECTED_NEW.delete(w); });
+  if (!t || !t.classList || !t.classList.contains('new-check') || t.disabled) return;
+  const word = decodeURIComponent(t.dataset.word || '');
+  if (!word || CONFIRMED_ADDED.has(word)) return;
+  if (t.checked) SELECTED_NEW.add(word); else SELECTED_NEW.delete(word);
+  document.querySelectorAll('#lb-body .new-check:not(:disabled), #platform-body .new-check:not(:disabled)').forEach(box => {
+    if (decodeURIComponent(box.dataset.word || '') === word) box.checked = t.checked;
+  });
   updateSubmitBar();
-});
+}
+document.getElementById('lb-body').addEventListener('change', onNewWordSelection);
+document.getElementById('platform-body').addEventListener('change', onNewWordSelection);
 document.getElementById('submit-btn').addEventListener('click', submitNewWords);
 document.getElementById('filter-cal-type').addEventListener('change', renderCalendar);
 // 泡泡玛特三元组：勾选（卡片与板块共用同一选区）
