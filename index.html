@@ -60,6 +60,8 @@
   .lb-table { width: 100%; border-collapse: collapse; font-size: 14px; }
   .lb-table th { text-align: left; padding: 8px 6px; color: #6b7280; font-weight: 600; border-bottom: 1px solid #f0f2f5; font-size: 12px; }
   .lb-table td { padding: 10px 6px; border-bottom: 1px solid #f3f4f6; vertical-align: middle; }
+  .lb-table td.ip-rank-cell, .lb-table td.ip-term-cell { vertical-align: top; }
+  .ip-rank-cell .rank-badge { display: flex; }
   .lb-table tr:nth-child(odd) td { background: #ffffff; }
   .lb-table tr:nth-child(even) td { background: #f8faff; }
   .lb-table tr:hover td { background: #eef2ff !important; }
@@ -94,6 +96,7 @@
   .new-check:disabled { cursor: not-allowed; accent-color: #94a3b8; }
   .ip-term-row { min-height: 26px; display: flex; align-items: center; gap: 4px; }
   .ip-term-row + .ip-term-row { border-top: 1px solid #f1f5f9; }
+  .ip-term-group { border-left: 2px solid #93c5fd; padding-left: 8px; margin-left: -10px; border-radius: 2px; }
   .ip-term-row .new-check-wrap { min-width: 17px; margin-right: 0; }
   .term-added { color: #64748b; font-size: 11px; }
   .kw-cell { display: flex; align-items: flex-start; gap: 2px; }
@@ -793,12 +796,12 @@ function renderLeaderboard() {
       ? '<span class="dup-pill" title="' + escHtml((d._others || []).join('；')) + '">共' + d._dup + '条热搜</span>'
       : '';
     return '<tr>' +
-      '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
-      '<td>' +
-        termNames + dupPill + subHtml +
+      '<td class="ip-rank-cell"><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
+      '<td class="ip-term-cell">' +
+        (terms.length > 1 ? '<div class="ip-term-group">' + termNames + '</div>' : termNames) + dupPill + subHtml +
       '</td>' +
-      '<td>' + termStates + '</td>' +
-      '<td>' + termCategories + '</td>' +
+      '<td class="ip-term-cell">' + termStates + '</td>' +
+      '<td class="ip-term-cell">' + termCategories + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
       '<td>' + heatCellHtml(d) + '</td>' +
       '<td>' + renderHintsPills(d.hints) + '</td>' +
@@ -956,9 +959,9 @@ function renderPlatform(platform) {
     const main = terms.map(t => t.word).join(' ') || orig;
     const subHtml = (orig && orig !== main) ? '<div class="kw-sub">' + escHtml(orig) + '</div>' : '';
     return '<tr>' +
-      '<td><span class="rank-badge rank-else">' + (i+1) + '</span></td>' +
-      '<td>' + names + subHtml + '</td>' +
-      '<td>' + statuses + '</td>' +
+      '<td class="ip-rank-cell"><span class="rank-badge rank-else">' + (i+1) + '</span></td>' +
+      '<td class="ip-term-cell">' + (terms.length > 1 ? '<div class="ip-term-group">' + names + '</div>' : names) + subHtml + '</td>' +
+      '<td class="ip-term-cell">' + statuses + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
       '<td>' + renderHintsPills(d.hints) + '</td>' +
     '</tr>';
