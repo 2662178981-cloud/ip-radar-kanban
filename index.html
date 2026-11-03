@@ -255,6 +255,8 @@
   .snapshot-ip { font-weight: 600; color: #111827; }
   .snapshot-hints { color: #6b7280; font-size: 12px; }
   .snapshot-empty { color: #9ca3af; padding: 20px; text-align: center; }
+  .snapshot-style-meta { color: #6b7280; font-size: 12px; }
+  .snapshot-style-item { flex-wrap: wrap; }
 
   .loading-mask { position: fixed; inset: 0; background: rgba(255,255,255,0.85); display: flex; align-items: center; justify-content: center; z-index: 999; }
   .loading-mask.hidden { display: none; }
@@ -358,12 +360,14 @@
   </div>
 
   <div class="panel hidden" id="panel-snapshot">
-    <div class="panel-sub">历史每日IP热点快照 · 可回溯每日最终版</div>
+    <div class="panel-sub">历史每日IP热点 / 风格热搜快照 · 可回溯每日最终版</div>
     <div class="filters" style="margin-bottom:10px">
-      <input type="date" id="snapshot-date" class="filter-select" style="padding:5px 8px" placeholder="按日期筛选">
-      <input type="text" id="snapshot-kw" class="filter-select" style="padding:5px 8px;width:180px" placeholder="按关键词搜索">
+      <select id="snapshot-type" class="filter-select" aria-label="快照类型"><option value="ip">IP热点</option><option value="style">风格热搜</option></select>
+      <input type="date" id="snapshot-date" class="filter-select" style="padding:5px 8px" placeholder="按日期筛选" aria-label="快照日期">
+      <input type="text" id="snapshot-kw" class="filter-select" style="padding:5px 8px;width:180px" placeholder="按关键词搜索" aria-label="快照关键词">
       <button id="snapshot-clear" class="filter-select" style="padding:5px 12px;cursor:pointer;background:#fff;border:1px solid #e5e7eb;border-radius:8px;font-size: 13px">清除</button>
     </div>
+    <div id="snapshot-note" class="panel-sub"></div>
     <div id="snapshot-content"></div>
   </div>
 
@@ -1521,34 +1525,66 @@ function fallbackCopy(text) {
 
 function renderSnapshot() {
   const container = document.getElementById('snapshot-content');
+  const isStyle = document.getElementById('snapshot-type').value === 'style';
   // 读取筛选控件输入值（日期筛选 + 关键词搜索）
   const dateFilter = (document.getElementById('snapshot-date').value || '').trim();
   const kwFilter = (document.getElementById('snapshot-kw').value || '').trim().toLowerCase();
   const matchKw = function(it) {
     if (!kwFilter) return true;
-    const hay = ((it.ip_name || '') + ' ' + (it.display_keyword || '') + ' ' + (it.keyword || '') + ' ' + (it.matched_value || '')).toLowerCase();
+    const hay = ((it.ip_name || '') + ' ' + (it.display_keyword || '') + ' ' + (it.keyword || '') + ' ' + (it.matched_value || '') + (isStyle ? ' ' + (it.style_word || '') + ' ' + (it.display_original || '') : '')).toLowerCase();
     return hay.indexOf(kwFilter) !== -1;
   };
-  // 优先从 snapshots.json 读取（未来后端产出时生效），fallback 从 data.json 的 ipBoard 构造今日快照
-  if (SNAPSHOTS && SNAPSHOTS.dates) {
+  const note = document.getElementById('snapshot-note');
+  note.textContent = '';
+  if (isStyle) {
+    note.textContent = '按采集日期保留每日最后一轮，未采集日期不沿用旧词。';
+    const coverage = SNAPSHOTS && SNAPSHOTS.styleCoverage;
+    if (coverage && coverage.missingDates && coverage.missingDates.length) {
+      note.textContent += ' 回填范围：' + coverage.start + ' 至 ' + coverage.end + '；未找到采集记录：' + coverage.missingDates.join('、') + '。';
+    }
+  }
+  const history = SNAPSHOTS && (isStyle ? SNAPSHOTS.styleDates : SNAPSHOTS.dates);
+  // IP / 风格共用日期排序、关键词筛选和每日快照展示。
+  if (history && Object.keys(history).length) {
     let html = '';
-    const dates = Object.entries(SNAPSHOTS.dates).sort((a, b) => b[0].localeCompare(a[0]));
+    const dates = Object.entries(history).sort((a, b) => b[0].localeCompare(a[0]));
     dates.forEach(([date, data]) => {
       if (dateFilter && date !== dateFilter) return;
-      const items = (data.items || []).filter(matchKw);
-      html += '<div class="snapshot-date-header"><span class="snapshot-date-badge">' + escHtml(date) + '</span> ' + (data.count || items.length) + '条</div>';
-      if (!items.length) { html += '<div class="snapshot-empty">当日无数据</div>'; return; }
-      items.forEach((it, i) => {
-        const ip = escHtml(it.ip_name || it.display_keyword || it.keyword || '');
+      const allItems = data.items || [];
+      const items = allItems.map((it, i) => ({it, rank: isStyle ? (it.style_rank || i + 1) : i + 1})).filter(row => matchKw(row.it));
+      if (kwFilter && !items.length) return;
+      html += '<div class="snapshot-date-header"><span class="snapshot-date-badge">' + escHtml(date) + '</span> ' + (kwFilter ? items.length + ' / ' : '') + allItems.length + '条</div>';
+      if (!items.length) { html += '<div class="snapshot-empty">' + (isStyle ? '当日未提取到风格词' : '当日无数据') + '</div>'; return; }
+      items.forEach(({it, rank}) => {
+        const name = isStyle ? (it.display_keyword || it.style_word || it.keyword || '') : (it.ip_name || it.display_keyword || it.keyword || '');
+        const ip = escHtml(name);
         const hints = (it.hints || []).slice(0, 3).map(h => escHtml(h)).join('、');
-        html += '<div class="snapshot-item">' +
-          '<span class="snapshot-rank">' + (i + 1) + '</span>' +
+        const meta = isStyle ? [it.trendCategory, it.display_original !== name ? it.display_original : ''].filter(Boolean).map(escHtml).join(' · ') : '';
+        html += '<div class="snapshot-item' + (isStyle ? ' snapshot-style-item' : '') + '">' +
+          '<span class="snapshot-rank">' + escHtml(String(rank)) + '</span>' +
           '<span class="snapshot-ip">' + ip + '</span>' +
+          (meta ? '<span class="snapshot-style-meta">' + meta + '</span>' : '') +
           (hints ? '<span class="snapshot-hints">' + hints + '</span>' : '') +
         '</div>';
       });
     });
-    container.innerHTML = html || '<div class="snapshot-empty">暂无快照数据</div>';
+    container.innerHTML = html || '<div class="snapshot-empty">' + (kwFilter ? '暂无匹配的快照' : (isStyle && dateFilter ? '未找到当日采集记录' : '暂无快照数据')) + '</div>';
+    return;
+  }
+  if (isStyle) {
+    const board = PAYLOAD && PAYLOAD.styleHotBoard;
+    const generated = String((PAYLOAD && PAYLOAD.generatedAt) || '').match(/^(\d{4}-\d{2}-\d{2})/);
+    if (!board || !Array.isArray(board.items) || !generated) {
+      container.innerHTML = '<div class="snapshot-empty">暂无风格热搜快照</div>';
+      return;
+    }
+    if (dateFilter && dateFilter !== generated[1]) {
+      container.innerHTML = '<div class="snapshot-empty">未找到当日采集记录</div>';
+      return;
+    }
+    const previous = SNAPSHOTS;
+    SNAPSHOTS = {...(SNAPSHOTS || {}), styleDates: {[generated[1]]: {items: board.items}}};
+    try { renderSnapshot(); } finally { SNAPSHOTS = previous; }
     return;
   }
   // Fallback: 从 data.json 的 ipBoard.items 构造今日快照（data.json 一定有，结构稳定）
@@ -1645,6 +1681,7 @@ document.getElementById('platform-body').addEventListener('change', onNewWordSel
 document.getElementById('submit-btn').addEventListener('click', submitNewWords);
 document.getElementById('filter-cal-type').addEventListener('change', renderCalendar);
 document.getElementById('snapshot-date').addEventListener('change', renderSnapshot);
+document.getElementById('snapshot-type').addEventListener('change', renderSnapshot);
 document.getElementById('snapshot-kw').addEventListener('input', renderSnapshot);
 document.getElementById('snapshot-clear').addEventListener('click', function() {
   document.getElementById('snapshot-date').value = '';
