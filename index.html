@@ -233,6 +233,7 @@
   .style-score { font-size: 12px; color: #6b7280; }
   .style-platforms { font-size: 11px; color: #9ca3af; margin-top: 4px; }
   .style-orig { color: #7c3aed; font-size: 12px; margin-top: 2px; }
+  .style-table .style-source { color: #475569; white-space: normal; overflow-wrap: anywhere; }
   .style-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
   .style-card.clickable { cursor: pointer; }
   .style-card.clickable:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.09); }
@@ -1092,19 +1093,22 @@ function renderStyleHot() {
     return;
   }
   grid.innerHTML = '<table class="lb-table style-table"><thead><tr>' +
-    '<th style="width:40px">排名</th><th>风格词</th><th>分类</th><th>热度</th>' +
+    '<th style="width:40px">排名</th><th>关键词－原词</th><th>分类</th><th>热度</th>' +
     '</tr></thead><tbody>' +
     items.map((s, i) => {
       const rank = s.style_rank || (i + 1);
       const word = s.display_keyword || s.style_word || s.keyword || '';
       const orig = s.display_original || '';
+      const originals = Array.isArray(s.source_originals) && s.source_originals.length
+        ? s.source_originals : (orig ? [orig] : []);
       s._hot = (s.heat != null ? s.heat : s.score) || 0;
       s._names = [word];
       const hasMap = matchDiesunStyles(word, orig).length > 0;
       const cat = s.trendCategory || '';
       return '<tr class="style-row' + (hasMap ? ' style-mapped' : '') + '" data-style-word="' + escHtml(word) + '" data-style-orig="' + escHtml(orig) + '">' +
         '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
-        '<td><div class="kw-main">' + escHtml(word) + '</div></td>' +
+        '<td><div class="kw-main">' + escHtml(word) + '</div>' +
+        (originals.length ? '<div class="kw-sub style-source">' + originals.map(escHtml).join('<br>') + '</div>' : '') + '</td>' +
         '<td>' + catDotHtml(cat) + escHtml(cat || '—') + '</td>' +
         '<td>' + heatCellHtml(s) + '</td>' +
       '</tr>';
