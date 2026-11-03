@@ -999,22 +999,25 @@ function renderCalendar() {
   } else if (PAYLOAD.hotCalendar && PAYLOAD.hotCalendar.items) {
     items = PAYLOAD.hotCalendar.items;
   }
-  // 每周从三元组快照构建泡泡玛特系列卡片；日历的旧周新品不沿用。
+  // 优先使用日历中已核实的新品；三元组快照仅作本周缺数据时的兜底。
   const today = new Date();
   const thisMonday = new Date(today.getFullYear(), today.getMonth(), today.getDate() - (today.getDay() + 6) % 7);
-  items = items.filter(c => !isPopmartEvent(c) &&
+  const nextMonday = new Date(thisMonday.getFullYear(), thisMonday.getMonth(), thisMonday.getDate() + 7);
+  items = items.filter(c => (!isPopmartEvent(c) || c._verifiedSeries) &&
     new Date(Number(c.year), Number(c.month) - 1, Number(c.day)) >= thisMonday);
-  ((POPMART_TRIPLES && POPMART_TRIPLES.series) || []).forEach(s => {
-    const release = new Date(s.release + 'T00:00:00');
-    if (!isNaN(release.getTime())) items.push({
-      category: '泡泡玛特', year: release.getFullYear(), month: release.getMonth() + 1,
-      day: release.getDate(), _verifiedSeries: s.name, text: s.name
+  if (!items.some(isPopmartEvent)) {
+    ((POPMART_TRIPLES && POPMART_TRIPLES.series) || []).forEach(s => {
+      const release = new Date(s.release + 'T00:00:00');
+      if (release >= thisMonday && release < nextMonday) items.push({
+        category: '泡泡玛特', year: release.getFullYear(), month: release.getMonth() + 1,
+        day: release.getDate(), _verifiedSeries: s.name, text: s.name
+      });
     });
-  });
+  }
   const pending = ((POPMART_TRIPLES && POPMART_TRIPLES.pending) || []).length;
   if (pending) {
     const now = new Date((POPMART_TRIPLES.generatedAt || '') + 'T00:00:00');
-    if (!isNaN(now.getTime())) items.push({category: '泡泡玛特',
+    if (now >= thisMonday && now < nextMonday) items.push({category: '泡泡玛特',
       year: now.getFullYear(), month: now.getMonth() + 1, day: now.getDate(),
       _pendingCount: pending, text: '本周 ' + pending + ' 个新品系列待中文核查'});
   }
