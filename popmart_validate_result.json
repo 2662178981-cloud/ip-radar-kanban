@@ -1,22 +1,23 @@
 {
   "summary": {
-    "total_rows": 27,
-    "passed": 27,
+    "total_rows": 37,
+    "passed": 37,
     "pass_rate": 100.0,
     "error_count": 0,
-    "warn_count": 0
+    "warn_count": 0,
+    "affected_rows": 0
   },
-  "scope": "本周3条有效追加+24条原行修正；本轮补充新IP错字2条",
+  "scope": "本轮37条新增；排除4条历史品牌IP/同义重复",
   "history": {
     "pageId": "3ceIz3nICKyHjfwnfVRd",
     "worksheetId": "14",
-    "fetchedAt": "2026-10-29T04:37:10.824Z",
-    "lastRow": 3016
+    "fetchedAt": "2026-11-03T05:54:39.744Z",
+    "lastRow": 3008
   },
-  "historyRows": 3016,
-  "addedCount": 3,
-  "correctionCount": 24,
-  "skippedDuplicateCount": 2,
+  "historyRows": 3008,
+  "addedCount": 37,
+  "correctionCount": 0,
+  "skippedDuplicateCount": 4,
   "findings": [],
   "by_rule": {},
   "llm_review": {},
@@ -26,175 +27,139 @@
       "relationGraph": {
         "pageId": "3ceIz3nICKyHjfwnfVRd",
         "worksheetId": "14",
-        "correctedRows": [
-          2996,
-          2997,
-          2998,
-          2999,
-          3000,
-          3001,
-          3002,
-          3003,
-          3004,
-          2981,
-          2982,
-          2983,
-          2984,
-          2985,
-          2986,
-          2987,
-          2988,
-          2989,
-          2990,
-          2991,
-          2992,
-          2993,
-          2994,
-          2995
-        ],
         "addedRows": [
-          3017
+          3009,
+          3010,
+          3011,
+          3012,
+          3013,
+          3014,
+          3015,
+          3016,
+          3017,
+          3018,
+          3019,
+          3020,
+          3021,
+          3022,
+          3023,
+          3024,
+          3025,
+          3026,
+          3027,
+          3028,
+          3029,
+          3030,
+          3031,
+          3032,
+          3033,
+          3034,
+          3035,
+          3036,
+          3037,
+          3038,
+          3039,
+          3040,
+          3041,
+          3042,
+          3043,
+          3044,
+          3045
         ],
-        "readbackRows": 25,
-        "readbackCells": 125,
+        "correctedRows": [],
+        "addedRowsVerified": true,
+        "correctedRowsVerified": true,
+        "readbackRows": 37,
+        "readbackCells": 185,
         "mismatches": 0,
-        "dateNormalization": "2026/10/29 = 2026-10-29"
+        "verifiedAt": "2026-11-03T06:16:40.526Z"
       },
       "validation": {
+        "pageId": "3ceIz3nICKyHjfwnfVRd",
         "worksheetId": "10",
-        "rows": 25,
-        "startRow": 1593,
-        "endRow": 1617,
-        "checkedCells": 200,
-        "mismatches": 0
+        "addedRows": [
+          1620,
+          1621,
+          1622,
+          1623,
+          1624,
+          1625,
+          1626,
+          1627,
+          1628,
+          1629,
+          1630,
+          1631,
+          1632,
+          1633,
+          1634,
+          1635,
+          1636,
+          1637,
+          1638,
+          1639,
+          1640,
+          1641,
+          1642,
+          1643,
+          1644,
+          1645,
+          1646,
+          1647,
+          1648,
+          1649,
+          1650,
+          1651,
+          1652,
+          1653,
+          1654,
+          1655,
+          1656
+        ],
+        "readbackRows": 37,
+        "readbackCells": 296,
+        "mismatches": 0,
+        "verifiedAt": "2026-11-03T06:16:40.526Z"
       }
-    },
-    "tests": {
-      "command": "python -m unittest _test_ip_relation_increment _test_weekly_popmart -v",
-      "passed": 17
-    },
-    "githubPages": {
-      "build": {
-        "status": "built",
-        "commit": "b96ede1e9c8be0500759b2a4f49981291542d93f"
-      },
-      "files": [
-        {
-          "file": "popmart_triples.json",
-          "http": 200,
-          "matchesLocalJson": true,
-          "matchesLocalTextAfterLineEndingNormalization": true,
-          "sha256LF": "c42658e276250610ede202a4e2e2dc19d8ef1a6f5f719303c4ed030b73fe8a9e"
-        },
-        {
-          "file": "popmart_validate_result.json",
-          "http": 200,
-          "matchesLocalJson": true,
-          "matchesLocalTextAfterLineEndingNormalization": true,
-          "sha256LF": "e770ffe7d6ccec45ae9c7024b7512cf38b332574c748d43747e0bb1fcb7950b7"
-        },
-        {
-          "file": "calendar_index.json",
-          "http": 200,
-          "matchesLocalJson": true,
-          "matchesLocalTextAfterLineEndingNormalization": true,
-          "sha256LF": "11723844ca5c01e1c2987aee14886fedc2bacc8b44533760460a07b2cf5394d0"
-        }
-      ]
     }
   },
-  "roundAddedCount": 27,
-  "appendedCount": 3,
-  "correctedCount": 24,
-  "relationLibraryCount": 3020,
-  "relationCountsVerified": true,
-  "relationCountsVerifiedAt": "2026-10-29T07:33:28.929Z",
-  "weekEffectiveCount": 27,
+  "semanticReview": {
+    "skill": "ip-graph-qa",
+    "completed": true,
+    "scope": "每条新增关系与京东官方全款图逐项对照；母IP归属按全库关系及官方封面核对；系列英文同义有官方原文证据",
+    "reviewedRows": 37,
+    "confirmedErrorRows": 0,
+    "attentionRows": 0,
+    "checkedAt": "2026-11-03T14:12:43.926105+08:00"
+  },
   "libraryQuality": {
     "verified": true,
     "scope": "all_library",
-    "scannedRows": 3020,
+    "scannedRows": 3045,
     "confirmedErrorRows": 0,
     "attentionRows": 0,
     "errorRate": 0.0,
     "errorRateBasis": "机器和语义复核后确认的问题关系行数 / 全库有效关系行数 × 100%",
-    "checkedAt": "2026-10-29T07:37:05.508053+00:00",
-    "inputFingerprint": "9dc9470813cc1e289e1ecc39d8ad2a9509f5d81d0466eaaa2613174c509b12aa",
+    "checkedAt": "2026-11-03T06:25:00.968614+00:00",
+    "inputFingerprint": "3af1bda83917819cb51ac0f23805e1d6692c0abe4728793c7e8883336af032a8",
     "machineResult": {
       "completed": true,
-      "scannedRows": 3020,
+      "scannedRows": 3045,
       "confirmedErrorRows": 0
     },
     "semanticResult": {
       "completed": true,
-      "reviewedRows": 21,
+      "reviewedRows": 56,
       "confirmedErrorRows": 0,
       "attentionRows": 0
     },
     "findings": []
   },
-  "processedAddedCount": 2,
-  "incrementAudit": "popmart_typo_increment_audit_20261029.json",
-  "validationBatches": [
-    {
-      "kind": "previous_weekly_validation",
-      "summary": {
-        "total_rows": 25,
-        "passed": 25,
-        "pass_rate": 100.0,
-        "error_count": 0,
-        "warn_count": 0
-      }
-    },
-    {
-      "kind": "new_ip_typos",
-      "keys": [
-        [
-          "RiboDiary",
-          "错字",
-          "RiboDary"
-        ],
-        [
-          "RiboDiary",
-          "错字",
-          "RiboDairy"
-        ]
-      ],
-      "summary": {
-        "total_rows": 2,
-        "passed": 2,
-        "pass_rate": 100.0,
-        "error_count": 0,
-        "warn_count": 0,
-        "affected_rows": 0
-      },
-      "publication": {
-        "joyspace": {
-          "relationGraph": {
-            "pageId": "3ceIz3nICKyHjfwnfVRd",
-            "worksheetId": "14",
-            "addedRows": [
-              3019,
-              3020
-            ],
-            "correctedRows": [],
-            "readbackRows": 2,
-            "readbackCells": 10,
-            "mismatches": 0
-          },
-          "validation": {
-            "worksheetId": "10",
-            "startRow": 1618,
-            "endRow": 1619,
-            "rows": 2,
-            "checkedCells": 16,
-            "mismatches": 0
-          }
-        },
-        "readbackReceipt": "popmart_typo_write_readback_20261029.json",
-        "checkedAt": "2026-10-29T07:33:04.365Z"
-      },
-      "semanticReviewed": 2
-    }
-  ]
+  "roundAddedCount": 37,
+  "appendedCount": 37,
+  "correctedCount": 0,
+  "relationLibraryCount": 3045,
+  "relationCountsVerified": true,
+  "relationCountsVerifiedAt": "2026-11-03T06:24:38.153Z",
+  "weekEffectiveCount": 37
 }
