@@ -2,29 +2,29 @@
   "quality": {
     "verified": true,
     "scope": "all_library",
-    "scannedRows": 3020,
+    "scannedRows": 3045,
     "confirmedErrorRows": 0,
     "attentionRows": 0,
     "errorRate": 0.0,
     "errorRateBasis": "机器和语义复核后确认的问题关系行数 / 全库有效关系行数 × 100%",
-    "checkedAt": "2026-10-29T07:37:05.508053+00:00",
-    "inputFingerprint": "9dc9470813cc1e289e1ecc39d8ad2a9509f5d81d0466eaaa2613174c509b12aa",
+    "checkedAt": "2026-11-03T06:25:00.968614+00:00",
+    "inputFingerprint": "3af1bda83917819cb51ac0f23805e1d6692c0abe4728793c7e8883336af032a8",
     "machineResult": {
       "completed": true,
-      "scannedRows": 3020,
+      "scannedRows": 3045,
       "confirmedErrorRows": 0
     },
     "semanticResult": {
       "completed": true,
-      "reviewedRows": 21,
+      "reviewedRows": 56,
       "confirmedErrorRows": 0,
       "attentionRows": 0
     },
     "findings": []
   },
-  "roundAddedCount": 27,
-  "relationLibraryCount": 3020,
+  "roundAddedCount": 37,
+  "relationLibraryCount": 3045,
   "relationCountsVerified": true,
-  "checkedAt": "2026-10-29T07:37:05.508053+00:00",
+  "checkedAt": "2026-11-03T06:25:00.968614+00:00",
   "skill": "ip-graph-qa"
 }
