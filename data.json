@@ -1,6 +1,6 @@
 {
  "version": "4.0",
- "generatedAt": "2026-11-04T13:30:01+08:00",
+ "generatedAt": "2026-11-04T13:45:27+08:00",
  "summary": {
   "total": 50,
   "ipCount": 50,
@@ -16,15 +16,15 @@
    {
     "code": "weibo",
     "title": "weibo",
-    "count": 25
+    "count": 26
    },
    {
     "code": "xiaohongshu",
     "title": "xiaohongshu",
-    "count": 7
+    "count": 6
    }
   ],
-  "generatedAt": "2026-11-04T13:30:01+08:00"
+  "generatedAt": "2026-11-04T13:45:27+08:00"
  },
  "ipBoard": {
   "title": "IP 榜单",
@@ -139,8 +139,8 @@
      }
     ],
     "ipCategory": "品牌联名",
-    "hot_value": 7700437,
-    "hot_score": 7700437,
+    "hot_value": 7700482,
+    "hot_score": 7700482,
     "norm_score": 8.2638,
     "hints": [
      "DeepSeek新品首发",
@@ -1505,6 +1505,36 @@
     "rank": 48
    },
    {
+    "keyword": "倪萍",
+    "display_keyword": "倪萍",
+    "display_original": "倪萍 医美",
+    "matched_value": "",
+    "ip_status": "新value",
+    "ip_terms": [
+     {
+      "word": "倪萍",
+      "status": "新value",
+      "category": "明星/人物",
+      "addedDate": ""
+     }
+    ],
+    "ipCategory": "明星/人物",
+    "hot_value": 140000,
+    "hot_score": 140000,
+    "norm_score": 5.1461,
+    "hints": [
+     "倪萍同款穿搭",
+     "倪萍同款单品",
+     "倪萍代言品牌"
+    ],
+    "platform": "weibo",
+    "platforms": [
+     "weibo"
+    ],
+    "ip_rank": 49,
+    "rank": 49
+   },
+   {
     "keyword": "王一博",
     "display_keyword": "王一博",
     "display_original": "王一博有翡谢允",
@@ -1531,36 +1561,6 @@
     "platforms": [
      "xiaohongshu"
     ],
-    "ip_rank": 49,
-    "rank": 49
-   },
-   {
-    "keyword": "如鸢",
-    "display_keyword": "如鸢",
-    "display_original": "如鸢（3条热搜）",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "如鸢",
-      "status": "新value",
-      "category": "游戏电竞",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "游戏电竞",
-    "hot_value": 798,
-    "hot_score": 798,
-    "norm_score": 2.9025,
-    "hints": [
-     "如鸢联名周边",
-     "如鸢手办模型",
-     "如鸢限定皮肤"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
     "ip_rank": 50,
     "rank": 50
    }
@@ -1570,7 +1570,7 @@
   "weibo": {
    "code": "weibo",
    "title": "weibo",
-   "count": 25,
+   "count": 26,
    "items": [
     {
      "keyword": "曼联",
@@ -2165,6 +2165,29 @@
       "林青霞同款穿搭",
       "林青霞同款单品",
       "林青霞代言品牌"
+     ]
+    },
+    {
+     "keyword": "倪萍",
+     "display_keyword": "倪萍",
+     "display_original": "倪萍 医美",
+     "ip_status": "新value",
+     "ipCategory": "明星/人物",
+     "ip_terms": [
+      {
+       "word": "倪萍",
+       "status": "新value",
+       "category": "明星/人物",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "weibo"
+     ],
+     "hints": [
+      "倪萍同款穿搭",
+      "倪萍同款单品",
+      "倪萍代言品牌"
      ]
     }
    ]
@@ -2769,7 +2792,7 @@
   "xiaohongshu": {
    "code": "xiaohongshu",
    "title": "xiaohongshu",
-   "count": 7,
+   "count": 6,
    "items": [
     {
      "keyword": "环球",
@@ -2908,29 +2931,6 @@
       "王一博同款穿搭",
       "王一博同款单品",
       "王一博代言品牌"
-     ]
-    },
-    {
-     "keyword": "如鸢",
-     "display_keyword": "如鸢",
-     "display_original": "如鸢（3条热搜）",
-     "ip_status": "新value",
-     "ipCategory": "游戏电竞",
-     "ip_terms": [
-      {
-       "word": "如鸢",
-       "status": "新value",
-       "category": "游戏电竞",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "如鸢联名周边",
-      "如鸢手办模型",
-      "如鸢限定皮肤"
      ]
     }
    ]
