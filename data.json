@@ -1,17 +1,17 @@
 {
  "version": "4.0",
- "generatedAt": "2026-11-04T15:48:31+08:00",
+ "generatedAt": "2026-11-04T17:36:07+08:00",
  "summary": {
   "total": 50,
   "ipCount": 50,
-  "newValues": 21,
+  "newValues": 22,
   "oldValues": 45,
   "reviewNeeded": 0,
   "boards": [
    {
     "code": "douyin",
     "title": "douyin",
-    "count": 18
+    "count": 20
    },
    {
     "code": "weibo",
@@ -21,16 +21,47 @@
    {
     "code": "xiaohongshu",
     "title": "xiaohongshu",
-    "count": 13
+    "count": 11
    }
   ],
-  "generatedAt": "2026-11-04T15:48:22+08:00"
+  "generatedAt": "2026-11-04T17:35:57+08:00"
  },
  "ipBoard": {
   "title": "IP 榜单",
   "subtitle": "跨平台热度排行",
   "total": 50,
   "items": [
+   {
+    "keyword": "厉娜",
+    "display_keyword": "厉娜",
+    "display_original": "我也拥有了亚麻发色厉娜（3条热...",
+    "matched_value": "",
+    "ip_status": "新value",
+    "ip_terms": [
+     {
+      "word": "厉娜",
+      "status": "新value",
+      "category": "明星/人物",
+      "addedDate": ""
+     }
+    ],
+    "ipCategory": "明星/人物",
+    "hot_value": 15939000,
+    "hot_score": 15939000,
+    "norm_score": 8.642999999999999,
+    "hints": [
+     "厉娜同款穿搭",
+     "厉娜同款单品",
+     "厉娜代言品牌"
+    ],
+    "platform": "weibo",
+    "platforms": [
+     "weibo",
+     "douyin"
+    ],
+    "ip_rank": 1,
+    "rank": 1
+   },
    {
     "keyword": "特朗普",
     "display_keyword": "特朗普",
@@ -59,8 +90,8 @@
      "weibo",
      "douyin"
     ],
-    "ip_rank": 1,
-    "rank": 1
+    "ip_rank": 2,
+    "rank": 2
    },
    {
     "keyword": "TES",
@@ -90,8 +121,8 @@
      "weibo",
      "douyin"
     ],
-    "ip_rank": 2,
-    "rank": 2
+    "ip_rank": 3,
+    "rank": 3
    },
    {
     "keyword": "白小纯",
@@ -121,8 +152,8 @@
      "weibo",
      "douyin"
     ],
-    "ip_rank": 3,
-    "rank": 3
+    "ip_rank": 4,
+    "rank": 4
    },
    {
     "keyword": "原神",
@@ -139,8 +170,8 @@
      }
     ],
     "ipCategory": "游戏电竞",
-    "hot_value": 7670012,
-    "hot_score": 7670012,
+    "hot_value": 7670031,
+    "hot_score": 7670031,
     "norm_score": 8.26176,
     "hints": [
      "原神联名周边",
@@ -152,8 +183,8 @@
      "douyin",
      "xiaohongshu"
     ],
-    "ip_rank": 4,
-    "rank": 4
+    "ip_rank": 5,
+    "rank": 5
    },
    {
     "keyword": "第五人格",
@@ -170,8 +201,8 @@
      }
     ],
     "ipCategory": "游戏电竞",
-    "hot_value": 7663019,
-    "hot_score": 7663019,
+    "hot_value": 7663032,
+    "hot_score": 7663032,
     "norm_score": 8.26128,
     "hints": [
      "第五人格联名周边",
@@ -182,36 +213,6 @@
     "platforms": [
      "douyin",
      "xiaohongshu"
-    ],
-    "ip_rank": 5,
-    "rank": 5
-   },
-   {
-    "keyword": "S16",
-    "display_keyword": "S16",
-    "display_original": "S16淘汰赛热点赛事观察（2条...",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "S16",
-      "status": "新value",
-      "category": "游戏电竞",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "游戏电竞",
-    "hot_value": 15435000,
-    "hot_score": 15435000,
-    "norm_score": 7.1885,
-    "hints": [
-     "S16联名周边",
-     "S16手办模型",
-     "S16限定皮肤"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
     ],
     "ip_rank": 6,
     "rank": 6
@@ -307,6 +308,42 @@
     "rank": 9
    },
    {
+    "keyword": "张百乔 贾鑫",
+    "display_keyword": "张百乔 贾鑫",
+    "display_original": "张百乔长文写贾鑫烧伤后心里话",
+    "matched_value": "",
+    "ip_status": "新value",
+    "ip_terms": [
+     {
+      "word": "张百乔",
+      "status": "新value",
+      "category": "明星/人物",
+      "addedDate": ""
+     },
+     {
+      "word": "贾鑫",
+      "status": "新value",
+      "category": "明星/人物",
+      "addedDate": ""
+     }
+    ],
+    "ipCategory": "明星/人物",
+    "hot_value": 7723000,
+    "hot_score": 7723000,
+    "norm_score": 6.8878,
+    "hints": [
+     "张百乔 贾鑫同款穿搭",
+     "张百乔 贾鑫同款单品",
+     "张百乔 贾鑫代言品牌"
+    ],
+    "platform": "douyin",
+    "platforms": [
+     "douyin"
+    ],
+    "ip_rank": 10,
+    "rank": 10
+   },
+   {
     "keyword": "赵继伟",
     "display_keyword": "赵继伟",
     "display_original": "库珀赛后“表白”赵继伟",
@@ -333,8 +370,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 10,
-    "rank": 10
+    "ip_rank": 11,
+    "rank": 11
    },
    {
     "keyword": "DeepSeek",
@@ -363,8 +400,38 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 11,
-    "rank": 11
+    "ip_rank": 12,
+    "rank": 12
+   },
+   {
+    "keyword": "S16",
+    "display_keyword": "S16",
+    "display_original": "我的S16八强观赛日记",
+    "matched_value": "",
+    "ip_status": "新value",
+    "ip_terms": [
+     {
+      "word": "S16",
+      "status": "新value",
+      "category": "游戏电竞",
+      "addedDate": ""
+     }
+    ],
+    "ipCategory": "游戏电竞",
+    "hot_value": 7698000,
+    "hot_score": 7698000,
+    "norm_score": 6.8864,
+    "hints": [
+     "S16联名周边",
+     "S16手办模型",
+     "S16限定皮肤"
+    ],
+    "platform": "douyin",
+    "platforms": [
+     "douyin"
+    ],
+    "ip_rank": 13,
+    "rank": 13
    },
    {
     "keyword": "陈泽",
@@ -393,8 +460,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 12,
-    "rank": 12
+    "ip_rank": 14,
+    "rank": 14
    },
    {
     "keyword": "许飞",
@@ -423,8 +490,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 13,
-    "rank": 13
+    "ip_rank": 15,
+    "rank": 15
    },
    {
     "keyword": "CBA",
@@ -453,8 +520,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 14,
-    "rank": 14
+    "ip_rank": 16,
+    "rank": 16
    },
    {
     "keyword": "虞寻歌",
@@ -483,8 +550,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 15,
-    "rank": 15
+    "ip_rank": 17,
+    "rank": 17
    },
    {
     "keyword": "周传雄",
@@ -513,8 +580,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 16,
-    "rank": 16
+    "ip_rank": 18,
+    "rank": 18
    },
    {
     "keyword": "马天宇",
@@ -543,8 +610,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 17,
-    "rank": 17
+    "ip_rank": 19,
+    "rank": 19
    },
    {
     "keyword": "卢昱晓 林一",
@@ -579,39 +646,8 @@
     "platforms": [
      "douyin"
     ],
-    "ip_rank": 18,
-    "rank": 18
-   },
-   {
-    "keyword": "时代少年团",
-    "display_keyword": "时代少年团",
-    "display_original": "时代少年团4小时纪录片（2条热...",
-    "matched_value": "时代少年团",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "时代少年团",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 190011,
-    "hot_score": 190011,
-    "norm_score": 6.334560000000001,
-    "hints": [
-     "时代少年团同款穿搭",
-     "时代少年团同款单品",
-     "时代少年团代言品牌"
-    ],
-    "platform": "weibo",
-    "platforms": [
-     "weibo",
-     "xiaohongshu"
-    ],
-    "ip_rank": 19,
-    "rank": 19
+    "ip_rank": 20,
+    "rank": 20
    },
    {
     "keyword": "TheShy 369",
@@ -646,8 +682,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 20,
-    "rank": 20
+    "ip_rank": 21,
+    "rank": 21
    },
    {
     "keyword": "肖战",
@@ -676,8 +712,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 21,
-    "rank": 21
+    "ip_rank": 22,
+    "rank": 22
    },
    {
     "keyword": "林一",
@@ -706,8 +742,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 22,
-    "rank": 22
+    "ip_rank": 23,
+    "rank": 23
    },
    {
     "keyword": "触碰",
@@ -736,8 +772,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 23,
-    "rank": 23
+    "ip_rank": 24,
+    "rank": 24
    },
    {
     "keyword": "易坦 子融 花",
@@ -778,8 +814,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 24,
-    "rank": 24
+    "ip_rank": 25,
+    "rank": 25
    },
    {
     "keyword": "南京大学",
@@ -808,8 +844,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 25,
-    "rank": 25
+    "ip_rank": 26,
+    "rank": 26
    },
    {
     "keyword": "马斯克",
@@ -838,8 +874,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 26,
-    "rank": 26
+    "ip_rank": 27,
+    "rank": 27
    },
    {
     "keyword": "贺峻霖",
@@ -868,8 +904,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 27,
-    "rank": 27
+    "ip_rank": 28,
+    "rank": 28
    },
    {
     "keyword": "兰香如故 刘学义",
@@ -904,8 +940,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 28,
-    "rank": 28
+    "ip_rank": 29,
+    "rank": 29
    },
    {
     "keyword": "TheShy",
@@ -934,8 +970,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 29,
-    "rank": 29
+    "ip_rank": 30,
+    "rank": 30
    },
    {
     "keyword": "易烊千玺 于适",
@@ -970,8 +1006,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 30,
-    "rank": 30
+    "ip_rank": 31,
+    "rank": 31
    },
    {
     "keyword": "KPL",
@@ -1000,8 +1036,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 31,
-    "rank": 31
+    "ip_rank": 32,
+    "rank": 32
    },
    {
     "keyword": "晚晚",
@@ -1030,8 +1066,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 32,
-    "rank": 32
+    "ip_rank": 33,
+    "rank": 33
    },
    {
     "keyword": "易坦 子融 花 钎九 不清 冰",
@@ -1090,8 +1126,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 33,
-    "rank": 33
+    "ip_rank": 34,
+    "rank": 34
    },
    {
     "keyword": "刘亦菲 刘诗诗 唐嫣 杨幂",
@@ -1138,8 +1174,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 34,
-    "rank": 34
+    "ip_rank": 35,
+    "rank": 35
    },
    {
     "keyword": "王星越",
@@ -1168,8 +1204,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 35,
-    "rank": 35
+    "ip_rank": 36,
+    "rank": 36
    },
    {
     "keyword": "RNG LPL",
@@ -1204,8 +1240,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 36,
-    "rank": 36
+    "ip_rank": 37,
+    "rank": 37
    },
    {
     "keyword": "NBA",
@@ -1234,8 +1270,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 37,
-    "rank": 37
+    "ip_rank": 38,
+    "rank": 38
    },
    {
     "keyword": "小城良方",
@@ -1264,8 +1300,38 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 38,
-    "rank": 38
+    "ip_rank": 39,
+    "rank": 39
+   },
+   {
+    "keyword": "时代少年团",
+    "display_keyword": "时代少年团",
+    "display_original": "时代少年团4小时纪录片",
+    "matched_value": "时代少年团",
+    "ip_status": "匹配成功",
+    "ip_terms": [
+     {
+      "word": "时代少年团",
+      "status": "匹配成功",
+      "category": "明星/人物",
+      "addedDate": ""
+     }
+    ],
+    "ipCategory": "明星/人物",
+    "hot_value": 190000,
+    "hot_score": 190000,
+    "norm_score": 5.2788,
+    "hints": [
+     "时代少年团同款穿搭",
+     "时代少年团同款单品",
+     "时代少年团代言品牌"
+    ],
+    "platform": "weibo",
+    "platforms": [
+     "weibo"
+    ],
+    "ip_rank": 40,
+    "rank": 40
    },
    {
     "keyword": "唐嫣",
@@ -1294,91 +1360,31 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 39,
-    "rank": 39
+    "ip_rank": 41,
+    "rank": 41
    },
    {
-    "keyword": "369",
-    "display_keyword": "369",
-    "display_original": "LCK解说称赞369",
-    "matched_value": "",
-    "ip_status": "新value",
+    "keyword": "崩坏星穹铁道",
+    "display_keyword": "崩坏星穹铁道",
+    "display_original": "崩坏星穹铁道创作者激励计划﻿（...",
+    "matched_value": "崩坏星穹铁道",
+    "ip_status": "匹配成功",
     "ip_terms": [
      {
-      "word": "369",
-      "status": "新value",
+      "word": "崩坏星穹铁道",
+      "status": "匹配成功",
       "category": "游戏电竞",
       "addedDate": ""
      }
     ],
     "ipCategory": "游戏电竞",
-    "hot_value": 170000,
-    "hot_score": 170000,
-    "norm_score": 5.2305,
+    "hot_value": 516,
+    "hot_score": 516,
+    "norm_score": 2.7135,
     "hints": [
-     "369联名周边",
-     "369手办模型",
-     "369限定皮肤"
-    ],
-    "platform": "weibo",
-    "platforms": [
-     "weibo"
-    ],
-    "ip_rank": 40,
-    "rank": 40
-   },
-   {
-    "keyword": "于适",
-    "display_keyword": "于适",
-    "display_original": "于适韩骁蛟龙行动",
-    "matched_value": "于适",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "于适",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 1030,
-    "hot_score": 1030,
-    "norm_score": 3.0133,
-    "hints": [
-     "于适同款穿搭",
-     "于适同款单品",
-     "于适代言品牌"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 41,
-    "rank": 41
-   },
-   {
-    "keyword": "格莱美",
-    "display_keyword": "格莱美",
-    "display_original": "格莱美",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "格莱美",
-      "status": "新value",
-      "category": "影视综艺",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "影视综艺",
-    "hot_value": 346,
-    "hot_score": 346,
-    "norm_score": 2.5403,
-    "hints": [
-     "格莱美同款穿搭",
-     "格莱美周边好物",
-     "格莱美联名款"
+     "崩坏星穹铁道联名周边",
+     "崩坏星穹铁道手办模型",
+     "崩坏星穹铁道限定皮肤"
     ],
     "platform": "xiaohongshu",
     "platforms": [
@@ -1388,27 +1394,27 @@
     "rank": 42
    },
    {
-    "keyword": "脱颖而出",
-    "display_keyword": "脱颖而出",
-    "display_original": "人群中脱颖而出",
-    "matched_value": "脱颖而出",
+    "keyword": "派蒙",
+    "display_keyword": "派蒙",
+    "display_original": "派蒙",
+    "matched_value": "派蒙",
     "ip_status": "匹配成功",
     "ip_terms": [
      {
-      "word": "脱颖而出",
+      "word": "派蒙",
       "status": "匹配成功",
-      "category": "影视综艺",
+      "category": "游戏电竞",
       "addedDate": ""
      }
     ],
-    "ipCategory": "影视综艺",
-    "hot_value": 343,
-    "hot_score": 343,
-    "norm_score": 2.5366,
+    "ipCategory": "游戏电竞",
+    "hot_value": 515,
+    "hot_score": 515,
+    "norm_score": 2.7126,
     "hints": [
-     "脱颖而出同款穿搭",
-     "脱颖而出周边好物",
-     "脱颖而出联名款"
+     "派蒙联名周边",
+     "派蒙手办模型",
+     "派蒙限定皮肤"
     ],
     "platform": "xiaohongshu",
     "platforms": [
@@ -1418,27 +1424,27 @@
     "rank": 43
    },
    {
-    "keyword": "恋与深空",
-    "display_keyword": "恋与深空",
-    "display_original": "恋与深空",
-    "matched_value": "恋与深空",
+    "keyword": "RW",
+    "display_keyword": "RW",
+    "display_original": "grwm",
+    "matched_value": "RW",
     "ip_status": "匹配成功",
     "ip_terms": [
      {
-      "word": "恋与深空",
+      "word": "RW",
       "status": "匹配成功",
-      "category": "游戏电竞",
+      "category": "体育",
       "addedDate": ""
      }
     ],
-    "ipCategory": "游戏电竞",
-    "hot_value": 206,
-    "hot_score": 206,
-    "norm_score": 2.316,
+    "ipCategory": "体育",
+    "hot_value": 343,
+    "hot_score": 343,
+    "norm_score": 2.5366,
     "hints": [
-     "恋与深空联名周边",
-     "恋与深空手办模型",
-     "恋与深空限定皮肤"
+     "RW球衣周边",
+     "RW运动装备",
+     "RW联名款"
     ],
     "platform": "xiaohongshu",
     "platforms": [
@@ -1448,27 +1454,27 @@
     "rank": 44
    },
    {
-    "keyword": "秦彻",
-    "display_keyword": "秦彻",
-    "display_original": "秦彻",
-    "matched_value": "秦彻",
+    "keyword": "TFBOYS",
+    "display_keyword": "TFBOYS",
+    "display_original": "TFBOYS资源组",
+    "matched_value": "TFBOYS",
     "ip_status": "匹配成功",
     "ip_terms": [
      {
-      "word": "秦彻",
+      "word": "TFBOYS",
       "status": "匹配成功",
-      "category": "游戏电竞",
+      "category": "明星/人物",
       "addedDate": ""
      }
     ],
-    "ipCategory": "游戏电竞",
-    "hot_value": 173,
-    "hot_score": 173,
-    "norm_score": 2.2405,
+    "ipCategory": "明星/人物",
+    "hot_value": 258,
+    "hot_score": 258,
+    "norm_score": 2.4133,
     "hints": [
-     "秦彻联名周边",
-     "秦彻手办模型",
-     "秦彻限定皮肤"
+     "TFBOYS同款穿搭",
+     "TFBOYS同款单品",
+     "TFBOYS代言品牌"
     ],
     "platform": "xiaohongshu",
     "platforms": [
@@ -1478,33 +1484,33 @@
     "rank": 45
    },
    {
-    "keyword": "恋与深空 秦彻",
-    "display_keyword": "恋与深空 秦彻",
-    "display_original": "恋与深空秦彻临空新年计划",
-    "matched_value": "恋与深空 秦彻",
+    "keyword": "TFBOYS 易烊千玺",
+    "display_keyword": "TFBOYS 易烊千玺",
+    "display_original": "TFBOYS易烊千玺",
+    "matched_value": "TFBOYS 易烊千玺",
     "ip_status": "匹配成功",
     "ip_terms": [
      {
-      "word": "恋与深空",
+      "word": "TFBOYS",
       "status": "匹配成功",
-      "category": "游戏电竞",
+      "category": "明星/人物",
       "addedDate": ""
      },
      {
-      "word": "秦彻",
+      "word": "易烊千玺",
       "status": "匹配成功",
-      "category": "游戏电竞",
+      "category": "明星/人物",
       "addedDate": ""
      }
     ],
-    "ipCategory": "游戏电竞",
-    "hot_value": 172,
-    "hot_score": 172,
-    "norm_score": 2.238,
+    "ipCategory": "明星/人物",
+    "hot_value": 258,
+    "hot_score": 258,
+    "norm_score": 2.4133,
     "hints": [
-     "恋与深空 秦彻联名周边",
-     "恋与深空 秦彻手办模型",
-     "恋与深空 秦彻限定皮肤"
+     "TFBOYS 易烊千玺同款穿搭",
+     "TFBOYS 易烊千玺同款单品",
+     "TFBOYS 易烊千玺代言品牌"
     ],
     "platform": "xiaohongshu",
     "platforms": [
@@ -1514,27 +1520,27 @@
     "rank": 46
    },
    {
-    "keyword": "哪吒",
-    "display_keyword": "哪吒",
-    "display_original": "哪吒之魔童闹海（2条热搜）",
-    "matched_value": "哪吒",
+    "keyword": "易烊千玺",
+    "display_keyword": "易烊千玺",
+    "display_original": "易烊千玺刘艳芬",
+    "matched_value": "易烊千玺",
     "ip_status": "匹配成功",
     "ip_terms": [
      {
-      "word": "哪吒",
+      "word": "易烊千玺",
       "status": "匹配成功",
-      "category": "影视综艺",
+      "category": "明星/人物",
       "addedDate": ""
      }
     ],
-    "ipCategory": "卡通动漫",
-    "hot_value": 113,
-    "hot_score": 113,
-    "norm_score": 2.0569,
+    "ipCategory": "明星/人物",
+    "hot_value": 258,
+    "hot_score": 258,
+    "norm_score": 2.4133,
     "hints": [
-     "哪吒同款穿搭",
-     "哪吒周边好物",
-     "哪吒联名款"
+     "易烊千玺同款穿搭",
+     "易烊千玺同款单品",
+     "易烊千玺代言品牌"
     ],
     "platform": "xiaohongshu",
     "platforms": [
@@ -1544,24 +1550,28 @@
     "rank": 47
    },
    {
-    "keyword": "孙颖莎",
-    "display_keyword": "孙颖莎",
-    "display_original": "孙颖莎（2条热搜）",
-    "matched_value": "孙颖莎",
+    "keyword": "怪谈",
+    "display_keyword": "怪谈",
+    "display_original": "头七怪谈",
+    "matched_value": "怪谈",
     "ip_status": "匹配成功",
     "ip_terms": [
      {
-      "word": "孙颖莎",
+      "word": "怪谈",
       "status": "匹配成功",
-      "category": "明星/人物",
+      "category": "影视综艺",
       "addedDate": ""
      }
     ],
-    "ipCategory": "体育",
-    "hot_value": 61,
-    "hot_score": 61,
-    "norm_score": 1.7924,
-    "hints": [],
+    "ipCategory": "影视综艺",
+    "hot_value": 258,
+    "hot_score": 258,
+    "norm_score": 2.4133,
+    "hints": [
+     "怪谈同款穿搭",
+     "怪谈周边好物",
+     "怪谈联名款"
+    ],
     "platform": "xiaohongshu",
     "platforms": [
      "xiaohongshu"
@@ -1570,27 +1580,27 @@
     "rank": 48
    },
    {
-    "keyword": "朱志鑫",
-    "display_keyword": "朱志鑫",
-    "display_original": "朱志鑫（2条热搜）",
-    "matched_value": "朱志鑫",
+    "keyword": "青城山",
+    "display_keyword": "青城山",
+    "display_original": "青城山下",
+    "matched_value": "青城山",
     "ip_status": "匹配成功",
     "ip_terms": [
      {
-      "word": "朱志鑫",
+      "word": "青城山",
       "status": "匹配成功",
-      "category": "明星/人物",
+      "category": "建筑设计/地标",
       "addedDate": ""
      }
     ],
-    "ipCategory": "明星/人物",
-    "hot_value": 34,
-    "hot_score": 34,
-    "norm_score": 1.5441,
+    "ipCategory": "建筑设计/地标",
+    "hot_value": 258,
+    "hot_score": 258,
+    "norm_score": 2.4133,
     "hints": [
-     "朱志鑫同款穿搭",
-     "朱志鑫同款单品",
-     "朱志鑫代言品牌"
+     "青城山地标周边",
+     "青城山文创好物",
+     "青城山打卡限定"
     ],
     "platform": "xiaohongshu",
     "platforms": [
@@ -1600,28 +1610,24 @@
     "rank": 49
    },
    {
-    "keyword": "王者荣耀",
-    "display_keyword": "王者荣耀",
-    "display_original": "王者荣耀（2条热搜）",
-    "matched_value": "王者荣耀",
+    "keyword": "王楚钦",
+    "display_keyword": "王楚钦",
+    "display_original": "王楚钦（2条热搜）",
+    "matched_value": "王楚钦",
     "ip_status": "匹配成功",
     "ip_terms": [
      {
-      "word": "王者荣耀",
+      "word": "王楚钦",
       "status": "匹配成功",
-      "category": "游戏电竞",
+      "category": "明星/人物",
       "addedDate": ""
      }
     ],
-    "ipCategory": "游戏电竞",
-    "hot_value": 32,
-    "hot_score": 32,
-    "norm_score": 1.5185,
-    "hints": [
-     "王者荣耀联名周边",
-     "王者荣耀手办模型",
-     "王者荣耀限定皮肤"
-    ],
+    "ipCategory": "体育",
+    "hot_value": 104,
+    "hot_score": 104,
+    "norm_score": 2.0212,
+    "hints": [],
     "platform": "xiaohongshu",
     "platforms": [
      "xiaohongshu"
@@ -1637,6 +1643,30 @@
    "title": "weibo",
    "count": 25,
    "items": [
+    {
+     "keyword": "厉娜",
+     "display_keyword": "厉娜",
+     "display_original": "我也拥有了亚麻发色厉娜（3条热...",
+     "ip_status": "新value",
+     "ipCategory": "明星/人物",
+     "ip_terms": [
+      {
+       "word": "厉娜",
+       "status": "新value",
+       "category": "明星/人物",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "weibo",
+      "douyin"
+     ],
+     "hints": [
+      "厉娜同款穿搭",
+      "厉娜同款单品",
+      "厉娜代言品牌"
+     ]
+    },
     {
      "keyword": "特朗普",
      "display_keyword": "特朗普",
@@ -1707,30 +1737,6 @@
       "白小纯手办模型",
       "白小纯联名周边",
       "白小纯限定礼盒"
-     ]
-    },
-    {
-     "keyword": "时代少年团",
-     "display_keyword": "时代少年团",
-     "display_original": "时代少年团4小时纪录片（2条热...",
-     "ip_status": "匹配成功",
-     "ipCategory": "明星/人物",
-     "ip_terms": [
-      {
-       "word": "时代少年团",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "weibo",
-      "xiaohongshu"
-     ],
-     "hints": [
-      "时代少年团同款穿搭",
-      "时代少年团同款单品",
-      "时代少年团代言品牌"
      ]
     },
     {
@@ -2255,6 +2261,29 @@
      ]
     },
     {
+     "keyword": "时代少年团",
+     "display_keyword": "时代少年团",
+     "display_original": "时代少年团4小时纪录片",
+     "ip_status": "匹配成功",
+     "ipCategory": "明星/人物",
+     "ip_terms": [
+      {
+       "word": "时代少年团",
+       "status": "匹配成功",
+       "category": "明星/人物",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "weibo"
+     ],
+     "hints": [
+      "时代少年团同款穿搭",
+      "时代少年团同款单品",
+      "时代少年团代言品牌"
+     ]
+    },
+    {
      "keyword": "唐嫣",
      "display_keyword": "唐嫣",
      "display_original": "唐嫣的现状",
@@ -2276,37 +2305,38 @@
       "唐嫣同款单品",
       "唐嫣代言品牌"
      ]
-    },
-    {
-     "keyword": "369",
-     "display_keyword": "369",
-     "display_original": "LCK解说称赞369",
-     "ip_status": "新value",
-     "ipCategory": "游戏电竞",
-     "ip_terms": [
-      {
-       "word": "369",
-       "status": "新value",
-       "category": "游戏电竞",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "weibo"
-     ],
-     "hints": [
-      "369联名周边",
-      "369手办模型",
-      "369限定皮肤"
-     ]
     }
    ]
   },
   "douyin": {
    "code": "douyin",
    "title": "douyin",
-   "count": 18,
+   "count": 20,
    "items": [
+    {
+     "keyword": "厉娜",
+     "display_keyword": "厉娜",
+     "display_original": "我也拥有了亚麻发色厉娜（3条热...",
+     "ip_status": "新value",
+     "ipCategory": "明星/人物",
+     "ip_terms": [
+      {
+       "word": "厉娜",
+       "status": "新value",
+       "category": "明星/人物",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "weibo",
+      "douyin"
+     ],
+     "hints": [
+      "厉娜同款穿搭",
+      "厉娜同款单品",
+      "厉娜代言品牌"
+     ]
+    },
     {
      "keyword": "特朗普",
      "display_keyword": "特朗普",
@@ -2428,29 +2458,6 @@
      ]
     },
     {
-     "keyword": "S16",
-     "display_keyword": "S16",
-     "display_original": "S16淘汰赛热点赛事观察（2条...",
-     "ip_status": "新value",
-     "ipCategory": "游戏电竞",
-     "ip_terms": [
-      {
-       "word": "S16",
-       "status": "新value",
-       "category": "游戏电竞",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "douyin"
-     ],
-     "hints": [
-      "S16联名周边",
-      "S16手办模型",
-      "S16限定皮肤"
-     ]
-    },
-    {
      "keyword": "后会友期",
      "display_keyword": "后会友期",
      "display_original": "后会友期的细节越挖越有（2条热...",
@@ -2520,6 +2527,35 @@
      ]
     },
     {
+     "keyword": "张百乔 贾鑫",
+     "display_keyword": "张百乔 贾鑫",
+     "display_original": "张百乔长文写贾鑫烧伤后心里话",
+     "ip_status": "新value",
+     "ipCategory": "明星/人物",
+     "ip_terms": [
+      {
+       "word": "张百乔",
+       "status": "新value",
+       "category": "明星/人物",
+       "addedDate": ""
+      },
+      {
+       "word": "贾鑫",
+       "status": "新value",
+       "category": "明星/人物",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "douyin"
+     ],
+     "hints": [
+      "张百乔 贾鑫同款穿搭",
+      "张百乔 贾鑫同款单品",
+      "张百乔 贾鑫代言品牌"
+     ]
+    },
+    {
      "keyword": "赵继伟",
      "display_keyword": "赵继伟",
      "display_original": "库珀赛后“表白”赵继伟",
@@ -2563,6 +2599,29 @@
       "DeepSeek新品首发",
       "DeepSeek联名限定",
       "DeepSeek爆款推荐"
+     ]
+    },
+    {
+     "keyword": "S16",
+     "display_keyword": "S16",
+     "display_original": "我的S16八强观赛日记",
+     "ip_status": "新value",
+     "ipCategory": "游戏电竞",
+     "ip_terms": [
+      {
+       "word": "S16",
+       "status": "新value",
+       "category": "游戏电竞",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "douyin"
+     ],
+     "hints": [
+      "S16联名周边",
+      "S16手办模型",
+      "S16限定皮肤"
      ]
     },
     {
@@ -2737,7 +2796,7 @@
   "xiaohongshu": {
    "code": "xiaohongshu",
    "title": "xiaohongshu",
-   "count": 13,
+   "count": 11,
    "items": [
     {
      "keyword": "原神",
@@ -2788,107 +2847,14 @@
      ]
     },
     {
-     "keyword": "时代少年团",
-     "display_keyword": "时代少年团",
-     "display_original": "时代少年团4小时纪录片（2条热...",
-     "ip_status": "匹配成功",
-     "ipCategory": "明星/人物",
-     "ip_terms": [
-      {
-       "word": "时代少年团",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "weibo",
-      "xiaohongshu"
-     ],
-     "hints": [
-      "时代少年团同款穿搭",
-      "时代少年团同款单品",
-      "时代少年团代言品牌"
-     ]
-    },
-    {
-     "keyword": "于适",
-     "display_keyword": "于适",
-     "display_original": "于适韩骁蛟龙行动",
-     "ip_status": "匹配成功",
-     "ipCategory": "明星/人物",
-     "ip_terms": [
-      {
-       "word": "于适",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "于适同款穿搭",
-      "于适同款单品",
-      "于适代言品牌"
-     ]
-    },
-    {
-     "keyword": "格莱美",
-     "display_keyword": "格莱美",
-     "display_original": "格莱美",
-     "ip_status": "新value",
-     "ipCategory": "影视综艺",
-     "ip_terms": [
-      {
-       "word": "格莱美",
-       "status": "新value",
-       "category": "影视综艺",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "格莱美同款穿搭",
-      "格莱美周边好物",
-      "格莱美联名款"
-     ]
-    },
-    {
-     "keyword": "脱颖而出",
-     "display_keyword": "脱颖而出",
-     "display_original": "人群中脱颖而出",
-     "ip_status": "匹配成功",
-     "ipCategory": "影视综艺",
-     "ip_terms": [
-      {
-       "word": "脱颖而出",
-       "status": "匹配成功",
-       "category": "影视综艺",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "脱颖而出同款穿搭",
-      "脱颖而出周边好物",
-      "脱颖而出联名款"
-     ]
-    },
-    {
-     "keyword": "恋与深空",
-     "display_keyword": "恋与深空",
-     "display_original": "恋与深空",
+     "keyword": "崩坏星穹铁道",
+     "display_keyword": "崩坏星穹铁道",
+     "display_original": "崩坏星穹铁道创作者激励计划﻿（...",
      "ip_status": "匹配成功",
      "ipCategory": "游戏电竞",
      "ip_terms": [
       {
-       "word": "恋与深空",
+       "word": "崩坏星穹铁道",
        "status": "匹配成功",
        "category": "游戏电竞",
        "addedDate": ""
@@ -2898,20 +2864,20 @@
       "xiaohongshu"
      ],
      "hints": [
-      "恋与深空联名周边",
-      "恋与深空手办模型",
-      "恋与深空限定皮肤"
+      "崩坏星穹铁道联名周边",
+      "崩坏星穹铁道手办模型",
+      "崩坏星穹铁道限定皮肤"
      ]
     },
     {
-     "keyword": "秦彻",
-     "display_keyword": "秦彻",
-     "display_original": "秦彻",
+     "keyword": "派蒙",
+     "display_keyword": "派蒙",
+     "display_original": "派蒙",
      "ip_status": "匹配成功",
      "ipCategory": "游戏电竞",
      "ip_terms": [
       {
-       "word": "秦彻",
+       "word": "派蒙",
        "status": "匹配成功",
        "category": "游戏电竞",
        "addedDate": ""
@@ -2921,72 +2887,164 @@
       "xiaohongshu"
      ],
      "hints": [
-      "秦彻联名周边",
-      "秦彻手办模型",
-      "秦彻限定皮肤"
+      "派蒙联名周边",
+      "派蒙手办模型",
+      "派蒙限定皮肤"
      ]
     },
     {
-     "keyword": "恋与深空 秦彻",
-     "display_keyword": "恋与深空 秦彻",
-     "display_original": "恋与深空秦彻临空新年计划",
-     "ip_status": "匹配成功",
-     "ipCategory": "游戏电竞",
-     "ip_terms": [
-      {
-       "word": "恋与深空",
-       "status": "匹配成功",
-       "category": "游戏电竞",
-       "addedDate": ""
-      },
-      {
-       "word": "秦彻",
-       "status": "匹配成功",
-       "category": "游戏电竞",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "恋与深空 秦彻联名周边",
-      "恋与深空 秦彻手办模型",
-      "恋与深空 秦彻限定皮肤"
-     ]
-    },
-    {
-     "keyword": "哪吒",
-     "display_keyword": "哪吒",
-     "display_original": "哪吒之魔童闹海（2条热搜）",
-     "ip_status": "匹配成功",
-     "ipCategory": "卡通动漫",
-     "ip_terms": [
-      {
-       "word": "哪吒",
-       "status": "匹配成功",
-       "category": "影视综艺",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "哪吒同款穿搭",
-      "哪吒周边好物",
-      "哪吒联名款"
-     ]
-    },
-    {
-     "keyword": "孙颖莎",
-     "display_keyword": "孙颖莎",
-     "display_original": "孙颖莎（2条热搜）",
+     "keyword": "RW",
+     "display_keyword": "RW",
+     "display_original": "grwm",
      "ip_status": "匹配成功",
      "ipCategory": "体育",
      "ip_terms": [
       {
-       "word": "孙颖莎",
+       "word": "RW",
+       "status": "匹配成功",
+       "category": "体育",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "xiaohongshu"
+     ],
+     "hints": [
+      "RW球衣周边",
+      "RW运动装备",
+      "RW联名款"
+     ]
+    },
+    {
+     "keyword": "TFBOYS",
+     "display_keyword": "TFBOYS",
+     "display_original": "TFBOYS资源组",
+     "ip_status": "匹配成功",
+     "ipCategory": "明星/人物",
+     "ip_terms": [
+      {
+       "word": "TFBOYS",
+       "status": "匹配成功",
+       "category": "明星/人物",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "xiaohongshu"
+     ],
+     "hints": [
+      "TFBOYS同款穿搭",
+      "TFBOYS同款单品",
+      "TFBOYS代言品牌"
+     ]
+    },
+    {
+     "keyword": "TFBOYS 易烊千玺",
+     "display_keyword": "TFBOYS 易烊千玺",
+     "display_original": "TFBOYS易烊千玺",
+     "ip_status": "匹配成功",
+     "ipCategory": "明星/人物",
+     "ip_terms": [
+      {
+       "word": "TFBOYS",
+       "status": "匹配成功",
+       "category": "明星/人物",
+       "addedDate": ""
+      },
+      {
+       "word": "易烊千玺",
+       "status": "匹配成功",
+       "category": "明星/人物",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "xiaohongshu"
+     ],
+     "hints": [
+      "TFBOYS 易烊千玺同款穿搭",
+      "TFBOYS 易烊千玺同款单品",
+      "TFBOYS 易烊千玺代言品牌"
+     ]
+    },
+    {
+     "keyword": "易烊千玺",
+     "display_keyword": "易烊千玺",
+     "display_original": "易烊千玺刘艳芬",
+     "ip_status": "匹配成功",
+     "ipCategory": "明星/人物",
+     "ip_terms": [
+      {
+       "word": "易烊千玺",
+       "status": "匹配成功",
+       "category": "明星/人物",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "xiaohongshu"
+     ],
+     "hints": [
+      "易烊千玺同款穿搭",
+      "易烊千玺同款单品",
+      "易烊千玺代言品牌"
+     ]
+    },
+    {
+     "keyword": "怪谈",
+     "display_keyword": "怪谈",
+     "display_original": "头七怪谈",
+     "ip_status": "匹配成功",
+     "ipCategory": "影视综艺",
+     "ip_terms": [
+      {
+       "word": "怪谈",
+       "status": "匹配成功",
+       "category": "影视综艺",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "xiaohongshu"
+     ],
+     "hints": [
+      "怪谈同款穿搭",
+      "怪谈周边好物",
+      "怪谈联名款"
+     ]
+    },
+    {
+     "keyword": "青城山",
+     "display_keyword": "青城山",
+     "display_original": "青城山下",
+     "ip_status": "匹配成功",
+     "ipCategory": "建筑设计/地标",
+     "ip_terms": [
+      {
+       "word": "青城山",
+       "status": "匹配成功",
+       "category": "建筑设计/地标",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "xiaohongshu"
+     ],
+     "hints": [
+      "青城山地标周边",
+      "青城山文创好物",
+      "青城山打卡限定"
+     ]
+    },
+    {
+     "keyword": "王楚钦",
+     "display_keyword": "王楚钦",
+     "display_original": "王楚钦（2条热搜）",
+     "ip_status": "匹配成功",
+     "ipCategory": "体育",
+     "ip_terms": [
+      {
+       "word": "王楚钦",
        "status": "匹配成功",
        "category": "明星/人物",
        "addedDate": ""
@@ -2996,52 +3054,6 @@
       "xiaohongshu"
      ],
      "hints": []
-    },
-    {
-     "keyword": "朱志鑫",
-     "display_keyword": "朱志鑫",
-     "display_original": "朱志鑫（2条热搜）",
-     "ip_status": "匹配成功",
-     "ipCategory": "明星/人物",
-     "ip_terms": [
-      {
-       "word": "朱志鑫",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "朱志鑫同款穿搭",
-      "朱志鑫同款单品",
-      "朱志鑫代言品牌"
-     ]
-    },
-    {
-     "keyword": "王者荣耀",
-     "display_keyword": "王者荣耀",
-     "display_original": "王者荣耀（2条热搜）",
-     "ip_status": "匹配成功",
-     "ipCategory": "游戏电竞",
-     "ip_terms": [
-      {
-       "word": "王者荣耀",
-       "status": "匹配成功",
-       "category": "游戏电竞",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "xiaohongshu"
-     ],
-     "hints": [
-      "王者荣耀联名周边",
-      "王者荣耀手办模型",
-      "王者荣耀限定皮肤"
-     ]
     }
    ]
   }
@@ -3055,7 +3067,7 @@
  "styleHotBoard": {
   "title": "风格热点",
   "subtitle": "微博 · 抖音 · 小红书 服饰穿搭 · 流行元素",
-  "total": 7,
+  "total": 4,
   "items": [
    {
     "keyword": "韩系",
@@ -3063,13 +3075,16 @@
     "display_keyword": "韩系",
     "display_original": "一周不重样的韩系秋冬穿搭",
     "source_originals": [
-     "一周不重样的韩系秋冬穿搭"
+     "一周不重样的韩系秋冬穿搭",
+     "韩系",
+     "韩系穿搭"
     ],
-    "score": 7655000,
-    "heat": 7655000,
+    "score": 7655017,
+    "heat": 7655017,
     "norm_score": 6.8839,
     "platforms": [
-     "douyin"
+     "douyin",
+     "xiaohongshu"
     ],
     "platform": "douyin",
     "hints": [],
@@ -3078,92 +3093,32 @@
     "style_rank": 1
    },
    {
-    "keyword": "松弛感",
-    "style_word": "松弛感",
-    "display_keyword": "松弛感",
-    "display_original": "松弛感穿搭",
+    "keyword": "元气风",
+    "style_word": "元气风",
+    "display_keyword": "元气",
+    "display_original": "元气少女缘结神",
     "source_originals": [
-     "松弛感穿搭"
+     "元气少女缘结神"
     ],
-    "score": 345,
-    "heat": 345,
-    "norm_score": 2.5391,
+    "score": 13,
+    "heat": 13,
+    "norm_score": 1.1461,
     "platforms": [
      "xiaohongshu"
     ],
     "platform": "xiaohongshu",
     "hints": [],
-    "trendCategory": "流行元素",
+    "trendCategory": "服饰穿搭",
     "ip_status": "匹配成功",
     "style_rank": 2
    },
    {
-    "keyword": "国风",
-    "style_word": "国风",
-    "display_keyword": "国风",
-    "display_original": "正是江南好风景国风才是顶级浪漫",
+    "keyword": "lolita",
+    "style_word": "lolita",
+    "display_keyword": "lolita",
+    "display_original": "浪漫蔷薇Lolita",
     "source_originals": [
-     "正是江南好风景国风才是顶级浪漫"
-    ],
-    "score": 40,
-    "heat": 40,
-    "norm_score": 1.6128,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 3
-   },
-   {
-    "keyword": "JK制服",
-    "style_word": "JK制服",
-    "display_keyword": "jk制服",
-    "display_original": "jk制服校供感",
-    "source_originals": [
-     "jk制服校供感"
-    ],
-    "score": 17,
-    "heat": 17,
-    "norm_score": 1.2553,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 4
-   },
-   {
-    "keyword": "Vintage",
-    "style_word": "Vintage",
-    "display_keyword": "古着",
-    "display_original": "古着",
-    "source_originals": [
-     "古着"
-    ],
-    "score": 16,
-    "heat": 16,
-    "norm_score": 1.2304,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 5
-   },
-   {
-    "keyword": "辣妹风",
-    "style_word": "辣妹风",
-    "display_keyword": "辣妹",
-    "display_original": "辣妹穿搭",
-    "source_originals": [
-     "辣妹穿搭"
+     "浪漫蔷薇Lolita"
     ],
     "score": 11,
     "heat": 11,
@@ -3175,15 +3130,15 @@
     "hints": [],
     "trendCategory": "服饰穿搭",
     "ip_status": "匹配成功",
-    "style_rank": 6
+    "style_rank": 3
    },
    {
-    "keyword": "慵懒风",
-    "style_word": "慵懒风",
-    "display_keyword": "慵懒",
-    "display_original": "慵懒感穿搭",
+    "keyword": "御姐风",
+    "style_word": "御姐风",
+    "display_keyword": "御姐",
+    "display_original": "御姐音",
     "source_originals": [
-     "慵懒感穿搭"
+     "御姐音"
     ],
     "score": 9,
     "heat": 9,
@@ -3195,7 +3150,7 @@
     "hints": [],
     "trendCategory": "服饰穿搭",
     "ip_status": "匹配成功",
-    "style_rank": 7
+    "style_rank": 4
    }
   ]
  }
