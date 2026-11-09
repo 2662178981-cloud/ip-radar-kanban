@@ -1,10 +1,10 @@
 {
  "version": "4.0",
- "generatedAt": "2026-11-09T15:35:21+08:00",
+ "generatedAt": "2026-11-09T17:35:15+08:00",
  "summary": {
   "total": 50,
   "ipCount": 50,
-  "newValues": 34,
+  "newValues": 32,
   "oldValues": 31,
   "reviewNeeded": 0,
   "boards": [
@@ -17,9 +17,14 @@
     "code": "weibo",
     "title": "weibo",
     "count": 19
+   },
+   {
+    "code": "xiaohongshu",
+    "title": "xiaohongshu",
+    "count": 1
    }
   ],
-  "generatedAt": "2026-11-09T15:35:10+08:00"
+  "generatedAt": "2026-11-09T17:35:05+08:00"
  },
  "ipBoard": {
   "title": "IP 榜单",
@@ -29,7 +34,7 @@
    {
     "keyword": "BLG",
     "display_keyword": "BLG",
-    "display_original": "BLG战胜T1挺进决赛（6条热...",
+    "display_original": "BLG战胜T1挺进决赛（7条热...",
     "matched_value": "BLG",
     "ip_status": "匹配成功",
     "ip_terms": [
@@ -41,9 +46,9 @@
      }
     ],
     "ipCategory": "游戏电竞",
-    "hot_value": 35804000,
-    "hot_score": 35804000,
-    "norm_score": 9.06468,
+    "hot_value": 36694000,
+    "hot_score": 36694000,
+    "norm_score": 9.07752,
     "hints": [
      "BLG球衣周边",
      "BLG运动装备",
@@ -1094,6 +1099,37 @@
     "rank": 34
    },
    {
+    "keyword": "虞书欣",
+    "display_keyword": "虞书欣",
+    "display_original": "虞书欣 W盛典（2条热搜）",
+    "matched_value": "虞书欣",
+    "ip_status": "匹配成功",
+    "ip_terms": [
+     {
+      "word": "虞书欣",
+      "status": "匹配成功",
+      "category": "明星/人物",
+      "addedDate": ""
+     }
+    ],
+    "ipCategory": "明星/人物",
+    "hot_value": 410036,
+    "hot_score": 410036,
+    "norm_score": 6.73536,
+    "hints": [
+     "虞书欣同款穿搭",
+     "虞书欣同款单品",
+     "虞书欣代言品牌"
+    ],
+    "platform": "weibo",
+    "platforms": [
+     "weibo",
+     "xiaohongshu"
+    ],
+    "ip_rank": 35,
+    "rank": 35
+   },
+   {
     "keyword": "iG AL",
     "display_keyword": "iG AL",
     "display_original": "iG投资人开团AL",
@@ -1121,48 +1157,6 @@
      "iG AL联名周边",
      "iG AL手办模型",
      "iG AL限定皮肤"
-    ],
-    "platform": "weibo",
-    "platforms": [
-     "weibo"
-    ],
-    "ip_rank": 35,
-    "rank": 35
-   },
-   {
-    "keyword": "Doran T1 BLG",
-    "display_keyword": "Doran T1 BLG",
-    "display_original": "Doran说T1本可以赢BLG",
-    "matched_value": "Doran T1 BLG",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "Doran",
-      "status": "新value",
-      "category": "游戏电竞",
-      "addedDate": ""
-     },
-     {
-      "word": "T1",
-      "status": "新value",
-      "category": "游戏电竞",
-      "addedDate": ""
-     },
-     {
-      "word": "BLG",
-      "status": "匹配成功",
-      "category": "体育",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "游戏电竞",
-    "hot_value": 890000,
-    "hot_score": 890000,
-    "norm_score": 5.9494,
-    "hints": [
-     "Doran T1 BLG联名周边",
-     "Doran T1 BLG手办模型",
-     "Doran T1 BLG限定皮肤"
     ],
     "platform": "weibo",
     "platforms": [
@@ -1300,36 +1294,6 @@
     "rank": 40
    },
    {
-    "keyword": "虞书欣",
-    "display_keyword": "虞书欣",
-    "display_original": "虞书欣 W盛典",
-    "matched_value": "虞书欣",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "虞书欣",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 410000,
-    "hot_score": 410000,
-    "norm_score": 5.6128,
-    "hints": [
-     "虞书欣同款穿搭",
-     "虞书欣同款单品",
-     "虞书欣代言品牌"
-    ],
-    "platform": "weibo",
-    "platforms": [
-     "weibo"
-    ],
-    "ip_rank": 41,
-    "rank": 41
-   },
-   {
     "keyword": "张雪",
     "display_keyword": "张雪",
     "display_original": "张雪机车米兰展车零件被偷光",
@@ -1356,8 +1320,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 42,
-    "rank": 42
+    "ip_rank": 41,
+    "rank": 41
    },
    {
     "keyword": "W盛典",
@@ -1386,8 +1350,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 43,
-    "rank": 43
+    "ip_rank": 42,
+    "rank": 42
    },
    {
     "keyword": "樊振东",
@@ -1412,8 +1376,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 44,
-    "rank": 44
+    "ip_rank": 43,
+    "rank": 43
    },
    {
     "keyword": "SM",
@@ -1442,8 +1406,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 45,
-    "rank": 45
+    "ip_rank": 44,
+    "rank": 44
    },
    {
     "keyword": "吴磊",
@@ -1472,8 +1436,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 46,
-    "rank": 46
+    "ip_rank": 45,
+    "rank": 45
    },
    {
     "keyword": "Faker 李佳航",
@@ -1508,8 +1472,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 47,
-    "rank": 47
+    "ip_rank": 46,
+    "rank": 46
    },
    {
     "keyword": "后会友期",
@@ -1538,8 +1502,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 48,
-    "rank": 48
+    "ip_rank": 47,
+    "rank": 47
    },
    {
     "keyword": "LPL BLG",
@@ -1574,8 +1538,8 @@
     "platforms": [
      "weibo"
     ],
-    "ip_rank": 49,
-    "rank": 49
+    "ip_rank": 48,
+    "rank": 48
    },
    {
     "keyword": "梁家辉",
@@ -1604,6 +1568,36 @@
     "platforms": [
      "weibo"
     ],
+    "ip_rank": 49,
+    "rank": 49
+   },
+   {
+    "keyword": "特朗普",
+    "display_keyword": "特朗普",
+    "display_original": "特朗普回应出访亚洲是否带黄仁勋",
+    "matched_value": "特朗普",
+    "ip_status": "匹配成功",
+    "ip_terms": [
+     {
+      "word": "特朗普",
+      "status": "匹配成功",
+      "category": "明星/人物",
+      "addedDate": ""
+     }
+    ],
+    "ipCategory": "明星/人物",
+    "hot_value": 180000,
+    "hot_score": 180000,
+    "norm_score": 5.2553,
+    "hints": [
+     "特朗普同款穿搭",
+     "特朗普同款单品",
+     "特朗普代言品牌"
+    ],
+    "platform": "weibo",
+    "platforms": [
+     "weibo"
+    ],
     "ip_rank": 50,
     "rank": 50
    }
@@ -1618,7 +1612,7 @@
     {
      "keyword": "BLG",
      "display_keyword": "BLG",
-     "display_original": "BLG战胜T1挺进决赛（6条热...",
+     "display_original": "BLG战胜T1挺进决赛（7条热...",
      "ip_status": "匹配成功",
      "ipCategory": "游戏电竞",
      "ip_terms": [
@@ -1684,6 +1678,30 @@
      "hints": []
     },
     {
+     "keyword": "虞书欣",
+     "display_keyword": "虞书欣",
+     "display_original": "虞书欣 W盛典（2条热搜）",
+     "ip_status": "匹配成功",
+     "ipCategory": "明星/人物",
+     "ip_terms": [
+      {
+       "word": "虞书欣",
+       "status": "匹配成功",
+       "category": "明星/人物",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "weibo",
+      "xiaohongshu"
+     ],
+     "hints": [
+      "虞书欣同款穿搭",
+      "虞书欣同款单品",
+      "虞书欣代言品牌"
+     ]
+    },
+    {
      "keyword": "iG AL",
      "display_keyword": "iG AL",
      "display_original": "iG投资人开团AL",
@@ -1710,41 +1728,6 @@
       "iG AL联名周边",
       "iG AL手办模型",
       "iG AL限定皮肤"
-     ]
-    },
-    {
-     "keyword": "Doran T1 BLG",
-     "display_keyword": "Doran T1 BLG",
-     "display_original": "Doran说T1本可以赢BLG",
-     "ip_status": "匹配成功",
-     "ipCategory": "游戏电竞",
-     "ip_terms": [
-      {
-       "word": "Doran",
-       "status": "新value",
-       "category": "游戏电竞",
-       "addedDate": ""
-      },
-      {
-       "word": "T1",
-       "status": "新value",
-       "category": "游戏电竞",
-       "addedDate": ""
-      },
-      {
-       "word": "BLG",
-       "status": "匹配成功",
-       "category": "体育",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "weibo"
-     ],
-     "hints": [
-      "Doran T1 BLG联名周边",
-      "Doran T1 BLG手办模型",
-      "Doran T1 BLG限定皮肤"
      ]
     },
     {
@@ -1845,29 +1828,6 @@
       "Bin GEN T1联名周边",
       "Bin GEN T1手办模型",
       "Bin GEN T1限定皮肤"
-     ]
-    },
-    {
-     "keyword": "虞书欣",
-     "display_keyword": "虞书欣",
-     "display_original": "虞书欣 W盛典",
-     "ip_status": "匹配成功",
-     "ipCategory": "明星/人物",
-     "ip_terms": [
-      {
-       "word": "虞书欣",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "platforms": [
-      "weibo"
-     ],
-     "hints": [
-      "虞书欣同款穿搭",
-      "虞书欣同款单品",
-      "虞书欣代言品牌"
      ]
     },
     {
@@ -2084,6 +2044,29 @@
       "梁家辉同款单品",
       "梁家辉代言品牌"
      ]
+    },
+    {
+     "keyword": "特朗普",
+     "display_keyword": "特朗普",
+     "display_original": "特朗普回应出访亚洲是否带黄仁勋",
+     "ip_status": "匹配成功",
+     "ipCategory": "明星/人物",
+     "ip_terms": [
+      {
+       "word": "特朗普",
+       "status": "匹配成功",
+       "category": "明星/人物",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "weibo"
+     ],
+     "hints": [
+      "特朗普同款穿搭",
+      "特朗普同款单品",
+      "特朗普代言品牌"
+     ]
     }
    ]
   },
@@ -2095,7 +2078,7 @@
     {
      "keyword": "BLG",
      "display_keyword": "BLG",
-     "display_original": "BLG战胜T1挺进决赛（6条热...",
+     "display_original": "BLG战胜T1挺进决赛（7条热...",
      "ip_status": "匹配成功",
      "ipCategory": "游戏电竞",
      "ip_terms": [
@@ -2922,6 +2905,37 @@
      ]
     }
    ]
+  },
+  "xiaohongshu": {
+   "code": "xiaohongshu",
+   "title": "xiaohongshu",
+   "count": 1,
+   "items": [
+    {
+     "keyword": "虞书欣",
+     "display_keyword": "虞书欣",
+     "display_original": "虞书欣 W盛典（2条热搜）",
+     "ip_status": "匹配成功",
+     "ipCategory": "明星/人物",
+     "ip_terms": [
+      {
+       "word": "虞书欣",
+       "status": "匹配成功",
+       "category": "明星/人物",
+       "addedDate": ""
+      }
+     ],
+     "platforms": [
+      "weibo",
+      "xiaohongshu"
+     ],
+     "hints": [
+      "虞书欣同款穿搭",
+      "虞书欣同款单品",
+      "虞书欣代言品牌"
+     ]
+    }
+   ]
   }
  },
  "hotCalendar": {
@@ -2933,7 +2947,28 @@
  "styleHotBoard": {
   "title": "风格热点",
   "subtitle": "微博 · 抖音 · 小红书 服饰穿搭 · 流行元素",
-  "total": 0,
-  "items": []
+  "total": 1,
+  "items": [
+   {
+    "keyword": "lolita",
+    "style_word": "lolita",
+    "display_keyword": "lolita",
+    "display_original": "吃我一波lolita安利",
+    "source_originals": [
+     "吃我一波lolita安利"
+    ],
+    "score": 11,
+    "heat": 11,
+    "norm_score": 1.0792,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 1
+   }
+  ]
  }
 }
