@@ -1,6 +1,6 @@
 {
  "version": "4.0",
- "generatedAt": "2026-11-09T09:46:30+08:00",
+ "generatedAt": "2026-11-09T09:55:33+08:00",
  "summary": {
   "total": 50,
   "ipCount": 50,
@@ -2881,8 +2881,48 @@
  "styleHotBoard": {
   "title": "风格热点",
   "subtitle": "微博 · 抖音 · 小红书 服饰穿搭 · 流行元素",
-  "total": 2,
+  "total": 6,
   "items": [
+   {
+    "keyword": "保暖风",
+    "style_word": "保暖风",
+    "display_keyword": "大保暖",
+    "display_original": "全民进入大保暖时代",
+    "source_originals": [
+     "全民进入大保暖时代"
+    ],
+    "score": 9130000,
+    "heat": 9130000,
+    "norm_score": 6.9605,
+    "platforms": [
+     "douyin"
+    ],
+    "platform": "douyin",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 1
+   },
+   {
+    "keyword": "冬季穿搭",
+    "style_word": "冬季穿搭",
+    "display_keyword": "冬季穿搭",
+    "display_original": "美丽不冻人的冬季穿搭",
+    "source_originals": [
+     "美丽不冻人的冬季穿搭"
+    ],
+    "score": 7713000,
+    "heat": 7713000,
+    "norm_score": 6.8872,
+    "platforms": [
+     "douyin"
+    ],
+    "platform": "douyin",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 2
+   },
    {
     "keyword": "lolita",
     "style_word": "lolita",
@@ -2903,7 +2943,29 @@
     "hints": [],
     "trendCategory": "服饰穿搭",
     "ip_status": "匹配成功",
-    "style_rank": 1
+    "style_rank": 3
+   },
+   {
+    "keyword": "小香风",
+    "style_word": "小香风",
+    "display_keyword": "chanel",
+    "display_original": "chanel",
+    "source_originals": [
+     "chanel",
+     "CHANEL光采油",
+     "香奈儿"
+    ],
+    "score": 30,
+    "heat": 30,
+    "norm_score": 1.4914,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "品牌风格",
+    "ip_status": "匹配成功",
+    "style_rank": 4
    },
    {
     "keyword": "甜妹风",
@@ -2913,9 +2975,9 @@
     "source_originals": [
      "甜妹手势舞🧁"
     ],
-    "score": 13,
-    "heat": 13,
-    "norm_score": 1.1461,
+    "score": 26,
+    "heat": 26,
+    "norm_score": 1.4314,
     "platforms": [
      "xiaohongshu"
     ],
@@ -2923,7 +2985,27 @@
     "hints": [],
     "trendCategory": "服饰穿搭",
     "ip_status": "匹配成功",
-    "style_rank": 2
+    "style_rank": 5
+   },
+   {
+    "keyword": "微胖穿搭",
+    "style_word": "微胖穿搭",
+    "display_keyword": "微胖",
+    "display_original": "微胖",
+    "source_originals": [
+     "微胖"
+    ],
+    "score": 10,
+    "heat": 10,
+    "norm_score": 1.0414,
+    "platforms": [
+     "xiaohongshu"
+    ],
+    "platform": "xiaohongshu",
+    "hints": [],
+    "trendCategory": "服饰穿搭",
+    "ip_status": "匹配成功",
+    "style_rank": 6
    }
   ]
  }
