@@ -17595,13 +17595,13 @@
    "count": 50,
    "items": [
     {
-     "keyword": "BLG战胜T1挺进决赛（6条热...",
+     "keyword": "BLG战胜T1挺进决赛（7条热...",
      "ip_name": "BLG",
      "display_keyword": "BLG",
-     "display_original": "BLG战胜T1挺进决赛（6条热...",
+     "display_original": "BLG战胜T1挺进决赛（7条热...",
      "ipCategory": "游戏电竞",
      "ip_status": "匹配成功",
-     "score": 10.877615999999998,
+     "score": 10.893023999999999,
      "hints": [
       "BLG球衣周边",
       "BLG运动装备",
@@ -17642,6 +17642,24 @@
      "platforms": [
       "weibo",
       "douyin"
+     ]
+    },
+    {
+     "keyword": "虞书欣 W盛典（2条热搜）",
+     "ip_name": "虞书欣",
+     "display_keyword": "虞书欣",
+     "display_original": "虞书欣 W盛典（2条热搜）",
+     "ipCategory": "明星/人物",
+     "ip_status": "匹配成功",
+     "score": 8.082431999999999,
+     "hints": [
+      "虞书欣同款穿搭",
+      "虞书欣同款单品",
+      "虞书欣代言品牌"
+     ],
+     "platforms": [
+      "weibo",
+      "xiaohongshu"
      ]
     },
     {
@@ -18189,23 +18207,6 @@
      ]
     },
     {
-     "keyword": "Doran说T1本可以赢BLG",
-     "ip_name": "Doran T1 BLG",
-     "display_keyword": "Doran T1 BLG",
-     "display_original": "Doran说T1本可以赢BLG",
-     "ipCategory": "游戏电竞",
-     "ip_status": "匹配成功",
-     "score": 5.9494,
-     "hints": [
-      "Doran T1 BLG联名周边",
-      "Doran T1 BLG手办模型",
-      "Doran T1 BLG限定皮肤"
-     ],
-     "platforms": [
-      "weibo"
-     ]
-    },
-    {
      "keyword": "马斯克（2条热搜）",
      "ip_name": "马斯克",
      "display_keyword": "马斯克",
@@ -18264,23 +18265,6 @@
       "Bin GEN T1联名周边",
       "Bin GEN T1手办模型",
       "Bin GEN T1限定皮肤"
-     ],
-     "platforms": [
-      "weibo"
-     ]
-    },
-    {
-     "keyword": "虞书欣 W盛典",
-     "ip_name": "虞书欣",
-     "display_keyword": "虞书欣",
-     "display_original": "虞书欣 W盛典",
-     "ipCategory": "明星/人物",
-     "ip_status": "匹配成功",
-     "score": 5.6128,
-     "hints": [
-      "虞书欣同款穿搭",
-      "虞书欣同款单品",
-      "虞书欣代言品牌"
      ],
      "platforms": [
       "weibo"
@@ -18430,6 +18414,23 @@
       "梁家辉同款穿搭",
       "梁家辉同款单品",
       "梁家辉代言品牌"
+     ],
+     "platforms": [
+      "weibo"
+     ]
+    },
+    {
+     "keyword": "特朗普回应出访亚洲是否带黄仁勋",
+     "ip_name": "特朗普",
+     "display_keyword": "特朗普",
+     "display_original": "特朗普回应出访亚洲是否带黄仁勋",
+     "ipCategory": "明星/人物",
+     "ip_status": "匹配成功",
+     "score": 5.2553,
+     "hints": [
+      "特朗普同款穿搭",
+      "特朗普同款单品",
+      "特朗普代言品牌"
      ],
      "platforms": [
       "weibo"
@@ -20385,9 +20386,30 @@
    }
   },
   "2026-11-09": {
-   "count": 0,
-   "items": [],
-   "generatedAt": "2026-11-09T15:35:21+08:00",
+   "count": 1,
+   "items": [
+    {
+     "keyword": "lolita",
+     "style_word": "lolita",
+     "display_keyword": "lolita",
+     "display_original": "吃我一波lolita安利",
+     "source_originals": [
+      "吃我一波lolita安利"
+     ],
+     "score": 11,
+     "heat": 11,
+     "norm_score": 1.0792,
+     "platforms": [
+      "xiaohongshu"
+     ],
+     "platform": "xiaohongshu",
+     "hints": [],
+     "trendCategory": "服饰穿搭",
+     "ip_status": "匹配成功",
+     "style_rank": 1
+    }
+   ],
+   "generatedAt": "2026-11-09T17:35:15+08:00",
    "source": {
     "type": "daily-pipeline",
     "path": "dist/data.json"
