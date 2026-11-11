@@ -296,6 +296,15 @@
   .orig-text { color: #475569; flex: 1; overflow-wrap: anywhere; }
   .orig-heat { color: #ef4444; font-weight: 600; white-space: nowrap; font-size: 11px; }
 
+
+.trend-badge { display:inline-block; margin-left:4px; padding:1px 6px; border-radius:4px; font-size:11px; font-weight:600; }
+.trend-up { background:#dcfce7; color:#16a34a; }
+.trend-burst { background:#fef3c7; color:#d97706; }
+.trend-down { background:#fee2e2; color:#dc2626; }
+.trend-stable { background:#f3f4f6; color:#6b7280; }
+.pf-display { font-size:12px; color:#6b7280; }
+.kw-daily-trend { line-height:1.4; }
+
 </style>
 </head>
 <body>
@@ -814,9 +823,16 @@ function renderLeaderboard() {
     const dupPill = d._dup > 1
       ? '<span class="dup-pill" title="' + escHtml((d._others || []).join('；')) + '">共' + d._dup + '条热搜</span>'
       : '';
-    const fireBadge = (d.trend_tag === '火爆')
-      ? '<span class="fire-badge">🔥火爆</span>'
-      : '';
+    const trendBadges = (function() {
+      var tag = d.trend_tag || '';
+      var html = '';
+      if (tag === '火爆') html += '<span class="fire-badge">🔥火爆</span>';
+      else if (tag === '爆发') html += '<span class="trend-badge trend-burst">📈爆发</span>';
+      else if (tag === '上涨') html += '<span class="trend-badge trend-up">↗上涨</span>';
+      else if (tag === '下降') html += '<span class="trend-badge trend-down">↘下降</span>';
+      else if (tag === '稳定') html += '<span class="trend-badge trend-stable">→稳定</span>';
+      return html;
+    })();
     return '<tr>' +
       '<td class="ip-rank-cell"><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
       '<td class="ip-term-cell">' +
@@ -825,7 +841,7 @@ function renderLeaderboard() {
       '<td class="ip-term-cell">' + termStates + '</td>' +
       '<td class="ip-term-cell">' + termCategories + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
-      '<td>' + heatCellHtml(d) + fireBadge + '</td>' +
+      '<td>' + heatCellHtml(d) + trendBadges + '</td>' +
       '<td>' + renderHintsPills(d.hints) + '</td>' +
     '</tr>';
   }).join("");
@@ -980,10 +996,29 @@ function renderPlatform(platform) {
     const orig = d.display_original || d.keyword || '';
     const main = terms.map(t => t.word).join(' ') || orig;
     const subHtml = (orig && orig !== main) ? '<div class="kw-sub">' + escHtml(orig) + '</div>' : '';
+    // Trend badge for XHS
+    var trendBadge = '';
+    var dt = (d.trend_tag === '火爆') ? '<span class="fire-badge">🔥火爆</span>'
+      : (d.trend_tag === '爆发') ? '<span class="trend-badge trend-burst">📈爆发</span>'
+      : (d.trend_tag === '上涨') ? '<span class="trend-badge trend-up">↗上涨</span>'
+      : (d.trend_tag === '下降') ? '<span class="trend-badge trend-down">↘下降</span>'
+      : (d.trend_tag === '稳定') ? '<span class="trend-badge trend-stable">→稳定</span>'
+      : '';
+    // Daily growth for XHS
+    var dailyHtml = '';
+    if (Array.isArray(d.daily_trend) && d.daily_trend.length) {
+      var days = d.daily_trend.filter(function(x) { return x.heat > 0; });
+      if (days.length) {
+        var dayStr = days.map(function(x) {
+          return x.date.slice(5) + ':' + fmtHeatVal(x.heat);
+        }).join(' → ');
+        dailyHtml = '<div class="kw-daily-trend" style="font-size:11px;color:#6b7280;margin-top:2px">' + dayStr + '</div>';
+      }
+    }
     return '<tr>' +
       '<td class="ip-rank-cell"><span class="rank-badge rank-else">' + (i+1) + '</span></td>' +
-      '<td class="ip-term-cell">' + (terms.length > 1 ? '<div class="ip-term-group">' + names + '</div>' : names) + subHtml + '</td>' +
-      '<td class="ip-term-cell">' + statuses + '</td>' +
+      '<td class="ip-term-cell">' + (terms.length > 1 ? '<div class="ip-term-group">' + names + '</div>' : names) + subHtml + dailyHtml + '</td>' +
+      '<td class="ip-term-cell">' + trendBadge + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
       '<td>' + renderHintsPills(d.hints) + '</td>' +
     '</tr>';
@@ -1132,7 +1167,7 @@ function renderStyleHot() {
     return;
   }
   grid.innerHTML = '<table class="lb-table style-table"><thead><tr>' +
-    '<th style="width:40px">排名</th><th>关键词－原词</th><th>分类</th><th>热度</th>' +
+    '<th style="width:40px">排名</th><th>关键词－原词</th><th>分类</th><th>来源</th><th>热度</th>' +
     '</tr></thead><tbody>' +
     items.map((s, i) => {
       const rank = s.style_rank || (i + 1);
