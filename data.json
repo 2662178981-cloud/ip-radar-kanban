@@ -1,6 +1,10 @@
 {
-  "version": "4.0",
-  "generatedAt": "2026-11-11T21:27:05+08:00",
+  "version": "4.1",
+  "generatedAt": "2026-11-11T21:40:01+08:00",
+  "dateRange": {
+    "start": "2026-10-31",
+    "end": "2026-11-06"
+  },
   "summary": {
     "total": 50,
     "ipCount": 50,
@@ -24,11 +28,11 @@
         "count": 19
       }
     ],
-    "generatedAt": "2026-11-11T21:27:05+08:00"
+    "generatedAt": "2026-11-11T21:40:01+08:00"
   },
   "ipBoard": {
     "title": "IP 榜单",
-    "subtitle": "微博 · 抖音 · 小红书 热度排行",
+    "subtitle": "微博 · 抖音 · 小红书 热度排行（含7日趋势）",
     "total": 50,
     "items": [
       {
@@ -63,6 +67,7 @@
             "platform": "douyin"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 1,
         "rank": 1,
         "trend_tag": ""
@@ -100,6 +105,7 @@
             "platform": "douyin"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 2,
         "rank": 2,
         "trend_tag": ""
@@ -148,6 +154,7 @@
             "platform": "weibo"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 3,
         "rank": 3,
         "trend_tag": ""
@@ -186,13 +193,57 @@
           },
           {
             "text": "和平精英",
-            "heat": 181044,
+            "heat": 208491,
             "platform": "xiaohongshu"
+          }
+        ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 27447,
+            "total": 27447,
+            "count": 1
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 61091,
+            "total": 117612,
+            "count": 3
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 38646,
+            "total": 63432,
+            "count": 2
           }
         ],
         "ip_rank": 4,
         "rank": 4,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "白鹿",
@@ -232,9 +283,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 35091,
+            "total": 101158,
+            "count": 3
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 24217,
+            "total": 24217,
+            "count": 1
+          }
+        ],
         "ip_rank": 5,
         "rank": 5,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "许飞",
@@ -280,9 +375,53 @@
             "platform": "weibo"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 76934,
+            "total": 426903,
+            "count": 8
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 55877,
+            "total": 247237,
+            "count": 7
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 90739,
+            "total": 363834,
+            "count": 8
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 55710,
+            "total": 365126,
+            "count": 10
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 142072,
+            "total": 1095320,
+            "count": 18
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 120726,
+            "total": 489869,
+            "count": 8
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 103517,
+            "total": 429585,
+            "count": 10
+          }
+        ],
         "ip_rank": 6,
         "rank": 6,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "王子璇",
@@ -322,9 +461,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 63447,
+            "total": 222818,
+            "count": 5
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 75141,
+            "total": 127439,
+            "count": 3
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 90974,
+            "total": 301738,
+            "count": 6
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 74450,
+            "total": 222480,
+            "count": 5
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 79557,
+            "total": 384851,
+            "count": 8
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 268062,
+            "total": 1633806,
+            "count": 24
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 334359,
+            "total": 600420,
+            "count": 6
+          }
+        ],
         "ip_rank": 7,
         "rank": 7,
-        "trend_tag": ""
+        "trend_tag": "上涨"
       },
       {
         "keyword": "陈砚周",
@@ -359,6 +542,7 @@
             "platform": "douyin"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 8,
         "rank": 8,
         "trend_tag": ""
@@ -396,6 +580,7 @@
             "platform": "douyin"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 9,
         "rank": 9,
         "trend_tag": ""
@@ -438,9 +623,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 30706,
+            "total": 30706,
+            "count": 1
+          }
+        ],
         "ip_rank": 10,
         "rank": 10,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "影之刃零",
@@ -480,9 +709,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 28815,
+            "total": 28815,
+            "count": 1
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 28949,
+            "total": 28949,
+            "count": 1
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 11,
         "rank": 11,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "格温",
@@ -516,6 +789,7 @@
             "platform": "douyin"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 12,
         "rank": 12,
         "trend_tag": ""
@@ -559,9 +833,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 24895,
+            "total": 24895,
+            "count": 1
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 13,
         "rank": 13,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "丞磊",
@@ -596,6 +914,7 @@
             "platform": "douyin"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 14,
         "rank": 14,
         "trend_tag": ""
@@ -632,6 +951,7 @@
             "platform": "douyin"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 15,
         "rank": 15,
         "trend_tag": ""
@@ -668,6 +988,7 @@
             "platform": "douyin"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 16,
         "rank": 16,
         "trend_tag": ""
@@ -705,6 +1026,7 @@
             "platform": "douyin"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 17,
         "rank": 17,
         "trend_tag": ""
@@ -741,6 +1063,7 @@
             "platform": "douyin"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 18,
         "rank": 18,
         "trend_tag": ""
@@ -784,9 +1107,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 32968,
+            "total": 32968,
+            "count": 1
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 70653,
+            "total": 98067,
+            "count": 2
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 19,
         "rank": 19,
-        "trend_tag": ""
+        "trend_tag": "上涨"
       },
       {
         "keyword": "董宇辉",
@@ -820,6 +1187,7 @@
             "platform": "weibo"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 20,
         "rank": 20,
         "trend_tag": ""
@@ -856,9 +1224,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 51283,
+            "total": 51283,
+            "count": 1
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 410317,
+            "total": 410317,
+            "count": 1
+          }
+        ],
         "ip_rank": 21,
         "rank": 21,
-        "trend_tag": ""
+        "trend_tag": "爆发"
       },
       {
         "keyword": "张起灵",
@@ -892,9 +1304,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 51283,
+            "total": 51283,
+            "count": 1
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 410317,
+            "total": 410317,
+            "count": 1
+          }
+        ],
         "ip_rank": 22,
         "rank": 22,
-        "trend_tag": ""
+        "trend_tag": "爆发"
       },
       {
         "keyword": "神话",
@@ -928,9 +1384,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 370503,
+            "total": 370503,
+            "count": 1
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 23,
         "rank": 23,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "厉娜",
@@ -965,6 +1465,7 @@
             "platform": "weibo"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 24,
         "rank": 24,
         "trend_tag": ""
@@ -1001,9 +1502,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 328969,
+            "total": 371239,
+            "count": 2
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 44433,
+            "total": 44433,
+            "count": 1
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 25,
         "rank": 25,
-        "trend_tag": ""
+        "trend_tag": "下降"
       },
       {
         "keyword": "富江",
@@ -1037,9 +1582,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 316319,
+            "total": 316319,
+            "count": 1
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 26,
         "rank": 26,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "环球",
@@ -1073,9 +1662,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 299774,
+            "total": 341129,
+            "count": 2
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 27,
         "rank": 27,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "求婚",
@@ -1109,9 +1742,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 290681,
+            "total": 361373,
+            "count": 2
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 28,
         "rank": 28,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "BLG",
@@ -1150,6 +1827,7 @@
             "platform": "weibo"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 29,
         "rank": 29,
         "trend_tag": ""
@@ -1188,13 +1866,57 @@
           },
           {
             "text": "黄景瑜",
-            "heat": 36526,
+            "heat": 179120,
             "platform": "xiaohongshu"
+          }
+        ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 36526,
+            "total": 36526,
+            "count": 1
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 142594,
+            "total": 142594,
+            "count": 1
           }
         ],
         "ip_rank": 30,
         "rank": 30,
-        "trend_tag": ""
+        "trend_tag": "爆发"
       },
       {
         "keyword": "毛林林",
@@ -1229,6 +1951,7 @@
             "platform": "weibo"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 31,
         "rank": 31,
         "trend_tag": ""
@@ -1261,13 +1984,57 @@
         "source_originals": [
           {
             "text": "张元英",
-            "heat": 633011,
+            "heat": 665517,
             "platform": "xiaohongshu"
+          }
+        ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 62789,
+            "total": 132772,
+            "count": 3
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 46620,
+            "total": 46620,
+            "count": 1
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 60683,
+            "total": 146051,
+            "count": 3
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 264934,
+            "total": 264934,
+            "count": 1
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 42634,
+            "total": 42634,
+            "count": 1
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 32506,
+            "total": 32506,
+            "count": 1
           }
         ],
         "ip_rank": 32,
         "rank": 32,
-        "trend_tag": ""
+        "trend_tag": "下降"
       },
       {
         "keyword": "防弹少年团",
@@ -1301,9 +2068,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 257526,
+            "total": 282211,
+            "count": 2
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 33,
         "rank": 33,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "中国",
@@ -1337,9 +2148,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 30349,
+            "total": 30349,
+            "count": 1
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 24558,
+            "total": 24558,
+            "count": 1
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 246208,
+            "total": 246208,
+            "count": 1
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 34,
         "rank": 34,
-        "trend_tag": ""
+        "trend_tag": "爆发"
       },
       {
         "keyword": "第五人格",
@@ -1373,9 +2228,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 42822,
+            "total": 262078,
+            "count": 8
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 58919,
+            "total": 84598,
+            "count": 2
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 47503,
+            "total": 73120,
+            "count": 2
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 25843,
+            "total": 25843,
+            "count": 1
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 222840,
+            "total": 748554,
+            "count": 9
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 156749,
+            "total": 444478,
+            "count": 9
+          }
+        ],
         "ip_rank": 35,
         "rank": 35,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "环球影城",
@@ -1409,9 +2308,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 216066,
+            "total": 216066,
+            "count": 1
+          }
+        ],
         "ip_rank": 36,
         "rank": 36,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "崩坏星穹铁道",
@@ -1445,9 +2388,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 178173,
+            "total": 205380,
+            "count": 2
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 46353,
+            "total": 46353,
+            "count": 1
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 36694,
+            "total": 36694,
+            "count": 1
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 211412,
+            "total": 255704,
+            "count": 2
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 25153,
+            "total": 25153,
+            "count": 1
+          }
+        ],
         "ip_rank": 37,
         "rank": 37,
-        "trend_tag": ""
+        "trend_tag": "下降"
       },
       {
         "keyword": "王楚然",
@@ -1481,9 +2468,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 31250,
+            "total": 31250,
+            "count": 1
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 31013,
+            "total": 31013,
+            "count": 1
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 29182,
+            "total": 29182,
+            "count": 1
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 50853,
+            "total": 50853,
+            "count": 1
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 201354,
+            "total": 201354,
+            "count": 1
+          }
+        ],
         "ip_rank": 38,
         "rank": 38,
-        "trend_tag": ""
+        "trend_tag": "爆发"
       },
       {
         "keyword": "沈腾",
@@ -1517,9 +2548,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 41883,
+            "total": 73133,
+            "count": 2
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 31013,
+            "total": 31013,
+            "count": 1
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 118848,
+            "total": 118848,
+            "count": 1
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 201354,
+            "total": 201354,
+            "count": 1
+          }
+        ],
         "ip_rank": 39,
         "rank": 39,
-        "trend_tag": ""
+        "trend_tag": "上涨"
       },
       {
         "keyword": "林一",
@@ -1553,9 +2628,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 99816,
+            "total": 172993,
+            "count": 3
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 176376,
+            "total": 277420,
+            "count": 3
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 79858,
+            "total": 116384,
+            "count": 2
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 201354,
+            "total": 392535,
+            "count": 2
+          }
+        ],
         "ip_rank": 40,
         "rank": 40,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "孙权",
@@ -1589,9 +2708,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 29347,
+            "total": 29347,
+            "count": 1
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 195887,
+            "total": 195887,
+            "count": 1
+          }
+        ],
         "ip_rank": 41,
         "rank": 41,
-        "trend_tag": ""
+        "trend_tag": "爆发"
       },
       {
         "keyword": "小黄人",
@@ -1625,9 +2788,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 194963,
+            "total": 194963,
+            "count": 1
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 42,
         "rank": 42,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "赵昭仪",
@@ -1657,13 +2864,57 @@
         "source_originals": [
           {
             "text": "赵昭仪",
-            "heat": 314296,
+            "heat": 421594,
             "platform": "xiaohongshu"
+          }
+        ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 107298,
+            "total": 107298,
+            "count": 1
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 192915,
+            "total": 192915,
+            "count": 1
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 121381,
+            "total": 121381,
+            "count": 1
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
           }
         ],
         "ip_rank": 43,
         "rank": 43,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "杨超越",
@@ -1697,9 +2948,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 59014,
+            "total": 59014,
+            "count": 1
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 39058,
+            "total": 68075,
+            "count": 2
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 36162,
+            "total": 63370,
+            "count": 2
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 192697,
+            "total": 519000,
+            "count": 6
+          }
+        ],
         "ip_rank": 44,
         "rank": 44,
-        "trend_tag": ""
+        "trend_tag": "爆发"
       },
       {
         "keyword": "刘亦菲",
@@ -1734,9 +3029,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 176620,
+            "total": 388113,
+            "count": 6
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 69777,
+            "total": 258786,
+            "count": 5
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 191181,
+            "total": 191181,
+            "count": 1
+          }
+        ],
         "ip_rank": 45,
         "rank": 45,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "刘些宁",
@@ -1770,9 +3109,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 63553,
+            "total": 63553,
+            "count": 1
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 191181,
+            "total": 191181,
+            "count": 1
+          }
+        ],
         "ip_rank": 46,
         "rank": 46,
-        "trend_tag": ""
+        "trend_tag": "爆发"
       },
       {
         "keyword": "吴奇隆",
@@ -1806,9 +3189,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 190396,
+            "total": 190396,
+            "count": 1
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 47,
         "rank": 47,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "刘德华",
@@ -1843,9 +3270,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 190396,
+            "total": 190396,
+            "count": 1
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 48,
         "rank": 48,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "郭富城",
@@ -1879,9 +3350,53 @@
             "platform": "xiaohongshu"
           }
         ],
+        "daily_trend": [
+          {
+            "date": "2026-10-31",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-01",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-02",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-03",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-04",
+            "heat": 190396,
+            "total": 190396,
+            "count": 1
+          },
+          {
+            "date": "2026-11-05",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          },
+          {
+            "date": "2026-11-06",
+            "heat": 0,
+            "total": 0,
+            "count": 0
+          }
+        ],
         "ip_rank": 49,
         "rank": 49,
-        "trend_tag": ""
+        "trend_tag": "稳定"
       },
       {
         "keyword": "王楚钦",
@@ -1915,6 +3430,7 @@
             "platform": "weibo"
           }
         ],
+        "daily_trend": [],
         "ip_rank": 50,
         "rank": 50,
         "trend_tag": ""
@@ -1930,172 +3446,1702 @@
         {
           "keyword": "王子璇",
           "hot": 3493552,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 63447,
+              "total": 222818,
+              "count": 5
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 75141,
+              "total": 127439,
+              "count": 3
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 90974,
+              "total": 301738,
+              "count": 6
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 74450,
+              "total": 222480,
+              "count": 5
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 79557,
+              "total": 384851,
+              "count": 8
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 268062,
+              "total": 1633806,
+              "count": 24
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 334359,
+              "total": 600420,
+              "count": 6
+            }
+          ],
+          "trend_tag": "上涨"
         },
         {
           "keyword": "许飞",
           "hot": 3417874,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 76934,
+              "total": 426903,
+              "count": 8
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 55877,
+              "total": 247237,
+              "count": 7
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 90739,
+              "total": 363834,
+              "count": 8
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 55710,
+              "total": 365126,
+              "count": 10
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 142072,
+              "total": 1095320,
+              "count": 18
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 120726,
+              "total": 489869,
+              "count": 8
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 103517,
+              "total": 429585,
+              "count": 10
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "第五人格",
           "hot": 1638671,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 42822,
+              "total": 262078,
+              "count": 8
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 58919,
+              "total": 84598,
+              "count": 2
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 47503,
+              "total": 73120,
+              "count": 2
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 25843,
+              "total": 25843,
+              "count": 1
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 222840,
+              "total": 748554,
+              "count": 9
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 156749,
+              "total": 444478,
+              "count": 9
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "林一",
           "hot": 959332,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 99816,
+              "total": 172993,
+              "count": 3
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 176376,
+              "total": 277420,
+              "count": 3
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 79858,
+              "total": 116384,
+              "count": 2
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 201354,
+              "total": 392535,
+              "count": 2
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "刘亦菲",
           "hot": 838080,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 176620,
+              "total": 388113,
+              "count": 6
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 69777,
+              "total": 258786,
+              "count": 5
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 191181,
+              "total": 191181,
+              "count": 1
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "杨超越",
           "hot": 709459,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 59014,
+              "total": 59014,
+              "count": 1
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 39058,
+              "total": 68075,
+              "count": 2
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 36162,
+              "total": 63370,
+              "count": 2
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 192697,
+              "total": 519000,
+              "count": 6
+            }
+          ],
+          "trend_tag": "爆发"
         },
         {
           "keyword": "张元英",
-          "hot": 633011,
-          "platform": "xiaohongshu"
+          "hot": 665517,
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 62789,
+              "total": 132772,
+              "count": 3
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 46620,
+              "total": 46620,
+              "count": 1
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 60683,
+              "total": 146051,
+              "count": 3
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 264934,
+              "total": 264934,
+              "count": 1
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 42634,
+              "total": 42634,
+              "count": 1
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 32506,
+              "total": 32506,
+              "count": 1
+            }
+          ],
+          "trend_tag": "下降"
         },
         {
           "keyword": "崩坏星穹铁道",
           "hot": 569284,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 178173,
+              "total": 205380,
+              "count": 2
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 46353,
+              "total": 46353,
+              "count": 1
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 36694,
+              "total": 36694,
+              "count": 1
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 211412,
+              "total": 255704,
+              "count": 2
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 25153,
+              "total": 25153,
+              "count": 1
+            }
+          ],
+          "trend_tag": "下降"
         },
         {
           "keyword": "吴邪",
           "hot": 461600,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 51283,
+              "total": 51283,
+              "count": 1
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 410317,
+              "total": 410317,
+              "count": 1
+            }
+          ],
+          "trend_tag": "爆发"
         },
         {
           "keyword": "张起灵",
           "hot": 461600,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 51283,
+              "total": 51283,
+              "count": 1
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 410317,
+              "total": 410317,
+              "count": 1
+            }
+          ],
+          "trend_tag": "爆发"
         },
         {
           "keyword": "沈腾",
           "hot": 424348,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 41883,
+              "total": 73133,
+              "count": 2
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 31013,
+              "total": 31013,
+              "count": 1
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 118848,
+              "total": 118848,
+              "count": 1
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 201354,
+              "total": 201354,
+              "count": 1
+            }
+          ],
+          "trend_tag": "上涨"
+        },
+        {
+          "keyword": "赵昭仪",
+          "hot": 421594,
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 107298,
+              "total": 107298,
+              "count": 1
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 192915,
+              "total": 192915,
+              "count": 1
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 121381,
+              "total": 121381,
+              "count": 1
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "易烊千玺",
           "hot": 415672,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 328969,
+              "total": 371239,
+              "count": 2
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 44433,
+              "total": 44433,
+              "count": 1
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "下降"
         },
         {
           "keyword": "神话",
           "hot": 370503,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 370503,
+              "total": 370503,
+              "count": 1
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "求婚",
           "hot": 361373,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 290681,
+              "total": 361373,
+              "count": 2
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "王楚然",
           "hot": 343652,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 31250,
+              "total": 31250,
+              "count": 1
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 31013,
+              "total": 31013,
+              "count": 1
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 29182,
+              "total": 29182,
+              "count": 1
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 50853,
+              "total": 50853,
+              "count": 1
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 201354,
+              "total": 201354,
+              "count": 1
+            }
+          ],
+          "trend_tag": "爆发"
         },
         {
           "keyword": "环球",
           "hot": 341129,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 299774,
+              "total": 341129,
+              "count": 2
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "富江",
           "hot": 316319,
-          "platform": "xiaohongshu"
-        },
-        {
-          "keyword": "赵昭仪",
-          "hot": 314296,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 316319,
+              "total": 316319,
+              "count": 1
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "中国",
           "hot": 301115,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 30349,
+              "total": 30349,
+              "count": 1
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 24558,
+              "total": 24558,
+              "count": 1
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 246208,
+              "total": 246208,
+              "count": 1
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "爆发"
         },
         {
           "keyword": "防弹少年团",
           "hot": 282211,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 257526,
+              "total": 282211,
+              "count": 2
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "刘些宁",
           "hot": 254734,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 63553,
+              "total": 63553,
+              "count": 1
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 191181,
+              "total": 191181,
+              "count": 1
+            }
+          ],
+          "trend_tag": "爆发"
         },
         {
           "keyword": "孙权",
           "hot": 225234,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 29347,
+              "total": 29347,
+              "count": 1
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 195887,
+              "total": 195887,
+              "count": 1
+            }
+          ],
+          "trend_tag": "爆发"
         },
         {
           "keyword": "环球影城",
           "hot": 216066,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 216066,
+              "total": 216066,
+              "count": 1
+            }
+          ],
+          "trend_tag": "稳定"
+        },
+        {
+          "keyword": "和平精英",
+          "hot": 208491,
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 27447,
+              "total": 27447,
+              "count": 1
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 61091,
+              "total": 117612,
+              "count": 3
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 38646,
+              "total": 63432,
+              "count": 2
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "小黄人",
           "hot": 194963,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 194963,
+              "total": 194963,
+              "count": 1
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "吴奇隆",
           "hot": 190396,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 190396,
+              "total": 190396,
+              "count": 1
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "刘德华",
           "hot": 190396,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 190396,
+              "total": 190396,
+              "count": 1
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "郭富城",
           "hot": 190396,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 190396,
+              "total": 190396,
+              "count": 1
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
-          "keyword": "和平精英",
-          "hot": 181044,
-          "platform": "xiaohongshu"
+          "keyword": "黄景瑜",
+          "hot": 179120,
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 36526,
+              "total": 36526,
+              "count": 1
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 142594,
+              "total": 142594,
+              "count": 1
+            }
+          ],
+          "trend_tag": "爆发"
         },
         {
           "keyword": "虞书欣",
           "hot": 131035,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 32968,
+              "total": 32968,
+              "count": 1
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 70653,
+              "total": 98067,
+              "count": 2
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "上涨"
         },
         {
           "keyword": "白鹿",
           "hot": 125375,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 35091,
+              "total": 101158,
+              "count": 3
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 24217,
+              "total": 24217,
+              "count": 1
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "影之刃零",
           "hot": 57764,
-          "platform": "xiaohongshu"
-        },
-        {
-          "keyword": "黄景瑜",
-          "hot": 36526,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 28815,
+              "total": 28815,
+              "count": 1
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 28949,
+              "total": 28949,
+              "count": 1
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "曾舜晞",
           "hot": 30706,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 30706,
+              "total": 30706,
+              "count": 1
+            }
+          ],
+          "trend_tag": "稳定"
         },
         {
           "keyword": "火影忍者",
           "hot": 24895,
-          "platform": "xiaohongshu"
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-10-31",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-01",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-02",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-03",
+              "heat": 24895,
+              "total": 24895,
+              "count": 1
+            },
+            {
+              "date": "2026-11-04",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-05",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            },
+            {
+              "date": "2026-11-06",
+              "heat": 0,
+              "total": 0,
+              "count": 0
+            }
+          ],
+          "trend_tag": "稳定"
         }
       ]
     },
@@ -2310,12 +5356,7 @@
         "source_originals": [
           {
             "text": "繁荣主义",
-            "heat": 544526,
-            "platform": "xiaohongshu"
-          },
-          {
-            "text": "繁荣主义[话题]",
-            "heat": 135378,
+            "heat": 679904,
             "platform": "xiaohongshu"
           }
         ],
@@ -2494,7 +5535,7 @@
             "platform": "xiaohongshu"
           },
           {
-            "text": "冬日穿搭[话题]",
+            "text": "冬日穿搭",
             "heat": 67945,
             "platform": "xiaohongshu"
           }
