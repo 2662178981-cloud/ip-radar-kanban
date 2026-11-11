@@ -281,6 +281,21 @@
     .title { font-size: 21px; }
     .panel { padding: 10px 10px; }
   }
+
+  /* 风格榜单原词折叠 */
+  .style-orig-wrap { margin-top: 4px; }
+  .style-orig-toggle { background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 4px;
+    padding: 2px 8px; font-size: 11px; color: #6b7280; cursor: pointer; display: inline-block; }
+  .style-orig-toggle:hover { background: #e9ecef; }
+  .style-orig-list { margin-top: 4px; }
+  .style-orig-item { display: flex; align-items: center; gap: 6px; padding: 2px 0; font-size: 12px; line-height: 1.4; }
+  .pf-badge { display: inline-block; padding: 0 5px; border-radius: 3px; font-size: 10px; font-weight: 600; white-space: nowrap; }
+  .pf-xiaohongshu { background: #ff2442; color: #fff; }
+  .pf-weibo { background: #e6162d; color: #fff; }
+  .pf-douyin { background: #000; color: #fff; }
+  .orig-text { color: #475569; flex: 1; overflow-wrap: anywhere; }
+  .orig-heat { color: #ef4444; font-weight: 600; white-space: nowrap; font-size: 11px; }
+
 </style>
 </head>
 <body>
@@ -1090,6 +1105,18 @@ function renderCalendar() {
 }
 
 /* ===== 热搜风格词 ===== */
+
+function toggleStyleOrig(btn) {
+  var list = btn.nextElementSibling;
+  if (list.style.display === 'none') {
+    list.style.display = 'block';
+    btn.textContent = btn.textContent.replace('展开', '收起');
+  } else {
+    list.style.display = 'none';
+    btn.textContent = btn.textContent.replace('收起', '展开');
+  }
+}
+
 function renderStyleHot() {
   const grid = document.getElementById('diesun-grid');
   const countEl = document.getElementById('diesun-count');
@@ -1119,7 +1146,24 @@ function renderStyleHot() {
       return '<tr class="style-row' + (hasMap ? ' style-mapped' : '') + '" data-style-word="' + escHtml(word) + '" data-style-orig="' + escHtml(orig) + '">' +
         '<td><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
         '<td><div class="kw-main">' + escHtml(word) + '</div>' +
-        (originals.length ? '<div class="kw-sub style-source">' + originals.map(escHtml).join('<br>') + '</div>' : '') + '</td>' +
+        (originals.length ? (function() {
+      var origHtml = originals.map(function(o) {
+        if (typeof o === 'string') { o = {text: o, heat: 0, platform: ''}; }
+        var pfMap = {xiaohongshu: '小红书', weibo: '微博', douyin: '抖音'};
+        var pfName = pfMap[o.platform] || o.platform || '';
+        var heatStr = o.heat ? fmtHeatVal(o.heat) : '';
+        var pfClass = 'pf-' + (o.platform || 'unknown');
+        return '<div class="style-orig-item">' +
+          (pfName ? '<span class="pf-badge ' + pfClass + '">' + pfName + '</span>' : '') +
+          '<span class="orig-text">' + escHtml(o.text) + '</span>' +
+          (heatStr ? '<span class="orig-heat">' + heatStr + '</span>' : '') +
+          '</div>';
+      }).join('');
+      return '<div class="style-orig-wrap">' +
+        '<button class="style-orig-toggle" onclick="toggleStyleOrig(this)">展开原词 (' + originals.length + ')</button>' +
+        '<div class="style-orig-list" style="display:none">' + origHtml + '</div>' +
+        '</div>';
+    })() : '') + '</td>' +
         '<td>' + catDotHtml(cat) + escHtml(cat || '—') + '</td>' +
         '<td>' + heatCellHtml(s) + '</td>' +
       '</tr>';
