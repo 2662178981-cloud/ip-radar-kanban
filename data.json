@@ -1,4134 +1,2804 @@
 {
- "version": "4.0",
- "generatedAt": "2026-11-11T17:12:37+08:00",
- "summary": {
-  "total": 50,
-  "ipCount": 50,
-  "newValues": 14,
-  "oldValues": 36,
-  "reviewNeeded": 0,
-  "boards": [
-   {
-    "code": "xiaohongshu",
-    "title": "小红书",
-    "count": 50
-   },
-   {
-    "code": "weibo",
-    "title": "微博",
-    "count": 24
-   },
-   {
-    "code": "douyin",
-    "title": "抖音",
-    "count": 31
-   }
-  ],
-  "generatedAt": "2026-11-11T15:05:10+08:00"
- },
- "ipBoard": {
-  "title": "IP 榜单",
-  "subtitle": "跨平台IP热度排行（微博·抖音·小红书）",
-  "total": 50,
-  "items": [
-   {
-    "keyword": "虞书欣",
-    "display_keyword": "虞书欣",
-    "display_original": "虞书欣",
-    "matched_value": "虞书欣",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "虞书欣",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 20764180,
-    "hot_score": 20764180,
-    "norm_score": 73.17315,
-    "hints": [
-     "虞书欣同款",
-     "虞书欣同款穿搭"
-    ],
-    "platform": "douyin,xiaohongshu",
-    "platforms": [
-     "douyin",
-     "xiaohongshu"
-    ],
-    "ip_rank": 1,
-    "rank": 1,
-    "trend_tag": "火爆"
-   },
-   {
-    "keyword": "大耳朵图图",
-    "display_keyword": "大耳朵图图",
-    "display_original": "大耳朵图图",
-    "matched_value": "大耳朵图图",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "大耳朵图图",
-      "status": "匹配成功",
-      "category": "卡通动漫",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "卡通动漫",
-    "hot_value": 19076357,
-    "hot_score": 19076357,
-    "norm_score": 72.80495,
-    "hints": [
-     "大耳朵图图手办",
-     "大耳朵图图联名款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 2,
-    "rank": 2,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "佘诗曼",
-    "display_keyword": "佘诗曼",
-    "display_original": "佘诗曼",
-    "matched_value": "佘诗曼",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "佘诗曼",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 17485074,
-    "hot_score": 17485074,
-    "norm_score": 72.42667,
-    "hints": [
-     "佘诗曼同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 3,
-    "rank": 3,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "刘亦菲",
-    "display_keyword": "刘亦菲",
-    "display_original": "刘亦菲",
-    "matched_value": "刘亦菲",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "刘亦菲",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 17026747,
-    "hot_score": 17026747,
-    "norm_score": 72.31132,
-    "hints": [
-     "刘亦菲同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 4,
-    "rank": 4,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "张凌赫",
-    "display_keyword": "张凌赫",
-    "display_original": "张凌赫",
-    "matched_value": "张凌赫",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "张凌赫",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 15376314,
-    "hot_score": 15376314,
-    "norm_score": 71.86852,
-    "hints": [
-     "张凌赫同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 5,
-    "rank": 5,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "孙颖莎",
-    "display_keyword": "孙颖莎",
-    "display_original": "孙颖莎",
-    "matched_value": "孙颖莎",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "孙颖莎",
-      "status": "匹配成功",
-      "category": "体育",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "体育",
-    "hot_value": 13425403,
-    "hot_score": 13425403,
-    "norm_score": 71.27927,
-    "hints": [
-     "孙颖莎周边"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 6,
-    "rank": 6,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "灭霸",
-    "display_keyword": "灭霸",
-    "display_original": "灭霸",
-    "matched_value": "灭霸",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "灭霸",
-      "status": "匹配成功",
-      "category": "影视综艺",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "影视综艺",
-    "hot_value": 12949157,
-    "hot_score": 12949157,
-    "norm_score": 71.12241,
-    "hints": [
-     "灭霸同款",
-     "灭霸周边"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 7,
-    "rank": 7,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "宋慧乔",
-    "display_keyword": "宋慧乔",
-    "display_original": "宋慧乔",
-    "matched_value": "宋慧乔",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "宋慧乔",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 12417065,
-    "hot_score": 12417065,
-    "norm_score": 70.94019,
-    "hints": [
-     "宋慧乔同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 8,
-    "rank": 8,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "李知恩",
-    "display_keyword": "李知恩",
-    "display_original": "李知恩",
-    "matched_value": "李知恩",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "李知恩",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 12417065,
-    "hot_score": 12417065,
-    "norm_score": 70.94019,
-    "hints": [
-     "李知恩同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 9,
-    "rank": 9,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "杨迪",
-    "display_keyword": "杨迪",
-    "display_original": "杨迪",
-    "matched_value": "杨迪",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "杨迪",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 12286645,
-    "hot_score": 12286645,
-    "norm_score": 70.89433,
-    "hints": [
-     "杨迪同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 10,
-    "rank": 10,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "陈奕迅",
-    "display_keyword": "陈奕迅",
-    "display_original": "陈奕迅",
-    "matched_value": "陈奕迅",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "陈奕迅",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 11320561,
-    "hot_score": 11320561,
-    "norm_score": 70.53868,
-    "hints": [
-     "陈奕迅同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 11,
-    "rank": 11,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "肖战",
-    "display_keyword": "肖战",
-    "display_original": "肖战",
-    "matched_value": "肖战",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "肖战",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 10092514,
-    "hot_score": 10092514,
-    "norm_score": 70.03999,
-    "hints": [
-     "肖战同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 12,
-    "rank": 12,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "迪丽热巴",
-    "display_keyword": "迪丽热巴",
-    "display_original": "迪丽热巴",
-    "matched_value": "迪丽热巴",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "迪丽热巴",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 9703654,
-    "hot_score": 9703654,
-    "norm_score": 69.86935,
-    "hints": [
-     "迪丽热巴同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 13,
-    "rank": 13,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "杨旭文",
-    "display_keyword": "杨旭文",
-    "display_original": "杨旭文",
-    "matched_value": "杨旭文",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "杨旭文",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 9449024,
-    "hot_score": 9449024,
-    "norm_score": 69.75387,
-    "hints": [
-     "杨旭文同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 14,
-    "rank": 14,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "何苏叶",
-    "display_keyword": "何苏叶",
-    "display_original": "何苏叶",
-    "matched_value": "何苏叶",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "何苏叶",
-      "status": "匹配成功",
-      "category": "影视综艺",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "影视综艺",
-    "hot_value": 9218792,
-    "hot_score": 9218792,
-    "norm_score": 69.64674,
-    "hints": [
-     "何苏叶同款",
-     "何苏叶周边"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 15,
-    "rank": 15,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "花城",
-    "display_keyword": "花城",
-    "display_original": "花城",
-    "matched_value": "花城",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "花城",
-      "status": "匹配成功",
-      "category": "卡通动漫",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "卡通动漫",
-    "hot_value": 9117264,
-    "hot_score": 9117264,
-    "norm_score": 69.59865,
-    "hints": [
-     "花城手办",
-     "花城联名款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 16,
-    "rank": 16,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "谢怜",
-    "display_keyword": "谢怜",
-    "display_original": "谢怜",
-    "matched_value": "谢怜",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "谢怜",
-      "status": "匹配成功",
-      "category": "卡通动漫",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "卡通动漫",
-    "hot_value": 9117264,
-    "hot_score": 9117264,
-    "norm_score": 69.59865,
-    "hints": [
-     "谢怜手办",
-     "谢怜联名款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 17,
-    "rank": 17,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "天官赐福",
-    "display_keyword": "天官赐福",
-    "display_original": "天官赐福",
-    "matched_value": "天官赐福",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "天官赐福",
-      "status": "匹配成功",
-      "category": "卡通动漫",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "卡通动漫",
-    "hot_value": 9117264,
-    "hot_score": 9117264,
-    "norm_score": 69.59865,
-    "hints": [
-     "天官赐福手办",
-     "天官赐福联名款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 18,
-    "rank": 18,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "梁家辉",
-    "display_keyword": "梁家辉",
-    "display_original": "梁家辉第39届金鸡奖最佳男主角",
-    "matched_value": "梁家辉",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "梁家辉",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 8614000,
-    "hot_score": 8614000,
-    "norm_score": 69.35205,
-    "hints": [
-     "梁家辉红毯同款",
-     "梁家辉颁奖典礼穿搭"
-    ],
-    "platform": "douyin,weibo",
-    "platforms": [
-     "douyin",
-     "weibo"
-    ],
-    "trend_tag": "",
-    "ip_rank": 19,
-    "rank": 19
-   },
-   {
-    "keyword": "刘德华",
-    "display_keyword": "刘德华",
-    "display_original": "刘德华",
-    "matched_value": "刘德华",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "刘德华",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 8316691,
-    "hot_score": 8316691,
-    "norm_score": 69.19951,
-    "hints": [
-     "刘德华同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 20,
-    "rank": 20,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "白鹿",
-    "display_keyword": "白鹿",
-    "display_original": "跟白鹿一起变身毛茸茸",
-    "matched_value": "白鹿",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "白鹿",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 8249000,
-    "hot_score": 8249000,
-    "norm_score": 69.16401,
-    "hints": [
-     "白鹿同款穿搭"
-    ],
-    "platform": "douyin,weibo",
-    "platforms": [
-     "douyin",
-     "weibo"
-    ],
-    "trend_tag": "",
-    "ip_rank": 21,
-    "rank": 21
-   },
-   {
-    "keyword": "周深",
-    "display_keyword": "周深",
-    "display_original": "周深",
-    "matched_value": "周深",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "周深",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 8226879,
-    "hot_score": 8226879,
-    "norm_score": 69.15235,
-    "hints": [
-     "周深同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 22,
-    "rank": 22,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "陈哲远",
-    "display_keyword": "陈哲远",
-    "display_original": "陈哲远",
-    "matched_value": "陈哲远",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "陈哲远",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 8211936,
-    "hot_score": 8211936,
-    "norm_score": 69.14446,
-    "hints": [
-     "陈哲远同款"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 23,
-    "rank": 23,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "高叶",
-    "display_keyword": "高叶",
-    "display_original": "高叶获第39届金鸡奖最佳女主角",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "高叶",
-      "status": "新value",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 8168000,
-    "hot_score": 8168000,
-    "norm_score": 69.12116,
-    "hints": [
-     "高叶红毯同款",
-     "高叶颁奖典礼穿搭"
-    ],
-    "platform": "douyin,weibo",
-    "platforms": [
-     "douyin",
-     "weibo"
-    ],
-    "trend_tag": "",
-    "ip_rank": 24,
-    "rank": 24
-   },
-   {
-    "keyword": "孟子义",
-    "display_keyword": "孟子义",
-    "display_original": "孟子义苏妲己好娇啊（孟子义）",
-    "matched_value": "孟子义",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "孟子义",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7952000,
-    "hot_score": 7952000,
-    "norm_score": 69.00476,
-    "hints": [
-     "孟子义同款"
-    ],
-    "platform": "douyin,weibo",
-    "platforms": [
-     "douyin",
-     "weibo"
-    ],
-    "trend_tag": "",
-    "ip_rank": 25,
-    "rank": 25
-   },
-   {
-    "keyword": "朱一龙",
-    "display_keyword": "朱一龙",
-    "display_original": "朱一龙出席第39届金鸡奖",
-    "matched_value": "朱一龙",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "朱一龙",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7821000,
-    "hot_score": 7821000,
-    "norm_score": 68.93262,
-    "hints": [
-     "朱一龙红毯同款",
-     "朱一龙颁奖典礼穿搭"
-    ],
-    "platform": "douyin,weibo",
-    "platforms": [
-     "douyin",
-     "weibo"
-    ],
-    "trend_tag": "",
-    "ip_rank": 26,
-    "rank": 26
-   },
-   {
-    "keyword": "丞磊",
-    "display_keyword": "丞磊",
-    "display_original": "丞磊张云龙再现名场面（丞磊）",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "丞磊",
-      "status": "新value",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7820000,
-    "hot_score": 7820000,
-    "norm_score": 68.93207,
-    "hints": [
-     "丞磊同款"
-    ],
-    "platform": "douyin,weibo",
-    "platforms": [
-     "douyin",
-     "weibo"
-    ],
-    "trend_tag": "",
-    "ip_rank": 27,
-    "rank": 27
-   },
-   {
-    "keyword": "吾守尔赛来",
-    "display_keyword": "吾守尔赛来",
-    "display_original": "吾守尔赛来获金鸡奖最佳男配角",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "吾守尔赛来",
-      "status": "新value",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7798000,
-    "hot_score": 7798000,
-    "norm_score": 68.91983,
-    "hints": [
-     "吾守尔赛来红毯同款",
-     "吾守尔赛来颁奖典礼穿搭"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 28,
-    "rank": 28
-   },
-   {
-    "keyword": "光与夜之恋",
-    "display_keyword": "光与夜之恋",
-    "display_original": "光与夜之恋",
-    "matched_value": "光与夜之恋",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "光与夜之恋",
-      "status": "匹配成功",
-      "category": "游戏电竞",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "游戏电竞",
-    "hot_value": 7791437,
-    "hot_score": 7791437,
-    "norm_score": 68.91618,
-    "hints": [
-     "光与夜之恋联名周边",
-     "光与夜之恋手办模型"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 29,
-    "rank": 29,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "萧逸",
-    "display_keyword": "萧逸",
-    "display_original": "萧逸",
-    "matched_value": "萧逸",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "萧逸",
-      "status": "匹配成功",
-      "category": "游戏电竞",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "游戏电竞",
-    "hot_value": 7791437,
-    "hot_score": 7791437,
-    "norm_score": 68.91618,
-    "hints": [
-     "萧逸联名周边",
-     "萧逸手办模型"
-    ],
-    "platform": "xiaohongshu",
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "ip_rank": 30,
-    "rank": 30,
-    "trend_tag": ""
-   },
-   {
-    "keyword": "兰西雅",
-    "display_keyword": "兰西雅",
-    "display_original": "兰西雅获金鸡奖最佳女配角",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "兰西雅",
-      "status": "新value",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7751000,
-    "hot_score": 7751000,
-    "norm_score": 68.89358,
-    "hints": [
-     "兰西雅红毯同款",
-     "兰西雅颁奖典礼穿搭"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 31,
-    "rank": 31
-   },
-   {
-    "keyword": "苏妲己",
-    "display_keyword": "苏妲己",
-    "display_original": "孟子义苏妲己好娇啊（苏妲己）",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "苏妲己",
-      "status": "新value",
-      "category": "影视综艺",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "影视综艺",
-    "hot_value": 7722000,
-    "hot_score": 7722000,
-    "norm_score": 68.8773,
-    "hints": [
-     "苏妲己同款",
-     "苏妲己周边"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 32,
-    "rank": 32
-   },
-   {
-    "keyword": "董思成",
-    "display_keyword": "董思成",
-    "display_original": "董思成和杨超越互夸到害羞（董思成）",
-    "matched_value": "董思成",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "董思成",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7709000,
-    "hot_score": 7709000,
-    "norm_score": 68.86998,
-    "hints": [
-     "董思成同款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 33,
-    "rank": 33
-   },
-   {
-    "keyword": "杨超越",
-    "display_keyword": "杨超越",
-    "display_original": "董思成和杨超越互夸到害羞（杨超越）",
-    "matched_value": "杨超越",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "杨超越",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7709000,
-    "hot_score": 7709000,
-    "norm_score": 68.86998,
-    "hints": [
-     "杨超越同款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 34,
-    "rank": 34
-   },
-   {
-    "keyword": "曾舜晞",
-    "display_keyword": "曾舜晞",
-    "display_original": "曾舜晞伯爵神之十秒",
-    "matched_value": "曾舜晞",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "曾舜晞",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7691000,
-    "hot_score": 7691000,
-    "norm_score": 68.85983,
-    "hints": [
-     "曾舜晞同款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 35,
-    "rank": 35
-   },
-   {
-    "keyword": "张云龙",
-    "display_keyword": "张云龙",
-    "display_original": "丞磊张云龙再现名场面（张云龙）",
-    "matched_value": "张云龙",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "张云龙",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7690000,
-    "hot_score": 7690000,
-    "norm_score": 68.85926,
-    "hints": [
-     "张云龙同款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 36,
-    "rank": 36
-   },
-   {
-    "keyword": "九尾狐",
-    "display_keyword": "九尾狐",
-    "display_original": "我的九尾狐身份被发现了",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "九尾狐",
-      "status": "新value",
-      "category": "卡通动漫",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "卡通动漫",
-    "hot_value": 7655000,
-    "hot_score": 7655000,
-    "norm_score": 68.83945,
-    "hints": [
-     "九尾狐手办",
-     "九尾狐联名款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 37,
-    "rank": 37
-   },
-   {
-    "keyword": "火影",
-    "display_keyword": "火影",
-    "display_original": "火影热血番冬日解冻了",
-    "matched_value": "火影",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "火影",
-      "status": "匹配成功",
-      "category": "卡通动漫",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "卡通动漫",
-    "hot_value": 7651000,
-    "hot_score": 7651000,
-    "norm_score": 68.83718,
-    "hints": [
-     "火影手办",
-     "火影联名款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 38,
-    "rank": 38
-   },
-   {
-    "keyword": "李思潼",
-    "display_keyword": "李思潼",
-    "display_original": "所有人感受李思潼金鸡怼脸拍",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "李思潼",
-      "status": "新value",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7644000,
-    "hot_score": 7644000,
-    "norm_score": 68.83321,
-    "hints": [
-     "李思潼同款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 39,
-    "rank": 39
-   },
-   {
-    "keyword": "陈赫",
-    "display_keyword": "陈赫",
-    "display_original": "陈赫的生日礼物太有爱了",
-    "matched_value": "陈赫",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "陈赫",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7642000,
-    "hot_score": 7642000,
-    "norm_score": 68.83207,
-    "hints": [
-     "陈赫同款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 40,
-    "rank": 40
-   },
-   {
-    "keyword": "嫁金钗",
-    "display_keyword": "嫁金钗",
-    "display_original": "嫁金钗收官",
-    "matched_value": "嫁金钗",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "嫁金钗",
-      "status": "匹配成功",
-      "category": "影视综艺",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "影视综艺",
-    "hot_value": 7642000,
-    "hot_score": 7642000,
-    "norm_score": 68.83207,
-    "hints": [
-     "嫁金钗同款",
-     "嫁金钗周边"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 41,
-    "rank": 41
-   },
-   {
-    "keyword": "谷雨",
-    "display_keyword": "谷雨",
-    "display_original": "谷雨张颂文喊李小冉妈（谷雨）",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "谷雨",
-      "status": "新value",
-      "category": "影视综艺",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "影视综艺",
-    "hot_value": 7638000,
-    "hot_score": 7638000,
-    "norm_score": 68.8298,
-    "hints": [
-     "谷雨同款",
-     "谷雨周边"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 42,
-    "rank": 42
-   },
-   {
-    "keyword": "张颂文",
-    "display_keyword": "张颂文",
-    "display_original": "谷雨张颂文喊李小冉妈（张颂文）",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "张颂文",
-      "status": "新value",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7638000,
-    "hot_score": 7638000,
-    "norm_score": 68.8298,
-    "hints": [
-     "张颂文同款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 43,
-    "rank": 43
-   },
-   {
-    "keyword": "李小冉",
-    "display_keyword": "李小冉",
-    "display_original": "谷雨张颂文喊李小冉妈（李小冉）",
-    "matched_value": "李小冉",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "李小冉",
-      "status": "匹配成功",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7638000,
-    "hot_score": 7638000,
-    "norm_score": 68.8298,
-    "hints": [
-     "李小冉同款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 44,
-    "rank": 44
-   },
-   {
-    "keyword": "巴啦啦小魔仙",
-    "display_keyword": "巴啦啦小魔仙",
-    "display_original": "巴啦啦小魔仙cos梦回小时候",
-    "matched_value": "巴啦啦小魔仙",
-    "ip_status": "匹配成功",
-    "ip_terms": [
-     {
-      "word": "巴啦啦小魔仙",
-      "status": "匹配成功",
-      "category": "卡通动漫",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "卡通动漫",
-    "hot_value": 7638000,
-    "hot_score": 7638000,
-    "norm_score": 68.8298,
-    "hints": [
-     "巴啦啦小魔仙cos服",
-     "巴啦啦小魔仙cos道具",
-     "巴啦啦小魔仙手办"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 45,
-    "rank": 45
-   },
-   {
-    "keyword": "孙恩盛",
-    "display_keyword": "孙恩盛",
-    "display_original": "专访主播孙恩盛",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "孙恩盛",
-      "status": "新value",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7637000,
-    "hot_score": 7637000,
-    "norm_score": 68.82923,
-    "hints": [
-     "孙恩盛同款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 46,
-    "rank": 46
-   },
-   {
-    "keyword": "张翅",
-    "display_keyword": "张翅",
-    "display_original": "张翅金鸡奖出图",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "张翅",
-      "status": "新value",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7637000,
-    "hot_score": 7637000,
-    "norm_score": 68.82923,
-    "hints": [
-     "张翅红毯同款",
-     "张翅颁奖典礼穿搭"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 47,
-    "rank": 47
-   },
-   {
-    "keyword": "郑雨",
-    "display_keyword": "郑雨",
-    "display_original": "郑雨陈砚周没名分的醋好香（郑雨）",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "郑雨",
-      "status": "新value",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7635000,
-    "hot_score": 7635000,
-    "norm_score": 68.82809,
-    "hints": [
-     "郑雨同款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 48,
-    "rank": 48
-   },
-   {
-    "keyword": "陈砚周",
-    "display_keyword": "陈砚周",
-    "display_original": "郑雨陈砚周没名分的醋好香（陈砚周）",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "陈砚周",
-      "status": "新value",
-      "category": "明星/人物",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "明星/人物",
-    "hot_value": 7635000,
-    "hot_score": 7635000,
-    "norm_score": 68.82809,
-    "hints": [
-     "陈砚周同款"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 49,
-    "rank": 49
-   },
-   {
-    "keyword": "萨勒芬妮",
-    "display_keyword": "萨勒芬妮",
-    "display_original": "用萨勒芬妮二创为BLG应援（萨勒芬妮）",
-    "matched_value": "",
-    "ip_status": "新value",
-    "ip_terms": [
-     {
-      "word": "萨勒芬妮",
-      "status": "新value",
-      "category": "游戏电竞",
-      "addedDate": ""
-     }
-    ],
-    "ipCategory": "游戏电竞",
-    "hot_value": 7635000,
-    "hot_score": 7635000,
-    "norm_score": 68.82809,
-    "hints": [
-     "萨勒芬妮联名周边",
-     "萨勒芬妮手办模型"
-    ],
-    "platform": "douyin",
-    "platforms": [
-     "douyin"
-    ],
-    "trend_tag": "",
-    "ip_rank": 50,
-    "rank": 50
-   }
-  ]
- },
- "platformBoards": {
-  "xiaohongshu": {
-   "code": "xiaohongshu",
-   "title": "小红书",
-   "count": 50,
-   "items": [
-    {
-     "keyword": "大耳朵图图",
-     "hot": 19076357,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "佘诗曼",
-     "hot": 17485074,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "刘亦菲",
-     "hot": 17026747,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "张凌赫",
-     "hot": 15376314,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "孙颖莎",
-     "hot": 13425403,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "灭霸",
-     "hot": 12949157,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "宋慧乔",
-     "hot": 12417065,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "李知恩",
-     "hot": 12417065,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "杨迪",
-     "hot": 12286645,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "陈奕迅",
-     "hot": 11320561,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "肖战",
-     "hot": 10092514,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "迪丽热巴",
-     "hot": 9703654,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "杨旭文",
-     "hot": 9449024,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "何苏叶",
-     "hot": 9218792,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "花城",
-     "hot": 9117264,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "谢怜",
-     "hot": 9117264,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "天官赐福",
-     "hot": 9117264,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "刘德华",
-     "hot": 8316691,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "周深",
-     "hot": 8226879,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "陈哲远",
-     "hot": 8211936,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "光与夜之恋",
-     "hot": 7791437,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "萧逸",
-     "hot": 7791437,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "光遇",
-     "hot": 7577724,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "祁煜",
-     "hot": 7258410,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "恋与深空",
-     "hot": 7258410,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "宝可梦",
-     "hot": 6666902,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "皮卡丘",
-     "hot": 6666902,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "不能说的秘密",
-     "hot": 6566657,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "黄子弘凡",
-     "hot": 6415193,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "高达",
-     "hot": 6265144,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "全职高手",
-     "hot": 6089447,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "周泽楷",
-     "hot": 6089447,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "车银优",
-     "hot": 5727523,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "杨洋",
-     "hot": 5471180,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "虞书欣",
-     "hot": 5471180,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "王一博",
-     "hot": 5471180,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "宋雨琦",
-     "hot": 4782109,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "顾时夜",
-     "hot": 4322429,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "王俊凯",
-     "hot": 4005520,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "张极",
-     "hot": 3456337,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "柯南",
-     "hot": 3325467,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "名侦探柯南",
-     "hot": 3325467,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "工藤新一",
-     "hot": 3325467,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "安室透",
-     "hot": 3325467,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "灰原哀",
-     "hot": 3325467,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "蜘蛛侠",
-     "hot": 3317812,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "章昊",
-     "hot": 3132492,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "朴成训",
-     "hot": 3103105,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "鞠婧祎",
-     "hot": 3076798,
-     "platform": "xiaohongshu"
-    },
-    {
-     "keyword": "丁禹兮",
-     "hot": 2915147,
-     "platform": "xiaohongshu"
-    }
-   ]
+  "version": "4.0",
+  "generatedAt": "2026-11-11T21:18:20+08:00",
+  "summary": {
+    "total": 50,
+    "ipCount": 50,
+    "newValues": 8,
+    "oldValues": 42,
+    "reviewNeeded": 0,
+    "boards": [
+      {
+        "code": "xiaohongshu",
+        "title": "小红书",
+        "count": 34
+      },
+      {
+        "code": "weibo",
+        "title": "微博",
+        "count": 10
+      },
+      {
+        "code": "douyin",
+        "title": "抖音",
+        "count": 19
+      }
+    ],
+    "generatedAt": "2026-11-11T21:18:20+08:00"
   },
-  "weibo": {
-   "code": "weibo",
-   "title": "微博",
-   "count": 24,
-   "items": [
-    {
-     "keyword": "王楚钦",
-     "display_keyword": "王楚钦",
-     "display_original": "羊城晚报评王楚钦反思长文",
-     "matched_value": "王楚钦",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+  "ipBoard": {
+    "title": "IP 榜单",
+    "subtitle": "微博 · 抖音 · 小红书 热度排行",
+    "total": 50,
+    "items": [
       {
-       "word": "王楚钦",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 3060000,
-     "hot_score": 3060000,
-     "norm_score": 64.85721,
-     "hints": [
-      "王楚钦同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "白小纯",
-     "display_keyword": "白小纯",
-     "display_original": "青稚 白小纯（白小纯）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
+        "keyword": "梁家辉",
+        "display_keyword": "梁家辉",
+        "display_original": "梁家辉第39届金鸡奖最佳男主角",
+        "matched_value": "梁家辉",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "梁家辉",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 7821000,
+        "hot_score": 7821000,
+        "norm_score": 68.93262,
+        "hints": [
+          "梁家辉同款"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "梁家辉第39届金鸡奖最佳男主角",
+            "heat": 7821000,
+            "platform": "douyin"
+          }
+        ],
+        "ip_rank": 1,
+        "rank": 1,
+        "trend_tag": ""
+      },
       {
-       "word": "白小纯",
-       "status": "新value",
-       "category": "卡通动漫",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "卡通动漫",
-     "hot_value": 870000,
-     "hot_score": 870000,
-     "norm_score": 59.39519,
-     "hints": [
-      "白小纯手办",
-      "白小纯联名款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "梁家辉",
-     "display_keyword": "梁家辉",
-     "display_original": "梁家辉拒绝工作人员帮拿金鸡奖杯",
-     "matched_value": "梁家辉",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "兰西雅",
+        "display_keyword": "兰西雅",
+        "display_original": "兰西雅获金鸡奖最佳女配角",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "兰西雅",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 7759000,
+        "hot_score": 7759000,
+        "norm_score": 68.89806,
+        "hints": [
+          "兰西雅同款",
+          "兰西雅同款穿搭"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "兰西雅获金鸡奖最佳女配角",
+            "heat": 7759000,
+            "platform": "douyin"
+          }
+        ],
+        "ip_rank": 2,
+        "rank": 2,
+        "trend_tag": ""
+      },
       {
-       "word": "梁家辉",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 850000,
-     "hot_score": 850000,
-     "norm_score": 59.29419,
-     "hints": [
-      "梁家辉红毯同款",
-      "梁家辉颁奖典礼穿搭"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "白鹿",
-     "display_keyword": "白鹿",
-     "display_original": "白鹿的台风不像演员该有的",
-     "matched_value": "白鹿",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "高叶",
+        "display_keyword": "高叶",
+        "display_original": "高叶获第39届金鸡奖最佳女主角",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "高叶",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 7758000,
+        "hot_score": 7758000,
+        "norm_score": 68.8975,
+        "hints": [
+          "高叶同款",
+          "高叶同款穿搭"
+        ],
+        "platform": "douyin,weibo",
+        "platforms": [
+          "douyin",
+          "weibo"
+        ],
+        "source_originals": [
+          {
+            "text": "高叶获第39届金鸡奖最佳女主角",
+            "heat": 7758000,
+            "platform": "douyin"
+          },
+          {
+            "text": "王皓恭喜高叶获金鸡影后",
+            "heat": 170000,
+            "platform": "weibo"
+          },
+          {
+            "text": "高叶获奖钟楚曦哭成泪人",
+            "heat": 160000,
+            "platform": "weibo"
+          }
+        ],
+        "ip_rank": 3,
+        "rank": 3,
+        "trend_tag": ""
+      },
       {
-       "word": "白鹿",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 520000,
-     "hot_score": 520000,
-     "norm_score": 57.16003,
-     "hints": [
-      "白鹿同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "许飞",
-     "display_keyword": "许飞",
-     "display_original": "许飞 厉娜（许飞）",
-     "matched_value": "许飞",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "和平精英",
+        "display_keyword": "和平精英",
+        "display_original": "和平精英冰雪阿勒泰冬游记",
+        "matched_value": "和平精英",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "和平精英",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 7725000,
+        "hot_score": 7725000,
+        "norm_score": 68.87899,
+        "hints": [
+          "和平精英同款"
+        ],
+        "platform": "douyin,xiaohongshu",
+        "platforms": [
+          "douyin",
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "和平精英冰雪阿勒泰冬游记",
+            "heat": 7725000,
+            "platform": "douyin"
+          },
+          {
+            "text": "和平精英",
+            "heat": 181044,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 4,
+        "rank": 4,
+        "trend_tag": ""
+      },
       {
-       "word": "许飞",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 480000,
-     "hot_score": 480000,
-     "norm_score": 56.81241,
-     "hints": [
-      "许飞同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "金子涵",
-     "display_keyword": "金子涵",
-     "display_original": "金子涵妹妹回复网友",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
+        "keyword": "白鹿",
+        "display_keyword": "白鹿",
+        "display_original": "跟白鹿一起变身毛茸茸",
+        "matched_value": "白鹿",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "白鹿",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 7725000,
+        "hot_score": 7725000,
+        "norm_score": 68.87899,
+        "hints": [
+          "白鹿同款"
+        ],
+        "platform": "douyin,xiaohongshu",
+        "platforms": [
+          "douyin",
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "跟白鹿一起变身毛茸茸",
+            "heat": 7725000,
+            "platform": "douyin"
+          },
+          {
+            "text": "白鹿",
+            "heat": 125375,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 5,
+        "rank": 5,
+        "trend_tag": ""
+      },
       {
-       "word": "金子涵",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 470000,
-     "hot_score": 470000,
-     "norm_score": 56.72098,
-     "hints": [
-      "金子涵同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "高叶",
-     "display_keyword": "高叶",
-     "display_original": "李宇春辛芷蕾倪妮祝贺高叶（高叶）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
+        "keyword": "许飞",
+        "display_keyword": "许飞",
+        "display_original": "许飞的穿搭功力恐怕在我之下",
+        "matched_value": "许飞",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "许飞",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 7721000,
+        "hot_score": 7721000,
+        "norm_score": 68.87674,
+        "hints": [
+          "许飞同款"
+        ],
+        "platform": "douyin,weibo,xiaohongshu",
+        "platforms": [
+          "douyin",
+          "weibo",
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "许飞的穿搭功力恐怕在我之下",
+            "heat": 7721000,
+            "platform": "douyin"
+          },
+          {
+            "text": "许飞",
+            "heat": 3417874,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "张萌要给许飞送手机",
+            "heat": 170000,
+            "platform": "weibo"
+          }
+        ],
+        "ip_rank": 6,
+        "rank": 6,
+        "trend_tag": ""
+      },
       {
-       "word": "高叶",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 420000,
-     "hot_score": 420000,
-     "norm_score": 56.23249,
-     "hints": [
-      "高叶同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "青稚",
-     "display_keyword": "青稚",
-     "display_original": "青稚 白小纯（青稚）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
+        "keyword": "王子璇",
+        "display_keyword": "王子璇",
+        "display_original": "王子璇蓝色毛衣编织图解来了",
+        "matched_value": "王子璇",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "王子璇",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 7716000,
+        "hot_score": 7716000,
+        "norm_score": 68.87392,
+        "hints": [
+          "王子璇同款"
+        ],
+        "platform": "douyin,xiaohongshu",
+        "platforms": [
+          "douyin",
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "王子璇蓝色毛衣编织图解来了",
+            "heat": 7716000,
+            "platform": "douyin"
+          },
+          {
+            "text": "王子璇",
+            "heat": 3493552,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 7,
+        "rank": 7,
+        "trend_tag": ""
+      },
       {
-       "word": "青稚",
-       "status": "新value",
-       "category": "卡通动漫",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "卡通动漫",
-     "hot_value": 390000,
-     "hot_score": 390000,
-     "norm_score": 55.91065,
-     "hints": [
-      "青稚手办",
-      "青稚联名款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "李宇春",
-     "display_keyword": "李宇春",
-     "display_original": "李宇春辛芷蕾倪妮祝贺高叶（李宇春）",
-     "matched_value": "李宇春",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "陈砚周",
+        "display_keyword": "陈砚周",
+        "display_original": "陈砚周暴打渣男为郑雨出气",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "陈砚周",
+            "status": "新value",
+            "category": "影视综艺",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "影视综艺",
+        "hot_value": 7702000,
+        "hot_score": 7702000,
+        "norm_score": 68.86604,
+        "hints": [
+          "陈砚周同款",
+          "陈砚周周边"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "陈砚周暴打渣男为郑雨出气",
+            "heat": 7702000,
+            "platform": "douyin"
+          }
+        ],
+        "ip_rank": 8,
+        "rank": 8,
+        "trend_tag": ""
+      },
       {
-       "word": "李宇春",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 370000,
-     "hot_score": 370000,
-     "norm_score": 55.68202,
-     "hints": [
-      "李宇春同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "厉娜",
-     "display_keyword": "厉娜",
-     "display_original": "许飞 厉娜（厉娜）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
+        "keyword": "郑雨",
+        "display_keyword": "郑雨",
+        "display_original": "陈砚周暴打渣男为郑雨出气",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "郑雨",
+            "status": "新value",
+            "category": "影视综艺",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "影视综艺",
+        "hot_value": 7702000,
+        "hot_score": 7702000,
+        "norm_score": 68.86604,
+        "hints": [
+          "郑雨同款",
+          "郑雨周边"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "陈砚周暴打渣男为郑雨出气",
+            "heat": 7702000,
+            "platform": "douyin"
+          }
+        ],
+        "ip_rank": 9,
+        "rank": 9,
+        "trend_tag": ""
+      },
       {
-       "word": "厉娜",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 320000,
-     "hot_score": 320000,
-     "norm_score": 55.0515,
-     "hints": [
-      "厉娜同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "宋亚轩",
-     "display_keyword": "宋亚轩",
-     "display_original": "宋亚轩被那英当面处刑（宋亚轩）",
-     "matched_value": "宋亚轩",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "曾舜晞",
+        "display_keyword": "曾舜晞",
+        "display_original": "曾舜晞伯爵神之十秒",
+        "matched_value": "曾舜晞",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "曾舜晞",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 7696000,
+        "hot_score": 7696000,
+        "norm_score": 68.86265,
+        "hints": [
+          "曾舜晞同款"
+        ],
+        "platform": "douyin,xiaohongshu",
+        "platforms": [
+          "douyin",
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "曾舜晞伯爵神之十秒",
+            "heat": 7696000,
+            "platform": "douyin"
+          },
+          {
+            "text": "曾舜晞",
+            "heat": 30706,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 10,
+        "rank": 10,
+        "trend_tag": ""
+      },
       {
-       "word": "宋亚轩",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 300000,
-     "hot_score": 300000,
-     "norm_score": 54.77121,
-     "hints": [],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "那英",
-     "display_keyword": "那英",
-     "display_original": "宋亚轩被那英当面处刑（那英）",
-     "matched_value": "那英",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "影之刃零",
+        "display_keyword": "影之刃零",
+        "display_original": "影之刃零斩马刀教学",
+        "matched_value": "影之刃零",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "影之刃零",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 7668000,
+        "hot_score": 7668000,
+        "norm_score": 68.84682,
+        "hints": [
+          "影之刃零同款"
+        ],
+        "platform": "douyin,xiaohongshu",
+        "platforms": [
+          "douyin",
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "影之刃零斩马刀教学",
+            "heat": 7668000,
+            "platform": "douyin"
+          },
+          {
+            "text": "影之刃零",
+            "heat": 57764,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 11,
+        "rank": 11,
+        "trend_tag": ""
+      },
       {
-       "word": "那英",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 300000,
-     "hot_score": 300000,
-     "norm_score": 54.77121,
-     "hints": [],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "辛芷蕾",
-     "display_keyword": "辛芷蕾",
-     "display_original": "李宇春辛芷蕾倪妮祝贺高叶（辛芷蕾）",
-     "matched_value": "辛芷蕾",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "格温",
+        "display_keyword": "格温",
+        "display_original": "格温cos一出场好甜",
+        "matched_value": "格温",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "格温",
+            "status": "匹配成功",
+            "category": "灵罗娃娃·格温",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "灵罗娃娃·格温",
+        "hot_value": 7661000,
+        "hot_score": 7661000,
+        "norm_score": 68.84286,
+        "hints": [
+          "格温同款"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "格温cos一出场好甜",
+            "heat": 7661000,
+            "platform": "douyin"
+          }
+        ],
+        "ip_rank": 12,
+        "rank": 12,
+        "trend_tag": ""
+      },
       {
-       "word": "辛芷蕾",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 240000,
-     "hot_score": 240000,
-     "norm_score": 53.80211,
-     "hints": [
-      "辛芷蕾同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "倪妮",
-     "display_keyword": "倪妮",
-     "display_original": "李宇春辛芷蕾倪妮祝贺高叶（倪妮）",
-     "matched_value": "倪妮",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "火影忍者",
+        "display_keyword": "火影忍者",
+        "display_original": "火影热血番冬日解冻了",
+        "matched_value": "火影忍者",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "火影忍者",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "卡通动漫",
+        "hot_value": 7659000,
+        "hot_score": 7659000,
+        "norm_score": 68.84172,
+        "hints": [
+          "火影忍者手办",
+          "火影忍者联名款"
+        ],
+        "platform": "douyin,xiaohongshu",
+        "platforms": [
+          "douyin",
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "火影热血番冬日解冻了",
+            "heat": 7659000,
+            "platform": "douyin"
+          },
+          {
+            "text": "火影忍者",
+            "heat": 24895,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 13,
+        "rank": 13,
+        "trend_tag": ""
+      },
       {
-       "word": "倪妮",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 240000,
-     "hot_score": 240000,
-     "norm_score": 53.80211,
-     "hints": [
-      "倪妮同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "孟子义",
-     "display_keyword": "孟子义",
-     "display_original": "白鹿听完孟子义说话的反应（孟子义）",
-     "matched_value": "孟子义",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "丞磊",
+        "display_keyword": "丞磊",
+        "display_original": "丞磊张云龙再现名场面",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "丞磊",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 7655000,
+        "hot_score": 7655000,
+        "norm_score": 68.83945,
+        "hints": [
+          "丞磊同款",
+          "丞磊同款穿搭"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "丞磊张云龙再现名场面",
+            "heat": 7655000,
+            "platform": "douyin"
+          }
+        ],
+        "ip_rank": 14,
+        "rank": 14,
+        "trend_tag": ""
+      },
       {
-       "word": "孟子义",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 230000,
-     "hot_score": 230000,
-     "norm_score": 53.61728,
-     "hints": [
-      "孟子义同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "朱一龙",
-     "display_keyword": "朱一龙",
-     "display_original": "朱一龙哽咽恭喜高叶（朱一龙）",
-     "matched_value": "朱一龙",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "张云龙",
+        "display_keyword": "张云龙",
+        "display_original": "丞磊张云龙再现名场面",
+        "matched_value": "张云龙",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "张云龙",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 7655000,
+        "hot_score": 7655000,
+        "norm_score": 68.83945,
+        "hints": [
+          "张云龙同款"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "丞磊张云龙再现名场面",
+            "heat": 7655000,
+            "platform": "douyin"
+          }
+        ],
+        "ip_rank": 15,
+        "rank": 15,
+        "trend_tag": ""
+      },
       {
-       "word": "朱一龙",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 180000,
-     "hot_score": 180000,
-     "norm_score": 52.55273,
-     "hints": [
-      "朱一龙同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "马天宇",
-     "display_keyword": "马天宇",
-     "display_original": "马天宇ally直播",
-     "matched_value": "马天宇",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "巴啦啦小魔仙",
+        "display_keyword": "巴啦啦小魔仙",
+        "display_original": "巴啦啦小魔仙cos梦回小时候",
+        "matched_value": "巴啦啦小魔仙",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "巴啦啦小魔仙",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 7652000,
+        "hot_score": 7652000,
+        "norm_score": 68.83775,
+        "hints": [
+          "巴啦啦小魔仙同款"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "巴啦啦小魔仙cos梦回小时候",
+            "heat": 7652000,
+            "platform": "douyin"
+          }
+        ],
+        "ip_rank": 16,
+        "rank": 16,
+        "trend_tag": ""
+      },
       {
-       "word": "马天宇",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 180000,
-     "hot_score": 180000,
-     "norm_score": 52.55273,
-     "hints": [
-      "马天宇同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "爱情公寓",
-     "display_keyword": "爱情公寓",
-     "display_original": "爱情公寓拿到王传君的大结果了（爱情公寓）",
-     "matched_value": "爱情公寓",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "JYP",
+        "display_keyword": "JYP",
+        "display_original": "JYP新男团先公开歌曲",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "JYP",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 7652000,
+        "hot_score": 7652000,
+        "norm_score": 68.83775,
+        "hints": [
+          "JYP同款",
+          "JYP同款穿搭"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "JYP新男团先公开歌曲",
+            "heat": 7652000,
+            "platform": "douyin"
+          }
+        ],
+        "ip_rank": 17,
+        "rank": 17,
+        "trend_tag": ""
+      },
       {
-       "word": "爱情公寓",
-       "status": "匹配成功",
-       "category": "影视综艺",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "影视综艺",
-     "hot_value": 160000,
-     "hot_score": 160000,
-     "norm_score": 52.0412,
-     "hints": [
-      "爱情公寓同款",
-      "爱情公寓周边"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "王传君",
-     "display_keyword": "王传君",
-     "display_original": "爱情公寓拿到王传君的大结果了（王传君）",
-     "matched_value": "王传君",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "井柏然",
+        "display_keyword": "井柏然",
+        "display_original": "井柏然金鸡奖舞台",
+        "matched_value": "井柏然",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "井柏然",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 7650000,
+        "hot_score": 7650000,
+        "norm_score": 68.83661,
+        "hints": [
+          "井柏然同款"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "井柏然金鸡奖舞台",
+            "heat": 7650000,
+            "platform": "douyin"
+          }
+        ],
+        "ip_rank": 18,
+        "rank": 18,
+        "trend_tag": ""
+      },
       {
-       "word": "王传君",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 160000,
-     "hot_score": 160000,
-     "norm_score": 52.0412,
-     "hints": [
-      "王传君同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "邓家佳",
-     "display_keyword": "邓家佳",
-     "display_original": "邓家佳金鸡奖被喊小姨妈谁的DNA动了",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
+        "keyword": "虞书欣",
+        "display_keyword": "虞书欣",
+        "display_original": "虞书欣变身毛茸茸造型",
+        "matched_value": "虞书欣",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "虞书欣",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 7649000,
+        "hot_score": 7649000,
+        "norm_score": 68.83605,
+        "hints": [
+          "虞书欣同款",
+          "虞书欣同款穿搭"
+        ],
+        "platform": "douyin,xiaohongshu",
+        "platforms": [
+          "douyin",
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "虞书欣变身毛茸茸造型",
+            "heat": 7649000,
+            "platform": "douyin"
+          },
+          {
+            "text": "虞书欣",
+            "heat": 131035,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 19,
+        "rank": 19,
+        "trend_tag": ""
+      },
       {
-       "word": "邓家佳",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 160000,
-     "hot_score": 160000,
-     "norm_score": 52.0412,
-     "hints": [
-      "邓家佳红毯同款",
-      "邓家佳颁奖典礼穿搭"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "丞磊",
-     "display_keyword": "丞磊",
-     "display_original": "徐若晗丞磊我真的尖叫了（丞磊）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
+        "keyword": "董宇辉",
+        "display_keyword": "董宇辉",
+        "display_original": "董宇辉回应千层蛋糕保质期",
+        "matched_value": "董宇辉",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "董宇辉",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 520000,
+        "hot_score": 520000,
+        "norm_score": 57.16004,
+        "hints": [
+          "董宇辉同款"
+        ],
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "source_originals": [
+          {
+            "text": "董宇辉回应千层蛋糕保质期",
+            "heat": 520000,
+            "platform": "weibo"
+          }
+        ],
+        "ip_rank": 20,
+        "rank": 20,
+        "trend_tag": ""
+      },
       {
-       "word": "丞磊",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 130000,
-     "hot_score": 130000,
-     "norm_score": 51.13943,
-     "hints": [
-      "丞磊同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "井柏然",
-     "display_keyword": "井柏然",
-     "display_original": "井柏然回复李宇春（井柏然）",
-     "matched_value": "井柏然",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "吴邪",
+        "display_keyword": "吴邪",
+        "display_original": "吴邪",
+        "matched_value": "吴邪",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "吴邪",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 410317,
+        "hot_score": 410317,
+        "norm_score": 56.13121,
+        "hints": [
+          "吴邪同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "吴邪",
+            "heat": 461600,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 21,
+        "rank": 21,
+        "trend_tag": ""
+      },
       {
-       "word": "井柏然",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 130000,
-     "hot_score": 130000,
-     "norm_score": 51.13943,
-     "hints": [
-      "井柏然同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "石凯",
-     "display_keyword": "石凯",
-     "display_original": "造谣石凯方道歉",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
+        "keyword": "张起灵",
+        "display_keyword": "张起灵",
+        "display_original": "张起灵",
+        "matched_value": "张起灵",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "张起灵",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 410317,
+        "hot_score": 410317,
+        "norm_score": 56.13121,
+        "hints": [
+          "张起灵同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "张起灵",
+            "heat": 461600,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 22,
+        "rank": 22,
+        "trend_tag": ""
+      },
       {
-       "word": "石凯",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 130000,
-     "hot_score": 130000,
-     "norm_score": 51.13943,
-     "hints": [],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "徐若晗",
-     "display_keyword": "徐若晗",
-     "display_original": "徐若晗丞磊我真的尖叫了（徐若晗）",
-     "matched_value": "徐若晗",
-     "ip_status": "匹配成功",
-     "ip_terms": [
+        "keyword": "神话",
+        "display_keyword": "神话",
+        "display_original": "神话",
+        "matched_value": "神话",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "神话",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 370503,
+        "hot_score": 370503,
+        "norm_score": 55.68793,
+        "hints": [
+          "神话同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "神话",
+            "heat": 370503,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 23,
+        "rank": 23,
+        "trend_tag": ""
+      },
       {
-       "word": "徐若晗",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
+        "keyword": "厉娜",
+        "display_keyword": "厉娜",
+        "display_original": "别人都是紧身裤就厉娜是阔腿裤",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "厉娜",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 370000,
+        "hot_score": 370000,
+        "norm_score": 55.68203,
+        "hints": [
+          "厉娜同款",
+          "厉娜同款穿搭"
+        ],
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "source_originals": [
+          {
+            "text": "别人都是紧身裤就厉娜是阔腿裤",
+            "heat": 370000,
+            "platform": "weibo"
+          }
+        ],
+        "ip_rank": 24,
+        "rank": 24,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "易烊千玺",
+        "display_keyword": "易烊千玺",
+        "display_original": "易烊千玺",
+        "matched_value": "易烊千玺",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "易烊千玺",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 328969,
+        "hot_score": 328969,
+        "norm_score": 55.17156,
+        "hints": [
+          "易烊千玺同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "易烊千玺",
+            "heat": 415672,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 25,
+        "rank": 25,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "富江",
+        "display_keyword": "富江",
+        "display_original": "富江",
+        "matched_value": "富江",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "富江",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 316319,
+        "hot_score": 316319,
+        "norm_score": 55.00127,
+        "hints": [
+          "富江同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "富江",
+            "heat": 316319,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 26,
+        "rank": 26,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "环球",
+        "display_keyword": "环球",
+        "display_original": "环球",
+        "matched_value": "环球",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "环球",
+            "status": "匹配成功",
+            "category": "Universal Pictures",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "Universal Pictures",
+        "hot_value": 299774,
+        "hot_score": 299774,
+        "norm_score": 54.76795,
+        "hints": [
+          "环球同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "环球",
+            "heat": 341129,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 27,
+        "rank": 27,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "求婚",
+        "display_keyword": "求婚",
+        "display_original": "求婚",
+        "matched_value": "求婚",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "求婚",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 290681,
+        "hot_score": 290681,
+        "norm_score": 54.63418,
+        "hints": [
+          "求婚同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "求婚",
+            "heat": 361373,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 28,
+        "rank": 28,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "BLG",
+        "display_keyword": "BLG",
+        "display_original": "Smoggy微博ID与认证改为BLG选手",
+        "matched_value": "BLG",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "BLG",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 290000,
+        "hot_score": 290000,
+        "norm_score": 54.62399,
+        "hints": [
+          "BLG同款"
+        ],
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "source_originals": [
+          {
+            "text": "Smoggy微博ID与认证改为BLG选手",
+            "heat": 290000,
+            "platform": "weibo"
+          },
+          {
+            "text": "BLG进决赛引来半个娱乐圈",
+            "heat": 180000,
+            "platform": "weibo"
+          }
+        ],
+        "ip_rank": 29,
+        "rank": 29,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "黄景瑜",
+        "display_keyword": "黄景瑜",
+        "display_original": "黄景瑜只有和王雨馨那段婚姻",
+        "matched_value": "黄景瑜",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "黄景瑜",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 270000,
+        "hot_score": 270000,
+        "norm_score": 54.31365,
+        "hints": [
+          "黄景瑜同款"
+        ],
+        "platform": "weibo,xiaohongshu",
+        "platforms": [
+          "weibo",
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "黄景瑜只有和王雨馨那段婚姻",
+            "heat": 270000,
+            "platform": "weibo"
+          },
+          {
+            "text": "黄景瑜",
+            "heat": 36526,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 30,
+        "rank": 30,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "毛林林",
+        "display_keyword": "毛林林",
+        "display_original": "毛林林没整容的原因",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "毛林林",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 270000,
+        "hot_score": 270000,
+        "norm_score": 54.31365,
+        "hints": [
+          "毛林林同款",
+          "毛林林同款穿搭"
+        ],
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "source_originals": [
+          {
+            "text": "毛林林没整容的原因",
+            "heat": 270000,
+            "platform": "weibo"
+          }
+        ],
+        "ip_rank": 31,
+        "rank": 31,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "张元英",
+        "display_keyword": "张元英",
+        "display_original": "张元英",
+        "matched_value": "张元英",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "张元英",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 264934,
+        "hot_score": 264934,
+        "norm_score": 54.23139,
+        "hints": [
+          "张元英同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "张元英",
+            "heat": 633011,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 32,
+        "rank": 32,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "防弹少年团",
+        "display_keyword": "防弹少年团",
+        "display_original": "防弹少年团",
+        "matched_value": "防弹少年团",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "防弹少年团",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 257526,
+        "hot_score": 257526,
+        "norm_score": 54.10823,
+        "hints": [
+          "防弹少年团同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "防弹少年团",
+            "heat": 282211,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 33,
+        "rank": 33,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "中国",
+        "display_keyword": "中国",
+        "display_original": "中国",
+        "matched_value": "中国",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "中国",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 246208,
+        "hot_score": 246208,
+        "norm_score": 53.91304,
+        "hints": [
+          "中国同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "中国",
+            "heat": 301115,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 34,
+        "rank": 34,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "第五人格",
+        "display_keyword": "第五人格",
+        "display_original": "第五人格",
+        "matched_value": "第五人格",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "第五人格",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 222840,
+        "hot_score": 222840,
+        "norm_score": 53.47995,
+        "hints": [
+          "第五人格同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "第五人格",
+            "heat": 1638671,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 35,
+        "rank": 35,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "环球影城",
+        "display_keyword": "环球影城",
+        "display_original": "环球影城",
+        "matched_value": "环球影城",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "环球影城",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 216066,
+        "hot_score": 216066,
+        "norm_score": 53.34588,
+        "hints": [
+          "环球影城同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "环球影城",
+            "heat": 216066,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 36,
+        "rank": 36,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "崩坏星穹铁道",
+        "display_keyword": "崩坏星穹铁道",
+        "display_original": "崩坏星穹铁道",
+        "matched_value": "崩坏星穹铁道",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "崩坏星穹铁道",
+            "status": "匹配成功",
+            "category": "崩铁",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "崩铁",
+        "hot_value": 211412,
+        "hot_score": 211412,
+        "norm_score": 53.25132,
+        "hints": [
+          "崩坏星穹铁道同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "崩坏星穹铁道",
+            "heat": 569284,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 37,
+        "rank": 37,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "王楚然",
+        "display_keyword": "王楚然",
+        "display_original": "王楚然",
+        "matched_value": "王楚然",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "王楚然",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 201354,
+        "hot_score": 201354,
+        "norm_score": 53.03962,
+        "hints": [
+          "王楚然同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "王楚然",
+            "heat": 343652,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 38,
+        "rank": 38,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "沈腾",
+        "display_keyword": "沈腾",
+        "display_original": "沈腾",
+        "matched_value": "沈腾",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "沈腾",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 201354,
+        "hot_score": 201354,
+        "norm_score": 53.03962,
+        "hints": [
+          "沈腾同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "沈腾",
+            "heat": 424348,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 39,
+        "rank": 39,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "林一",
+        "display_keyword": "林一",
+        "display_original": "林一",
+        "matched_value": "林一",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "林一",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 201354,
+        "hot_score": 201354,
+        "norm_score": 53.03962,
+        "hints": [
+          "林一同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "林一",
+            "heat": 959332,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 40,
+        "rank": 40,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "孙权",
+        "display_keyword": "孙权",
+        "display_original": "孙权",
+        "matched_value": "孙权",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "孙权",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 195887,
+        "hot_score": 195887,
+        "norm_score": 52.92008,
+        "hints": [
+          "孙权同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "孙权",
+            "heat": 225234,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 41,
+        "rank": 41,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "小黄人",
+        "display_keyword": "小黄人",
+        "display_original": "小黄人",
+        "matched_value": "小黄人",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "小黄人",
+            "status": "匹配成功",
+            "category": "minions",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "minions",
+        "hot_value": 194963,
+        "hot_score": 194963,
+        "norm_score": 52.89954,
+        "hints": [
+          "小黄人同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "小黄人",
+            "heat": 194963,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 42,
+        "rank": 42,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "赵昭仪",
+        "display_keyword": "赵昭仪",
+        "display_original": "赵昭仪",
+        "matched_value": "赵昭仪",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "赵昭仪",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 192915,
+        "hot_score": 192915,
+        "norm_score": 52.85368,
+        "hints": [
+          "赵昭仪同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "赵昭仪",
+            "heat": 314296,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 43,
+        "rank": 43,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "杨超越",
+        "display_keyword": "杨超越",
+        "display_original": "杨超越",
+        "matched_value": "杨超越",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "杨超越",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 192697,
+        "hot_score": 192697,
+        "norm_score": 52.84877,
+        "hints": [
+          "杨超越同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "杨超越",
+            "heat": 709459,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 44,
+        "rank": 44,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "刘亦菲",
+        "display_keyword": "刘亦菲",
+        "display_original": "刘亦菲",
+        "matched_value": "刘亦菲",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "刘亦菲",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 191181,
+        "hot_score": 191181,
+        "norm_score": 52.81447,
+        "hints": [
+          "刘亦菲同款",
+          "刘亦菲同款穿搭"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "刘亦菲",
+            "heat": 838080,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 45,
+        "rank": 45,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "刘些宁",
+        "display_keyword": "刘些宁",
+        "display_original": "刘些宁",
+        "matched_value": "刘些宁",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "刘些宁",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 191181,
+        "hot_score": 191181,
+        "norm_score": 52.81447,
+        "hints": [
+          "刘些宁同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "刘些宁",
+            "heat": 254734,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 46,
+        "rank": 46,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "吴奇隆",
+        "display_keyword": "吴奇隆",
+        "display_original": "吴奇隆",
+        "matched_value": "吴奇隆",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "吴奇隆",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 190396,
+        "hot_score": 190396,
+        "norm_score": 52.7966,
+        "hints": [
+          "吴奇隆同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "吴奇隆",
+            "heat": 190396,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 47,
+        "rank": 47,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "刘德华",
+        "display_keyword": "刘德华",
+        "display_original": "刘德华",
+        "matched_value": "刘德华",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "刘德华",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 190396,
+        "hot_score": 190396,
+        "norm_score": 52.7966,
+        "hints": [
+          "刘德华同款",
+          "刘德华同款穿搭"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "刘德华",
+            "heat": 190396,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 48,
+        "rank": 48,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "郭富城",
+        "display_keyword": "郭富城",
+        "display_original": "郭富城",
+        "matched_value": "郭富城",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "郭富城",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 190396,
+        "hot_score": 190396,
+        "norm_score": 52.7966,
+        "hints": [
+          "郭富城同款"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "郭富城",
+            "heat": 190396,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "ip_rank": 49,
+        "rank": 49,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "王楚钦",
+        "display_keyword": "王楚钦",
+        "display_original": "羊城晚报评王楚钦反思长文",
+        "matched_value": "王楚钦",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "王楚钦",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 190000,
+        "hot_score": 190000,
+        "norm_score": 52.78756,
+        "hints": [
+          "王楚钦同款"
+        ],
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "source_originals": [
+          {
+            "text": "羊城晚报评王楚钦反思长文",
+            "heat": 190000,
+            "platform": "weibo"
+          }
+        ],
+        "ip_rank": 50,
+        "rank": 50,
+        "trend_tag": ""
       }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 130000,
-     "hot_score": 130000,
-     "norm_score": 51.13943,
-     "hints": [
-      "徐若晗同款"
-     ],
-     "platform": "weibo",
-     "platforms": [
-      "weibo"
-     ],
-     "trend_tag": ""
-    }
-   ]
+    ]
   },
-  "douyin": {
-   "code": "douyin",
-   "title": "抖音",
-   "count": 31,
-   "items": [
-    {
-     "keyword": "虞书欣",
-     "display_keyword": "虞书欣",
-     "display_original": "虞书欣变身毛茸茸造型",
-     "matched_value": "虞书欣",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "虞书欣",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 15293000,
-     "hot_score": 15293000,
-     "norm_score": 71.84493,
-     "hints": [
-      "虞书欣同款穿搭"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
+  "platformBoards": {
+    "xiaohongshu": {
+      "code": "xiaohongshu",
+      "title": "小红书",
+      "count": 34,
+      "items": [
+        {
+          "keyword": "王子璇",
+          "hot": 3493552,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "许飞",
+          "hot": 3417874,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "第五人格",
+          "hot": 1638671,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "林一",
+          "hot": 959332,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "刘亦菲",
+          "hot": 838080,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "杨超越",
+          "hot": 709459,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "张元英",
+          "hot": 633011,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "崩坏星穹铁道",
+          "hot": 569284,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "吴邪",
+          "hot": 461600,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "张起灵",
+          "hot": 461600,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "沈腾",
+          "hot": 424348,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "易烊千玺",
+          "hot": 415672,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "神话",
+          "hot": 370503,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "求婚",
+          "hot": 361373,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "王楚然",
+          "hot": 343652,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "环球",
+          "hot": 341129,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "富江",
+          "hot": 316319,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "赵昭仪",
+          "hot": 314296,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "中国",
+          "hot": 301115,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "防弹少年团",
+          "hot": 282211,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "刘些宁",
+          "hot": 254734,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "孙权",
+          "hot": 225234,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "环球影城",
+          "hot": 216066,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "小黄人",
+          "hot": 194963,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "吴奇隆",
+          "hot": 190396,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "刘德华",
+          "hot": 190396,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "郭富城",
+          "hot": 190396,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "和平精英",
+          "hot": 181044,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "虞书欣",
+          "hot": 131035,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "白鹿",
+          "hot": 125375,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "影之刃零",
+          "hot": 57764,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "黄景瑜",
+          "hot": 36526,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "曾舜晞",
+          "hot": 30706,
+          "platform": "xiaohongshu"
+        },
+        {
+          "keyword": "火影忍者",
+          "hot": 24895,
+          "platform": "xiaohongshu"
+        }
+      ]
     },
-    {
-     "keyword": "吾守尔赛来",
-     "display_keyword": "吾守尔赛来",
-     "display_original": "吾守尔赛来获金鸡奖最佳男配角",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "吾守尔赛来",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7798000,
-     "hot_score": 7798000,
-     "norm_score": 68.91983,
-     "hints": [
-      "吾守尔赛来红毯同款",
-      "吾守尔赛来颁奖典礼穿搭"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
+    "weibo": {
+      "code": "weibo",
+      "title": "微博",
+      "count": 10,
+      "items": [
+        {
+          "keyword": "董宇辉",
+          "hot": 520000,
+          "platform": "weibo"
+        },
+        {
+          "keyword": "厉娜",
+          "hot": 370000,
+          "platform": "weibo"
+        },
+        {
+          "keyword": "BLG",
+          "hot": 290000,
+          "platform": "weibo"
+        },
+        {
+          "keyword": "黄景瑜",
+          "hot": 270000,
+          "platform": "weibo"
+        },
+        {
+          "keyword": "毛林林",
+          "hot": 270000,
+          "platform": "weibo"
+        },
+        {
+          "keyword": "王楚钦",
+          "hot": 190000,
+          "platform": "weibo"
+        },
+        {
+          "keyword": "BLG",
+          "hot": 180000,
+          "platform": "weibo"
+        },
+        {
+          "keyword": "高叶",
+          "hot": 170000,
+          "platform": "weibo"
+        },
+        {
+          "keyword": "许飞",
+          "hot": 170000,
+          "platform": "weibo"
+        },
+        {
+          "keyword": "高叶",
+          "hot": 160000,
+          "platform": "weibo"
+        }
+      ]
     },
-    {
-     "keyword": "梁家辉",
-     "display_keyword": "梁家辉",
-     "display_original": "梁家辉第39届金鸡奖最佳男主角",
-     "matched_value": "梁家辉",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "梁家辉",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7764000,
-     "hot_score": 7764000,
-     "norm_score": 68.90086,
-     "hints": [
-      "梁家辉红毯同款",
-      "梁家辉颁奖典礼穿搭"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "兰西雅",
-     "display_keyword": "兰西雅",
-     "display_original": "兰西雅获金鸡奖最佳女配角",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "兰西雅",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7751000,
-     "hot_score": 7751000,
-     "norm_score": 68.89358,
-     "hints": [
-      "兰西雅红毯同款",
-      "兰西雅颁奖典礼穿搭"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "高叶",
-     "display_keyword": "高叶",
-     "display_original": "高叶获第39届金鸡奖最佳女主角",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "高叶",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7748000,
-     "hot_score": 7748000,
-     "norm_score": 68.8919,
-     "hints": [
-      "高叶红毯同款",
-      "高叶颁奖典礼穿搭"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "白鹿",
-     "display_keyword": "白鹿",
-     "display_original": "跟白鹿一起变身毛茸茸",
-     "matched_value": "白鹿",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "白鹿",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7729000,
-     "hot_score": 7729000,
-     "norm_score": 68.88123,
-     "hints": [
-      "白鹿同款穿搭"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "孟子义",
-     "display_keyword": "孟子义",
-     "display_original": "孟子义苏妲己好娇啊（孟子义）",
-     "matched_value": "孟子义",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "孟子义",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7722000,
-     "hot_score": 7722000,
-     "norm_score": 68.8773,
-     "hints": [
-      "孟子义同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "苏妲己",
-     "display_keyword": "苏妲己",
-     "display_original": "孟子义苏妲己好娇啊（苏妲己）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "苏妲己",
-       "status": "新value",
-       "category": "影视综艺",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "影视综艺",
-     "hot_value": 7722000,
-     "hot_score": 7722000,
-     "norm_score": 68.8773,
-     "hints": [
-      "苏妲己同款",
-      "苏妲己周边"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "董思成",
-     "display_keyword": "董思成",
-     "display_original": "董思成和杨超越互夸到害羞（董思成）",
-     "matched_value": "董思成",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "董思成",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7709000,
-     "hot_score": 7709000,
-     "norm_score": 68.86998,
-     "hints": [
-      "董思成同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "杨超越",
-     "display_keyword": "杨超越",
-     "display_original": "董思成和杨超越互夸到害羞（杨超越）",
-     "matched_value": "杨超越",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "杨超越",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7709000,
-     "hot_score": 7709000,
-     "norm_score": 68.86998,
-     "hints": [
-      "杨超越同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "曾舜晞",
-     "display_keyword": "曾舜晞",
-     "display_original": "曾舜晞伯爵神之十秒",
-     "matched_value": "曾舜晞",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "曾舜晞",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7691000,
-     "hot_score": 7691000,
-     "norm_score": 68.85983,
-     "hints": [
-      "曾舜晞同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "丞磊",
-     "display_keyword": "丞磊",
-     "display_original": "丞磊张云龙再现名场面（丞磊）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "丞磊",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7690000,
-     "hot_score": 7690000,
-     "norm_score": 68.85926,
-     "hints": [
-      "丞磊同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "张云龙",
-     "display_keyword": "张云龙",
-     "display_original": "丞磊张云龙再现名场面（张云龙）",
-     "matched_value": "张云龙",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "张云龙",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7690000,
-     "hot_score": 7690000,
-     "norm_score": 68.85926,
-     "hints": [
-      "张云龙同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "九尾狐",
-     "display_keyword": "九尾狐",
-     "display_original": "我的九尾狐身份被发现了",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "九尾狐",
-       "status": "新value",
-       "category": "卡通动漫",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "卡通动漫",
-     "hot_value": 7655000,
-     "hot_score": 7655000,
-     "norm_score": 68.83945,
-     "hints": [
-      "九尾狐手办",
-      "九尾狐联名款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "火影",
-     "display_keyword": "火影",
-     "display_original": "火影热血番冬日解冻了",
-     "matched_value": "火影",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "火影",
-       "status": "匹配成功",
-       "category": "卡通动漫",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "卡通动漫",
-     "hot_value": 7651000,
-     "hot_score": 7651000,
-     "norm_score": 68.83718,
-     "hints": [
-      "火影手办",
-      "火影联名款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "李思潼",
-     "display_keyword": "李思潼",
-     "display_original": "所有人感受李思潼金鸡怼脸拍",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "李思潼",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7644000,
-     "hot_score": 7644000,
-     "norm_score": 68.83321,
-     "hints": [
-      "李思潼同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "陈赫",
-     "display_keyword": "陈赫",
-     "display_original": "陈赫的生日礼物太有爱了",
-     "matched_value": "陈赫",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "陈赫",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7642000,
-     "hot_score": 7642000,
-     "norm_score": 68.83207,
-     "hints": [
-      "陈赫同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "嫁金钗",
-     "display_keyword": "嫁金钗",
-     "display_original": "嫁金钗收官",
-     "matched_value": "嫁金钗",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "嫁金钗",
-       "status": "匹配成功",
-       "category": "影视综艺",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "影视综艺",
-     "hot_value": 7642000,
-     "hot_score": 7642000,
-     "norm_score": 68.83207,
-     "hints": [
-      "嫁金钗同款",
-      "嫁金钗周边"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "朱一龙",
-     "display_keyword": "朱一龙",
-     "display_original": "朱一龙出席第39届金鸡奖",
-     "matched_value": "朱一龙",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "朱一龙",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7641000,
-     "hot_score": 7641000,
-     "norm_score": 68.8315,
-     "hints": [
-      "朱一龙红毯同款",
-      "朱一龙颁奖典礼穿搭"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "谷雨",
-     "display_keyword": "谷雨",
-     "display_original": "谷雨张颂文喊李小冉妈（谷雨）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "谷雨",
-       "status": "新value",
-       "category": "影视综艺",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "影视综艺",
-     "hot_value": 7638000,
-     "hot_score": 7638000,
-     "norm_score": 68.8298,
-     "hints": [
-      "谷雨同款",
-      "谷雨周边"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "张颂文",
-     "display_keyword": "张颂文",
-     "display_original": "谷雨张颂文喊李小冉妈（张颂文）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "张颂文",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7638000,
-     "hot_score": 7638000,
-     "norm_score": 68.8298,
-     "hints": [
-      "张颂文同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "李小冉",
-     "display_keyword": "李小冉",
-     "display_original": "谷雨张颂文喊李小冉妈（李小冉）",
-     "matched_value": "李小冉",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "李小冉",
-       "status": "匹配成功",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7638000,
-     "hot_score": 7638000,
-     "norm_score": 68.8298,
-     "hints": [
-      "李小冉同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "巴啦啦小魔仙",
-     "display_keyword": "巴啦啦小魔仙",
-     "display_original": "巴啦啦小魔仙cos梦回小时候",
-     "matched_value": "巴啦啦小魔仙",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "巴啦啦小魔仙",
-       "status": "匹配成功",
-       "category": "卡通动漫",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "卡通动漫",
-     "hot_value": 7638000,
-     "hot_score": 7638000,
-     "norm_score": 68.8298,
-     "hints": [
-      "巴啦啦小魔仙cos服",
-      "巴啦啦小魔仙cos道具",
-      "巴啦啦小魔仙手办"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "孙恩盛",
-     "display_keyword": "孙恩盛",
-     "display_original": "专访主播孙恩盛",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "孙恩盛",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7637000,
-     "hot_score": 7637000,
-     "norm_score": 68.82923,
-     "hints": [
-      "孙恩盛同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "张翅",
-     "display_keyword": "张翅",
-     "display_original": "张翅金鸡奖出图",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "张翅",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7637000,
-     "hot_score": 7637000,
-     "norm_score": 68.82923,
-     "hints": [
-      "张翅红毯同款",
-      "张翅颁奖典礼穿搭"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "郑雨",
-     "display_keyword": "郑雨",
-     "display_original": "郑雨陈砚周没名分的醋好香（郑雨）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "郑雨",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7635000,
-     "hot_score": 7635000,
-     "norm_score": 68.82809,
-     "hints": [
-      "郑雨同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "陈砚周",
-     "display_keyword": "陈砚周",
-     "display_original": "郑雨陈砚周没名分的醋好香（陈砚周）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "陈砚周",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7635000,
-     "hot_score": 7635000,
-     "norm_score": 68.82809,
-     "hints": [
-      "陈砚周同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "萨勒芬妮",
-     "display_keyword": "萨勒芬妮",
-     "display_original": "用萨勒芬妮二创为BLG应援（萨勒芬妮）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "萨勒芬妮",
-       "status": "新value",
-       "category": "游戏电竞",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "游戏电竞",
-     "hot_value": 7635000,
-     "hot_score": 7635000,
-     "norm_score": 68.82809,
-     "hints": [
-      "萨勒芬妮联名周边",
-      "萨勒芬妮手办模型"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "BLG",
-     "display_keyword": "BLG",
-     "display_original": "用萨勒芬妮二创为BLG应援（BLG）",
-     "matched_value": "BLG",
-     "ip_status": "匹配成功",
-     "ip_terms": [
-      {
-       "word": "BLG",
-       "status": "匹配成功",
-       "category": "体育",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "体育",
-     "hot_value": 7635000,
-     "hot_score": 7635000,
-     "norm_score": 68.82809,
-     "hints": [
-      "BLG周边"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "王晨正",
-     "display_keyword": "王晨正",
-     "display_original": "王晨正为变形计爷爷写新歌（王晨正）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "王晨正",
-       "status": "新value",
-       "category": "明星/人物",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "明星/人物",
-     "hot_value": 7635000,
-     "hot_score": 7635000,
-     "norm_score": 68.82809,
-     "hints": [
-      "王晨正同款"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
-    },
-    {
-     "keyword": "变形计",
-     "display_keyword": "变形计",
-     "display_original": "王晨正为变形计爷爷写新歌（变形计）",
-     "matched_value": "",
-     "ip_status": "新value",
-     "ip_terms": [
-      {
-       "word": "变形计",
-       "status": "新value",
-       "category": "影视综艺",
-       "addedDate": ""
-      }
-     ],
-     "ipCategory": "影视综艺",
-     "hot_value": 7635000,
-     "hot_score": 7635000,
-     "norm_score": 68.82809,
-     "hints": [
-      "变形计同款",
-      "变形计周边"
-     ],
-     "platform": "douyin",
-     "platforms": [
-      "douyin"
-     ],
-     "trend_tag": ""
+    "douyin": {
+      "code": "douyin",
+      "title": "抖音",
+      "count": 19,
+      "items": [
+        {
+          "keyword": "梁家辉",
+          "hot": 7821000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "兰西雅",
+          "hot": 7759000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "高叶",
+          "hot": 7758000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "和平精英",
+          "hot": 7725000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "白鹿",
+          "hot": 7725000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "许飞",
+          "hot": 7721000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "王子璇",
+          "hot": 7716000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "陈砚周",
+          "hot": 7702000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "郑雨",
+          "hot": 7702000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "曾舜晞",
+          "hot": 7696000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "影之刃零",
+          "hot": 7668000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "格温",
+          "hot": 7661000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "火影忍者",
+          "hot": 7659000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "丞磊",
+          "hot": 7655000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "张云龙",
+          "hot": 7655000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "巴啦啦小魔仙",
+          "hot": 7652000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "JYP",
+          "hot": 7652000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "井柏然",
+          "hot": 7650000,
+          "platform": "douyin"
+        },
+        {
+          "keyword": "虞书欣",
+          "hot": 7649000,
+          "platform": "douyin"
+        }
+      ]
     }
-   ]
+  },
+  "hotCalendar": {
+    "title": "IP 热点日历",
+    "date": "2026-11-11",
+    "count": 0,
+    "items": []
+  },
+  "styleHotBoard": {
+    "title": "风格热点",
+    "subtitle": "微博 · 抖音 · 小红书 服饰穿搭 · 流行元素",
+    "total": 17,
+    "items": [
+      {
+        "keyword": "毛茸茸",
+        "style_word": "毛茸茸",
+        "display_keyword": "毛茸茸",
+        "display_original": "跟白鹿一起变身毛茸茸",
+        "source_originals": [
+          {
+            "text": "跟白鹿一起变身毛茸茸",
+            "heat": 7725000,
+            "platform": "douyin"
+          },
+          {
+            "text": "人类有自己的毛茸茸宇宙",
+            "heat": 7710000,
+            "platform": "douyin"
+          },
+          {
+            "text": "走进毛茸茸的黄金时代",
+            "heat": 7660000,
+            "platform": "douyin"
+          },
+          {
+            "text": "虞书欣变身毛茸茸造型",
+            "heat": 7649000,
+            "platform": "douyin"
+          },
+          {
+            "text": "闪耀暖暖毛茸茸",
+            "heat": 83233,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 30827233,
+        "heat": 30827233,
+        "hot_value": 30827233,
+        "norm_score": 74.88935,
+        "platforms": [
+          "xiaohongshu",
+          "douyin"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "流行元素",
+        "ip_status": "匹配成功",
+        "style_rank": 1,
+        "rank": 1
+      },
+      {
+        "keyword": "千禧风",
+        "style_word": "千禧风",
+        "display_keyword": "千禧风",
+        "display_original": "为什么人们怀念千禧风穿搭",
+        "source_originals": [
+          {
+            "text": "为什么人们怀念千禧风穿搭",
+            "heat": 9185000,
+            "platform": "douyin"
+          },
+          {
+            "text": "千禧年",
+            "heat": 58315,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 9243315,
+        "heat": 9243315,
+        "hot_value": 9243315,
+        "norm_score": 69.65828,
+        "platforms": [
+          "xiaohongshu",
+          "douyin"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 2,
+        "rank": 2
+      },
+      {
+        "keyword": "繁荣主义风",
+        "style_word": "繁荣主义风",
+        "display_keyword": "繁荣主义风",
+        "display_original": "繁荣主义",
+        "source_originals": [
+          {
+            "text": "繁荣主义",
+            "heat": 544526,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "繁荣主义[话题]",
+            "heat": 135378,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 679904,
+        "heat": 679904,
+        "hot_value": 679904,
+        "norm_score": 58.32448,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 3,
+        "rank": 3
+      },
+      {
+        "keyword": "国风",
+        "style_word": "国风",
+        "display_keyword": "国风",
+        "display_original": "国风穿搭",
+        "source_originals": [
+          {
+            "text": "国风穿搭",
+            "heat": 215749,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "国风",
+            "heat": 89578,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "国风才是顶级浪漫",
+            "heat": 79251,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 384578,
+        "heat": 384578,
+        "hot_value": 384578,
+        "norm_score": 55.84986,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 4,
+        "rank": 4
+      },
+      {
+        "keyword": "古早风",
+        "style_word": "古早风",
+        "display_keyword": "古早风",
+        "display_original": "古早感",
+        "source_originals": [
+          {
+            "text": "古早感",
+            "heat": 215749,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "古早",
+            "heat": 147542,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 363291,
+        "heat": 363291,
+        "hot_value": 363291,
+        "norm_score": 55.60256,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 5,
+        "rank": 5
+      },
+      {
+        "keyword": "古风",
+        "style_word": "古风",
+        "display_keyword": "古风",
+        "display_original": "古风",
+        "source_originals": [
+          {
+            "text": "古风",
+            "heat": 131648,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "古风圈",
+            "heat": 31596,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "当我成为古风小生",
+            "heat": 31492,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "古风水墨",
+            "heat": 24683,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 219419,
+        "heat": 219419,
+        "hot_value": 219419,
+        "norm_score": 53.41276,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 6,
+        "rank": 6
+      },
+      {
+        "keyword": "韩系",
+        "style_word": "韩系",
+        "display_keyword": "韩系",
+        "display_original": "韩系穿搭howto",
+        "source_originals": [
+          {
+            "text": "韩系穿搭howto",
+            "heat": 58606,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "韩系妆容",
+            "heat": 58372,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "韩系妆容分享",
+            "heat": 27942,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "韩系",
+            "heat": 26364,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 171284,
+        "heat": 171284,
+        "hot_value": 171284,
+        "norm_score": 52.33719,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 7,
+        "rank": 7
+      },
+      {
+        "keyword": "冬季穿搭",
+        "style_word": "冬季穿搭",
+        "display_keyword": "冬季穿搭",
+        "display_original": "冬季穿搭",
+        "source_originals": [
+          {
+            "text": "冬季穿搭",
+            "heat": 74683,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "冬日穿搭[话题]",
+            "heat": 67945,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 142628,
+        "heat": 142628,
+        "hot_value": 142628,
+        "norm_score": 51.54208,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 8,
+        "rank": 8
+      },
+      {
+        "keyword": "淡人",
+        "style_word": "淡人",
+        "display_keyword": "淡人",
+        "display_original": "淡人本命妆",
+        "source_originals": [
+          {
+            "text": "淡人本命妆",
+            "heat": 66366,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "妆越淡人越美",
+            "heat": 39983,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 106349,
+        "heat": 106349,
+        "hot_value": 106349,
+        "norm_score": 50.26737,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "流行元素",
+        "ip_status": "匹配成功",
+        "style_rank": 9,
+        "rank": 9
+      },
+      {
+        "keyword": "lolita",
+        "style_word": "lolita",
+        "display_keyword": "lolita",
+        "display_original": "Lolita",
+        "source_originals": [
+          {
+            "text": "Lolita",
+            "heat": 93957,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 93957,
+        "heat": 93957,
+        "hot_value": 93957,
+        "norm_score": 49.72934,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 10,
+        "rank": 10
+      },
+      {
+        "keyword": "男友风",
+        "style_word": "男友风",
+        "display_keyword": "男友风",
+        "display_original": "男友风",
+        "source_originals": [
+          {
+            "text": "男友风",
+            "heat": 66744,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 66744,
+        "heat": 66744,
+        "hot_value": 66744,
+        "norm_score": 48.24419,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 11,
+        "rank": 11
+      },
+      {
+        "keyword": "法式风",
+        "style_word": "法式风",
+        "display_keyword": "法式风",
+        "display_original": "法式写真",
+        "source_originals": [
+          {
+            "text": "法式写真",
+            "heat": 48493,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 48493,
+        "heat": 48493,
+        "hot_value": 48493,
+        "norm_score": 46.85688,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 12,
+        "rank": 12
+      },
+      {
+        "keyword": "清冷风",
+        "style_word": "清冷风",
+        "display_keyword": "清冷风",
+        "display_original": "清冷佛子",
+        "source_originals": [
+          {
+            "text": "清冷佛子",
+            "heat": 35948,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 35948,
+        "heat": 35948,
+        "hot_value": 35948,
+        "norm_score": 45.55687,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 13,
+        "rank": 13
+      },
+      {
+        "keyword": "港风",
+        "style_word": "港风",
+        "display_keyword": "港风",
+        "display_original": "港风穿搭",
+        "source_originals": [
+          {
+            "text": "港风穿搭",
+            "heat": 35450,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 35450,
+        "heat": 35450,
+        "hot_value": 35450,
+        "norm_score": 45.49628,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 14,
+        "rank": 14
+      },
+      {
+        "keyword": "多巴胺",
+        "style_word": "多巴胺",
+        "display_keyword": "多巴胺",
+        "display_original": "多巴胺",
+        "source_originals": [
+          {
+            "text": "多巴胺",
+            "heat": 29246,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 29246,
+        "heat": 29246,
+        "hot_value": 29246,
+        "norm_score": 44.66081,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "流行元素",
+        "ip_status": "匹配成功",
+        "style_rank": 15,
+        "rank": 15
+      },
+      {
+        "keyword": "日系",
+        "style_word": "日系",
+        "display_keyword": "日系",
+        "display_original": "日系",
+        "source_originals": [
+          {
+            "text": "日系",
+            "heat": 28727,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 28727,
+        "heat": 28727,
+        "hot_value": 28727,
+        "norm_score": 44.58305,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 16,
+        "rank": 16
+      },
+      {
+        "keyword": "欧美风",
+        "style_word": "欧美风",
+        "display_keyword": "欧美风",
+        "display_original": "欧美风",
+        "source_originals": [
+          {
+            "text": "欧美风",
+            "heat": 24574,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 24574,
+        "heat": 24574,
+        "hot_value": 24574,
+        "norm_score": 43.90494,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "style_rank": 17,
+        "rank": 17
+      }
+    ]
   }
- },
- "hotCalendar": {
-  "title": "IP 热点日历",
-  "date": "2026-11-11",
-  "count": 0,
-  "items": []
- },
- "styleHotBoard": {
-  "title": "风格热点",
-  "subtitle": "微博 · 抖音 · 小红书 服饰穿搭 · 流行元素",
-  "total": 28,
-  "items": [
-   {
-    "keyword": "法式风",
-    "style_word": "法式风",
-    "display_keyword": "法式风",
-    "display_original": "法式穿搭[话题]#",
-    "source_originals": [
-     {
-      "text": "法式穿搭[话题]#",
-      "heat": 23870586,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "轻法式复古风格[话题]#",
-      "heat": 18245193,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "浪漫轻法式",
-      "heat": 9940609,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "轻法式[话题]#",
-      "heat": 7991228,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "法式[话题]",
-      "heat": 567856,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 60615472,
-    "heat": 60615472,
-    "hot_value": 60615472,
-    "norm_score": 7.7826,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 1,
-    "rank": 1
-   },
-   {
-    "keyword": "多巴胺",
-    "style_word": "多巴胺",
-    "display_keyword": "多巴胺",
-    "display_original": "多巴胺",
-    "source_originals": [
-     {
-      "text": "多巴胺",
-      "heat": 19076357,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "多巴胺女孩[话题]#",
-      "heat": 17745384,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 36821741,
-    "heat": 36821741,
-    "hot_value": 36821741,
-    "norm_score": 7.5661,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "流行元素",
-    "ip_status": "匹配成功",
-    "style_rank": 2,
-    "rank": 2
-   },
-   {
-    "keyword": "复古风",
-    "style_word": "复古风",
-    "display_keyword": "复古风",
-    "display_original": "复古[话题]#",
-    "source_originals": [
-     {
-      "text": "复古[话题]#",
-      "heat": 25625935,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "复古北欧风[话题]#",
-      "heat": 1984608,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "复古",
-      "heat": 1310441,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "复古风[话题]#",
-      "heat": 1182669,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 30103653,
-    "heat": 30103653,
-    "hot_value": 30103653,
-    "norm_score": 7.4786,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 3,
-    "rank": 3
-   },
-   {
-    "keyword": "纯欲风",
-    "style_word": "纯欲风",
-    "display_keyword": "纯欲风",
-    "display_original": "纯欲[话题]#",
-    "source_originals": [
-     {
-      "text": "纯欲[话题]#",
-      "heat": 14864595,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "纯欲风[话题]#",
-      "heat": 14075560,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 28940155,
-    "heat": 28940155,
-    "hot_value": 28940155,
-    "norm_score": 7.4615,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 4,
-    "rank": 4
-   },
-   {
-    "keyword": "老钱风",
-    "style_word": "老钱风",
-    "display_keyword": "老钱风",
-    "display_original": "自然老钱风[话题]#",
-    "source_originals": [
-     {
-      "text": "自然老钱风[话题]#",
-      "heat": 23870586,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "老钱风穿搭[话题]#",
-      "heat": 1671721,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "老钱风",
-      "heat": 534989,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 26077296,
-    "heat": 26077296,
-    "hot_value": 26077296,
-    "norm_score": 7.4163,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 5,
-    "rank": 5
-   },
-   {
-    "keyword": "莫兰迪",
-    "style_word": "莫兰迪",
-    "display_keyword": "莫兰迪",
-    "display_original": "莫兰迪蓝[话题]#",
-    "source_originals": [
-     {
-      "text": "莫兰迪蓝[话题]#",
-      "heat": 25918904,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 25918904,
-    "heat": 25918904,
-    "hot_value": 25918904,
-    "norm_score": 7.4136,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "流行元素",
-    "ip_status": "匹配成功",
-    "style_rank": 6,
-    "rank": 6
-   },
-   {
-    "keyword": "毛茸茸",
-    "style_word": "毛茸茸",
-    "display_keyword": "毛茸茸",
-    "display_original": "人类有自己的毛茸茸宇宙",
-    "source_originals": [
-     {
-      "text": "人类有自己的毛茸茸宇宙",
-      "heat": 8901000,
-      "platform": "douyin"
-     },
-     {
-      "text": "跟白鹿一起变身毛茸茸",
-      "heat": 7729000,
-      "platform": "douyin"
-     },
-     {
-      "text": "虞书欣变身毛茸茸造型",
-      "heat": 7649000,
-      "platform": "douyin"
-     }
-    ],
-    "score": 24279000,
-    "heat": 24279000,
-    "hot_value": 24279000,
-    "norm_score": 7.3852,
-    "platforms": [
-     "douyin"
-    ],
-    "platform": "douyin",
-    "hints": [],
-    "trendCategory": "流行元素",
-    "ip_status": "匹配成功",
-    "style_rank": 7,
-    "rank": 7
-   },
-   {
-    "keyword": "御姐风",
-    "style_word": "御姐风",
-    "display_keyword": "御姐风",
-    "display_original": "御姐[话题]#",
-    "source_originals": [
-     {
-      "text": "御姐[话题]#",
-      "heat": 20843445,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "御姐﻿",
-      "heat": 819649,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "御姐",
-      "heat": 646291,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 22309385,
-    "heat": 22309385,
-    "hot_value": 22309385,
-    "norm_score": 7.3485,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 8,
-    "rank": 8
-   },
-   {
-    "keyword": "清冷风",
-    "style_word": "清冷风",
-    "display_keyword": "清冷风",
-    "display_original": "清冷感[话题]#",
-    "source_originals": [
-     {
-      "text": "清冷感[话题]#",
-      "heat": 20843445,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 20843445,
-    "heat": 20843445,
-    "hot_value": 20843445,
-    "norm_score": 7.319,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 9,
-    "rank": 9
-   },
-   {
-    "keyword": "粉色系",
-    "style_word": "粉色系",
-    "display_keyword": "粉色系",
-    "display_original": "粉色系",
-    "source_originals": [
-     {
-      "text": "粉色系",
-      "heat": 18654371,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 18654371,
-    "heat": 18654371,
-    "hot_value": 18654371,
-    "norm_score": 7.2708,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 10,
-    "rank": 10
-   },
-   {
-    "keyword": "cleanfit",
-    "style_word": "cleanfit",
-    "display_keyword": "cleanfit",
-    "display_original": "cleanfit简单出门[话题]#",
-    "source_originals": [
-     {
-      "text": "cleanfit简单出门[话题]#",
-      "heat": 14598885,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 14598885,
-    "heat": 14598885,
-    "hot_value": 14598885,
-    "norm_score": 7.1643,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 11,
-    "rank": 11
-   },
-   {
-    "keyword": "浅春系",
-    "style_word": "浅春系",
-    "display_keyword": "浅春系",
-    "display_original": "心动浅春系[话题]#",
-    "source_originals": [
-     {
-      "text": "心动浅春系[话题]#",
-      "heat": 12003118,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 12003118,
-    "heat": 12003118,
-    "hot_value": 12003118,
-    "norm_score": 7.0793,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 12,
-    "rank": 12
-   },
-   {
-    "keyword": "松弛感",
-    "style_word": "松弛感",
-    "display_keyword": "松弛感",
-    "display_original": "松弛感生活[话题]#",
-    "source_originals": [
-     {
-      "text": "松弛感生活[话题]#",
-      "heat": 4044774,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "交换春天[话题]# #家的松弛时刻[话题]#",
-      "heat": 1984608,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "松弛感穿搭",
-      "heat": 1681795,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "家的松弛时刻[话题]#",
-      "heat": 1266412,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 8977589,
-    "heat": 8977589,
-    "hot_value": 8977589,
-    "norm_score": 6.9532,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "流行元素",
-    "ip_status": "匹配成功",
-    "style_rank": 13,
-    "rank": 13
-   },
-   {
-    "keyword": "古风",
-    "style_word": "古风",
-    "display_keyword": "古风",
-    "display_original": "古风美人",
-    "source_originals": [
-     {
-      "text": "古风美人",
-      "heat": 7904211,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "古风",
-      "heat": 994079,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 8898290,
-    "heat": 8898290,
-    "hot_value": 8898290,
-    "norm_score": 6.9493,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 14,
-    "rank": 14
-   },
-   {
-    "keyword": "古早风",
-    "style_word": "古早风",
-    "display_keyword": "古早风",
-    "display_original": "古早[话题]#",
-    "source_originals": [
-     {
-      "text": "古早[话题]#",
-      "heat": 7131490,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "古早",
-      "heat": 541240,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 7672730,
-    "heat": 7672730,
-    "hot_value": 7672730,
-    "norm_score": 6.8849,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 15,
-    "rank": 15
-   },
-   {
-    "keyword": "拿破仑穿搭",
-    "style_word": "拿破仑穿搭",
-    "display_keyword": "拿破仑穿搭",
-    "display_original": "跟着虞书欣学拿破仑穿搭",
-    "source_originals": [
-     {
-      "text": "跟着虞书欣学拿破仑穿搭",
-      "heat": 7644000,
-      "platform": "douyin"
-     }
-    ],
-    "score": 7644000,
-    "heat": 7644000,
-    "hot_value": 7644000,
-    "norm_score": 6.8833,
-    "platforms": [
-     "douyin"
-    ],
-    "platform": "douyin",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 16,
-    "rank": 16
-   },
-   {
-    "keyword": "新中式",
-    "style_word": "新中式",
-    "display_keyword": "新中式",
-    "display_original": "新中式旗袍",
-    "source_originals": [
-     {
-      "text": "新中式旗袍",
-      "heat": 5049509,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 5049509,
-    "heat": 5049509,
-    "hot_value": 5049509,
-    "norm_score": 6.7032,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 17,
-    "rank": 17
-   },
-   {
-    "keyword": "工装风",
-    "style_word": "工装风",
-    "display_keyword": "工装风",
-    "display_original": "假如昨天能听见今天[话题]##不费力工装风[话题]##享界S9增程版[话题]#",
-    "source_originals": [
-     {
-      "text": "假如昨天能听见今天[话题]##不费力工装风[话题]##享界S9增程版[话题]#",
-      "heat": 3803146,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 3803146,
-    "heat": 3803146,
-    "hot_value": 3803146,
-    "norm_score": 6.5801,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 18,
-    "rank": 18
-   },
-   {
-    "keyword": "微胖穿搭",
-    "style_word": "微胖穿搭",
-    "display_keyword": "微胖穿搭",
-    "display_original": "微胖穿搭",
-    "source_originals": [
-     {
-      "text": "微胖穿搭",
-      "heat": 3044106,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 3044106,
-    "heat": 3044106,
-    "hot_value": 3044106,
-    "norm_score": 6.4835,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 19,
-    "rank": 19
-   },
-   {
-    "keyword": "山系",
-    "style_word": "山系",
-    "display_keyword": "山系",
-    "display_original": "户外山系穿搭",
-    "source_originals": [
-     {
-      "text": "户外山系穿搭",
-      "heat": 1681795,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 1681795,
-    "heat": 1681795,
-    "hot_value": 1681795,
-    "norm_score": 6.2258,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 20,
-    "rank": 20
-   },
-   {
-    "keyword": "国风",
-    "style_word": "国风",
-    "display_keyword": "国风",
-    "display_original": "国风",
-    "source_originals": [
-     {
-      "text": "国风",
-      "heat": 1082550,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 1082550,
-    "heat": 1082550,
-    "hot_value": 1082550,
-    "norm_score": 6.0344,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 21,
-    "rank": 21
-   },
-   {
-    "keyword": "韩系",
-    "style_word": "韩系",
-    "display_keyword": "韩系",
-    "display_original": "韩系穿搭",
-    "source_originals": [
-     {
-      "text": "韩系穿搭",
-      "heat": 609377,
-      "platform": "xiaohongshu"
-     },
-     {
-      "text": "韩系",
-      "heat": 447782,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 1057159,
-    "heat": 1057159,
-    "hot_value": 1057159,
-    "norm_score": 6.0241,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 22,
-    "rank": 22
-   },
-   {
-    "keyword": "禁欲系",
-    "style_word": "禁欲系",
-    "display_keyword": "禁欲系",
-    "display_original": "禁欲系",
-    "source_originals": [
-     {
-      "text": "禁欲系",
-      "heat": 718410,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 718410,
-    "heat": 718410,
-    "hot_value": 718410,
-    "norm_score": 5.8564,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "流行元素",
-    "ip_status": "匹配成功",
-    "style_rank": 23,
-    "rank": 23
-   },
-   {
-    "keyword": "中性风",
-    "style_word": "中性风",
-    "display_keyword": "中性风",
-    "display_original": "中性风",
-    "source_originals": [
-     {
-      "text": "中性风",
-      "heat": 484385,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 484385,
-    "heat": 484385,
-    "hot_value": 484385,
-    "norm_score": 5.6852,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 24,
-    "rank": 24
-   },
-   {
-    "keyword": "暗黑风",
-    "style_word": "暗黑风",
-    "display_keyword": "暗黑风",
-    "display_original": "暗黑风",
-    "source_originals": [
-     {
-      "text": "暗黑风",
-      "heat": 473841,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 473841,
-    "heat": 473841,
-    "hot_value": 473841,
-    "norm_score": 5.6756,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 25,
-    "rank": 25
-   },
-   {
-    "keyword": "哥特风",
-    "style_word": "哥特风",
-    "display_keyword": "哥特风",
-    "display_original": "哥特风搭配",
-    "source_originals": [
-     {
-      "text": "哥特风搭配",
-      "heat": 473841,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 473841,
-    "heat": 473841,
-    "hot_value": 473841,
-    "norm_score": 5.6756,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 26,
-    "rank": 26
-   },
-   {
-    "keyword": "日系",
-    "style_word": "日系",
-    "display_keyword": "日系",
-    "display_original": "日系[话题]",
-    "source_originals": [
-     {
-      "text": "日系[话题]",
-      "heat": 447970,
-      "platform": "xiaohongshu"
-     }
-    ],
-    "score": 447970,
-    "heat": 447970,
-    "hot_value": 447970,
-    "norm_score": 5.6512,
-    "platforms": [
-     "xiaohongshu"
-    ],
-    "platform": "xiaohongshu",
-    "hints": [],
-    "trendCategory": "服饰穿搭",
-    "ip_status": "匹配成功",
-    "style_rank": 27,
-    "rank": 27
-   },
-   {
-    "keyword": "流苏裙",
-    "style_word": "流苏裙",
-    "display_keyword": "流苏裙",
-    "display_original": "景德镇陶瓷盘穿上了流苏裙",
-    "source_originals": [
-     {
-      "text": "景德镇陶瓷盘穿上了流苏裙",
-      "heat": 160000,
-      "platform": "weibo"
-     }
-    ],
-    "score": 160000,
-    "heat": 160000,
-    "hot_value": 160000,
-    "norm_score": 5.2041,
-    "platforms": [
-     "weibo"
-    ],
-    "platform": "weibo",
-    "hints": [],
-    "trendCategory": "流行元素",
-    "ip_status": "匹配成功",
-    "style_rank": 28,
-    "rank": 28
-   }
-  ]
- }
 }
