@@ -26,6 +26,12 @@
     padding: 3px 10px; border-radius: 999px; font-size: 13px; font-weight: 700;
     box-shadow: 0 2px 8px rgba(220, 38, 38, 0.28);
   }
+  .fire-badge {
+    background: linear-gradient(135deg, #ff6b00, #ff2200); color: #ffffff;
+    padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 700;
+    box-shadow: 0 2px 6px rgba(255, 68, 0, 0.35);
+    display: inline-block; margin-left: 6px; white-space: nowrap;
+  }
   .stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
   .chip { background: rgba(255,255,255,0.82); padding: 4px 10px; border-radius: 999px; font-size: 13px; color: #4b5563; display: inline-flex; align-items: center; gap: 5px; }
   .chip b { font-weight: 700; }
@@ -791,10 +797,13 @@ function renderLeaderboard() {
     const dupPill = d._dup > 1
       ? '<span class="dup-pill" title="' + escHtml((d._others || []).join('；')) + '">共' + d._dup + '条热搜</span>'
       : '';
+    const fireBadge = (d.trend_tag === '火爆')
+      ? '<span class="fire-badge">🔥火爆</span>'
+      : '';
     return '<tr>' +
       '<td class="ip-rank-cell"><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
       '<td class="ip-term-cell">' +
-        (terms.length > 1 ? '<div class="ip-term-group">' + termNames + '</div>' : termNames) + dupPill + subHtml +
+        (terms.length > 1 ? '<div class="ip-term-group">' + termNames + '</div>' : termNames) + dupPill + fireBadge + subHtml +
       '</td>' +
       '<td class="ip-term-cell">' + termStates + '</td>' +
       '<td class="ip-term-cell">' + termCategories + '</td>' +
