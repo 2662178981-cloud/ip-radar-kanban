@@ -805,12 +805,12 @@ function renderLeaderboard() {
     return '<tr>' +
       '<td class="ip-rank-cell"><span class="rank-badge ' + rankClass(rank) + '">' + rank + '</span></td>' +
       '<td class="ip-term-cell">' +
-        (terms.length > 1 ? '<div class="ip-term-group">' + termNames + '</div>' : termNames) + dupPill + fireBadge + subHtml +
+        (terms.length > 1 ? '<div class="ip-term-group">' + termNames + '</div>' : termNames) + dupPill + subHtml +
       '</td>' +
       '<td class="ip-term-cell">' + termStates + '</td>' +
       '<td class="ip-term-cell">' + termCategories + '</td>' +
       '<td>' + platformTags(d) + '</td>' +
-      '<td>' + heatCellHtml(d) + '</td>' +
+      '<td>' + heatCellHtml(d) + fireBadge + '</td>' +
       '<td>' + renderHintsPills(d.hints) + '</td>' +
     '</tr>';
   }).join("");
