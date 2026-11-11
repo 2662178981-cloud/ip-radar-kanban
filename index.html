@@ -666,7 +666,7 @@ function aggregateBoard(items) {
     const orig = it.display_original || it.keyword || '';
     let r = map.get(orig);
     if (!r) {
-      r = { _names: [], _terms: [], _mvs: [], _pfs: [], _score: 0, _hot: 0, hints: [], _orig: orig, base: null, _items: [] };
+      r = { _names: [], _terms: [], _mvs: [], _pfs: [], _score: 0, _hot: 0, hints: [], _orig: orig, base: null, _items: [], trend_tag: '' };
       map.set(orig, r);
     }
     termsOf(it).forEach(term => {
@@ -685,6 +685,7 @@ function aggregateBoard(items) {
     r._hot += Number(it.hot_value || it.hot_score || 0);
     r._items.push(it);
     if (!r.base || statusRank(it.ip_status) > statusRank(r.base.ip_status)) r.base = it;
+    if (it.trend_tag === '火爆') r.trend_tag = '火爆';
   });
 
   let rows = Array.from(map.values());
@@ -729,6 +730,7 @@ function aggregateBoard(items) {
     head.platforms = pfs;
     head._score = sc;
     head._dup = sorted.length;
+    sorted.forEach(x => { if (x.trend_tag === '火爆') head.trend_tag = '火爆'; });
     head._others = sorted.slice(1).map(x => x._orig);
     out.push(head);
   });
