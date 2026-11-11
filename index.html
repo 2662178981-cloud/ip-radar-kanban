@@ -1107,6 +1107,7 @@ function renderCalendar() {
 /* ===== 热搜风格词 ===== */
 
 function toggleStyleOrig(btn) {
+  if (event) { event.stopPropagation(); }
   var list = btn.nextElementSibling;
   if (list.style.display === 'none') {
     list.style.display = 'block';
