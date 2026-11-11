@@ -1,12 +1,12 @@
 {
   "version": "4.0",
-  "generatedAt": "2026-11-11T14:22:13+08:00",
+  "generatedAt": "2026-11-11T14:38:23+08:00",
   "summary": {
-    "total": 50,
-    "ipCount": 50,
-    "newValues": 14,
-    "oldValues": 36,
-    "reviewNeeded": 14,
+    "total": 98,
+    "ipCount": 98,
+    "newValues": 24,
+    "oldValues": 74,
+    "reviewNeeded": 24,
     "boards": [
       {
         "code": "xiaohongshu",
@@ -24,12 +24,12 @@
         "count": 31
       }
     ],
-    "generatedAt": "2026-11-11T14:22:13+08:00"
+    "generatedAt": "2026-11-11T14:38:23+08:00"
   },
   "ipBoard": {
     "title": "IP 榜单",
-    "subtitle": "跨平台IP热度排行（微博·抖音·小红书）",
-    "total": 50,
+    "subtitle": "跨平台IP热度排行（微博·抖音·小红书）·全量",
+    "total": 98,
     "items": [
       {
         "keyword": "虞书欣",
@@ -51,7 +51,10 @@
         "norm_score": 73.17315,
         "hints": [],
         "platform": "douyin,xiaohongshu",
-        "platforms": "douyin,xiaohongshu",
+        "platforms": [
+          "douyin",
+          "xiaohongshu"
+        ],
         "ip_rank": 1,
         "rank": 1
       },
@@ -510,7 +513,10 @@
         "norm_score": 69.35205,
         "hints": "",
         "platform": "douyin,weibo",
-        "platforms": "douyin,weibo",
+        "platforms": [
+          "douyin",
+          "weibo"
+        ],
         "ip_rank": 19,
         "rank": 19
       },
@@ -553,7 +559,10 @@
         "norm_score": 69.16401,
         "hints": "",
         "platform": "douyin,weibo",
-        "platforms": "douyin,weibo",
+        "platforms": [
+          "douyin",
+          "weibo"
+        ],
         "ip_rank": 21,
         "rank": 21
       },
@@ -622,7 +631,10 @@
         "norm_score": 69.12116,
         "hints": "",
         "platform": "douyin,weibo",
-        "platforms": "douyin,weibo",
+        "platforms": [
+          "douyin",
+          "weibo"
+        ],
         "ip_rank": 24,
         "rank": 24
       },
@@ -639,7 +651,10 @@
         "norm_score": 69.00476,
         "hints": "",
         "platform": "douyin,weibo",
-        "platforms": "douyin,weibo",
+        "platforms": [
+          "douyin",
+          "weibo"
+        ],
         "ip_rank": 25,
         "rank": 25
       },
@@ -656,7 +671,10 @@
         "norm_score": 68.93262,
         "hints": "",
         "platform": "douyin,weibo",
-        "platforms": "douyin,weibo",
+        "platforms": [
+          "douyin",
+          "weibo"
+        ],
         "ip_rank": 26,
         "rank": 26
       },
@@ -673,7 +691,10 @@
         "norm_score": 68.93207,
         "hints": "",
         "platform": "douyin,weibo",
-        "platforms": "douyin,weibo",
+        "platforms": [
+          "douyin",
+          "weibo"
+        ],
         "ip_rank": 27,
         "rank": 27
       },
@@ -690,7 +711,9 @@
         "norm_score": 68.91983,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 28,
         "rank": 28
       },
@@ -759,7 +782,9 @@
         "norm_score": 68.89358,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 31,
         "rank": 31
       },
@@ -776,7 +801,9 @@
         "norm_score": 68.8773,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 32,
         "rank": 32
       },
@@ -793,7 +820,9 @@
         "norm_score": 68.86998,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 33,
         "rank": 33
       },
@@ -810,7 +839,9 @@
         "norm_score": 68.86998,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 34,
         "rank": 34
       },
@@ -818,16 +849,18 @@
         "keyword": "曾舜晞",
         "display_keyword": "曾舜晞",
         "display_original": "曾舜晞",
-        "matched_value": "曾舜晞",
-        "ip_status": "匹配成功",
+        "matched_value": "",
+        "ip_status": "新value",
         "ip_terms": "",
-        "ipCategory": "明星/人物",
+        "ipCategory": "未分类",
         "hot_value": 7691000,
         "hot_score": 7691000,
         "norm_score": 68.85983,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 35,
         "rank": 35
       },
@@ -844,7 +877,9 @@
         "norm_score": 68.85926,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 36,
         "rank": 36
       },
@@ -861,7 +896,9 @@
         "norm_score": 68.83945,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 37,
         "rank": 37
       },
@@ -878,7 +915,9 @@
         "norm_score": 68.83718,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 38,
         "rank": 38
       },
@@ -895,7 +934,9 @@
         "norm_score": 68.83321,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 39,
         "rank": 39
       },
@@ -912,7 +953,9 @@
         "norm_score": 68.83207,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 40,
         "rank": 40
       },
@@ -929,7 +972,9 @@
         "norm_score": 68.83207,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 41,
         "rank": 41
       },
@@ -946,7 +991,9 @@
         "norm_score": 68.8298,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 42,
         "rank": 42
       },
@@ -963,7 +1010,9 @@
         "norm_score": 68.8298,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 43,
         "rank": 43
       },
@@ -980,7 +1029,9 @@
         "norm_score": 68.8298,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 44,
         "rank": 44
       },
@@ -997,7 +1048,9 @@
         "norm_score": 68.8298,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 45,
         "rank": 45
       },
@@ -1014,7 +1067,9 @@
         "norm_score": 68.82923,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 46,
         "rank": 46
       },
@@ -1031,7 +1086,9 @@
         "norm_score": 68.82923,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 47,
         "rank": 47
       },
@@ -1048,7 +1105,9 @@
         "norm_score": 68.82809,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 48,
         "rank": 48
       },
@@ -1065,7 +1124,9 @@
         "norm_score": 68.82809,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 49,
         "rank": 49
       },
@@ -1082,9 +1143,1112 @@
         "norm_score": 68.82809,
         "hints": "",
         "platform": "douyin",
-        "platforms": "douyin",
+        "platforms": [
+          "douyin"
+        ],
         "ip_rank": 50,
         "rank": 50
+      },
+      {
+        "keyword": "BLG",
+        "display_keyword": "BLG",
+        "display_original": "BLG",
+        "matched_value": "BLG",
+        "ip_status": "匹配成功",
+        "ip_terms": "",
+        "ipCategory": "体育",
+        "hot_value": 7635000,
+        "hot_score": 7635000,
+        "norm_score": 68.82809,
+        "hints": "",
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "ip_rank": 51,
+        "rank": 51
+      },
+      {
+        "keyword": "王晨正",
+        "display_keyword": "王晨正",
+        "display_original": "王晨正",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 7635000,
+        "hot_score": 7635000,
+        "norm_score": 68.82809,
+        "hints": "",
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "ip_rank": 52,
+        "rank": 52
+      },
+      {
+        "keyword": "变形计",
+        "display_keyword": "变形计",
+        "display_original": "变形计",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": "",
+        "ipCategory": "影视综艺",
+        "hot_value": 7635000,
+        "hot_score": 7635000,
+        "norm_score": 68.82809,
+        "hints": "",
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "ip_rank": 53,
+        "rank": 53
+      },
+      {
+        "keyword": "光遇",
+        "display_keyword": "光遇",
+        "display_original": "光遇",
+        "matched_value": "光遇",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "光遇",
+            "status": "匹配成功",
+            "category": "游戏电竞",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "游戏电竞",
+        "hot_value": 7577724,
+        "hot_score": 7577724,
+        "norm_score": 68.79539,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 54,
+        "rank": 54
+      },
+      {
+        "keyword": "祁煜",
+        "display_keyword": "祁煜",
+        "display_original": "祁煜",
+        "matched_value": "祁煜",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "祁煜",
+            "status": "匹配成功",
+            "category": "游戏电竞",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "游戏电竞",
+        "hot_value": 7258410,
+        "hot_score": 7258410,
+        "norm_score": 68.60841,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 55,
+        "rank": 55
+      },
+      {
+        "keyword": "恋与深空",
+        "display_keyword": "恋与深空",
+        "display_original": "恋与深空",
+        "matched_value": "恋与深空",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "恋与深空",
+            "status": "匹配成功",
+            "category": "游戏电竞",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "游戏电竞",
+        "hot_value": 7258410,
+        "hot_score": 7258410,
+        "norm_score": 68.60841,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 56,
+        "rank": 56
+      },
+      {
+        "keyword": "宝可梦",
+        "display_keyword": "宝可梦",
+        "display_original": "宝可梦",
+        "matched_value": "宝可梦",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "宝可梦",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "卡通动漫",
+        "hot_value": 6666902,
+        "hot_score": 6666902,
+        "norm_score": 68.23924,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 57,
+        "rank": 57
+      },
+      {
+        "keyword": "皮卡丘",
+        "display_keyword": "皮卡丘",
+        "display_original": "皮卡丘",
+        "matched_value": "皮卡丘",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "皮卡丘",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "卡通动漫",
+        "hot_value": 6666902,
+        "hot_score": 6666902,
+        "norm_score": 68.23924,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 58,
+        "rank": 58
+      },
+      {
+        "keyword": "不能说的秘密",
+        "display_keyword": "不能说的秘密",
+        "display_original": "不能说的秘密",
+        "matched_value": "不能说的秘密",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "不能说的秘密",
+            "status": "匹配成功",
+            "category": "影视综艺",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "影视综艺",
+        "hot_value": 6566657,
+        "hot_score": 6566657,
+        "norm_score": 68.17344,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 59,
+        "rank": 59
+      },
+      {
+        "keyword": "黄子弘凡",
+        "display_keyword": "黄子弘凡",
+        "display_original": "黄子弘凡",
+        "matched_value": "黄子弘凡",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "黄子弘凡",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 6415193,
+        "hot_score": 6415193,
+        "norm_score": 68.0721,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 60,
+        "rank": 60
+      },
+      {
+        "keyword": "高达",
+        "display_keyword": "高达",
+        "display_original": "高达",
+        "matched_value": "高达",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "高达",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "卡通动漫",
+        "hot_value": 6265144,
+        "hot_score": 6265144,
+        "norm_score": 67.96931,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 61,
+        "rank": 61
+      },
+      {
+        "keyword": "全职高手",
+        "display_keyword": "全职高手",
+        "display_original": "全职高手",
+        "matched_value": "全职高手",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "全职高手",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "卡通动漫",
+        "hot_value": 6089447,
+        "hot_score": 6089447,
+        "norm_score": 67.84578,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 62,
+        "rank": 62
+      },
+      {
+        "keyword": "周泽楷",
+        "display_keyword": "周泽楷",
+        "display_original": "周泽楷",
+        "matched_value": "周泽楷",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "周泽楷",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "卡通动漫",
+        "hot_value": 6089447,
+        "hot_score": 6089447,
+        "norm_score": 67.84578,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 63,
+        "rank": 63
+      },
+      {
+        "keyword": "车银优",
+        "display_keyword": "车银优",
+        "display_original": "车银优",
+        "matched_value": "车银优",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "车银优",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 5727523,
+        "hot_score": 5727523,
+        "norm_score": 67.57967,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 64,
+        "rank": 64
+      },
+      {
+        "keyword": "杨洋",
+        "display_keyword": "杨洋",
+        "display_original": "杨洋",
+        "matched_value": "杨洋",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "杨洋",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 5471180,
+        "hot_score": 5471180,
+        "norm_score": 67.38081,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 65,
+        "rank": 65
+      },
+      {
+        "keyword": "王一博",
+        "display_keyword": "王一博",
+        "display_original": "王一博",
+        "matched_value": "王一博",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "王一博",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 5471180,
+        "hot_score": 5471180,
+        "norm_score": 67.38081,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 66,
+        "rank": 66
+      },
+      {
+        "keyword": "宋雨琦",
+        "display_keyword": "宋雨琦",
+        "display_original": "宋雨琦",
+        "matched_value": "宋雨琦",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "宋雨琦",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 4782109,
+        "hot_score": 4782109,
+        "norm_score": 66.79619,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 67,
+        "rank": 67
+      },
+      {
+        "keyword": "顾时夜",
+        "display_keyword": "顾时夜",
+        "display_original": "顾时夜",
+        "matched_value": "顾时夜",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "顾时夜",
+            "status": "匹配成功",
+            "category": "游戏电竞",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "游戏电竞",
+        "hot_value": 4322429,
+        "hot_score": 4322429,
+        "norm_score": 66.35728,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 68,
+        "rank": 68
+      },
+      {
+        "keyword": "王俊凯",
+        "display_keyword": "王俊凯",
+        "display_original": "王俊凯",
+        "matched_value": "王俊凯",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "王俊凯",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 4005520,
+        "hot_score": 4005520,
+        "norm_score": 66.02659,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 69,
+        "rank": 69
+      },
+      {
+        "keyword": "张极",
+        "display_keyword": "张极",
+        "display_original": "张极",
+        "matched_value": "张极",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "张极",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 3456337,
+        "hot_score": 3456337,
+        "norm_score": 65.38616,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 70,
+        "rank": 70
+      },
+      {
+        "keyword": "柯南",
+        "display_keyword": "柯南",
+        "display_original": "柯南",
+        "matched_value": "柯南",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "柯南",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "卡通动漫",
+        "hot_value": 3325467,
+        "hot_score": 3325467,
+        "norm_score": 65.21853,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 71,
+        "rank": 71
+      },
+      {
+        "keyword": "名侦探柯南",
+        "display_keyword": "名侦探柯南",
+        "display_original": "名侦探柯南",
+        "matched_value": "名侦探柯南",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "名侦探柯南",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "卡通动漫",
+        "hot_value": 3325467,
+        "hot_score": 3325467,
+        "norm_score": 65.21853,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 72,
+        "rank": 72
+      },
+      {
+        "keyword": "工藤新一",
+        "display_keyword": "工藤新一",
+        "display_original": "工藤新一",
+        "matched_value": "工藤新一",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "工藤新一",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "卡通动漫",
+        "hot_value": 3325467,
+        "hot_score": 3325467,
+        "norm_score": 65.21853,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 73,
+        "rank": 73
+      },
+      {
+        "keyword": "安室透",
+        "display_keyword": "安室透",
+        "display_original": "安室透",
+        "matched_value": "安室透",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "安室透",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "卡通动漫",
+        "hot_value": 3325467,
+        "hot_score": 3325467,
+        "norm_score": 65.21853,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 74,
+        "rank": 74
+      },
+      {
+        "keyword": "灰原哀",
+        "display_keyword": "灰原哀",
+        "display_original": "灰原哀",
+        "matched_value": "灰原哀",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "灰原哀",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "卡通动漫",
+        "hot_value": 3325467,
+        "hot_score": 3325467,
+        "norm_score": 65.21853,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 75,
+        "rank": 75
+      },
+      {
+        "keyword": "蜘蛛侠",
+        "display_keyword": "蜘蛛侠",
+        "display_original": "蜘蛛侠",
+        "matched_value": "蜘蛛侠",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "蜘蛛侠",
+            "status": "匹配成功",
+            "category": "影视综艺",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "影视综艺",
+        "hot_value": 3317812,
+        "hot_score": 3317812,
+        "norm_score": 65.20852,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 76,
+        "rank": 76
+      },
+      {
+        "keyword": "章昊",
+        "display_keyword": "章昊",
+        "display_original": "章昊",
+        "matched_value": "章昊",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "章昊",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 3132492,
+        "hot_score": 3132492,
+        "norm_score": 64.9589,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 77,
+        "rank": 77
+      },
+      {
+        "keyword": "朴成训",
+        "display_keyword": "朴成训",
+        "display_original": "朴成训",
+        "matched_value": "朴成训",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "朴成训",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 3103105,
+        "hot_score": 3103105,
+        "norm_score": 64.91796,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 78,
+        "rank": 78
+      },
+      {
+        "keyword": "鞠婧祎",
+        "display_keyword": "鞠婧祎",
+        "display_original": "鞠婧祎",
+        "matched_value": "鞠婧祎",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "鞠婧祎",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 3076798,
+        "hot_score": 3076798,
+        "norm_score": 64.88099,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 79,
+        "rank": 79
+      },
+      {
+        "keyword": "王楚钦",
+        "display_keyword": "王楚钦",
+        "display_original": "王楚钦",
+        "matched_value": "王楚钦",
+        "ip_status": "匹配成功",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 3060000,
+        "hot_score": 3060000,
+        "norm_score": 64.85721,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 80,
+        "rank": 80
+      },
+      {
+        "keyword": "丁禹兮",
+        "display_keyword": "丁禹兮",
+        "display_original": "丁禹兮",
+        "matched_value": "丁禹兮",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "丁禹兮",
+            "status": "匹配成功",
+            "category": "未分类",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "未分类",
+        "hot_value": 2915147,
+        "hot_score": 2915147,
+        "norm_score": 64.6466,
+        "hints": [],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "ip_rank": 81,
+        "rank": 81
+      },
+      {
+        "keyword": "白小纯",
+        "display_keyword": "白小纯",
+        "display_original": "白小纯",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": "",
+        "ipCategory": "卡通动漫",
+        "hot_value": 870000,
+        "hot_score": 870000,
+        "norm_score": 59.39519,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 82,
+        "rank": 82
+      },
+      {
+        "keyword": "许飞",
+        "display_keyword": "许飞",
+        "display_original": "许飞",
+        "matched_value": "许飞",
+        "ip_status": "匹配成功",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 480000,
+        "hot_score": 480000,
+        "norm_score": 56.81241,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 83,
+        "rank": 83
+      },
+      {
+        "keyword": "金子涵",
+        "display_keyword": "金子涵",
+        "display_original": "金子涵",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 470000,
+        "hot_score": 470000,
+        "norm_score": 56.72098,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 84,
+        "rank": 84
+      },
+      {
+        "keyword": "青稚",
+        "display_keyword": "青稚",
+        "display_original": "青稚",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": "",
+        "ipCategory": "卡通动漫",
+        "hot_value": 390000,
+        "hot_score": 390000,
+        "norm_score": 55.91065,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 85,
+        "rank": 85
+      },
+      {
+        "keyword": "李宇春",
+        "display_keyword": "李宇春",
+        "display_original": "李宇春",
+        "matched_value": "李宇春",
+        "ip_status": "匹配成功",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 370000,
+        "hot_score": 370000,
+        "norm_score": 55.68202,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 86,
+        "rank": 86
+      },
+      {
+        "keyword": "厉娜",
+        "display_keyword": "厉娜",
+        "display_original": "厉娜",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 320000,
+        "hot_score": 320000,
+        "norm_score": 55.0515,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 87,
+        "rank": 87
+      },
+      {
+        "keyword": "宋亚轩",
+        "display_keyword": "宋亚轩",
+        "display_original": "宋亚轩",
+        "matched_value": "宋亚轩",
+        "ip_status": "匹配成功",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 300000,
+        "hot_score": 300000,
+        "norm_score": 54.77121,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 88,
+        "rank": 88
+      },
+      {
+        "keyword": "那英",
+        "display_keyword": "那英",
+        "display_original": "那英",
+        "matched_value": "那英",
+        "ip_status": "匹配成功",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 300000,
+        "hot_score": 300000,
+        "norm_score": 54.77121,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 89,
+        "rank": 89
+      },
+      {
+        "keyword": "辛芷蕾",
+        "display_keyword": "辛芷蕾",
+        "display_original": "辛芷蕾",
+        "matched_value": "辛芷蕾",
+        "ip_status": "匹配成功",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 240000,
+        "hot_score": 240000,
+        "norm_score": 53.80211,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 90,
+        "rank": 90
+      },
+      {
+        "keyword": "倪妮",
+        "display_keyword": "倪妮",
+        "display_original": "倪妮",
+        "matched_value": "倪妮",
+        "ip_status": "匹配成功",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 240000,
+        "hot_score": 240000,
+        "norm_score": 53.80211,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 91,
+        "rank": 91
+      },
+      {
+        "keyword": "马天宇",
+        "display_keyword": "马天宇",
+        "display_original": "马天宇",
+        "matched_value": "马天宇",
+        "ip_status": "匹配成功",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 180000,
+        "hot_score": 180000,
+        "norm_score": 52.55273,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 92,
+        "rank": 92
+      },
+      {
+        "keyword": "爱情公寓",
+        "display_keyword": "爱情公寓",
+        "display_original": "爱情公寓",
+        "matched_value": "爱情公寓",
+        "ip_status": "匹配成功",
+        "ip_terms": "",
+        "ipCategory": "影视综艺",
+        "hot_value": 160000,
+        "hot_score": 160000,
+        "norm_score": 52.0412,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 93,
+        "rank": 93
+      },
+      {
+        "keyword": "王传君",
+        "display_keyword": "王传君",
+        "display_original": "王传君",
+        "matched_value": "王传君",
+        "ip_status": "匹配成功",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 160000,
+        "hot_score": 160000,
+        "norm_score": 52.0412,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 94,
+        "rank": 94
+      },
+      {
+        "keyword": "邓家佳",
+        "display_keyword": "邓家佳",
+        "display_original": "邓家佳",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 160000,
+        "hot_score": 160000,
+        "norm_score": 52.0412,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 95,
+        "rank": 95
+      },
+      {
+        "keyword": "井柏然",
+        "display_keyword": "井柏然",
+        "display_original": "井柏然",
+        "matched_value": "井柏然",
+        "ip_status": "匹配成功",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 130000,
+        "hot_score": 130000,
+        "norm_score": 51.13943,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 96,
+        "rank": 96
+      },
+      {
+        "keyword": "石凯",
+        "display_keyword": "石凯",
+        "display_original": "石凯",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": "",
+        "ipCategory": "明星/人物",
+        "hot_value": 130000,
+        "hot_score": 130000,
+        "norm_score": 51.13943,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 97,
+        "rank": 97
+      },
+      {
+        "keyword": "徐若暗",
+        "display_keyword": "徐若暗",
+        "display_original": "徐若暗",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": "",
+        "ipCategory": "未分类",
+        "hot_value": 130000,
+        "hot_score": 130000,
+        "norm_score": 51.13943,
+        "hints": "",
+        "platform": "weibo",
+        "platforms": [
+          "weibo"
+        ],
+        "ip_rank": 98,
+        "rank": 98
       }
     ]
   },
@@ -1353,123 +2517,411 @@
       "items": [
         {
           "keyword": "王楚钦",
-          "hot": 3060000,
-          "platform": "weibo"
+          "display_keyword": "王楚钦",
+          "display_original": "王楚钦",
+          "matched_value": "王楚钦",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 3060000,
+          "hot_score": 3060000,
+          "norm_score": 64.85721,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "白小纯",
-          "hot": 870000,
-          "platform": "weibo"
+          "display_keyword": "白小纯",
+          "display_original": "白小纯",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "卡通动漫",
+          "hot_value": 870000,
+          "hot_score": 870000,
+          "norm_score": 59.39519,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "梁家辉",
-          "hot": 850000,
-          "platform": "weibo"
+          "display_keyword": "梁家辉",
+          "display_original": "梁家辉",
+          "matched_value": "梁家辉",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 850000,
+          "hot_score": 850000,
+          "norm_score": 59.29419,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "白鹿",
-          "hot": 520000,
-          "platform": "weibo"
+          "display_keyword": "白鹿",
+          "display_original": "白鹿",
+          "matched_value": "白鹿",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 520000,
+          "hot_score": 520000,
+          "norm_score": 57.16003,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "许飞",
-          "hot": 480000,
-          "platform": "weibo"
+          "display_keyword": "许飞",
+          "display_original": "许飞",
+          "matched_value": "许飞",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 480000,
+          "hot_score": 480000,
+          "norm_score": 56.81241,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "金子涵",
-          "hot": 470000,
-          "platform": "weibo"
+          "display_keyword": "金子涵",
+          "display_original": "金子涵",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 470000,
+          "hot_score": 470000,
+          "norm_score": 56.72098,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "高叶",
-          "hot": 420000,
-          "platform": "weibo"
+          "display_keyword": "高叶",
+          "display_original": "高叶",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 420000,
+          "hot_score": 420000,
+          "norm_score": 56.23249,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "青稚",
-          "hot": 390000,
-          "platform": "weibo"
+          "display_keyword": "青稚",
+          "display_original": "青稚",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "卡通动漫",
+          "hot_value": 390000,
+          "hot_score": 390000,
+          "norm_score": 55.91065,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "李宇春",
-          "hot": 370000,
-          "platform": "weibo"
+          "display_keyword": "李宇春",
+          "display_original": "李宇春",
+          "matched_value": "李宇春",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 370000,
+          "hot_score": 370000,
+          "norm_score": 55.68202,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "厉娜",
-          "hot": 320000,
-          "platform": "weibo"
+          "display_keyword": "厉娜",
+          "display_original": "厉娜",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 320000,
+          "hot_score": 320000,
+          "norm_score": 55.0515,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "宋亚轩",
-          "hot": 300000,
-          "platform": "weibo"
+          "display_keyword": "宋亚轩",
+          "display_original": "宋亚轩",
+          "matched_value": "宋亚轩",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 300000,
+          "hot_score": 300000,
+          "norm_score": 54.77121,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "那英",
-          "hot": 300000,
-          "platform": "weibo"
+          "display_keyword": "那英",
+          "display_original": "那英",
+          "matched_value": "那英",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 300000,
+          "hot_score": 300000,
+          "norm_score": 54.77121,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "辛芷蕾",
-          "hot": 240000,
-          "platform": "weibo"
+          "display_keyword": "辛芷蕾",
+          "display_original": "辛芷蕾",
+          "matched_value": "辛芷蕾",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 240000,
+          "hot_score": 240000,
+          "norm_score": 53.80211,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "倪妮",
-          "hot": 240000,
-          "platform": "weibo"
+          "display_keyword": "倪妮",
+          "display_original": "倪妮",
+          "matched_value": "倪妮",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 240000,
+          "hot_score": 240000,
+          "norm_score": 53.80211,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "孟子义",
-          "hot": 230000,
-          "platform": "weibo"
+          "display_keyword": "孟子义",
+          "display_original": "孟子义",
+          "matched_value": "孟子义",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 230000,
+          "hot_score": 230000,
+          "norm_score": 53.61728,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "朱一龙",
-          "hot": 180000,
-          "platform": "weibo"
+          "display_keyword": "朱一龙",
+          "display_original": "朱一龙",
+          "matched_value": "朱一龙",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 180000,
+          "hot_score": 180000,
+          "norm_score": 52.55273,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "马天宇",
-          "hot": 180000,
-          "platform": "weibo"
+          "display_keyword": "马天宇",
+          "display_original": "马天宇",
+          "matched_value": "马天宇",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 180000,
+          "hot_score": 180000,
+          "norm_score": 52.55273,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "爱情公寓",
-          "hot": 160000,
-          "platform": "weibo"
+          "display_keyword": "爱情公寓",
+          "display_original": "爱情公寓",
+          "matched_value": "爱情公寓",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "影视综艺",
+          "hot_value": 160000,
+          "hot_score": 160000,
+          "norm_score": 52.0412,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "王传君",
-          "hot": 160000,
-          "platform": "weibo"
+          "display_keyword": "王传君",
+          "display_original": "王传君",
+          "matched_value": "王传君",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 160000,
+          "hot_score": 160000,
+          "norm_score": 52.0412,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "邓家佳",
-          "hot": 160000,
-          "platform": "weibo"
+          "display_keyword": "邓家佳",
+          "display_original": "邓家佳",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 160000,
+          "hot_score": 160000,
+          "norm_score": 52.0412,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "丞磊",
-          "hot": 130000,
-          "platform": "weibo"
+          "display_keyword": "丞磊",
+          "display_original": "丞磊",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 130000,
+          "hot_score": 130000,
+          "norm_score": 51.13943,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "井柏然",
-          "hot": 130000,
-          "platform": "weibo"
+          "display_keyword": "井柏然",
+          "display_original": "井柏然",
+          "matched_value": "井柏然",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 130000,
+          "hot_score": 130000,
+          "norm_score": 51.13943,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
           "keyword": "石凯",
-          "hot": 130000,
-          "platform": "weibo"
+          "display_keyword": "石凯",
+          "display_original": "石凯",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 130000,
+          "hot_score": 130000,
+          "norm_score": 51.13943,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         },
         {
-          "keyword": "徐若晗",
-          "hot": 130000,
-          "platform": "weibo"
+          "keyword": "徐若暗",
+          "display_keyword": "徐若暗",
+          "display_original": "徐若暗",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "未分类",
+          "hot_value": 130000,
+          "hot_score": 130000,
+          "norm_score": 51.13943,
+          "hints": "",
+          "platform": "weibo",
+          "platforms": [
+            "weibo"
+          ]
         }
       ]
     },
@@ -1480,158 +2932,530 @@
       "items": [
         {
           "keyword": "虞书欣",
-          "hot": 15293000,
-          "platform": "douyin"
+          "display_keyword": "虞书欣",
+          "display_original": "虞书欣",
+          "matched_value": "虞书欣",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 15293000,
+          "hot_score": 15293000,
+          "norm_score": 71.84493,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "吾守尔赛来",
-          "hot": 7798000,
-          "platform": "douyin"
+          "display_keyword": "吾守尔赛来",
+          "display_original": "吾守尔赛来",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7798000,
+          "hot_score": 7798000,
+          "norm_score": 68.91983,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "梁家辉",
-          "hot": 7764000,
-          "platform": "douyin"
+          "display_keyword": "梁家辉",
+          "display_original": "梁家辉",
+          "matched_value": "梁家辉",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7764000,
+          "hot_score": 7764000,
+          "norm_score": 68.90086,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "兰西雅",
-          "hot": 7751000,
-          "platform": "douyin"
+          "display_keyword": "兰西雅",
+          "display_original": "兰西雅",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7751000,
+          "hot_score": 7751000,
+          "norm_score": 68.89358,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "高叶",
-          "hot": 7748000,
-          "platform": "douyin"
+          "display_keyword": "高叶",
+          "display_original": "高叶",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7748000,
+          "hot_score": 7748000,
+          "norm_score": 68.8919,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "白鹿",
-          "hot": 7729000,
-          "platform": "douyin"
+          "display_keyword": "白鹿",
+          "display_original": "白鹿",
+          "matched_value": "白鹿",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7729000,
+          "hot_score": 7729000,
+          "norm_score": 68.88123,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "孟子义",
-          "hot": 7722000,
-          "platform": "douyin"
+          "display_keyword": "孟子义",
+          "display_original": "孟子义",
+          "matched_value": "孟子义",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7722000,
+          "hot_score": 7722000,
+          "norm_score": 68.8773,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "苏妲己",
-          "hot": 7722000,
-          "platform": "douyin"
+          "display_keyword": "苏妲己",
+          "display_original": "苏妲己",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "影视综艺",
+          "hot_value": 7722000,
+          "hot_score": 7722000,
+          "norm_score": 68.8773,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "董思成",
-          "hot": 7709000,
-          "platform": "douyin"
+          "display_keyword": "董思成",
+          "display_original": "董思成",
+          "matched_value": "董思成",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7709000,
+          "hot_score": 7709000,
+          "norm_score": 68.86998,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "杨超越",
-          "hot": 7709000,
-          "platform": "douyin"
+          "display_keyword": "杨超越",
+          "display_original": "杨超越",
+          "matched_value": "杨超越",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7709000,
+          "hot_score": 7709000,
+          "norm_score": 68.86998,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "曾舜晞",
-          "hot": 7691000,
-          "platform": "douyin"
+          "display_keyword": "曾舜晞",
+          "display_original": "曾舜晞",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "未分类",
+          "hot_value": 7691000,
+          "hot_score": 7691000,
+          "norm_score": 68.85983,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "丞磊",
-          "hot": 7690000,
-          "platform": "douyin"
+          "display_keyword": "丞磊",
+          "display_original": "丞磊",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7690000,
+          "hot_score": 7690000,
+          "norm_score": 68.85926,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "张云龙",
-          "hot": 7690000,
-          "platform": "douyin"
+          "display_keyword": "张云龙",
+          "display_original": "张云龙",
+          "matched_value": "张云龙",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7690000,
+          "hot_score": 7690000,
+          "norm_score": 68.85926,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "九尾狐",
-          "hot": 7655000,
-          "platform": "douyin"
+          "display_keyword": "九尾狐",
+          "display_original": "九尾狐",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "卡通动漫",
+          "hot_value": 7655000,
+          "hot_score": 7655000,
+          "norm_score": 68.83945,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "火影",
-          "hot": 7651000,
-          "platform": "douyin"
+          "display_keyword": "火影",
+          "display_original": "火影",
+          "matched_value": "火影",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "卡通动漫",
+          "hot_value": 7651000,
+          "hot_score": 7651000,
+          "norm_score": 68.83718,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "李思潼",
-          "hot": 7644000,
-          "platform": "douyin"
+          "display_keyword": "李思潼",
+          "display_original": "李思潼",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7644000,
+          "hot_score": 7644000,
+          "norm_score": 68.83321,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "陈赫",
-          "hot": 7642000,
-          "platform": "douyin"
+          "display_keyword": "陈赫",
+          "display_original": "陈赫",
+          "matched_value": "陈赫",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7642000,
+          "hot_score": 7642000,
+          "norm_score": 68.83207,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "嫁金钗",
-          "hot": 7642000,
-          "platform": "douyin"
+          "display_keyword": "嫁金钗",
+          "display_original": "嫁金钗",
+          "matched_value": "嫁金钗",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "影视综艺",
+          "hot_value": 7642000,
+          "hot_score": 7642000,
+          "norm_score": 68.83207,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "朱一龙",
-          "hot": 7641000,
-          "platform": "douyin"
+          "display_keyword": "朱一龙",
+          "display_original": "朱一龙",
+          "matched_value": "朱一龙",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7641000,
+          "hot_score": 7641000,
+          "norm_score": 68.8315,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "谷雨",
-          "hot": 7638000,
-          "platform": "douyin"
+          "display_keyword": "谷雨",
+          "display_original": "谷雨",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "影视综艺",
+          "hot_value": 7638000,
+          "hot_score": 7638000,
+          "norm_score": 68.8298,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "张颂文",
-          "hot": 7638000,
-          "platform": "douyin"
+          "display_keyword": "张颂文",
+          "display_original": "张颂文",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7638000,
+          "hot_score": 7638000,
+          "norm_score": 68.8298,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "李小冉",
-          "hot": 7638000,
-          "platform": "douyin"
+          "display_keyword": "李小冉",
+          "display_original": "李小冉",
+          "matched_value": "李小冉",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7638000,
+          "hot_score": 7638000,
+          "norm_score": 68.8298,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "巴啦啦小魔仙",
-          "hot": 7638000,
-          "platform": "douyin"
+          "display_keyword": "巴啦啦小魔仙",
+          "display_original": "巴啦啦小魔仙",
+          "matched_value": "巴啦啦小魔仙",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "卡通动漫",
+          "hot_value": 7638000,
+          "hot_score": 7638000,
+          "norm_score": 68.8298,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "孙恩盛",
-          "hot": 7637000,
-          "platform": "douyin"
+          "display_keyword": "孙恩盛",
+          "display_original": "孙恩盛",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7637000,
+          "hot_score": 7637000,
+          "norm_score": 68.82923,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "张翅",
-          "hot": 7637000,
-          "platform": "douyin"
+          "display_keyword": "张翅",
+          "display_original": "张翅",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7637000,
+          "hot_score": 7637000,
+          "norm_score": 68.82923,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "郑雨",
-          "hot": 7635000,
-          "platform": "douyin"
+          "display_keyword": "郑雨",
+          "display_original": "郑雨",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7635000,
+          "hot_score": 7635000,
+          "norm_score": 68.82809,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "陈砚周",
-          "hot": 7635000,
-          "platform": "douyin"
+          "display_keyword": "陈砚周",
+          "display_original": "陈砚周",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7635000,
+          "hot_score": 7635000,
+          "norm_score": 68.82809,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "萨勒芬妮",
-          "hot": 7635000,
-          "platform": "douyin"
+          "display_keyword": "萨勒芬妮",
+          "display_original": "萨勒芬妮",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "游戏电竞",
+          "hot_value": 7635000,
+          "hot_score": 7635000,
+          "norm_score": 68.82809,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "BLG",
-          "hot": 7635000,
-          "platform": "douyin"
+          "display_keyword": "BLG",
+          "display_original": "BLG",
+          "matched_value": "BLG",
+          "ip_status": "匹配成功",
+          "ip_terms": "",
+          "ipCategory": "体育",
+          "hot_value": 7635000,
+          "hot_score": 7635000,
+          "norm_score": 68.82809,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "王晨正",
-          "hot": 7635000,
-          "platform": "douyin"
+          "display_keyword": "王晨正",
+          "display_original": "王晨正",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "明星/人物",
+          "hot_value": 7635000,
+          "hot_score": 7635000,
+          "norm_score": 68.82809,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         },
         {
           "keyword": "变形计",
-          "hot": 7635000,
-          "platform": "douyin"
+          "display_keyword": "变形计",
+          "display_original": "变形计",
+          "matched_value": "",
+          "ip_status": "新value",
+          "ip_terms": "",
+          "ipCategory": "影视综艺",
+          "hot_value": 7635000,
+          "hot_score": 7635000,
+          "norm_score": 68.82809,
+          "hints": "",
+          "platform": "douyin",
+          "platforms": [
+            "douyin"
+          ]
         }
       ]
     }
