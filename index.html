@@ -1000,7 +1000,7 @@ function renderPlatform(platform) {
     const subHtml = (orig && orig !== main) ? '<div class="kw-sub">' + escHtml(orig) + '</div>' : '';
     // Trend badge for XHS
     var trendBadge = '';
-    var dt = (d.trend_tag === '火爆') ? '<span class="fire-badge">🔥火爆</span>'
+   trendBadge = (d.trend_tag === '火爆') ? '<span class="fire-badge">🔥火爆</span>'
       : (d.trend_tag === '爆发') ? '<span class="trend-badge trend-burst">📈爆发</span>'
       : (d.trend_tag === '上涨') ? '<span class="trend-badge trend-up">↗上涨</span>'
       : (d.trend_tag === '下降') ? '<span class="trend-badge trend-down">↘下降</span>'
