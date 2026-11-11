@@ -1250,6 +1250,7 @@ function renderDiesun() {
     const items = d.items || [];
     const pic = d.picture || '';
     const picCount = d.picture_count || 0;
+    const desc = d.desc || d.style_desc || '';
     const tagHtml = tags.length
       ? '<div class="diesun-tags">' + tags.slice(0, 6).map(t => '<span class="diesun-tag">' + escHtml(t) + '</span>').join('') + '</div>'
       : '';
@@ -1258,6 +1259,9 @@ function renderDiesun() {
       : '';
     const itemsHtml = items.length
       ? '<div class="diesun-items"><b>关键单品</b> ' + items.slice(0, 6).map(k => escHtml(k)).join('、') + '</div>'
+      : '';
+    const descHtml = desc
+      ? '<div class="diesun-desc">' + escHtml(desc) + '</div>'
       : '';
     const picHtml = pic
       ? '<div class="diesun-pic"><img src="' + escHtml(pic) + '" alt="' + escHtml(title) + '" loading="lazy" referrerpolicy="no-referrer"></div>'
@@ -1269,6 +1273,7 @@ function renderDiesun() {
         tagHtml +
         brandsHtml +
         itemsHtml +
+        descHtml +
         picHtml +
       '</div>' +
     '</div>';
