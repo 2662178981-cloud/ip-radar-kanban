@@ -1,12 +1,12 @@
 {
   "version": "4.0",
-  "generatedAt": "2026-11-11T14:44:51+08:00",
+  "generatedAt": "2026-11-11T14:51:02+08:00",
   "summary": {
     "total": 50,
     "ipCount": 50,
-    "newValues": 15,
-    "oldValues": 35,
-    "reviewNeeded": 15,
+    "newValues": 14,
+    "oldValues": 36,
+    "reviewNeeded": 0,
     "boards": [
       {
         "code": "xiaohongshu",
@@ -24,11 +24,11 @@
         "count": 31
       }
     ],
-    "generatedAt": "2026-11-11T14:44:51+08:00"
+    "generatedAt": "2026-11-11T14:51:02+08:00"
   },
   "ipBoard": {
     "title": "IP 榜单",
-    "subtitle": "跨平台IP热度排行（微博·抖音·小红书）·全量",
+    "subtitle": "跨平台IP热度排行（微博·抖音·小红书）",
     "total": 50,
     "items": [
       {
@@ -49,7 +49,9 @@
         "hot_value": 20764180,
         "hot_score": 20764180,
         "norm_score": 73.17315,
-        "hints": [],
+        "hints": [
+          "虞书欣同款穿搭"
+        ],
         "platform": "douyin,xiaohongshu",
         "platforms": [
           "douyin",
@@ -503,15 +505,25 @@
       {
         "keyword": "梁家辉",
         "display_keyword": "梁家辉",
-        "display_original": "梁家辉",
+        "display_original": "梁家辉第39届金鸡奖最佳男主角",
         "matched_value": "梁家辉",
         "ip_status": "匹配成功",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "梁家辉",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 8614000,
         "hot_score": 8614000,
         "norm_score": 69.35205,
-        "hints": "",
+        "hints": [
+          "梁家辉红毯同款",
+          "梁家辉颁奖典礼穿搭"
+        ],
         "platform": "douyin,weibo",
         "platforms": [
           "douyin",
@@ -549,15 +561,24 @@
       {
         "keyword": "白鹿",
         "display_keyword": "白鹿",
-        "display_original": "白鹿",
+        "display_original": "跟白鹿一起变身毛茸茸",
         "matched_value": "白鹿",
         "ip_status": "匹配成功",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "白鹿",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 8249000,
         "hot_score": 8249000,
         "norm_score": 69.16401,
-        "hints": "",
+        "hints": [
+          "白鹿同款穿搭"
+        ],
         "platform": "douyin,weibo",
         "platforms": [
           "douyin",
@@ -621,15 +642,25 @@
       {
         "keyword": "高叶",
         "display_keyword": "高叶",
-        "display_original": "高叶",
+        "display_original": "高叶获第39届金鸡奖最佳女主角",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "高叶",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 8168000,
         "hot_score": 8168000,
         "norm_score": 69.12116,
-        "hints": "",
+        "hints": [
+          "高叶红毯同款",
+          "高叶颁奖典礼穿搭"
+        ],
         "platform": "douyin,weibo",
         "platforms": [
           "douyin",
@@ -641,15 +672,24 @@
       {
         "keyword": "孟子义",
         "display_keyword": "孟子义",
-        "display_original": "孟子义",
+        "display_original": "孟子义苏妲己好娇啊",
         "matched_value": "孟子义",
         "ip_status": "匹配成功",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "孟子义",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7952000,
         "hot_score": 7952000,
         "norm_score": 69.00476,
-        "hints": "",
+        "hints": [
+          "孟子义同款"
+        ],
         "platform": "douyin,weibo",
         "platforms": [
           "douyin",
@@ -661,15 +701,25 @@
       {
         "keyword": "朱一龙",
         "display_keyword": "朱一龙",
-        "display_original": "朱一龙",
+        "display_original": "朱一龙出席第39届金鸡奖",
         "matched_value": "朱一龙",
         "ip_status": "匹配成功",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "朱一龙",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7821000,
         "hot_score": 7821000,
         "norm_score": 68.93262,
-        "hints": "",
+        "hints": [
+          "朱一龙红毯同款",
+          "朱一龙颁奖典礼穿搭"
+        ],
         "platform": "douyin,weibo",
         "platforms": [
           "douyin",
@@ -681,15 +731,24 @@
       {
         "keyword": "丞磊",
         "display_keyword": "丞磊",
-        "display_original": "丞磊",
+        "display_original": "丞磊张云龙再现名场面",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "丞磊",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7820000,
         "hot_score": 7820000,
         "norm_score": 68.93207,
-        "hints": "",
+        "hints": [
+          "丞磊同款"
+        ],
         "platform": "douyin,weibo",
         "platforms": [
           "douyin",
@@ -701,15 +760,25 @@
       {
         "keyword": "吾守尔赛来",
         "display_keyword": "吾守尔赛来",
-        "display_original": "吾守尔赛来",
+        "display_original": "吾守尔赛来获金鸡奖最佳男配角",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "吾守尔赛来",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7798000,
         "hot_score": 7798000,
         "norm_score": 68.91983,
-        "hints": "",
+        "hints": [
+          "吾守尔赛来红毯同款",
+          "吾守尔赛来颁奖典礼穿搭"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -772,15 +841,25 @@
       {
         "keyword": "兰西雅",
         "display_keyword": "兰西雅",
-        "display_original": "兰西雅",
+        "display_original": "兰西雅获金鸡奖最佳女配角",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "兰西雅",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7751000,
         "hot_score": 7751000,
         "norm_score": 68.89358,
-        "hints": "",
+        "hints": [
+          "兰西雅红毯同款",
+          "兰西雅颁奖典礼穿搭"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -791,15 +870,25 @@
       {
         "keyword": "苏妲己",
         "display_keyword": "苏妲己",
-        "display_original": "苏妲己",
+        "display_original": "孟子义苏妲己好娇啊",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "苏妲己",
+            "status": "新value",
+            "category": "影视综艺",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "影视综艺",
         "hot_value": 7722000,
         "hot_score": 7722000,
         "norm_score": 68.8773,
-        "hints": "",
+        "hints": [
+          "苏妲己同款",
+          "苏妲己周边"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -810,15 +899,24 @@
       {
         "keyword": "董思成",
         "display_keyword": "董思成",
-        "display_original": "董思成",
+        "display_original": "董思成和杨超越互夸到害羞",
         "matched_value": "董思成",
         "ip_status": "匹配成功",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "董思成",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7709000,
         "hot_score": 7709000,
         "norm_score": 68.86998,
-        "hints": "",
+        "hints": [
+          "董思成同款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -829,15 +927,24 @@
       {
         "keyword": "杨超越",
         "display_keyword": "杨超越",
-        "display_original": "杨超越",
+        "display_original": "董思成和杨超越互夸到害羞",
         "matched_value": "杨超越",
         "ip_status": "匹配成功",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "杨超越",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7709000,
         "hot_score": 7709000,
         "norm_score": 68.86998,
-        "hints": "",
+        "hints": [
+          "杨超越同款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -848,15 +955,24 @@
       {
         "keyword": "曾舜晞",
         "display_keyword": "曾舜晞",
-        "display_original": "曾舜晞",
-        "matched_value": "",
-        "ip_status": "新value",
-        "ip_terms": "",
-        "ipCategory": "未分类",
+        "display_original": "曾舜晞伯爵神之十秒",
+        "matched_value": "曾舜晞",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "曾舜晞",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
         "hot_value": 7691000,
         "hot_score": 7691000,
         "norm_score": 68.85983,
-        "hints": "",
+        "hints": [
+          "曾舜晞同款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -867,15 +983,24 @@
       {
         "keyword": "张云龙",
         "display_keyword": "张云龙",
-        "display_original": "张云龙",
+        "display_original": "丞磊张云龙再现名场面",
         "matched_value": "张云龙",
         "ip_status": "匹配成功",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "张云龙",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7690000,
         "hot_score": 7690000,
         "norm_score": 68.85926,
-        "hints": "",
+        "hints": [
+          "张云龙同款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -886,15 +1011,25 @@
       {
         "keyword": "九尾狐",
         "display_keyword": "九尾狐",
-        "display_original": "九尾狐",
+        "display_original": "我的九尾狐身份被发现了",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "九尾狐",
+            "status": "新value",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "卡通动漫",
         "hot_value": 7655000,
         "hot_score": 7655000,
         "norm_score": 68.83945,
-        "hints": "",
+        "hints": [
+          "九尾狐手办",
+          "九尾狐联名款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -905,15 +1040,25 @@
       {
         "keyword": "火影",
         "display_keyword": "火影",
-        "display_original": "火影",
+        "display_original": "火影热血番冬日解冻了",
         "matched_value": "火影",
         "ip_status": "匹配成功",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "火影",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "卡通动漫",
         "hot_value": 7651000,
         "hot_score": 7651000,
         "norm_score": 68.83718,
-        "hints": "",
+        "hints": [
+          "火影手办",
+          "火影联名款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -924,15 +1069,24 @@
       {
         "keyword": "李思潼",
         "display_keyword": "李思潼",
-        "display_original": "李思潼",
+        "display_original": "所有人感受李思潼金鸡怼脸拍",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "李思潼",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7644000,
         "hot_score": 7644000,
         "norm_score": 68.83321,
-        "hints": "",
+        "hints": [
+          "李思潼同款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -943,15 +1097,24 @@
       {
         "keyword": "陈赫",
         "display_keyword": "陈赫",
-        "display_original": "陈赫",
+        "display_original": "陈赫的生日礼物太有爱了",
         "matched_value": "陈赫",
         "ip_status": "匹配成功",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "陈赫",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7642000,
         "hot_score": 7642000,
         "norm_score": 68.83207,
-        "hints": "",
+        "hints": [
+          "陈赫同款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -962,15 +1125,25 @@
       {
         "keyword": "嫁金钗",
         "display_keyword": "嫁金钗",
-        "display_original": "嫁金钗",
+        "display_original": "嫁金钗收官",
         "matched_value": "嫁金钗",
         "ip_status": "匹配成功",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "嫁金钗",
+            "status": "匹配成功",
+            "category": "影视综艺",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "影视综艺",
         "hot_value": 7642000,
         "hot_score": 7642000,
         "norm_score": 68.83207,
-        "hints": "",
+        "hints": [
+          "嫁金钗同款",
+          "嫁金钗周边"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -981,15 +1154,25 @@
       {
         "keyword": "谷雨",
         "display_keyword": "谷雨",
-        "display_original": "谷雨",
+        "display_original": "谷雨张颂文喊李小冉妈",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "谷雨",
+            "status": "新value",
+            "category": "影视综艺",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "影视综艺",
         "hot_value": 7638000,
         "hot_score": 7638000,
         "norm_score": 68.8298,
-        "hints": "",
+        "hints": [
+          "谷雨同款",
+          "谷雨周边"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -1000,15 +1183,24 @@
       {
         "keyword": "张颂文",
         "display_keyword": "张颂文",
-        "display_original": "张颂文",
+        "display_original": "谷雨张颂文喊李小冉妈",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "张颂文",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7638000,
         "hot_score": 7638000,
         "norm_score": 68.8298,
-        "hints": "",
+        "hints": [
+          "张颂文同款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -1019,15 +1211,24 @@
       {
         "keyword": "李小冉",
         "display_keyword": "李小冉",
-        "display_original": "李小冉",
+        "display_original": "谷雨张颂文喊李小冉妈",
         "matched_value": "李小冉",
         "ip_status": "匹配成功",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "李小冉",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7638000,
         "hot_score": 7638000,
         "norm_score": 68.8298,
-        "hints": "",
+        "hints": [
+          "李小冉同款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -1038,15 +1239,26 @@
       {
         "keyword": "巴啦啦小魔仙",
         "display_keyword": "巴啦啦小魔仙",
-        "display_original": "巴啦啦小魔仙",
+        "display_original": "巴啦啦小魔仙cos梦回小时候",
         "matched_value": "巴啦啦小魔仙",
         "ip_status": "匹配成功",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "巴啦啦小魔仙",
+            "status": "匹配成功",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "卡通动漫",
         "hot_value": 7638000,
         "hot_score": 7638000,
         "norm_score": 68.8298,
-        "hints": "",
+        "hints": [
+          "巴啦啦小魔仙cos服",
+          "巴啦啦小魔仙cos道具",
+          "巴啦啦小魔仙手办"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -1057,15 +1269,24 @@
       {
         "keyword": "孙恩盛",
         "display_keyword": "孙恩盛",
-        "display_original": "孙恩盛",
+        "display_original": "专访主播孙恩盛",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "孙恩盛",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7637000,
         "hot_score": 7637000,
         "norm_score": 68.82923,
-        "hints": "",
+        "hints": [
+          "孙恩盛同款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -1076,15 +1297,25 @@
       {
         "keyword": "张翅",
         "display_keyword": "张翅",
-        "display_original": "张翅",
+        "display_original": "张翅金鸡奖出图",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "张翅",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7637000,
         "hot_score": 7637000,
         "norm_score": 68.82923,
-        "hints": "",
+        "hints": [
+          "张翅红毯同款",
+          "张翅颁奖典礼穿搭"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -1095,15 +1326,24 @@
       {
         "keyword": "郑雨",
         "display_keyword": "郑雨",
-        "display_original": "郑雨",
+        "display_original": "郑雨陈砚周没名分的醋好香",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "郑雨",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7635000,
         "hot_score": 7635000,
         "norm_score": 68.82809,
-        "hints": "",
+        "hints": [
+          "郑雨同款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -1114,15 +1354,24 @@
       {
         "keyword": "陈砚周",
         "display_keyword": "陈砚周",
-        "display_original": "陈砚周",
+        "display_original": "郑雨陈砚周没名分的醋好香",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "陈砚周",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "明星/人物",
         "hot_value": 7635000,
         "hot_score": 7635000,
         "norm_score": 68.82809,
-        "hints": "",
+        "hints": [
+          "陈砚周同款"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -1133,15 +1382,25 @@
       {
         "keyword": "萨勒芬妮",
         "display_keyword": "萨勒芬妮",
-        "display_original": "萨勒芬妮",
+        "display_original": "用萨勒芬妮二创为BLG应援",
         "matched_value": "",
         "ip_status": "新value",
-        "ip_terms": "",
+        "ip_terms": [
+          {
+            "word": "萨勒芬妮",
+            "status": "新value",
+            "category": "游戏电竞",
+            "addedDate": ""
+          }
+        ],
         "ipCategory": "游戏电竞",
         "hot_value": 7635000,
         "hot_score": 7635000,
         "norm_score": 68.82809,
-        "hints": "",
+        "hints": [
+          "萨勒芬妮联名周边",
+          "萨勒芬妮手办模型"
+        ],
         "platform": "douyin",
         "platforms": [
           "douyin"
@@ -1417,15 +1676,24 @@
         {
           "keyword": "王楚钦",
           "display_keyword": "王楚钦",
-          "display_original": "王楚钦",
+          "display_original": "羊城晚报评王楚钦反思长文",
           "matched_value": "王楚钦",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "王楚钦",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 3060000,
           "hot_score": 3060000,
           "norm_score": 64.85721,
-          "hints": "",
+          "hints": [
+            "王楚钦同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1434,15 +1702,25 @@
         {
           "keyword": "白小纯",
           "display_keyword": "白小纯",
-          "display_original": "白小纯",
+          "display_original": "青稚 白小纯",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "白小纯",
+              "status": "新value",
+              "category": "卡通动漫",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "卡通动漫",
           "hot_value": 870000,
           "hot_score": 870000,
           "norm_score": 59.39519,
-          "hints": "",
+          "hints": [
+            "白小纯手办",
+            "白小纯联名款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1451,15 +1729,25 @@
         {
           "keyword": "梁家辉",
           "display_keyword": "梁家辉",
-          "display_original": "梁家辉",
+          "display_original": "梁家辉拒绝工作人员帮拿金鸡奖杯",
           "matched_value": "梁家辉",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "梁家辉",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 850000,
           "hot_score": 850000,
           "norm_score": 59.29419,
-          "hints": "",
+          "hints": [
+            "梁家辉红毯同款",
+            "梁家辉颁奖典礼穿搭"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1468,15 +1756,24 @@
         {
           "keyword": "白鹿",
           "display_keyword": "白鹿",
-          "display_original": "白鹿",
+          "display_original": "白鹿的台风不像演员该有的",
           "matched_value": "白鹿",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "白鹿",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 520000,
           "hot_score": 520000,
           "norm_score": 57.16003,
-          "hints": "",
+          "hints": [
+            "白鹿同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1485,15 +1782,24 @@
         {
           "keyword": "许飞",
           "display_keyword": "许飞",
-          "display_original": "许飞",
+          "display_original": "许飞 厉娜",
           "matched_value": "许飞",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "许飞",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 480000,
           "hot_score": 480000,
           "norm_score": 56.81241,
-          "hints": "",
+          "hints": [
+            "许飞同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1502,15 +1808,24 @@
         {
           "keyword": "金子涵",
           "display_keyword": "金子涵",
-          "display_original": "金子涵",
+          "display_original": "金子涵妹妹回复网友",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "金子涵",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 470000,
           "hot_score": 470000,
           "norm_score": 56.72098,
-          "hints": "",
+          "hints": [
+            "金子涵同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1519,15 +1834,24 @@
         {
           "keyword": "高叶",
           "display_keyword": "高叶",
-          "display_original": "高叶",
+          "display_original": "李宇春辛芷蕾倪妮祝贺高叶",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "高叶",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 420000,
           "hot_score": 420000,
           "norm_score": 56.23249,
-          "hints": "",
+          "hints": [
+            "高叶同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1536,15 +1860,25 @@
         {
           "keyword": "青稚",
           "display_keyword": "青稚",
-          "display_original": "青稚",
+          "display_original": "青稚 白小纯",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "青稚",
+              "status": "新value",
+              "category": "卡通动漫",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "卡通动漫",
           "hot_value": 390000,
           "hot_score": 390000,
           "norm_score": 55.91065,
-          "hints": "",
+          "hints": [
+            "青稚手办",
+            "青稚联名款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1553,15 +1887,24 @@
         {
           "keyword": "李宇春",
           "display_keyword": "李宇春",
-          "display_original": "李宇春",
+          "display_original": "李宇春辛芷蕾倪妮祝贺高叶",
           "matched_value": "李宇春",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "李宇春",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 370000,
           "hot_score": 370000,
           "norm_score": 55.68202,
-          "hints": "",
+          "hints": [
+            "李宇春同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1570,15 +1913,24 @@
         {
           "keyword": "厉娜",
           "display_keyword": "厉娜",
-          "display_original": "厉娜",
+          "display_original": "许飞 厉娜",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "厉娜",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 320000,
           "hot_score": 320000,
           "norm_score": 55.0515,
-          "hints": "",
+          "hints": [
+            "厉娜同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1587,15 +1939,22 @@
         {
           "keyword": "宋亚轩",
           "display_keyword": "宋亚轩",
-          "display_original": "宋亚轩",
+          "display_original": "宋亚轩被那英当面处刑",
           "matched_value": "宋亚轩",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "宋亚轩",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 300000,
           "hot_score": 300000,
           "norm_score": 54.77121,
-          "hints": "",
+          "hints": [],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1604,15 +1963,22 @@
         {
           "keyword": "那英",
           "display_keyword": "那英",
-          "display_original": "那英",
+          "display_original": "宋亚轩被那英当面处刑",
           "matched_value": "那英",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "那英",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 300000,
           "hot_score": 300000,
           "norm_score": 54.77121,
-          "hints": "",
+          "hints": [],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1621,15 +1987,24 @@
         {
           "keyword": "辛芷蕾",
           "display_keyword": "辛芷蕾",
-          "display_original": "辛芷蕾",
+          "display_original": "李宇春辛芷蕾倪妮祝贺高叶",
           "matched_value": "辛芷蕾",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "辛芷蕾",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 240000,
           "hot_score": 240000,
           "norm_score": 53.80211,
-          "hints": "",
+          "hints": [
+            "辛芷蕾同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1638,15 +2013,24 @@
         {
           "keyword": "倪妮",
           "display_keyword": "倪妮",
-          "display_original": "倪妮",
+          "display_original": "李宇春辛芷蕾倪妮祝贺高叶",
           "matched_value": "倪妮",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "倪妮",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 240000,
           "hot_score": 240000,
           "norm_score": 53.80211,
-          "hints": "",
+          "hints": [
+            "倪妮同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1655,15 +2039,24 @@
         {
           "keyword": "孟子义",
           "display_keyword": "孟子义",
-          "display_original": "孟子义",
+          "display_original": "白鹿听完孟子义说话的反应",
           "matched_value": "孟子义",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "孟子义",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 230000,
           "hot_score": 230000,
           "norm_score": 53.61728,
-          "hints": "",
+          "hints": [
+            "孟子义同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1672,15 +2065,24 @@
         {
           "keyword": "朱一龙",
           "display_keyword": "朱一龙",
-          "display_original": "朱一龙",
+          "display_original": "朱一龙哽咽恭喜高叶",
           "matched_value": "朱一龙",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "朱一龙",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 180000,
           "hot_score": 180000,
           "norm_score": 52.55273,
-          "hints": "",
+          "hints": [
+            "朱一龙同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1689,15 +2091,24 @@
         {
           "keyword": "马天宇",
           "display_keyword": "马天宇",
-          "display_original": "马天宇",
+          "display_original": "马天宇ally直播",
           "matched_value": "马天宇",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "马天宇",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 180000,
           "hot_score": 180000,
           "norm_score": 52.55273,
-          "hints": "",
+          "hints": [
+            "马天宇同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1706,15 +2117,25 @@
         {
           "keyword": "爱情公寓",
           "display_keyword": "爱情公寓",
-          "display_original": "爱情公寓",
+          "display_original": "爱情公寓拿到王传君的大结果了",
           "matched_value": "爱情公寓",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "爱情公寓",
+              "status": "匹配成功",
+              "category": "影视综艺",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "影视综艺",
           "hot_value": 160000,
           "hot_score": 160000,
           "norm_score": 52.0412,
-          "hints": "",
+          "hints": [
+            "爱情公寓同款",
+            "爱情公寓周边"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1723,15 +2144,24 @@
         {
           "keyword": "王传君",
           "display_keyword": "王传君",
-          "display_original": "王传君",
+          "display_original": "爱情公寓拿到王传君的大结果了",
           "matched_value": "王传君",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "王传君",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 160000,
           "hot_score": 160000,
           "norm_score": 52.0412,
-          "hints": "",
+          "hints": [
+            "王传君同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1740,15 +2170,25 @@
         {
           "keyword": "邓家佳",
           "display_keyword": "邓家佳",
-          "display_original": "邓家佳",
+          "display_original": "邓家佳金鸡奖被喊小姨妈谁的DNA动了",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "邓家佳",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 160000,
           "hot_score": 160000,
           "norm_score": 52.0412,
-          "hints": "",
+          "hints": [
+            "邓家佳红毯同款",
+            "邓家佳颁奖典礼穿搭"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1757,15 +2197,24 @@
         {
           "keyword": "丞磊",
           "display_keyword": "丞磊",
-          "display_original": "丞磊",
+          "display_original": "徐若晗丞磊我真的尖叫了",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "丞磊",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 130000,
           "hot_score": 130000,
           "norm_score": 51.13943,
-          "hints": "",
+          "hints": [
+            "丞磊同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1774,15 +2223,24 @@
         {
           "keyword": "井柏然",
           "display_keyword": "井柏然",
-          "display_original": "井柏然",
+          "display_original": "井柏然回复李宇春",
           "matched_value": "井柏然",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "井柏然",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 130000,
           "hot_score": 130000,
           "norm_score": 51.13943,
-          "hints": "",
+          "hints": [
+            "井柏然同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1791,15 +2249,22 @@
         {
           "keyword": "石凯",
           "display_keyword": "石凯",
-          "display_original": "石凯",
+          "display_original": "造谣石凯方道歉",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "石凯",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 130000,
           "hot_score": 130000,
           "norm_score": 51.13943,
-          "hints": "",
+          "hints": [],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1808,15 +2273,24 @@
         {
           "keyword": "徐若晗",
           "display_keyword": "徐若晗",
-          "display_original": "徐若晗",
-          "matched_value": "",
-          "ip_status": "新value",
-          "ip_terms": "",
-          "ipCategory": "未分类",
+          "display_original": "徐若晗丞磊我真的尖叫了",
+          "matched_value": "徐若晗",
+          "ip_status": "匹配成功",
+          "ip_terms": [
+            {
+              "word": "徐若晗",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
+          "ipCategory": "明星/人物",
           "hot_value": 130000,
           "hot_score": 130000,
           "norm_score": 51.13943,
-          "hints": "",
+          "hints": [
+            "徐若晗同款"
+          ],
           "platform": "weibo",
           "platforms": [
             "weibo"
@@ -1832,15 +2306,24 @@
         {
           "keyword": "虞书欣",
           "display_keyword": "虞书欣",
-          "display_original": "虞书欣",
+          "display_original": "虞书欣变身毛茸茸造型",
           "matched_value": "虞书欣",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "虞书欣",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 15293000,
           "hot_score": 15293000,
           "norm_score": 71.84493,
-          "hints": "",
+          "hints": [
+            "虞书欣同款穿搭"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -1849,15 +2332,25 @@
         {
           "keyword": "吾守尔赛来",
           "display_keyword": "吾守尔赛来",
-          "display_original": "吾守尔赛来",
+          "display_original": "吾守尔赛来获金鸡奖最佳男配角",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "吾守尔赛来",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7798000,
           "hot_score": 7798000,
           "norm_score": 68.91983,
-          "hints": "",
+          "hints": [
+            "吾守尔赛来红毯同款",
+            "吾守尔赛来颁奖典礼穿搭"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -1866,15 +2359,25 @@
         {
           "keyword": "梁家辉",
           "display_keyword": "梁家辉",
-          "display_original": "梁家辉",
+          "display_original": "梁家辉第39届金鸡奖最佳男主角",
           "matched_value": "梁家辉",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "梁家辉",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7764000,
           "hot_score": 7764000,
           "norm_score": 68.90086,
-          "hints": "",
+          "hints": [
+            "梁家辉红毯同款",
+            "梁家辉颁奖典礼穿搭"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -1883,15 +2386,25 @@
         {
           "keyword": "兰西雅",
           "display_keyword": "兰西雅",
-          "display_original": "兰西雅",
+          "display_original": "兰西雅获金鸡奖最佳女配角",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "兰西雅",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7751000,
           "hot_score": 7751000,
           "norm_score": 68.89358,
-          "hints": "",
+          "hints": [
+            "兰西雅红毯同款",
+            "兰西雅颁奖典礼穿搭"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -1900,15 +2413,25 @@
         {
           "keyword": "高叶",
           "display_keyword": "高叶",
-          "display_original": "高叶",
+          "display_original": "高叶获第39届金鸡奖最佳女主角",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "高叶",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7748000,
           "hot_score": 7748000,
           "norm_score": 68.8919,
-          "hints": "",
+          "hints": [
+            "高叶红毯同款",
+            "高叶颁奖典礼穿搭"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -1917,15 +2440,24 @@
         {
           "keyword": "白鹿",
           "display_keyword": "白鹿",
-          "display_original": "白鹿",
+          "display_original": "跟白鹿一起变身毛茸茸",
           "matched_value": "白鹿",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "白鹿",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7729000,
           "hot_score": 7729000,
           "norm_score": 68.88123,
-          "hints": "",
+          "hints": [
+            "白鹿同款穿搭"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -1934,15 +2466,24 @@
         {
           "keyword": "孟子义",
           "display_keyword": "孟子义",
-          "display_original": "孟子义",
+          "display_original": "孟子义苏妲己好娇啊",
           "matched_value": "孟子义",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "孟子义",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7722000,
           "hot_score": 7722000,
           "norm_score": 68.8773,
-          "hints": "",
+          "hints": [
+            "孟子义同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -1951,15 +2492,25 @@
         {
           "keyword": "苏妲己",
           "display_keyword": "苏妲己",
-          "display_original": "苏妲己",
+          "display_original": "孟子义苏妲己好娇啊",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "苏妲己",
+              "status": "新value",
+              "category": "影视综艺",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "影视综艺",
           "hot_value": 7722000,
           "hot_score": 7722000,
           "norm_score": 68.8773,
-          "hints": "",
+          "hints": [
+            "苏妲己同款",
+            "苏妲己周边"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -1968,15 +2519,24 @@
         {
           "keyword": "董思成",
           "display_keyword": "董思成",
-          "display_original": "董思成",
+          "display_original": "董思成和杨超越互夸到害羞",
           "matched_value": "董思成",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "董思成",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7709000,
           "hot_score": 7709000,
           "norm_score": 68.86998,
-          "hints": "",
+          "hints": [
+            "董思成同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -1985,15 +2545,24 @@
         {
           "keyword": "杨超越",
           "display_keyword": "杨超越",
-          "display_original": "杨超越",
+          "display_original": "董思成和杨超越互夸到害羞",
           "matched_value": "杨超越",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "杨超越",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7709000,
           "hot_score": 7709000,
           "norm_score": 68.86998,
-          "hints": "",
+          "hints": [
+            "杨超越同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2002,15 +2571,24 @@
         {
           "keyword": "曾舜晞",
           "display_keyword": "曾舜晞",
-          "display_original": "曾舜晞",
-          "matched_value": "",
-          "ip_status": "新value",
-          "ip_terms": "",
-          "ipCategory": "未分类",
+          "display_original": "曾舜晞伯爵神之十秒",
+          "matched_value": "曾舜晞",
+          "ip_status": "匹配成功",
+          "ip_terms": [
+            {
+              "word": "曾舜晞",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
+          "ipCategory": "明星/人物",
           "hot_value": 7691000,
           "hot_score": 7691000,
           "norm_score": 68.85983,
-          "hints": "",
+          "hints": [
+            "曾舜晞同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2019,15 +2597,24 @@
         {
           "keyword": "丞磊",
           "display_keyword": "丞磊",
-          "display_original": "丞磊",
+          "display_original": "丞磊张云龙再现名场面",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "丞磊",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7690000,
           "hot_score": 7690000,
           "norm_score": 68.85926,
-          "hints": "",
+          "hints": [
+            "丞磊同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2036,15 +2623,24 @@
         {
           "keyword": "张云龙",
           "display_keyword": "张云龙",
-          "display_original": "张云龙",
+          "display_original": "丞磊张云龙再现名场面",
           "matched_value": "张云龙",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "张云龙",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7690000,
           "hot_score": 7690000,
           "norm_score": 68.85926,
-          "hints": "",
+          "hints": [
+            "张云龙同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2053,15 +2649,25 @@
         {
           "keyword": "九尾狐",
           "display_keyword": "九尾狐",
-          "display_original": "九尾狐",
+          "display_original": "我的九尾狐身份被发现了",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "九尾狐",
+              "status": "新value",
+              "category": "卡通动漫",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "卡通动漫",
           "hot_value": 7655000,
           "hot_score": 7655000,
           "norm_score": 68.83945,
-          "hints": "",
+          "hints": [
+            "九尾狐手办",
+            "九尾狐联名款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2070,15 +2676,25 @@
         {
           "keyword": "火影",
           "display_keyword": "火影",
-          "display_original": "火影",
+          "display_original": "火影热血番冬日解冻了",
           "matched_value": "火影",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "火影",
+              "status": "匹配成功",
+              "category": "卡通动漫",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "卡通动漫",
           "hot_value": 7651000,
           "hot_score": 7651000,
           "norm_score": 68.83718,
-          "hints": "",
+          "hints": [
+            "火影手办",
+            "火影联名款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2087,15 +2703,24 @@
         {
           "keyword": "李思潼",
           "display_keyword": "李思潼",
-          "display_original": "李思潼",
+          "display_original": "所有人感受李思潼金鸡怼脸拍",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "李思潼",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7644000,
           "hot_score": 7644000,
           "norm_score": 68.83321,
-          "hints": "",
+          "hints": [
+            "李思潼同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2104,15 +2729,24 @@
         {
           "keyword": "陈赫",
           "display_keyword": "陈赫",
-          "display_original": "陈赫",
+          "display_original": "陈赫的生日礼物太有爱了",
           "matched_value": "陈赫",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "陈赫",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7642000,
           "hot_score": 7642000,
           "norm_score": 68.83207,
-          "hints": "",
+          "hints": [
+            "陈赫同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2121,15 +2755,25 @@
         {
           "keyword": "嫁金钗",
           "display_keyword": "嫁金钗",
-          "display_original": "嫁金钗",
+          "display_original": "嫁金钗收官",
           "matched_value": "嫁金钗",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "嫁金钗",
+              "status": "匹配成功",
+              "category": "影视综艺",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "影视综艺",
           "hot_value": 7642000,
           "hot_score": 7642000,
           "norm_score": 68.83207,
-          "hints": "",
+          "hints": [
+            "嫁金钗同款",
+            "嫁金钗周边"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2138,15 +2782,25 @@
         {
           "keyword": "朱一龙",
           "display_keyword": "朱一龙",
-          "display_original": "朱一龙",
+          "display_original": "朱一龙出席第39届金鸡奖",
           "matched_value": "朱一龙",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "朱一龙",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7641000,
           "hot_score": 7641000,
           "norm_score": 68.8315,
-          "hints": "",
+          "hints": [
+            "朱一龙红毯同款",
+            "朱一龙颁奖典礼穿搭"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2155,15 +2809,25 @@
         {
           "keyword": "谷雨",
           "display_keyword": "谷雨",
-          "display_original": "谷雨",
+          "display_original": "谷雨张颂文喊李小冉妈",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "谷雨",
+              "status": "新value",
+              "category": "影视综艺",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "影视综艺",
           "hot_value": 7638000,
           "hot_score": 7638000,
           "norm_score": 68.8298,
-          "hints": "",
+          "hints": [
+            "谷雨同款",
+            "谷雨周边"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2172,15 +2836,24 @@
         {
           "keyword": "张颂文",
           "display_keyword": "张颂文",
-          "display_original": "张颂文",
+          "display_original": "谷雨张颂文喊李小冉妈",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "张颂文",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7638000,
           "hot_score": 7638000,
           "norm_score": 68.8298,
-          "hints": "",
+          "hints": [
+            "张颂文同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2189,15 +2862,24 @@
         {
           "keyword": "李小冉",
           "display_keyword": "李小冉",
-          "display_original": "李小冉",
+          "display_original": "谷雨张颂文喊李小冉妈",
           "matched_value": "李小冉",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "李小冉",
+              "status": "匹配成功",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7638000,
           "hot_score": 7638000,
           "norm_score": 68.8298,
-          "hints": "",
+          "hints": [
+            "李小冉同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2206,15 +2888,26 @@
         {
           "keyword": "巴啦啦小魔仙",
           "display_keyword": "巴啦啦小魔仙",
-          "display_original": "巴啦啦小魔仙",
+          "display_original": "巴啦啦小魔仙cos梦回小时候",
           "matched_value": "巴啦啦小魔仙",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "巴啦啦小魔仙",
+              "status": "匹配成功",
+              "category": "卡通动漫",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "卡通动漫",
           "hot_value": 7638000,
           "hot_score": 7638000,
           "norm_score": 68.8298,
-          "hints": "",
+          "hints": [
+            "巴啦啦小魔仙cos服",
+            "巴啦啦小魔仙cos道具",
+            "巴啦啦小魔仙手办"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2223,15 +2916,24 @@
         {
           "keyword": "孙恩盛",
           "display_keyword": "孙恩盛",
-          "display_original": "孙恩盛",
+          "display_original": "专访主播孙恩盛",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "孙恩盛",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7637000,
           "hot_score": 7637000,
           "norm_score": 68.82923,
-          "hints": "",
+          "hints": [
+            "孙恩盛同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2240,15 +2942,25 @@
         {
           "keyword": "张翅",
           "display_keyword": "张翅",
-          "display_original": "张翅",
+          "display_original": "张翅金鸡奖出图",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "张翅",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7637000,
           "hot_score": 7637000,
           "norm_score": 68.82923,
-          "hints": "",
+          "hints": [
+            "张翅红毯同款",
+            "张翅颁奖典礼穿搭"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2257,15 +2969,24 @@
         {
           "keyword": "郑雨",
           "display_keyword": "郑雨",
-          "display_original": "郑雨",
+          "display_original": "郑雨陈砚周没名分的醋好香",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "郑雨",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7635000,
           "hot_score": 7635000,
           "norm_score": 68.82809,
-          "hints": "",
+          "hints": [
+            "郑雨同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2274,15 +2995,24 @@
         {
           "keyword": "陈砚周",
           "display_keyword": "陈砚周",
-          "display_original": "陈砚周",
+          "display_original": "郑雨陈砚周没名分的醋好香",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "陈砚周",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7635000,
           "hot_score": 7635000,
           "norm_score": 68.82809,
-          "hints": "",
+          "hints": [
+            "陈砚周同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2291,15 +3021,25 @@
         {
           "keyword": "萨勒芬妮",
           "display_keyword": "萨勒芬妮",
-          "display_original": "萨勒芬妮",
+          "display_original": "用萨勒芬妮二创为BLG应援",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "萨勒芬妮",
+              "status": "新value",
+              "category": "游戏电竞",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "游戏电竞",
           "hot_value": 7635000,
           "hot_score": 7635000,
           "norm_score": 68.82809,
-          "hints": "",
+          "hints": [
+            "萨勒芬妮联名周边",
+            "萨勒芬妮手办模型"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2308,15 +3048,24 @@
         {
           "keyword": "BLG",
           "display_keyword": "BLG",
-          "display_original": "BLG",
+          "display_original": "用萨勒芬妮二创为BLG应援",
           "matched_value": "BLG",
           "ip_status": "匹配成功",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "BLG",
+              "status": "匹配成功",
+              "category": "体育",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "体育",
           "hot_value": 7635000,
           "hot_score": 7635000,
           "norm_score": 68.82809,
-          "hints": "",
+          "hints": [
+            "BLG周边"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2325,15 +3074,24 @@
         {
           "keyword": "王晨正",
           "display_keyword": "王晨正",
-          "display_original": "王晨正",
+          "display_original": "王晨正为变形计爷爷写新歌",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "王晨正",
+              "status": "新value",
+              "category": "明星/人物",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "明星/人物",
           "hot_value": 7635000,
           "hot_score": 7635000,
           "norm_score": 68.82809,
-          "hints": "",
+          "hints": [
+            "王晨正同款"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2342,15 +3100,25 @@
         {
           "keyword": "变形计",
           "display_keyword": "变形计",
-          "display_original": "变形计",
+          "display_original": "王晨正为变形计爷爷写新歌",
           "matched_value": "",
           "ip_status": "新value",
-          "ip_terms": "",
+          "ip_terms": [
+            {
+              "word": "变形计",
+              "status": "新value",
+              "category": "影视综艺",
+              "addedDate": ""
+            }
+          ],
           "ipCategory": "影视综艺",
           "hot_value": 7635000,
           "hot_score": 7635000,
           "norm_score": 68.82809,
-          "hints": "",
+          "hints": [
+            "变形计同款",
+            "变形计周边"
+          ],
           "platform": "douyin",
           "platforms": [
             "douyin"
@@ -2514,9 +3282,9 @@
         "keyword": "毛茸茸",
         "style_word": "毛茸茸",
         "display_keyword": "毛茸茸",
-        "display_original": "毛茸茸",
+        "display_original": "人类有自己的毛茸茸宇宙",
         "source_originals": [
-          "毛茸茸"
+          "人类有自己的毛茸茸宇宙"
         ],
         "score": 24279000,
         "heat": 24279000,
@@ -2954,9 +3722,9 @@
         "keyword": "拿破仑穿搭",
         "style_word": "拿破仑穿搭",
         "display_keyword": "拿破仑穿搭",
-        "display_original": "拿破仑穿搭",
+        "display_original": "跟着虞书欣学拿破仑穿搭",
         "source_originals": [
-          "拿破仑穿搭"
+          "跟着虞书欣学拿破仑穿搭"
         ],
         "score": 7644000,
         "heat": 7644000,
@@ -3354,9 +4122,9 @@
         "keyword": "流苏裙",
         "style_word": "流苏裙",
         "display_keyword": "流苏裙",
-        "display_original": "流苏裙",
+        "display_original": "景德镇陶瓷盘穿上了流苏裙",
         "source_originals": [
-          "流苏裙"
+          "景德镇陶瓷盘穿上了流苏裙"
         ],
         "score": 160000,
         "heat": 160000,
