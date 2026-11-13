@@ -1,61 +1,12 @@
 {
   "summary": {
-    "total_rows": 3,
-    "passed": 3,
+    "total_rows": 21,
+    "passed": 21,
     "pass_rate": 100.0,
     "error_count": 0,
-    "warn_count": 0,
-    "affected_rows": 0
+    "warn_count": 0
   },
-  "scope": "本轮3条新增（THE MONSTERS心愿达成系列IP系列/同义/系列款名）；排除5条历史已入库/衍生周边/无款名",
-  "history": {
-    "pageId": "3ceIz3nICKyHjfwnfVRd",
-    "worksheetId": "14",
-    "fetchedAt": "2026-11-09T07:57:27.552152+00:00",
-    "lastRow": 3045
-  },
-  "historyRows": 3045,
-  "addedCount": 3,
-  "correctionCount": 0,
-  "skippedDuplicateCount": 5,
   "findings": [],
-  "by_rule": {},
-  "llm_review": {},
-  "pending": [],
-  "publication": {
-    "joyspace": {
-      "relationGraph": {
-        "pageId": "3ceIz3nICKyHjfwnfVRd",
-        "worksheetId": "14",
-        "addedRows": [
-          3046,
-          3047,
-          3048
-        ],
-        "correctedRows": [],
-        "addedRowsVerified": true,
-        "correctedRowsVerified": true,
-        "readbackRows": 3,
-        "readbackCells": 15,
-        "mismatches": 0,
-        "verifiedAt": "2026-11-09T07:57:27.552152+00:00"
-      },
-      "validation": {
-        "pageId": "3ceIz3nICKyHjfwnfVRd",
-        "worksheetId": "10",
-        "addedRows": [
-          1657,
-          1658,
-          1659
-        ],
-        "correctedRows": [],
-        "addedRowsVerified": true,
-        "correctedRowsVerified": true,
-        "readbackRows": 3,
-        "readbackCells": 24,
-        "mismatches": 0,
-        "verifiedAt": "2026-11-09T07:57:27.552152+00:00"
-      }
-    }
-  }
+  "validatedAt": "2026-11-13",
+  "historyRows": 3048
 }
