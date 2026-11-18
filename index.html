@@ -685,6 +685,7 @@ function buildCatFilter(items) {
    ③ 未识别条目（词库没命中、切词结果 = 热搜原句）标记出来，不再伪装成 IP 名
 */
 function aggregateBoard(items) {
+  var tPri = {'火爆':5,'爆发':4,'上涨':3,'稳定':2,'下降':1};
   const map = new Map();
   items.forEach(it => {
     const orig = it.display_original || it.keyword || '';
@@ -709,7 +710,7 @@ function aggregateBoard(items) {
     r._hot += Number(it.hot_value || it.hot_score || 0);
     r._items.push(it);
     if (!r.base || statusRank(it.ip_status) > statusRank(r.base.ip_status)) r.base = it;
-    if (it.trend_tag === '火爆') r.trend_tag = '火爆';
+    if (it.trend_tag && (tPri[it.trend_tag]||0) > (tPri[r.trend_tag]||0)) r.trend_tag = it.trend_tag;
   });
 
   let rows = Array.from(map.values());
@@ -754,7 +755,7 @@ function aggregateBoard(items) {
     head.platforms = pfs;
     head._score = sc;
     head._dup = sorted.length;
-    sorted.forEach(x => { if (x.trend_tag === '火爆') head.trend_tag = '火爆'; });
+    sorted.forEach(x => { if (x.trend_tag && (tPri[x.trend_tag]||0) > (tPri[head.trend_tag]||0)) head.trend_tag = x.trend_tag; });
     head._others = sorted.slice(1).map(x => x._orig);
     out.push(head);
   });
