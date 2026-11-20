@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IP趋势雷达 · 风格趋势</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Segoe UI",Roboto,sans-serif;background:linear-gradient(135deg,#eaf3ff 0%,#ecfbf1 100%);min-height:100vh;color:#1f2937;line-height:1.5}
+.wrap{max-width:1500px;margin:0 auto;padding:16px 20px 60px}
+.hd{background:linear-gradient(135deg,rgba(147,197,253,.85),rgba(134,239,172,.85));border-radius:12px;padding:15px 22px;margin-bottom:13px;box-shadow:0 4px 16px rgba(59,130,246,.12);border:1px solid rgba(255,255,255,.7);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.hd h1{font-size:24px;font-weight:800;color:#0f172a}
+.hd .sub{font-size:12px;color:#475569;margin-top:2px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.9);color:#475569;font-size:13px;font-weight:600;border:1px solid rgba(255,255,255,.9)}
+.tab.on{background:#8b5cf6;color:#fff;border-color:#8b5cf6}
+.card{background:#fbfdff;border-radius:12px;padding:16px 18px;box-shadow:0 2px 12px rgba(0,0,0,.045);margin-bottom:13px}
+.head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+h2{font-size:17px;font-weight:800;color:#111827}
+.desc{font-size:12px;color:#6b7280;margin-top:3px}
+.seg{display:inline-flex;background:#f1f4f9;border-radius:9px;padding:3px}
+.seg button{border:0;background:transparent;padding:5px 11px;border-radius:7px;font-size:12px;font-weight:700;color:#64748b;cursor:pointer;font-family:inherit;white-space:nowrap}
+.seg button.on{background:#fff;color:#7c3aed;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.seg-lb{font-size:10.5px;color:#94a3b8;font-weight:800;margin-bottom:4px;letter-spacing:.4px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:13px}
+.kpi{border-radius:10px;padding:11px 14px}
+.kpi .k{font-size:11px;font-weight:800;letter-spacing:.3px}
+.kpi .v{font-size:24px;font-weight:800;line-height:1.2}
+.kpi .d{font-size:11px;color:#94a3b8;margin-top:1px}
+.kpi .d b{color:#64748b;font-weight:800}
+#box{position:relative}
+#svg{display:block;width:100%}
+.tip{position:absolute;pointer-events:none;background:rgba(255,255,255,.985);border:1px solid #e5e9f0;border-radius:9px;padding:9px 11px;font-size:11.5px;box-shadow:0 8px 22px rgba(15,23,42,.13);display:none;z-index:8;min-width:158px}
+.tip .h{font-weight:800;color:#111827;margin-bottom:5px}
+.tip .r{display:flex;justify-content:space-between;gap:12px;margin-top:3px}
+.tip .r b{font-weight:800}
+.lg{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:#64748b;margin-top:9px}
+.lg span{display:inline-flex;align-items:center;gap:5px}
+.lg i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.lg i.sq{border-radius:2px}
+.note{font-size:11.5px;color:#94a3b8;margin-top:7px;line-height:1.55}
+.fgroups{display:flex;flex-direction:column;gap:7px;margin-bottom:10px}
+.fg{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.fg .lb{font-size:10.5px;font-weight:800;color:#94a3b8;width:52px;flex:0 0 52px;letter-spacing:.3px}
+.fchip{border:1px solid #e5e9f0;background:#fff;border-radius:999px;padding:4px 11px;font-size:12px;font-weight:600;color:#64748b;cursor:pointer;font-family:inherit}
+.fchip.on{background:#f5f3ff;border-color:#c4b5fd;color:#7c3aed}
+.fchip.on.warm{background:#fff7ed;border-color:#fdba74;color:#c2410c}
+.fchip.on.cool{background:#ecfdf5;border-color:#6ee7b7;color:#047857}
+input.q{border:1px solid #e5e9f0;border-radius:999px;padding:5px 12px;font-size:12px;width:150px;font-family:inherit;outline:none}
+input.q:focus{border-color:#c4b5fd}
+.tblbox{border:1px solid #eef1f6;border-radius:10px;overflow:auto;max-height:660px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{position:sticky;top:0;z-index:3;background:#f7f9fc;color:#64748b;font-size:11.5px;font-weight:800;text-align:left;padding:9px 10px;border-bottom:1px solid #e8edf5;white-space:nowrap}
+thead th.srt{cursor:pointer;user-select:none}
+thead th.srt:hover{color:#7c3aed}
+thead th .ar{font-size:9px;opacity:.5;margin-left:2px}
+tbody td{padding:8px 10px;border-bottom:1px solid #f4f6fa;vertical-align:middle}
+tbody tr{cursor:pointer}
+tbody tr:nth-child(even) td{background:#fbfcff}
+tbody tr:hover td{background:#f5f3ff}
+tbody tr.sel td{background:#f2eefe}
+.rk{font-size:12px;font-weight:800;color:#b0b9c6;width:40px}
+.rk.hi{color:#7c3aed}
+.nm{font-weight:700;color:#111827;white-space:nowrap}
+.tag{display:inline-block;font-size:9.5px;font-weight:800;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:1px}
+.tp{font-size:10.5px;font-weight:800;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.tp.std{background:#eff6ff;color:#1d4ed8}
+.tp.syn{background:#fffbeb;color:#b45309}
+.tp.new{background:#fef2f2;color:#b91c1c}
+.cat{font-size:11.5px;color:#64748b;white-space:nowrap}
+.cat i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
+.sc{display:flex;align-items:center;gap:7px;min-width:100px}
+.sc .bar{flex:1;height:5px;border-radius:99px;background:#eef2f8;overflow:hidden;min-width:48px}
+.sc .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#c4b5fd,#8b5cf6)}
+.sc b{font-size:11.5px;font-weight:800;color:#7c3aed;width:24px;text-align:right}
+.chg{font-size:12px;font-weight:800;white-space:nowrap}
+.chg.up{color:#e11d48}
+.chg.dn{color:#0f766e}
+.chg.fl{color:#94a3b8}
+.ver{display:flex;gap:3px;align-items:center}
+.ver i{width:15px;height:5px;border-radius:2px;background:#e6ebf3;display:inline-block}
+.ver i.on{background:#60a5fa}
+.ver i.smon{background:#f87171}
+.ver i.zxon{background:#34d399}
+.ver i.tbon{background:#fbbf24}
+.st{font-size:10.5px;font-weight:800;padding:2px 7px;border-radius:999px;white-space:nowrap}
+.dbtn{border:1px solid #ddd6fe;background:#f5f3ff;color:#7c3aed;border-radius:6px;padding:2px 8px;font-size:10.5px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap}
+.more{text-align:center;padding:9px}
+.more button{border:1px dashed #cbd5e1;background:#fff;color:#64748b;border-radius:8px;padding:5px 16px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit}
+.detail{display:none;scroll-margin-top:10px}
+.detail.on{display:block}
+.dh{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid #eef1f6}
+.dh .l{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.dh .nm{font-size:23px;font-weight:800;color:#0f172a}
+.pill{font-size:11px;font-weight:700;padding:3px 9px;border-radius:6px;background:#f1f4f9;color:#64748b}
+.xbtn{border:1px solid #e5e9f0;background:#fff;border-radius:8px;padding:4px 12px;font-size:12px;color:#64748b;cursor:pointer;font-family:inherit}
+.dgrid{display:grid;grid-template-columns:1.5fr 1fr;gap:16px;margin-top:14px}
+h3{font-size:13px;font-weight:800;color:#374151;margin:2px 0 7px;display:flex;align-items:center;gap:7px}
+h3 em{font-style:normal;font-size:11px;font-weight:500;color:#94a3b8}
+#lc{display:block;width:100%}
+table.sub{width:100%;border-collapse:collapse;font-size:12px;border:1px solid #eef1f6;border-radius:8px;overflow:hidden}
+.sub th{background:#f7f9fc;color:#64748b;font-size:10.5px;font-weight:800;text-align:left;padding:6px 9px;border-bottom:1px solid #eef1f6}
+.sub td{padding:6px 9px;border-bottom:1px solid #f4f6fa;color:#374151}
+.sub tr:last-child td{border-bottom:0}
+.sub .h{font-weight:800;color:#111827}
+.box{background:#fff;border:1px solid #eef1f6;border-radius:10px;padding:11px 13px;margin-bottom:11px}
+.bt{font-size:12.5px;font-weight:800;color:#374151;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.mini{font-size:9.5px;font-weight:800;color:#7c3aed;background:#f5f3ff;border-radius:4px;padding:1px 6px}
+.sk{margin-top:9px;display:flex;flex-direction:column;gap:6px}
+.sk i{display:block;height:8px;border-radius:99px;background:linear-gradient(90deg,#f1f5f9,#e8eef7,#f1f5f9)}
+.hint{font-size:10.5px;color:#94a3b8;margin-top:7px;line-height:1.5}
+.imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:9px}
+.ph{aspect-ratio:3/4;border-radius:8px;border:1px dashed #d8dee9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer}
+.ph span{font-size:17px;opacity:.5}
+.ph em{font-style:normal;font-size:9.5px;color:#94a3b8;font-weight:600}
+.ph.a{background:linear-gradient(135deg,#fdf2f8,#f5f3ff)}
+.ph.b{background:linear-gradient(135deg,#eff6ff,#ecfdf5)}
+.ph.c{background:linear-gradient(135deg,#fffbeb,#fef2f2)}
+.sr{display:flex;align-items:center;gap:7px;margin-top:8px;font-size:11.5px}
+.sr .l{width:30px;color:#64748b;font-weight:700;font-size:10.5px}
+.sr .bar{flex:1;height:6px;border-radius:99px;background:#eef2f8;overflow:hidden}
+.sr .bar i{display:block;height:100%;border-radius:99px}
+.sr .n{width:30px;text-align:right;font-weight:800;color:#374151;font-size:10.5px}
+.sr .raw{width:62px;text-align:right;color:#94a3b8;font-size:9.5px}
+.acts{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
+.btn{border-radius:7px;padding:6px 11px;font-size:11.5px;font-weight:700;cursor:pointer;font-family:inherit;border:1px solid transparent}
+.btn.p{background:#8b5cf6;color:#fff}
+.btn.g{background:#ecfdf5;color:#059669;border-color:#a7f3d0}
+.btn.gh{background:#fff;color:#64748b;border-color:#e5e9f0}
+.btn:disabled{opacity:.6;cursor:default}
+.actnote{font-size:10.5px;color:#94a3b8;margin-top:7px}
+.banner{background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;border-radius:9px;padding:8px 11px;font-size:11.5px;font-weight:600;margin-bottom:10px}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,16px);background:#111827;color:#fff;padding:8px 15px;border-radius:9px;font-size:12.5px;opacity:0;pointer-events:none;transition:all .2s;z-index:99}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.ft{text-align:center;font-size:10.5px;color:#94a3b8;margin-top:8px}
+.filterbar{display:flex;align-items:flex-end;gap:9px;flex-wrap:wrap;padding:11px 12px;border:1px solid #e9edf5;border-radius:11px;background:linear-gradient(180deg,#fff,#fbfcff);margin-bottom:12px}
+.filterbar .flabel{font-size:10px;font-weight:800;color:#8b97ab;letter-spacing:.35px;margin-bottom:3px;white-space:nowrap}
+.filterbar .spacer{flex:1;min-width:12px}
+.dd{position:relative;min-width:124px}
+.ddbtn{width:100%;height:34px;border:1px solid #dfe5ef;background:#fff;border-radius:8px;padding:0 29px 0 10px;text-align:left;font-family:inherit;font-size:12px;font-weight:700;color:#334155;cursor:pointer;position:relative;box-shadow:0 1px 2px rgba(15,23,42,.025)}
+.ddbtn:hover{border-color:#c4b5fd}
+.dd.open .ddbtn{border-color:#a78bfa;box-shadow:0 0 0 3px rgba(139,92,246,.09)}
+.ddbtn .car{position:absolute;right:10px;top:50%;transform:translateY(-55%);font-size:10px;color:#94a3b8;transition:transform .15s}
+.dd.open .ddbtn .car{transform:translateY(-55%) rotate(180deg)}
+.ddbtn .pre{display:block;font-size:9px;color:#98a3b5;font-weight:800;line-height:1;margin-bottom:1px}
+.ddbtn .val{display:block;line-height:1.15;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ddpanel{display:none;position:absolute;left:0;top:calc(100% + 5px);z-index:30;min-width:196px;max-width:290px;background:#fff;border:1px solid #e5e9f2;border-radius:10px;box-shadow:0 12px 30px rgba(15,23,42,.14);padding:6px;max-height:330px;overflow:auto}
+.dd.open .ddpanel{display:block}
+.op{display:flex;align-items:center;width:100%;border:0;background:#fff;border-radius:7px;padding:7px 8px;text-align:left;font-family:inherit;font-size:12px;color:#475569;cursor:pointer;gap:7px}
+.op:hover{background:#f8f7ff}.op.on{background:#f3efff;color:#6d28d9;font-weight:800}
+.op i{width:7px;height:7px;border-radius:50%;flex:0 0 7px}.op em{margin-left:auto;font-style:normal;font-size:10px;color:#9aa6b8}
+.calpanel{min-width:282px;padding:10px}
+.presets{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:4px 0 10px}
+.presets button{border:1px solid #e5e9f2;background:#fff;border-radius:7px;padding:6px 4px;font-family:inherit;font-size:11px;font-weight:700;color:#64748b;cursor:pointer}
+.presets button:hover{background:#f5f3ff;border-color:#c4b5fd;color:#6d28d9}
+.calfields{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.calfields label{font-size:10px;color:#8b97ab;font-weight:800}
+.calfields input{width:100%;margin-top:3px;border:1px solid #dfe5ef;border-radius:7px;padding:6px 7px;font-family:inherit;font-size:11px;color:#334155;background:#fff}
+.calapply{width:100%;margin-top:9px;border:0;border-radius:7px;padding:7px;background:#7c3aed;color:#fff;font-family:inherit;font-size:12px;font-weight:800;cursor:pointer}
+.calhint{font-size:9.5px;color:#9aa6b8;margin-top:7px;line-height:1.5}
+.chartcard{background:linear-gradient(145deg,#ffffff 0%,#fbfcff 48%,#fbf9ff 100%);border:1px solid #eef0f7}
+.chartcard .head{border-bottom:1px solid #eef1f7;padding-bottom:10px}
+.chartcard .head h2{font-size:18px}
+.chartcard #box{background:linear-gradient(180deg,rgba(248,250,255,.5),rgba(255,255,255,0));border-radius:10px;padding-top:4px}
+.coef{font-size:12.5px;font-weight:900;white-space:nowrap}
+.coef.up{color:#e11d48}.coef.dn{color:#0f766e}.coef.fl{color:#94a3b8}
+.lex{font-size:10.5px;font-weight:800;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.lex.std{background:#eef6ff;color:#1d4ed8}.lex.non{background:#fff1f2;color:#be123c}
+.catbadge{font-size:10.5px;font-weight:700;white-space:nowrap;display:inline-flex;align-items:center;gap:5px;color:#526174}
+.catbadge i{width:7px;height:7px;border-radius:50%;flex:0 0 7px}
+.scorewrap{display:flex;align-items:center;gap:6px;min-width:122px}
+.scorewrap .bar{flex:1;height:5px;border-radius:99px;background:#edf1f8;overflow:hidden;min-width:46px}
+.scorewrap .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#c4b5fd,#7c3aed)}
+.scorewrap b{font-size:11.5px;font-weight:900;color:#6d28d9;width:22px;text-align:right}
+.scorewrap small{font-size:9.5px;color:#a1aaba;font-weight:700;width:25px}
+.info{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;border-radius:50%;background:#eef2f8;color:#8b97ab;font-size:9px;font-weight:900;cursor:help;margin-left:3px}
+.weekpanel{margin-top:9px;border:1px solid #e8edf5;border-radius:10px;overflow:hidden;background:#fff}
+.weekpanel .wh{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;background:linear-gradient(90deg,#f7f5ff,#f9fbff);border-bottom:1px solid #edf0f6;font-size:12px;font-weight:800;color:#4c1d95}
+.weekpanel .wh em{font-style:normal;font-size:10px;color:#94a3b8;font-weight:600}
+.weekpanel .wt{max-height:235px;overflow:auto}
+.weekpanel table{font-size:11.5px}
+.weekpanel td,.weekpanel th{padding:5px 9px}
+.weekpanel .empty{padding:15px;text-align:center;color:#94a3b8;font-size:11px}
+.lcpoint{cursor:pointer}
+.lcpoint:hover{filter:drop-shadow(0 0 3px rgba(124,58,237,.35))}
+.statusnote{font-size:10.5px;color:#98a3b5;padding:6px 0 0}
+.method{margin-top:8px;border-top:1px dashed #e7ebf3;padding-top:7px;font-size:11px;color:#7b879a}
+.method summary{cursor:pointer;font-weight:800;color:#6d28d9;width:max-content;outline:none}
+.method summary:hover{text-decoration:underline}
+.methodbody{margin-top:7px;padding:9px 11px;background:#faf9ff;border:1px solid #eeeafd;border-radius:8px;line-height:1.7}
+.methodbody p+p{margin-top:4px}
+.methodbody b{color:#4c1d95}
+@media(max-width:1080px){.dgrid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}.filterbar .spacer{display:none}}
+@media(max-width:640px){.kpis{grid-template-columns:1fr}.filterbar{gap:7px}.dd{min-width:calc(50% - 4px);flex:1}.ddpanel{max-width:calc(100vw - 52px)}.calpanel{min-width:min(282px,calc(100vw - 52px))}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hd">
+    <div>
+      <h1>风格趋势</h1>
+      <div class="sub" id="hdSub">周度快照 · 观测周期可切换 · 加权口径见页脚</div>
+    </div>
+    <div class="tabs">
+      <span class="tab">泛IP</span>
+      <span class="tab on">风格趋势</span>
+      <span class="tab">热点日历</span>
+      <span class="tab">平台明细</span>
+      <span class="tab">趋势快照</span>
+    </div>
+  </div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="card chartcard">
+    <div class="head">
+      <div>
+        <h2>趋势观测</h2>
+        <div class="desc" id="chartDesc"></div>
+      </div>
+      <div class="desc" style="text-align:right">筛选条件同时作用于趋势曲线与下方排行</div>
+    </div>
+
+    <div class="filterbar">
+      <div>
+        <div class="flabel">状态</div>
+        <div class="dd" id="ddStatus">
+          <button class="ddbtn" data-dd="ddStatus"><span class="val" id="statusVal">全部状态</span><span class="car">⌄</span></button>
+          <div class="ddpanel">
+            <button class="op on" data-fs="all">全部状态<em data-cnt-fs="all"></em></button>
+            <button class="op" data-fs="rising"><i style="background:#ef4444"></i>新兴<em data-cnt-fs="rising"></em></button>
+            <button class="op" data-fs="growing"><i style="background:#f97316"></i>上升<em data-cnt-fs="growing"></em></button>
+            <button class="op" data-fs="stable"><i style="background:#8b5cf6"></i>平稳<em data-cnt-fs="stable"></em></button>
+            <button class="op" data-fs="fading"><i style="background:#0d9488"></i>退潮<em data-cnt-fs="fading"></em></button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flabel">词类型</div>
+        <div class="dd" id="ddCat">
+          <button class="ddbtn" data-dd="ddCat"><span class="val" id="catVal">全部词类型</span><span class="car">⌄</span></button>
+          <div class="ddpanel">
+            <button class="op on" data-fc="all">全部词类型<em data-cnt-fc="all"></em></button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flabel">是否新词</div>
+        <div class="dd" id="ddLex">
+          <button class="ddbtn" data-dd="ddLex"><span class="val" id="lexVal">全部</span><span class="car">⌄</span></button>
+          <div class="ddpanel">
+            <button class="op on" data-fl="all">全部<em data-cnt-fl="all"></em></button>
+            <button class="op" data-fl="std"><i style="background:#3b82f6"></i>标准词<em data-cnt-fl="std"></em></button>
+            <button class="op" data-fl="non"><i style="background:#ef4444"></i>非标准词<em data-cnt-fl="non"></em></button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flabel">观测周期</div>
+        <div class="dd" id="ddPeriod">
+          <button class="ddbtn" data-dd="ddPeriod" style="min-width:194px"><span class="val" id="periodVal">选择日期区间</span><span class="car">⌄</span></button>
+          <div class="ddpanel calpanel">
+            <div class="flabel" style="margin:2px 0 0">快捷区间</div>
+            <div class="presets">
+              <button data-days="4">近 4 周</button>
+              <button data-days="8">近 8 周</button>
+              <button data-days="12">近 12 周</button>
+            </div>
+            <div class="calfields">
+              <label>开始日期<input type="date" id="dateFrom"></label>
+              <label>结束日期<input type="date" id="dateTo"></label>
+            </div>
+            <button class="calapply" id="applyRange">应用到曲线与排行</button>
+            <div class="calhint">按周度快照自动对齐到最近日期；当前数据范围 <span id="dataRange"></span>。</div>
+          </div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div>
+        <div class="flabel">展示词数</div>
+        <div class="dd" id="ddTop">
+          <button class="ddbtn" data-dd="ddTop" style="min-width:92px"><span class="val" id="topVal">TOP 6</span><span class="car">⌄</span></button>
+          <div class="ddpanel" style="min-width:120px">
+            <button class="op on" data-n="6">TOP 6</button>
+            <button class="op" data-n="10">TOP 10</button>
+            <button class="op" data-n="15">TOP 15</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="box">
+      <svg id="svg"></svg>
+      <div class="tip" id="tip"></div>
+    </div>
+    <div class="lg" id="lg"></div>
+    <div class="note" id="chartNote"></div>
+    <details class="method">
+      <summary>综合分 / 趋势系数 / 事件节点口径</summary>
+      <div class="methodbody">
+        <p><b>周度综合分：</b>每周先在各数据源内部按原始词热度排名，换算成 0–100 的排名百分位；再按站内 0.20、社媒 0.40、资讯 0.25、淘系 0.15 加权求和，缺源计 0。每周重算一次，不沿用上周分值。</p>
+        <p><b>趋势系数：</b>当前所选区间对半拆开，用后半段周均综合分 ÷ 前半段周均综合分。&gt;1 表示区间内走强，&lt;1 表示走弱，接近 1 为平稳。</p>
+        <p><b>事件节点：</b>由运营事件日历按“日期 + 名称 + 类型 + 作用类目”维护，图表只匹配落在当前区间内的节点；预测节点与已发生节点可分色展示，不再写死在图表里。</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="card">
+    <div class="head">
+      <div>
+        <h2>风格排行</h2>
+        <div class="desc">综合名次由综合分生成；点击行查看单风格走势、当周下位词与下游动作</div>
+      </div>
+      <div style="display:flex;align-items:flex-end;gap:8px;flex-wrap:wrap">
+        <div>
+          <div class="flabel">排序</div>
+          <div class="dd" id="ddSort">
+            <button class="ddbtn" data-dd="ddSort" style="min-width:124px"><span class="val" id="sortVal">综合分优先</span><span class="car">⌄</span></button>
+            <div class="ddpanel" style="min-width:154px">
+              <button class="op on" data-sort="score">综合分优先</button>
+              <button class="op" data-sort="coef">趋势系数优先</button>
+            </div>
+          </div>
+        </div>
+        <input class="q" id="qbox" placeholder="搜索风格词…" style="width:170px;height:34px">
+      </div>
+    </div>
+
+    <div class="tblbox">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:190px">风格词</th>
+            <th style="width:165px">词类型</th>
+            <th style="width:96px">是否新词</th>
+            <th style="width:145px">综合分 <span class="info" title="所选区间末周的各源排名百分位加权分；名次为该周综合分名次">i</span></th>
+            <th style="width:104px">趋势系数 <span class="info" title="所选区间后半段综合分均值 ÷ 前半段综合均值">i</span></th>
+            <th style="width:78px">状态 <span class="info" title="按该风格12周生命周期形态判定，不随观测区间切换">i</span></th>
+            <th style="width:92px">覆盖源</th>
+            <th style="width:62px"></th>
+          </tr>
+        </thead>
+        <tbody id="tb"></tbody>
+      </table>
+    </div>
+    <div class="more"><button id="moreBtn">展开全部</button></div>
+    <div class="statusnote">是否新词仅表示词库身份；站内未覆盖是数据源覆盖信号，不再重复打“新词”标签。</div>
+  </div>
+
+  <div class="card detail" id="detail"></div>
+
+  <div class="ft">周度综合分 = Σ(数据源权重 × 源内排名百分位) · 方案C：站内0.20 / 社媒0.40 / 资讯0.25 / 淘系0.15 · 缺源计0 · 趋势系数 = 区间后半段均值 ÷ 前半段均值</div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="风格趋势data_v4.js?v=20261119-3"></script>
+<script src="风格趋势_events.js?v=20261119-3"></script>
+<script src="风格趋势_v5.js?v=20261119-3"></script>
+</body>
+</html>
