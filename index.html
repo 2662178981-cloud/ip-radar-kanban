@@ -1065,7 +1065,7 @@ function renderCalendar() {
   if (CAL_INDEX) {
     const entries = Object.entries(CAL_INDEX);
     entries.forEach(([date, evts]) => {
-      (evts || []).forEach(e => { if (!e._date) e._date = date; items.push(e); });
+      (Array.isArray(evts) ? evts : []).forEach(e => { if (!e._date) e._date = date; items.push(e); });
     });
   } else if (PAYLOAD.hotCalendar && PAYLOAD.hotCalendar.items) {
     items = PAYLOAD.hotCalendar.items;
