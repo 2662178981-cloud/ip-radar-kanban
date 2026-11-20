@@ -1,6 +1,6 @@
 {
   "version": "4.6",
-  "generatedAt": "2026-11-20T14:27:00+08:00",
+  "generatedAt": "2026-11-20T15:26:03+08:00",
   "dateRange": {
     "start": "2026-11-07",
     "end": "2026-11-13"
@@ -8,14 +8,14 @@
   "summary": {
     "total": 50,
     "ipCount": 50,
-    "newValues": 6,
-    "oldValues": 44,
+    "newValues": 7,
+    "oldValues": 43,
     "reviewNeeded": 0,
     "boards": [
       {
         "code": "xiaohongshu",
         "title": "小红书",
-        "count": 47
+        "count": 48
       },
       {
         "code": "weibo",
@@ -25,10 +25,10 @@
       {
         "code": "douyin",
         "title": "抖音",
-        "count": 4
+        "count": 3
       }
     ],
-    "generatedAt": "2026-11-20T14:27:00+08:00"
+    "generatedAt": "2026-11-20T15:26:03+08:00"
   },
   "ipBoard": {
     "title": "IP 榜单",
@@ -122,6 +122,12 @@
             "status": "新value",
             "category": "影视综艺",
             "addedDate": ""
+          },
+          {
+            "word": "伊能静",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
           }
         ],
         "ipCategory": "影视综艺",
@@ -182,44 +188,6 @@
         "ip_rank": 3,
         "rank": 3,
         "trend_tag": "爆发"
-      },
-      {
-        "keyword": "伊能静",
-        "display_keyword": "伊能静",
-        "display_original": "伊能静能不能常驻后会友期",
-        "matched_value": "伊能静",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "伊能静",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "明星/人物",
-        "hot_value": 7652000,
-        "hot_score": 7652000,
-        "norm_score": 68.83775,
-        "hints": [
-          "伊能静同款",
-          "伊能静同款穿搭"
-        ],
-        "platform": "douyin",
-        "platforms": [
-          "douyin"
-        ],
-        "source_originals": [
-          {
-            "text": "伊能静能不能常驻后会友期",
-            "heat": 7652000,
-            "platform": "douyin"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 4,
-        "rank": 4,
-        "trend_tag": ""
       },
       {
         "keyword": "我的世界",
@@ -283,8 +251,8 @@
             "heat": 23598
           }
         ],
-        "ip_rank": 5,
-        "rank": 5,
+        "ip_rank": 4,
+        "rank": 4,
         "trend_tag": "下降"
       },
       {
@@ -350,8 +318,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 6,
-        "rank": 6,
+        "ip_rank": 5,
+        "rank": 5,
         "trend_tag": "下降"
       },
       {
@@ -416,8 +384,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 7,
-        "rank": 7,
+        "ip_rank": 6,
+        "rank": 6,
         "trend_tag": "爆发"
       },
       {
@@ -482,8 +450,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 8,
-        "rank": 8,
+        "ip_rank": 7,
+        "rank": 7,
         "trend_tag": "下降"
       },
       {
@@ -548,8 +516,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 9,
-        "rank": 9,
+        "ip_rank": 8,
+        "rank": 8,
         "trend_tag": "爆发"
       },
       {
@@ -614,8 +582,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 10,
-        "rank": 10,
+        "ip_rank": 9,
+        "rank": 9,
         "trend_tag": "爆发"
       },
       {
@@ -681,8 +649,8 @@
             "heat": 749470
           }
         ],
-        "ip_rank": 11,
-        "rank": 11,
+        "ip_rank": 10,
+        "rank": 10,
         "trend_tag": "爆发"
       },
       {
@@ -748,8 +716,8 @@
             "heat": 455581
           }
         ],
-        "ip_rank": 12,
-        "rank": 12,
+        "ip_rank": 11,
+        "rank": 11,
         "trend_tag": "爆发"
       },
       {
@@ -815,8 +783,8 @@
             "heat": 319049
           }
         ],
-        "ip_rank": 13,
-        "rank": 13,
+        "ip_rank": 12,
+        "rank": 12,
         "trend_tag": "上涨"
       },
       {
@@ -881,8 +849,8 @@
             "heat": 54718
           }
         ],
-        "ip_rank": 14,
-        "rank": 14,
+        "ip_rank": 13,
+        "rank": 13,
         "trend_tag": "下降"
       },
       {
@@ -948,8 +916,8 @@
             "heat": 351534
           }
         ],
-        "ip_rank": 15,
-        "rank": 15,
+        "ip_rank": 14,
+        "rank": 14,
         "trend_tag": "上涨"
       },
       {
@@ -1015,8 +983,8 @@
             "heat": 167115
           }
         ],
-        "ip_rank": 16,
-        "rank": 16,
+        "ip_rank": 15,
+        "rank": 15,
         "trend_tag": "爆发"
       },
       {
@@ -1081,8 +1049,8 @@
             "heat": 171139
           }
         ],
-        "ip_rank": 17,
-        "rank": 17,
+        "ip_rank": 16,
+        "rank": 16,
         "trend_tag": "上涨"
       },
       {
@@ -1148,8 +1116,8 @@
             "heat": 814107
           }
         ],
-        "ip_rank": 18,
-        "rank": 18,
+        "ip_rank": 17,
+        "rank": 17,
         "trend_tag": "爆发"
       },
       {
@@ -1215,8 +1183,8 @@
             "heat": 644150
           }
         ],
-        "ip_rank": 19,
-        "rank": 19,
+        "ip_rank": 18,
+        "rank": 18,
         "trend_tag": "爆发"
       },
       {
@@ -1282,8 +1250,8 @@
             "heat": 798019
           }
         ],
-        "ip_rank": 20,
-        "rank": 20,
+        "ip_rank": 19,
+        "rank": 19,
         "trend_tag": "爆发"
       },
       {
@@ -1348,8 +1316,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 21,
-        "rank": 21,
+        "ip_rank": 20,
+        "rank": 20,
         "trend_tag": "下降"
       },
       {
@@ -1414,8 +1382,8 @@
             "heat": 212747
           }
         ],
-        "ip_rank": 22,
-        "rank": 22,
+        "ip_rank": 21,
+        "rank": 21,
         "trend_tag": "爆发"
       },
       {
@@ -1480,8 +1448,8 @@
             "heat": 212747
           }
         ],
-        "ip_rank": 23,
-        "rank": 23,
+        "ip_rank": 22,
+        "rank": 22,
         "trend_tag": "爆发"
       },
       {
@@ -1546,8 +1514,8 @@
             "heat": 212747
           }
         ],
-        "ip_rank": 24,
-        "rank": 24,
+        "ip_rank": 23,
+        "rank": 23,
         "trend_tag": "爆发"
       },
       {
@@ -1613,8 +1581,8 @@
             "heat": 109509
           }
         ],
-        "ip_rank": 25,
-        "rank": 25,
+        "ip_rank": 24,
+        "rank": 24,
         "trend_tag": "上涨"
       },
       {
@@ -1679,8 +1647,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 26,
-        "rank": 26,
+        "ip_rank": 25,
+        "rank": 25,
         "trend_tag": "下降"
       },
       {
@@ -1745,8 +1713,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 27,
-        "rank": 27,
+        "ip_rank": 26,
+        "rank": 26,
         "trend_tag": "爆发"
       },
       {
@@ -1811,8 +1779,8 @@
             "heat": 37166
           }
         ],
-        "ip_rank": 28,
-        "rank": 28,
+        "ip_rank": 27,
+        "rank": 27,
         "trend_tag": "爆发"
       },
       {
@@ -1877,8 +1845,8 @@
             "heat": 37166
           }
         ],
-        "ip_rank": 29,
-        "rank": 29,
+        "ip_rank": 28,
+        "rank": 28,
         "trend_tag": "爆发"
       },
       {
@@ -1943,8 +1911,8 @@
             "heat": 37166
           }
         ],
-        "ip_rank": 30,
-        "rank": 30,
+        "ip_rank": 29,
+        "rank": 29,
         "trend_tag": "爆发"
       },
       {
@@ -2009,8 +1977,8 @@
             "heat": 191448
           }
         ],
-        "ip_rank": 31,
-        "rank": 31,
+        "ip_rank": 30,
+        "rank": 30,
         "trend_tag": "爆发"
       },
       {
@@ -2076,8 +2044,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 32,
-        "rank": 32,
+        "ip_rank": 31,
+        "rank": 31,
         "trend_tag": "下降"
       },
       {
@@ -2142,8 +2110,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 33,
-        "rank": 33,
+        "ip_rank": 32,
+        "rank": 32,
         "trend_tag": "下降"
       },
       {
@@ -2208,8 +2176,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 34,
-        "rank": 34,
+        "ip_rank": 33,
+        "rank": 33,
         "trend_tag": "下降"
       },
       {
@@ -2274,8 +2242,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 35,
-        "rank": 35,
+        "ip_rank": 34,
+        "rank": 34,
         "trend_tag": "下降"
       },
       {
@@ -2341,8 +2309,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 36,
-        "rank": 36,
+        "ip_rank": 35,
+        "rank": 35,
         "trend_tag": "下降"
       },
       {
@@ -2407,8 +2375,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 37,
-        "rank": 37,
+        "ip_rank": 36,
+        "rank": 36,
         "trend_tag": "下降"
       },
       {
@@ -2474,8 +2442,8 @@
             "heat": 830149
           }
         ],
-        "ip_rank": 38,
-        "rank": 38,
+        "ip_rank": 37,
+        "rank": 37,
         "trend_tag": "爆发"
       },
       {
@@ -2541,8 +2509,8 @@
             "heat": 568095
           }
         ],
-        "ip_rank": 39,
-        "rank": 39,
+        "ip_rank": 38,
+        "rank": 38,
         "trend_tag": "爆发"
       },
       {
@@ -2607,8 +2575,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 40,
-        "rank": 40,
+        "ip_rank": 39,
+        "rank": 39,
         "trend_tag": "稳定"
       },
       {
@@ -2673,8 +2641,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 41,
-        "rank": 41,
+        "ip_rank": 40,
+        "rank": 40,
         "trend_tag": "下降"
       },
       {
@@ -2739,8 +2707,8 @@
             "heat": 24604
           }
         ],
-        "ip_rank": 42,
-        "rank": 42,
+        "ip_rank": 41,
+        "rank": 41,
         "trend_tag": "爆发"
       },
       {
@@ -2805,8 +2773,8 @@
             "heat": 68926
           }
         ],
-        "ip_rank": 43,
-        "rank": 43,
+        "ip_rank": 42,
+        "rank": 42,
         "trend_tag": "爆发"
       },
       {
@@ -2872,8 +2840,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 44,
-        "rank": 44,
+        "ip_rank": 43,
+        "rank": 43,
         "trend_tag": "上涨"
       },
       {
@@ -2938,8 +2906,8 @@
             "heat": 160778
           }
         ],
-        "ip_rank": 45,
-        "rank": 45,
+        "ip_rank": 44,
+        "rank": 44,
         "trend_tag": "爆发"
       },
       {
@@ -3004,8 +2972,8 @@
             "heat": 158065
           }
         ],
-        "ip_rank": 46,
-        "rank": 46,
+        "ip_rank": 45,
+        "rank": 45,
         "trend_tag": "爆发"
       },
       {
@@ -3070,8 +3038,8 @@
             "heat": 151146
           }
         ],
-        "ip_rank": 47,
-        "rank": 47,
+        "ip_rank": 46,
+        "rank": 46,
         "trend_tag": "爆发"
       },
       {
@@ -3136,8 +3104,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 48,
-        "rank": 48,
+        "ip_rank": 47,
+        "rank": 47,
         "trend_tag": "下降"
       },
       {
@@ -3202,8 +3170,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 49,
-        "rank": 49,
+        "ip_rank": 48,
+        "rank": 48,
         "trend_tag": "下降"
       },
       {
@@ -3269,6 +3237,73 @@
             "heat": 0
           }
         ],
+        "ip_rank": 49,
+        "rank": 49,
+        "trend_tag": "下降"
+      },
+      {
+        "keyword": "丞磊",
+        "display_keyword": "丞磊",
+        "display_original": "丞磊",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "丞磊",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 142952,
+        "hot_score": 142952,
+        "norm_score": 51.55193,
+        "hints": [
+          "丞磊同款",
+          "丞磊同款穿搭"
+        ],
+        "platform": "xiaohongshu",
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "丞磊",
+            "heat": 142952,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "daily_trend": [
+          {
+            "date": "2026-11-07",
+            "heat": 0
+          },
+          {
+            "date": "2026-11-08",
+            "heat": 0
+          },
+          {
+            "date": "2026-11-09",
+            "heat": 142952
+          },
+          {
+            "date": "2026-11-10",
+            "heat": 0
+          },
+          {
+            "date": "2026-11-11",
+            "heat": 0
+          },
+          {
+            "date": "2026-11-12",
+            "heat": 0
+          },
+          {
+            "date": "2026-11-13",
+            "heat": 0
+          }
+        ],
         "ip_rank": 50,
         "rank": 50,
         "trend_tag": "下降"
@@ -3279,7 +3314,7 @@
     "xiaohongshu": {
       "code": "xiaohongshu",
       "title": "小红书",
-      "count": 47,
+      "count": 48,
       "items": [
         {
           "keyword": "后会友期",
@@ -4972,6 +5007,42 @@
             }
           ],
           "trend_tag": "下降"
+        },
+        {
+          "keyword": "丞磊",
+          "hot": 142952,
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-11-07",
+              "heat": 0
+            },
+            {
+              "date": "2026-11-08",
+              "heat": 0
+            },
+            {
+              "date": "2026-11-09",
+              "heat": 142952
+            },
+            {
+              "date": "2026-11-10",
+              "heat": 0
+            },
+            {
+              "date": "2026-11-11",
+              "heat": 0
+            },
+            {
+              "date": "2026-11-12",
+              "heat": 0
+            },
+            {
+              "date": "2026-11-13",
+              "heat": 0
+            }
+          ],
+          "trend_tag": "下降"
         }
       ]
     },
@@ -4984,7 +5055,7 @@
     "douyin": {
       "code": "douyin",
       "title": "抖音",
-      "count": 4,
+      "count": 3,
       "items": [
         {
           "keyword": "Donk",
@@ -5000,12 +5071,6 @@
         },
         {
           "keyword": "后会友期",
-          "hot": 7652000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "伊能静",
           "hot": 7652000,
           "platform": "douyin",
           "trend_tag": ""
