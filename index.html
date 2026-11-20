@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
@@ -126,8 +126,8 @@
   .cat-动漫二次元 { background: #d946ef; }
   .cat-文娱其他 { background: #6b7280; }
 
-  .hints { max-height: 48px; overflow: hidden; position: relative; }
-  .hints.scroll .hint-list { animation: marquee 12s linear infinite; }
+  .hints { max-height: 22px; overflow: hidden; position: relative; }
+  .hints.scroll .hint-list { animation: marquee 8s linear infinite; }
   .hint-list { display: flex; flex-direction: column; gap: 2px; }
   .hints:hover .hint-list { animation-play-state: paused; }
   .hint-pill { padding: 1px 6px; border-radius: 5px; font-size: 11px; display: inline-block; }
@@ -645,7 +645,7 @@ function platformTags(it) {
 function renderHintsPills(hints) {
   if (!hints || !hints.length) return '<span class="kw-sub">—</span>';
   const pills = hints.map((h, i) => '<span class="hint-pill ' + HINT_COLORS[i % HINT_COLORS.length] + '">' + escHtml(h) + '</span>').join("");
-  const needScroll = hints.length >= 3;
+  const needScroll = hints.length >= 2;
   return '<div class="hints ' + (needScroll ? 'scroll' : '') + '"><div class="hint-list">' + pills + (needScroll ? pills : '') + '</div></div>';
 }
 
@@ -816,7 +816,8 @@ function renderLeaderboard() {
     const termCategories = terms.map(t => '<div class="ip-term-row">' + catDotHtml(t.category) + escHtml(t.category || '—') + '</div>').join('');
     let subHtml = '';
     if (d._unmatched) {
-      subHtml = '<div class="kw-unmatched">未识别 · 切词未命中词库</div>';
+      // 小红书话题词本身是完整词，无需标注未切词/未命中
+      subHtml = '';
     } else if (d._orig && d._orig !== main) {
       // 关键词 == 热搜原词时（如热搜本身就是「第五人格」），不重复渲染副行
       subHtml = '<div class="kw-sub">' + escHtml(d._orig) + '</div>';
