@@ -211,8 +211,6 @@ table.sub{width:100%;border-collapse:collapse;font-size:12px;border:1px solid #e
     </div>
   </div>
 
-  <div class="kpis" id="kpis"></div>
-
   <div class="card chartcard">
     <div class="head">
       <div>
@@ -224,24 +222,11 @@ table.sub{width:100%;border-collapse:collapse;font-size:12px;border:1px solid #e
 
     <div class="filterbar">
       <div>
-        <div class="flabel">状态</div>
-        <div class="dd" id="ddStatus">
-          <button class="ddbtn" data-dd="ddStatus"><span class="val" id="statusVal">全部状态</span><span class="car">⌄</span></button>
-          <div class="ddpanel">
-            <button class="op on" data-fs="all">全部状态<em data-cnt-fs="all"></em></button>
-            <button class="op" data-fs="rising"><i style="background:#ef4444"></i>新兴<em data-cnt-fs="rising"></em></button>
-            <button class="op" data-fs="growing"><i style="background:#f97316"></i>上升<em data-cnt-fs="growing"></em></button>
-            <button class="op" data-fs="stable"><i style="background:#8b5cf6"></i>平稳<em data-cnt-fs="stable"></em></button>
-            <button class="op" data-fs="fading"><i style="background:#0d9488"></i>退潮<em data-cnt-fs="fading"></em></button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="flabel">词类型</div>
+        <div class="flabel">风格分类</div>
         <div class="dd" id="ddCat">
-          <button class="ddbtn" data-dd="ddCat"><span class="val" id="catVal">全部词类型</span><span class="car">⌄</span></button>
+          <button class="ddbtn" data-dd="ddCat"><span class="val" id="catVal">全部风格分类</span><span class="car">⌄</span></button>
           <div class="ddpanel">
-            <button class="op on" data-fc="all">全部词类型<em data-cnt-fc="all"></em></button>
+            <button class="op on" data-fc="all">全部风格分类<em data-cnt-fc="all"></em></button>
           </div>
         </div>
       </div>
@@ -327,12 +312,56 @@ table.sub{width:100%;border-collapse:collapse;font-size:12px;border:1px solid #e
       </div>
     </div>
 
+    <div class="filterbar" style="margin-bottom:10px">
+      <div>
+        <div class="flabel">风格分类</div>
+        <div class="dd" id="ddCat2">
+          <button class="ddbtn" data-dd="ddCat2"><span class="val" id="catVal2">全部风格分类</span><span class="car">⌄</span></button>
+          <div class="ddpanel">
+            <button class="op on" data-fc="all">全部风格分类<em data-cnt-fc2="all"></em></button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flabel">是否新词</div>
+        <div class="dd" id="ddLex2">
+          <button class="ddbtn" data-dd="ddLex2"><span class="val" id="lexVal2">全部</span><span class="car">⌄</span></button>
+          <div class="ddpanel">
+            <button class="op on" data-fl="all">全部<em data-cnt-fl2="all"></em></button>
+            <button class="op" data-fl="std"><i style="background:#3b82f6"></i>标准词<em data-cnt-fl2="std"></em></button>
+            <button class="op" data-fl="non"><i style="background:#ef4444"></i>非标准词<em data-cnt-fl2="non"></em></button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flabel">观测周期</div>
+        <div class="dd" id="ddPeriod2">
+          <button class="ddbtn" data-dd="ddPeriod2" style="min-width:194px"><span class="val" id="periodVal2">选择日期区间</span><span class="car">⌄</span></button>
+          <div class="ddpanel calpanel">
+            <div class="flabel" style="margin:2px 0 0">快捷区间</div>
+            <div class="presets">
+              <button data-days="4">近 4 周</button>
+              <button data-days="8">近 8 周</button>
+              <button data-days="12">近 12 周</button>
+            </div>
+            <div class="calfields">
+              <label>开始日期<input type="date" id="dateFrom2"></label>
+              <label>结束日期<input type="date" id="dateTo2"></label>
+            </div>
+            <button class="calapply" id="applyRange2">应用到排行</button>
+            <div class="calhint">与上方趋势观测共用同一筛选状态。</div>
+          </div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+    </div>
+
     <div class="tblbox">
       <table>
         <thead>
           <tr>
             <th style="width:190px">风格词</th>
-            <th style="width:165px">词类型</th>
+            <th style="width:165px">风格分类</th>
             <th style="width:96px">是否新词</th>
             <th style="width:145px">综合分 <span class="info" title="所选区间末周的各源排名百分位加权分；名次为该周综合分名次">i</span></th>
             <th style="width:104px">趋势系数 <span class="info" title="所选区间后半段综合分均值 ÷ 前半段综合均值">i</span></th>
@@ -428,7 +457,7 @@ var SRC_META = {
 
 var st = {
   s: 0, e: WK - 1, topN: 6, sort: "score",
-  fs: "all", fc: "all", fl: "all", q: "",
+  fc: "all", fl: "all", q: "",
   limit: 40, open: null, week: WK - 1,
   watched: {}, touched: {}
 };
@@ -494,59 +523,35 @@ function quantile(arr, q) {
   return a[lo] + (a[hi] - a[lo]) * (pos - lo);
 }
 
-function renderKpis() {
-  var stdN = D.words.filter(isStd).length;
-  var nonN = D.words.length - stdN;
-  var missN = D.words.filter(stationMissing).length;
-  var rising = D.words.filter(function (w) { return w.shape === "rising"; }).length;
-  var growing = D.words.filter(function (w) { return w.shape === "growing"; }).length;
-  var fading = D.words.filter(function (w) { return w.shape === "fading"; }).length;
-  var box = [
-    { k: "涉及风格词", v: D.total, d: "标准词 <b>" + stdN + "</b>（含同义词 " + D.syn + "）· 非标准词 <b>" + nonN + "</b>", c: "#7c3aed", bg: "#f5f3ff" },
-    { k: "站内未覆盖", v: missN, d: "数据源覆盖信号，不重复计入词库身份", c: "#c2410c", bg: "#fff7ed" },
-    { k: "新兴 + 上升", v: rising + growing, d: "新兴 <b>" + rising + "</b> · 上升 <b>" + growing + "</b>", c: "#dc2626", bg: "#fef2f2" },
-    { k: "退潮", v: fading, d: "站内仍有量，社媒热度回落", c: "#0f766e", bg: "#ecfdf5" }
-  ];
-  document.getElementById("kpis").innerHTML = box.map(function (o) {
-    return '<div class="kpi" style="background:' + o.bg + '">'
-      + '<div class="k" style="color:' + o.c + '">' + o.k + '</div>'
-      + '<div class="v" style="color:' + o.c + '">' + o.v + '</div>'
-      + '<div class="d">' + o.d + '</div></div>';
-  }).join("");
-}
-
 function initFilters() {
-  var fsCount = {
-    all: D.words.length,
-    rising: D.words.filter(function (w) { return w.shape === "rising"; }).length,
-    growing: D.words.filter(function (w) { return w.shape === "growing"; }).length,
-    stable: D.words.filter(function (w) { return w.shape === "stable"; }).length,
-    fading: D.words.filter(function (w) { return w.shape === "fading"; }).length
-  };
-  Object.keys(fsCount).forEach(function (k) {
-    document.querySelectorAll('[data-cnt-fs="' + k + '"]').forEach(function (x) { x.textContent = fsCount[k]; });
-  });
-
   var catCount = {};
   D.words.forEach(function (w) { var k = catKey(w.c); catCount[k] = (catCount[k] || 0) + 1; });
-  var catPanel = document.querySelector("#ddCat .ddpanel");
-  catPanel.innerHTML = '<button class="op on" data-fc="all">全部词类型<em data-cnt-fc="all">' + D.words.length + '</em></button>'
+  var catOptions = '<button class="op on" data-fc="all">全部风格分类<em data-cnt-fc="all">' + D.words.length + '</em></button>'
     + CATS.map(function (c) {
       var k = catKey(c.v);
       var cnt = catCount[k] || 0;
       return '<button class="op" data-fc="' + k + '"><i style="background:' + c.c + '"></i>'
         + c.n + '<em data-cnt-fc="' + k + '">' + cnt + '</em></button>';
     }).join("");
+  document.querySelector("#ddCat .ddpanel").innerHTML = catOptions;
+  document.querySelector("#ddCat2 .ddpanel").innerHTML = catOptions.replace(/data-cnt-fc=/g, "data-cnt-fc2=");
 
   var stdN = D.words.filter(isStd).length;
   document.querySelector('[data-cnt-fl="all"]').textContent = D.words.length;
   document.querySelector('[data-cnt-fl="std"]').textContent = stdN;
   document.querySelector('[data-cnt-fl="non"]').textContent = D.words.length - stdN;
+  document.querySelector('[data-cnt-fl2="all"]').textContent = D.words.length;
+  document.querySelector('[data-cnt-fl2="std"]').textContent = stdN;
+  document.querySelector('[data-cnt-fl2="non"]').textContent = D.words.length - stdN;
 
   document.getElementById("dateFrom").min = DATES_ISO[0];
   document.getElementById("dateFrom").max = DATES_ISO[WK - 1];
   document.getElementById("dateTo").min = DATES_ISO[0];
   document.getElementById("dateTo").max = DATES_ISO[WK - 1];
+  document.getElementById("dateFrom2").min = DATES_ISO[0];
+  document.getElementById("dateFrom2").max = DATES_ISO[WK - 1];
+  document.getElementById("dateTo2").min = DATES_ISO[0];
+  document.getElementById("dateTo2").max = DATES_ISO[WK - 1];
   document.getElementById("dataRange").textContent = DATES_ISO[0] + " 至 " + DATES_ISO[WK - 1];
   syncRangeUi();
 }
@@ -554,7 +559,24 @@ function initFilters() {
 function syncRangeUi() {
   document.getElementById("dateFrom").value = DATES_ISO[st.s];
   document.getElementById("dateTo").value = DATES_ISO[st.e];
+  document.getElementById("dateFrom2").value = DATES_ISO[st.s];
+  document.getElementById("dateTo2").value = DATES_ISO[st.e];
   document.getElementById("periodVal").textContent = rangeLabel() + " · " + rangeN() + " 周";
+  document.getElementById("periodVal2").textContent = rangeLabel() + " · " + rangeN() + " 周";
+}
+
+function syncFilterUi() {
+  var catText = st.fc === "all" ? "全部风格分类" : catLabel(st.fc === "__none__" ? "" : st.fc);
+  document.getElementById("catVal").textContent = catText;
+  document.getElementById("catVal2").textContent = catText;
+  markSelected("ddCat", "data-fc", st.fc);
+  markSelected("ddCat2", "data-fc", st.fc);
+  var lexText = st.fl === "all" ? "全部" : LEX_META[st.fl].n;
+  document.getElementById("lexVal").textContent = lexText;
+  document.getElementById("lexVal2").textContent = lexText;
+  markSelected("ddLex", "data-fl", st.fl);
+  markSelected("ddLex2", "data-fl", st.fl);
+  syncRangeUi();
 }
 
 function nearestIndex(iso) {
@@ -607,7 +629,6 @@ function wordByName(name) {
 }
 
 function passesBase(w) {
-  if (st.fs !== "all" && w.shape !== st.fs) return false;
   if (st.fc !== "all") {
     if (st.fc === "__none__" && w.c) return false;
     if (st.fc !== "__none__" && w.c !== st.fc) return false;
@@ -1059,6 +1080,20 @@ function drawLife(w) {
   });
 }
 
+function subHeatAgg(w) {
+  var map = {};
+  (w.sub || []).forEach(function (x) {
+    if (x.w === w.w) return;
+    if (!map[x.w]) map[x.w] = { w: x.w, h: 0, n: 0, srcs: {} };
+    map[x.w].h += x.h;
+    map[x.w].n += x.n;
+    map[x.w].srcs[x.src] = true;
+  });
+  return Object.keys(map).map(function (k) { return map[k]; })
+    .sort(function (a, b) { return b.h - a.h; })
+    .slice(0, 12);
+}
+
 function renderDetail(w) {
   refreshRank();
   var tg = signalTag(w), lm = LEX_META[lexOf(w)], coef = coefOf(w);
@@ -1081,15 +1116,35 @@ function renderDetail(w) {
     + '<div class="weekpanel" id="weekPanel"></div>';
   html += '</div><div>';
 
-  html += '<div class="box"><div class="bt">风格阐释<span class="mini">待接入</span></div>'
-    + '<div class="sk"><i style="width:96%"></i><i style="width:87%"></i><i style="width:58%"></i></div>'
-    + '<div class="hint">接入标准词库释义 / 蝶讯词条后自动填充，支持人工编辑与专家补充。</div></div>';
+  if (lexOf(w) === "non") {
+    html += '<div class="box"><div class="bt">风格阐释<span class="mini">待接入</span></div>'
+      + '<div class="sk"><i style="width:96%"></i><i style="width:87%"></i><i style="width:58%"></i></div>'
+      + '<div class="hint">接入标准词库释义 / 蝶讯词条后自动填充，支持人工编辑与专家补充。</div></div>';
 
-  html += '<div class="box"><div class="bt">风格图示<span class="mini">蝶讯图源位</span></div>'
-    + '<div class="imgs"><div class="ph a"><span>🖼</span><em>示例 01</em></div>'
-    + '<div class="ph b"><span>🖼</span><em>示例 02</em></div>'
-    + '<div class="ph c"><span>🖼</span><em>示例 03</em></div></div>'
-    + '<div class="hint">接入图库后展示风格实拍图，点击跳转对应风格详情页。</div></div>';
+    html += '<div class="box"><div class="bt">风格图示<span class="mini">蝶讯图源位</span></div>'
+      + '<div class="imgs"><div class="ph a"><span>🖼</span><em>示例 01</em></div>'
+      + '<div class="ph b"><span>🖼</span><em>示例 02</em></div>'
+      + '<div class="ph c"><span>🖼</span><em>示例 03</em></div></div>'
+      + '<div class="hint">接入图库后展示风格实拍图，点击跳转对应风格详情页。</div></div>';
+  }
+
+  var subs = subHeatAgg(w);
+  html += '<div class="box"><div class="bt">下位风格热度 <span class="info" title="该风格大词之下，下一颗粒度原词按累计热度排序">i</span></div>';
+  if (!subs.length) {
+    html += '<div class="hint">暂无下位词明细。</div>';
+  } else {
+    html += '<div class="wt" style="max-height:260px;overflow:auto"><table class="sub"><thead><tr>'
+      + '<th style="width:34px">#</th><th>下位原词</th><th style="width:70px">来源</th>'
+      + '<th style="width:86px">累计热度</th><th style="width:60px">频次</th></tr></thead><tbody>';
+    subs.forEach(function (s, i) {
+      var srcs = Object.keys(s.srcs).join("、");
+      html += '<tr><td>' + (i + 1) + '</td><td class="h">' + escapeHtml(s.w) + '</td><td>' + escapeHtml(srcs)
+        + '</td><td class="h">' + fmtNum(s.h) + '</td><td>' + fmtQty(s.n) + '</td></tr>';
+    });
+    html += '</tbody></table></div>'
+      + '<div class="hint">按累计热度排序，展示该风格大词之下热度显著的下位原词；点击上方曲线圆点可查看当周明细。</div>';
+  }
+  html += '</div>';
 
   html += '<div class="box"><div class="bt">热度构成 <span class="info" title="源内排名百分位，再按方案C加权">i</span></div>';
   [["se", w.se, fmtNum(w.ser) + "句"], ["sm", w.sm, fmtNum(w.smr) + "互动"],
@@ -1147,40 +1202,44 @@ function bindUi() {
     if (!e.target.closest(".dd")) closeDropdowns();
   });
 
-  document.querySelector(".filterbar").addEventListener("click", function (e) {
-    var b = e.target.closest("button");
-    if (!b) return;
-    if (b.hasAttribute("data-fs")) {
-      st.fs = b.getAttribute("data-fs");
-      document.getElementById("statusVal").textContent = b.textContent.replace(/\d+$/, "").trim();
-      markSelected("ddStatus", "data-fs", st.fs);
-      closeDropdowns(); renderAll();
-    } else if (b.hasAttribute("data-fc")) {
-      st.fc = b.getAttribute("data-fc");
-      document.getElementById("catVal").textContent = st.fc === "all" ? "全部词类型" : catLabel(st.fc === "__none__" ? "" : st.fc);
-      markSelected("ddCat", "data-fc", st.fc);
-      closeDropdowns(); renderAll();
-    } else if (b.hasAttribute("data-fl")) {
-      st.fl = b.getAttribute("data-fl");
-      document.getElementById("lexVal").textContent = st.fl === "all" ? "全部" : LEX_META[st.fl].n;
-      markSelected("ddLex", "data-fl", st.fl);
-      closeDropdowns(); renderAll();
-    } else if (b.hasAttribute("data-n")) {
-      st.topN = +b.getAttribute("data-n");
-      document.getElementById("topVal").textContent = "TOP " + st.topN;
-      markSelected("ddTop", "data-n", st.topN);
-      closeDropdowns(); drawChart();
-    } else if (b.hasAttribute("data-days")) {
-      var d = +b.getAttribute("data-days");
-      closeDropdowns();
-      setRange(WK - d, WK - 1);
-    }
+  document.querySelectorAll(".filterbar").forEach(function (fb) {
+    fb.addEventListener("click", function (e) {
+      var b = e.target.closest("button");
+      if (!b) return;
+      if (b.hasAttribute("data-fc")) {
+        st.fc = b.getAttribute("data-fc");
+        syncFilterUi();
+        closeDropdowns(); renderAll();
+      } else if (b.hasAttribute("data-fl")) {
+        st.fl = b.getAttribute("data-fl");
+        syncFilterUi();
+        closeDropdowns(); renderAll();
+      } else if (b.hasAttribute("data-n")) {
+        st.topN = +b.getAttribute("data-n");
+        document.getElementById("topVal").textContent = "TOP " + st.topN;
+        markSelected("ddTop", "data-n", st.topN);
+        closeDropdowns(); drawChart();
+      } else if (b.hasAttribute("data-days")) {
+        var d = +b.getAttribute("data-days");
+        closeDropdowns();
+        setRange(WK - d, WK - 1);
+      }
+    });
   });
 
   document.getElementById("applyRange").addEventListener("click", function (e) {
     e.stopPropagation();
     var f = document.getElementById("dateFrom").value;
     var t = document.getElementById("dateTo").value;
+    if (!f || !t) return;
+    closeDropdowns();
+    setRange(nearestIndex(f), nearestIndex(t));
+  });
+
+  document.getElementById("applyRange2").addEventListener("click", function (e) {
+    e.stopPropagation();
+    var f = document.getElementById("dateFrom2").value;
+    var t = document.getElementById("dateTo2").value;
     if (!f || !t) return;
     closeDropdowns();
     setRange(nearestIndex(f), nearestIndex(t));
@@ -1254,7 +1313,6 @@ function bindUi() {
   });
 }
 
-renderKpis();
 initFilters();
 bindUi();
 drawChart();
