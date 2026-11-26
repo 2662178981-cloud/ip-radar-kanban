@@ -1,60 +1,111 @@
 {
   "version": "4.6",
-  "generatedAt": "2026-11-26T09:15:27+08:00",
+  "generatedAt": "2026-11-26T13:35:39+08:00",
   "dateRange": {
     "start": "2026-11-13",
     "end": "2026-11-19"
   },
   "summary": {
-    "total": 41,
-    "ipCount": 41,
-    "newValues": 25,
-    "oldValues": 16,
+    "total": 34,
+    "ipCount": 34,
+    "newValues": 23,
+    "oldValues": 11,
     "reviewNeeded": 0,
     "boards": [
       {
         "code": "xiaohongshu",
         "title": "小红书",
-        "count": 18
+        "count": 13
       },
       {
         "code": "weibo",
         "title": "微博",
-        "count": 22
+        "count": 21
       },
       {
         "code": "douyin",
         "title": "抖音",
-        "count": 21
+        "count": 20
       }
     ],
-    "generatedAt": "2026-11-26T09:15:27+08:00"
+    "generatedAt": "2026-11-26T13:35:39+08:00"
   },
   "ipBoard": {
     "title": "IP 榜单",
     "subtitle": "微博 · 抖音 · 小红书 热度排行（含7日趋势）",
-    "total": 41,
+    "total": 34,
     "items": [
       {
-        "keyword": "草莓桶蛋糕",
-        "display_keyword": "草莓桶蛋糕",
-        "display_original": "挖着吃的草莓桶蛋糕更好吃",
-        "matched_value": "",
-        "ip_status": "新value",
+        "keyword": "曼联",
+        "display_keyword": "曼联",
+        "display_original": "曼联客场2:2战平葡萄牙体育",
+        "matched_value": "曼联",
+        "ip_status": "匹配成功",
         "ip_terms": [
           {
-            "word": "草莓桶蛋糕",
+            "word": "曼联",
+            "status": "匹配成功",
+            "category": "体育",
+            "addedDate": ""
+          },
+          {
+            "word": "葡萄牙体育",
             "status": "新value",
-            "category": "品牌联名",
+            "category": "体育",
             "addedDate": ""
           }
         ],
-        "ipCategory": "品牌联名",
-        "hot_value": 10998000,
-        "hot_score": 10998000,
-        "norm_score": 70.41314,
+        "ipCategory": "体育",
+        "hot_value": 9145000,
+        "hot_score": 9145000,
+        "norm_score": 69.61184,
         "hints": [
-          "草莓桶蛋糕联名"
+          "曼联同款",
+          "曼联同款穿搭"
+        ],
+        "platform": "douyin,weibo",
+        "platforms": [
+          "douyin",
+          "weibo"
+        ],
+        "source_originals": [
+          {
+            "text": "曼联客场2:2战平葡萄牙体育",
+            "heat": 9145000,
+            "platform": "douyin"
+          },
+          {
+            "text": "B费回应曼联2比2葡体",
+            "heat": 120000,
+            "platform": "weibo"
+          }
+        ],
+        "daily_trend": [],
+        "ip_rank": 1,
+        "rank": 1,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "巴萨",
+        "display_keyword": "巴萨",
+        "display_original": "欧冠巴萨4:1萨巴赫",
+        "matched_value": "巴萨",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "巴萨",
+            "status": "匹配成功",
+            "category": "体育",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "体育",
+        "hot_value": 9072000,
+        "hot_score": 9072000,
+        "norm_score": 69.57703,
+        "hints": [
+          "巴萨同款",
+          "巴萨同款穿搭"
         ],
         "platform": "douyin",
         "platforms": [
@@ -62,14 +113,73 @@
         ],
         "source_originals": [
           {
-            "text": "挖着吃的草莓桶蛋糕更好吃",
-            "heat": 10998000,
+            "text": "欧冠巴萨4:1萨巴赫",
+            "heat": 9072000,
             "platform": "douyin"
           }
         ],
         "daily_trend": [],
-        "ip_rank": 1,
-        "rank": 1,
+        "ip_rank": 2,
+        "rank": 2,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "蔡磊",
+        "display_keyword": "蔡磊",
+        "display_original": "蔡磊已进入渐冻症终末期",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "蔡磊",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 8008000,
+        "hot_score": 8008000,
+        "norm_score": 69.03524,
+        "hints": [
+          "蔡磊同款",
+          "蔡磊同款穿搭"
+        ],
+        "platform": "douyin,weibo",
+        "platforms": [
+          "douyin",
+          "weibo"
+        ],
+        "source_originals": [
+          {
+            "text": "蔡磊已进入渐冻症终末期",
+            "heat": 8008000,
+            "platform": "douyin"
+          },
+          {
+            "text": "蔡磊已进渐冻症终末期",
+            "heat": 2950000,
+            "platform": "weibo"
+          },
+          {
+            "text": "妻子与蔡磊见面全程没说话",
+            "heat": 760000,
+            "platform": "weibo"
+          },
+          {
+            "text": "蔡磊",
+            "heat": 270000,
+            "platform": "weibo"
+          },
+          {
+            "text": "蔡磊语言功能已彻底丧失",
+            "heat": 120000,
+            "platform": "weibo"
+          }
+        ],
+        "daily_trend": [],
+        "ip_rank": 3,
+        "rank": 3,
         "trend_tag": ""
       },
       {
@@ -87,9 +197,9 @@
           }
         ],
         "ipCategory": "品牌联名",
-        "hot_value": 9042000,
-        "hot_score": 9042000,
-        "norm_score": 69.56265,
+        "hot_value": 7917000,
+        "hot_score": 7917000,
+        "norm_score": 68.98561,
         "hints": [
           "华为Mate X8联名"
         ],
@@ -100,88 +210,7 @@
         "source_originals": [
           {
             "text": "实测华为Mate X8折痕表现",
-            "heat": 9042000,
-            "platform": "douyin"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 2,
-        "rank": 2,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "火影忍者",
-        "display_keyword": "火影忍者",
-        "display_original": "火影玩家的神临时刻",
-        "matched_value": "火影忍者",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "火影忍者",
-            "status": "匹配成功",
-            "category": "卡通动漫",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "卡通动漫",
-        "hot_value": 8666000,
-        "hot_score": 8666000,
-        "norm_score": 69.37819,
-        "hints": [
-          "火影忍者手办",
-          "火影忍者联名款"
-        ],
-        "platform": "douyin",
-        "platforms": [
-          "douyin"
-        ],
-        "source_originals": [
-          {
-            "text": "火影玩家的神临时刻",
-            "heat": 8666000,
-            "platform": "douyin"
-          },
-          {
-            "text": "火影侠隐兜招生办发力",
-            "heat": 7732000,
-            "platform": "douyin"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 3,
-        "rank": 3,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "此刻的生活",
-        "display_keyword": "此刻的生活",
-        "display_original": "此刻的生活全瓜版预告",
-        "matched_value": "",
-        "ip_status": "新value",
-        "ip_terms": [
-          {
-            "word": "此刻的生活",
-            "status": "新value",
-            "category": "影视综艺",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "影视综艺",
-        "hot_value": 8574000,
-        "hot_score": 8574000,
-        "norm_score": 69.33184,
-        "hints": [
-          "此刻的生活同款",
-          "此刻的生活周边"
-        ],
-        "platform": "douyin",
-        "platforms": [
-          "douyin"
-        ],
-        "source_originals": [
-          {
-            "text": "此刻的生活全瓜版预告",
-            "heat": 8574000,
+            "heat": 7917000,
             "platform": "douyin"
           }
         ],
@@ -191,9 +220,81 @@
         "trend_tag": ""
       },
       {
+        "keyword": "脆皮捏捏",
+        "display_keyword": "脆皮捏捏",
+        "display_original": "可以吃的脆皮捏捏怎么做",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "脆皮捏捏",
+            "status": "新value",
+            "category": "品牌联名",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "品牌联名",
+        "hot_value": 7841000,
+        "hot_score": 7841000,
+        "norm_score": 68.94372,
+        "hints": [
+          "脆皮捏捏联名"
+        ],
+        "platform": "douyin,xiaohongshu",
+        "platforms": [
+          "douyin",
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "可以吃的脆皮捏捏怎么做",
+            "heat": 7841000,
+            "platform": "douyin"
+          },
+          {
+            "text": "脆皮捏捏",
+            "heat": 386811,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "daily_trend": [
+          {
+            "date": "2026-11-13",
+            "heat": 70032
+          },
+          {
+            "date": "2026-11-14",
+            "heat": 37499
+          },
+          {
+            "date": "2026-11-15",
+            "heat": 123511
+          },
+          {
+            "date": "2026-11-16",
+            "heat": 0
+          },
+          {
+            "date": "2026-11-17",
+            "heat": 155769
+          },
+          {
+            "date": "2026-11-18",
+            "heat": 0
+          },
+          {
+            "date": "2026-11-19",
+            "heat": 0
+          }
+        ],
+        "ip_rank": 5,
+        "rank": 5,
+        "trend_tag": "稳定"
+      },
+      {
         "keyword": "两京十五日",
         "display_keyword": "两京十五日",
-        "display_original": "如何评价两京十五日",
+        "display_original": "两京十五日回京路线图",
         "matched_value": "",
         "ip_status": "新value",
         "ip_terms": [
@@ -205,9 +306,9 @@
           }
         ],
         "ipCategory": "影视综艺",
-        "hot_value": 8299000,
-        "hot_score": 8299000,
-        "norm_score": 69.19026,
+        "hot_value": 7746000,
+        "hot_score": 7746000,
+        "norm_score": 68.89078,
         "hints": [
           "两京十五日同款",
           "两京十五日周边"
@@ -219,8 +320,8 @@
         ],
         "source_originals": [
           {
-            "text": "如何评价两京十五日",
-            "heat": 8299000,
+            "text": "两京十五日回京路线图",
+            "heat": 7746000,
             "platform": "douyin"
           },
           {
@@ -230,84 +331,8 @@
           }
         ],
         "daily_trend": [],
-        "ip_rank": 5,
-        "rank": 5,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "巴萨",
-        "display_keyword": "巴萨",
-        "display_original": "欧冠萨巴赫vs巴萨",
-        "matched_value": "巴萨",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "巴萨",
-            "status": "匹配成功",
-            "category": "体育",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "体育",
-        "hot_value": 7998000,
-        "hot_score": 7998000,
-        "norm_score": 69.02981,
-        "hints": [
-          "巴萨同款",
-          "巴萨同款穿搭"
-        ],
-        "platform": "douyin",
-        "platforms": [
-          "douyin"
-        ],
-        "source_originals": [
-          {
-            "text": "欧冠萨巴赫vs巴萨",
-            "heat": 7998000,
-            "platform": "douyin"
-          }
-        ],
-        "daily_trend": [],
         "ip_rank": 6,
         "rank": 6,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "石川佳纯",
-        "display_keyword": "石川佳纯",
-        "display_original": "石川佳纯官宣结婚",
-        "matched_value": "",
-        "ip_status": "新value",
-        "ip_terms": [
-          {
-            "word": "石川佳纯",
-            "status": "新value",
-            "category": "体育",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "体育",
-        "hot_value": 7795000,
-        "hot_score": 7795000,
-        "norm_score": 68.91816,
-        "hints": [
-          "石川佳纯同款",
-          "石川佳纯同款穿搭"
-        ],
-        "platform": "douyin",
-        "platforms": [
-          "douyin"
-        ],
-        "source_originals": [
-          {
-            "text": "石川佳纯官宣结婚",
-            "heat": 7795000,
-            "platform": "douyin"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 7,
-        "rank": 7,
         "trend_tag": ""
       },
       {
@@ -325,9 +350,9 @@
           }
         ],
         "ipCategory": "游戏电竞",
-        "hot_value": 7787000,
-        "hot_score": 7787000,
-        "norm_score": 68.9137,
+        "hot_value": 7746000,
+        "hot_score": 7746000,
+        "norm_score": 68.89078,
         "hints": [
           "狩联名周边"
         ],
@@ -338,13 +363,13 @@
         "source_originals": [
           {
             "text": "魔方动作新游狩实机首曝",
-            "heat": 7787000,
+            "heat": 7746000,
             "platform": "douyin"
           }
         ],
         "daily_trend": [],
-        "ip_rank": 8,
-        "rank": 8,
+        "ip_rank": 7,
+        "rank": 7,
         "trend_tag": ""
       },
       {
@@ -362,9 +387,9 @@
           }
         ],
         "ipCategory": "游戏电竞",
-        "hot_value": 7768000,
-        "hot_score": 7768000,
-        "norm_score": 68.90309,
+        "hot_value": 7733000,
+        "hot_score": 7733000,
+        "norm_score": 68.88348,
         "hints": [
           "coke联名周边"
         ],
@@ -375,7 +400,45 @@
         "source_originals": [
           {
             "text": "coke神临时刻挑战",
-            "heat": 7768000,
+            "heat": 7733000,
+            "platform": "douyin"
+          }
+        ],
+        "daily_trend": [],
+        "ip_rank": 8,
+        "rank": 8,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "穆祉丞",
+        "display_keyword": "穆祉丞",
+        "display_original": "穆祉丞拳击转场太帅了",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "穆祉丞",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 7725000,
+        "hot_score": 7725000,
+        "norm_score": 68.87899,
+        "hints": [
+          "穆祉丞同款",
+          "穆祉丞同款穿搭"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "穆祉丞拳击转场太帅了",
+            "heat": 7725000,
             "platform": "douyin"
           }
         ],
@@ -399,9 +462,9 @@
           }
         ],
         "ipCategory": "明星/人物",
-        "hot_value": 7747000,
-        "hot_score": 7747000,
-        "norm_score": 68.89134,
+        "hot_value": 7705000,
+        "hot_score": 7705000,
+        "norm_score": 68.86773,
         "hints": [
           "蒋欣同款",
           "蒋欣同款穿搭"
@@ -414,7 +477,7 @@
         "source_originals": [
           {
             "text": "蒋欣赛家最适合红色之人",
-            "heat": 7747000,
+            "heat": 7705000,
             "platform": "douyin"
           },
           {
@@ -458,118 +521,6 @@
         "trend_tag": "下降"
       },
       {
-        "keyword": "吴彦祖",
-        "display_keyword": "吴彦祖",
-        "display_original": "在比奇堡街区被吴彦祖选中合照",
-        "matched_value": "吴彦祖",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "吴彦祖",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "明星/人物",
-        "hot_value": 7746000,
-        "hot_score": 7746000,
-        "norm_score": 68.89078,
-        "hints": [
-          "吴彦祖同款",
-          "吴彦祖同款穿搭"
-        ],
-        "platform": "douyin",
-        "platforms": [
-          "douyin"
-        ],
-        "source_originals": [
-          {
-            "text": "在比奇堡街区被吴彦祖选中合照",
-            "heat": 7746000,
-            "platform": "douyin"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 11,
-        "rank": 11,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "三角洲",
-        "display_keyword": "三角洲",
-        "display_original": "深度解析三角洲经济系统",
-        "matched_value": "",
-        "ip_status": "新value",
-        "ip_terms": [
-          {
-            "word": "三角洲",
-            "status": "新value",
-            "category": "游戏电竞",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "游戏电竞",
-        "hot_value": 7742000,
-        "hot_score": 7742000,
-        "norm_score": 68.88853,
-        "hints": [
-          "三角洲联名周边"
-        ],
-        "platform": "douyin",
-        "platforms": [
-          "douyin"
-        ],
-        "source_originals": [
-          {
-            "text": "深度解析三角洲经济系统",
-            "heat": 7742000,
-            "platform": "douyin"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 12,
-        "rank": 12,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "饥困荒野",
-        "display_keyword": "饥困荒野",
-        "display_original": "饥困荒野保姆级攻略",
-        "matched_value": "",
-        "ip_status": "新value",
-        "ip_terms": [
-          {
-            "word": "饥困荒野",
-            "status": "新value",
-            "category": "游戏电竞",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "游戏电竞",
-        "hot_value": 7735000,
-        "hot_score": 7735000,
-        "norm_score": 68.8846,
-        "hints": [
-          "饥困荒野联名周边"
-        ],
-        "platform": "douyin",
-        "platforms": [
-          "douyin"
-        ],
-        "source_originals": [
-          {
-            "text": "饥困荒野保姆级攻略",
-            "heat": 7735000,
-            "platform": "douyin"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 13,
-        "rank": 13,
-        "trend_tag": ""
-      },
-      {
         "keyword": "有罪之人",
         "display_keyword": "有罪之人",
         "display_original": "我的有罪之人大结局来了",
@@ -584,9 +535,9 @@
           }
         ],
         "ipCategory": "影视综艺",
-        "hot_value": 7732000,
-        "hot_score": 7732000,
-        "norm_score": 68.88292,
+        "hot_value": 7692000,
+        "hot_score": 7692000,
+        "norm_score": 68.86039,
         "hints": [
           "有罪之人同款",
           "有罪之人周边"
@@ -598,19 +549,19 @@
         "source_originals": [
           {
             "text": "我的有罪之人大结局来了",
-            "heat": 7732000,
+            "heat": 7692000,
             "platform": "douyin"
           }
         ],
         "daily_trend": [],
-        "ip_rank": 14,
-        "rank": 14,
+        "ip_rank": 11,
+        "rank": 11,
         "trend_tag": ""
       },
       {
         "keyword": "青稚",
         "display_keyword": "青稚",
-        "display_original": "白小纯收藏了青稚手势舞歌曲",
+        "display_original": "和青稚一起开启羽绒服冬天",
         "matched_value": "",
         "ip_status": "新value",
         "ip_terms": [
@@ -622,9 +573,9 @@
           }
         ],
         "ipCategory": "明星/人物",
-        "hot_value": 7714000,
-        "hot_score": 7714000,
-        "norm_score": 68.8728,
+        "hot_value": 7690000,
+        "hot_score": 7690000,
+        "norm_score": 68.85926,
         "hints": [
           "青稚同款",
           "青稚同款穿搭"
@@ -636,8 +587,8 @@
         ],
         "source_originals": [
           {
-            "text": "白小纯收藏了青稚手势舞歌曲",
-            "heat": 7714000,
+            "text": "和青稚一起开启羽绒服冬天",
+            "heat": 7690000,
             "platform": "douyin"
           },
           {
@@ -676,93 +627,84 @@
             "heat": 0
           }
         ],
-        "ip_rank": 15,
-        "rank": 15,
+        "ip_rank": 12,
+        "rank": 12,
         "trend_tag": "下降"
       },
       {
-        "keyword": "白小纯",
-        "display_keyword": "白小纯",
-        "display_original": "白小纯收藏了青稚手势舞歌曲",
+        "keyword": "佛怒火莲",
+        "display_keyword": "佛怒火莲",
+        "display_original": "去吧佛怒火莲",
         "matched_value": "",
         "ip_status": "新value",
         "ip_terms": [
           {
-            "word": "白小纯",
+            "word": "佛怒火莲",
             "status": "新value",
-            "category": "明星/人物",
+            "category": "影视综艺",
             "addedDate": ""
           }
         ],
-        "ipCategory": "明星/人物",
-        "hot_value": 7714000,
-        "hot_score": 7714000,
-        "norm_score": 68.8728,
+        "ipCategory": "影视综艺",
+        "hot_value": 7672000,
+        "hot_score": 7672000,
+        "norm_score": 68.84909,
         "hints": [
-          "白小纯同款",
-          "白小纯同款穿搭"
+          "佛怒火莲同款",
+          "佛怒火莲周边"
         ],
-        "platform": "douyin,weibo,xiaohongshu",
+        "platform": "douyin",
         "platforms": [
-          "douyin",
-          "weibo",
-          "xiaohongshu"
+          "douyin"
         ],
         "source_originals": [
           {
-            "text": "白小纯收藏了青稚手势舞歌曲",
-            "heat": 7714000,
+            "text": "去吧佛怒火莲",
+            "heat": 7672000,
             "platform": "douyin"
-          },
-          {
-            "text": "白小纯",
-            "heat": 1428329,
-            "platform": "xiaohongshu"
-          },
-          {
-            "text": "曝爽全直播说白小纯想回天霸",
-            "heat": 290000,
-            "platform": "weibo"
-          },
-          {
-            "text": "白小纯 天霸",
-            "heat": 280000,
-            "platform": "weibo"
           }
         ],
-        "daily_trend": [
+        "daily_trend": [],
+        "ip_rank": 13,
+        "rank": 13,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "草莓桶蛋糕",
+        "display_keyword": "草莓桶蛋糕",
+        "display_original": "挖着吃的草莓桶蛋糕更好吃",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
           {
-            "date": "2026-11-13",
-            "heat": 852835
-          },
-          {
-            "date": "2026-11-14",
-            "heat": 133623
-          },
-          {
-            "date": "2026-11-15",
-            "heat": 221519
-          },
-          {
-            "date": "2026-11-16",
-            "heat": 112852
-          },
-          {
-            "date": "2026-11-17",
-            "heat": 107500
-          },
-          {
-            "date": "2026-11-18",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-19",
-            "heat": 0
+            "word": "草莓桶蛋糕",
+            "status": "新value",
+            "category": "品牌联名",
+            "addedDate": ""
           }
         ],
-        "ip_rank": 16,
-        "rank": 16,
-        "trend_tag": "下降"
+        "ipCategory": "品牌联名",
+        "hot_value": 7672000,
+        "hot_score": 7672000,
+        "norm_score": 68.84909,
+        "hints": [
+          "草莓桶蛋糕联名"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "挖着吃的草莓桶蛋糕更好吃",
+            "heat": 7672000,
+            "platform": "douyin"
+          }
+        ],
+        "daily_trend": [],
+        "ip_rank": 14,
+        "rank": 14,
+        "trend_tag": ""
       },
       {
         "keyword": "IVE",
@@ -779,9 +721,9 @@
           }
         ],
         "ipCategory": "明星/人物",
-        "hot_value": 7710000,
-        "hot_score": 7710000,
-        "norm_score": 68.87054,
+        "hot_value": 7670000,
+        "hot_score": 7670000,
+        "norm_score": 68.84795,
         "hints": [
           "IVE同款",
           "IVE同款穿搭"
@@ -794,7 +736,7 @@
         "source_originals": [
           {
             "text": "IVE开麦舞台太有含金量",
-            "heat": 7710000,
+            "heat": 7670000,
             "platform": "douyin"
           },
           {
@@ -833,31 +775,31 @@
             "heat": 0
           }
         ],
-        "ip_rank": 17,
-        "rank": 17,
+        "ip_rank": 15,
+        "rank": 15,
         "trend_tag": "爆发"
       },
       {
-        "keyword": "Tim",
-        "display_keyword": "Tim",
-        "display_original": "帮Tim选最适合的镜框",
-        "matched_value": "",
-        "ip_status": "新value",
+        "keyword": "火影忍者",
+        "display_keyword": "火影忍者",
+        "display_original": "火影侠隐兜招生办发力",
+        "matched_value": "火影忍者",
+        "ip_status": "匹配成功",
         "ip_terms": [
           {
-            "word": "Tim",
-            "status": "新value",
-            "category": "明星/人物",
+            "word": "火影忍者",
+            "status": "匹配成功",
+            "category": "卡通动漫",
             "addedDate": ""
           }
         ],
-        "ipCategory": "明星/人物",
-        "hot_value": 7698000,
-        "hot_score": 7698000,
-        "norm_score": 68.86378,
+        "ipCategory": "卡通动漫",
+        "hot_value": 7654000,
+        "hot_score": 7654000,
+        "norm_score": 68.83889,
         "hints": [
-          "Tim同款",
-          "Tim同款穿搭"
+          "火影忍者手办",
+          "火影忍者联名款"
         ],
         "platform": "douyin",
         "platforms": [
@@ -865,36 +807,75 @@
         ],
         "source_originals": [
           {
-            "text": "帮Tim选最适合的镜框",
-            "heat": 7698000,
+            "text": "火影侠隐兜招生办发力",
+            "heat": 7654000,
             "platform": "douyin"
           }
         ],
         "daily_trend": [],
-        "ip_rank": 18,
-        "rank": 18,
+        "ip_rank": 16,
+        "rank": 16,
         "trend_tag": ""
       },
       {
-        "keyword": "脆皮捏捏",
-        "display_keyword": "脆皮捏捏",
-        "display_original": "可以吃的脆皮捏捏怎么做",
+        "keyword": "面剂子",
+        "display_keyword": "面剂子",
+        "display_original": "面剂子一家都太有节目了",
         "matched_value": "",
         "ip_status": "新value",
         "ip_terms": [
           {
-            "word": "脆皮捏捏",
+            "word": "面剂子",
             "status": "新value",
-            "category": "品牌联名",
+            "category": "明星/人物",
             "addedDate": ""
           }
         ],
-        "ipCategory": "品牌联名",
-        "hot_value": 7689000,
-        "hot_score": 7689000,
-        "norm_score": 68.8587,
+        "ipCategory": "明星/人物",
+        "hot_value": 7653000,
+        "hot_score": 7653000,
+        "norm_score": 68.83832,
         "hints": [
-          "脆皮捏捏联名"
+          "面剂子同款",
+          "面剂子同款穿搭"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "面剂子一家都太有节目了",
+            "heat": 7653000,
+            "platform": "douyin"
+          }
+        ],
+        "daily_trend": [],
+        "ip_rank": 17,
+        "rank": 17,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "赵露思",
+        "display_keyword": "赵露思",
+        "display_original": "赵露思与小黄豆合影",
+        "matched_value": "赵露思",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "赵露思",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 7648000,
+        "hot_score": 7648000,
+        "norm_score": 68.83548,
+        "hints": [
+          "赵露思同款",
+          "赵露思同款穿搭"
         ],
         "platform": "douyin,xiaohongshu",
         "platforms": [
@@ -903,36 +884,36 @@
         ],
         "source_originals": [
           {
-            "text": "可以吃的脆皮捏捏怎么做",
-            "heat": 7689000,
+            "text": "赵露思与小黄豆合影",
+            "heat": 7648000,
             "platform": "douyin"
           },
           {
-            "text": "脆皮捏捏",
-            "heat": 386811,
+            "text": "赵露思",
+            "heat": 98084,
             "platform": "xiaohongshu"
           }
         ],
         "daily_trend": [
           {
             "date": "2026-11-13",
-            "heat": 70032
+            "heat": 44884
           },
           {
             "date": "2026-11-14",
-            "heat": 37499
+            "heat": 26259
           },
           {
             "date": "2026-11-15",
-            "heat": 123511
-          },
-          {
-            "date": "2026-11-16",
             "heat": 0
           },
           {
+            "date": "2026-11-16",
+            "heat": 26941
+          },
+          {
             "date": "2026-11-17",
-            "heat": 155769
+            "heat": 0
           },
           {
             "date": "2026-11-18",
@@ -943,9 +924,9 @@
             "heat": 0
           }
         ],
-        "ip_rank": 19,
-        "rank": 19,
-        "trend_tag": "稳定"
+        "ip_rank": 18,
+        "rank": 18,
+        "trend_tag": "下降"
       },
       {
         "keyword": "珠玉新生",
@@ -962,9 +943,9 @@
           }
         ],
         "ipCategory": "影视综艺",
-        "hot_value": 7682000,
-        "hot_score": 7682000,
-        "norm_score": 68.85474,
+        "hot_value": 7648000,
+        "hot_score": 7648000,
+        "norm_score": 68.83548,
         "hints": [
           "珠玉新生同款",
           "珠玉新生周边"
@@ -976,66 +957,51 @@
         "source_originals": [
           {
             "text": "珠玉新生大赏迎来最强选手",
-            "heat": 7682000,
+            "heat": 7648000,
             "platform": "douyin"
           }
         ],
         "daily_trend": [],
-        "ip_rank": 20,
-        "rank": 20,
+        "ip_rank": 19,
+        "rank": 19,
         "trend_tag": ""
       },
       {
-        "keyword": "蔡磊",
-        "display_keyword": "蔡磊",
-        "display_original": "蔡磊已进渐冻症终末期",
+        "keyword": "Tim",
+        "display_keyword": "Tim",
+        "display_original": "帮Tim选最适合的镜框",
         "matched_value": "",
         "ip_status": "新value",
         "ip_terms": [
           {
-            "word": "蔡磊",
+            "word": "Tim",
             "status": "新value",
             "category": "明星/人物",
             "addedDate": ""
           }
         ],
         "ipCategory": "明星/人物",
-        "hot_value": 2950000,
-        "hot_score": 2950000,
-        "norm_score": 64.69822,
+        "hot_value": 7633000,
+        "hot_score": 7633000,
+        "norm_score": 68.82695,
         "hints": [
-          "蔡磊同款",
-          "蔡磊同款穿搭"
+          "Tim同款",
+          "Tim同款穿搭"
         ],
-        "platform": "weibo",
+        "platform": "douyin",
         "platforms": [
-          "weibo"
+          "douyin"
         ],
         "source_originals": [
           {
-            "text": "蔡磊已进渐冻症终末期",
-            "heat": 2950000,
-            "platform": "weibo"
-          },
-          {
-            "text": "妻子与蔡磊见面全程没说话",
-            "heat": 760000,
-            "platform": "weibo"
-          },
-          {
-            "text": "蔡磊",
-            "heat": 270000,
-            "platform": "weibo"
-          },
-          {
-            "text": "蔡磊语言功能已彻底丧失",
-            "heat": 120000,
-            "platform": "weibo"
+            "text": "帮Tim选最适合的镜框",
+            "heat": 7633000,
+            "platform": "douyin"
           }
         ],
         "daily_trend": [],
-        "ip_rank": 21,
-        "rank": 21,
+        "ip_rank": 20,
+        "rank": 20,
         "trend_tag": ""
       },
       {
@@ -1100,8 +1066,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 22,
-        "rank": 22,
+        "ip_rank": 21,
+        "rank": 21,
         "trend_tag": "下降"
       },
       {
@@ -1166,8 +1132,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 23,
-        "rank": 23,
+        "ip_rank": 22,
+        "rank": 22,
         "trend_tag": "下降"
       },
       {
@@ -1233,8 +1199,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 24,
-        "rank": 24,
+        "ip_rank": 23,
+        "rank": 23,
         "trend_tag": "下降"
       },
       {
@@ -1271,8 +1237,8 @@
           }
         ],
         "daily_trend": [],
-        "ip_rank": 25,
-        "rank": 25,
+        "ip_rank": 24,
+        "rank": 24,
         "trend_tag": ""
       },
       {
@@ -1325,8 +1291,8 @@
           }
         ],
         "daily_trend": [],
-        "ip_rank": 26,
-        "rank": 26,
+        "ip_rank": 25,
+        "rank": 25,
         "trend_tag": ""
       },
       {
@@ -1391,8 +1357,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 27,
-        "rank": 27,
+        "ip_rank": 26,
+        "rank": 26,
         "trend_tag": "下降"
       },
       {
@@ -1428,8 +1394,8 @@
           }
         ],
         "daily_trend": [],
-        "ip_rank": 28,
-        "rank": 28,
+        "ip_rank": 27,
+        "rank": 27,
         "trend_tag": ""
       },
       {
@@ -1465,8 +1431,8 @@
           }
         ],
         "daily_trend": [],
-        "ip_rank": 29,
-        "rank": 29,
+        "ip_rank": 28,
+        "rank": 28,
         "trend_tag": ""
       },
       {
@@ -1537,8 +1503,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 30,
-        "rank": 30,
+        "ip_rank": 29,
+        "rank": 29,
         "trend_tag": "下降"
       },
       {
@@ -1603,8 +1569,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 31,
-        "rank": 31,
+        "ip_rank": 30,
+        "rank": 30,
         "trend_tag": "下降"
       },
       {
@@ -1671,6 +1637,84 @@
           {
             "date": "2026-11-17",
             "heat": 0
+          },
+          {
+            "date": "2026-11-18",
+            "heat": 0
+          },
+          {
+            "date": "2026-11-19",
+            "heat": 0
+          }
+        ],
+        "ip_rank": 31,
+        "rank": 31,
+        "trend_tag": "下降"
+      },
+      {
+        "keyword": "白小纯",
+        "display_keyword": "白小纯",
+        "display_original": "白小纯",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "白小纯",
+            "status": "新value",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 290000,
+        "hot_score": 290000,
+        "norm_score": 54.62399,
+        "hints": [
+          "白小纯同款",
+          "白小纯同款穿搭"
+        ],
+        "platform": "weibo,xiaohongshu",
+        "platforms": [
+          "weibo",
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "白小纯",
+            "heat": 1428329,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "曝爽全直播说白小纯想回天霸",
+            "heat": 290000,
+            "platform": "weibo"
+          },
+          {
+            "text": "白小纯 天霸",
+            "heat": 280000,
+            "platform": "weibo"
+          }
+        ],
+        "daily_trend": [
+          {
+            "date": "2026-11-13",
+            "heat": 852835
+          },
+          {
+            "date": "2026-11-14",
+            "heat": 133623
+          },
+          {
+            "date": "2026-11-15",
+            "heat": 221519
+          },
+          {
+            "date": "2026-11-16",
+            "heat": 112852
+          },
+          {
+            "date": "2026-11-17",
+            "heat": 107500
           },
           {
             "date": "2026-11-18",
@@ -1774,449 +1818,6 @@
         "ip_rank": 34,
         "rank": 34,
         "trend_tag": ""
-      },
-      {
-        "keyword": "文吉儿",
-        "display_keyword": "文吉儿",
-        "display_original": "文吉儿",
-        "matched_value": "",
-        "ip_status": "新value",
-        "ip_terms": [
-          {
-            "word": "文吉儿",
-            "status": "新value",
-            "category": "明星/人物",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "明星/人物",
-        "hot_value": 280000,
-        "hot_score": 280000,
-        "norm_score": 54.4716,
-        "hints": [
-          "文吉儿同款",
-          "文吉儿同款穿搭"
-        ],
-        "platform": "weibo,xiaohongshu",
-        "platforms": [
-          "weibo",
-          "xiaohongshu"
-        ],
-        "source_originals": [
-          {
-            "text": "文吉儿",
-            "heat": 565182,
-            "platform": "xiaohongshu"
-          },
-          {
-            "text": "疑似文吉儿朋友圈辟谣办婚礼",
-            "heat": 280000,
-            "platform": "weibo"
-          }
-        ],
-        "daily_trend": [
-          {
-            "date": "2026-11-13",
-            "heat": 135792
-          },
-          {
-            "date": "2026-11-14",
-            "heat": 75098
-          },
-          {
-            "date": "2026-11-15",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-16",
-            "heat": 129104
-          },
-          {
-            "date": "2026-11-17",
-            "heat": 124585
-          },
-          {
-            "date": "2026-11-18",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-19",
-            "heat": 100603
-          }
-        ],
-        "ip_rank": 35,
-        "rank": 35,
-        "trend_tag": "稳定"
-      },
-      {
-        "keyword": "杨超越",
-        "display_keyword": "杨超越",
-        "display_original": "杨超越",
-        "matched_value": "杨超越",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "杨超越",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "明星/人物",
-        "hot_value": 274092,
-        "hot_score": 274092,
-        "norm_score": 54.37898,
-        "hints": [
-          "杨超越同款",
-          "杨超越同款穿搭"
-        ],
-        "platform": "xiaohongshu",
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "source_originals": [
-          {
-            "text": "杨超越",
-            "heat": 3576878,
-            "platform": "xiaohongshu"
-          }
-        ],
-        "daily_trend": [
-          {
-            "date": "2026-11-13",
-            "heat": 351534
-          },
-          {
-            "date": "2026-11-14",
-            "heat": 422976
-          },
-          {
-            "date": "2026-11-15",
-            "heat": 667039
-          },
-          {
-            "date": "2026-11-16",
-            "heat": 1006981
-          },
-          {
-            "date": "2026-11-17",
-            "heat": 1128348
-          },
-          {
-            "date": "2026-11-18",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-19",
-            "heat": 0
-          }
-        ],
-        "ip_rank": 36,
-        "rank": 36,
-        "trend_tag": "稳定"
-      },
-      {
-        "keyword": "创造101",
-        "display_keyword": "创造101",
-        "display_original": "创造101",
-        "matched_value": "创造101",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "创造101",
-            "status": "匹配成功",
-            "category": "未分类",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "未分类",
-        "hot_value": 274092,
-        "hot_score": 274092,
-        "norm_score": 54.37898,
-        "hints": [
-          "创造101同款"
-        ],
-        "platform": "xiaohongshu",
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "source_originals": [
-          {
-            "text": "创造101",
-            "heat": 368452,
-            "platform": "xiaohongshu"
-          }
-        ],
-        "daily_trend": [
-          {
-            "date": "2026-11-13",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-14",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-15",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-16",
-            "heat": 368452
-          },
-          {
-            "date": "2026-11-17",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-18",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-19",
-            "heat": 0
-          }
-        ],
-        "ip_rank": 37,
-        "rank": 37,
-        "trend_tag": "稳定"
-      },
-      {
-        "keyword": "郭子睿",
-        "display_keyword": "郭子睿",
-        "display_original": "郭子睿回应自己为什么进圈",
-        "matched_value": "郭子睿",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "郭子睿",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "明星/人物",
-        "hot_value": 270000,
-        "hot_score": 270000,
-        "norm_score": 54.31365,
-        "hints": [
-          "郭子睿同款",
-          "郭子睿同款穿搭"
-        ],
-        "platform": "weibo",
-        "platforms": [
-          "weibo"
-        ],
-        "source_originals": [
-          {
-            "text": "郭子睿回应自己为什么进圈",
-            "heat": 270000,
-            "platform": "weibo"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 38,
-        "rank": 38,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "祁煜",
-        "display_keyword": "祁煜",
-        "display_original": "祁煜",
-        "matched_value": "祁煜",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "祁煜",
-            "status": "匹配成功",
-            "category": "游戏电竞",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "游戏电竞",
-        "hot_value": 264693,
-        "hot_score": 264693,
-        "norm_score": 54.22744,
-        "hints": [
-          "祁煜联名周边"
-        ],
-        "platform": "xiaohongshu",
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "source_originals": [
-          {
-            "text": "祁煜",
-            "heat": 264693,
-            "platform": "xiaohongshu"
-          }
-        ],
-        "daily_trend": [
-          {
-            "date": "2026-11-13",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-14",
-            "heat": 264693
-          },
-          {
-            "date": "2026-11-15",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-16",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-17",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-18",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-19",
-            "heat": 0
-          }
-        ],
-        "ip_rank": 39,
-        "rank": 39,
-        "trend_tag": "下降"
-      },
-      {
-        "keyword": "恋与深空",
-        "display_keyword": "恋与深空",
-        "display_original": "恋与深空",
-        "matched_value": "恋与深空",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "恋与深空",
-            "status": "匹配成功",
-            "category": "游戏电竞",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "游戏电竞",
-        "hot_value": 264693,
-        "hot_score": 264693,
-        "norm_score": 54.22744,
-        "hints": [
-          "恋与深空联名周边"
-        ],
-        "platform": "xiaohongshu",
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "source_originals": [
-          {
-            "text": "恋与深空",
-            "heat": 328180,
-            "platform": "xiaohongshu"
-          }
-        ],
-        "daily_trend": [
-          {
-            "date": "2026-11-13",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-14",
-            "heat": 300716
-          },
-          {
-            "date": "2026-11-15",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-16",
-            "heat": 27464
-          },
-          {
-            "date": "2026-11-17",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-18",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-19",
-            "heat": 0
-          }
-        ],
-        "ip_rank": 40,
-        "rank": 40,
-        "trend_tag": "下降"
-      },
-      {
-        "keyword": "沈腾",
-        "display_keyword": "沈腾",
-        "display_original": "沈腾",
-        "matched_value": "沈腾",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "沈腾",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "明星/人物",
-        "hot_value": 256642,
-        "hot_score": 256642,
-        "norm_score": 54.09329,
-        "hints": [
-          "沈腾同款",
-          "沈腾同款穿搭"
-        ],
-        "platform": "xiaohongshu",
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "source_originals": [
-          {
-            "text": "沈腾",
-            "heat": 485278,
-            "platform": "xiaohongshu"
-          }
-        ],
-        "daily_trend": [
-          {
-            "date": "2026-11-13",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-14",
-            "heat": 376820
-          },
-          {
-            "date": "2026-11-15",
-            "heat": 38682
-          },
-          {
-            "date": "2026-11-16",
-            "heat": 32898
-          },
-          {
-            "date": "2026-11-17",
-            "heat": 36878
-          },
-          {
-            "date": "2026-11-18",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-19",
-            "heat": 0
-          }
-        ],
-        "ip_rank": 41,
-        "rank": 41,
-        "trend_tag": "下降"
       }
     ]
   },
@@ -2224,44 +1825,8 @@
     "xiaohongshu": {
       "code": "xiaohongshu",
       "title": "小红书",
-      "count": 18,
+      "count": 13,
       "items": [
-        {
-          "keyword": "杨超越",
-          "hot": 3576878,
-          "platform": "xiaohongshu",
-          "daily_trend": [
-            {
-              "date": "2026-11-13",
-              "heat": 351534
-            },
-            {
-              "date": "2026-11-14",
-              "heat": 422976
-            },
-            {
-              "date": "2026-11-15",
-              "heat": 667039
-            },
-            {
-              "date": "2026-11-16",
-              "heat": 1006981
-            },
-            {
-              "date": "2026-11-17",
-              "heat": 1128348
-            },
-            {
-              "date": "2026-11-18",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-19",
-              "heat": 0
-            }
-          ],
-          "trend_tag": "稳定"
-        },
         {
           "keyword": "白小纯",
           "hot": 1428329,
@@ -2479,78 +2044,6 @@
           "trend_tag": "下降"
         },
         {
-          "keyword": "文吉儿",
-          "hot": 565182,
-          "platform": "xiaohongshu",
-          "daily_trend": [
-            {
-              "date": "2026-11-13",
-              "heat": 135792
-            },
-            {
-              "date": "2026-11-14",
-              "heat": 75098
-            },
-            {
-              "date": "2026-11-15",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-16",
-              "heat": 129104
-            },
-            {
-              "date": "2026-11-17",
-              "heat": 124585
-            },
-            {
-              "date": "2026-11-18",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-19",
-              "heat": 100603
-            }
-          ],
-          "trend_tag": "稳定"
-        },
-        {
-          "keyword": "沈腾",
-          "hot": 485278,
-          "platform": "xiaohongshu",
-          "daily_trend": [
-            {
-              "date": "2026-11-13",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-14",
-              "heat": 376820
-            },
-            {
-              "date": "2026-11-15",
-              "heat": 38682
-            },
-            {
-              "date": "2026-11-16",
-              "heat": 32898
-            },
-            {
-              "date": "2026-11-17",
-              "heat": 36878
-            },
-            {
-              "date": "2026-11-18",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-19",
-              "heat": 0
-            }
-          ],
-          "trend_tag": "下降"
-        },
-        {
           "keyword": "故宫",
           "hot": 425296,
           "platform": "xiaohongshu",
@@ -2623,114 +2116,6 @@
           "trend_tag": "稳定"
         },
         {
-          "keyword": "创造101",
-          "hot": 368452,
-          "platform": "xiaohongshu",
-          "daily_trend": [
-            {
-              "date": "2026-11-13",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-14",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-15",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-16",
-              "heat": 368452
-            },
-            {
-              "date": "2026-11-17",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-18",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-19",
-              "heat": 0
-            }
-          ],
-          "trend_tag": "稳定"
-        },
-        {
-          "keyword": "恋与深空",
-          "hot": 328180,
-          "platform": "xiaohongshu",
-          "daily_trend": [
-            {
-              "date": "2026-11-13",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-14",
-              "heat": 300716
-            },
-            {
-              "date": "2026-11-15",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-16",
-              "heat": 27464
-            },
-            {
-              "date": "2026-11-17",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-18",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-19",
-              "heat": 0
-            }
-          ],
-          "trend_tag": "下降"
-        },
-        {
-          "keyword": "祁煜",
-          "hot": 264693,
-          "platform": "xiaohongshu",
-          "daily_trend": [
-            {
-              "date": "2026-11-13",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-14",
-              "heat": 264693
-            },
-            {
-              "date": "2026-11-15",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-16",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-17",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-18",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-19",
-              "heat": 0
-            }
-          ],
-          "trend_tag": "下降"
-        },
-        {
           "keyword": "IVE",
           "hot": 168486,
           "platform": "xiaohongshu",
@@ -2786,6 +2171,42 @@
             {
               "date": "2026-11-16",
               "heat": 0
+            },
+            {
+              "date": "2026-11-17",
+              "heat": 0
+            },
+            {
+              "date": "2026-11-18",
+              "heat": 0
+            },
+            {
+              "date": "2026-11-19",
+              "heat": 0
+            }
+          ],
+          "trend_tag": "下降"
+        },
+        {
+          "keyword": "赵露思",
+          "hot": 98084,
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-11-13",
+              "heat": 44884
+            },
+            {
+              "date": "2026-11-14",
+              "heat": 26259
+            },
+            {
+              "date": "2026-11-15",
+              "heat": 0
+            },
+            {
+              "date": "2026-11-16",
+              "heat": 26941
             },
             {
               "date": "2026-11-17",
@@ -2879,7 +2300,7 @@
     "weibo": {
       "code": "weibo",
       "title": "微博",
-      "count": 22,
+      "count": 21,
       "items": [
         {
           "keyword": "蔡磊",
@@ -2930,18 +2351,18 @@
           "trend_tag": ""
         },
         {
-          "keyword": "白小纯",
-          "hot": 290000,
-          "platform": "weibo",
-          "trend_tag": ""
-        },
-        {
           "keyword": "肖战",
           "hot": 290000,
           "platform": "weibo",
           "trend_tag": ""
         },
         {
+          "keyword": "白小纯",
+          "hot": 290000,
+          "platform": "weibo",
+          "trend_tag": ""
+        },
+        {
           "keyword": "王玉雯",
           "hot": 290000,
           "platform": "weibo",
@@ -2978,19 +2399,7 @@
           "trend_tag": ""
         },
         {
-          "keyword": "文吉儿",
-          "hot": 280000,
-          "platform": "weibo",
-          "trend_tag": ""
-        },
-        {
           "keyword": "蔡磊",
-          "hot": 270000,
-          "platform": "weibo",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "郭子睿",
           "hot": 270000,
           "platform": "weibo",
           "trend_tag": ""
@@ -3008,6 +2417,12 @@
           "trend_tag": ""
         },
         {
+          "keyword": "曼联",
+          "hot": 120000,
+          "platform": "weibo",
+          "trend_tag": ""
+        },
+        {
           "keyword": "蔡磊",
           "hot": 120000,
           "platform": "weibo",
@@ -3018,131 +2433,125 @@
     "douyin": {
       "code": "douyin",
       "title": "抖音",
-      "count": 21,
+      "count": 20,
       "items": [
         {
-          "keyword": "草莓桶蛋糕",
-          "hot": 10998000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "华为Mate X8",
-          "hot": 9042000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "火影忍者",
-          "hot": 8666000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "此刻的生活",
-          "hot": 8574000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "两京十五日",
-          "hot": 8299000,
+          "keyword": "曼联",
+          "hot": 9145000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
           "keyword": "巴萨",
-          "hot": 7998000,
+          "hot": 9072000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
-          "keyword": "石川佳纯",
-          "hot": 7795000,
+          "keyword": "蔡磊",
+          "hot": 8008000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
-          "keyword": "狩",
-          "hot": 7787000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "coke",
-          "hot": 7768000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "蒋欣",
-          "hot": 7747000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "吴彦祖",
-          "hot": 7746000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "三角洲",
-          "hot": 7742000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "饥困荒野",
-          "hot": 7735000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "火影忍者",
-          "hot": 7732000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "有罪之人",
-          "hot": 7732000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "青稚",
-          "hot": 7714000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "白小纯",
-          "hot": 7714000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "IVE",
-          "hot": 7710000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "Tim",
-          "hot": 7698000,
+          "keyword": "华为Mate X8",
+          "hot": 7917000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
           "keyword": "脆皮捏捏",
-          "hot": 7689000,
+          "hot": 7841000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "两京十五日",
+          "hot": 7746000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "狩",
+          "hot": 7746000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "coke",
+          "hot": 7733000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "穆祉丞",
+          "hot": 7725000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "蒋欣",
+          "hot": 7705000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "有罪之人",
+          "hot": 7692000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "青稚",
+          "hot": 7690000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "佛怒火莲",
+          "hot": 7672000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "草莓桶蛋糕",
+          "hot": 7672000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "IVE",
+          "hot": 7670000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "火影忍者",
+          "hot": 7654000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "面剂子",
+          "hot": 7653000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "赵露思",
+          "hot": 7648000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
           "keyword": "珠玉新生",
-          "hot": 7682000,
+          "hot": 7648000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "Tim",
+          "hot": 7633000,
           "platform": "douyin",
           "trend_tag": ""
         }
@@ -3158,8 +2567,73 @@
   "styleHotBoard": {
     "title": "风格热点",
     "subtitle": "微博 · 抖音 · 小红书 服饰穿搭 · 流行元素",
-    "total": 18,
+    "total": 19,
     "items": [
+      {
+        "keyword": "淡人",
+        "style_word": "淡人",
+        "display_keyword": "淡人",
+        "display_original": "淡人一周穿搭合集",
+        "source_originals": [
+          {
+            "text": "淡人一周穿搭合集",
+            "heat": 8978000,
+            "platform": "douyin"
+          },
+          {
+            "text": "淡人",
+            "heat": 87466,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "淡人vlog",
+            "heat": 87466,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 9152932,
+        "heat": 9152932,
+        "hot_value": 9152932,
+        "norm_score": 69.6156,
+        "platforms": [
+          "xiaohongshu",
+          "douyin"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "流行元素",
+        "ip_status": "匹配成功",
+        "platform_display": "小红书/抖音",
+        "style_rank": 1,
+        "rank": 1
+      },
+      {
+        "keyword": "cleanfit",
+        "style_word": "cleanfit",
+        "display_keyword": "cleanfit",
+        "display_original": "解锁冬日cleanfit穿搭",
+        "source_originals": [
+          {
+            "text": "解锁冬日cleanfit穿搭",
+            "heat": 8187000,
+            "platform": "douyin"
+          }
+        ],
+        "score": 8187000,
+        "heat": 8187000,
+        "hot_value": 8187000,
+        "norm_score": 69.13125,
+        "platforms": [
+          "douyin"
+        ],
+        "platform": "douyin",
+        "hints": [],
+        "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "platform_display": "抖音",
+        "style_rank": 2,
+        "rank": 2
+      },
       {
         "keyword": "氛围感",
         "style_word": "氛围感",
@@ -3168,14 +2642,14 @@
         "source_originals": [
           {
             "text": "冷都女氛围感搭配技巧",
-            "heat": 10310000,
+            "heat": 7702000,
             "platform": "douyin"
           }
         ],
-        "score": 10310000,
-        "heat": 10310000,
-        "hot_value": 10310000,
-        "norm_score": 70.13259,
+        "score": 7702000,
+        "heat": 7702000,
+        "hot_value": 7702000,
+        "norm_score": 68.86604,
         "platforms": [
           "douyin"
         ],
@@ -3184,8 +2658,8 @@
         "trendCategory": "流行元素",
         "ip_status": "匹配成功",
         "platform_display": "抖音",
-        "style_rank": 1,
-        "rank": 1
+        "style_rank": 3,
+        "rank": 3
       },
       {
         "keyword": "韩系",
@@ -3195,7 +2669,7 @@
         "source_originals": [
           {
             "text": "韩系低饱和秋冬穿搭",
-            "heat": 7675000,
+            "heat": 7641000,
             "platform": "douyin"
           },
           {
@@ -3204,10 +2678,10 @@
             "platform": "xiaohongshu"
           }
         ],
-        "score": 7708320,
-        "heat": 7708320,
-        "hot_value": 7708320,
-        "norm_score": 68.8696,
+        "score": 7674320,
+        "heat": 7674320,
+        "hot_value": 7674320,
+        "norm_score": 68.8504,
         "platforms": [
           "xiaohongshu",
           "douyin"
@@ -3217,8 +2691,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书/抖音",
-        "style_rank": 2,
-        "rank": 2
+        "style_rank": 4,
+        "rank": 4
       },
       {
         "keyword": "复古风",
@@ -3244,8 +2718,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 3,
-        "rank": 3
+        "style_rank": 5,
+        "rank": 5
       },
       {
         "keyword": "法式风",
@@ -3271,8 +2745,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 4,
-        "rank": 4
+        "style_rank": 6,
+        "rank": 6
       },
       {
         "keyword": "千禧风",
@@ -3298,8 +2772,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 5,
-        "rank": 5
+        "style_rank": 7,
+        "rank": 7
       },
       {
         "keyword": "古早风",
@@ -3325,40 +2799,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 6,
-        "rank": 6
-      },
-      {
-        "keyword": "淡人",
-        "style_word": "淡人",
-        "display_keyword": "淡人",
-        "display_original": "淡人",
-        "source_originals": [
-          {
-            "text": "淡人",
-            "heat": 87466,
-            "platform": "xiaohongshu"
-          },
-          {
-            "text": "淡人vlog",
-            "heat": 87466,
-            "platform": "xiaohongshu"
-          }
-        ],
-        "score": 174932,
-        "heat": 174932,
-        "hot_value": 174932,
-        "norm_score": 52.42872,
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "platform": "xiaohongshu",
-        "hints": [],
-        "trendCategory": "流行元素",
-        "ip_status": "匹配成功",
-        "platform_display": "小红书",
-        "style_rank": 7,
-        "rank": 7
+        "style_rank": 8,
+        "rank": 8
       },
       {
         "keyword": "松弛感",
@@ -3384,8 +2826,8 @@
         "trendCategory": "流行元素",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 8,
-        "rank": 8
+        "style_rank": 9,
+        "rank": 9
       },
       {
         "keyword": "古风",
@@ -3416,8 +2858,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 9,
-        "rank": 9
+        "style_rank": 10,
+        "rank": 10
       },
       {
         "keyword": "国风",
@@ -3453,8 +2895,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 10,
-        "rank": 10
+        "style_rank": 11,
+        "rank": 11
       },
       {
         "keyword": "繁荣主义风",
@@ -3480,8 +2922,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 11,
-        "rank": 11
+        "style_rank": 12,
+        "rank": 12
       },
       {
         "keyword": "甜辣风",
@@ -3507,8 +2949,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 12,
-        "rank": 12
+        "style_rank": 13,
+        "rank": 13
       },
       {
         "keyword": "田园风",
@@ -3534,8 +2976,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 13,
-        "rank": 13
+        "style_rank": 14,
+        "rank": 14
       },
       {
         "keyword": "清冷风",
@@ -3566,8 +3008,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 14,
-        "rank": 14
+        "style_rank": 15,
+        "rank": 15
       },
       {
         "keyword": "甜妹风",
@@ -3593,8 +3035,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 15,
-        "rank": 15
+        "style_rank": 16,
+        "rank": 16
       },
       {
         "keyword": "日系",
@@ -3620,8 +3062,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 16,
-        "rank": 16
+        "style_rank": 17,
+        "rank": 17
       },
       {
         "keyword": "中性风",
@@ -3647,8 +3089,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 17,
-        "rank": 17
+        "style_rank": 18,
+        "rank": 18
       },
       {
         "keyword": "Y2K",
@@ -3674,8 +3116,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 18,
-        "rank": 18
+        "style_rank": 19,
+        "rank": 19
       }
     ]
   }
