@@ -1,39 +1,39 @@
 {
   "version": "4.6",
-  "generatedAt": "2026-11-27T15:35:52+08:00",
+  "generatedAt": "2026-11-27T17:35:30+08:00",
   "dateRange": {
     "start": "2026-11-13",
     "end": "2026-11-19"
   },
   "summary": {
-    "total": 45,
-    "ipCount": 45,
-    "newValues": 24,
-    "oldValues": 21,
+    "total": 39,
+    "ipCount": 39,
+    "newValues": 22,
+    "oldValues": 17,
     "reviewNeeded": 0,
     "boards": [
       {
         "code": "xiaohongshu",
         "title": "小红书",
-        "count": 25
+        "count": 22
       },
       {
         "code": "weibo",
         "title": "微博",
-        "count": 38
+        "count": 31
       },
       {
         "code": "douyin",
         "title": "抖音",
-        "count": 17
+        "count": 18
       }
     ],
-    "generatedAt": "2026-11-27T15:35:52+08:00"
+    "generatedAt": "2026-11-27T17:35:30+08:00"
   },
   "ipBoard": {
     "title": "IP 榜单",
     "subtitle": "微博 · 抖音 · 小红书 热度排行（含7日趋势）",
-    "total": 45,
+    "total": 39,
     "items": [
       {
         "keyword": "U17国足",
@@ -50,9 +50,9 @@
           }
         ],
         "ipCategory": "体育",
-        "hot_value": 11290000,
-        "hot_score": 11290000,
-        "norm_score": 70.52694,
+        "hot_value": 9383000,
+        "hot_score": 9383000,
+        "norm_score": 69.72342,
         "hints": [
           "U17国足同款",
           "U17国足同款穿搭"
@@ -64,13 +64,51 @@
         "source_originals": [
           {
             "text": "U17国足8:0斐济",
-            "heat": 11290000,
+            "heat": 9383000,
             "platform": "douyin"
           }
         ],
         "daily_trend": [],
         "ip_rank": 1,
         "rank": 1,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "火旺",
+        "display_keyword": "火旺",
+        "display_original": "火旺动画定档",
+        "matched_value": "",
+        "ip_status": "新value",
+        "ip_terms": [
+          {
+            "word": "火旺",
+            "status": "新value",
+            "category": "卡通动漫",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "卡通动漫",
+        "hot_value": 9375000,
+        "hot_score": 9375000,
+        "norm_score": 69.71971,
+        "hints": [
+          "火旺手办",
+          "火旺联名款"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "火旺动画定档",
+            "heat": 9375000,
+            "platform": "douyin"
+          }
+        ],
+        "daily_trend": [],
+        "ip_rank": 2,
+        "rank": 2,
         "trend_tag": ""
       },
       {
@@ -88,9 +126,9 @@
           }
         ],
         "ipCategory": "体育",
-        "hot_value": 11025000,
-        "hot_score": 11025000,
-        "norm_score": 70.42379,
+        "hot_value": 9304000,
+        "hot_score": 9304000,
+        "norm_score": 69.6867,
         "hints": [
           "中国男篮同款",
           "中国男篮同款穿搭"
@@ -102,13 +140,51 @@
         "source_originals": [
           {
             "text": "中国男篮80:82不敌沙特男篮",
-            "heat": 11025000,
+            "heat": 9304000,
             "platform": "douyin"
           }
         ],
         "daily_trend": [],
-        "ip_rank": 2,
-        "rank": 2,
+        "ip_rank": 3,
+        "rank": 3,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "张远",
+        "display_keyword": "张远",
+        "display_original": "张远同款走路复刻挑战",
+        "matched_value": "张远",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "张远",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 8315000,
+        "hot_score": 8315000,
+        "norm_score": 69.19862,
+        "hints": [
+          "张远同款",
+          "张远同款穿搭"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "张远同款走路复刻挑战",
+            "heat": 8315000,
+            "platform": "douyin"
+          }
+        ],
+        "daily_trend": [],
+        "ip_rank": 4,
+        "rank": 4,
         "trend_tag": ""
       },
       {
@@ -126,9 +202,9 @@
           }
         ],
         "ipCategory": "影视综艺",
-        "hot_value": 7872000,
-        "hot_score": 7872000,
-        "norm_score": 68.96085,
+        "hot_value": 8080000,
+        "hot_score": 8080000,
+        "norm_score": 69.07411,
         "hints": [
           "画地为牢同款",
           "画地为牢周边"
@@ -141,7 +217,7 @@
         "source_originals": [
           {
             "text": "换我画地为牢了",
-            "heat": 7872000,
+            "heat": 8080000,
             "platform": "douyin"
           },
           {
@@ -180,165 +256,73 @@
             "heat": 0
           }
         ],
-        "ip_rank": 3,
-        "rank": 3,
+        "ip_rank": 5,
+        "rank": 5,
         "trend_tag": "下降"
       },
       {
-        "keyword": "两京十五日",
-        "display_keyword": "两京十五日",
-        "display_original": "两京十五日轮到我登场",
-        "matched_value": "",
-        "ip_status": "新value",
-        "ip_terms": [
-          {
-            "word": "两京十五日",
-            "status": "新value",
-            "category": "影视综艺",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "影视综艺",
-        "hot_value": 7820000,
-        "hot_score": 7820000,
-        "norm_score": 68.93207,
-        "hints": [
-          "两京十五日同款",
-          "两京十五日周边"
-        ],
-        "platform": "douyin",
-        "platforms": [
-          "douyin"
-        ],
-        "source_originals": [
-          {
-            "text": "两京十五日轮到我登场",
-            "heat": 7820000,
-            "platform": "douyin"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 4,
-        "rank": 4,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "不为人知的故事",
-        "display_keyword": "不为人知的故事",
-        "display_original": "不为人知的故事首播观后感",
-        "matched_value": "",
-        "ip_status": "新value",
-        "ip_terms": [
-          {
-            "word": "不为人知的故事",
-            "status": "新value",
-            "category": "影视综艺",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "影视综艺",
-        "hot_value": 7736000,
-        "hot_score": 7736000,
-        "norm_score": 68.88517,
-        "hints": [
-          "不为人知的故事同款",
-          "不为人知的故事周边"
-        ],
-        "platform": "douyin",
-        "platforms": [
-          "douyin"
-        ],
-        "source_originals": [
-          {
-            "text": "不为人知的故事首播观后感",
-            "heat": 7736000,
-            "platform": "douyin"
-          },
-          {
-            "text": "不为人知的故事开播",
-            "heat": 7683000,
-            "platform": "douyin"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 5,
-        "rank": 5,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "马天宇",
-        "display_keyword": "马天宇",
-        "display_original": "律师解读马天宇想把遗产分给朋友",
-        "matched_value": "马天宇",
+        "keyword": "吴磊",
+        "display_keyword": "吴磊",
+        "display_original": "吴磊骑有此理怎么就完结了",
+        "matched_value": "吴磊",
         "ip_status": "匹配成功",
         "ip_terms": [
           {
-            "word": "马天宇",
+            "word": "吴磊",
             "status": "匹配成功",
             "category": "明星/人物",
             "addedDate": ""
           }
         ],
         "ipCategory": "明星/人物",
-        "hot_value": 7702000,
-        "hot_score": 7702000,
-        "norm_score": 68.86604,
+        "hot_value": 7946000,
+        "hot_score": 7946000,
+        "norm_score": 69.00149,
         "hints": [
-          "马天宇同款",
-          "马天宇同款穿搭"
+          "吴磊同款",
+          "吴磊同款穿搭"
         ],
-        "platform": "douyin,weibo,xiaohongshu",
+        "platform": "douyin,xiaohongshu",
         "platforms": [
           "douyin",
-          "weibo",
           "xiaohongshu"
         ],
         "source_originals": [
           {
-            "text": "律师解读马天宇想把遗产分给朋友",
-            "heat": 7702000,
+            "text": "吴磊骑有此理怎么就完结了",
+            "heat": 7946000,
             "platform": "douyin"
           },
           {
-            "text": "马天宇",
-            "heat": 1331362,
+            "text": "吴磊",
+            "heat": 98711,
             "platform": "xiaohongshu"
-          },
-          {
-            "text": "张萌 我等了八年啊马天宇",
-            "heat": 330000,
-            "platform": "weibo"
-          },
-          {
-            "text": "马天宇加回张萌微信",
-            "heat": 310000,
-            "platform": "weibo"
           }
         ],
         "daily_trend": [
           {
             "date": "2026-11-13",
-            "heat": 837254
+            "heat": 0
           },
           {
             "date": "2026-11-14",
-            "heat": 124043
+            "heat": 0
           },
           {
             "date": "2026-11-15",
-            "heat": 62831
+            "heat": 0
           },
           {
             "date": "2026-11-16",
-            "heat": 27739
+            "heat": 30640
           },
           {
             "date": "2026-11-17",
-            "heat": 251898
+            "heat": 68071
           },
           {
             "date": "2026-11-18",
-            "heat": 27597
+            "heat": 0
           },
           {
             "date": "2026-11-19",
@@ -347,7 +331,51 @@
         ],
         "ip_rank": 6,
         "rank": 6,
-        "trend_tag": "下降"
+        "trend_tag": "爆发"
+      },
+      {
+        "keyword": "杨蓉",
+        "display_keyword": "杨蓉",
+        "display_original": "杨蓉自曝患特发性震颤",
+        "matched_value": "杨蓉",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "杨蓉",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 7834000,
+        "hot_score": 7834000,
+        "norm_score": 68.93984,
+        "hints": [
+          "杨蓉同款",
+          "杨蓉同款穿搭"
+        ],
+        "platform": "douyin,weibo",
+        "platforms": [
+          "douyin",
+          "weibo"
+        ],
+        "source_originals": [
+          {
+            "text": "杨蓉自曝患特发性震颤",
+            "heat": 7834000,
+            "platform": "douyin"
+          },
+          {
+            "text": "杨蓉遗传病暂无根治手段",
+            "heat": 280000,
+            "platform": "weibo"
+          }
+        ],
+        "daily_trend": [],
+        "ip_rank": 7,
+        "rank": 7,
+        "trend_tag": ""
       },
       {
         "keyword": "许飞",
@@ -364,9 +392,9 @@
           }
         ],
         "ipCategory": "明星/人物",
-        "hot_value": 7701000,
-        "hot_score": 7701000,
-        "norm_score": 68.86547,
+        "hot_value": 7768000,
+        "hot_score": 7768000,
+        "norm_score": 68.90309,
         "hints": [
           "许飞同款",
           "许飞同款穿搭"
@@ -380,7 +408,7 @@
         "source_originals": [
           {
             "text": "我找到了厉娜许飞的留言本",
-            "heat": 7701000,
+            "heat": 7768000,
             "platform": "douyin"
           },
           {
@@ -424,8 +452,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 7,
-        "rank": 7,
+        "ip_rank": 8,
+        "rank": 8,
         "trend_tag": "下降"
       },
       {
@@ -443,9 +471,9 @@
           }
         ],
         "ipCategory": "明星/人物",
-        "hot_value": 7701000,
-        "hot_score": 7701000,
-        "norm_score": 68.86547,
+        "hot_value": 7768000,
+        "hot_score": 7768000,
+        "norm_score": 68.90309,
         "hints": [
           "厉娜同款",
           "厉娜同款穿搭"
@@ -459,7 +487,7 @@
         "source_originals": [
           {
             "text": "我找到了厉娜许飞的留言本",
-            "heat": 7701000,
+            "heat": 7768000,
             "platform": "douyin"
           },
           {
@@ -513,31 +541,31 @@
             "heat": 0
           }
         ],
-        "ip_rank": 8,
-        "rank": 8,
+        "ip_rank": 9,
+        "rank": 9,
         "trend_tag": "下降"
       },
       {
-        "keyword": "许凯",
-        "display_keyword": "许凯",
-        "display_original": "一碗面召唤许凯挑战",
-        "matched_value": "许凯",
-        "ip_status": "匹配成功",
+        "keyword": "风生水起",
+        "display_keyword": "风生水起",
+        "display_original": "电视剧风生水起开播",
+        "matched_value": "",
+        "ip_status": "新value",
         "ip_terms": [
           {
-            "word": "许凯",
-            "status": "匹配成功",
-            "category": "明星/人物",
+            "word": "风生水起",
+            "status": "新value",
+            "category": "影视综艺",
             "addedDate": ""
           }
         ],
-        "ipCategory": "明星/人物",
-        "hot_value": 7692000,
-        "hot_score": 7692000,
-        "norm_score": 68.86039,
+        "ipCategory": "影视综艺",
+        "hot_value": 7749000,
+        "hot_score": 7749000,
+        "norm_score": 68.89246,
         "hints": [
-          "许凯同款",
-          "许凯同款穿搭"
+          "风生水起同款",
+          "风生水起周边"
         ],
         "platform": "douyin",
         "platforms": [
@@ -545,14 +573,14 @@
         ],
         "source_originals": [
           {
-            "text": "一碗面召唤许凯挑战",
-            "heat": 7692000,
+            "text": "电视剧风生水起开播",
+            "heat": 7749000,
             "platform": "douyin"
           }
         ],
         "daily_trend": [],
-        "ip_rank": 9,
-        "rank": 9,
+        "ip_rank": 10,
+        "rank": 10,
         "trend_tag": ""
       },
       {
@@ -570,9 +598,9 @@
           }
         ],
         "ipCategory": "影视综艺",
-        "hot_value": 7688000,
-        "hot_score": 7688000,
-        "norm_score": 68.85813,
+        "hot_value": 7742000,
+        "hot_score": 7742000,
+        "norm_score": 68.88853,
         "hints": [
           "后会友期同款",
           "后会友期周边"
@@ -585,7 +613,7 @@
         "source_originals": [
           {
             "text": "一条视频看懂后会友期第七期",
-            "heat": 7688000,
+            "heat": 7742000,
             "platform": "douyin"
           },
           {
@@ -624,75 +652,31 @@
             "heat": 100603
           }
         ],
-        "ip_rank": 10,
-        "rank": 10,
+        "ip_rank": 11,
+        "rank": 11,
         "trend_tag": "下降"
       },
       {
-        "keyword": "杨蓉",
-        "display_keyword": "杨蓉",
-        "display_original": "杨蓉自曝患特发性震颤",
-        "matched_value": "杨蓉",
-        "ip_status": "匹配成功",
+        "keyword": "不为人知的故事",
+        "display_keyword": "不为人知的故事",
+        "display_original": "不为人知的故事首播观后感",
+        "matched_value": "",
+        "ip_status": "新value",
         "ip_terms": [
           {
-            "word": "杨蓉",
-            "status": "匹配成功",
-            "category": "明星/人物",
+            "word": "不为人知的故事",
+            "status": "新value",
+            "category": "影视综艺",
             "addedDate": ""
           }
         ],
-        "ipCategory": "明星/人物",
-        "hot_value": 7686000,
-        "hot_score": 7686000,
-        "norm_score": 68.857,
+        "ipCategory": "影视综艺",
+        "hot_value": 7685000,
+        "hot_score": 7685000,
+        "norm_score": 68.85644,
         "hints": [
-          "杨蓉同款",
-          "杨蓉同款穿搭"
-        ],
-        "platform": "douyin,weibo",
-        "platforms": [
-          "douyin",
-          "weibo"
-        ],
-        "source_originals": [
-          {
-            "text": "杨蓉自曝患特发性震颤",
-            "heat": 7686000,
-            "platform": "douyin"
-          },
-          {
-            "text": "杨蓉遗传病暂无根治手段",
-            "heat": 280000,
-            "platform": "weibo"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 11,
-        "rank": 11,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "刘浩存",
-        "display_keyword": "刘浩存",
-        "display_original": "刘浩存压帽檐好酷",
-        "matched_value": "刘浩存",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "刘浩存",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "明星/人物",
-        "hot_value": 7656000,
-        "hot_score": 7656000,
-        "norm_score": 68.84002,
-        "hints": [
-          "刘浩存同款",
-          "刘浩存同款穿搭"
+          "不为人知的故事同款",
+          "不为人知的故事周边"
         ],
         "platform": "douyin",
         "platforms": [
@@ -700,8 +684,13 @@
         ],
         "source_originals": [
           {
-            "text": "刘浩存压帽檐好酷",
-            "heat": 7656000,
+            "text": "不为人知的故事首播观后感",
+            "heat": 7685000,
+            "platform": "douyin"
+          },
+          {
+            "text": "不为人知的故事开播",
+            "heat": 7647000,
             "platform": "douyin"
           }
         ],
@@ -711,26 +700,26 @@
         "trend_tag": ""
       },
       {
-        "keyword": "胡海泉",
-        "display_keyword": "胡海泉",
-        "display_original": "胡海泉辟谣炒股亏近1亿",
-        "matched_value": "胡海泉",
-        "ip_status": "匹配成功",
+        "keyword": "两京十五日",
+        "display_keyword": "两京十五日",
+        "display_original": "两京十五日轮到我登场",
+        "matched_value": "",
+        "ip_status": "新value",
         "ip_terms": [
           {
-            "word": "胡海泉",
-            "status": "匹配成功",
-            "category": "明星/人物",
+            "word": "两京十五日",
+            "status": "新value",
+            "category": "影视综艺",
             "addedDate": ""
           }
         ],
-        "ipCategory": "明星/人物",
-        "hot_value": 7652000,
-        "hot_score": 7652000,
-        "norm_score": 68.83775,
+        "ipCategory": "影视综艺",
+        "hot_value": 7685000,
+        "hot_score": 7685000,
+        "norm_score": 68.85644,
         "hints": [
-          "胡海泉同款",
-          "胡海泉同款穿搭"
+          "两京十五日同款",
+          "两京十五日周边"
         ],
         "platform": "douyin",
         "platforms": [
@@ -738,8 +727,8 @@
         ],
         "source_originals": [
           {
-            "text": "胡海泉辟谣炒股亏近1亿",
-            "heat": 7652000,
+            "text": "两京十五日轮到我登场",
+            "heat": 7685000,
             "platform": "douyin"
           }
         ],
@@ -749,122 +738,70 @@
         "trend_tag": ""
       },
       {
-        "keyword": "coke",
-        "display_keyword": "coke",
-        "display_original": "coke神临时刻挑战",
-        "matched_value": "",
-        "ip_status": "新value",
-        "ip_terms": [
-          {
-            "word": "coke",
-            "status": "新value",
-            "category": "游戏电竞",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "游戏电竞",
-        "hot_value": 7649000,
-        "hot_score": 7649000,
-        "norm_score": 68.83605,
-        "hints": [
-          "coke联名周边"
-        ],
-        "platform": "douyin",
-        "platforms": [
-          "douyin"
-        ],
-        "source_originals": [
-          {
-            "text": "coke神临时刻挑战",
-            "heat": 7649000,
-            "platform": "douyin"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 14,
-        "rank": 14,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "赵奕欢",
-        "display_keyword": "赵奕欢",
-        "display_original": "赵奕欢酷飒黑穿搭杀疯了",
-        "matched_value": "赵奕欢",
+        "keyword": "赵昭仪",
+        "display_keyword": "赵昭仪",
+        "display_original": "赵昭仪曝在剧组遭言语骚扰",
+        "matched_value": "赵昭仪",
         "ip_status": "匹配成功",
         "ip_terms": [
           {
-            "word": "赵奕欢",
+            "word": "赵昭仪",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          },
+          {
+            "word": "赖冠霖",
             "status": "匹配成功",
             "category": "明星/人物",
             "addedDate": ""
           }
         ],
         "ipCategory": "明星/人物",
-        "hot_value": 7645000,
-        "hot_score": 7645000,
-        "norm_score": 68.83378,
+        "hot_value": 7673000,
+        "hot_score": 7673000,
+        "norm_score": 68.84965,
         "hints": [
-          "赵奕欢同款",
-          "赵奕欢同款穿搭"
+          "赵昭仪同款",
+          "赵昭仪同款穿搭"
         ],
-        "platform": "douyin",
-        "platforms": [
-          "douyin"
-        ],
-        "source_originals": [
-          {
-            "text": "赵奕欢酷飒黑穿搭杀疯了",
-            "heat": 7645000,
-            "platform": "douyin"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 15,
-        "rank": 15,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "汽水音乐",
-        "display_keyword": "汽水音乐",
-        "display_original": "汽水音乐代言人这波打的是明牌",
-        "matched_value": "",
-        "ip_status": "新value",
-        "ip_terms": [
-          {
-            "word": "汽水音乐",
-            "status": "新value",
-            "category": "品牌联名",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "品牌联名",
-        "hot_value": 7640000,
-        "hot_score": 7640000,
-        "norm_score": 68.83093,
-        "hints": [
-          "汽水音乐联名"
-        ],
-        "platform": "douyin,xiaohongshu",
+        "platform": "douyin,weibo,xiaohongshu",
         "platforms": [
           "douyin",
+          "weibo",
           "xiaohongshu"
         ],
         "source_originals": [
           {
-            "text": "汽水音乐代言人这波打的是明牌",
-            "heat": 7640000,
+            "text": "赵昭仪曝在剧组遭言语骚扰",
+            "heat": 7673000,
             "platform": "douyin"
           },
           {
-            "text": "汽水音乐",
-            "heat": 28833,
+            "text": "赵昭仪曝被导演开黄腔",
+            "heat": 410000,
+            "platform": "weibo"
+          },
+          {
+            "text": "赖冠霖一下就get到了赵昭仪的愤怒",
+            "heat": 300000,
+            "platform": "weibo"
+          },
+          {
+            "text": "赵昭仪合作导演清单",
+            "heat": 280000,
+            "platform": "weibo"
+          },
+          {
+            "text": "赵昭仪",
+            "heat": 40280,
             "platform": "xiaohongshu"
           }
         ],
         "daily_trend": [
           {
             "date": "2026-11-13",
-            "heat": 28833
+            "heat": 0
           },
           {
             "date": "2026-11-14",
@@ -872,7 +809,7 @@
           },
           {
             "date": "2026-11-15",
-            "heat": 0
+            "heat": 40280
           },
           {
             "date": "2026-11-16",
@@ -891,9 +828,169 @@
             "heat": 0
           }
         ],
+        "ip_rank": 14,
+        "rank": 14,
+        "trend_tag": "下降"
+      },
+      {
+        "keyword": "黄轩",
+        "display_keyword": "黄轩",
+        "display_original": "黄轩新剧师父下线哭麻了",
+        "matched_value": "黄轩",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "黄轩",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 7666000,
+        "hot_score": 7666000,
+        "norm_score": 68.84569,
+        "hints": [
+          "黄轩同款",
+          "黄轩同款穿搭"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "黄轩新剧师父下线哭麻了",
+            "heat": 7666000,
+            "platform": "douyin"
+          }
+        ],
+        "daily_trend": [],
+        "ip_rank": 15,
+        "rank": 15,
+        "trend_tag": ""
+      },
+      {
+        "keyword": "马天宇",
+        "display_keyword": "马天宇",
+        "display_original": "律师解读马天宇想把遗产分给朋友",
+        "matched_value": "马天宇",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "马天宇",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 7653000,
+        "hot_score": 7653000,
+        "norm_score": 68.83832,
+        "hints": [
+          "马天宇同款",
+          "马天宇同款穿搭"
+        ],
+        "platform": "douyin,weibo,xiaohongshu",
+        "platforms": [
+          "douyin",
+          "weibo",
+          "xiaohongshu"
+        ],
+        "source_originals": [
+          {
+            "text": "律师解读马天宇想把遗产分给朋友",
+            "heat": 7653000,
+            "platform": "douyin"
+          },
+          {
+            "text": "马天宇",
+            "heat": 1331362,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "张萌 我等了八年啊马天宇",
+            "heat": 330000,
+            "platform": "weibo"
+          },
+          {
+            "text": "马天宇加回张萌微信",
+            "heat": 310000,
+            "platform": "weibo"
+          }
+        ],
+        "daily_trend": [
+          {
+            "date": "2026-11-13",
+            "heat": 837254
+          },
+          {
+            "date": "2026-11-14",
+            "heat": 124043
+          },
+          {
+            "date": "2026-11-15",
+            "heat": 62831
+          },
+          {
+            "date": "2026-11-16",
+            "heat": 27739
+          },
+          {
+            "date": "2026-11-17",
+            "heat": 251898
+          },
+          {
+            "date": "2026-11-18",
+            "heat": 27597
+          },
+          {
+            "date": "2026-11-19",
+            "heat": 0
+          }
+        ],
         "ip_rank": 16,
         "rank": 16,
         "trend_tag": "下降"
+      },
+      {
+        "keyword": "赵奕欢",
+        "display_keyword": "赵奕欢",
+        "display_original": "赵奕欢酷飒黑穿搭杀疯了",
+        "matched_value": "赵奕欢",
+        "ip_status": "匹配成功",
+        "ip_terms": [
+          {
+            "word": "赵奕欢",
+            "status": "匹配成功",
+            "category": "明星/人物",
+            "addedDate": ""
+          }
+        ],
+        "ipCategory": "明星/人物",
+        "hot_value": 7646000,
+        "hot_score": 7646000,
+        "norm_score": 68.83434,
+        "hints": [
+          "赵奕欢同款",
+          "赵奕欢同款穿搭"
+        ],
+        "platform": "douyin",
+        "platforms": [
+          "douyin"
+        ],
+        "source_originals": [
+          {
+            "text": "赵奕欢酷飒黑穿搭杀疯了",
+            "heat": 7646000,
+            "platform": "douyin"
+          }
+        ],
+        "daily_trend": [],
+        "ip_rank": 17,
+        "rank": 17,
+        "trend_tag": ""
       },
       {
         "keyword": "海康威视",
@@ -928,8 +1025,8 @@
           }
         ],
         "daily_trend": [],
-        "ip_rank": 17,
-        "rank": 17,
+        "ip_rank": 18,
+        "rank": 18,
         "trend_tag": ""
       },
       {
@@ -994,8 +1091,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 18,
-        "rank": 18,
+        "ip_rank": 19,
+        "rank": 19,
         "trend_tag": "下降"
       },
       {
@@ -1060,8 +1157,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 19,
-        "rank": 19,
+        "ip_rank": 20,
+        "rank": 20,
         "trend_tag": "下降"
       },
       {
@@ -1127,8 +1224,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 20,
-        "rank": 20,
+        "ip_rank": 21,
+        "rank": 21,
         "trend_tag": "下降"
       },
       {
@@ -1199,8 +1296,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 21,
-        "rank": 21,
+        "ip_rank": 22,
+        "rank": 22,
         "trend_tag": "下降"
       },
       {
@@ -1278,8 +1375,8 @@
             "heat": 49830
           }
         ],
-        "ip_rank": 22,
-        "rank": 22,
+        "ip_rank": 23,
+        "rank": 23,
         "trend_tag": "爆发"
       },
       {
@@ -1315,8 +1412,8 @@
           }
         ],
         "daily_trend": [],
-        "ip_rank": 23,
-        "rank": 23,
+        "ip_rank": 24,
+        "rank": 24,
         "trend_tag": ""
       },
       {
@@ -1381,8 +1478,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 24,
-        "rank": 24,
+        "ip_rank": 25,
+        "rank": 25,
         "trend_tag": "下降"
       },
       {
@@ -1454,8 +1551,8 @@
             "heat": 100603
           }
         ],
-        "ip_rank": 25,
-        "rank": 25,
+        "ip_rank": 26,
+        "rank": 26,
         "trend_tag": "稳定"
       },
       {
@@ -1527,8 +1624,8 @@
             "heat": 100603
           }
         ],
-        "ip_rank": 26,
-        "rank": 26,
+        "ip_rank": 27,
+        "rank": 27,
         "trend_tag": "稳定"
       },
       {
@@ -1600,8 +1697,8 @@
             "heat": 0
           }
         ],
-        "ip_rank": 27,
-        "rank": 27,
+        "ip_rank": 28,
+        "rank": 28,
         "trend_tag": "爆发"
       },
       {
@@ -1643,98 +1740,9 @@
           }
         ],
         "daily_trend": [],
-        "ip_rank": 28,
-        "rank": 28,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "赵昭仪",
-        "display_keyword": "赵昭仪",
-        "display_original": "赵昭仪曝被导演开黄腔",
-        "matched_value": "赵昭仪",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "赵昭仪",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          },
-          {
-            "word": "赖冠霖",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "明星/人物",
-        "hot_value": 410000,
-        "hot_score": 410000,
-        "norm_score": 56.12785,
-        "hints": [
-          "赵昭仪同款",
-          "赵昭仪同款穿搭"
-        ],
-        "platform": "weibo,xiaohongshu",
-        "platforms": [
-          "weibo",
-          "xiaohongshu"
-        ],
-        "source_originals": [
-          {
-            "text": "赵昭仪曝被导演开黄腔",
-            "heat": 410000,
-            "platform": "weibo"
-          },
-          {
-            "text": "赖冠霖一下就get到了赵昭仪的愤怒",
-            "heat": 300000,
-            "platform": "weibo"
-          },
-          {
-            "text": "赵昭仪合作导演清单",
-            "heat": 280000,
-            "platform": "weibo"
-          },
-          {
-            "text": "赵昭仪",
-            "heat": 40280,
-            "platform": "xiaohongshu"
-          }
-        ],
-        "daily_trend": [
-          {
-            "date": "2026-11-13",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-14",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-15",
-            "heat": 40280
-          },
-          {
-            "date": "2026-11-16",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-17",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-18",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-19",
-            "heat": 0
-          }
-        ],
         "ip_rank": 29,
         "rank": 29,
-        "trend_tag": "下降"
+        "trend_tag": ""
       },
       {
         "keyword": "故宫",
@@ -2334,347 +2342,6 @@
         "ip_rank": 39,
         "rank": 39,
         "trend_tag": ""
-      },
-      {
-        "keyword": "三只松鼠",
-        "display_keyword": "三只松鼠",
-        "display_original": "三只松鼠日赚不足一万元",
-        "matched_value": "",
-        "ip_status": "新value",
-        "ip_terms": [
-          {
-            "word": "三只松鼠",
-            "status": "新value",
-            "category": "品牌联名",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "品牌联名",
-        "hot_value": 290000,
-        "hot_score": 290000,
-        "norm_score": 54.62399,
-        "hints": [
-          "三只松鼠联名"
-        ],
-        "platform": "weibo",
-        "platforms": [
-          "weibo"
-        ],
-        "source_originals": [
-          {
-            "text": "三只松鼠日赚不足一万元",
-            "heat": 290000,
-            "platform": "weibo"
-          },
-          {
-            "text": "三只松鼠CEO与员工薪资差23倍",
-            "heat": 280000,
-            "platform": "weibo"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 40,
-        "rank": 40,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "On",
-        "display_keyword": "On",
-        "display_original": "On直播哭了",
-        "matched_value": "",
-        "ip_status": "新value",
-        "ip_terms": [
-          {
-            "word": "On",
-            "status": "新value",
-            "category": "游戏电竞",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "游戏电竞",
-        "hot_value": 290000,
-        "hot_score": 290000,
-        "norm_score": 54.62399,
-        "hints": [
-          "On联名周边"
-        ],
-        "platform": "weibo",
-        "platforms": [
-          "weibo"
-        ],
-        "source_originals": [
-          {
-            "text": "On直播哭了",
-            "heat": 290000,
-            "platform": "weibo"
-          },
-          {
-            "text": "ON送Viper巧克力",
-            "heat": 290000,
-            "platform": "weibo"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 41,
-        "rank": 41,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "王楚然",
-        "display_keyword": "王楚然",
-        "display_original": "王楚然",
-        "matched_value": "王楚然",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "王楚然",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "明星/人物",
-        "hot_value": 280000,
-        "hot_score": 280000,
-        "norm_score": 54.4716,
-        "hints": [
-          "王楚然同款",
-          "王楚然同款穿搭"
-        ],
-        "platform": "weibo,xiaohongshu",
-        "platforms": [
-          "weibo",
-          "xiaohongshu"
-        ],
-        "source_originals": [
-          {
-            "text": "王楚然",
-            "heat": 699657,
-            "platform": "xiaohongshu"
-          },
-          {
-            "text": "王楚然全世界最尊重冬天穿搭之人",
-            "heat": 280000,
-            "platform": "weibo"
-          }
-        ],
-        "daily_trend": [
-          {
-            "date": "2026-11-13",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-14",
-            "heat": 351466
-          },
-          {
-            "date": "2026-11-15",
-            "heat": 164526
-          },
-          {
-            "date": "2026-11-16",
-            "heat": 75098
-          },
-          {
-            "date": "2026-11-17",
-            "heat": 86591
-          },
-          {
-            "date": "2026-11-18",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-19",
-            "heat": 21976
-          }
-        ],
-        "ip_rank": 42,
-        "rank": 42,
-        "trend_tag": "下降"
-      },
-      {
-        "keyword": "李昀锐",
-        "display_keyword": "李昀锐",
-        "display_original": "李昀锐李一桐 不只是结婚而已",
-        "matched_value": "李昀锐",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "李昀锐",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          },
-          {
-            "word": "李一桐",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "明星/人物",
-        "hot_value": 280000,
-        "hot_score": 280000,
-        "norm_score": 54.4716,
-        "hints": [
-          "李昀锐同款",
-          "李昀锐同款穿搭"
-        ],
-        "platform": "weibo,xiaohongshu",
-        "platforms": [
-          "weibo",
-          "xiaohongshu"
-        ],
-        "source_originals": [
-          {
-            "text": "李昀锐李一桐 不只是结婚而已",
-            "heat": 280000,
-            "platform": "weibo"
-          },
-          {
-            "text": "李昀锐",
-            "heat": 30640,
-            "platform": "xiaohongshu"
-          }
-        ],
-        "daily_trend": [
-          {
-            "date": "2026-11-13",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-14",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-15",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-16",
-            "heat": 30640
-          },
-          {
-            "date": "2026-11-17",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-18",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-19",
-            "heat": 0
-          }
-        ],
-        "ip_rank": 43,
-        "rank": 43,
-        "trend_tag": "稳定"
-      },
-      {
-        "keyword": "金晨",
-        "display_keyword": "金晨",
-        "display_original": "金晨这个眼神是人能承受的痛苦吗",
-        "matched_value": "金晨",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "金晨",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "明星/人物",
-        "hot_value": 280000,
-        "hot_score": 280000,
-        "norm_score": 54.4716,
-        "hints": [
-          "金晨同款",
-          "金晨同款穿搭"
-        ],
-        "platform": "weibo",
-        "platforms": [
-          "weibo"
-        ],
-        "source_originals": [
-          {
-            "text": "金晨这个眼神是人能承受的痛苦吗",
-            "heat": 280000,
-            "platform": "weibo"
-          }
-        ],
-        "daily_trend": [],
-        "ip_rank": 44,
-        "rank": 44,
-        "trend_tag": ""
-      },
-      {
-        "keyword": "杨超越",
-        "display_keyword": "杨超越",
-        "display_original": "杨超越",
-        "matched_value": "杨超越",
-        "ip_status": "匹配成功",
-        "ip_terms": [
-          {
-            "word": "杨超越",
-            "status": "匹配成功",
-            "category": "明星/人物",
-            "addedDate": ""
-          }
-        ],
-        "ipCategory": "明星/人物",
-        "hot_value": 274092,
-        "hot_score": 274092,
-        "norm_score": 54.37898,
-        "hints": [
-          "杨超越同款",
-          "杨超越同款穿搭"
-        ],
-        "platform": "xiaohongshu",
-        "platforms": [
-          "xiaohongshu"
-        ],
-        "source_originals": [
-          {
-            "text": "杨超越",
-            "heat": 3576878,
-            "platform": "xiaohongshu"
-          }
-        ],
-        "daily_trend": [
-          {
-            "date": "2026-11-13",
-            "heat": 351534
-          },
-          {
-            "date": "2026-11-14",
-            "heat": 422976
-          },
-          {
-            "date": "2026-11-15",
-            "heat": 667039
-          },
-          {
-            "date": "2026-11-16",
-            "heat": 1006981
-          },
-          {
-            "date": "2026-11-17",
-            "heat": 1128348
-          },
-          {
-            "date": "2026-11-18",
-            "heat": 0
-          },
-          {
-            "date": "2026-11-19",
-            "heat": 0
-          }
-        ],
-        "ip_rank": 45,
-        "rank": 45,
-        "trend_tag": "稳定"
       }
     ]
   },
@@ -2682,7 +2349,7 @@
     "xiaohongshu": {
       "code": "xiaohongshu",
       "title": "小红书",
-      "count": 25,
+      "count": 22,
       "items": [
         {
           "keyword": "后会友期",
@@ -2719,42 +2386,6 @@
             }
           ],
           "trend_tag": "下降"
-        },
-        {
-          "keyword": "杨超越",
-          "hot": 3576878,
-          "platform": "xiaohongshu",
-          "daily_trend": [
-            {
-              "date": "2026-11-13",
-              "heat": 351534
-            },
-            {
-              "date": "2026-11-14",
-              "heat": 422976
-            },
-            {
-              "date": "2026-11-15",
-              "heat": 667039
-            },
-            {
-              "date": "2026-11-16",
-              "heat": 1006981
-            },
-            {
-              "date": "2026-11-17",
-              "heat": 1128348
-            },
-            {
-              "date": "2026-11-18",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-19",
-              "heat": 0
-            }
-          ],
-          "trend_tag": "稳定"
         },
         {
           "keyword": "许飞",
@@ -3117,42 +2748,6 @@
           "trend_tag": "下降"
         },
         {
-          "keyword": "王楚然",
-          "hot": 699657,
-          "platform": "xiaohongshu",
-          "daily_trend": [
-            {
-              "date": "2026-11-13",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-14",
-              "heat": 351466
-            },
-            {
-              "date": "2026-11-15",
-              "heat": 164526
-            },
-            {
-              "date": "2026-11-16",
-              "heat": 75098
-            },
-            {
-              "date": "2026-11-17",
-              "heat": 86591
-            },
-            {
-              "date": "2026-11-18",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-19",
-              "heat": 21976
-            }
-          ],
-          "trend_tag": "下降"
-        },
-        {
           "keyword": "华为",
           "hot": 694463,
           "platform": "xiaohongshu",
@@ -3369,6 +2964,42 @@
           "trend_tag": "下降"
         },
         {
+          "keyword": "吴磊",
+          "hot": 98711,
+          "platform": "xiaohongshu",
+          "daily_trend": [
+            {
+              "date": "2026-11-13",
+              "heat": 0
+            },
+            {
+              "date": "2026-11-14",
+              "heat": 0
+            },
+            {
+              "date": "2026-11-15",
+              "heat": 0
+            },
+            {
+              "date": "2026-11-16",
+              "heat": 30640
+            },
+            {
+              "date": "2026-11-17",
+              "heat": 68071
+            },
+            {
+              "date": "2026-11-18",
+              "heat": 0
+            },
+            {
+              "date": "2026-11-19",
+              "heat": 0
+            }
+          ],
+          "trend_tag": "爆发"
+        },
+        {
           "keyword": "董明珠",
           "hot": 77485,
           "platform": "xiaohongshu",
@@ -3511,85 +3142,13 @@
             }
           ],
           "trend_tag": "下降"
-        },
-        {
-          "keyword": "李昀锐",
-          "hot": 30640,
-          "platform": "xiaohongshu",
-          "daily_trend": [
-            {
-              "date": "2026-11-13",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-14",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-15",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-16",
-              "heat": 30640
-            },
-            {
-              "date": "2026-11-17",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-18",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-19",
-              "heat": 0
-            }
-          ],
-          "trend_tag": "稳定"
-        },
-        {
-          "keyword": "汽水音乐",
-          "hot": 28833,
-          "platform": "xiaohongshu",
-          "daily_trend": [
-            {
-              "date": "2026-11-13",
-              "heat": 28833
-            },
-            {
-              "date": "2026-11-14",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-15",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-16",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-17",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-18",
-              "heat": 0
-            },
-            {
-              "date": "2026-11-19",
-              "heat": 0
-            }
-          ],
-          "trend_tag": "下降"
         }
       ]
     },
     "weibo": {
       "code": "weibo",
       "title": "微博",
-      "count": 38,
+      "count": 31,
       "items": [
         {
           "keyword": "海康威视",
@@ -3754,20 +3313,8 @@
           "trend_tag": ""
         },
         {
-          "keyword": "三只松鼠",
-          "hot": 290000,
-          "platform": "weibo",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "On",
-          "hot": 290000,
-          "platform": "weibo",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "On",
-          "hot": 290000,
+          "keyword": "杨蓉",
+          "hot": 280000,
           "platform": "weibo",
           "trend_tag": ""
         },
@@ -3779,12 +3326,6 @@
         },
         {
           "keyword": "厉娜",
-          "hot": 280000,
-          "platform": "weibo",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "杨蓉",
           "hot": 280000,
           "platform": "weibo",
           "trend_tag": ""
@@ -3794,137 +3335,119 @@
           "hot": 280000,
           "platform": "weibo",
           "trend_tag": ""
-        },
-        {
-          "keyword": "三只松鼠",
-          "hot": 280000,
-          "platform": "weibo",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "王楚然",
-          "hot": 280000,
-          "platform": "weibo",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "李昀锐",
-          "hot": 280000,
-          "platform": "weibo",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "金晨",
-          "hot": 280000,
-          "platform": "weibo",
-          "trend_tag": ""
         }
       ]
     },
     "douyin": {
       "code": "douyin",
       "title": "抖音",
-      "count": 17,
+      "count": 18,
       "items": [
         {
           "keyword": "U17国足",
-          "hot": 11290000,
+          "hot": 9383000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "火旺",
+          "hot": 9375000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
           "keyword": "中国男篮",
-          "hot": 11025000,
+          "hot": 9304000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "张远",
+          "hot": 8315000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
           "keyword": "画地为牢",
-          "hot": 7872000,
+          "hot": 8080000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
-          "keyword": "两京十五日",
-          "hot": 7820000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "不为人知的故事",
-          "hot": 7736000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "马天宇",
-          "hot": 7702000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "许飞",
-          "hot": 7701000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "厉娜",
-          "hot": 7701000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "许凯",
-          "hot": 7692000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "后会友期",
-          "hot": 7688000,
+          "keyword": "吴磊",
+          "hot": 7946000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
           "keyword": "杨蓉",
-          "hot": 7686000,
+          "hot": 7834000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "许飞",
+          "hot": 7768000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "厉娜",
+          "hot": 7768000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "风生水起",
+          "hot": 7749000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "后会友期",
+          "hot": 7742000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
           "keyword": "不为人知的故事",
-          "hot": 7683000,
+          "hot": 7685000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
-          "keyword": "刘浩存",
-          "hot": 7656000,
+          "keyword": "两京十五日",
+          "hot": 7685000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
-          "keyword": "胡海泉",
-          "hot": 7652000,
+          "keyword": "赵昭仪",
+          "hot": 7673000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
-          "keyword": "coke",
-          "hot": 7649000,
+          "keyword": "黄轩",
+          "hot": 7666000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "马天宇",
+          "hot": 7653000,
+          "platform": "douyin",
+          "trend_tag": ""
+        },
+        {
+          "keyword": "不为人知的故事",
+          "hot": 7647000,
           "platform": "douyin",
           "trend_tag": ""
         },
         {
           "keyword": "赵奕欢",
-          "hot": 7645000,
-          "platform": "douyin",
-          "trend_tag": ""
-        },
-        {
-          "keyword": "汽水音乐",
-          "hot": 7640000,
+          "hot": 7646000,
           "platform": "douyin",
           "trend_tag": ""
         }
@@ -3942,44 +3465,6 @@
     "subtitle": "微博 · 抖音 · 小红书 服饰穿搭 · 流行元素",
     "total": 18,
     "items": [
-      {
-        "keyword": "淡人",
-        "style_word": "淡人",
-        "display_keyword": "淡人",
-        "display_original": "淡人一周穿搭合集",
-        "source_originals": [
-          {
-            "text": "淡人一周穿搭合集",
-            "heat": 7651000,
-            "platform": "douyin"
-          },
-          {
-            "text": "淡人",
-            "heat": 87466,
-            "platform": "xiaohongshu"
-          },
-          {
-            "text": "淡人vlog",
-            "heat": 87466,
-            "platform": "xiaohongshu"
-          }
-        ],
-        "score": 7825932,
-        "heat": 7825932,
-        "hot_value": 7825932,
-        "norm_score": 68.93536,
-        "platforms": [
-          "xiaohongshu",
-          "douyin"
-        ],
-        "platform": "xiaohongshu",
-        "hints": [],
-        "trendCategory": "流行元素",
-        "ip_status": "匹配成功",
-        "platform_display": "小红书/抖音",
-        "style_rank": 1,
-        "rank": 1
-      },
       {
         "keyword": "冬季穿搭",
         "style_word": "冬季穿搭",
@@ -4004,8 +3489,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "微博",
-        "style_rank": 2,
-        "rank": 2
+        "style_rank": 1,
+        "rank": 1
       },
       {
         "keyword": "复古风",
@@ -4031,8 +3516,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 3,
-        "rank": 3
+        "style_rank": 2,
+        "rank": 2
       },
       {
         "keyword": "法式风",
@@ -4058,8 +3543,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 4,
-        "rank": 4
+        "style_rank": 3,
+        "rank": 3
       },
       {
         "keyword": "千禧风",
@@ -4085,8 +3570,8 @@
         "trendCategory": "服饰穿搭",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
-        "style_rank": 5,
-        "rank": 5
+        "style_rank": 4,
+        "rank": 4
       },
       {
         "keyword": "古早风",
@@ -4110,6 +3595,38 @@
         "platform": "xiaohongshu",
         "hints": [],
         "trendCategory": "服饰穿搭",
+        "ip_status": "匹配成功",
+        "platform_display": "小红书",
+        "style_rank": 5,
+        "rank": 5
+      },
+      {
+        "keyword": "淡人",
+        "style_word": "淡人",
+        "display_keyword": "淡人",
+        "display_original": "淡人",
+        "source_originals": [
+          {
+            "text": "淡人",
+            "heat": 87466,
+            "platform": "xiaohongshu"
+          },
+          {
+            "text": "淡人vlog",
+            "heat": 87466,
+            "platform": "xiaohongshu"
+          }
+        ],
+        "score": 174932,
+        "heat": 174932,
+        "hot_value": 174932,
+        "norm_score": 52.42872,
+        "platforms": [
+          "xiaohongshu"
+        ],
+        "platform": "xiaohongshu",
+        "hints": [],
+        "trendCategory": "流行元素",
         "ip_status": "匹配成功",
         "platform_display": "小红书",
         "style_rank": 6,
